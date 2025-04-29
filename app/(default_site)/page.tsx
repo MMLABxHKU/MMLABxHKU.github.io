@@ -8,14 +8,6 @@ export const metadata: Metadata = {
 
 
 import Link from "next/link"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import Image from 'next/image'
 
 
@@ -38,7 +30,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#4ec6df] via-[#f9a61a] to-[#ee2e69] bg-fixed">
+            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
                 <div className="w-full max-w-7xl flex flex-col gap-6">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
                         <FadeIn>Multimedia</FadeIn>
@@ -52,7 +44,7 @@ export default function Home() {
 
 
             
-            <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]'>
+            <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-mblue via-morange to-mred'>
                 <FadeIn><RollinggText1/></FadeIn>
                 <FadeIn><RollinggText2/></FadeIn>
                 <FadeIn><RollinggText3/></FadeIn>

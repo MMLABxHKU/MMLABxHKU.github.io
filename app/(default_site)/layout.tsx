@@ -152,7 +152,7 @@ export default function RootLayout({
                     <footer className="w-full mb-20 flex flex-col gab-10">
                         <div className="w-full pl-6 pr-6 flex flex-col items-center 3xl:hidden">
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
-                                <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
+                                <Link href="/" className="font-bold text-3xl select-none hover:text-mred">
                                     <Image
                                         src="/logos/HKU_MMLAB_text.png"
                                         alt="MMLab"
@@ -166,7 +166,7 @@ export default function RootLayout({
                         <div className="w-full pl-6 pr-6 flex justify-center 3xl:justify-evenly">
                             <div className="w-48 hidden 3xl:block overflow-hidden">
                                 <div className="w-full mt-20 flex flex-col gap-3">
-                                    <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
+                                    <Link href="/" className="font-bold text-3xl select-none hover:text-mred">
                                         <Image
                                             src="/logos/HKU_MMLAB.png"
                                             alt="MMLab"
@@ -179,12 +179,12 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 lg:grid-cols-4">
                                 {footers.map((footer) => (
                                     <div key={footer.title} className="flex flex-col gap-3">
-                                        <Link href={footer.href} className="font-bold text-xl mb-3 select-none hover:text-amber-400">
+                                        <Link href={footer.href} className="font-bold text-xl mb-3 select-none hover:text-mred">
                                             {footer.title}
                                         </Link>
                                         {footer.links.map((f) => (
                                             <div key={f.subtitle}>
-                                                <Link key={f.subtitle} href={f.href} target={f.target} className="hover:text-amber-400 select-none">
+                                                <Link key={f.subtitle} href={f.href} target={f.target} className="hover:text-mred select-none">
                                                     {f.subtitle}
                                                 </Link>
                                             </div>
@@ -196,19 +196,19 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-10 select-none">
 
                                     {/* to keep the same */}
-                                    <Link href="https://x.com/" target="_blank" className="select-none hover:text-amber-400">
+                                    <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                         </svg>
                                     </Link>
                                     <HoverCard>
-                                        <HoverCardTrigger  className="select-none hover:text-amber-400 hover:cursor-pointer">
+                                        <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
                                             <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                 <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
                                             </svg>
                                         </HoverCardTrigger>
                                         <HoverCardContent className="border-0 w-fit">
-                                            <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-amber-400">xxx@hku.hk</Link>
+                                            <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-mred">xxx@hku.hk</Link>
                                         </HoverCardContent>
                                     </HoverCard>
 
@@ -220,19 +220,19 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 flex-wrap">
 
                                 {/* to keep the same */}
-                                <Link href="https://x.com/" target="_blank" className="select-none hover:text-amber-400">
+                                <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                     <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                     </svg>
                                 </Link>
                                 <HoverCard>
-                                    <HoverCardTrigger  className="select-none hover:text-amber-400 hover:cursor-pointer">
+                                    <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                             <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
                                         </svg>
                                     </HoverCardTrigger>
                                     <HoverCardContent className="border-0 w-fit">
-                                        <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-amber-400">xxx@hku.hk</Link>
+                                        <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-mred">xxx@hku.hk</Link>
                                     </HoverCardContent>
                                 </HoverCard>
 
@@ -250,7 +250,7 @@ export default function RootLayout({
                                     <div>
                                         <Dialog>
                                             <DialogTrigger asChild>
-                                                <span className="hover:text-amber-400 cursor-pointer select-none">Site Credits</span>
+                                                <span className="hover:text-mred cursor-pointer select-none">Site Credits</span>
                                             </DialogTrigger>
                                             <DialogContent className="sm:max-w-3xl p-6 border-0">
                                                 <DialogHeader className="p-3 text-left">

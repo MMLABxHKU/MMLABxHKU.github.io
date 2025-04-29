@@ -12,7 +12,9 @@ import {
 } from "@/components/ui/homesheet"
 
 
+
 import "./globals.css";
+import Image from 'next/image'
 
 
 
@@ -42,10 +44,6 @@ export const metadata: Metadata = {
 // header
 const headers: { title: string; href: string; }[] = [
     {
-        title: "MMLab",
-        href: "/",
-    },
-    {
         title: "About Us",
         href: "/about-us",
     },
@@ -71,11 +69,21 @@ export default function RootLayout({
             <body id="#">
 
 
-
+                                        
                 <header>
                     <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
+                        <Button asChild className="bg-background text-foreground hover:bg-mred">
+                            <Link href="/" className="select-none">
+                                <Image
+                                    src="/logos/HKU_MMLAB.png"
+                                    alt="MMLab"
+                                    width={24}
+                                    height={24}
+                                />
+                            </Link>
+                        </Button>
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
+                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-mred">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}

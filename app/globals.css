@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    --color-mblue: var(--mblue);
+    --color-morange: var(--morange);
+    --color-mred: var(--mred);
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-sidebar-ring: var(--sidebar-ring);
@@ -141,7 +144,7 @@
     @apply border-b-inherit;
 }
 .loading {
-    @apply bg-gradient-to-br from-[#4ec6df] via-[#f9a61a] to-[#ee2e69];
+    @apply bg-gradient-to-br from-mblue via-morange to-mred;
 }
 .color-text-1 {
     width: fit-content;
