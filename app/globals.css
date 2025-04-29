@@ -42,6 +42,9 @@
 }
 
 :root {
+    --mblue: #4ec6df;
+    --morange: #f9a61a;
+    --mred: #ee2e69;
     --radius: 0.625rem;
     --background: oklch(1 0 0);
     --foreground: #0d0d0d;
@@ -77,6 +80,9 @@
 }
 
 .dark {
+    --mblue: #4ec6df;
+    --morange: #f9a61a;
+    --mred: #ee2e69;
     --background: #0d0d0d;
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
@@ -135,11 +141,11 @@
     @apply border-b-inherit;
 }
 .loading {
-    @apply bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440];
+    @apply bg-gradient-to-br from-[#4ec6df] via-[#f9a61a] to-[#ee2e69];
 }
 .color-text-1 {
     width: fit-content;
-    background-image: linear-gradient(to right, #b5a774, #e59c2e, #D71440);
+    background-image: linear-gradient(to right, #4ec6df, #ee2e69, #f9a61a);
     -webkit-background-clip: text;
     color: transparent;
 }

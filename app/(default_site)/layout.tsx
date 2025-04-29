@@ -7,6 +7,7 @@ import "../globals.css";
 
 
 
+import Image from 'next/image'
 import Link from "next/link"
 import {
     Dialog,
@@ -152,7 +153,12 @@ export default function RootLayout({
                         <div className="w-full pl-6 pr-6 flex flex-col items-center 3xl:hidden">
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
                                 <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
-                                    Multimedia Laboratory
+                                    <Image
+                                        src="/logos/HKU_MMLAB_text.png"
+                                        alt="MMLab"
+                                        width={192}
+                                        height={192}
+                                    />
                                 </Link>
                             </div>
                         </div>
@@ -161,7 +167,12 @@ export default function RootLayout({
                             <div className="w-48 hidden 3xl:block overflow-hidden">
                                 <div className="w-full mt-20 flex flex-col gap-3">
                                     <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
-                                        MMLab
+                                        <Image
+                                            src="/logos/HKU_MMLAB.png"
+                                            alt="MMLab"
+                                            width={64}
+                                            height={64}
+                                        />
                                     </Link>
                                 </div>
                             </div>

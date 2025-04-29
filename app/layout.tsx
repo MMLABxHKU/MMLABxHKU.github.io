@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: "/logos/jc_stem_lab.png",
-                href: "/logos/jc_stem_lab.png",
+                url: "/logos/HKU_MMLAB.png",
+                href: "/logos/HKU_MMLAB.png",
             },
         ],
     },
