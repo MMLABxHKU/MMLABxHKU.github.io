@@ -30,7 +30,7 @@
 - full: 512 x 512 / JPG / [name]_[surname]_f.jpg, e.g. ping_luo_f.jpg
 - compressed: 384 x 384 / JPG / ~20kb / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg
 
-## Publication
+## Open Source
 - long side approx. 512 / JPG / ~15kb
 - without margin / 紅框為圖像邊界
   

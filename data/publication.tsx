@@ -44,7 +44,7 @@ export const publications: {
     {
         title: "Planning-oriented Autonomous Driving",
         authors: "Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li",
-        proceedings: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023",
+        proceedings: "CVPR 2023",
         links: [
             {
                 website: "Paper",
