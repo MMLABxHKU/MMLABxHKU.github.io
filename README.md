@@ -22,6 +22,9 @@
 
 # Image
 - reduce image size -> use [https://www.photopea.com/](https://www.photopea.com/) to reduce image quality, normally 90%
+
+![image](https://github.com/user-attachments/assets/2d0062bf-65ea-44f5-9511-b4a3b649998a)
+
 ## Member
 - full: 512 x 512 / JPG / [name]_[surname]_f.jpg, e.g. ping_luo_f.jpg
-- compressed: 384 x 384 / JPG / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg
+- compressed: 384 x 384 / JPG / ~20kb / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg
