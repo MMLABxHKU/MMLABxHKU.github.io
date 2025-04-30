@@ -124,7 +124,7 @@ export default function Home() {
                                     {c.c2s.map((c2) => (
                                         <TabsContent value={c2} key={c2} className="mt-6">
                                             <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
-                                                {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
+                                                {[...publications.values()].filter(publication => publication.keys.includes(c2) || publication.pis.includes(c2)).map(( publication) => (
                                                     <FadeIn key={publication.title}>
                                                         <div>
                                                             <Card className="border-border">
@@ -138,7 +138,7 @@ export default function Home() {
                                                                 <div className="flex justify-between">
                                                                     <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
-                                                                            <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
+                                                                            <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                                         ))} 
                                                                     </CardFooter>
                                                                     <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">

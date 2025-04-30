@@ -64,7 +64,7 @@ export const publications: {
             },
         ],
         keys :[
-            "2023", "Autonomous Driving", "End-to-End", "Hongyang Li"
+            "2023", "Autonomous Driving", "End-to-End"
         ],
         pis: ["Hongyang Li"],
     },
@@ -95,7 +95,7 @@ export const publications: {
             },
         ],
         keys :[
-            "2025", "Embodied AI", "Hongyang Li",
+            "2025", "Embodied AI"
         ],
         pis: ["Hongyang Li"],
     },
@@ -118,7 +118,7 @@ export const publications: {
             },
         ],
         keys :[
-            "2024", "Embodied AI", "Hongyang Li",
+            "2024", "Embodied AI"
         ],
         pis: ["Hongyang Li"],
     },
@@ -145,7 +145,7 @@ export const publications: {
             },
         ],
         keys :[
-            "2024", "Autonomous Driving", "Hongyang Li",
+            "2024", "Autonomous Driving"
         ],
         pis: ["Hongyang Li"],
     },
