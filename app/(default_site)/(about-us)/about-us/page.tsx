@@ -273,6 +273,9 @@ export default function Home() {
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                                     {pi.name}
                                 </h1>
+                                <span>
+                                    {pi.title}
+                                </span>
                                 <p>
                                     {pi.bio}
                                 </p>

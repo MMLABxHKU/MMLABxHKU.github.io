@@ -129,6 +129,9 @@ export default function Home() {
                                         <a className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold scroll-mt-32 hover:text-mred" href={"#" + pi.id} id={pi.id}>
                                             {pi.name}
                                         </a>
+                                        <span>
+                                            {pi.title}
+                                        </span>
                                         <p>
                                             {pi.bio}
                                         </p>
