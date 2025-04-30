@@ -19,3 +19,8 @@
 
 # Deploy
 - Simply push the code to the GitHub and it will be done automatically.
+
+# Image
+## Member
+- full: 512x512 / JPG / [name]_[surname]_f.jpg, e.g. ping_luo_f.jpg
+- compressed: 256x256 / JPG / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg

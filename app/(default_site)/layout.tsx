@@ -154,7 +154,7 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
                                 <Link href="/" className="font-bold text-3xl select-none hover:text-mred">
                                     <Image
-                                        src="/logos/HKU_MMLAB_text.png"
+                                        src="/logo/HKU_MMLAB_text.png"
                                         alt="MMLab"
                                         width={192}
                                         height={192}
@@ -168,7 +168,7 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-col gap-3">
                                     <Link href="/" className="font-bold text-3xl select-none hover:text-mred">
                                         <Image
-                                            src="/logos/HKU_MMLAB.png"
+                                            src="/logo/HKU_MMLAB.png"
                                             alt="MMLab"
                                             width={64}
                                             height={64}

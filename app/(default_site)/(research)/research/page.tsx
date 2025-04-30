@@ -199,7 +199,7 @@ export default function Home() {
                         <div className="flex-1/3">
                             <AspectRatio ratio={1/1}>
                                 <Image
-                                    src="/logos/jc_stem_lab.png"
+                                    src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
                                     className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
@@ -230,7 +230,7 @@ export default function Home() {
                         <div className="flex-1/3">
                             <AspectRatio ratio={1/1}>
                                 <Image
-                                    src="/logos/jc_stem_lab.png"
+                                    src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
                                     className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
@@ -327,7 +327,7 @@ export default function Home() {
                         <div className="flex-1/3">
                             <AspectRatio ratio={1/1}>
                                 <Image
-                                    src="/logos/jc_stem_lab.png"
+                                    src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
                                     className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"

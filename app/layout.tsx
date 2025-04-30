@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: "/logos/HKU_MMLAB.png",
-                href: "/logos/HKU_MMLAB.png",
+                url: "/logo/HKU_MMLAB.png",
+                href: "/logo/HKU_MMLAB.png",
             },
         ],
     },
@@ -75,7 +75,7 @@ export default function RootLayout({
                         <Button asChild className="bg-background text-foreground hover:bg-mred">
                             <Link href="/" className="select-none">
                                 <Image
-                                    src="/logos/HKU_MMLAB.png"
+                                    src="/logo/HKU_MMLAB.png"
                                     alt="MMLab"
                                     width={24}
                                     height={24}
