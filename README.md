@@ -39,6 +39,7 @@
 | ![image](https://github.com/user-attachments/assets/96c2db29-e206-4850-b956-6f47a460c5a0) | ![image](https://github.com/user-attachments/assets/6a649dfe-3211-48ec-bcfa-d974db25c23d) |
 
 # 收集信息
+- ```data```中的代码注意好缩进
 ## member
 - id 不用收集
 - img 处理见```Image```
@@ -49,3 +50,17 @@
 - links 中的 icon 名称最好比较统一
 - title 名称最好比较统一
 - pi 可以为多个
+## open-source
+- keys 包含 (```Project``` or ```Dataset```) and 年份
+- links 中的 website 名称最好比较统一
+- pi 可以为多个
+- img 处理见```Image```，做好命名不要重复
+- 对于明星project/dataset，可以单独收集信息，到时候再根据信息排版在```/research```
+## publication
+- 定义好topic
+- keys 包含 (任意数量topic) and 年份
+- proceedings 用缩写
+- links 中的 website 名称最好比较统一
+- pi 可以为多个
+- title 单词首字母大写
+- authors 先名后姓，用英语逗号分隔
