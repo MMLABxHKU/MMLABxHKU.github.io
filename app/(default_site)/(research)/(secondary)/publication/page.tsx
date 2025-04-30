@@ -135,11 +135,20 @@ export default function Home() {
                                                                 <CardContent>
                                                                     <p>{publication.proceedings}</p>
                                                                 </CardContent>
-                                                                <CardFooter className="flex flex-row gap-3 flex-wrap">
-                                                                    {publication.links.map((link) => (
-                                                                        <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
-                                                                    ))} 
-                                                                </CardFooter>
+                                                                <div className="flex justify-between">
+                                                                    <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                        {publication.links.map((link) => (
+                                                                            <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
+                                                                        ))} 
+                                                                    </CardFooter>
+                                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                        <span>[</span>
+                                                                        {publication.pis.map((pi) => (
+                                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                        ))} 
+                                                                        <span>]</span>
+                                                                    </CardFooter>
+                                                                </div>
                                                             </Card>
                                                         </div>
                                                     </FadeIn>

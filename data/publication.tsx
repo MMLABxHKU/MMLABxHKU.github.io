@@ -23,8 +23,10 @@ export const publication_categories: { c1: string; c2s: string[]; len: string}[]
         c2s: [
             "Ping Luo",
             "Hongyang Li",
+            "Xihui Liu",
+            "Bo Dai"
         ],
-        len: "grid-cols-2", // for unexpected error in shadcn component
+        len: "grid-cols-4", // for unexpected error in shadcn component
     },
 ]
 
@@ -37,6 +39,7 @@ export const publications: {
     proceedings: string; 
     links: { website: string; url: string; }[]; 
     keys: string[]; 
+    pis: string[];
 }[] = [
     {
         title: "Planning-oriented Autonomous Driving",
@@ -63,6 +66,7 @@ export const publications: {
         keys :[
             "2023", "Autonomous Driving", "End-to-End", "Hongyang Li"
         ],
+        pis: ["Hongyang Li"],
     },
     {
         title: "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
@@ -93,6 +97,7 @@ export const publications: {
         keys :[
             "2025", "Embodied AI", "Hongyang Li",
         ],
+        pis: ["Hongyang Li"],
     },
     {
         title: "Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation",
@@ -115,6 +120,7 @@ export const publications: {
         keys :[
             "2024", "Embodied AI", "Hongyang Li",
         ],
+        pis: ["Hongyang Li"],
     },
     {
         title: "DriveLM: Driving with Graph Visual Question Answering",
@@ -141,5 +147,6 @@ export const publications: {
         keys :[
             "2024", "Autonomous Driving", "Hongyang Li",
         ],
+        pis: ["Hongyang Li"],
     },
 ]
