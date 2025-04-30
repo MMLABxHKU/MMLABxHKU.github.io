@@ -72,13 +72,14 @@ export default function RootLayout({
                                         
                 <header>
                     <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
-                        <Button asChild className="bg-background text-foreground hover:bg-mred">
+                        <Button asChild className="bg-background text-foreground hover:bg-white group">
                             <Link href="/" className="select-none">
                                 <Image
                                     src="/logo/HKU_MMLAB.png"
                                     alt="MMLab"
                                     width={24}
                                     height={24}
+                                    className="group-hover:scale-125 transition delay-100 duration-200"
                                 />
                             </Link>
                         </Button>

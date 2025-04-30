@@ -278,12 +278,13 @@ export default function Home() {
                                 </p>
                                 <div className="flex gap-6">
                                     {pi.links.map((link) => (
-                                        <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8">
+                                        <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
                                             <AspectRatio ratio={1/1}>
                                                 <Image
                                                     src={"/icon/" + link.icon + ".svg"}
                                                     alt={link.link}
                                                     fill
+                                                    className="group-hover:scale-125 transition duration-200"
                                                 />
                                             </AspectRatio>
                                         </Link>
