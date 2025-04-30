@@ -51,6 +51,7 @@
 - links 中的 icon 名称最好比较统一
 - title 名称最好比较统一
 - pi 可以为多个
+- keys 入学年份等
 ## open-source
 - keys 包含 (```Project``` or ```Dataset```) and 年份
 - links 中的 website 名称最好比较统一

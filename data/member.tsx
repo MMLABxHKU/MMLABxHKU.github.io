@@ -87,6 +87,7 @@ export const members: {
     title: string; 
     pi: string[];
     links: { icon: string; link: string; }[];
+    keys: string[];
 }[]  = [
     {
         name: "Chonghao Sima",
@@ -99,6 +100,7 @@ export const members: {
                 link: "xxx",
             },
         ],
+        keys: ["2024"],
     },
     {
         name: "Yixuan Pan",
@@ -111,6 +113,7 @@ export const members: {
                 link: "xxx",
             },
         ],
+        keys: ["2024"],
     },
     {
         name: "Li Chen",
@@ -123,5 +126,6 @@ export const members: {
                 link: "xxx",
             },
         ],
+        keys: ["2024"],
     },
 ]
