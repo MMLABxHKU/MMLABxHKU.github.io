@@ -51,16 +51,16 @@
 - links 中的 icon 名称最好比较统一
 - title 名称最好比较统一
 - pi 可以为多个
-- keys 入学年份等
+- keys 入学年份等可以帮助排序的
 ## open-source
-- keys 包含 (```Project``` or ```Dataset```) and 年份
+- keys 包含 (```Project``` or ```Dataset```) and 年份，and 可以帮助排序的
 - links 中的 website 名称最好比较统一
 - pi 可以为多个
 - img 处理见```Image```，做好命名不要重复
 - 对于明星project/dataset，可以单独收集信息，到时候再根据信息排版在```/research```
 ## publication
 - 定义好topic
-- keys 包含 (任意数量topic) and 年份
+- keys 包含 (任意数量topic) and 年份，and 可以帮助排序的
 - proceedings 用缩写
 - links 中的 website 名称最好比较统一
 - pi 可以为多个
