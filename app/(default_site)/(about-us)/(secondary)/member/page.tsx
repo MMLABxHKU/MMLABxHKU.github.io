@@ -109,8 +109,8 @@ export default function Home() {
 
                 <div className="w-full max-w-7xl flex flex-col">
                     {pis.map((pi) => (
-                        <div>
-                            <FadeIn key={pi.name}>
+                        <div key={pi.name}>
+                            <FadeIn>
 
 
 
@@ -126,9 +126,9 @@ export default function Home() {
                                         </AspectRatio>
                                     </div>
                                     <div className="flex-2/3 flex flex-col gap-6">
-                                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold" id={pi.id}>
+                                        <a className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold scroll-mt-32 hover:text-mred" href={"#" + pi.id} id={pi.id}>
                                             {pi.name}
-                                        </h1>
+                                        </a>
                                         <p>
                                             {pi.bio}
                                         </p>
