@@ -32,12 +32,13 @@ export const open_sources: {
     keys: string[];
     pis: string[];
     githubstars: string;
+    img: string;
 }[] = [
     {
-        title: "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
-        description: "Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios.",
+        title: "UniAD",
+        description: "The first comprehensive framework that incorporates full-stack driving tasks.",
         tags: [
-            "Embodied AI", "Manipulation",
+            "End-to-End", "Autonomous Driving",
         ],
         links: [
             {
@@ -62,6 +63,7 @@ export const open_sources: {
         ],
         pis: ["Hongyang Li"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/BeTop?style=social",
+        img: "https://mmlabassets.github.io/open-source/uniad.jpg",
     },
     {
         title: "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
@@ -92,5 +94,6 @@ export const open_sources: {
         ],
         pis: ["Hongyang Li"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/BeTop?style=social",
+        img: "https://mmlabassets.github.io/open-source/uniad.jpg",
     },
 ]

@@ -130,37 +130,48 @@ export default function Home() {
                                             (
                                                 <FadeIn key={open_source.title}>
                                                     <div>
-                                                        <Card className="border-border">
-                                                            <CardHeader>
-                                                                <CardTitle className="text-xl">{open_source.title}</CardTitle>
-                                                                <CardDescription>{open_source.description}</CardDescription>
-                                                            </CardHeader>
-                                                            <CardContent className="flex flex-row gap-3 flex-wrap items-center">
-                                                                {
-                                                                    open_source.githubstars != '' ? 
-                                                                    <Image
-                                                                        src={open_source.githubstars}
-                                                                        alt="stars"
-                                                                        width={96}
-                                                                        height={96}
-                                                                    />
-                                                                    : <div></div>
-                                                                }
-                                                                <p>{open_source.tags[0]}</p>
-                                                            </CardContent>
-                                                            <div className="flex justify-between">
-                                                                <CardFooter className="flex flex-row gap-3 flex-wrap">
-                                                                    {open_source.links.map((link) => (
-                                                                        <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
-                                                                    ))} 
-                                                                </CardFooter>
-                                                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
-                                                                    <span>[</span>
-                                                                    {open_source.pis.map((pi) => (
-                                                                        <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
-                                                                    ))} 
-                                                                    <span>]</span>
-                                                                </CardFooter>
+                                                        <Card className="border-border flex flex-row pl-6 pr-6">
+                                                            <div className="flex justify-center items-center">
+                                                                <Image
+                                                                    src={open_source.img}
+                                                                    alt="stars"
+                                                                    width={512}
+                                                                    height={512}
+                                                                    className="flex-1/3"
+                                                                />
+                                                            </div>
+                                                            <div className="flex-2/3 flex flex-col gap-3">
+                                                                <CardHeader>
+                                                                    <CardTitle className="text-xl">{open_source.title}</CardTitle>
+                                                                    <CardDescription>{open_source.description}</CardDescription>
+                                                                </CardHeader>
+                                                                <CardContent className="flex flex-row gap-3 flex-wrap items-center">
+                                                                    {
+                                                                        open_source.githubstars != '' ? 
+                                                                        <Image
+                                                                            src={open_source.githubstars}
+                                                                            alt="stars"
+                                                                            width={96}
+                                                                            height={96}
+                                                                        />
+                                                                        : <div></div>
+                                                                    }
+                                                                    <p>{open_source.tags[0]}</p>
+                                                                </CardContent>
+                                                                <div className="flex justify-between">
+                                                                    <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                        {open_source.links.map((link) => (
+                                                                            <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
+                                                                        ))} 
+                                                                    </CardFooter>
+                                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                        <span>[</span>
+                                                                        {open_source.pis.map((pi) => (
+                                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                        ))} 
+                                                                        <span>]</span>
+                                                                    </CardFooter>
+                                                                </div>
                                                             </div>
                                                         </Card>
                                                     </div>
