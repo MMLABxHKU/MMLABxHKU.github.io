@@ -28,3 +28,11 @@
 ## Member
 - full: 512 x 512 / JPG / [name]_[surname]_f.jpg, e.g. ping_luo_f.jpg
 - compressed: 384 x 384 / JPG / ~20kb / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg
+
+## Publication
+- long side approx. 512 / JPG / ~15kb
+- without margin / 紅框為圖像邊界
+  
+| ✅ | ✖️ |
+|---|---|
+| ![image](https://github.com/user-attachments/assets/96c2db29-e206-4850-b956-6f47a460c5a0) | ![image](https://github.com/user-attachments/assets/6a649dfe-3211-48ec-bcfa-d974db25c23d) |
