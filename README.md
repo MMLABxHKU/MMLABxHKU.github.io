@@ -21,6 +21,7 @@
 - Simply push the code to the GitHub and it will be done automatically.
 
 # Image
+- upload to corresponding folder in [https://github.com/MMLABassets/MMLABassets.github.io](https://github.com/MMLABassets/MMLABassets.github.io) / access via ```https://mmlabassets.github.io/*```
 - reduce image size -> use [https://www.photopea.com/](https://www.photopea.com/) to reduce image quality, normally 90%
 
 ![image](https://github.com/user-attachments/assets/2d0062bf-65ea-44f5-9511-b4a3b649998a)
