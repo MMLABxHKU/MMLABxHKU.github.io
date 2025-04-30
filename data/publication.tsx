@@ -22,8 +22,8 @@ export const publication_categories: { c1: string; c2s: string[]; len: string}[]
         c1: "PI",
         c2s: [
             "Ping Luo",
-            "Hongyang Li",
             "Xihui Liu",
+            "Hongyang Li",
             "Bo Dai"
         ],
         len: "grid-cols-4", // for unexpected error in shadcn component
