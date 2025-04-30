@@ -2,20 +2,21 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     /* config options here */
-};
-
-export default nextConfig;
-
-module.exports = {
     images: {
         remotePatterns: [
             {
                 protocol: 'https',
                 hostname: 'mmlabassets.github.io',
-                port: '',
                 pathname: '/**',
-                search: '',
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.shields.io',
+                pathname: '/**',
             },
         ],
-    },
-}
+        dangerouslyAllowSVG: true,
+      },
+};
+
+export default nextConfig;

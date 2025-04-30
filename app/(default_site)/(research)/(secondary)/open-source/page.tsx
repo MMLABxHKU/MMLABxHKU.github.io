@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 
 
 
+import Image from 'next/image'
 import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -134,14 +135,33 @@ export default function Home() {
                                                                 <CardTitle className="text-xl">{open_source.title}</CardTitle>
                                                                 <CardDescription>{open_source.description}</CardDescription>
                                                             </CardHeader>
-                                                            <CardContent>
-                                                                <p>{open_source.tags[0].tag}</p>
+                                                            <CardContent className="flex flex-row gap-3 flex-wrap items-center">
+                                                                {
+                                                                    open_source.githubstars != '' ? 
+                                                                    <Image
+                                                                        src={open_source.githubstars}
+                                                                        alt="stars"
+                                                                        width={96}
+                                                                        height={96}
+                                                                    />
+                                                                    : <div></div>
+                                                                }
+                                                                <p>{open_source.tags[0]}</p>
                                                             </CardContent>
-                                                            <CardFooter className="flex flex-row gap-3 flex-wrap">
-                                                                {open_source.links.map((link) => (
-                                                                    <Link href={link.url} target="_blank" className="animated-underline" key={link.link}>{link.link}</Link>
-                                                                ))} 
-                                                            </CardFooter>
+                                                            <div className="flex justify-between">
+                                                                <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                    {open_source.links.map((link) => (
+                                                                        <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
+                                                                    ))} 
+                                                                </CardFooter>
+                                                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                    <span>[</span>
+                                                                    {open_source.pis.map((pi) => (
+                                                                        <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                    ))} 
+                                                                    <span>]</span>
+                                                                </CardFooter>
+                                                            </div>
                                                         </Card>
                                                     </div>
                                                 </FadeIn>
