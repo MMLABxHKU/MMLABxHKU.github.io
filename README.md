@@ -37,3 +37,15 @@
 | ✅ | ✖️ |
 |---|---|
 | ![image](https://github.com/user-attachments/assets/96c2db29-e206-4850-b956-6f47a460c5a0) | ![image](https://github.com/user-attachments/assets/6a649dfe-3211-48ec-bcfa-d974db25c23d) |
+
+# 收集信息
+## member
+- id 不用收集
+- img 处理见```Image```
+- bio 可带超链接，需要两个版本：
+    - 纯文本：```this is a example link, and another link```
+    - 扩住链接部分：```this is a [example link], and another [link]```
+    - 文本和链接对应的关系：```[example link]: https://baidu.com, [link]: https://google.com```
+- links 中的 icon 名称最好比较统一
+- title 名称最好比较统一
+- pi 可以为多个
