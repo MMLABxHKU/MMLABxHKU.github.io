@@ -30,11 +30,11 @@ export const open_source_categories: { category: string; years: string[]; }[] = 
 
 
 
-export const open_sources: {
-    title: string;
-    description: string;
-    tags: string[];
-    links: { website: string; url: string; }[];
+export const open_sources: { 
+    title: string; 
+    description: string; 
+    tags: string[]; 
+    links: { website: string; url: string; }[]; 
     keys: string[];
     pis: string[];
     githubstars: string;
@@ -342,7 +342,7 @@ export const open_sources: {
     },
     {
         title: "Sparse R-CNN: End-to-End Object Detection with Learnable Proposals",
-        description: "SegFormer is a simple, efficient and powerful semantic segmentation method.",
+        description: "Sparse R-CNN is a purely sparse method for object detection in images, which demonstrates its accuracy, run-time and training convergence performance on par with the wellestablished detector.",
         tags: [
             "Semantic Segmentation"
         ],
