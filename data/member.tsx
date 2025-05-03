@@ -37,7 +37,7 @@ export const pis: {
     {
         name: "Xihui Liu",
         id: "xihui_liu",
-        img: "https://mmlabassets.github.io/member/xihui_liu_c.jpg",
+        img: "https://mmlabassets.github.io/member/xihui_liu_c.png",
         title: "Assistant Professor",
         bio: "I am an Assistant Professor at the Department of Electrical and Electronic Engineering and Institute of Data Science (IDS), The University of Hong Kong. Before joining HKU, I was a postdoc Scholar at EECS Department and BAIR at UC Berkeley, advised by Prof. Trevor Darrell. I obtained my Ph.D. degree from Multimedia Lab (MMLab), Chinese University of Hong Kong, supervised by Prof. Xiaogang Wang and Prof. Hongsheng Li. I received bachelor's degree in Electronic Engineering in Tsinghua University.",
         // bio_w_link: "I am an Assistant Professor at the Department of Electrical and Electronic Engineering and Institute of Data Science (IDS), The University of Hong Kong. Before joining HKU, I was a postdoc Scholar at EECS Department and [BAIR] at UC Berkeley, advised by Prof. Trevor Darrell. I obtained my Ph.D. degree from [Multimedia Lab (MMLab)], Chinese University of Hong Kong, supervised by [Prof. Xiaogang Wang] and [Prof. Hongsheng Li]. I received bachelor's degree in Electronic Engineering in [Tsinghua University].",
@@ -103,7 +103,7 @@ export const pis: {
     {
         name: "Bo Dai",
         id: "bo_dai",
-        img: "https://mmlabassets.github.io/member/bo_dai_c.jpg",
+        img: "https://mmlabassets.github.io/member/bo_dai_c.png",
         title: "Assistant Professor",
         bio: "Dr. Bo Dai is a scientist with Shanghai AI Laboratory, leading a research group on Content Generation and Digitization. Prior to joining Shanghai AI Lab, he worked as a Research Assistant Professor with S-Lab, Nanyang Technological University, Singapore. He was a Postdoctoral Research Fellow in Multimedia Laboratory (MMLab), CUHK. He received his Ph.D. (2014-2018) from Multimedia Laboratory (MMLab) at CUHK, advised by Prof.Dahua Lin. He obtained his B.Eng. (2010-2014) from ACM class of SJTU.",
         links: [
