@@ -702,7 +702,7 @@ export const members: {
     },
     {
         "name": "Zhixuan Liang",
-        "img": "https://mmlabassets.github.io/member/zhixuan_liang_c.jpeg",
+        "img": "https://mmlabassets.github.io/member/zhixuan_liang_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -910,6 +910,18 @@ export const members: {
                 "link": "https://scholar.google.com/citations?user=z2Tbc6MAAAAJ&hl=zh-CN"
             }
         ],
+        "keys": [
+            "2024"
+        ]
+    },
+    {
+        "name": "Junli Ren",
+        "img": "https://mmlabassets.github.io/member/junli_ren_c.jpg",
+        "title": "Ph.D. Candidate",
+        "pi": [
+            "Ping Luo"
+        ],
+        "links": [],
         "keys": [
             "2024"
         ]
