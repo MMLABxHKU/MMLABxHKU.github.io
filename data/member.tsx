@@ -921,7 +921,12 @@ export const members: {
         "pi": [
             "Ping Luo"
         ],
-        "links": [],
+        "links": [
+            {
+                "icon": "webpage",
+                "link": "https://renjunli99.github.io/"
+            }
+        ],
         "keys": [
             "2024"
         ]
