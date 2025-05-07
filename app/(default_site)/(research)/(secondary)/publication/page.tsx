@@ -16,6 +16,10 @@ import {
     TabsTrigger,
 } from "@/components/ui/tabs"
 import {
+    MultiTabsList,
+    MultiTabsTrigger,
+} from "@/components/ui/multitabs"
+import {
     Card,
     CardContent,
     CardDescription,
@@ -114,11 +118,11 @@ export default function Home() {
                                 <Tabs defaultValue={c.c2s[0]} className="mt-3">
 
                                     <FadeIn>
-                                        <TabsList className={"grid w-full " + c.len}>
+                                        <MultiTabsList>
                                             {c.c2s.map((c2) => (
-                                                <TabsTrigger value={c2} key={c2}>{c2}</TabsTrigger>
+                                                <MultiTabsTrigger value={c2} key={c2}>{c2}</MultiTabsTrigger>
                                             ))}
-                                        </TabsList>
+                                        </MultiTabsList>
                                     </FadeIn>
 
                                     {c.c2s.map((c2) => (
