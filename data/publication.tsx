@@ -266,18 +266,6 @@ export const publications: {
 "Ping Luo"],
     },
     {
-        title: "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
-        authors: "Qingwen Bu, Jisong Cai, Li Chen, Xiuqi Cui, Yan Ding, Siyuan Feng, Shenyuan Gao, Xindong He, Xu Huang, Shu Jiang, Yuxin Jiang, Cheng Jing, Hongyang Li, Jialu Li, Chiming Liu, Yi Liu, Yuxiang Lu, Jianlan Luo, Ping Luo, Yao Mu, Yuehan Niu, Yixuan Pan, Jiangmiao Pang, Yu Qiao, Guanghui Ren, Cheng Ruan, Jiaqi Shan, Yongjian Shen, Chengshi Shi, Mingkang Shi, Modi Shi, Chonghao Sima, Jianheng Song, Huijie Wang, Wenhao Wang, Dafeng Wei, Chengen Xie, Guo Xu, Junchi Yan, Cunbiao Yang, Lei Yang, Shukai Yang, Maoqing Yao, Jia Zeng, Chi Zhang, Qinglin Zhang, Bin Zhao, Chengyue Zhao, Jiaqi Zhao, Jianchao Zhu",
-        proceedings: "arXiv preprint arXiv:2503.06669",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BJrgspguQaEC" },
-        ],
-        keys: [
-"Embodied AI", "Machine Learning"],
-        pis: [
-"Hongyang Li", "Ping Luo"],
-    },
-    {
         title: "Text2world: Benchmarking large language models for symbolic world model generation",
         authors: "Mengkang Hu, Tianxing Chen, Yude Zou, Yuheng Lei, Qiguang Chen, Ming Li, Yao Mu, Hongyuan Zhang, Wenqi Shao, Ping Luo",
         proceedings: "arXiv preprint arXiv:2502.13092",
@@ -1562,18 +1550,6 @@ export const publications: {
 "Ping Luo"],
     },
     {
-        title: "Embodiedgpt: Vision-language pre-training via embodied chain of thought",
-        authors: "Yao Mu, Qinglong Zhang, Mengkang Hu, Wenhai Wang, Mingyu Ding, Jun Jin, Bin Wang, Jifeng Dai, Yu Qiao, Ping Luo",
-        proceedings: "Advances in Neural Information Processing Systems",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:v1_lew4L6wgC" },
-        ],
-        keys: [
-"Embodied AI", "Computer Vision"],
-        pis: [
-"Ping Luo"],
-    },
-    {
         title: "Visionllm: Large language model is also an open-ended decoder for vision-centric tasks",
         authors: "Wenhai Wang, Zhe Chen, Xiaokang Chen, Jiannan Wu, Xizhou Zhu, Gang Zeng, Ping Luo, Tong Lu, Jie Zhou, Yu Qiao, Jifeng Dai",
         proceedings: "Advances in Neural Information Processing Systems",
@@ -1860,18 +1836,6 @@ export const publications: {
 "Computer Vision", "Machine Learning"],
         pis: [
 "Ping Luo"],
-    },
-    {
-        title: "Scene as occupancy",
-        authors: "Chonghao Sima, Wenwen Tong, Tai Wang, Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, Ping Luo, Dahua Lin, Hongyang Li",
-        proceedings: "arXiv preprint arXiv:2306.02851",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:wKETBy42zhYC" },
-        ],
-        keys: [
-"Machine Learning", "Other"],
-        pis: [
-"Ping Luo", "Hongyang Li"],
     },
     {
         title: "Syndock: N rigid protein docking via learnable group synchronization",
@@ -4922,18 +4886,6 @@ export const publications: {
 "Ping Luo"],
     },
     {
-        title: "Deepid-net: Deformable deep convolutional neural networks for object detection",
-        authors: "Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy, Xiaoou Tang",
-        proceedings: "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:lSLTfruPkqcC" },
-        ],
-        keys: [
-"Detection", "Machine Learning"],
-        pis: [
-"Ping Luo"],
-    },
-    {
         title: "Deep Representation Learning with Target Coding Supplementary Material",
         authors: "Shuo Yang, Ping Luo, Chen Change Loy, Kenneth W Shum, Xiaoou Tang",
         proceedings: "none",
@@ -5030,18 +4982,6 @@ export const publications: {
 "Ping Luo"],
     },
     {
-        title: "Pedestrian attribute recognition at far distance",
-        authors: "Yubin Deng, Ping Luo, Chen Change Loy, Xiaoou Tang",
-        proceedings: "Proceedings of the 22nd ACM international conference on Multimedia",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:7PzlFSSx8tAC" },
-        ],
-        keys: [
-"Machine Learning", "Other"],
-        pis: [
-"Ping Luo"],
-    },
-    {
         title: "Deepid-net: multi-stage and deformable deep convolutional neural networks for object detection",
         authors: "Wanli Ouyang, Ping Luo, Xingyu Zeng, Shi Qiu, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Yuanjun Xiong, Chen Qian, Zhenyao Zhu, Ruohui Wang, Chen-Change Loy, Xiaogang Wang, Xiaoou Tang",
         proceedings: "arXiv preprint arXiv:1409.3505",
@@ -5074,18 +5014,6 @@ export const publications: {
         ],
         keys: [
 "Machine Learning", "Other"],
-        pis: [
-"Ping Luo"],
-    },
-    {
-        title: "Multi-view perceptron: a deep model for learning face identity and view representations",
-        authors: "Zhenyao Zhu, Ping Luo, Xiaogang Wang, Xiaoou Tang",
-        proceedings: "Advances in Neural Information Processing Systems",
-        links: [
-            { website: "Paper", url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:g5m5HwL7SMYC" },
-        ],
-        keys: [
-"Face Recognition", "Machine Learning"],
         pis: [
 "Ping Luo"],
     },
