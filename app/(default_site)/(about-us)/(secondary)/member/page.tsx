@@ -88,26 +88,101 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        {pis.map((pi) => (
-                            <Link className="select-none flex items-center gap-3 group hover:text-mred" href={"#" + pi.id} key={pi.name}>
-                                <FadeIn>
-                                    <span className="border-l-4 border-l-foreground text-sm">
-                                        &nbsp;
-                                    </span>
-                                </FadeIn>
-                                <FadeIn>
-                                    <span className="text-xl font-bold">
-                                        {pi.name}
-                                    </span>
-                                </FadeIn>
-                            </Link>
-                        ))}
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
+                            <FadeIn>
+                                <span className="border-l-4 border-l-foreground text-sm">
+                                    &nbsp;
+                                </span>
+                            </FadeIn>
+                            <FadeIn>
+                                <span className="text-xl font-bold">
+                                    Faculty
+                                </span>
+                            </FadeIn>
+                        </Link>
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#student" key="student">
+                            <FadeIn>
+                                <span className="border-l-4 border-l-foreground text-sm">
+                                    &nbsp;
+                                </span>
+                            </FadeIn>
+                            <FadeIn>
+                                <span className="text-xl font-bold">
+                                    Student
+                                </span>
+                            </FadeIn>
+                        </Link>
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#alumni" key="alumni">
+                            <FadeIn>
+                                <span className="border-l-4 border-l-foreground text-sm">
+                                    &nbsp;
+                                </span>
+                            </FadeIn>
+                            <FadeIn>
+                                <span className="text-xl font-bold">
+                                    Alumni
+                                </span>
+                            </FadeIn>
+                        </Link>
                     </div>
                 </div>
                 
 
 
                 <div className="w-full max-w-7xl flex flex-col">
+
+
+
+                    <FadeIn>
+                        <h2 className="w-full max-w-7xl my-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                            Faculty                     
+                        </h2>
+                    </FadeIn>
+                    {pis.map((pi) => (
+                        <div key={pi.name}>
+                            <FadeIn>
+                                <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
+                                    <div className="flex-1/3 md:max-w-64">
+                                        <AspectRatio ratio={1/1}>
+                                            <Image
+                                                src={pi.img}
+                                                alt={pi.name}
+                                                fill
+                                                className="h-full w-full rounded-md object-cover loading"
+                                            />
+                                        </AspectRatio>
+                                    </div>
+                                    <div className="flex-2/3 flex flex-col gap-6">
+                                        <a className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold scroll-mt-32 hover:text-mred" href={"#" + pi.id} id={pi.id}>
+                                            {pi.name}
+                                        </a>
+                                        <span>
+                                            {pi.title}
+                                        </span>
+                                        <p>
+                                            {pi.bio}
+                                        </p>
+                                        <div className="flex gap-6">
+                                            {pi.links.map((link) => (
+                                                <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
+                                                    <AspectRatio ratio={1/1}>
+                                                        <Image
+                                                            src={"/icon/" + link.icon + ".svg"}
+                                                            alt={link.link}
+                                                            fill
+                                                            className="group-hover:scale-125 transition duration-200"
+                                                        />
+                                                    </AspectRatio>
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </FadeIn>
+                        </div>
+                    ))}
+
+
                     {pis.map((pi) => (
                         <div key={pi.name}>
                             <FadeIn>
