@@ -84,7 +84,7 @@ export default function RootLayout({
                             </Link>
                         </Button>
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-mred">
+                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-mred hover:text-white">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
