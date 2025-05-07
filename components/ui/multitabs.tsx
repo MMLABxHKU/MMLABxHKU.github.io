@@ -31,7 +31,7 @@ function MultiTabsTrigger({
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "bg-muted py-[3px] px-[6px] min-w-64 max-w-96 rounded-lg h-9 text-sm data-[state=active]:bg-mred data-[state=active]:text-background transition-[color,box-shadow] shadow-sm data-[state=active]:border-muted",
+        "bg-muted py-[3px] px-[6px] rounded-lg h-9 text-sm data-[state=active]:bg-mred data-[state=active]:text-background transition-[color,box-shadow] shadow-sm data-[state=active]:border-muted",
         className
       )}
       {...props}

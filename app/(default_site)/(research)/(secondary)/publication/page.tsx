@@ -115,18 +115,18 @@ export default function Home() {
 
                         {publication_categories.map((c) => (
                             <TabsContent value={c.c1} key={c.c1}>
-                                <Tabs defaultValue={c.c2s[0]} className="mt-3">
+                                <Tabs defaultValue={c.c2s[0]} className="mt-6">
 
                                     <FadeIn>
                                         <MultiTabsList>
                                             {c.c2s.map((c2) => (
-                                                <MultiTabsTrigger value={c2} key={c2}>{c2}</MultiTabsTrigger>
+                                                <MultiTabsTrigger value={c2} key={c2} className="w-full sm:min-w-16 sm:max-w-64">{c2}</MultiTabsTrigger>
                                             ))}
                                         </MultiTabsList>
                                     </FadeIn>
 
                                     {c.c2s.map((c2) => (
-                                        <TabsContent value={c2} key={c2} className="mt-6">
+                                        <TabsContent value={c2} key={c2} className="mt-20">
                                             <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
                                                 {[...publications.values()].filter(publication => publication.keys.includes(c2) || publication.pis.includes(c2)).map(( publication) => (
                                                     <FadeIn key={publication.title}>
