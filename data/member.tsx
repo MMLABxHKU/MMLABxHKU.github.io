@@ -143,20 +143,21 @@ export const members: {
     {
         "name": "Jiaming Xie",
         "img": "https://mmlabassets.github.io/member/jiaming_xie_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
         "links": [],
         "keys": [
             "2017",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Nenglun Chen",
         "img": "https://mmlabassets.github.io/member/nenglun_chen_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -168,13 +169,14 @@ export const members: {
         ],
         "keys": [
             "2017",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Xingang Pan",
         "img": "https://mmlabassets.github.io/member/xingang_pan_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -186,13 +188,14 @@ export const members: {
         ],
         "keys": [
             "2017",
-            "2021"
+            "2021",
+            "Alumni"
         ]
     },
     {
         "name": "Wenqi Shao",
         "img": "https://mmlabassets.github.io/member/wenqi_shao_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -204,26 +207,28 @@ export const members: {
         ],
         "keys": [
             "2018",
-            "2022"
+            "2022",
+            "Alumni"
         ]
     },
     {
         "name": "Anran Liu",
         "img": "https://mmlabassets.github.io/member/anran_liu_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
         "links": [],
         "keys": [
             "2019",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Enze Xie",
         "img": "https://mmlabassets.github.io/member/enze_xie_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -235,13 +240,14 @@ export const members: {
         ],
         "keys": [
             "2019",
-            "2022"
+            "2022",
+            "Alumni"
         ]
     },
     {
         "name": "Mingyu Ding",
         "img": "https://mmlabassets.github.io/member/mingyu_ding_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -253,13 +259,14 @@ export const members: {
         ],
         "keys": [
             "2019",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Yuying Ge",
         "img": "https://mmlabassets.github.io/member/yuying_ge_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -271,13 +278,14 @@ export const members: {
         ],
         "keys": [
             "2019",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Zhaoyang Zhang",
         "img": "https://mmlabassets.github.io/member/zhaoyang_zhang_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -289,13 +297,14 @@ export const members: {
         ],
         "keys": [
             "2019",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Wenhai Wang",
         "img": "https://mmlabassets.github.io/member/wenhai_wang_c.png",
-        "title": "Alumni, RA",
+        "title": "RA",
         "pi": [
             "Ping Luo"
         ],
@@ -307,13 +316,14 @@ export const members: {
         ],
         "keys": [
             "2019",
-            "2020"
+            "2020",
+            "Alumni"
         ]
     },
     {
         "name": "Chaofan Tao",
         "img": "https://mmlabassets.github.io/member/chaofan_tao_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -325,13 +335,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Chongjian GE",
         "img": "https://mmlabassets.github.io/member/chongjian_ge_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -343,13 +354,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Jiannan Wu",
         "img": "https://mmlabassets.github.io/member/jiannan_wu_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -361,13 +373,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Peize Sun",
         "img": "https://mmlabassets.github.io/member/peize_sun_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -379,26 +392,28 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Qiushan Guo",
         "img": "https://mmlabassets.github.io/member/qiushan_guo_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
         "links": [],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Sheng Jin",
         "img": "https://mmlabassets.github.io/member/sheng_jin_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -410,13 +425,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Teng Wang",
         "img": "https://mmlabassets.github.io/member/teng_wang_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -428,13 +444,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Tianqi Wang",
         "img": "https://mmlabassets.github.io/member/tianqi_wang_c.jpeg",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -446,13 +463,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Yuanfeng Ji",
         "img": "https://mmlabassets.github.io/member/yuanfeng_ji_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -464,13 +482,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Zhanglin Peng",
         "img": "https://mmlabassets.github.io/member/zhanglin_peng_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -482,13 +501,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
         "name": "Zhouxia Wang",
         "img": "https://mmlabassets.github.io/member/zhouxia_wang_c.png",
-        "title": "Alumni, Ph.D.",
+        "title": "Ph.D.",
         "pi": [
             "Ping Luo"
         ],
@@ -500,13 +520,14 @@ export const members: {
         ],
         "keys": [
             "2020",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Yangyang Xu",
         "img": "https://mmlabassets.github.io/member/yangyang_xu_c.jpeg",
-        "title": "Alumni, Postdoc Fellow",
+        "title": "Postdoc Fellow",
         "pi": [
             "Ping Luo"
         ],
@@ -518,13 +539,14 @@ export const members: {
         ],
         "keys": [
             "2021",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
         "name": "Qiang Zhai",
         "img": "https://mmlabassets.github.io/member/qiang_zhai_c.jpeg",
-        "title": "Alumni, Visitor",
+        "title": "Visitor",
         "pi": [
             "Ping Luo"
         ],
@@ -536,7 +558,8 @@ export const members: {
         ],
         "keys": [
             "2021",
-            "2022"
+            "2022",
+            "Alumni"
         ]
     },
     {
@@ -627,7 +650,7 @@ export const members: {
     {
         "name": "Yutao Hu",
         "img": "https://mmlabassets.github.io/member/yutao_hu_c.jpeg",
-        "title": "Alumni, Postdoc Fellow",
+        "title": "Postdoc Fellow",
         "pi": [
             "Ping Luo"
         ],
@@ -639,7 +662,8 @@ export const members: {
         ],
         "keys": [
             "2022",
-            "2023"
+            "2023",
+            "Alumni"
         ]
     },
     {
@@ -865,7 +889,7 @@ export const members: {
     {
         "name": "Shuo Yang",
         "img": "https://mmlabassets.github.io/member/shuo_yang_c.png",
-        "title": "Alumni, Postdoc Fellow",
+        "title": "Postdoc Fellow",
         "pi": [
             "Ping Luo"
         ],
@@ -877,7 +901,8 @@ export const members: {
         ],
         "keys": [
             "2024",
-            "2024"
+            "2024",
+            "Alumni"
         ]
     },
     {
