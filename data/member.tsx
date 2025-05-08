@@ -1139,7 +1139,7 @@ export const members: {
     },
     {
         "name": "Lirui Zhao",
-        "img": "https://mmlabassets.github.io/member/lirui_zhao_c.jpeg",
+        "img": "https://mmlabassets.github.io/member/lirui_zhao_c.jpg",
         "title": "Ph.D. Candiate",
         "pi": [
             "Ping Luo"
