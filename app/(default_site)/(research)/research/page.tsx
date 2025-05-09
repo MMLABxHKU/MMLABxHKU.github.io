@@ -101,7 +101,7 @@ export default function Home() {
             
             <div className="w-full flex flex-col xl:flex-row pt-20" id="embodied">
                 <div className="flex-2/5">
-                    <div className="bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] w-full h-full"></div>
+                    <div className="bg-gradient-to-br from-mblue via-morange to-mred w-full h-full"></div>
                 </div>                
                 <div className="flex-3/5 flex flex-col p-6 pt-10 pb-10 xl:p-20 gap-6">
                     <div className="color-text-1">
@@ -136,7 +136,7 @@ export default function Home() {
 
             <div className="w-full flex flex-col xl:flex-row-reverse pt-20" id="embodied">
                 <div className="flex-2/3 pt-64 pb-20">
-                    <div className="bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] w-full h-full"></div>
+                    <div className="bg-gradient-to-br from-mblue via-morange to-mred w-full h-full"></div>
                 </div>
                 <div className="flex-1/3 flex flex-col p-6 pt-10 pb-10 xl:p-20 gap-6">
                     <div className="color-text-1">
@@ -169,7 +169,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
@@ -211,7 +211,7 @@ export default function Home() {
                                     src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-mblue via-morange to-mred"
                                 />
                             </AspectRatio>
                         </div>
@@ -242,7 +242,7 @@ export default function Home() {
                                     src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-mblue via-morange to-mred"
                                 />
                             </AspectRatio>
                         </div>
@@ -269,7 +269,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
@@ -339,7 +339,7 @@ export default function Home() {
                                     src="/logo/jc_stem_lab.png"
                                     alt="img"
                                     fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-mblue via-morange to-mred"
                                 />
                             </AspectRatio>
                         </div>
@@ -366,7 +366,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
