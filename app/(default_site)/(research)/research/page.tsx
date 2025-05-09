@@ -270,7 +270,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
@@ -313,7 +313,7 @@ export default function Home() {
 
             {/* Open Source */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                     <FadeIn>
                         <Link href="#open-source" className="scroll-mt-32 group flex items-center" id="open-source">
                             Open Source
@@ -367,7 +367,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">

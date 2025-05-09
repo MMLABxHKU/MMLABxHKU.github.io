@@ -149,6 +149,9 @@
 .loading {
     @apply bg-gradient-to-br from-mblue via-morange to-mred;
 }
+.gradient-eng {
+    @apply gradient-eng;
+}
 .color-text-1 {
     width: fit-content;
     background-image: linear-gradient(to right, #4ec6df, #ee2e69, #f9a61a);
