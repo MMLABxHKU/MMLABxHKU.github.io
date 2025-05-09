@@ -24,7 +24,7 @@ export const events: {
         date: "2024.05",
         location: "Nashville",
         figure: "https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg",
-        link:"/evnet",
+        link:"/evnet/cvpr2025",
         keys :[
             "2025", "selected"
         ],
