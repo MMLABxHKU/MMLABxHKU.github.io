@@ -42,7 +42,7 @@ export default function Home() {
             <div className="w-full h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
                 <div>
                     <Image
-                        src="https://ik.imagekit.io/mmlab/rMmibFe4czY.jpg"
+                        src="https://ik.imagekit.io/mmlab/LPKk3wtkC-g.jpg"
                         alt="landing"
                         fill
                         className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
