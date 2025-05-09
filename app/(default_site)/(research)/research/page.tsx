@@ -385,9 +385,9 @@ export default function Home() {
 
 
             {/* Event */}
-            <div className="bg-gray-300">
+            <div className="bg-gray-200">
                 <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                    <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                         <FadeIn>
                             <Link href="#event" className="scroll-mt-32 group flex items-center" id="event">
                                 Event
@@ -404,7 +404,7 @@ export default function Home() {
 
 
 
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20 pb-20">
                     <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
                         {[...events.values()].filter(n => n.keys.includes("selected")).map((item) => (
                             <FadeIn key={item.title}>
@@ -413,10 +413,15 @@ export default function Home() {
                                         <div>
                                             <Image
                                                 src={item.figure}
-                                                alt={item.figure}
+                                                alt={item.location}
                                                 fill
                                                 className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                             />
+                                        </div>
+                                        <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">
+                                            <h3 className="text-white font-bold text-6xl">
+                                                {item.location}
+                                            </h3>
                                         </div>
                                     </Link>
                                     <h3 className="font-bold text-3xl">
@@ -433,21 +438,21 @@ export default function Home() {
 
 
 
-                <div className="w-full pl-6 pr-6 mt-20">
-                <div className="w-full flex flex-col items-center">
-                    <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
-                        <div className="flex flex-col gap-6">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
-                                <FadeIn>Check out<br></br>All Events</FadeIn>
-                            </h2>
-                            <FadeIn>
-                                <Link href="/event" className="font-bold text-xl animated-underline">More</Link>
-                                <span className="font-bold text-xl">&nbsp;{'>'}</span>
-                            </FadeIn>
+                {/* <div className="w-full pl-6 pr-6 mt-20">
+                    <div className="w-full flex flex-col items-center">
+                        <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
+                            <div className="flex flex-col gap-6">
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                                    <FadeIn>Check out<br></br>All Events</FadeIn>
+                                </h2>
+                                <FadeIn>
+                                    <Link href="/event" className="font-bold text-xl animated-underline">More</Link>
+                                    <span className="font-bold text-xl">&nbsp;{'>'}</span>
+                                </FadeIn>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> */}
 
             </div>
 
