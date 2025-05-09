@@ -25,6 +25,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { Separator } from "@/components/ui/separator"
 
 
 
@@ -385,7 +386,7 @@ export default function Home() {
 
 
             {/* Event */}
-            <div className="bg-gray-200">
+            <div >
                 <div className="w-full pl-6 pr-6 flex flex-col items-center">
                     <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                         <FadeIn>
@@ -404,7 +405,7 @@ export default function Home() {
 
 
 
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20 pb-20">
+                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
                         {[...events.values()].filter(n => n.keys.includes("selected")).map((item) => (
                             <FadeIn key={item.title}>
@@ -455,6 +456,13 @@ export default function Home() {
                 </div> */}
 
             </div>
+
+
+
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <Separator className="max-w-7xl mt-20"/>
+            </div>
+
 
 
         </main>
