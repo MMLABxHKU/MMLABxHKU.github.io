@@ -43,13 +43,22 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-row justify-start">
+            <div className="w-full h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+                <div>
+                    <Image
+                        src="https://ik.imagekit.io/mmlab/voM1Z9cGPCU.jpg"
+                        alt="landing"
+                        fill
+                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                    />
+                </div>
+                <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
-                        <FadeIn>Research<br></br>xxx xa ewav asjvcoewa jo<br></br>dw jowd</FadeIn>
+                        <FadeIn>Research</FadeIn>
                     </h1>
                 </div>
             </div>
+            
 
 
 
