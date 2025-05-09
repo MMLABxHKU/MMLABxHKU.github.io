@@ -19,10 +19,6 @@ import { RollinggText3 } from "@/components/animation/rolling-text-3"
 
 
 
-import { news } from "@/data/news"
-
-
-
 export default function Home() {
     return (
         <main>
@@ -30,8 +26,16 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
-                <div className="w-full max-w-7xl flex flex-col gap-6">
+            <div className="w-full h-svh flex flex-row justify-center relative items-center pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+                <div>
+                    <Image
+                        src="https://ik.imagekit.io/mmlab/pW3UkiYGd4A.jpg.jpg?updatedAt=1746808149605"
+                        alt="test"
+                        fill
+                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                    />
+                </div>
+                <div className="w-full max-w-7xl flex absolute flex-col gap-6">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
                         <FadeIn>Multimedia</FadeIn>
                     </h1>
