@@ -85,30 +85,47 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
 
                 <FadeIn>
-                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
-                        <div className="flex-1/3">
-                            <AspectRatio ratio={1/1}>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
+                        <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">
+                            <div>
                                 <Image
-                                    src="/logo/jc_stem_lab.png"
-                                    alt="img"
+                                    src="https://ik.imagekit.io/mmlab/CelebA.png"
+                                    alt="CelebA"
                                     fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-mblue via-morange to-mred"
+                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
-                            </AspectRatio>
-                        </div>
+                            </div>
+                        </Link>
                         <div className="flex-2/3 flex flex-col gap-6">
-                            <h1 className="text-xl font-bold">
-                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
-                            </h1>
-                            <p>
-                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
-                            </p><p>
-                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
-                            </p><p>
-                                GO-1 exhibits exceptional capability in real-world dexterous and long-horizon tasks, achieving over 60% success rate on complex tasks and outperforming prior RDT approach by 32%. 
-                            </p><p>
-                                By open-sourcing the dataset, tools, and models, we aim to democratize access to large-scale, high-quality robot data, advancing the pursuit of scalable and general-purpose intelligence.
-                            </p>
+                            <a className="text-3xl font-bold hover:text-mred" href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">
+                                Deep Learning Face Attributes in the Wild
+                            </a>
+                            <div className="flex flex-col gap-3">
+                                <p>
+                                    <b>CelebFaces Attributes Dataset (CelebA)</b> is a large-scale face attributes dataset with more than <b>200K</b> celebrity images, each with <b>40</b> attribute annotations. The images in this dataset cover large pose variations and background clutter. CelebA has large diversities, large quantities, and rich annotations, including
+                                </p>
+                                <ul className="ml-6 space-y-3 list-outside list-disc">
+                                    <li>
+                                        <b>10,177</b> number of <b>identities</b>,
+                                    </li>
+                                    <li>
+                                        <b>202,599</b> number of <b>face images</b>, and
+                                    </li>
+                                    <li>
+                                        <b>5 landmark locations, 40 binary attributes</b> annotations per image.
+                                    </li>
+                                </ul>
+                                <p>
+                                    The dataset can be employed as the training and test sets for the following computer vision tasks: face attribute recognition, face recognition, face detection, landmark (or facial part) localization, and face editing & synthesis.
+                                </p>
+                            </div>
+                            <div className="flex justify-end">
+                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                    <span>[</span>
+                                        <Link href="/member/#ping_luo" className="animated-underline">Ping Luo</Link>
+                                    <span>]</span>
+                                </CardFooter>
+                            </div>
                         </div>
                     </div>
                 </FadeIn>
@@ -116,30 +133,36 @@ export default function Home() {
 
 
                 <FadeIn>
-                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row-reverse md:gap-20 justify-between">
-                        <div className="flex-1/3">
-                            <AspectRatio ratio={1/1}>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
+                        <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://github.com/opendrivelab/uniad" target="_blank">
+                            <div>
                                 <Image
-                                    src="/logo/jc_stem_lab.png"
-                                    alt="img"
+                                    src="https://ik.imagekit.io/mmlab/UniAD.png"
+                                    alt="UniAD"
                                     fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-mblue via-morange to-mred"
+                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
-                            </AspectRatio>
-                        </div>
+                            </div>
+                        </Link>
                         <div className="flex-2/3 flex flex-col gap-6">
-                            <h1 className="text-xl font-bold">
-                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
-                            </h1>
-                            <p>
-                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
-                            </p><p>
-                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
-                            </p><p>
-                                GO-1 exhibits exceptional capability in real-world dexterous and long-horizon tasks, achieving over 60% success rate on complex tasks and outperforming prior RDT approach by 32%. 
-                            </p><p>
-                                By open-sourcing the dataset, tools, and models, we aim to democratize access to large-scale, high-quality robot data, advancing the pursuit of scalable and general-purpose intelligence.
-                            </p>
+                            <a className="text-3xl font-bold hover:text-mred" href="https://github.com/opendrivelab/uniad" target="_blank">
+                                Planning-oriented Autonomous Driving
+                            </a>
+                            <div className="flex flex-col gap-3">
+                                <p>
+                                    🚘 <b>Planning-oriented philosophy</b>: UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.
+                                </p>
+                                <p>
+                                    🏆 <b>SOTA performance</b>: All tasks within UniAD achieve SOTA performance, especially prediction and planning (motion: 0.71m minADE, occ: 63.4% IoU, planning: 0.31% avg.Col)
+                                </p>
+                            </div>
+                            <div className="flex justify-end">
+                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                    <span>[</span>
+                                        <Link href="/member/#hongyang_li" className="animated-underline">Hongyang Li</Link>
+                                    <span>]</span>
+                                </CardFooter>
+                            </div>
                         </div>
                     </div>
                 </FadeIn>
@@ -180,12 +203,11 @@ export default function Home() {
                                                 <CardContent>
                                                     <p className="select-none">{publications[index].proceedings}</p>
                                                 </CardContent>
-                                                <div className="flex justify-between">
-                                                    <CardFooter></CardFooter>
+                                                <div className="flex justify-end">
                                                     <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                         <span>[</span>
                                                         {publications[index].pis.map((pi) => (
-                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                                         ))} 
                                                         <span>]</span>
                                                     </CardFooter>
