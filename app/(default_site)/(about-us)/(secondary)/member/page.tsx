@@ -71,7 +71,7 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
-                    <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                    <h1 className="font-bold text-6xl text-white">
                         <FadeIn>
                             All Members
                         </FadeIn>
@@ -135,7 +135,7 @@ export default function Home() {
 
                     {/* Faculty */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#faculty" className="scroll-mt-32 group flex items-center" id="faculty">
                                 Faculty
@@ -203,7 +203,7 @@ export default function Home() {
 
                     {/* Student */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#student" className="scroll-mt-32 group flex items-center" id="student">
                                 Student
@@ -269,7 +269,7 @@ export default function Home() {
 
                     {/* Alumni */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#alumni" className="scroll-mt-32 group flex items-center" id="alumni">
                                 Alumni

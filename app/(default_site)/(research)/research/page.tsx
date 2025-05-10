@@ -34,6 +34,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 import { events } from "@/data/event"
+import { publications } from "@/data/publication"
 
 
 
@@ -154,7 +155,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
-                                <FadeIn>All Works</FadeIn>
+                                <FadeIn>Explore All Works</FadeIn>
                             </h2>
                             <FadeIn>
                                 <Link href="/publication" className="font-bold text-xl text-white animated-underline">More</Link>
@@ -166,15 +167,29 @@ export default function Home() {
                                 <Carousel
                                     opts={{
                                         align: "start",
+                                        loop: true,
                                     }}
                                 >
                                     <CarouselContent>
-                                        {Array.from({ length: 5 }).map((_, index) => (
-                                        <CarouselItem key={index} className="md:basis-1/2 xl:basis-1/3">
-                                            <Card className="border-0">
-                                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                                    <span>{index + 1}</span>
+                                        {Array.from({ length: 10 }).map((_, index) => (
+                                        <CarouselItem key={index} className="md:basis-1/1 xl:basis-1/2 3xl:basis-1/3">
+                                            <Card className="border-border h-full flex flex-col justify-between">
+                                                <CardHeader>
+                                                    <CardTitle className="text-xl select-none">{publications[index].title}</CardTitle>
+                                                </CardHeader>
+                                                <CardContent>
+                                                    <p className="select-none">{publications[index].proceedings}</p>
                                                 </CardContent>
+                                                <div className="flex justify-between">
+                                                    <CardFooter></CardFooter>
+                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                        <span>[</span>
+                                                        {publications[index].pis.map((pi) => (
+                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                        ))} 
+                                                        <span>]</span>
+                                                    </CardFooter>
+                                                </div>
                                             </Card>
                                         </CarouselItem>
                                         ))}

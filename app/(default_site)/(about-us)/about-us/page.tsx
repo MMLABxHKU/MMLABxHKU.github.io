@@ -61,7 +61,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#news" className="scroll-mt-32 group flex items-center" id="news">
                                     News
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#blog" className="scroll-mt-32 group flex items-center" id="blog">
                                     Blog
@@ -231,7 +231,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#member" className="scroll-mt-32 group flex items-center" id="member">
                                     Members
@@ -314,7 +314,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
+                        <h2 className="text-6xl font-bold"> 
                             <FadeIn>
                                 <Link href="#career" className="scroll-mt-32 group flex items-center" id="career">
                                     Career

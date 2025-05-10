@@ -59,7 +59,7 @@ export default function Home() {
 
             <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                 <div className="w-full max-w-7xl flex flex-row justify-between">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold flex flex-col gap-3">
+                    <h2 className="text-6xl font-bold flex flex-col gap-3">
                         <FadeIn>
                             Explore
                         </FadeIn>
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
                 <div className="flex-3/5">
                     <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#25520d]">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#b5a774] mb-6">
+                        <h1 className="text-6xl font-bold text-[#b5a774] mb-6">
                             <FadeIn>MMLab @ HKU</FadeIn>
                         </h1>
                         <FadeIn>
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <div className="flex-3/5">
                     <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#e59c2e] mb-6">
+                        <h1 className="text-6xl font-bold text-[#e59c2e] mb-6">
                             <FadeIn>MMLab @ CUHK</FadeIn>
                         </h1>
                         <FadeIn>
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <div className="flex-3/5">
                     <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#181C62]">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#D71440] mb-6">
+                        <h1 className="text-6xl font-bold text-[#D71440] mb-6">
                             <FadeIn>MMLab @ NTU</FadeIn>
                         </h1>
                         <FadeIn>
