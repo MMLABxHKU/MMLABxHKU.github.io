@@ -46,16 +46,6 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         href: "/about-us",
         links: [
             {
-                subtitle: "News",
-                href: "/about-us#news",
-                target: "_self",
-            },
-            {
-                subtitle: "Blog",
-                href: "/about-us#blog",
-                target: "_self",
-            },
-            {
                 subtitle: "Member",
                 href: "/about-us#member",
                 target: "_self",
