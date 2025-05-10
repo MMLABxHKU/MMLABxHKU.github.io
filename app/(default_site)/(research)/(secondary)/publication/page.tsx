@@ -87,9 +87,9 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
-                    <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                    <h1 className="font-bold text-6xl text-white">
                         <FadeIn>
-                            Publications
+                            All Publications
                         </FadeIn>
                     </h1>
                 </div>

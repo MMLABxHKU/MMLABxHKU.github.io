@@ -154,7 +154,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
-                                <FadeIn>Publications</FadeIn>
+                                <FadeIn>All Works</FadeIn>
                             </h2>
                             <FadeIn>
                                 <Link href="/publication" className="font-bold text-xl text-white animated-underline">More</Link>
