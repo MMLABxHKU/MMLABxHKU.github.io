@@ -1,6 +1,6 @@
 export const open_source_categories: { category: string; years: string[]; }[] = [
     {
-        category: "Hightlight",
+        category: "Highlight",
         years: [
             "Project",
             "Dataset",
@@ -58,7 +58,7 @@ export const open_sources: {
             },
         ],
         keys :[
-            "Project", "2024", "Hightlight"
+            "Project", "2024", "Highlight"
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/deepseek-ai/Janus?style=social",
@@ -86,12 +86,12 @@ export const open_sources: {
             },
         ],
         keys :[
-            "Project", "2024", "Hightlight"
+            "Project", "2024", "Highlight"
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/FoundationVision/LlamaGen?style=social",
         img: "https://mmlabassets.github.io/open-source/LlamaGen.png",
-        id: "Autoregressive",
+        id: "LlamaGen",
     },
     {
         title: "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation",
@@ -138,7 +138,7 @@ export const open_sources: {
             },
         ],
         keys :[
-            "Project", "2023", "Hightlight"
+            "Project", "2023", "Highlight"
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/PixArt-alpha/PixArt-alpha?style=social",

@@ -329,38 +329,135 @@ export default function Home() {
             </div>
 
 
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                    <div className="w-full max-w-7xl grid gap-20 grid-cols-2 2xl:grid-cols-3">
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
-                <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
-                    {[...events.values()].filter(n => n.keys.includes("selected")).map((item) => (
-                        <FadeIn key={item.title}>
-                            <div className="flex flex-col gap-6">
-                                <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
-                                    <div>
-                                        <Image
-                                            src={item.figure}
-                                            alt={item.location}
-                                            fill
-                                            className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                        />
-                                    </div>
-                                    <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">
-                                        <h3 className="text-white font-bold text-6xl">
-                                            {item.location}
-                                        </h3>
-                                    </div>
-                                </Link>
-                                <h3 className="font-bold text-3xl">
-                                    {item.title}
-                                </h3>
-                                <span className="font-bold">
-                                    {item.date}
-                                </span>
-                            </div>
-                        </FadeIn>
-                    ))}   
+
+                        
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#Janus">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/Janus.png"
+                                        alt="Janus"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        Janus
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
 
 
 
