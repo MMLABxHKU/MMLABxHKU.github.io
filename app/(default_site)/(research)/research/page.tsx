@@ -97,9 +97,9 @@ export default function Home() {
                             </div>
                         </Link>
                         <div className="flex-2/3 flex flex-col gap-6">
-                            <a className="text-3xl font-bold hover:text-mred" href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">
+                            <Link className="text-3xl font-bold hover:text-mred" href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">
                                 Deep Learning Face Attributes in the Wild
-                            </a>
+                            </Link>
                             <div className="flex flex-col gap-3">
                                 <p>
                                     <b>CelebFaces Attributes Dataset (CelebA)</b> is a large-scale face attributes dataset with more than <b>200K</b> celebrity images, each with <b>40</b> attribute annotations. The images in this dataset cover large pose variations and background clutter. CelebA has large diversities, large quantities, and rich annotations, including
@@ -145,9 +145,9 @@ export default function Home() {
                             </div>
                         </Link>
                         <div className="flex-2/3 flex flex-col gap-6">
-                            <a className="text-3xl font-bold hover:text-mred" href="https://github.com/opendrivelab/uniad" target="_blank">
+                            <Link className="text-3xl font-bold hover:text-mred" href="https://github.com/opendrivelab/uniad" target="_blank">
                                 Planning-oriented Autonomous Driving
-                            </a>
+                            </Link>
                             <div className="flex flex-col gap-3">
                                 <p>
                                     🚘 <b>Planning-oriented philosophy</b>: UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.

@@ -21,14 +21,11 @@ import { Separator } from "@/components/ui/separator"
 
 
 
-
 import { FadeIn } from "@/components/animation/fade-in"
 
 
+
 import { pis } from "@/data/member"
-import { news } from "@/data/news"
-const selected_news = [...news.values()].filter(n => n.keys.includes("selected"))
-import { blogs } from "@/data/blog"
 
 
 
@@ -57,167 +54,27 @@ export default function Home() {
 
 
 
-            {/* News */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
-                    <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-6xl font-bold"> 
-                            <FadeIn>
-                                <Link href="#news" className="scroll-mt-32 group flex items-center" id="news">
-                                    News
-                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                        </svg>
-                                    </span> 
-                                </Link>
-                            </FadeIn>
+                <div className="w-full flex flex-col items-center mt-20">
+                    <div className="w-full max-w-7xl flex flex-col relative p-10 gap-6">
+                        <div className="absolute top-0 left-0 w-8 h-8 border-t-8 border-l-8 border-black"></div>
+                        <div className="absolute bottom-0 right-0 w-8 h-8 border-b-8 border-r-8 border-black"></div>
+                        <h2 className="text-xl font-bold">
+                            In Memoriam: Xiaoou Tang
                         </h2>
-                        <div className="flex flex-col justify-end">
-                            <FadeIn>
-                                <Link href="/news" className="animated-underline">History</Link>
-                                <span>&nbsp;{'>'}</span>
-                            </FadeIn>
-                        </div>
+                        <p>
+                            The Multimedia Laboratory (MMLab) is established by Prof. Xiaoou Tang  (24 January 1968 - 15 December 2023) in July 2001.
+                        </p>
+                        <p>
+                            Prof. Xiaoou Tang's expertise covered a wide spectrum of computer vision and image processing areas. Among the pioneering and influential examples, he significantly advanced the facial recognition system to the level that exceeded human capability when their GaussianFace system designed by him and collaborators, achieving a world-record accuracy of 98.52% on the Labeled Faces in the Wild benchmark in 2014. He is also well known for his number of excellent works on image super-resolution, image haze removal, and object detection and recognition.
+                        </p>
+                        <p>
+                            Prof. Xiaoou Tang's influence went beyond his research achievements. Throughout two decades, he guided and inspired a new generation of scholars in the fields of AI and computer vision, creating a lasting imprint for generations to come. For those fortunate enough to have known Xiaoou, his clever wit remains memorable, making the time with him both pleasant and intellectually engaging. He will be greatly missed, but his memory will serve as an enduring source of inspiration, motivating all of us to strive for better things.
+                        </p>
                     </div>
                 </div>
             </div>
 
-
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full max-w-7xl mt-10 flex flex-col lg:flex-row justify-between gap-6">
-                    <div className="w-full flex flex-col gap-6">
-                        {selected_news.slice(0,selected_news.length/2).map((item) => (
-                            <FadeIn key={item.title}>
-                                <div>
-                                    <Card className="border-0 bg-pink-800" key={item.title}>
-                                        <CardHeader>
-                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <p className="text-white">{item.detail}</p>
-                                        </CardContent>
-                                        <CardFooter className="text-white flex justify-end">
-                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                            <span>&nbsp;{'>'}</span>
-                                        </CardFooter>
-                                    </Card>
-                                </div>
-                            </FadeIn>
-                        ))}   
-                    </div>
-                    <div className="w-full flex flex-col gap-6">
-                        {selected_news.slice(selected_news.length/2,news.length).map((item) => (
-                            <FadeIn key={item.title}>
-                                <div>
-                                    <Card className="border-pink-800 bg-pink-800" key={item.title}>
-                                        <CardHeader>
-                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <p className="text-white">{item.detail}</p>
-                                        </CardContent>
-                                        <CardFooter className="text-white flex justify-end">
-                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                            <span>&nbsp;{'>'}</span>
-                                        </CardFooter>
-                                    </Card>
-                                </div>
-                            </FadeIn>
-                        ))}   
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <Separator className="max-w-7xl mt-20"/>
-            </div>
-
-
-
-            {/* Blog */}
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
-                    <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-6xl font-bold"> 
-                            <FadeIn>
-                                <Link href="#blog" className="scroll-mt-32 group flex items-center" id="blog">
-                                    Blog
-                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                        </svg>
-                                    </span> 
-                                </Link>
-                            </FadeIn>
-                        </h2>
-                        <div className="flex flex-col justify-end">
-                            <FadeIn>
-                                <Link href="/blog" className="animated-underline">Articles</Link>
-                                <span>&nbsp;{'>'}</span>
-                            </FadeIn>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <FadeIn>
-                <div className="w-full pl-6 pr-6 mt-20 flex flex-col xl:flex-row justify-between gap-10">
-                    <div className="flex-1 flex">
-                        {[...blogs.values()].filter(n => n.keys.includes("heading")).map((item) => (
-                            <Link className="w-full h-80 xl:h-full relative rounded-xl shadow-sm overflow-hidden group" href={item.link} key={item.title}>
-                                <div>
-                                    <Image
-                                        src={item.figure}
-                                        alt={item.figure}
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                                    <span className="text-white font-bold">
-                                        {item.date}
-                                    </span>
-                                    <h3 className="text-white font-bold text-3xl">
-                                        {item.title}
-                                    </h3>
-                                </div>
-                            </Link>
-                        ))}   
-                    </div>
-                    <div className="flex-1 flex flex-col justify-between gap-10">
-                        {[...blogs.values()].filter(n => n.keys.includes("secondary")).map((item) => (
-                            <Link className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href={item.link} key={item.title}>
-                                <div>
-                                    <Image
-                                        src={item.figure}
-                                        alt={item.figure}
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                                    <span className="text-white font-bold">
-                                        {item.date}
-                                    </span>
-                                    <h3 className="text-white font-bold text-3xl">
-                                        {item.title}
-                                    </h3>
-                                </div>
-                            </Link>
-                        ))}   
-                    </div>
-                </div>
-            </FadeIn>
 
 
 
@@ -229,7 +86,7 @@ export default function Home() {
 
             {/* Members */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                <div className="w-full flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-6xl font-bold"> 
                             <FadeIn>
@@ -271,7 +128,7 @@ export default function Home() {
                                     />
                                 </AspectRatio>
                             </div>
-                            <div className="flex-2/3 flex flex-col gap-6">
+                            <div className="flex-2/3 flex flex-col gap-6 scroll-mt-32" id={pi.id}>
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                                     {pi.name}
                                 </h1>
@@ -312,7 +169,7 @@ export default function Home() {
 
             {/* Career */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                <div className="w-full flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-6xl font-bold"> 
                             <FadeIn>
@@ -327,6 +184,33 @@ export default function Home() {
                                 </Link>
                             </FadeIn>
                         </h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <div className="w-full flex flex-col items-center mt-20">
+                    <div className="w-full max-w-7xl flex flex-col gap-6">
+                        <p>
+                            Positions of Postdocs, RAs, full-time/part-time PhDs, Internships, Research Scientists, <i>etc.</i>, are available.
+                            Enquiries about the duties of the posts could be sent to:
+                        </p>
+                        <ul className="ml-6 space-y-6 list-outside list-disc">
+                            <li>
+                                <Link href="mailto:pluo.lhi@gmail.com" className="animated-underline">pluo.lhi@gmail.com</Link> [ <Link  href="/about-us/#ping_luo" className="animated-underline">Ping Luo</Link> ]
+                            </li>
+                            <li>
+                                <Link href="mailto:xihuiliu@eee.hku.hk" className="animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  href="/about-us/#xihui_liu" className="animated-underline">Xihui Liu</Link> ]
+                            </li>
+                            <li>
+                                <Link href="mailto:hongyang@hku.hk" className="animated-underline">hongyang@hku.hk</Link> [ <Link  href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link> ]
+                            </li>
+                            <li>
+                                <Link href="mailto:doubledaibo@gmail.com" className="animated-underline">doubledaibo@gmail.com</Link> [ <Link  href="/about-us/#bo_dai" className="animated-underline">Bo Dai</Link> ]
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
