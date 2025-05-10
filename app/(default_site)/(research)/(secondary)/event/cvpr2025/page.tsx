@@ -51,8 +51,8 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed py-20">
-                <div className="w-full h-full max-w-7xl flex flex-col justify-center gap-10">
+            <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+                <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
@@ -71,7 +71,6 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
-
                 </div>
             </div>
 
@@ -85,7 +84,7 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#event">
                             <FadeIn>
                                 <span className="border-l-4 border-l-foreground text-sm">
                                     &nbsp;
@@ -93,11 +92,11 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <span className="text-xl font-bold">
-                                    Faculty
+                                    Event
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#student" key="student">
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#paper">
                             <FadeIn>
                                 <span className="border-l-4 border-l-foreground text-sm">
                                     &nbsp;
@@ -105,11 +104,11 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <span className="text-xl font-bold">
-                                    Student
+                                    Paper
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#alumni" key="alumni">
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#service">
                             <FadeIn>
                                 <span className="border-l-4 border-l-foreground text-sm">
                                     &nbsp;
@@ -117,7 +116,7 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <span className="text-xl font-bold">
-                                    Alumni
+                                    service
                                 </span>
                             </FadeIn>
                         </Link>
@@ -129,8 +128,8 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
 
-                    <div className="flex flex-row justify-between w-full  overflow-visible h-72">
-                        <div className="py-20 flex flex-col gap-6">
+                    <div className="flex flex-row justify-between w-full  overflow-visible h-80 gap-20">
+                        <div className="py-20 flex flex-col gap-6 flex-2/3">
                             <h1 className="font-bold text-6xl">
                                 <FadeIn>
                                     MMLab at CVPR 2025
@@ -141,26 +140,37 @@ export default function Home() {
                                     June 11 - 15 2025<br></br>Nashville, USA
                                 </FadeIn>
                             </p>
+                            <p>
+                                <FadeIn>
+                                    The <a className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</a> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
+                                </FadeIn>
+                            </p>
                         </div>
-                        <div className="flex flex-col justify-end ">
+                        <div className="hidden lg:flex flex-col justify-end ">
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
                                 width={288}
                                 height={384}
-                                className="object-cover object-center rounded-xl shadow-sm loading select-none"
+                                className="object-cover object-center shadow-sm loading select-none"
                             />
                         </div>
                     </div>
 
 
 
-                    {/* Faculty */}
+                    <div className="w-full flex flex-col items-center">
+                        <Separator className="max-w-7xl mt-20"/>
+                    </div>
+
+
+
+                    {/* event */}
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#faculty" className="scroll-mt-32 group flex items-center" id="faculty">
-                                Faculty
+                                <Link href="#event" className="scroll-mt-32 group flex items-center" id="event">
+                                    Event
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
@@ -181,7 +191,7 @@ export default function Home() {
                                                 src={pi.img}
                                                 alt={pi.name}
                                                 fill
-                                                className="h-full w-full rounded-md object-cover loading"
+                                                className="h-full w-full object-cover loading"
                                             />
                                         </AspectRatio>
                                     </div>
@@ -248,7 +258,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full object-cover loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>
@@ -314,7 +324,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full object-cover loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>
