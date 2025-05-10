@@ -15,7 +15,7 @@ function MultiTabsList({
     <TabsPrimitive.List
       data-slot="tabs-list"
       className={cn(
-        "flex flex-row gap-6 flex-wrap justify-between",
+        "grid gap-6 grid-cols-3 lg:grid-cols-4 3xl:grid-cols-5",
         className
       )}
       {...props}

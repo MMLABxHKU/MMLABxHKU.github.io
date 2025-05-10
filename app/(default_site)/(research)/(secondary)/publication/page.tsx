@@ -120,7 +120,7 @@ export default function Home() {
                                     <FadeIn>
                                         <MultiTabsList>
                                             {c.c2s.map((c2) => (
-                                                <MultiTabsTrigger value={c2} key={c2} className="w-full sm:min-w-16 sm:max-w-64">{c2}</MultiTabsTrigger>
+                                                <MultiTabsTrigger value={c2} key={c2}>{c2}</MultiTabsTrigger>
                                             ))}
                                         </MultiTabsList>
                                     </FadeIn>

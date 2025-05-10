@@ -150,7 +150,7 @@
     @apply bg-gradient-to-br from-mblue via-morange to-mred;
 }
 .gradient-eng {
-    @apply gradient-eng;
+    @apply from-morange via-mred to-mblue;
 }
 .color-text-1 {
     width: fit-content;
