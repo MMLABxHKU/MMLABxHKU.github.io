@@ -345,7 +345,7 @@ export const members: {
         ]
     },
     {
-        "name": "Chongjian GE",
+        "name": "Chongjian Ge",
         "img": "https://mmlabassets.github.io/member/chongjian_ge_c.png",
         "title": "Ph.D.",
         "pi": [
