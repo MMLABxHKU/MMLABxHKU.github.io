@@ -121,7 +121,7 @@ export default function Home() {
                             <div className="flex-1/3 md:max-w-64">
                                 <AspectRatio ratio={1/1}>
                                     <Image
-                                        src={pi.img}
+                                        src={pi.img_full}
                                         alt={pi.name}
                                         fill
                                         className="h-full w-full rounded-md object-cover loading"
