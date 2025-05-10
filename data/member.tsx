@@ -575,10 +575,6 @@ export const members: {
             "Ping Luo"
         ],
         "links": [
-            {
-                "icon": "webpage",
-                "link": "https://sme.sustech.edu.cn/index/teacher/neiye/id/35.html"
-            }
         ],
         "keys": [
             "2021"
@@ -929,7 +925,7 @@ export const members: {
     },
     {
         "name": "Jielin Li",
-        "img": "https://mmlabassets.github.io/member/jielin_li_c.jpeg",
+        "img": "https://mmlabassets.github.io/member/jielin_li_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
