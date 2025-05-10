@@ -187,33 +187,32 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full flex flex-col items-center mt-20">
-                    <div className="w-full max-w-7xl flex flex-col gap-6">
-                        <p>
-                            Positions of Postdocs, RAs, full-time/part-time PhDs, Internships, Research Scientists, <i>etc.</i>, are available.
-                            Enquiries about the duties of the posts could be sent to:
-                        </p>
-                        <ul className="ml-6 space-y-6 list-outside list-disc">
-                            <li>
-                                <Link href="mailto:pluo.lhi@gmail.com" className="animated-underline">pluo.lhi@gmail.com</Link> [ <Link  href="/about-us/#ping_luo" className="animated-underline">Ping Luo</Link> ]
-                            </li>
-                            <li>
-                                <Link href="mailto:xihuiliu@eee.hku.hk" className="animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  href="/about-us/#xihui_liu" className="animated-underline">Xihui Liu</Link> ]
-                            </li>
-                            <li>
-                                <Link href="mailto:hongyang@hku.hk" className="animated-underline">hongyang@hku.hk</Link> [ <Link  href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link> ]
-                            </li>
-                            <li>
-                                <Link href="mailto:doubledaibo@gmail.com" className="animated-underline">doubledaibo@gmail.com</Link> [ <Link  href="/about-us/#bo_dai" className="animated-underline">Bo Dai</Link> ]
-                            </li>
-                        </ul>
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <div className="w-full flex flex-col items-center mt-20">
+                        <div className="w-full max-w-7xl flex flex-col gap-6">
+                            <p>
+                                Positions of Postdocs, RAs, full-time/part-time PhDs, Internships, Research Scientists, <i>etc.</i>, are available.
+                                Enquiries about the duties of the posts could be sent to:
+                            </p>
+                            <ul className="ml-6 space-y-6 list-outside list-disc">
+                                <li>
+                                    <Link href="mailto:pluo.lhi@gmail.com" className="text-mred animated-underline">pluo.lhi@gmail.com</Link> [ <Link  href="/about-us/#ping_luo" className="text-mred animated-underline">Ping Luo</Link> ]
+                                </li>
+                                <li>
+                                    <Link href="mailto:xihuiliu@eee.hku.hk" className="text-mred animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  href="/about-us/#xihui_liu" className="text-mred animated-underline">Xihui Liu</Link> ]
+                                </li>
+                                <li>
+                                    <Link href="mailto:hongyang@hku.hk" className="text-mred animated-underline">hongyang@hku.hk</Link> [ <Link  href="/about-us/#hongyang_li" className="text-mred animated-underline">Hongyang Li</Link> ]
+                                </li>
+                                <li>
+                                    <Link href="mailto:doubledaibo@gmail.com" className="text-mred animated-underline">doubledaibo@gmail.com</Link> [ <Link  href="/about-us/#bo_dai" className="text-mred animated-underline">Bo Dai</Link> ]
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeIn>
 
 
 
