@@ -163,7 +163,7 @@ export default function Home() {
                                             />
                                         </AspectRatio>
                                     </div>
-                                    <div className="flex-2/3 flex flex-col gap-6">
+                                    <div className="flex-2/3 flex flex-col gap-6 scroll-mt-32" id={pi.id}>
                                         <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                                             {pi.name}
                                         </h3>
