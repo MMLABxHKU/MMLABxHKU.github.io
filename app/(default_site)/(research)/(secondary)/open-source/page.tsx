@@ -142,7 +142,7 @@ export default function Home() {
                                                             </div>
                                                             <div className="flex-2/3 flex flex-col gap-3 justify-between">
                                                                 <CardHeader>
-                                                                    <CardTitle className="text-xl">{open_source.title}</CardTitle>
+                                                                    <CardTitle className="text-xl scroll-mt-32" id={open_source.id}>{open_source.title}</CardTitle>
                                                                     <CardDescription>{open_source.description}</CardDescription>
                                                                 </CardHeader>
                                                                 <div className="flex flex-col gap-3">

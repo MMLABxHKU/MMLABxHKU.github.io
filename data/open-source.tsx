@@ -39,6 +39,7 @@ export const open_sources: {
     pis: string[];
     githubstars: string;
     img: string;
+    id: string;
 }[] = [
     {
         title: "Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation",
@@ -62,6 +63,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/deepseek-ai/Janus?style=social",
         img: "https://mmlabassets.github.io/open-source/Janus.png",
+        id: "Janus",
     },
     {
         title: "Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation",
@@ -89,6 +91,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/FoundationVision/LlamaGen?style=social",
         img: "https://mmlabassets.github.io/open-source/LlamaGen.png",
+        id: "Autoregressive",
     },
     {
         title: "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation",
@@ -116,6 +119,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/TencentARC/MotionCtrl?style=social",
         img: "https://mmlabassets.github.io/open-source/MotionCtrl.png",
+        id: "MotionCtrl",
     },
     {
         title: "PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis",
@@ -139,6 +143,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/PixArt-alpha/PixArt-alpha?style=social",
         img: "https://mmlabassets.github.io/open-source/PixartAlpha.png",
+        id: "PixArt",
     },
     {
         title: "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
@@ -162,6 +167,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenGVLab/OmniQuant?style=social",
         img: "https://mmlabassets.github.io/open-source/OmniQuant.png",
+        id: "OmniQuant",
     },
     {
         title: "LVLM-eHub: A Comprehensive Evaluation Benchmark for Large Vision-Language Models",
@@ -185,6 +191,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenGVLab/Multi-Modality-Arena?style=social",
         img: "https://mmlabassets.github.io/open-source/LVLM-eHub.png",
+        id: "LVLM",
     },
     {
         title: "EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought",
@@ -212,6 +219,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/EmbodiedGPT/EmbodiedGPT_Pytorch?style=social",
         img: "https://mmlabassets.github.io/open-source/EmbodiedGPT.png",
+        id: "EmbodiedGPT",
     },
     {
         title: "DiffusionDet: Diffusion Model for Object Detection",
@@ -235,6 +243,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/ShoufaChen/DiffusionDet?style=social",
         img: "https://mmlabassets.github.io/open-source/DiffusionDet.png",
+        id: "DiffusionDet",
     },
     {
         title: "AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation",
@@ -262,6 +271,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "",
         img: "https://mmlabassets.github.io/open-source/AMOS.png",
+        id: "AMOS",
     },
     {
         title: "AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition",
@@ -289,6 +299,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/ShoufaChen/AdaptFormer?style=social",
         img: "https://mmlabassets.github.io/open-source/AdaptFormer.png",
+        id: "AdaptFormer",
     },
     {
         title: "SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers",
@@ -316,6 +327,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/NVlabs/SegFormer?style=social",
         img: "https://mmlabassets.github.io/open-source/SegFormer.png",
+        id: "SegFormer",
     },
     {
         title: "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
@@ -339,6 +351,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/whai362/PVT?style=social",
         img: "https://mmlabassets.github.io/open-source/PVT.png",
+        id: "Pyramid",
     },
     {
         title: "Sparse R-CNN: End-to-End Object Detection with Learnable Proposals",
@@ -362,5 +375,7 @@ export const open_sources: {
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/PeizeSun/SparseR-CNN?style=social",
         img: "https://mmlabassets.github.io/open-source/SparseRCNN.jpeg",
+        id: "Sparse",
     },
+    
 ]
