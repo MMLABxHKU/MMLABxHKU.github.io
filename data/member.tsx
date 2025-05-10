@@ -908,7 +908,7 @@ export const members: {
     },
     {
         "name": "Yatai Ji",
-        "img": "https://mmlabassets.github.io/member/yatai_ji_c.jpeg",
+        "img": "https://mmlabassets.github.io/member/yatai_ji_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -1099,7 +1099,7 @@ export const members: {
     },
     {
         "name": "Junsong Chen",
-        "img": "https://mmlabassets.github.io/member/junsong_chen_c.jpeg",
+        "img": "https://mmlabassets.github.io/member/junsong_chen_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
