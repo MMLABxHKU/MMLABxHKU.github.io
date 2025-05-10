@@ -122,7 +122,7 @@ export default function Home() {
                             <div className="flex justify-end">
                                 <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                     <span>[</span>
-                                        <Link href="/about-us/#ping_luo" className="animated-underline">Ping Luo</Link>
+                                        <Link href="/member/#ping_luo" className="animated-underline">Ping Luo</Link>
                                     <span>]</span>
                                 </CardFooter>
                             </div>
@@ -159,7 +159,7 @@ export default function Home() {
                             <div className="flex justify-end">
                                 <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                     <span>[</span>
-                                        <Link href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link>
+                                        <Link href="/member/#hongyang_li" className="animated-underline">Hongyang Li</Link>
                                     <span>]</span>
                                 </CardFooter>
                             </div>
@@ -207,7 +207,7 @@ export default function Home() {
                                                         <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                             <span>[</span>
                                                             {publications[index].pis.map((pi) => (
-                                                                <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                                             ))} 
                                                             <span>]</span>
                                                         </CardFooter>
