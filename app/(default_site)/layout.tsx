@@ -72,11 +72,6 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         href: "/research",
         links: [
             {
-                subtitle: "Topic",
-                href: "/research#topic",
-                target: "_self",
-            },
-            {
                 subtitle: "Publication",
                 href: "/research#publication",
                 target: "_self",
