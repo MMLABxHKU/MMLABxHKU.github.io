@@ -21,7 +21,7 @@ export const events: {
 }[] = [
     {
         title: "CVPR 2025",
-        date: "2024.05",
+        date: "2025.06",
         location: "Nashville",
         figure: "https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg",
         link:"/evnet/cvpr2025",
