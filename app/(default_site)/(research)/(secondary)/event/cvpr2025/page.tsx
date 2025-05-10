@@ -83,7 +83,7 @@ export default function Home() {
 
 
                 {/* navigator */}
-                <div className="w-48 hidden 2xl:block">
+                <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
                             <FadeIn>
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
 
-                    <div className="flex flex-row justify-between w-full">
+                    <div className="flex flex-row justify-between w-full  overflow-visible h-72">
                         <div className="py-20 flex flex-col gap-6">
                             <h1 className="font-bold text-6xl">
                                 <FadeIn>
@@ -138,17 +138,17 @@ export default function Home() {
                             </h1>
                             <p className="font-bold">
                                 <FadeIn>
-                                    June 11 - 15 2025 • Nashville, USA
+                                    June 11 - 15 2025<br></br>Nashville, USA
                                 </FadeIn>
                             </p>
                         </div>
-                        <div className="flex flex-col justify-end">
+                        <div className="flex flex-col justify-end ">
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
-                                width={256}
-                                height={96}
-                                className="  object-cover object-center rounded-xl shadow-sm loading select-none"
+                                width={288}
+                                height={384}
+                                className="object-cover object-center rounded-xl shadow-sm loading select-none"
                             />
                         </div>
                     </div>
@@ -359,7 +359,7 @@ export default function Home() {
 
 
 
-                <div className="w-48 hidden 2xl:block"></div>
+                <div className="w-48 hidden 3xl:block"></div>
 
 
 

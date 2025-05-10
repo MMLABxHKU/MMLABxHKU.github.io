@@ -86,7 +86,7 @@ export default function Home() {
 
 
                 {/* navigator */}
-                <div className="w-48 hidden 2xl:block">
+                <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
                             <FadeIn>
@@ -337,7 +337,7 @@ export default function Home() {
 
 
 
-                <div className="w-48 hidden 2xl:block"></div>
+                <div className="w-48 hidden 3xl:block"></div>
 
 
 
