@@ -236,7 +236,7 @@ export default function Home() {
                                             Supervised by: 
                                         </span>
                                         {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                         ))} 
                                     </div>
                                     <div className="flex gap-6">
@@ -302,7 +302,7 @@ export default function Home() {
                                             Supervised by: 
                                         </span>
                                         {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                         ))} 
                                     </div>
                                     <div className="flex gap-6">
