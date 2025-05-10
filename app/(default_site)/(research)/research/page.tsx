@@ -153,7 +153,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
-                        <div className="flex flex-col gap-6">
+                        <div className="w-full flex flex-col gap-6">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
                                 <FadeIn>Explore All Works</FadeIn>
                             </h2>
@@ -162,7 +162,7 @@ export default function Home() {
                                 <span className="font-bold text-xl text-white">&nbsp;{'>'}</span>
                             </FadeIn>
                         </div>
-                        <div className="w-full pl-12 pr-12">
+                        <div className="xl:w-3/4 pl-12 pr-12">
                             <FadeIn>
                                 <Carousel
                                     opts={{
@@ -172,7 +172,7 @@ export default function Home() {
                                 >
                                     <CarouselContent>
                                         {Array.from({ length: 10 }).map((_, index) => (
-                                        <CarouselItem key={index} className="md:basis-1/1 xl:basis-1/2 3xl:basis-1/3">
+                                        <CarouselItem key={index} className="md:basis-1/1 xl:basis-1/2">
                                             <Card className="border-border h-full flex flex-col justify-between">
                                                 <CardHeader>
                                                     <CardTitle className="text-xl select-none">{publications[index].title}</CardTitle>
@@ -182,7 +182,7 @@ export default function Home() {
                                                 </CardContent>
                                                 <div className="flex justify-between">
                                                     <CardFooter></CardFooter>
-                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                         <span>[</span>
                                                         {publications[index].pis.map((pi) => (
                                                             <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
