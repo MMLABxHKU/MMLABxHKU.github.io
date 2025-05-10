@@ -146,8 +146,9 @@ export default function Home() {
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
-                                fill
-                                className="object-cover object-center max-h-96 max-w-96  rounded-xl shadow-sm loading select-none"
+                                width={256}
+                                height={96}
+                                className="  object-cover object-center rounded-xl shadow-sm loading select-none"
                             />
                         </div>
                     </div>
