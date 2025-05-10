@@ -33,7 +33,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { pis, members } from "@/data/member"
+import { publications } from "@/data/publication"
 const paths: { path: string; url: string; }[] = [
     {
         path: "MMLab",
@@ -91,7 +91,7 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#event">
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#competition">
                             <FadeIn>
                                 <span className="border-l-4 border-l-foreground text-sm">
                                     &nbsp;
@@ -99,7 +99,31 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <span className="text-xl font-bold">
-                                    Event
+                                    Competition
+                                </span>
+                            </FadeIn>
+                        </Link>
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#workshop">
+                            <FadeIn>
+                                <span className="border-l-4 border-l-foreground text-sm">
+                                    &nbsp;
+                                </span>
+                            </FadeIn>
+                            <FadeIn>
+                                <span className="text-xl font-bold">
+                                    Workshop
+                                </span>
+                            </FadeIn>
+                        </Link>
+                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#tutorial">
+                            <FadeIn>
+                                <span className="border-l-4 border-l-foreground text-sm">
+                                    &nbsp;
+                                </span>
+                            </FadeIn>
+                            <FadeIn>
+                                <span className="text-xl font-bold">
+                                    Tutorial
                                 </span>
                             </FadeIn>
                         </Link>
@@ -123,7 +147,7 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <span className="text-xl font-bold">
-                                    service
+                                    Service
                                 </span>
                             </FadeIn>
                         </Link>
@@ -172,12 +196,12 @@ export default function Home() {
 
 
 
-                    {/* event */}
+                    {/* compeititon */}
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#event" className="scroll-mt-32 group flex items-center" id="event">
-                                    Event
+                                <Link href="#compeititon" className="scroll-mt-32 group flex items-center" id="compeititon">
+                                    Competition
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
@@ -189,16 +213,158 @@ export default function Home() {
                         </h2>
                     </div>
                     <FadeIn>
-                        <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+                        <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
                             <Link href="https://opendrivelab.com/challenge2025/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
-                                        <CardDescription>Competition</CardDescription>
                                         <CardTitle className="text-xl">Autonomous Grand Challenge 2025</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
                                         <p>
                                             Organizer: <b>Hongyang Li</b>, <b>Yihang Qiu</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                        </div>
+                    </FadeIn>
+
+
+
+
+                    <div className="w-full flex flex-col items-center">
+                        <Separator className="max-w-7xl mt-20"/>
+                    </div>
+
+
+
+                    {/* workshop */}
+                    <div className="w-full flex flex-col items-center">
+                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                            <FadeIn>
+                                <Link href="#workshop" className="scroll-mt-32 group flex items-center" id="workshop">
+                                    Workshop
+                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                        </svg>
+                                    </span> 
+                                </Link>
+                            </FadeIn>
+                        </h2>
+                    </div>
+                    <FadeIn>
+                        <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
+                            <Link href="https://coop-intelligence.github.io/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 11 | location xxx</CardDescription>
+                                        <CardTitle className="text-xl">Multi-Agent Embodied Intelligent Systems Meet Generative-AI Era: Opportunities, Challenges and Futures</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Ping Luo</b>, <b>Haibao Yu</b>, <b>Yao Mu</b>, <b>Li Chen</b>
+                                            <br></br>
+                                            Speaker: <b>Hongyang Li</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="https://opendrivelab.com/cvpr2025/workshop/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 11</CardDescription>
+                                        <CardTitle className="text-xl">Embodied Intelligence for Autonomous Systems on the Horizon</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Hongyang Li</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="https://cvpr2025.wad.vision/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 11</CardDescription>
+                                        <CardTitle className="text-xl">Workshop on Autonomous Driving</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Speaker: <b>Hongyang Li</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="https://wdfm-ad.github.io/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 12</CardDescription>
+                                        <CardTitle className="text-xl">Distillation of Foundation Models for Autonomous Driving</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Speaker: <b>Hongyang Li</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                        </div>
+                    </FadeIn>
+
+
+                    
+
+
+                    <div className="w-full flex flex-col items-center">
+                        <Separator className="max-w-7xl mt-20"/>
+                    </div>
+
+
+
+                    {/* tutorial */}
+                    <div className="w-full flex flex-col items-center">
+                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                            <FadeIn>
+                                <Link href="#tutorial" className="scroll-mt-32 group flex items-center" id="tutorial">
+                                    Tutorial
+                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                        </svg>
+                                    </span> 
+                                </Link>
+                            </FadeIn>
+                        </h2>
+                    </div>
+                    <FadeIn>
+                        <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
+                            <Link href="https://opendrivelab.com/cvpr2025/tutorial/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 12</CardDescription>
+                                        <CardTitle className="text-xl">Robotics 101: An Odyssey from A Vision Perspective</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Hongyang Li</b>
                                         </p>
                                     </CardContent>
                                     <div className="flex justify-end select-none group-hover:text-mred">
@@ -216,12 +382,12 @@ export default function Home() {
 
 
 
-                    {/* Student */}
+                    {/* paper */}
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#student" className="scroll-mt-32 group flex items-center" id="student">
-                                Student
+                                <Link href="#paper" className="scroll-mt-32 group flex items-center" id="paper">
+                                Paper
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
@@ -233,44 +399,31 @@ export default function Home() {
                         </h2>
                     </div>
                     <FadeIn>
-                        <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
-                            {[...members.values()].filter(member => !member.keys.includes("Alumni")).map((member) => (
-                                <div className="flex flex-col gap-3" key={member.name}>
-                                    <AspectRatio ratio={1/1}>
-                                        <Image
-                                            src={member.img}
-                                            alt={member.name}
-                                            fill
-                                            className="h-full w-full object-cover loading"
-                                        />
-                                    </AspectRatio>
-                                    <span className="font-bold text-xl">{member.name}</span>
-                                    <span>{member.title}</span>
-                                    <div className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
-                                        <span>
-                                            Supervised by: 
-                                        </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
-                                        ))} 
-                                    </div>
-                                    <div className="flex gap-6">
-                                        {member.links.map((link) => (
-                                            <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
-                                                <AspectRatio ratio={1/1}>
-                                                    <Image
-                                                        src={"/icon/" + link.icon + ".svg"}
-                                                        alt={link.link}
-                                                        fill
-                                                        className="group-hover:scale-125 transition duration-200"
-                                                    />
-                                                </AspectRatio>
-                                            </Link>
-                                        ))}
-                                    </div>
-
-                                </div>
-                            ))}
+                        <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
+                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR")).map(( publication) => (
+                                <FadeIn key={publication.title}>
+                                    <Card className="border-border rounded-none">
+                                        <CardHeader>
+                                            <CardTitle className="text-xl">{publication.title}</CardTitle>
+                                            <CardDescription>{publication.authors}</CardDescription>
+                                        </CardHeader>
+                                        <div className="flex justify-between">
+                                            <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                {publication.links.map((link) => (
+                                                    <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
+                                                ))} 
+                                            </CardFooter>
+                                            <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                <span>[</span>
+                                                {publication.pis.map((pi) => (
+                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                ))} 
+                                                <span>]</span>
+                                            </CardFooter>
+                                        </div>
+                                    </Card>
+                                </FadeIn>
+                            ))}   
                         </div>
                     </FadeIn>
 
@@ -282,12 +435,12 @@ export default function Home() {
 
 
 
-                    {/* Alumni */}
+                    {/* service */}
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#alumni" className="scroll-mt-32 group flex items-center" id="alumni">
-                                Alumni
+                                <Link href="#service" className="scroll-mt-32 group flex items-center" id="service">
+                                    Service
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
@@ -298,47 +451,20 @@ export default function Home() {
                             </FadeIn>
                         </h2>
                     </div>
-                    <FadeIn>
-                        <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
-                            {[...members.values()].filter(member => member.keys.includes("Alumni")).map((member) => (
-                                <div className="flex flex-col gap-3" key={member.name}>
-                                    <AspectRatio ratio={1/1}>
-                                        <Image
-                                            src={member.img}
-                                            alt={member.name}
-                                            fill
-                                            className="h-full w-full object-cover loading"
-                                        />
-                                    </AspectRatio>
-                                    <span className="font-bold text-xl">{member.name}</span>
-                                    <span>{member.title}</span>
-                                    <div className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
-                                        <span>
-                                            Supervised by: 
-                                        </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
-                                        ))} 
-                                    </div>
-                                    <div className="flex gap-6">
-                                        {member.links.map((link) => (
-                                            <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
-                                                <AspectRatio ratio={1/1}>
-                                                    <Image
-                                                        src={"/icon/" + link.icon + ".svg"}
-                                                        alt={link.link}
-                                                        fill
-                                                        className="group-hover:scale-125 transition duration-200"
-                                                    />
-                                                </AspectRatio>
-                                            </Link>
-                                        ))}
-                                    </div>
-
-                                </div>
-                            ))}
-                        </div>
-                    </FadeIn>
+                    <div className="mt-20">
+                        <p>
+                            Many team members make their contribution to CVPR 2024, altogether we are building a more professional community to shape the future of AI. We sincerely thank all for their service:
+                        </p>
+                        <ul className="mt-6 ml-6 space-y-6 list-outside list-disc">
+                            <li>
+                                <b>Area Chair</b>: Hongyang Li
+                            </li>
+                            <li>
+                                <b>Reviewer</b>: Li Chen, Chonghao Sima
+                            </li>
+                        </ul>
+                    </div>
+                    
 
 
 
