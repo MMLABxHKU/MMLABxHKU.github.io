@@ -195,25 +195,25 @@ export default function Home() {
                                 >
                                     <CarouselContent>
                                         {Array.from({ length: 10 }).map((_, index) => (
-                                        <CarouselItem key={index} className="md:basis-1/1 xl:basis-1/2">
-                                            <Card className="border-border h-full flex flex-col justify-between">
-                                                <CardHeader>
-                                                    <CardTitle className="text-xl select-none">{publications[index].title}</CardTitle>
-                                                </CardHeader>
-                                                <CardContent>
-                                                    <p className="select-none">{publications[index].proceedings}</p>
-                                                </CardContent>
-                                                <div className="flex justify-end">
-                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
-                                                        <span>[</span>
-                                                        {publications[index].pis.map((pi) => (
-                                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
-                                                        ))} 
-                                                        <span>]</span>
-                                                    </CardFooter>
-                                                </div>
-                                            </Card>
-                                        </CarouselItem>
+                                            <CarouselItem key={index} className="md:basis-1/1 xl:basis-1/2 max-h-64">
+                                                <Card className="border-border h-full flex flex-col justify-between">
+                                                    <CardHeader>
+                                                        <CardTitle className="text-xl select-none">{publications[index].title}</CardTitle>
+                                                    </CardHeader>
+                                                    <CardContent>
+                                                        <p className="select-none">{publications[index].proceedings}</p>
+                                                    </CardContent>
+                                                    <div className="flex justify-end">
+                                                        <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                                            <span>[</span>
+                                                            {publications[index].pis.map((pi) => (
+                                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                                            ))} 
+                                                            <span>]</span>
+                                                        </CardFooter>
+                                                    </div>
+                                                </Card>
+                                            </CarouselItem>
                                         ))}
                                     </CarouselContent>
                                     <CarouselPrevious className="border-0" />
@@ -247,7 +247,7 @@ export default function Home() {
 
             <FadeIn>
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
-                    <div className="w-full max-w-7xl grid gap-20 grid-cols-2 2xl:grid-cols-3">
+                    <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
 
 
                         
