@@ -52,7 +52,7 @@ const headers: { title: string; href: string; }[] = [
         href: "/research",
     },
     {
-        title: "Join Us",
+        title: "Join",
         href: "/about-us#career",
     },
 ]
