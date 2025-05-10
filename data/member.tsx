@@ -913,7 +913,7 @@ export const members: {
     {
         "name": "Yatai Ji",
         "img": "https://mmlabassets.github.io/member/yatai_ji_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1092,7 +1092,7 @@ export const members: {
     {
         "name": "Haotian Liang",
         "img": "https://mmlabassets.github.io/member/haotian_liang_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1104,7 +1104,7 @@ export const members: {
     {
         "name": "Junsong Chen",
         "img": "https://mmlabassets.github.io/member/junsong_chen_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1121,7 +1121,7 @@ export const members: {
     {
         "name": "Kaixuan Wang",
         "img": "https://mmlabassets.github.io/member/kaixuan_wang_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1133,7 +1133,7 @@ export const members: {
     {
         "name": "Lingxiao Du",
         "img": "https://mmlabassets.github.io/member/lingxiao_du_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1145,7 +1145,7 @@ export const members: {
     {
         "name": "Lirui Zhao",
         "img": "https://mmlabassets.github.io/member/lirui_zhao_c.jpg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1162,7 +1162,7 @@ export const members: {
     {
         "name": "Liuao Pei",
         "img": "https://mmlabassets.github.io/member/liuao_pei_c.jpeg",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
@@ -1179,7 +1179,7 @@ export const members: {
     {
         "name": "Qingquan Lin",
         "img": "https://mmlabassets.github.io/member/qingquan_lin_c.png",
-        "title": "Ph.D. Candiate",
+        "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
         ],
