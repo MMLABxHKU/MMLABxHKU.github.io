@@ -58,6 +58,7 @@
 - pi 可以为多个
 - img 处理见```Image```，做好命名不要重复
 - 对于明星project/dataset，可以单独收集信息，到时候再根据信息排版在```/research```
+- id 用项目缩写
 ## publication
 - 定义好topic
 - keys 包含 (任意数量topic) and 年份，and 可以帮助排序的
