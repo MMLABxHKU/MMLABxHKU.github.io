@@ -159,7 +159,7 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
 
-                    <div className="flex flex-row justify-between w-full  overflow-visible h-80 gap-20">
+                    <div className="flex flex-row justify-between w-full  overflow-visible h-[416px] gap-20">
                         <div className="py-20 flex flex-col gap-6 flex-2/3">
                             <h1 className="font-bold text-6xl">
                                 <FadeIn>
@@ -176,12 +176,17 @@ export default function Home() {
                                     The <a className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</a> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
                                 </FadeIn>
                             </p>
+                            <p>
+                                <FadeIn>
+                                    Many of the greatest ideas come from a diverse mix of minds, backgrounds, and experiences. We provide equal opportunities to all participants without regard to nationality, affiliation, race, religion, color, age, disability, or any other restriction. We believe diversity drives innovation. When we say we welcome participation from everyone, we mean everyone.
+                                </FadeIn>
+                            </p>
                         </div>
                         <div className="hidden lg:flex flex-col justify-end ">
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
-                                width={288}
+                                width={352}
                                 height={384}
                                 className="object-cover object-center shadow-sm loading select-none"
                             />
