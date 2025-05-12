@@ -764,8 +764,8 @@ export const members: {
         "img": "https://mmlabassets.github.io/member/chonghao_sima_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
-            "Hongyang Li",
-            "Ping Luo"
+            "Ping Luo",
+            "Hongyang Li",   
         ],
         "links": [
             {
@@ -840,8 +840,8 @@ export const members: {
         "img": "https://mmlabassets.github.io/member/li_chen_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
+            "Ping Luo",
             "Hongyang Li",
-            "Ping Luo"
         ],
         "links": [
             {
