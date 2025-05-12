@@ -62,7 +62,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/deepseek-ai/Janus?style=social",
-        img: "https://mmlabassets.github.io/open-source/Janus.png",
+        img: "https://mmlabassets.github.io/open-source/Janus.jpg",
         id: "Janus",
     },
     {
@@ -90,7 +90,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/FoundationVision/LlamaGen?style=social",
-        img: "https://mmlabassets.github.io/open-source/LlamaGen.png",
+        img: "https://mmlabassets.github.io/open-source/LlamaGen.jpg",
         id: "LlamaGen",
     },
     {
@@ -118,7 +118,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/TencentARC/MotionCtrl?style=social",
-        img: "https://mmlabassets.github.io/open-source/MotionCtrl.png",
+        img: "https://mmlabassets.github.io/open-source/MotionCtrl.jpg",
         id: "MotionCtrl",
     },
     {
@@ -142,7 +142,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/PixArt-alpha/PixArt-alpha?style=social",
-        img: "https://mmlabassets.github.io/open-source/PixartAlpha.png",
+        img: "https://mmlabassets.github.io/open-source/PixartAlpha.jpg",
         id: "PixArt",
     },
     {
@@ -166,7 +166,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenGVLab/OmniQuant?style=social",
-        img: "https://mmlabassets.github.io/open-source/OmniQuant.png",
+        img: "https://mmlabassets.github.io/open-source/OmniQuant.jpg",
         id: "OmniQuant",
     },
     {
@@ -190,7 +190,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenGVLab/Multi-Modality-Arena?style=social",
-        img: "https://mmlabassets.github.io/open-source/LVLM-eHub.png",
+        img: "https://mmlabassets.github.io/open-source/LVLM-eHub.jpg",
         id: "LVLM",
     },
     {
@@ -218,7 +218,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/EmbodiedGPT/EmbodiedGPT_Pytorch?style=social",
-        img: "https://mmlabassets.github.io/open-source/EmbodiedGPT.png",
+        img: "https://mmlabassets.github.io/open-source/EmbodiedGPT.jpg",
         id: "EmbodiedGPT",
     },
     {
@@ -242,7 +242,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/ShoufaChen/DiffusionDet?style=social",
-        img: "https://mmlabassets.github.io/open-source/DiffusionDet.png",
+        img: "https://mmlabassets.github.io/open-source/DiffusionDet.jpg",
         id: "DiffusionDet",
     },
     {
@@ -270,7 +270,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "",
-        img: "https://mmlabassets.github.io/open-source/AMOS.png",
+        img: "https://mmlabassets.github.io/open-source/AMOS.jpg",
         id: "AMOS",
     },
     {
@@ -298,7 +298,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/ShoufaChen/AdaptFormer?style=social",
-        img: "https://mmlabassets.github.io/open-source/AdaptFormer.png",
+        img: "https://mmlabassets.github.io/open-source/AdaptFormer.jpg",
         id: "AdaptFormer",
     },
     {
@@ -326,7 +326,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/NVlabs/SegFormer?style=social",
-        img: "https://mmlabassets.github.io/open-source/SegFormer.png",
+        img: "https://mmlabassets.github.io/open-source/SegFormer.jpg",
         id: "SegFormer",
     },
     {
@@ -350,7 +350,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/whai362/PVT?style=social",
-        img: "https://mmlabassets.github.io/open-source/PVT.png",
+        img: "https://mmlabassets.github.io/open-source/PVT.jpg",
         id: "Pyramid",
     },
     {
@@ -374,7 +374,7 @@ export const open_sources: {
         ],
         pis: ["Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/PeizeSun/SparseR-CNN?style=social",
-        img: "https://mmlabassets.github.io/open-source/SparseRCNN.jpeg",
+        img: "https://mmlabassets.github.io/open-source/SparseRCNN.jpg",
         id: "Sparse",
     },
     
