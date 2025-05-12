@@ -767,7 +767,24 @@ export const members: {
             "Hongyang Li",
             "Ping Luo"
         ],
-        "links": [],
+        "links": [
+            {
+                "icon": "scholar",
+                "link": "https://scholar.google.com/citations?user=dgYJ6esAAAAJ"
+            },
+            {
+                "icon": "email",
+                "link": "u3010296@connect.hku.hk"
+            },
+            {
+                "icon": "github",
+                "link": "https://github.com/ChonghaoSima"
+            },
+            {
+                "icon": "twitter",
+                "link": "https://twitter.com/smch_1127"
+            }
+        ],
         "keys": [
             "2023"
         ]
@@ -830,6 +847,22 @@ export const members: {
             {
                 "icon": "webpage",
                 "link": "https://ilnehc.github.io/"
+            },
+            {
+                "icon": "scholar",
+                "link": "https://scholar.google.com/citations?user=ulZxvY0AAAAJ"
+            },
+            {
+                "icon": "email",
+                "link": "ilnehc@connect.hku.hk"
+            },
+            {
+                "icon": "github",
+                "link": "https://github.com/ilnehc"
+            },
+            {
+                "icon": "twitter",
+                "link": "https://twitter.com/ilnehc"
             }
         ],
         "keys": [
@@ -1215,16 +1248,48 @@ export const members: {
         "title": "Ph.D. Candidate",
         "pi": [
             "Hongyang Li",
-            "Ping Luo"
         ],
         "links": [
             {
                 "icon": "webpage",
                 "link": "https://lzpyx.github.io/"
+            },
+            {
+                "icon": "email",
+                "link": "yixuanpan@connect.hku.hk"
+            },
+            {
+                "icon": "github",
+                "link": "https://github.com/lzpyx"
             }
         ],
         "keys": [
             "2025"
         ]
-    }
+    },
+    {
+        "name": "Zhuoheng Li",
+        "img": "https://mmlabassets.github.io/member/zhuoheng_li_c.jpg",
+        "title": "Ph.D. Candidate",
+        "pi": [
+            "Hongyang Li",
+        ],
+        "links": [
+            {
+                "icon": "email",
+                "link": "zhuohengli@connect.hku.hk"
+            },
+            {
+                "icon": "github",
+                "link": "https://github.com/StarCycle/StarCycle"
+            },
+            {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/lizhuoheng/"
+            },
+        ],
+        "keys": [
+            "2025"
+        ]
+    },
 ]
