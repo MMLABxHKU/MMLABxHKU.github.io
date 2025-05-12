@@ -39,7 +39,7 @@ export const pis: {
     {
         name: "Xihui Liu",
         id: "xihui_liu",
-        img: "https://mmlabassets.github.io/member/xihui_liu_c.png",
+        img: "https://mmlabassets.github.io/member/xihui_liu_c.jpg",
         img_full: "https://ik.imagekit.io/mmlab/xihui_liu.jpg",
         title: "Assistant Professor",
         bio: "I am an Assistant Professor at the Department of Electrical and Electronic Engineering and Institute of Data Science (IDS), The University of Hong Kong. Before joining HKU, I was a postdoc Scholar at EECS Department and BAIR at UC Berkeley, advised by Prof. Trevor Darrell. I obtained my Ph.D. degree from Multimedia Lab (MMLab), Chinese University of Hong Kong, supervised by Prof. Xiaogang Wang and Prof. Hongsheng Li. I received bachelor's degree in Electronic Engineering in Tsinghua University.",
@@ -107,7 +107,7 @@ export const pis: {
     {
         name: "Bo Dai",
         id: "bo_dai",
-        img: "https://mmlabassets.github.io/member/bo_dai_c.png",
+        img: "https://mmlabassets.github.io/member/bo_dai_c.jpg",
         img_full: "https://ik.imagekit.io/mmlab/bo_dai.jpg",
         title: "Assistant Professor",
         bio: "Dr. Bo Dai is a scientist with Shanghai AI Laboratory, leading a research group on Content Generation and Digitization. Prior to joining Shanghai AI Lab, he worked as a Research Assistant Professor with S-Lab, Nanyang Technological University, Singapore. He was a Postdoctoral Research Fellow in Multimedia Laboratory (MMLab), CUHK. He received his Ph.D. (2014-2018) from Multimedia Laboratory (MMLab) at CUHK, advised by Prof.Dahua Lin. He obtained his B.Eng. (2010-2014) from ACM class of SJTU.",
@@ -161,7 +161,7 @@ export const members: {
     },
     {
         "name": "Nenglun Chen",
-        "img": "https://mmlabassets.github.io/member/nenglun_chen_c.png",
+        "img": "https://mmlabassets.github.io/member/nenglun_chen_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -232,7 +232,7 @@ export const members: {
     },
     {
         "name": "Enze Xie",
-        "img": "https://mmlabassets.github.io/member/enze_xie_c.png",
+        "img": "https://mmlabassets.github.io/member/enze_xie_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -251,7 +251,7 @@ export const members: {
     },
     {
         "name": "Mingyu Ding",
-        "img": "https://mmlabassets.github.io/member/mingyu_ding_c.png",
+        "img": "https://mmlabassets.github.io/member/mingyu_ding_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -289,7 +289,7 @@ export const members: {
     },
     {
         "name": "Zhaoyang Zhang",
-        "img": "https://mmlabassets.github.io/member/zhaoyang_zhang_c.png",
+        "img": "https://mmlabassets.github.io/member/zhaoyang_zhang_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -308,7 +308,7 @@ export const members: {
     },
     {
         "name": "Wenhai Wang",
-        "img": "https://mmlabassets.github.io/member/wenhai_wang_c.png",
+        "img": "https://mmlabassets.github.io/member/wenhai_wang_c.jpg",
         "title": "RA",
         "pi": [
             "Ping Luo"
@@ -346,7 +346,7 @@ export const members: {
     },
     {
         "name": "Chongjian Ge",
-        "img": "https://mmlabassets.github.io/member/chongjian_ge_c.png",
+        "img": "https://mmlabassets.github.io/member/chongjian_ge_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -384,7 +384,7 @@ export const members: {
     },
     {
         "name": "Peize Sun",
-        "img": "https://mmlabassets.github.io/member/peize_sun_c.png",
+        "img": "https://mmlabassets.github.io/member/peize_sun_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -417,7 +417,7 @@ export const members: {
     },
     {
         "name": "Sheng Jin",
-        "img": "https://mmlabassets.github.io/member/sheng_jin_c.png",
+        "img": "https://mmlabassets.github.io/member/sheng_jin_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -436,7 +436,7 @@ export const members: {
     },
     {
         "name": "Teng Wang",
-        "img": "https://mmlabassets.github.io/member/teng_wang_c.png",
+        "img": "https://mmlabassets.github.io/member/teng_wang_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -474,7 +474,7 @@ export const members: {
     },
     {
         "name": "Yuanfeng Ji",
-        "img": "https://mmlabassets.github.io/member/yuanfeng_ji_c.png",
+        "img": "https://mmlabassets.github.io/member/yuanfeng_ji_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -493,7 +493,7 @@ export const members: {
     },
     {
         "name": "Zhanglin Peng",
-        "img": "https://mmlabassets.github.io/member/zhanglin_peng_c.png",
+        "img": "https://mmlabassets.github.io/member/zhanglin_peng_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -512,7 +512,7 @@ export const members: {
     },
     {
         "name": "Zhouxia Wang",
-        "img": "https://mmlabassets.github.io/member/zhouxia_wang_c.png",
+        "img": "https://mmlabassets.github.io/member/zhouxia_wang_c.jpg",
         "title": "Ph.D.",
         "pi": [
             "Ping Luo"
@@ -569,7 +569,7 @@ export const members: {
     },
     {
         "name": "Peng Xu",
-        "img": "https://mmlabassets.github.io/member/peng_xu_c.png",
+        "img": "https://mmlabassets.github.io/member/peng_xu_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -599,7 +599,7 @@ export const members: {
     },
     {
         "name": "Shoufa Chen",
-        "img": "https://mmlabassets.github.io/member/shoufa_chen_c.png",
+        "img": "https://mmlabassets.github.io/member/shoufa_chen_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -616,7 +616,7 @@ export const members: {
     },
     {
         "name": "Yao Lai",
-        "img": "https://mmlabassets.github.io/member/yao_lai_c.png",
+        "img": "https://mmlabassets.github.io/member/yao_lai_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -633,7 +633,7 @@ export const members: {
     },
     {
         "name": "Yao Mu",
-        "img": "https://mmlabassets.github.io/member/yao_mu_c.png",
+        "img": "https://mmlabassets.github.io/member/yao_mu_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -686,7 +686,7 @@ export const members: {
     },
     {
         "name": "Yizhuo Li",
-        "img": "https://mmlabassets.github.io/member/yizhuo_li_c.png",
+        "img": "https://mmlabassets.github.io/member/yizhuo_li_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -715,7 +715,7 @@ export const members: {
     },
     {
         "name": "Zeyue Xue",
-        "img": "https://mmlabassets.github.io/member/zeyue_xue_c.png",
+        "img": "https://mmlabassets.github.io/member/zeyue_xue_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -744,7 +744,7 @@ export const members: {
     },
     {
         "name": "Chengyue Wu",
-        "img": "https://mmlabassets.github.io/member/chengyue_wu_c.png",
+        "img": "https://mmlabassets.github.io/member/chengyue_wu_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -803,7 +803,7 @@ export const members: {
     },
     {
         "name": "Jin Wang",
-        "img": "https://mmlabassets.github.io/member/jin_wang_c.png",
+        "img": "https://mmlabassets.github.io/member/jin_wang_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -889,7 +889,7 @@ export const members: {
     },
     {
         "name": "Shuo Yang",
-        "img": "https://mmlabassets.github.io/member/shuo_yang_c.png",
+        "img": "https://mmlabassets.github.io/member/shuo_yang_c.jpg",
         "title": "Postdoc Fellow",
         "pi": [
             "Ping Luo"
@@ -1019,7 +1019,7 @@ export const members: {
     },
     {
         "name": "Yihang Qiu",
-        "img": "https://mmlabassets.github.io/member/yihang_qiu_c.png",
+        "img": "https://mmlabassets.github.io/member/yihang_qiu_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -1053,7 +1053,7 @@ export const members: {
     },
     {
         "name": "Zhiheng Liu",
-        "img": "https://mmlabassets.github.io/member/zhiheng_liu_c.png",
+        "img": "https://mmlabassets.github.io/member/zhiheng_liu_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -1174,7 +1174,7 @@ export const members: {
     },
     {
         "name": "Qingquan Lin",
-        "img": "https://mmlabassets.github.io/member/qingquan_lin_c.png",
+        "img": "https://mmlabassets.github.io/member/qingquan_lin_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
@@ -1186,7 +1186,7 @@ export const members: {
     },
     {
         "name": "Tianxing Chen",
-        "img": "https://mmlabassets.github.io/member/tianxing_chen_c.png",
+        "img": "https://mmlabassets.github.io/member/tianxing_chen_c.jpg",
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo"
