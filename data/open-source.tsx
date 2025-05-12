@@ -102,7 +102,7 @@ export const open_sources: {
         links: [
             {
                 website: "Paper",
-                url: "https://arxiv.org/pdf/2312.03641",
+                url: "https://arxiv.org/abs/2312.03641",
             },
             {
                 website: "Github",
@@ -254,7 +254,7 @@ export const open_sources: {
         links: [
             {
                 website: "Paper",
-                url: "https://arxiv.org/pdf/2206.08023",
+                url: "https://arxiv.org/abs/2206.08023",
             },
             {
                 website: "Information",
@@ -338,7 +338,7 @@ export const open_sources: {
         links: [
             {
                 website: "Paper",
-                url: "https://arxiv.org/pdf/2102.12122",
+                url: "https://arxiv.org/abs/2102.12122",
             },
             {
                 website: "GitHub",
