@@ -765,7 +765,6 @@ export const members: {
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo",
-            "Hongyang Li",   
         ],
         "links": [
             {
@@ -841,13 +840,8 @@ export const members: {
         "title": "Ph.D. Candidate",
         "pi": [
             "Ping Luo",
-            "Hongyang Li",
         ],
         "links": [
-            {
-                "icon": "webpage",
-                "link": "https://ilnehc.github.io/"
-            },
             {
                 "icon": "scholar",
                 "link": "https://scholar.google.com/citations?user=ulZxvY0AAAAJ"
@@ -856,14 +850,6 @@ export const members: {
                 "icon": "email",
                 "link": "mailto:ilnehc@connect.hku.hk"
             },
-            {
-                "icon": "github",
-                "link": "https://github.com/ilnehc"
-            },
-            {
-                "icon": "twitter",
-                "link": "https://twitter.com/ilnehc"
-            }
         ],
         "keys": [
             "2023"
