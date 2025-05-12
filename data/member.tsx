@@ -774,7 +774,7 @@ export const members: {
             },
             {
                 "icon": "email",
-                "link": "u3010296@connect.hku.hk"
+                "link": "mailto:u3010296@connect.hku.hk"
             },
             {
                 "icon": "github",
@@ -854,7 +854,7 @@ export const members: {
             },
             {
                 "icon": "email",
-                "link": "ilnehc@connect.hku.hk"
+                "link": "mailto:ilnehc@connect.hku.hk"
             },
             {
                 "icon": "github",
@@ -1061,6 +1061,14 @@ export const members: {
             {
                 "icon": "scholar",
                 "link": "https://scholar.google.com/citations?user=qgRUOdIAAAAJ"
+            },
+            {
+                "icon": "email",
+                "link": "mailto:qiuyihang@connect.hku.hk"
+            },
+            {
+                "icon": "github",
+                "link": "https://github.com/GihhArwtw"
             }
         ],
         "keys": [
@@ -1256,7 +1264,7 @@ export const members: {
             },
             {
                 "icon": "email",
-                "link": "yixuanpan@connect.hku.hk"
+                "link": "mailto:yixuanpan@connect.hku.hk"
             },
             {
                 "icon": "github",
@@ -1277,7 +1285,7 @@ export const members: {
         "links": [
             {
                 "icon": "email",
-                "link": "zhuohengli@connect.hku.hk"
+                "link": "mailto:zhuohengli@connect.hku.hk"
             },
             {
                 "icon": "github",

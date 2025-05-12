@@ -239,7 +239,7 @@ export default function Home() {
                                             <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                         ))} 
                                     </div>
-                                    <div className="flex gap-6">
+                                    <div className="flex gap-3">
                                         {member.links.map((link) => (
                                             <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
                                                 <AspectRatio ratio={1/1}>
@@ -305,7 +305,7 @@ export default function Home() {
                                             <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
                                         ))} 
                                     </div>
-                                    <div className="flex gap-6">
+                                    <div className="flex gap-3">
                                         {member.links.map((link) => (
                                             <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
                                                 <AspectRatio ratio={1/1}>
