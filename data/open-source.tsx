@@ -90,6 +90,90 @@ export const open_sources: {
         id: "OpenDV",
     },
     {
+        title: "DriveLM: Driving with Graph Visual Question Answering",
+        description: "Facilitating the Perception, Prediction, Planning, Behavior, Motion tasks with human-written reasoning logic as a connection in between.",
+        tags: [
+            "Autonomous Driving", "Language", "Planning"
+        ],
+        links: [
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveLM",
+            },
+            {
+                website: "Page",
+                url: "https://opendrivelab.com/DriveLM/",
+            },
+        ],
+        keys :[
+            "Dataset", "2024", "Highlight"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_drivelm.jpg",
+        id: "DriveLM",
+    },
+    {
+        title: "OpenScene: 3D Occupancy Prediction Benchmark in Autonomous Driving",
+        description: "OpenScene is a compact redistribution of the large-scale nuPlan dataset, retaining only relevant annotations and sensor data at 2Hz. This reduces the dataset size by a factor of >10. We cover a wide span of over 120 hours, and provide additional occupancy labels collected in various cities, from Boston, Pittsburgh, Las Vegas to Singapore.",
+        tags: [
+            "Autonomous Driving", "Occupancy"
+        ],
+        links: [
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/OpenScene",
+            },
+        ],
+        keys :[
+            "Dataset", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OpenScene?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_openscene.jpg",
+        id: "OpenScene",
+    },
+    {
+        title: "OpenLane-V2: The First Perception and Reasoning Benchmark for Road Driving",
+        description: "The objective of the presented dataset is to advance research in understanding the structure of road scenes by examining the relationship between perceived entities, such as traffic elements and lanes. Leveraging existing datasets, OpenLane-V2 consists of 2,000 annotated road scenes that describe traffic elements and their correlation to the lanes.",
+        tags: [
+            "Autonomous Driving", "Topology Recognition", "3D Lane Detection", "Traffic Element Recognition"
+        ],
+        links: [
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/OpenLane-V2",
+            },
+        ],
+        keys :[
+            "Dataset", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OpenLane-V2?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_openlanev2.jpg",
+        id: "OpenLane-V2",
+    },
+    {
+        title: "OpenLane: Large-scale Realistic 3D Lane Dataset",
+        description: "OpenLane is the first real-world and the largest scaled 3D lane dataset to date. Our dataset collects valuable contents from public perception dataset, providing lane and closest-in-path object(CIPO) annotations for 1000 segments. In short, OpenLane owns 200K frames and over 880K carefully annotated lanes.",
+        tags: [
+            "Autonomous Driving", "3D Lane Detection"
+        ],
+        links: [
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/OpenLane",
+            },
+        ],
+        keys :[
+            "Dataset", "2022"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OpenLane?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_openlane.jpg",
+        id: "OpenLane",
+    },
+    {
         title: "Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation",
         description: "Janus is a novel autoregressive framework that unifies multimodal understanding and generation.",
         tags: [
