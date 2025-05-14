@@ -169,7 +169,7 @@ export default function Home() {
                                                                             <span>[</span>
                                                                             {open_source.pis.map((pi, index) => (
                                                                                 <div key={pi}>
-                                                                                    <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline">{pi}</Link>
+                                                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline">{pi}</Link>
                                                                                     {index < open_source.pis.length - 1 && (
                                                                                         <span className="select-none"> | </span>
                                                                                     )}
