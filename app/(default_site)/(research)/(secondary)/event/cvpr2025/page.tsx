@@ -364,7 +364,7 @@ export default function Home() {
                             <Link href="https://opendrivelab.com/cvpr2025/tutorial/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
-                                        <CardDescription>June 12</CardDescription>
+                                        <CardDescription>June 12 | 202B</CardDescription>
                                         <CardTitle className="text-xl">Robotics 101: An Odyssey from A Vision Perspective</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
