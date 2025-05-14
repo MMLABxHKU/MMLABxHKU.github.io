@@ -206,8 +206,13 @@ export default function Home() {
                                                     <div className="flex justify-end">
                                                         <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                             <span>[</span>
-                                                            {publications[index].pis.map((pi) => (
-                                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                                            {publications[index].pis.map((pi, i) => (
+                                                                <div key={pi}>
+                                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline">{pi}</Link>
+                                                                    {i < publications[index].pis.length - 1 && (
+                                                                        <span className="select-none"> | </span>
+                                                                    )}
+                                                                </div>
                                                             ))} 
                                                             <span>]</span>
                                                         </CardFooter>

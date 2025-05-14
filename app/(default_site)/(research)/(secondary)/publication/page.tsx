@@ -147,8 +147,13 @@ export default function Home() {
                                                                     </CardFooter>
                                                                     <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
                                                                         <span>[</span>
-                                                                        {publication.pis.map((pi) => (
-                                                                            <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                        {publication.pis.map((pi, index) => (
+                                                                            <div key={pi}>
+                                                                                <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline">{pi}</Link>
+                                                                                {index < publication.pis.length - 1 && (
+                                                                                    <span className="select-none"> | </span>
+                                                                                )}
+                                                                            </div>
                                                                         ))} 
                                                                         <span>]</span>
                                                                     </CardFooter>

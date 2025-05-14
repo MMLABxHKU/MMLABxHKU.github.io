@@ -235,8 +235,13 @@ export default function Home() {
                                         <span>
                                             Supervised by: 
                                         </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                        {member.pi.map((pi, index) => (
+                                            <div key={pi}>
+                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" >{pi}</Link>
+                                                {index < member.pi.length - 1 && (
+                                                    <span className="select-none"> | </span>
+                                                )}
+                                            </div>
                                         ))} 
                                     </div>
                                     <div className="flex gap-3 flex-wrap">
@@ -301,8 +306,13 @@ export default function Home() {
                                         <span>
                                             Supervised by: 
                                         </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                        {member.pi.map((pi, index) => (
+                                            <div key={pi}>
+                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" >{pi}</Link>
+                                                {index < member.pi.length - 1 && (
+                                                    <span className="select-none"> | </span>
+                                                )}
+                                            </div>
                                         ))} 
                                     </div>
                                     <div className="flex gap-3 flex-wrap">
