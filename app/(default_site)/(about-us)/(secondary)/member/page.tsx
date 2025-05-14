@@ -88,38 +88,38 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
+                        <Link className="select-none flex items-center gap-3 group" href="#faculty" key="faculty">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Faculty
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#student" key="student">
+                        <Link className="select-none flex items-center gap-3 group" href="#student" key="student">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Student
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#alumni" key="alumni">
+                        <Link className="select-none flex items-center gap-3 group" href="#alumni" key="alumni">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Alumni
                                 </span>
                             </FadeIn>

@@ -91,62 +91,62 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#competition">
+                        <Link className="select-none flex items-center gap-3 group" href="#competition">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Competition
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#workshop">
+                        <Link className="select-none flex items-center gap-3 group" href="#workshop">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Workshop
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#tutorial">
+                        <Link className="select-none flex items-center gap-3 group" href="#tutorial">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Tutorial
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#paper">
+                        <Link className="select-none flex items-center gap-3 group" href="#paper">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Paper
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#service">
+                        <Link className="select-none flex items-center gap-3 group" href="#service">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Service
                                 </span>
                             </FadeIn>
