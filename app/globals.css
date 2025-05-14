@@ -126,8 +126,6 @@
 @theme {
     --breakpoint-3xl: 120rem;
 }
-
-
 @layer base {
     html {
         @apply scroll-smooth;
@@ -139,13 +137,7 @@
         @apply transition delay-100 duration-200;
     }
 }
-.animated-underline {
-    border-bottom: 1px solid transparent;
-    @apply transition delay-100 duration-200;
-}
-.animated-underline:hover {
-    @apply border-b-inherit;
-}
+
 .loading {
     @apply bg-gradient-to-br from-mblue via-morange to-mred;
 }
@@ -160,6 +152,7 @@
 }
 
 
+
 .fade-in {
     transition: opacity 1.5s ease;
 }
@@ -167,4 +160,23 @@
 .fade-out {
     opacity: 0;
     transition: opacity 1.5s ease;
+}
+
+
+
+.animated-underline {
+    border-bottom: 1px solid transparent;
+    @apply transition delay-100 duration-200;
+}
+.animated-underline:hover {
+    @apply border-b-inherit;
+}
+.member_bio {
+    & a{
+        border-bottom: 1px solid transparent;
+        @apply text-mred transition delay-100 duration-200;
+    }
+    & a:hover {
+        @apply border-b-inherit;
+    }
 }

@@ -8,14 +8,6 @@ export const metadata: Metadata = {
 
 import Image from 'next/image'
 import Link from "next/link"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Separator } from "@/components/ui/separator"
 
@@ -135,9 +127,7 @@ export default function Home() {
                                 <span>
                                     {pi.title}
                                 </span>
-                                <p>
-                                    {pi.bio}
-                                </p>
+                                <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
                                 <div className="flex gap-6">
                                     {pi.links.map((link) => (
                                         <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">

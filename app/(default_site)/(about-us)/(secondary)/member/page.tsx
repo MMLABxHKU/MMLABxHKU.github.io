@@ -170,9 +170,7 @@ export default function Home() {
                                         <span>
                                             {pi.title}
                                         </span>
-                                        <p>
-                                            {pi.bio}
-                                        </p>
+                                        <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
                                         <div className="flex gap-6 flex-wrap">
                                             {pi.links.map((link) => (
                                                 <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
