@@ -157,7 +157,9 @@ export default function Home() {
                                                                             />
                                                                             : <div></div>
                                                                         }
-                                                                        <p className="bg-mred text-background px-3 rounded-xl py-1 text-xs">{open_source.tags[0]}</p>
+                                                                        {open_source.tags.map((tag) => (
+                                                                            <p className="bg-mred text-background px-3 rounded-xl py-1 text-xs" id="tag">{tag}</p>
+                                                                        ))} 
                                                                     </CardContent>
                                                                     <div className="flex justify-between">
                                                                         <CardFooter className="flex flex-row gap-3 flex-wrap">

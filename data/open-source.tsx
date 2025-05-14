@@ -42,6 +42,54 @@ export const open_sources: {
     id: string;
 }[] = [
     {
+        title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+        description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
+        tags: [
+            "Embodied AI", "Manipulation"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://opendrivelab.com/blog/agibot-world/",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2503.06669",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/AgiBot-World",
+            },
+        ],
+        keys :[
+            "Dataset", "2024", "Highlight"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_agibotworld.jpg",
+        id: "AgiBot-World",
+    },
+    {
+        title: "OpenDV",
+        description: "The largest driving video dataset to date, containing more than 1700 hours of real-world driving videos.",
+        tags: [
+            "Autonomous Driving", "World Model"
+        ],
+        links: [
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv",
+            },
+        ],
+        keys :[
+            "Dataset", "2024", "Highlight"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_opendv.jpg",
+        id: "OpenDV",
+    },
+    {
         title: "Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation",
         description: "Janus is a novel autoregressive framework that unifies multimodal understanding and generation.",
         tags: [
