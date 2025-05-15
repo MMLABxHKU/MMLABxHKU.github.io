@@ -339,7 +339,7 @@ export default function Home() {
                         </div>
                         
 
-                        
+
                         <div className="flex flex-col gap-6">
                             <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#Janus">
                                 <div>
@@ -353,6 +353,25 @@ export default function Home() {
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
                                     <h3 className="text-white font-bold text-6xl">
                                         Janus
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#DriveLM">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_drivelm.jpg"
+                                        alt="DriveLM"
+                                        fill
+                                        className="object-cover object-right loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        DriveLM
                                     </h3>
                                 </div>
                             </Link>
