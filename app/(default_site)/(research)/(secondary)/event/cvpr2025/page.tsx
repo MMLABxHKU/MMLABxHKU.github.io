@@ -166,21 +166,21 @@ export default function Home() {
                                     MMLab at CVPR 2025
                                 </FadeIn>
                             </h1>
-                            <p className="font-bold">
+                            <h2 className="font-bold">
                                 <FadeIn>
                                     June 11 - 15 2025<br></br>Nashville, USA
                                 </FadeIn>
-                            </p>
-                            <p>
-                                <FadeIn>
+                            </h2>
+                            <FadeIn>
+                                <p>
                                     The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
-                                </FadeIn>
-                            </p>
-                            <p>
-                                <FadeIn>
+                                </p>
+                            </FadeIn>
+                            <FadeIn>
+                                <p>
                                     Many of the greatest ideas come from a diverse mix of minds, backgrounds, and experiences. We provide equal opportunities to all participants without regard to nationality, affiliation, race, religion, color, age, disability, or any other restriction. We believe diversity drives innovation. When we say we welcome participation from everyone, we mean everyone.
-                                </FadeIn>
-                            </p>
+                                </p>
+                            </FadeIn>
                         </div>
                         <div className="hidden xl:flex flex-col justify-end ">
                             <Image
