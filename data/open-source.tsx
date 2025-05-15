@@ -98,6 +98,90 @@ export const open_sources: {
         id: "UniAD",
     },
     {
+        title: "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+        description: "AgiBot World Colosseo is a full-stack and open-source embodied intelligence ecosystem. Based on our hardware platform AgiBot G1, we construct AgiBot World—an open-source robot manipulation dataset collected by more than 100 homogeneous robots, providing high-quality data for challenging tasks spanning a wide spectrum of real-life scenarios.",
+        tags: [
+            "Manipulation"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://opendrivelab.com/blog/agibot-world/",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2503.06669",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/AgiBot-World",
+            },
+            {
+                website: "Video",
+                url: "https://www.bilibili.com/video/BV1sNdGYWEBY",
+            },
+        ],
+        keys :[
+            "Project", "2025", "Highlight"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_agibot_world_colosseo.jpg",
+        id: "AgiBot-World-Colosseo",
+    },
+    {
+        title: "End-to-End Autonomous Driving: Challenges and Frontiers",
+        description: "In this survey, we provide a comprehensive analysis of more than 270 papers on the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://ieeexplore.ieee.org/abstract/document/10614862/",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/End-to-end-Autonomous-Driving?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_e2e_survey.jpg",
+        id: "E2E-Survey",
+    },
+    {
+        title: "RobuDual: Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation",
+        description: "Our objective is to develop a synergistic dual-system framework which supplements the generalizability of large-scale pre-trained generalist with the efficient and task-specific adaptation of specialist.",
+        tags: [
+            "Manipulation", "Dual-System"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2410.08001",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/RoboDual",
+            },
+            {
+                website: "Page",
+                url: "https://opendrivelab.com/RoboDual/",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/RoboDual?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_robodual.jpg",
+        id: "RoboDual",
+    },
+    {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
         description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
         tags: [
