@@ -130,7 +130,7 @@ export default function Home() {
                                             (
                                                 <FadeIn key={open_source.title}>
                                                     <div>
-                                                        <Card className="border-border flex flex-row pl-6 pr-6">
+                                                        <Card className="border-border flex flex-col md:flex-row px-6 md:gap-10">
                                                             <div className="flex justify-center items-center">
                                                                 <Image
                                                                     src={open_source.img}
@@ -141,12 +141,12 @@ export default function Home() {
                                                                 />
                                                             </div>
                                                             <div className="flex-2/3 flex flex-col gap-3 justify-between">
-                                                                <CardHeader>
+                                                                <CardHeader className="p-0">
                                                                     <CardTitle className="text-xl scroll-mt-32" id={open_source.id}>{open_source.title}</CardTitle>
                                                                     <CardDescription>{open_source.description}</CardDescription>
                                                                 </CardHeader>
                                                                 <div className="flex flex-col gap-3">
-                                                                    <CardContent className="flex flex-row gap-3 flex-wrap items-center">
+                                                                    <CardContent className="flex flex-row gap-3 flex-wrap items-center p-0">
                                                                         {
                                                                             open_source.githubstars != '' ? 
                                                                             <Image
@@ -161,13 +161,13 @@ export default function Home() {
                                                                             <p className="bg-mred text-background px-3 rounded-xl py-1 text-xs" key={tag}>{tag}</p>
                                                                         ))} 
                                                                     </CardContent>
-                                                                    <div className="flex justify-between">
-                                                                        <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                    <div className="flex flex-col lg:flex-row justify-between gap-3">
+                                                                        <CardFooter className="flex flex-row gap-3 flex-wrap p-0">
                                                                             {open_source.links.map((link) => (
                                                                                 <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                                             ))} 
                                                                         </CardFooter>
-                                                                        <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                        <CardFooter className="flex flex-row gap-1 text-mgray text-sm p-0 justify-end">
                                                                             <span>[</span>
                                                                             {open_source.pis.map((pi, index) => (
                                                                                 <div key={pi}>
