@@ -159,8 +159,8 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
 
-                    <div className="flex flex-row justify-between w-full  overflow-visible h-[416px] gap-20">
-                        <div className="py-20 flex flex-col gap-6 flex-2/3">
+                    <div className="flex flex-row justify-between w-full xl:overflow-visible xl:h-[416px] gap-20">
+                        <div className="pt-20 flex flex-col gap-6 flex-2/3">
                             <h1 className="font-bold text-6xl">
                                 <FadeIn>
                                     MMLab at CVPR 2025
@@ -182,7 +182,7 @@ export default function Home() {
                                 </FadeIn>
                             </p>
                         </div>
-                        <div className="hidden lg:flex flex-col justify-end ">
+                        <div className="hidden xl:flex flex-col justify-end ">
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
