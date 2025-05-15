@@ -161,16 +161,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://opendrivelab.com/RoboDual/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2410.08001",
             },
             {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/RoboDual",
-            },
-            {
-                website: "Page",
-                url: "https://opendrivelab.com/RoboDual/",
             },
         ],
         keys :[
@@ -218,16 +218,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://opendrivelab.com/MPI/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2406.00439",
             },
             {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/MPI",
-            },
-            {
-                website: "Page",
-                url: "https://opendrivelab.com/MPI/",
             },
         ],
         keys :[
@@ -246,16 +246,16 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2405.17398",
-            },
-            {
                 website: "Page",
                 url: "https://opendrivelab.com/Vista/",
             },
             {
                 website: "Blog",
                 url: "https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2405.17398",
             },
             {
                 website: "Github",
@@ -280,6 +280,42 @@ export const open_sources: {
         pis: ["Hongyang Li"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/Vista?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_vista.jpg",
+    },
+    {
+        title: "GenAD: Generalized Predictive Model for Autonomous Driving",
+        id: "GenAD",
+        description: "We aim to establish a generalized video prediction paradigm for autonomous driving by presenting the largest multimodal driving video dataset to date, OpenDV-2K, and a generative model that predicts the future given past visual and textual input, GenAD.",
+        tags: [
+            "Autonomous Driving", "World Model"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveAGI",
+            },
+            {
+                website: "Video",
+                url: "https://www.youtube.com/watch?v=a4H6Jj-7IC0",
+            },
+            {
+                website: "Slides",
+                url: "https://opendrivelab.github.io/content/GenAD_slides_with_genad.pdf",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_genad.jpg",
     },
     {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
@@ -337,12 +373,16 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Github",
-                url: "https://github.com/OpenDriveLab/DriveLM",
-            },
-            {
                 website: "Page",
                 url: "https://opendrivelab.com/DriveLM/",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2312.14150",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveLM",
             },
         ],
         keys :[
@@ -445,16 +485,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://peizesun.github.io/llamagen/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2406.06525",
             },
             {
                 website: "Github",
                 url: "https://github.com/FoundationVision/LlamaGen",
-            },
-            {
-                website: "Page",
-                url: "https://peizesun.github.io/llamagen/",
             },
         ],
         keys :[
@@ -473,16 +513,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://wzhouxiff.github.io/projects/MotionCtrl/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2312.03641",
             },
             {
                 website: "Github",
                 url: "https://github.com/TencentARC/MotionCtrl",
-            },
-            {
-                website: "Page",
-                url: "https://wzhouxiff.github.io/projects/MotionCtrl/",
             },
         ],
         keys :[
@@ -625,16 +665,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://era-ai-biomed.github.io/amos/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2206.08023",
             },
             {
                 website: "Information",
                 url: "https://amos22.grand-challenge.org/",
-            },
-            {
-                website: "Page",
-                url: "https://era-ai-biomed.github.io/amos/",
             },
         ],
         keys :[
@@ -653,16 +693,16 @@ export const open_sources: {
         ],
         links: [
             {
+                website: "Page",
+                url: "https://www.shoufachen.com/adaptformer-page/",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2205.13535",
             },
             {
                 website: "GitHub",
                 url: "https://github.com/ShoufaChen/AdaptFormer",
-            },
-            {
-                website: "Page",
-                url: "https://www.shoufachen.com/adaptformer-page/",
             },
         ],
         keys :[
