@@ -45,16 +45,16 @@ export const open_sources: {
         title: "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
         description: "UniVLA is a unified vision-language-action framework that enables policy learning across different environments. By deriving task-centric latent actions in an unsupervised manner, UniVLA can leverage data from arbitrary embodiments and perspectives without action labels. After large-scale pretraining from videos, UniVLA develops a cross-embodiment generalist policy that can be readily deployed across various robots by learning an action decoding with minimal cost.",
         tags: [
-            "Cross-embodiment"
+            "Cross-Embodiment"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2505.06111",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/UniVLA",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2505.06111",
             },
         ],
         keys :[
@@ -69,16 +69,16 @@ export const open_sources: {
         title: "UniAD: Planning-oriented Autonomous Driving",
         description: "UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/UniAD",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html",
             },
             {
                 website: "Video",
@@ -109,12 +109,12 @@ export const open_sources: {
                 url: "https://opendrivelab.com/blog/agibot-world/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2503.06669",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/AgiBot-World",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2503.06669",
             },
             {
                 website: "Video",
@@ -133,16 +133,16 @@ export const open_sources: {
         title: "End-to-End Autonomous Driving: Challenges and Frontiers",
         description: "In this survey, we provide a comprehensive analysis of more than 270 papers on the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://ieeexplore.ieee.org/abstract/document/10614862/",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving",
+            },
+            {
+                website: "Paper",
+                url: "https://ieeexplore.ieee.org/abstract/document/10614862/",
             },
         ],
         keys :[
@@ -165,12 +165,12 @@ export const open_sources: {
                 url: "https://opendrivelab.com/RoboDual/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2410.08001",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/RoboDual",
+            },            
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2410.08001",
             },
         ],
         keys :[
@@ -189,12 +189,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2409.09016",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/CLOVER",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2409.09016",
             },
             {
                 website: "Video",
@@ -222,12 +222,12 @@ export const open_sources: {
                 url: "https://opendrivelab.com/MPI/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2406.00439",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/MPI",
+            },            
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2406.00439",
             },
         ],
         keys :[
@@ -254,12 +254,12 @@ export const open_sources: {
                 url: "https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2405.17398",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/Vista",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2405.17398",
             },
             {
                 website: "Hugging Face",
@@ -294,12 +294,12 @@ export const open_sources: {
                 url: "https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00",
             },
             {
-                website: "Paper",
-                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/DriveAGI",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html",
             },
             {
                 website: "Video",
@@ -326,12 +326,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/ViDAR",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html",
             },
         ],
         keys :[
@@ -354,12 +354,12 @@ export const open_sources: {
                 url: "https://opendrivelab.github.io/elm.github.io/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2403.04593",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/ELM",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2403.04593",
             },
         ],
         keys :[
@@ -374,16 +374,16 @@ export const open_sources: {
         id: "DriveAdapter",
         description: "A new paradigm for end-to-end autonomous driving without causal confusion issue.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://openaccess.thecvf.com/content/ICCV2023/html/Jia_DriveAdapter_Breaking_the_Coupling_Barrier_of_Perception_and_Planning_in_ICCV_2023_paper.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/DriveAdapter",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/ICCV2023/html/Jia_DriveAdapter_Breaking_the_Coupling_Barrier_of_Perception_and_Planning_in_ICCV_2023_paper.html",
             },
         ],
         keys :[
@@ -398,16 +398,16 @@ export const open_sources: {
         id: "ThinkTwice",
         description: "A scalable decoder paradigm that generates the future trajectory and action of the ego vehicle for end-to-end autonomous driving.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/ThinkTwice",
+            },
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html",
             },
         ],
         keys :[
@@ -422,16 +422,16 @@ export const open_sources: {
         id: "PPGeo",
         description: "An intuitive and straightforward fully self-supervised framework curated for the policy pre-training in visuomotor driving.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2301.01006",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/opendrivelab/ppgeo",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2301.01006",
             },
             {
                 website: "Slides",
@@ -450,7 +450,7 @@ export const open_sources: {
         id: "TCP",
         description: "Take the initiative to explore the combination of controller based on a planned trajectory and perform control prediction.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
@@ -458,12 +458,12 @@ export const open_sources: {
                 url: "https://zhuanlan.zhihu.com/p/532665469",
             },
             {
-                website: "Paper",
-                url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/opendrivelab/TCP",
+            },
+            {
+                website: "Paper",
+                url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html",
             },
         ],
         keys :[
@@ -478,7 +478,7 @@ export const open_sources: {
         id: "ST-P3",
         description: "A spatial-temporal feature learning scheme towards a set of more representative features for perception, prediction and planning tasks simultaneously.",
         tags: [
-            "End-to-end", "Autonomous Driving"
+            "End-to-End", "Autonomous Driving"
         ],
         links: [
             {
@@ -486,12 +486,12 @@ export const open_sources: {
                 url: "https://zhuanlan.zhihu.com/p/544387122",
             },
             {
-                website: "Paper",
-                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/st-p3",
+            },
+            {
+                website: "Paper",
+                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31",
             },
         ],
         keys :[
@@ -510,12 +510,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://ieeexplore.ieee.org/document/10321736",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/opendrivelab/bevperception-survey-recipe",
+            },
+            {
+                website: "Paper",
+                url: "https://ieeexplore.ieee.org/document/10321736",
             },
         ],
         keys :[
@@ -534,12 +534,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2306.02851",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/OccNet",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2306.02851",
             },
         ],
         keys :[
@@ -558,12 +558,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2205.09753",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/HDGT",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2205.09753",
             },
         ],
         keys :[
@@ -586,12 +586,12 @@ export const open_sources: {
                 url: "https://zhuanlan.zhihu.com/p/564295059",
             },
             {
-                website: "Paper",
-                url: "https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/fundamentalvision/BEVFormer",
+            },
+            {
+                website: "Paper",
+                url: "https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ",
             },
         ],
         keys :[
@@ -614,12 +614,12 @@ export const open_sources: {
                 url: "https://patrick-llgc.github.io/Learning-Deep-Learning/paper_notes/persformer.html",
             },
             {
-                website: "Paper",
-                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/PersFormer_3DLane",
+            },
+            {
+                website: "Paper",
+                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32",
             },
         ],
         keys :[
@@ -641,12 +641,16 @@ export const open_sources: {
                 url: "https://opendrivelab.com/blog/agibot-world/",
             },
             {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/AgiBot-World",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2503.06669",
             },
             {
-                website: "Github",
-                url: "https://github.com/OpenDriveLab/AgiBot-World",
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2025/#agibot-world",
             },
         ],
         keys :[
@@ -689,12 +693,16 @@ export const open_sources: {
                 url: "https://opendrivelab.com/DriveLM/",
             },
             {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveLM",
+            },
+            {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2312.14150",
             },
             {
-                website: "Github",
-                url: "https://github.com/OpenDriveLab/DriveLM",
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2024/#driving_with_language",
             },
         ],
         keys :[
@@ -716,6 +724,10 @@ export const open_sources: {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/OpenScene",
             },
+            {
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2024/",
+            },
         ],
         keys :[
             "Dataset", "2023"
@@ -735,6 +747,14 @@ export const open_sources: {
             {
                 website: "Github",
                 url: "https://github.com/OpenDriveLab/OpenLane-V2",
+            },
+            {
+                website: "Paper",
+                url: "hhttps://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html",
+            },
+            {
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2024/#mapless_driving",
             },
         ],
         keys :[
@@ -773,12 +793,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2410.13848",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/deepseek-ai/Janus",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2410.13848",
             },
         ],
         keys :[
@@ -801,12 +821,12 @@ export const open_sources: {
                 url: "https://peizesun.github.io/llamagen/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2406.06525",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/FoundationVision/LlamaGen",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2406.06525",
             },
         ],
         keys :[
@@ -829,12 +849,12 @@ export const open_sources: {
                 url: "https://wzhouxiff.github.io/projects/MotionCtrl/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2312.03641",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/TencentARC/MotionCtrl",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2312.03641",
             },
         ],
         keys :[
@@ -853,12 +873,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2310.00426",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/PixArt-alpha/PixArt-alpha",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2310.00426",
             },
         ],
         keys :[
@@ -877,12 +897,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2308.13137",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/OpenGVLab/OmniQuant",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2308.13137",
             },
         ],
         keys :[
@@ -901,12 +921,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2306.09265",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/OpenGVLab/Multi-Modality-Arena",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2306.09265",
             },
         ],
         keys :[
@@ -925,12 +945,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2305.15021",
-            },
-            {
                 website: "Github",
                 url: "https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2305.15021",
             },
             {
                 website: "Dataset",
@@ -953,12 +973,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2211.09788",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/ShoufaChen/DiffusionDet",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2211.09788",
             },
         ],
         keys :[
@@ -985,7 +1005,7 @@ export const open_sources: {
                 url: "https://arxiv.org/abs/2206.08023",
             },
             {
-                website: "Information",
+                website: "Challenge",
                 url: "https://amos22.grand-challenge.org/",
             },
         ],
@@ -1009,12 +1029,12 @@ export const open_sources: {
                 url: "https://www.shoufachen.com/adaptformer-page/",
             },
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2205.13535",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/ShoufaChen/AdaptFormer",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2205.13535",
             },
         ],
         keys :[
@@ -1033,12 +1053,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2105.15203",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/NVlabs/SegFormer",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2105.15203",
             },
             {
                 website: "Video",
@@ -1061,12 +1081,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2102.12122",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/whai362/PVT",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2102.12122",
             },
         ],
         keys :[
@@ -1085,12 +1105,12 @@ export const open_sources: {
         ],
         links: [
             {
-                website: "Paper",
-                url: "https://arxiv.org/abs/2011.12450",
-            },
-            {
                 website: "GitHub",
                 url: "https://github.com/PeizeSun/SparseR-CNN",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2011.12450",
             },
         ],
         keys :[
