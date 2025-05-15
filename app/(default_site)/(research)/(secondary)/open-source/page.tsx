@@ -64,7 +64,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -137,7 +137,7 @@ export default function Home() {
                                                                     alt="stars"
                                                                     width={512}
                                                                     height={512}
-                                                                    className="flex-1/3 loading"
+                                                                    className="flex-1/3 bg-gradient-loading"
                                                                 />
                                                             </div>
                                                             <div className="flex-2/3 flex flex-col gap-3 justify-between">

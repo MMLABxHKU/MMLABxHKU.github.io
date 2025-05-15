@@ -51,7 +51,7 @@ export default function Home() {
                         src="https://ik.imagekit.io/mmlab/rMmibFe4czY.jpg"
                         alt="landing"
                         fill
-                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
@@ -92,7 +92,7 @@ export default function Home() {
                                     src="https://ik.imagekit.io/mmlab/CelebA.png"
                                     alt="CelebA"
                                     fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
                             </div>
                         </Link>
@@ -140,7 +140,7 @@ export default function Home() {
                                     src="https://ik.imagekit.io/mmlab/UniAD.png"
                                     alt="UniAD"
                                     fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
                             </div>
                         </Link>
@@ -173,7 +173,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-landing bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="w-full flex flex-col gap-6">
@@ -263,7 +263,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/odl_uniad.jpg"
                                         alt="UniAD"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -283,7 +283,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/LlamaGen.png"
                                         alt="LlamaGen"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -307,7 +307,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/odl_univla.jpg"
                                         alt="UniVLA"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -327,7 +327,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/odl_agibotworld.jpg"
                                         alt="AgiBot World"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -347,7 +347,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/Janus.jpg"
                                         alt="Janus"
                                         fill
-                                        className="object-cover object-right loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -366,7 +366,7 @@ export default function Home() {
                                         src="https://mmlabassets.github.io/open-source/odl_drivelm.jpg"
                                         alt="DriveLM"
                                         fill
-                                        className="object-cover object-right loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -385,7 +385,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-landing bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
@@ -433,7 +433,7 @@ export default function Home() {
                                             src={item.figure}
                                             alt={item.location}
                                             fill
-                                            className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                            className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                         />
                                     </div>
                                     <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">

@@ -32,7 +32,7 @@ export default function Home() {
                         src="https://ik.imagekit.io/mmlab/uhRgPO215cE.jpg"
                         alt="landing"
                         fill
-                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
@@ -80,7 +80,7 @@ export default function Home() {
                     src="/background/mmlab@hu.jpg"
                     alt="mmlab@hku"
                     fill
-                    className="object-cover object-center loading select-none h-full"
+                    className="object-cover object-center bg-gradient-loading select-none h-full"
                 />
                 <div className="absolute flex flex-row w-full h-full justify-between">
                     <div className="flex-1 h-full"></div>
@@ -104,7 +104,7 @@ export default function Home() {
                     src="/background/mmlab@hu.jpg"
                     alt="mmlab@hku"
                     fill
-                    className="object-cover object-center loading select-none h-full"
+                    className="object-cover object-center bg-gradient-loading select-none h-full"
                 />
                 <div className="absolute flex flex-row w-full h-full justify-between">
                     <div className="flex-1 h-full bg-background"></div>
@@ -132,7 +132,7 @@ export default function Home() {
                         src="/background/mmlab@hku.jpg"
                         alt="mmlab@hku"
                         fill
-                        className="object-cover object-center loading select-none"
+                        className="object-cover object-center bg-gradient-loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -159,7 +159,7 @@ export default function Home() {
                         src="/background/mmlab@cuhk.jpg"
                         alt="mmlab@cuhk"
                         fill
-                        className="object-cover object-center loading select-none"
+                        className="object-cover object-center bg-gradient-loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -192,7 +192,7 @@ export default function Home() {
                         src="/background/mmlab@ntu.jpg"
                         alt="mmlab@ntu"
                         fill
-                        className="object-cover object-center loading select-none"
+                        className="object-cover object-center bg-gradient-loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">

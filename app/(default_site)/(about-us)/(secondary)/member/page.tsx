@@ -51,7 +51,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -159,7 +159,7 @@ export default function Home() {
                                                 src={pi.img}
                                                 alt={pi.name}
                                                 fill
-                                                className="h-full w-full rounded-md object-cover loading"
+                                                className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                             />
                                         </AspectRatio>
                                     </div>
@@ -224,7 +224,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>
@@ -295,7 +295,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>

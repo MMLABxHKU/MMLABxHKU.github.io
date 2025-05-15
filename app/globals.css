@@ -138,11 +138,21 @@
     }
 }
 
-.loading {
+
+
+/* background color */
+.bg-gradient-landing {
+    @apply bg-gradient-to-br from-morange via-mred to-mblue;
+}
+.bg-gradient-loading {
     @apply bg-gradient-to-br from-mblue via-morange to-mred;
 }
-.gradient-eng {
-    @apply from-morange via-mred to-mblue;
+
+
+
+/* font */
+.text-t1 {
+    @apply text-5xl md:text-6xl
 }
 .color-text-1 {
     width: fit-content;
@@ -153,6 +163,7 @@
 
 
 
+/* fade in / out */
 .fade-in {
     transition: opacity 1.5s ease;
 }
@@ -164,6 +175,7 @@
 
 
 
+/* link underline */
 .animated-underline {
     border-bottom: 1px solid transparent;
     @apply transition delay-100 duration-200;

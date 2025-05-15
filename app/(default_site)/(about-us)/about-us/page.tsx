@@ -34,7 +34,7 @@ export default function Home() {
                         src="https://ik.imagekit.io/mmlab/LPKk3wtkC-g.jpg"
                         alt="landing"
                         fill
-                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
@@ -116,7 +116,7 @@ export default function Home() {
                                         src={pi.img_full}
                                         alt={pi.name}
                                         fill
-                                        className="h-full w-full rounded-md object-cover loading"
+                                        className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                     />
                                 </AspectRatio>
                             </div>

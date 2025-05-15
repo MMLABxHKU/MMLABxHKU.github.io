@@ -58,7 +58,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -188,7 +188,7 @@ export default function Home() {
                                 alt="Nashville"
                                 width={352}
                                 height={384}
-                                className="object-cover object-center shadow-sm loading select-none"
+                                className="object-cover object-center shadow-sm bg-gradient-loading select-none"
                             />
                         </div>
                     </div>
