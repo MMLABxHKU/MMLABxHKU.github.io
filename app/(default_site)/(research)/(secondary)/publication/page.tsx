@@ -139,13 +139,13 @@ export default function Home() {
                                                                 <CardContent>
                                                                     <p>{publication.proceedings}</p>
                                                                 </CardContent>
-                                                                <div className="flex justify-between">
+                                                                <div className="flex flex-col lg:flex-row justify-between gap-3">
                                                                     <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
                                                                             <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                                         ))} 
                                                                     </CardFooter>
-                                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                    <CardFooter className="flex flex-row gap-1 text-mgray text-sm justify-end">
                                                                         <span>[</span>
                                                                         {publication.pis.map((pi, index) => (
                                                                             <div key={pi}>
