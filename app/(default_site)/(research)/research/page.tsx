@@ -55,7 +55,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
-                    <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
+                    <h1 className="font-bold .text-t0 text-white">
                         <FadeIn>Research</FadeIn>
                     </h1>
                 </div>
