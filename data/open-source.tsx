@@ -474,6 +474,162 @@ export const open_sources: {
         img: "https://mmlabassets.github.io/open-source/odl_tcp.jpg",
     },
     {
+        title: "ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning",
+        id: "ST-P3",
+        description: "A spatial-temporal feature learning scheme towards a set of more representative features for perception, prediction and planning tasks simultaneously.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://zhuanlan.zhihu.com/p/544387122",
+            },
+            {
+                website: "Paper",
+                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/st-p3",
+            },
+        ],
+        keys :[
+            "Project", "2022"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/st-p3?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_stp3.jpg",
+    },
+    {
+        title: "Delving into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
+        id: "BEV-Survey",
+        description: "We review the most recent work on BEV perception and provide analysis of different solutions.",
+        tags: [
+            "Bird's-Eye-View"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://ieeexplore.ieee.org/document/10321736",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/opendrivelab/bevperception-survey-recipe",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/bevperception-survey-recipe?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_bevsurvey.jpg",
+    },
+    {
+        title: "OccNet: Scene as Occupancy",
+        id: "OccNet",
+        description: "Occupancy serves as a general representation of the scene and could facilitate perception and planning in the full-stack of autonomous driving.",
+        tags: [
+            "Occupancy"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2306.02851",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/OccNet",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_occnet.jpg",
+    },
+    {
+        title: "HDGT: Heterogeneous Driving Graph Transformer for Multi-Agent Trajectory Prediction via Scene Encoding",
+        id: "HDGT",
+        description: "HDGT formulates the driving scene as a heterogeneous graph with different types of nodes and edges.",
+        tags: [
+            "Autonomous Driving", "Graph"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2205.09753",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/HDGT",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/HDGT?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_hdgt.jpg",
+    },
+    {
+        title: "BEVFormer: Learning Bird's-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers",
+        id: "BEVFormer",
+        description: "A paradigm for autonomous driving that applies both Transformer and Temporal structure to generate BEV features.",
+        tags: [
+            "Bird's-Eye-View"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://zhuanlan.zhihu.com/p/564295059",
+            },
+            {
+                website: "Paper",
+                url: "https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/fundamentalvision/BEVFormer",
+            },
+        ],
+        keys :[
+            "Project", "2022", "Highlight"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/fundamentalvision/BEVFormer?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_bevformer.jpg",
+    },
+    {
+        title: "PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark",
+        id: "PersFormer",
+        description: "PersFormer adopts a unified 2D/3D anchor design and an auxiliary task to detect 2D/3D lanes; we release one of the first large-scale real-world 3D lane datasets, OpenLane.",
+        tags: [
+            "Bird's-Eye-View"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://patrick-llgc.github.io/Learning-Deep-Learning/paper_notes/persformer.html",
+            },
+            {
+                website: "Paper",
+                url: "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/PersFormer_3DLane",
+            },
+        ],
+        keys :[
+            "Project", "2022"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/HDGT?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_persformer.jpg",
+    },
+    {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
         description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
         tags: [
