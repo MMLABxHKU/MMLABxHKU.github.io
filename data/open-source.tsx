@@ -638,7 +638,7 @@ export const open_sources: {
             "Project", "2022"
         ],
         pis: ["Hongyang Li"],
-        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/HDGT?style=social",
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/PersFormer_3DLane?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_persformer.jpg",
     },
     {
