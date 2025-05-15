@@ -182,6 +182,106 @@ export const open_sources: {
         id: "RoboDual",
     },
     {
+        title: "CLOVER: Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation",
+        description: "CLOVER employs a text-conditioned video diffusion model for generating visual plans as reference inputs, then these sub-goals guide the feedback-driven policy to generate actions with an error measurement strategy.",
+        tags: [
+            "Manipulation", "Visuomotor"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2409.09016",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/CLOVER",
+            },
+            {
+                website: "Video",
+                url: "https://www.bilibili.com/video/BV1rHqZYeECL/",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/CLOVER?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_clover.jpg",
+        id: "CLOVER",
+    },
+    {
+        title: "MPI: Learning Manipulation by Predicting Interaction",
+        id: "MPI",
+        description: "We propose a general pre-training pipeline that learns Manipulation by Predicting the Interaction (MPI).",
+        tags: [
+            "Manipulation"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2406.00439",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/MPI",
+            },
+            {
+                website: "Page",
+                url: "https://opendrivelab.com/MPI/",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_mpi.jpg",
+    },
+    {
+        title: "Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability",
+        id: "Vista",
+        description: "A generalizable driving world model with high-fidelity open-world prediction, continuous long-horizon rollout, and zero-shot action controllability.",
+        tags: [
+            "Autonomous Driving", "World Model"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2405.17398",
+            },
+            {
+                website: "Page",
+                url: "https://opendrivelab.com/Vista/",
+            },
+            {
+                website: "Blog",
+                url: "https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/Vista",
+            },
+            {
+                website: "Hugging Face",
+                url: "https://huggingface.co/OpenDriveLab/Vista",
+            },
+            {
+                website: "Video",
+                url: "https://www.bilibili.com/video/BV1gXCGYMEYV/",
+            },
+            {
+                website: "Poster",
+                url: "https://opendrivelab.github.io/Vista/nips24_vista_poster.png",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/Vista?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_vista.jpg",
+    },
+    {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
         description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
         tags: [
