@@ -137,7 +137,7 @@ export default function Home() {
                                                                     alt="stars"
                                                                     width={512}
                                                                     height={512}
-                                                                    className="flex-1/3"
+                                                                    className="flex-1/3 loading"
                                                                 />
                                                             </div>
                                                             <div className="flex-2/3 flex flex-col gap-3 justify-between">
