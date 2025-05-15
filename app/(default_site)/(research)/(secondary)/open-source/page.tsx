@@ -130,7 +130,7 @@ export default function Home() {
                                             (
                                                 <FadeIn key={open_source.title}>
                                                     <div>
-                                                        <Card className="border-border flex flex-col md:flex-row px-6 md:gap-10">
+                                                        <Card className="border-border flex flex-col md:flex-row px-6 md:gap-6">
                                                             <div className="flex justify-center items-center">
                                                                 <Image
                                                                     src={open_source.img}
