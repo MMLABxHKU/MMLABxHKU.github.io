@@ -421,7 +421,7 @@ export default function Home() {
                                             <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
                                                 <span>[</span>
                                                 {publication.pis.map((pi) => (
-                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline" key={pi}>{pi}</Link>
                                                 ))} 
                                                 <span>]</span>
                                             </CardFooter>

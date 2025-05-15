@@ -149,7 +149,7 @@ export default function Home() {
                                                                         <span>[</span>
                                                                         {publication.pis.map((pi, index) => (
                                                                             <div key={pi}>
-                                                                                <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline">{pi}</Link>
+                                                                                <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
                                                                                 {index < publication.pis.length - 1 && (
                                                                                     <span className="select-none"> | </span>
                                                                                 )}
