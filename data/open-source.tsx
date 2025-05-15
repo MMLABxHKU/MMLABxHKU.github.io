@@ -150,7 +150,7 @@ export const open_sources: {
         ],
         pis: ["Hongyang Li"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/End-to-end-Autonomous-Driving?style=social",
-        img: "https://mmlabassets.github.io/open-source/odl_e2e_survey.jpg",
+        img: "https://mmlabassets.github.io/open-source/odl_e2esurvey.jpg",
         id: "E2E-Survey",
     },
     {
