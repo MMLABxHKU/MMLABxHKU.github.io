@@ -318,6 +318,162 @@ export const open_sources: {
         img: "https://mmlabassets.github.io/open-source/odl_genad.jpg",
     },
     {
+        title: "ViDAR: Visual Point Cloud Forecasting enables Scalable Autonomous Driving",
+        id: "ViDAR",
+        description: "A new self-supervised pre-training task for end-to-end autonomous driving, predicting future point clouds from historical visual inputs, joint modeling the 3D geometry and temporal dynamics for simultaneous perception, prediction, and planning.",
+        tags: [
+            "Autonomous Driving", "Point Cloud"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/ViDAR",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DrivViDARAGI?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_vidar.jpg",
+    },
+    {
+        title: "ELM: Embodied Understanding of Driving Scenarios",
+        id: "ELM",
+        description: "Revive driving scene understanding by delving into the embodiment philosophy.",
+        tags: [
+            "Scene Understanding"
+        ],
+        links: [
+            {
+                website: "Page",
+                url: "https://opendrivelab.github.io/elm.github.io/",
+            },
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2403.04593",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/ELM",
+            },
+        ],
+        keys :[
+            "Project", "2024"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/ELM?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_elm.jpg",
+    },
+    {
+        title: "DriveAdapter: Breaking the Coupling Barrier of Perception and Planning in End-to-End Autonomous Driving",
+        id: "DriveAdapter",
+        description: "A new paradigm for end-to-end autonomous driving without causal confusion issue.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/ICCV2023/html/Jia_DriveAdapter_Breaking_the_Coupling_Barrier_of_Perception_and_Planning_in_ICCV_2023_paper.html",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/DriveAdapter",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveAdapter?style=social",
+        img: "https://mmlabassets.github.io/open-source/driveadapter.jpg",
+    },
+    {
+        title: "Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Drivingg",
+        id: "ThinkTwice",
+        description: "A scalable decoder paradigm that generates the future trajectory and action of the ego vehicle for end-to-end autonomous driving.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/OpenDriveLab/ThinkTwice",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/ThinkTwice?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_thinktwice.jpg",
+    },
+    {
+        title: "PPGeo: Policy Pre-Training for End-to-End Autonomous Driving via Self-Supervised Geometric Modeling",
+        id: "PPGeo",
+        description: "An intuitive and straightforward fully self-supervised framework curated for the policy pre-training in visuomotor driving.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Paper",
+                url: "https://arxiv.org/abs/2301.01006",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/opendrivelab/ppgeo",
+            },
+            {
+                website: "Slides",
+                url: "https://docs.google.com/presentation/d/1d0MGh3XCxuZujtYgZ0sr6xsAKZ4uS50p/edit?usp=sharing&ouid=118212253182146260973&rtpof=true&sd=true",
+            },
+        ],
+        keys :[
+            "Project", "2023"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/ppgeo?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_ppgeo.jpg",
+    },
+    {
+        title: "TCP: Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline",
+        id: "TCP",
+        description: "Take the initiative to explore the combination of controller based on a planned trajectory and perform control prediction.",
+        tags: [
+            "End-to-end", "Autonomous Driving"
+        ],
+        links: [
+            {
+                website: "Blog",
+                url: "https://zhuanlan.zhihu.com/p/532665469",
+            },
+            {
+                website: "Paper",
+                url: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html",
+            },
+            {
+                website: "Github",
+                url: "https://github.com/opendrivelab/TCP",
+            },
+        ],
+        keys :[
+            "Project", "2022"
+        ],
+        pis: ["Hongyang Li"],
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/TCP?style=social",
+        img: "https://mmlabassets.github.io/open-source/odl_tcp.jpg",
+    },
+    {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
         description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
         tags: [
