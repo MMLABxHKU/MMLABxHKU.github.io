@@ -60,7 +60,7 @@ export const open_sources: {
         keys :[
             "Project", "2025", "Highlight"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/UniVLA?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_univla.jpg",
         id: "UniVLA",
@@ -208,7 +208,7 @@ export const open_sources: {
         keys :[
             "Project", "2024"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/CLOVER?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_clover.jpg",
         id: "CLOVER",
@@ -237,7 +237,7 @@ export const open_sources: {
         keys :[
             "Project", "2024"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_mpi.jpg",
     },
@@ -317,7 +317,7 @@ export const open_sources: {
         keys :[
             "Project", "2024"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_genad.jpg",
     },
@@ -557,7 +557,7 @@ export const open_sources: {
         keys :[
             "Project", "2023"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_occnet.jpg",
     },
@@ -720,7 +720,7 @@ export const open_sources: {
         keys :[
             "Dataset", "2024", "Highlight"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_drivelm.jpg",
         id: "DriveLM",
@@ -772,7 +772,7 @@ export const open_sources: {
         keys :[
             "Dataset", "2023"
         ],
-        pis: ["Hongyang Li"],
+        pis: ["Hongyang Li", "Ping Luo"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/OpenLane-V2?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_openlanev2.jpg",
         id: "OpenLane-V2",
