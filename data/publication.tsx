@@ -1,17 +1,30 @@
-export const publication_categories: { c1: string; c2s: string[]; len: string}[] = [
+export const publication_categories: { c1: string; c2s: string[]; }[] = [
     {
         c1: "Topic",
         c2s: [
-        'Generative Models', 'Classification', 'Embodied AI', 'Tracking', 'Few-Shot Learning', 'Detection', 'Domain Adaptation', 'Self-Supervised Learning', 'Face Recognition', 'Autonomous Driving', 'Pose Estimation', 'Transformer', 'Graph Learning', 'Machine Learning', 'Video Understanding', 'Computer Vision', 'Other', 'Neural Rendering', 'Medical Imaging', 'Dataset/Benchmark', 'Hardware Acceleration', 'Navigation', 'Audio/Speech', '3D Vision', 'Survey', 'Multimodal', 'Reinforcement Learning', 'Segmentation'
+            'Generative Models', 'Classification', 'Embodied AI', 'Tracking', 'Few-Shot Learning', 'Detection', 'Domain Adaptation', 'Self-Supervised Learning', 'Face Recognition', 'Autonomous Driving', 'Pose Estimation', 'Transformer', 'Graph Learning', 'Machine Learning', 'Video Understanding', 'Computer Vision', 'Other', 'Neural Rendering', 'Medical Imaging', 'Dataset/Benchmark', 'Hardware Acceleration', 'Navigation', 'Audio/Speech', '3D Vision', 'Survey', 'Multimodal', 'Reinforcement Learning', 'Segmentation'
         ],
-        len: "grid-cols-2", // for unexpected error in shadcn component
     },
     {
         c1: "Year",
         c2s: [
-            '2017', '2020', '2014', '2019', '2009', '2023', '2024', '2016', '2013', '2021', '2018', '2012', '2010', '2015', '2022', '2025'
+            '2025',
+            '2024',
+            '2023',
+            '2022',
+            '2021',
+            '2020',
+            '2019',
+            '2018',
+            '2017',
+            '2016',
+            '2015',
+            '2014',
+            '2013',
+            '2012',
+            '2011',
+            '2010',
         ],
-        len: "grid-cols-5", // for unexpected error in shadcn component
     },
     {
         c1: "PI",
@@ -21,7 +34,6 @@ export const publication_categories: { c1: string; c2s: string[]; len: string}[]
             "Hongyang Li",
             "Bo Dai"
         ],
-        len: "grid-cols-4", // for unexpected error in shadcn component
     },
 ]
 
