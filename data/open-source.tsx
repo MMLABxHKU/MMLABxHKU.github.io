@@ -643,7 +643,7 @@ export const open_sources: {
     },
     {
         title: "AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
-        description: "AgiBot World Colosseo is a full-stack large-scale robot learning platform curated for advancing bimanual manipulation in scalable and intelligent embodied systems. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the 'ImageNet Moment' for Embodied AI.",
+        description: "Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios. Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution.",
         tags: [
             "Manipulation"
         ],
@@ -762,7 +762,7 @@ export const open_sources: {
             },
             {
                 website: "Paper",
-                url: "hhttps://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html",
+                url: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html",
             },
             {
                 website: "Challenge",
