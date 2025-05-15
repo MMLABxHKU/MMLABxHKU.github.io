@@ -391,7 +391,7 @@ export const open_sources: {
         ],
         pis: ["Hongyang Li"],
         githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DriveAdapter?style=social",
-        img: "https://mmlabassets.github.io/open-source/driveadapter.jpg",
+        img: "https://mmlabassets.github.io/open-source/odl_driveadapter.jpg",
     },
     {
         title: "Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Drivingg",
