@@ -31,7 +31,7 @@
 - compressed: 384 x 384 / JPG / ~20kb / [name]_[surname]_c.jpg, e.g. ping_luo_c.jpg
 
 ## Open Source
-- long side approx. 512 / JPG / ~15kb
+- long side approx. 512 / JPG / 30kb
 - without margin / 紅框為圖像邊界
   
 | ✅ | ✖️ |
@@ -66,7 +66,7 @@
 ## publication
 - 定义好topic
 - keys 包含 (任意数量topic) and 年份，and 可以帮助排序的
-- proceedings 用缩写
+- proceedings 用缩写 / 加年份（如```CVPR 2025``` / ```TPAMI 2025```）
 - links 中的 website 名称最好比较统一
 - pi 可以为多个
 - title 单词首字母大写

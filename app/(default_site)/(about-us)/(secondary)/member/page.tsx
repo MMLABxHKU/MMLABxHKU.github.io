@@ -51,7 +51,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -88,38 +88,38 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#faculty" key="faculty">
+                        <Link className="select-none flex items-center gap-3 group" href="#faculty" key="faculty">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Faculty
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#student" key="student">
+                        <Link className="select-none flex items-center gap-3 group" href="#student" key="student">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Student
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#alumni" key="alumni">
+                        <Link className="select-none flex items-center gap-3 group" href="#alumni" key="alumni">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Alumni
                                 </span>
                             </FadeIn>
@@ -159,7 +159,7 @@ export default function Home() {
                                                 src={pi.img}
                                                 alt={pi.name}
                                                 fill
-                                                className="h-full w-full rounded-md object-cover loading"
+                                                className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                             />
                                         </AspectRatio>
                                     </div>
@@ -170,9 +170,7 @@ export default function Home() {
                                         <span>
                                             {pi.title}
                                         </span>
-                                        <p>
-                                            {pi.bio}
-                                        </p>
+                                        <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
                                         <div className="flex gap-6 flex-wrap">
                                             {pi.links.map((link) => (
                                                 <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
@@ -226,7 +224,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>
@@ -235,8 +233,13 @@ export default function Home() {
                                         <span>
                                             Supervised by: 
                                         </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                        {member.pi.map((pi, index) => (
+                                            <div key={pi}>
+                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" >{pi}</Link>
+                                                {index < member.pi.length - 1 && (
+                                                    <span className="select-none"> | </span>
+                                                )}
+                                            </div>
                                         ))} 
                                     </div>
                                     <div className="flex gap-3 flex-wrap">
@@ -292,7 +295,7 @@ export default function Home() {
                                             src={member.img}
                                             alt={member.name}
                                             fill
-                                            className="h-full w-full rounded-md object-cover loading"
+                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                         />
                                     </AspectRatio>
                                     <span className="font-bold text-xl">{member.name}</span>
@@ -301,8 +304,13 @@ export default function Home() {
                                         <span>
                                             Supervised by: 
                                         </span>
-                                        {member.pi.map((pi) => (
-                                            <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                        {member.pi.map((pi, index) => (
+                                            <div key={pi}>
+                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" >{pi}</Link>
+                                                {index < member.pi.length - 1 && (
+                                                    <span className="select-none"> | </span>
+                                                )}
+                                            </div>
                                         ))} 
                                     </div>
                                     <div className="flex gap-3 flex-wrap">

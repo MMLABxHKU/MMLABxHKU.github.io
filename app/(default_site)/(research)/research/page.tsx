@@ -51,11 +51,11 @@ export default function Home() {
                         src="https://ik.imagekit.io/mmlab/rMmibFe4czY.jpg"
                         alt="landing"
                         fill
-                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
-                    <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
+                    <h1 className="font-bold text-t0 text-white">
                         <FadeIn>Research</FadeIn>
                     </h1>
                 </div>
@@ -92,7 +92,7 @@ export default function Home() {
                                     src="https://ik.imagekit.io/mmlab/CelebA.png"
                                     alt="CelebA"
                                     fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
                             </div>
                         </Link>
@@ -122,7 +122,7 @@ export default function Home() {
                             <div className="flex justify-end">
                                 <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                     <span>[</span>
-                                        <Link href="/member/#ping_luo" className="animated-underline">Ping Luo</Link>
+                                        <Link target="_self" href="/about-us/#ping_luo" className="animated-underline">Ping Luo</Link>
                                     <span>]</span>
                                 </CardFooter>
                             </div>
@@ -140,7 +140,7 @@ export default function Home() {
                                     src="https://ik.imagekit.io/mmlab/UniAD.png"
                                     alt="UniAD"
                                     fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                 />
                             </div>
                         </Link>
@@ -159,7 +159,7 @@ export default function Home() {
                             <div className="flex justify-end">
                                 <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                     <span>[</span>
-                                        <Link href="/member/#hongyang_li" className="animated-underline">Hongyang Li</Link>
+                                        <Link target="_self" href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link>
                                     <span>]</span>
                                 </CardFooter>
                             </div>
@@ -173,7 +173,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-landing bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="w-full flex flex-col gap-6">
@@ -206,8 +206,13 @@ export default function Home() {
                                                     <div className="flex justify-end">
                                                         <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                             <span>[</span>
-                                                            {publications[index].pis.map((pi) => (
-                                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" key={pi}>{pi}</Link>
+                                                            {publications[index].pis.map((pi, i) => (
+                                                                <div key={pi}>
+                                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
+                                                                    {i < publications[index].pis.length - 1 && (
+                                                                        <span className="select-none"> | </span>
+                                                                    )}
+                                                                </div>
                                                             ))} 
                                                             <span>]</span>
                                                         </CardFooter>
@@ -249,16 +254,100 @@ export default function Home() {
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
 
-
                         
+
                         <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#UniAD">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_uniad.jpg"
+                                        alt="UniAD"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        UniAD
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#UniVLA">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_univla.jpg"
+                                        alt="UniVLA"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        UniVLA
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#AgiBot-World">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_agibotworld.jpg"
+                                        alt="AgiBot World"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-6xl">
+                                        AgiBot World
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+                        
+
+
+                        <div className="flex flex-col gap-6">
                             <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#Janus">
                                 <div>
                                     <Image
-                                        src="https://mmlabassets.github.io/open-source/Janus.png"
+                                        src="https://mmlabassets.github.io/open-source/Janus.jpg"
                                         alt="Janus"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
@@ -270,105 +359,23 @@ export default function Home() {
                         </div>
 
 
-
                         <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#DriveLM">
                                 <div>
                                     <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
+                                        src="https://mmlabassets.github.io/open-source/odl_drivelm.jpg"
+                                        alt="DriveLM"
                                         fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
                                     <h3 className="text-white font-bold text-6xl">
-                                        LlamaGen
+                                        DriveLM
                                     </h3>
                                 </div>
                             </Link>
                         </div>
-
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
-                                        LlamaGen
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-                        <div className="flex flex-col gap-6 2xl:col-span-2">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
-                                        LlamaGen
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
-                                        LlamaGen
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
-                                        fill
-                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
-                                        LlamaGen
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
 
 
                     </div>
@@ -378,7 +385,7 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 bg-gradient-to-br gradient-eng bg-fixed mt-20">
+            <div className="w-full pl-6 pr-6 bg-gradient-landing bg-fixed mt-20">
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
@@ -426,7 +433,7 @@ export default function Home() {
                                             src={item.figure}
                                             alt={item.location}
                                             fill
-                                            className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                            className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                         />
                                     </div>
                                     <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">

@@ -67,7 +67,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -139,16 +139,21 @@ export default function Home() {
                                                                 <CardContent>
                                                                     <p>{publication.proceedings}</p>
                                                                 </CardContent>
-                                                                <div className="flex justify-between">
+                                                                <div className="flex flex-col lg:flex-row justify-between gap-3">
                                                                     <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
                                                                             <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                                         ))} 
                                                                     </CardFooter>
-                                                                    <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                    <CardFooter className="flex flex-row gap-1 text-mgray text-sm justify-end">
                                                                         <span>[</span>
-                                                                        {publication.pis.map((pi) => (
-                                                                            <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                        {publication.pis.map((pi, index) => (
+                                                                            <div key={pi}>
+                                                                                <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
+                                                                                {index < publication.pis.length - 1 && (
+                                                                                    <span className="select-none"> | </span>
+                                                                                )}
+                                                                            </div>
                                                                         ))} 
                                                                         <span>]</span>
                                                                     </CardFooter>

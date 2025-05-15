@@ -58,7 +58,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -91,62 +91,62 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#competition">
+                        <Link className="select-none flex items-center gap-3 group" href="#competition">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Competition
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#workshop">
+                        <Link className="select-none flex items-center gap-3 group" href="#workshop">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Workshop
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#tutorial">
+                        <Link className="select-none flex items-center gap-3 group" href="#tutorial">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Tutorial
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#paper">
+                        <Link className="select-none flex items-center gap-3 group" href="#paper">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Paper
                                 </span>
                             </FadeIn>
                         </Link>
-                        <Link className="select-none flex items-center gap-3 group hover:text-mred" href="#service">
+                        <Link className="select-none flex items-center gap-3 group" href="#service">
                             <FadeIn>
-                                <span className="border-l-4 border-l-foreground text-sm">
+                                <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                             </FadeIn>
                             <FadeIn>
-                                <span className="text-xl font-bold">
+                                <span className="text-xl font-bold text-mgray group-hover:text-mred">
                                     Service
                                 </span>
                             </FadeIn>
@@ -159,36 +159,36 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
 
-                    <div className="flex flex-row justify-between w-full  overflow-visible h-[416px] gap-20">
-                        <div className="py-20 flex flex-col gap-6 flex-2/3">
+                    <div className="flex flex-row justify-between w-full xl:overflow-visible xl:h-[416px] gap-20">
+                        <div className="pt-20 flex flex-col gap-6 flex-2/3">
                             <h1 className="font-bold text-6xl">
                                 <FadeIn>
                                     MMLab at CVPR 2025
                                 </FadeIn>
                             </h1>
-                            <p className="font-bold">
+                            <h2 className="font-bold">
                                 <FadeIn>
                                     June 11 - 15 2025<br></br>Nashville, USA
                                 </FadeIn>
-                            </p>
-                            <p>
-                                <FadeIn>
-                                    The <a className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</a> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
-                                </FadeIn>
-                            </p>
-                            <p>
-                                <FadeIn>
+                            </h2>
+                            <FadeIn>
+                                <p>
+                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
+                                </p>
+                            </FadeIn>
+                            <FadeIn>
+                                <p>
                                     Many of the greatest ideas come from a diverse mix of minds, backgrounds, and experiences. We provide equal opportunities to all participants without regard to nationality, affiliation, race, religion, color, age, disability, or any other restriction. We believe diversity drives innovation. When we say we welcome participation from everyone, we mean everyone.
-                                </FadeIn>
-                            </p>
+                                </p>
+                            </FadeIn>
                         </div>
-                        <div className="hidden lg:flex flex-col justify-end ">
+                        <div className="hidden xl:flex flex-col justify-end ">
                             <Image
                                 src="https://ik.imagekit.io/mmlab/9wWMLO0JqHQ.jpg"
                                 alt="Nashville"
                                 width={352}
                                 height={384}
-                                className="object-cover object-center shadow-sm loading select-none"
+                                className="object-cover object-center shadow-sm bg-gradient-loading select-none"
                             />
                         </div>
                     </div>
@@ -364,7 +364,7 @@ export default function Home() {
                             <Link href="https://opendrivelab.com/cvpr2025/tutorial/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
-                                        <CardDescription>June 12</CardDescription>
+                                        <CardDescription>June 12 | 202B</CardDescription>
                                         <CardTitle className="text-xl">Robotics 101: An Odyssey from A Vision Perspective</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
@@ -412,16 +412,21 @@ export default function Home() {
                                             <CardTitle className="text-xl">{publication.title}</CardTitle>
                                             <CardDescription>{publication.authors}</CardDescription>
                                         </CardHeader>
-                                        <div className="flex justify-between">
+                                        <div className="flex flex-col lg:flex-row justify-between gap-3">
                                             <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                 {publication.links.map((link) => (
                                                     <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                 ))} 
                                             </CardFooter>
-                                            <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                            <CardFooter className="flex flex-row gap-1 text-mgray text-sm justify-end">
                                                 <span>[</span>
-                                                {publication.pis.map((pi) => (
-                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                {publication.pis.map((pi, index) => (
+                                                    <div key={pi}>
+                                                        <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
+                                                        {index < publication.pis.length - 1 && (
+                                                            <span className="select-none"> | </span>
+                                                        )}
+                                                    </div>
                                                 ))} 
                                                 <span>]</span>
                                             </CardFooter>

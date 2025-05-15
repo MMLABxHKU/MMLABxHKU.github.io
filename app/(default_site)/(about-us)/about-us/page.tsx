@@ -8,14 +8,6 @@ export const metadata: Metadata = {
 
 import Image from 'next/image'
 import Link from "next/link"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Separator } from "@/components/ui/separator"
 
@@ -42,11 +34,11 @@ export default function Home() {
                         src="https://ik.imagekit.io/mmlab/LPKk3wtkC-g.jpg"
                         alt="landing"
                         fill
-                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
                 <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
-                    <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
+                    <h1 className="font-bold text-t0 text-white">
                         <FadeIn>About Us</FadeIn>
                     </h1>
                 </div>
@@ -103,8 +95,8 @@ export default function Home() {
                         </h2>
                         <div className="flex flex-col justify-end">
                             <FadeIn>
-                                <Link href="/member" className="animated-underline">All</Link>
-                                <span>&nbsp;{'>'}</span>
+                                <Link href="/member" className="font-bold text-xl animated-underline">All</Link>
+                                <span className="font-bold text-xl">&nbsp;{'>'}</span>
                             </FadeIn>
                         </div>
                     </div>
@@ -124,7 +116,7 @@ export default function Home() {
                                         src={pi.img_full}
                                         alt={pi.name}
                                         fill
-                                        className="h-full w-full rounded-md object-cover loading"
+                                        className="h-full w-full rounded-md object-cover bg-gradient-loading"
                                     />
                                 </AspectRatio>
                             </div>
@@ -135,9 +127,7 @@ export default function Home() {
                                 <span>
                                     {pi.title}
                                 </span>
-                                <p>
-                                    {pi.bio}
-                                </p>
+                                <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
                                 <div className="flex gap-6">
                                     {pi.links.map((link) => (
                                         <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
@@ -197,16 +187,16 @@ export default function Home() {
                             </p>
                             <ul className="ml-6 space-y-6 list-outside list-disc">
                                 <li>
-                                    <Link href="mailto:pluo.lhi@gmail.com" className="text-mred animated-underline">pluo.lhi@gmail.com</Link> [ <Link  href="/about-us/#ping_luo" className="text-mred animated-underline">Ping Luo</Link> ]
+                                    <Link href="mailto:pluo.lhi@gmail.com" className="text-mred animated-underline">pluo.lhi@gmail.com</Link> [ <Link target="_self" href="/about-us/#ping_luo" className="text-mred animated-underline">Ping Luo</Link> ]
                                 </li>
                                 <li>
-                                    <Link href="mailto:xihuiliu@eee.hku.hk" className="text-mred animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  href="/about-us/#xihui_liu" className="text-mred animated-underline">Xihui Liu</Link> ]
+                                    <Link href="mailto:xihuiliu@eee.hku.hk" className="text-mred animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  target="_self" href="/about-us/#xihui_liu" className="text-mred animated-underline">Xihui Liu</Link> ]
                                 </li>
                                 <li>
-                                    <Link href="mailto:hongyang@hku.hk" className="text-mred animated-underline">hongyang@hku.hk</Link> [ <Link  href="/about-us/#hongyang_li" className="text-mred animated-underline">Hongyang Li</Link> ]
+                                    <Link href="mailto:hongyang@hku.hk" className="text-mred animated-underline">hongyang@hku.hk</Link> [ <Link target="_self" href="/about-us/#hongyang_li" className="text-mred animated-underline">Hongyang Li</Link> ]
                                 </li>
                                 <li>
-                                    <Link href="mailto:doubledaibo@gmail.com" className="text-mred animated-underline">doubledaibo@gmail.com</Link> [ <Link  href="/about-us/#bo_dai" className="text-mred animated-underline">Bo Dai</Link> ]
+                                    <Link href="mailto:doubledaibo@gmail.com" className="text-mred animated-underline">doubledaibo@gmail.com</Link> [ <Link target="_self" href="/about-us/#bo_dai" className="text-mred animated-underline">Bo Dai</Link> ]
                                 </li>
                             </ul>
                         </div>

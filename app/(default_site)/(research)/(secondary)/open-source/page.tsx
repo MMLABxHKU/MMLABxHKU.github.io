@@ -64,7 +64,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br gradient-eng bg-fixed">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
                 <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
@@ -130,23 +130,23 @@ export default function Home() {
                                             (
                                                 <FadeIn key={open_source.title}>
                                                     <div>
-                                                        <Card className="border-border flex flex-row pl-6 pr-6">
+                                                        <Card className="border-border flex flex-col md:flex-row px-6 md:gap-6">
                                                             <div className="flex justify-center items-center">
                                                                 <Image
                                                                     src={open_source.img}
                                                                     alt="stars"
                                                                     width={512}
                                                                     height={512}
-                                                                    className="flex-1/3"
+                                                                    className="flex-1/3 bg-gradient-loading"
                                                                 />
                                                             </div>
                                                             <div className="flex-2/3 flex flex-col gap-3 justify-between">
-                                                                <CardHeader>
+                                                                <CardHeader className="p-0">
                                                                     <CardTitle className="text-xl scroll-mt-32" id={open_source.id}>{open_source.title}</CardTitle>
                                                                     <CardDescription>{open_source.description}</CardDescription>
                                                                 </CardHeader>
                                                                 <div className="flex flex-col gap-3">
-                                                                    <CardContent className="flex flex-row gap-3 flex-wrap items-center">
+                                                                    <CardContent className="flex flex-row gap-3 flex-wrap items-center p-0">
                                                                         {
                                                                             open_source.githubstars != '' ? 
                                                                             <Image
@@ -157,18 +157,25 @@ export default function Home() {
                                                                             />
                                                                             : <div></div>
                                                                         }
-                                                                        <p className="bg-mred text-background px-3 rounded-xl py-1 text-xs">{open_source.tags[0]}</p>
+                                                                        {open_source.tags.map((tag) => (
+                                                                            <p className="bg-mred text-background px-3 rounded-xl py-1 text-xs" key={tag}>{tag}</p>
+                                                                        ))} 
                                                                     </CardContent>
-                                                                    <div className="flex justify-between">
-                                                                        <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                    <div className="flex flex-col lg:flex-row justify-between gap-3">
+                                                                        <CardFooter className="flex flex-row gap-3 flex-wrap p-0">
                                                                             {open_source.links.map((link) => (
                                                                                 <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                                             ))} 
                                                                         </CardFooter>
-                                                                        <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
+                                                                        <CardFooter className="flex flex-row gap-1 text-mgray text-sm p-0 justify-end">
                                                                             <span>[</span>
-                                                                            {open_source.pis.map((pi) => (
-                                                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} target="_blank" className="animated-underline" key={pi}>{pi}</Link>
+                                                                            {open_source.pis.map((pi, index) => (
+                                                                                <div key={pi}>
+                                                                                    <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
+                                                                                    {index < open_source.pis.length - 1 && (
+                                                                                        <span className="select-none"> | </span>
+                                                                                    )}
+                                                                                </div>
                                                                             ))} 
                                                                             <span>]</span>
                                                                         </CardFooter>

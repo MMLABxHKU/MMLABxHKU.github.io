@@ -24,6 +24,8 @@ const inter = Inter({
     subsets: ["latin"],
     display: "swap",
 });
+// Google Analystics
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 
@@ -132,6 +134,7 @@ export default function RootLayout({
 
 
             </body>
+            <GoogleAnalytics gaId="G-HGTJE0RYX9" />
         </html>
     );
 }
