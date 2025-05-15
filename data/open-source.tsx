@@ -311,7 +311,7 @@ export const open_sources: {
             },
             {
                 website: "Slides",
-                url: "https://opendrivelab.github.io/content/GenAD_slides_with_genad.pdf",
+                url: "https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf",
             },
         ],
         keys :[
@@ -337,12 +337,16 @@ export const open_sources: {
                 website: "Paper",
                 url: "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html",
             },
+            {
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2024/#predictive_world_model",
+            },
         ],
         keys :[
             "Project", "2024"
         ],
         pis: ["Hongyang Li"],
-        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/DrivViDARAGI?style=social",
+        githubstars: "https://img.shields.io/github/stars/OpenDriveLab/ViDAR?style=social",
         img: "https://mmlabassets.github.io/open-source/odl_vidar.jpg",
     },
     {
@@ -544,6 +548,10 @@ export const open_sources: {
             {
                 website: "Paper",
                 url: "https://arxiv.org/abs/2306.02851",
+            },
+            {
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2024/#occupancy_and_flow",
             },
         ],
         keys :[
