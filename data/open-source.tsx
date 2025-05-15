@@ -120,6 +120,10 @@ export const open_sources: {
                 website: "Video",
                 url: "https://www.bilibili.com/video/BV1sNdGYWEBY",
             },
+            {
+                website: "Challenge",
+                url: "https://opendrivelab.com/challenge2025/#agibot-world",
+            },
         ],
         keys :[
             "Project", "2025", "Highlight"
