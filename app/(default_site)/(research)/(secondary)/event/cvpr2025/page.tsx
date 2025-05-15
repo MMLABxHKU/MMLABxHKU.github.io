@@ -201,11 +201,11 @@ export default function Home() {
 
 
 
-                    {/* compeititon */}
+                    {/* competition */}
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#compeititon" className="scroll-mt-32 group flex items-center" id="compeititon">
+                                <Link href="#competition" className="scroll-mt-32 group flex items-center" id="competition">
                                     Competition
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
