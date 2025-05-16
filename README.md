@@ -1,5 +1,4 @@
 # 网站技术方案 
-### Stacks
 - React
 - Next.js
 - Tailwind CSS -> shadcn
