@@ -172,7 +172,7 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-10 select-none">
 
                                     {/* to keep the same */}
-                                    <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
+                                    {/* <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                         </svg>
@@ -186,7 +186,7 @@ export default function RootLayout({
                                         <HoverCardContent className="border-0 w-fit">
                                             <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-mred">xxx@hku.hk</Link>
                                         </HoverCardContent>
-                                    </HoverCard>
+                                    </HoverCard> */}
 
                                 </div>
                             </div>
@@ -196,7 +196,7 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 flex-wrap">
 
                                 {/* to keep the same */}
-                                <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
+                                {/* <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                     <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                     </svg>
@@ -210,7 +210,7 @@ export default function RootLayout({
                                     <HoverCardContent className="border-0 w-fit">
                                         <Link href="mailto:xxx@hku.hk" target="_blank" className="select-none hover:text-mred">xxx@hku.hk</Link>
                                     </HoverCardContent>
-                                </HoverCard>
+                                </HoverCard> */}
 
                             </div>
                         </div>

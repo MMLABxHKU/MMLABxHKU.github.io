@@ -117,12 +117,12 @@ export default function Home() {
                         </h1>
                         <FadeIn>
                             <p className="text-white">
-                                The CUHK Multimedia Lab (MMLab) is one of the pioneering institutes on deep learning. In GPU Technology Conference (GTC) 2016, a world-wide technology summit, our lab is recognized as one of the top ten AI pioneers, and listed together with top research groups in the world (e.g. MIT, Stanford, Berkeley, and Univ. of Toronto). Today, we remain one of the most active research labs in computer vision and deep learning, publishing over 40 papers on top conferences (CVPR/ICCV/ECCV/NIPS) every year.
+                                The CUHK Multimedia Lab is one of the pioneering institutes on deep learning. In GPU Technology Conference (GTC) 2016, a world-wide technology summit, the lab is recognized as one of the top ten AI pioneers, and listed together with top research groups in the world (e.g. MIT, Stanford, Berkeley, and Univ. of Toronto). Today, the lab remains one of the most active research labs in computer vision and deep learning, publishing over 40 papers on top conferences (CVPR/ICCV/ECCV/NIPS) every year.
                             </p>
                         </FadeIn>
                         <FadeIn>
                             <p className="text-white">
-                                Our lab has a large group of talented students, plenty of computational resources, and steady financial support, and free research environment.
+                                The lab has a large group of talented students, plenty of computational resources, and steady financial support, and free research environment.
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
@@ -155,12 +155,12 @@ export default function Home() {
                         </FadeIn>
                         <FadeIn>
                             <p className="text-white">
-                                Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
+                                Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">the research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
                             </p>
                         </FadeIn>
                         <FadeIn>
                             <p className="text-white">
-                                We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow us on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
+                                The lab is always looking for motivated PhD students, postdocs, research assistants who have the same interests. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow the lab on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
