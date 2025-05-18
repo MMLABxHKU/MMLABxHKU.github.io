@@ -47,17 +47,34 @@ export default function Home() {
 
 
 
-            <div className="w-full px-6 flex flex-row justify-center my-64">
-                <h2 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
+            <div className="w-full px-6 flex flex-row justify-center my-32 lg:my-64">
+                <h1 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
                     <FadeIn><RollinggText1/></FadeIn>
                     {/* <FadeIn><RollinggText2/></FadeIn>
                     <FadeIn><RollinggText3/></FadeIn> */}
-                </h2>
+                </h1>
             </div>
-            
+
+
+            <FadeIn> 
+                <div className="w-full px-6 flex flex-row justify-center my-32 lg:my-64">
+                    <div className="max-w-7xl w-full flex flex-row">
+                        <div className="w-full justify-between flex flex-col lg:flex-row gap-20">
+                            <div className="flex-1">
+                                <Link href="/about-us" className="font-bold text-t1 animated-underline">About Us</Link>
+                                <span className="font-bold text-t1">&nbsp;{'>'}</span>
+                            </div>
+                            <div className="flex-1">
+                                <Link href="/research" className="font-bold text-t1 animated-underline">Research</Link>
+                                <span className="font-bold text-t1">&nbsp;{'>'}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </FadeIn>   
 
             
-            <div className="w-full flex flex-col xl:flex-row scroll-mt-32 mt-32" id="MMLab@HKU">
+            <div className="w-full flex flex-col xl:flex-row scroll-mt-32" id="MMLab@HKU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="https://ik.imagekit.io/mmlab/mmlab@hku.jpg"
