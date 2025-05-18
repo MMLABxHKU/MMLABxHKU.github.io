@@ -47,89 +47,20 @@ export default function Home() {
 
 
 
+            <div className="w-full px-6 flex flex-row justify-center my-64">
+                <h2 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
+                    <FadeIn><RollinggText1/></FadeIn>
+                    {/* <FadeIn><RollinggText2/></FadeIn>
+                    <FadeIn><RollinggText3/></FadeIn> */}
+                </h2>
+            </div>
             
-            <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-mblue via-morange to-mred'>
-                <FadeIn><RollinggText1/></FadeIn>
-                <FadeIn><RollinggText2/></FadeIn>
-                <FadeIn><RollinggText3/></FadeIn>
-            </h2>
-            
-
-
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
-                <div className="w-full max-w-7xl flex flex-row justify-between">
-                    <h2 className="text-6xl font-bold flex flex-col gap-3">
-                        <FadeIn>
-                            Explore
-                        </FadeIn>
-                        <FadeIn>
-                            Highlights xxx
-                        </FadeIn>
-                    </h2>
-                    <div className="flex flex-col justify-end">
-                        <FadeIn>
-                            <Link href="/about-us" className="animated-underline">About Us</Link>
-                            <span>&nbsp;{'>'}</span>
-                        </FadeIn>
-                    </div>
-                </div>
-            </div>
-            <div className="w-full relative mt-20 h-96">
-                <Image
-                    src="/background/mmlab@hu.jpg"
-                    alt="mmlab@hku"
-                    fill
-                    className="object-cover object-center bg-gradient-loading select-none h-full"
-                />
-                <div className="absolute flex flex-row w-full h-full justify-between">
-                    <div className="flex-1 h-full"></div>
-                    <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
-                        <FadeIn>
-                            <h1 className="text-xl font-bold">
-                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
-                            </h1>
-                        </FadeIn>
-                        <FadeIn>
-                            <p>
-                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
-                            </p>
-                        </FadeIn>
-                    </div>
-                    <div className="flex-1 h-full bg-background"></div>
-                </div>
-            </div>
-            <div className="w-full relative mt-20 h-96">
-                <Image
-                    src="/background/mmlab@hu.jpg"
-                    alt="mmlab@hku"
-                    fill
-                    className="object-cover object-center bg-gradient-loading select-none h-full"
-                />
-                <div className="absolute flex flex-row w-full h-full justify-between">
-                    <div className="flex-1 h-full bg-background"></div>
-                    <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
-                        <FadeIn>
-                            <h1 className="text-xl font-bold">
-                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
-                            </h1>
-                        </FadeIn>
-                        <FadeIn>
-                            <p>
-                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
-                            </p>
-                        </FadeIn>
-                    </div>
-                    <div className="flex-1 h-full"></div>
-                </div>
-            </div>
-
 
             
             <div className="w-full flex flex-col xl:flex-row scroll-mt-32 mt-32" id="MMLab@HKU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
-                        src="/background/mmlab@hku.jpg"
+                        src="https://ik.imagekit.io/mmlab/mmlab@hku.jpg"
                         alt="mmlab@hku"
                         fill
                         className="object-cover object-center bg-gradient-loading select-none"
@@ -156,7 +87,7 @@ export default function Home() {
             <div className="w-full flex flex-col xl:flex-row-reverse scroll-mt-32" id="MMLab@CUHK">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
-                        src="/background/mmlab@cuhk.jpg"
+                        src="https://ik.imagekit.io/mmlab/mmlab@cuhk.jpg"
                         alt="mmlab@cuhk"
                         fill
                         className="object-cover object-center bg-gradient-loading select-none"
@@ -189,7 +120,7 @@ export default function Home() {
             <div className="w-full flex flex-col xl:flex-row scroll-mt-32" id="MMLab@NTU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
-                        src="/background/mmlab@ntu.jpg"
+                        src="https://ik.imagekit.io/mmlab/mmlab@ntu.jpg"
                         alt="mmlab@ntu"
                         fill
                         className="object-cover object-center bg-gradient-loading select-none"
