@@ -91,12 +91,7 @@ export default function Home() {
                         </h1>
                         <FadeIn>
                             <p className="text-white">
-                                x fdsafvea rea asveracv wacv weWe explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets.
-                            </p>
-                        </FadeIn>
-                        <FadeIn>
-                            <p className="text-white">
-                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                                The Multimedia Lab at The University of Hong Kong is a leading research group dedicated to deep learning, reinforcement learning, robotics, etc. The lab focuses on key areas, such as autonomous driving, multimodality, generative AI, and 3D vision. The lab has built a global reputation for cutting-edge research and impactful open-source contributions with a strong publication record in top-tier conferences like CVPR, ICCV, ECCV, NeurIPS, and ICLR.
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
@@ -127,11 +122,11 @@ export default function Home() {
                                 The CUHK Multimedia Lab is one of the pioneering institutes on deep learning. In GPU Technology Conference (GTC) 2016, a world-wide technology summit, the lab is recognized as one of the top ten AI pioneers, and listed together with top research groups in the world (e.g. MIT, Stanford, Berkeley, and Univ. of Toronto). Today, the lab remains one of the most active research labs in computer vision and deep learning, publishing over 40 papers on top conferences (CVPR/ICCV/ECCV/NIPS) every year.
                             </p>
                         </FadeIn>
-                        <FadeIn>
+                        {/* <FadeIn>
                             <p className="text-white">
                                 The lab has a large group of talented students, plenty of computational resources, and steady financial support, and free research environment.
                             </p>
-                        </FadeIn>
+                        </FadeIn> */}
                         <div className="flex justify-end mt-6">
                             <FadeIn>
                                 <Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link>
@@ -165,11 +160,11 @@ export default function Home() {
                                 Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">the research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
                             </p>
                         </FadeIn>
-                        <FadeIn>
+                        {/* <FadeIn>
                             <p className="text-white">
                                 The lab is always looking for motivated PhD students, postdocs, research assistants who have the same interests. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow the lab on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
                             </p>
-                        </FadeIn>
+                        </FadeIn> */}
                         <div className="flex justify-end mt-6">
                             <FadeIn>
                                 <Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link>
