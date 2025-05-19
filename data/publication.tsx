@@ -82,7 +82,7 @@ export const publications: {
       { website: 'bilibili', url: 'https://www.bilibili.com/video/BV1sNdGYWEBY' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['2025'],
+    keys: ['2025', 'Embodied AI', 'Dataset/Benchmark'],
   },
   {
     title: 'Learning to Act Anywhere with Task-centric Latent Actions',
@@ -94,7 +94,20 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/UniVLA' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['2025'],
+    keys: ['2025', 'Embodied AI'],
+  },
+  {
+    title: 'Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation',
+    authors:
+      'Qingwen Bu, Jia Zeng, Li Chen, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li',
+    proceedings: 'NeurIPS 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2409.09016' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/CLOVER' },
+      { website: 'bilibili', url: 'https://www.bilibili.com/video/BV1rHqZYeECL' },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'DriveLM: Driving with Graph Visual Question Answering',
@@ -109,7 +122,7 @@ export const publications: {
       { website: 'Hugging Face', url: 'https://huggingface.co/datasets/OpenDriveLab-org/DriveLM' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['2024'],
+    keys: ['2024', 'Autonomous Driving'],
   },
   {
     title: 'End-to-End Autonomous Driving: Challenges and Frontiers',
@@ -120,7 +133,33 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['2024'],
+    keys: ['2024', 'Autonomous Driving'],
+  },
+  {
+    title: 'Learning Manipulation by Predicting Interaction',
+    authors:
+      'Jia Zeng, Qingwen Bu, Bangjun Wang, Wenke Xia, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li',
+    proceedings: 'RSS 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2406.00439' },
+      { website: 'Page', url: '/MPI/' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/MPI' },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Embodied AI', '2024'],
+  },
+  {
+    title: 'Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
+    authors:
+      'Qingwen Bu, Hongyang Li, Li Chen, Jisong Cai, Jia Zeng, Heming Cui, Maoqing Yao, Yu Qiao',
+    proceedings: 'arXiv 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2410.08001' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/RoboDual' },
+      { website: 'Page', url: '/RoboDual/' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Planning-oriented Autonomous Driving',
@@ -142,7 +181,7 @@ export const publications: {
       },
     ],
     pis: ['Hongyang Li'],
-    keys: ['2023'],
+    keys: ['2023', 'Autonomous Driving'],
   },
   {
     title:

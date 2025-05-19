@@ -2,137 +2,69 @@ import re
 
 pub = [
     {
-        'title': "Learning to Act Anywhere with Task-centric Latent Actions",
-        'link': "https://arxiv.org/abs/2505.06111",
-        'image': "/assets/publication/univla.jpg",
-        'author': "Qingwen Bu, Yanting Yang, Jisong Cai, Shenyuan Gao, Guanghui Ren, Maoqing Yao, Ping Luo, Hongyang Li",
-        'note': "RSS 2025",
+        'title': "Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation",
+        'link': "https://arxiv.org/abs/2410.08001",
+        'image': "/assets/publication/robodual.jpg",
+        'author': "Qingwen Bu, Hongyang Li, Li Chen, Jisong Cai, Jia Zeng, Heming Cui, Maoqing Yao, Yu Qiao",
+        'note': "arXiv 2024",
         'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/UniVLA?style=social",
-        'starlink': "https://github.com/OpenDriveLab/UniVLA",
+        'star': "https://img.shields.io/github/stars/OpenDriveLab/RoboDual?style=social",
+        'starlink': "https://github.com/OpenDriveLab/RoboDual",
         'icon': [
             {
                 'type': "github",
-                'link': "https://github.com/OpenDriveLab/UniVLA",
-            },
-        ],
-        'description': "A unified vision-language-action framework that enables policy learning across different environments.",
-        'tag': "",
-    },
-    {
-        'title': "Planning-oriented Autonomous Driving",
-        'link': "https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html",
-        'image': "/assets/publication/uniad.jpg",
-        'author': "Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li",
-        'note': "CVPR 2023 Best Paper Award",
-        'noteoption': 'href="https://cvpr2023.thecvf.com/Conferences/2023/Awards" target="_blank"',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/UniAD?style=social",
-        'starlink': "https://github.com/OpenDriveLab/UniAD",
-        'icon': [
-            {
-                'type': "github",
-                'link': "https://github.com/OpenDriveLab/UniAD",
-            },
-            {
-                'type': "youtube",
-                'link': "https://www.youtube.com/watch?v=cyrxJJ_nnaQ",
-            },
-            {
-                'type': "slides",
-                'link': "https://opendrivelab.github.io/UniAD_plenary_talk_slides.pdf",
-            },
-            {
-                'type': "zhihu",
-                'link': "https://zhuanlan.zhihu.com/p/638780421",
-            },
-            {
-                'type': "wechat",
-                'link': "https://mp.weixin.qq.com/s?__biz=MzkyMDUzMDE2Mw==&mid=2247485809&idx=1&sn=5dbd00380bcf80cc32d11b6e15e93829",
-            },
-        ],
-        'description': "A comprehensive framework up-to-date that incorporates full-stack driving tasks in one network.",
-        'tag': "",
-    },
-    {
-        'title': "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
-        'link': "https://arxiv.org/abs/2503.06669",
-        'image': "/assets/publication/go-1.jpg",
-        'author': "Team AgiBot-World",
-        'note': "arXiv 2025",
-        'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social",
-        'starlink': "https://github.com/OpenDriveLab/AgiBot-World",
-        'icon': [
-            {
-                'type': "github",
-                'link': "https://github.com/OpenDriveLab/AgiBot-World",
-            },
-            {
-                'type': "article",
-                'link': "/blog/agibot-world/",
+                'link': "https://github.com/OpenDriveLab/RoboDual",
             },
             {
                 'type': "webpage",
-                'link': "http://agibot-world.com/",
+                'link': "/RoboDual/",
             },
+        ],
+        'description': "Our objective is to develop a synergistic dual-system framework which supplements the generalizability of large-scale pre-trained generalist with the efficient and task-specific adaptation of specialist.",
+        'tag': "",
+    },
+    {
+        'title': "Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation",
+        'link': "https://arxiv.org/abs/2409.09016",
+        'image': "/assets/publication/clover.jpg",
+        'author': "Qingwen Bu, Jia Zeng, Li Chen, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li",
+        'note': "NeurIPS 2024",
+        'noteoption': '',
+        'star': "https://img.shields.io/github/stars/OpenDriveLab/CLOVER?style=social",
+        'starlink': "https://github.com/OpenDriveLab/CLOVER",
+        'icon': [
             {
-                'type': "hugging_face",
-                'link': "https://huggingface.co/agibot-world",
+                'type': "github",
+                'link': "https://github.com/OpenDriveLab/CLOVER",
             },
             {
                 'type': "bilibili",
-                'link': "https://www.bilibili.com/video/BV1sNdGYWEBY",
-            }
+                'link': "https://www.bilibili.com/video/BV1rHqZYeECL",
+            },
         ],
-        'description': "A novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume.",
+        'description': "CLOVER employs a text-conditioned video diffusion model for generating visual plans as reference inputs, then these sub-goals guide the feedback-driven policy to generate actions with an error measurement strategy.",
         'tag': "",
     },
     {
-        'title': "End-to-End Autonomous Driving: Challenges and Frontiers",
-        'link': "https://ieeexplore.ieee.org/abstract/document/10614862/",
-        'image': "/assets/publication/e2esurvey.jpg",
-        'author': "Li Chen, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li",
-        'note': "TPAMI 2024",
+        'title': "Learning Manipulation by Predicting Interaction",
+        'link': "https://arxiv.org/abs/2406.00439",
+        'image': "/assets/publication/mpi.jpg",
+        'author': "Jia Zeng, Qingwen Bu, Bangjun Wang, Wenke Xia, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li",
+        'note': "RSS 2024",
         'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/End-to-end-Autonomous-Driving?style=social",
-        'starlink': "https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving",
+        'star': "https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social",
+        'starlink': "https://github.com/OpenDriveLab/MPI",
         'icon': [
-            {
-                'type': "github",
-                'link': "https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving",
-            },
-        ],
-        'description': "In this survey, we provide a comprehensive analysis of more than 270 papers on the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving.",
-        'tag': "",
-    },
-    {
-        'title': "DriveLM: Driving with Graph Visual Question Answering",
-        'link': "https://arxiv.org/abs/2312.14150",
-        'image': "/assets/publication/drivelm.jpg",
-        'author': "Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Ping Luo, Andreas Geiger, Hongyang Li",
-        'note': "ECCV 2024 Oral",
-        'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social",
-        'starlink': "https://github.com/OpenDriveLab/DriveLM",
-        'icon': [
-            {
-                'type': "dataset",
-                'link': "https://github.com/OpenDriveLab/DriveLM",
-            },
             {
                 'type': "webpage",
-                'link': "/DriveLM/",
+                'link': "/MPI/",
             },
             {
                 'type': "github",
-                'link': "https://github.com/OpenDriveLab/DriveLM",
-            },
-            {
-                'type': "hugging_face",
-                'link': "https://huggingface.co/datasets/OpenDriveLab-org/DriveLM",
+                'link': "https://github.com/OpenDriveLab/MPI",
             },
         ],
-        'description': "",
+        'description': "We propose a general pre-training pipeline that learns Manipulation by Predicting the Interaction (MPI).",
         'tag': "",
     },
 ]
@@ -178,7 +110,7 @@ for p in pub:
         new['pis'].append('Bo Dai')
 
     # key
-    new['keys'] = []
+    new['keys'] = ['Embodied AI']
     pattern = r'\d{4}'
     match = re.search(pattern, p['note'])
     if match:
