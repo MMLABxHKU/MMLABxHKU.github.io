@@ -46,18 +46,19 @@ export default function Home() {
             </div>
 
 
-
-            <div className="w-full px-6 flex flex-row justify-center my-32 lg:my-64">
-                <h1 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
-                    <FadeIn><RollinggText1/></FadeIn>
-                    {/* <FadeIn><RollinggText2/></FadeIn>
-                    <FadeIn><RollinggText3/></FadeIn> */}
-                </h1>
-            </div>
+            <FadeIn>
+                <div className="w-full px-6 flex flex-row justify-center pt-32 pb-16 bg-gradient-to-br from-morange/60 via-mred/40 to-mblue/60 bg-fixed">
+                    <h1 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
+                        <RollinggText1/>
+                        {/* <RollinggText2/>
+                        <RollinggText3/>*/}
+                    </h1>
+                </div>
+            </FadeIn>
 
 
             <FadeIn> 
-                <div className="w-full px-6 flex flex-row justify-center my-32 lg:my-64">
+                <div className="w-full px-6 flex flex-row justify-center pb-32 bg-gradient-to-br from-morange/60 via-mred/40 to-mblue/60 bg-fixed">
                     <div className="max-w-7xl w-full flex flex-row">
                         <div className="w-full justify-between flex flex-col lg:flex-row gap-20">
                             <div className="flex-1">
