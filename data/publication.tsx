@@ -17,6 +17,7 @@ export const publication_categories: { c1: string; c2s: string[] }[] = [
       'General',
       'Generative Models',
       'Graph Learning',
+      'Image Captioning',
       'Machine Learning',
       'Medical Imaging',
       'Multimodality',
