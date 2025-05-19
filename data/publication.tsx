@@ -85,6 +85,27 @@ export const publications: {
     keys: ['2025', 'Embodied AI', 'Dataset/Benchmark'],
   },
   {
+    title: 'Centaur: Robust End-to-End Autonomous Driving with Test-Time Training',
+    authors:
+      'Chonghao Sima, Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez',
+    proceedings: 'arXiv 2025',
+    links: [{ website: 'Paper', url: 'https://arxiv.org/abs/2503.11650' }],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Autonomous Driving', '2025'],
+  },
+  {
+    title: 'Decoupled Diffusion Sparks Adaptive Scene Generation',
+    authors:
+      'Yunsong Zhou, Naisheng Ye, William Ljungbergh, Tianyu Li, Jiazhi Yang, Zetong Yang, Hongzi Zhu, Christoffer Petersson, Hongyang Li',
+    proceedings: 'arXiv 2025',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2504.10485' },
+      { website: 'Page', url: '/Nexus' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2025'],
+  },
+  {
     title: 'Learning to Act Anywhere with Task-centric Latent Actions',
     authors:
       'Qingwen Bu, Yanting Yang, Jisong Cai, Shenyuan Gao, Guanghui Ren, Maoqing Yao, Ping Luo, Hongyang Li',
@@ -125,6 +146,19 @@ export const publications: {
     keys: ['2024', 'Autonomous Driving'],
   },
   {
+    title: 'Embodied Understanding of Driving Scenarios',
+    authors:
+      'Yunsong Zhou, Linyan Huang, Qingwen Bu, Jia Zeng, Tianyu Li, Hang Qiu, Hongzi Zhu, Minyi Guo, Yu Qiao, Hongyang Li',
+    proceedings: 'ECCV 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2403.04593' },
+      { website: 'Page', url: 'https://opendrivelab.github.io/elm.github.io/' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ELM' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
     title: 'End-to-End Autonomous Driving: Challenges and Frontiers',
     authors: 'Li Chen, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li',
     proceedings: 'TPAMI 2024',
@@ -134,6 +168,25 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['2024', 'Autonomous Driving'],
+  },
+  {
+    title: 'Generalized Predictive Model for Autonomous Driving',
+    authors:
+      'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
+    proceedings: 'CVPR 2024 Highlight',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html',
+      },
+      { website: 'Dataset', url: 'https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv' },
+      {
+        website: 'Medium',
+        url: 'https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00',
+      },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li', 'Bo Dai'],
+    keys: ['Autonomous Driving', '2024'],
   },
   {
     title: 'Learning Manipulation by Predicting Interaction',
@@ -149,6 +202,46 @@ export const publications: {
     keys: ['Embodied AI', '2024'],
   },
   {
+    title: 'NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking',
+    authors:
+      'Daniel Dauner, Marcel Hallgarten, Tianyu Li, Xinshuo Weng, Zhiyu Huang, Zetong Yang, Hongyang Li, Igor Gilitschenski, Boris Ivanovic, Marco Pavone, Andreas Geiger, Kashyap Chitta',
+    proceedings: 'NeurIPS 2024 Track Datasets and Benchmarks',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2406.15349' },
+      { website: 'GitHub', url: 'https://github.com/autonomousvision/navsim' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
+    title: 'Open-sourced Data Ecosystem in Autonomous Driving: The Present and Future',
+    authors:
+      'Hongyang Li, Yang Li, Huijie Wang, Jia Zeng, Huilin Xu, Pinlong Cai, Li Chen, Junchi Yan, Feng Xu, Lu Xiong, Jingdong Wang, Futang Zhu, Kai Yan, Chunjing Xu, Tiancai Wang, Fei Xia, Beipeng Mu, Zhihui Peng, Dahua Lin, Yu Qiao',
+    proceedings: 'SCIENTIA SINICA Informationis 2024',
+    links: [
+      { website: 'Paper', url: 'http://engine.scichina.com/doi/10.1360/SSI-2023-0313' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveAGI' },
+      {
+        website: 'ResearchGate',
+        url: 'https://www.researchgate.net/publication/375331218_Open-sourced_Data_Ecosystem_in_Autonomous_Driving_the_Present_and_Future?channel=doi&linkId=65467b44ce88b87031c4ceab&showFulltext=true',
+      },
+      { website: 'Arxiv', url: 'https://arxiv.org/abs/2312.03408' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
+    title: 'Reasoning Multi-Agent Behavioral Topology for Interactive Autonomous Driving',
+    authors: 'Haochen Liu, Li Chen, Yu Qiao, Chen Lv, Hongyang Li',
+    proceedings: 'NeurIPS 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2409.18031' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/BeTop' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
     title: 'Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
     authors:
       'Qingwen Bu, Hongyang Li, Li Chen, Jisong Cai, Jia Zeng, Heming Cui, Maoqing Yao, Yu Qiao',
@@ -160,6 +253,64 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['Embodied AI', '2024'],
+  },
+  {
+    title:
+      'Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability',
+    authors:
+      'Shenyuan Gao, Jiazhi Yang, Li Chen, Kashyap Chitta, Yihang Qiu, Andreas Geiger, Jun Zhang, Hongyang Li',
+    proceedings: 'NeurIPS 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2405.17398' },
+      { website: 'Page', url: '/Vista/' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/Vista' },
+      {
+        website: 'Medium',
+        url: 'https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00',
+      },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
+    title: 'Visual Point Cloud Forecasting enables Scalable Autonomous Driving',
+    authors: 'Zetong Yang, Li Chen, Yanan Sun, Hongyang Li',
+    proceedings: 'CVPR 2024 Highlight',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ViDAR' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
+    title:
+      'DriveAdapter: Breaking the Coupling Barrier of Perception and Planning in End-to-End Autonomous Driving',
+    authors: 'Xiaosong Jia, Yulu Gao, Li Chen, Junchi Yan, Patrick Langechuan Liu, Hongyang Li',
+    proceedings: 'ICCV 2023 Oral',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/ICCV2023/html/Jia_DriveAdapter_Breaking_the_Coupling_Barrier_of_Perception_and_Planning_in_ICCV_2023_paper.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveAdapter' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title: 'LLM4Drive: A Survey of Large Language Models for Autonomous Driving',
+    authors: 'Zhenjie Yang, Xiaosong Jia, Hongyang Li, Junchi Yan',
+    proceedings: 'arXiv 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2311.01043' },
+      { website: 'GitHub', url: 'https://github.com/Thinklab-SJTU/Awesome-LLM4AD' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
   },
   {
     title: 'Planning-oriented Autonomous Driving',
@@ -182,6 +333,66 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['2023', 'Autonomous Driving'],
+  },
+  {
+    title:
+      'Policy Pre-Training for End-to-End Autonomous Driving via Self-Supervised Geometric Modeling',
+    authors: 'Penghao Wu, Li Chen, Hongyang Li, Xiaosong Jia, Junchi Yan, Yu Qiao',
+    proceedings: 'ICLR 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2301.01006' },
+      { website: 'GitHub', url: 'https://github.com/opendrivelab/ppgeo' },
+      {
+        website: 'Slides',
+        url: 'https://docs.google.com/presentation/d/1d0MGh3XCxuZujtYgZ0sr6xsAKZ4uS50p/edit?usp=sharing&ouid=118212253182146260973&rtpof=true&sd=true',
+      },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title:
+      'Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving',
+    authors: 'Xiaosong Jia, Penghao Wu, Li Chen, Jiangwei Xie, Conghui He, Junchi Yan, Hongyang Li',
+    proceedings: 'CVPR 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ThinkTwice' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title:
+      'ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning',
+    authors: 'Shengchao Hu, Li Chen, Penghao Wu, Hongyang Li, Junchi Yan, Dacheng Tao',
+    proceedings: 'ECCV 2022',
+    links: [
+      { website: 'Paper', url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/st-p3' },
+      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/544387122' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2022'],
+  },
+  {
+    title:
+      'Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline',
+    authors: 'Penghao Wu, Xiaosong Jia, Li Chen, Junchi Yan, Hongyang Li, Yu Qiao',
+    proceedings: 'NeurIPS 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/TCP' },
+      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/532665469' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2022'],
   },
   {
     title:
@@ -3079,21 +3290,6 @@ export const publications: {
       },
     ],
     keys: ['Generative Models'],
-    pis: ['Bo Dai'],
-  },
-  {
-    title: 'Generalized predictive model for autonomous driving',
-    authors:
-      'Yang  Jiazhi, Gao  Shenyuan, Qiu  Yihang, Chen  Li, Li  Tianyu, Dai  Bo, Chitta  Kashyap, Wu  Penghao, Zeng  Jia, Luo  Ping, others',
-    proceedings:
-      'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/a70f267ce46eb8b46e9482e9bacb00e64b03c6ea',
-      },
-    ],
-    keys: ['Computer Vision'],
     pis: ['Bo Dai'],
   },
   {
