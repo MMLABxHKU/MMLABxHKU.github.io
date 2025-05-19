@@ -85,7 +85,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 lg:pt-10 pb-10 lg:p-20 gap-6 bg-[#25520d]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#25520d]">
                         <h1 className="text-6xl font-bold text-[#b5a774] mb-6">
                             <FadeIn>MMLab @ HKU</FadeIn>
                         </h1>
@@ -112,7 +112,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 lg:pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#652371]">
                         <h1 className="text-6xl font-bold text-[#e59c2e] mb-6">
                             <FadeIn>MMLab @ CUHK</FadeIn>
                         </h1>
@@ -145,7 +145,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 lg:pt-10 pb-10 lg:p-20 gap-6 bg-[#181C62]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#181C62]">
                         <h1 className="text-6xl font-bold text-[#D71440] mb-6">
                             <FadeIn>MMLab @ NTU</FadeIn>
                         </h1>
