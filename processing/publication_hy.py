@@ -1,3 +1,5 @@
+import re
+
 pub = [
     {
         'title': "Learning to Act Anywhere with Task-centric Latent Actions",
@@ -142,11 +144,26 @@ for p in pub:
     new['title'] = p['title']
     new['authors'] = p['author']
     new['proceedings'] = p['note']
-    new['links'] = []
+    new['links'] = [
+        {
+            'website': 'Paper', 
+            'url': p['link']
+        }
+    ]
     for icon in p['icon']:
         website = icon['type'].split('_')
         website = [s.capitalize() for s in website]
         website = ' '.join(website)
+        if website == 'Github':
+            website = 'GitHub'
+        if website == 'Youtube':
+            website = 'YouTube'
+        if website == 'Wechat':
+            website = 'WeChat'
+        if website == 'Bilibili':
+            website = 'bilibili'
+        if website == 'Webpage':
+            website = 'Page'
         new['links'].append({
             'website': website,
             'url': icon['link']
@@ -162,6 +179,10 @@ for p in pub:
 
     # key
     new['keys'] = []
+    pattern = r'\d{4}'
+    match = re.search(pattern, p['note'])
+    if match:
+        new['keys'].append(str(match.group(0)))
 
     result.append(new)
 
