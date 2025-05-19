@@ -7058,7 +7058,7 @@ export const publications: {
     pis: ['Bo Dai'],
   },
   {
-    title: 'Rethinking Trajectory Prediction via'Team Game'',
+    title: 'Rethinking Trajectory Prediction via Team Game',
     authors: 'Wei  Zikai, Zhu  Xinge, Dai  Bo, Lin  Dahua',
     proceedings: 'arXiv preprint arXiv:2210.08793 2022',
     links: [
