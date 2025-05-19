@@ -6498,4 +6498,1603 @@ export const publications: {
     keys: ['Detection', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
+  {
+    title: 'Towards Diverse and Natural Image Descriptions via a Conditional GAN',
+    authors: 'Dai  Bo, Fidler  Sanja, Urtasun  Raquel, Lin  Dahua',
+    proceedings: 'IEEE International Conference on Computer Vision (ICCV) 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Towards-Diverse-and-Natural-Image-Descriptions-via-Dai-Fidler/24dc571a49d3431e8cb1f1008f86d5dd5b7a1613'
+      },
+    ],
+    keys: ['Image Captioning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Detecting Visual Relationships with Deep Relational Networks',
+    authors: 'Dai  Bo, Zhang  Yuqi, Lin  Dahua',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/5fcd93997b7dde90594dc1caa27ba9d560bbe63d'
+      },
+    ],
+    keys: ['Visual Relationship Detection'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Contrastive Learning for Image Captioning',
+    authors: 'Dai  Bo, Lin  Dahua',
+    proceedings: '31st Conference on Neural Information Processing Systems (NIPS 2017) 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/83d66c1f808962536a68418587b691f30221c5a1'
+      },
+    ],
+    keys: ['Machine Learning', 'Image Captioning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Rethinking the Form of Latent States in Image Captioning',
+    authors: 'Dai  Bo, Ye  Deming, Lin  Dahua',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/94e3b75a6732b5918c4c2b87d127a9216ff07efc'
+      },
+    ],
+    keys: ['Image Captioning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Move Forward and Tell: A Progressive Generator of Video Descriptions',
+    authors: 'Xiong  Yilei, Dai  Bo, Lin  Dahua',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Move-Forward-and-Tell%3A-A-Progressive-Generator-of-Xiong-Dai/b74a094b6e35fab07e1a4694afd12cad9696f1c1'
+      },
+    ],
+    keys: ['Image Captioning', 'Video Understanding'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Neural Network Encapsulation',
+    authors: 'Li  Hongyang, Guo  Xiaoyang, Dai  Bo, Ouyang  Wanli, Wang  Xiaogang',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/f96f30e7af13c3fbf83ee58e1c7f577414af1aa9'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'A Neural Compositional Paradigm for Image Captioning',
+    authors: 'Dai  Bo, Fidler  Sanja, Lin  Dahua',
+    proceedings: '32nd Conference on Neural Information Processing Systems (NIPS 2018)',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/345a222fef6f5c1415056319ae7e87a369940d3f'
+      },
+    ],
+    keys: ['Image Captioning', 'Visual Reasoning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Feature Intertwiner for Object Detection',
+    authors: 'Li  Hongyang, Dai  Bo, Shi  Shaoshuai, Ouyang  Wanli, Wang  Xiaogang',
+    proceedings: 'International Conference on Learning Representation (ICLR) 2019',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Feature-Intertwiner-for-Object-Detection-Li-Dai/d2420d9ce64d101b28641660b4641c415fc7a6c9'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Recursive Visual Sound Separation Using Minus-Plus Net',
+    authors: 'Xu  Xudong, Dai  Bo, Lin  Dahua',
+    proceedings: 'IEEE International Conference on Computer Vision (ICCV) 2019',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Recursive-Visual-Sound-Separation-Using-Minus-Plus-Xu-Dai/b7a5f074e06cf8d71e26fb5d25b86b4164a5bb54'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Real or Not Real, that is the Question',
+    authors: 'Xiangli  Yuanbo, Deng  Yubin, Dai  Bo, Loy  Chen Change, Lin  Dahua',
+    proceedings: 'International Conference on Learning Representation (ICLR) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/7a2c9cc48062fcfd77a2e6e97aa48119a21c9f7d'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Temporal Pyramid Network for Action Recognition',
+    authors: 'Yang  Ceyuan, Xu  Yinghao, Shi  Jianping, Dai  Bo, Zhou  Bolei',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/10db26c80238d70ca51d8a5293d893b6f1dedc8b'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Self-Supervised Scene De-occlusion',
+    authors: 'Zhan  Xiaohang, Pan  Xingang, Dai  Bo, Liu  Ziwei, Lin  Dahua, Loy  Chen Change',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2004.02788'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding',
+    authors: 'Shao  Dian, Zhao  Yue, Dai  Bo, Lin  Dahua',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/FineGym%3A-A-Hierarchical-Video-Dataset-for-Action-Shao-Zhao/f5c35edc9cf622c7dd7e19ce6fbd5d563557de5b'
+      },
+    ],
+    keys: ['Video Understanding'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Exploiting Deep Generative Prior for Versatile Image Restoration and Manipulation',
+    authors: 'Pan  Xingang, Zhan  Xiaohang, Dai  Bo, Lin  Dahua, Loy  Chen Change, Luo  Ping',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Exploiting-Deep-Generative-Prior-for-Versatile-and-Pan-Zhan/7101bc1c316740d99cd87185586829291a983a1d'
+      },
+    ],
+    keys: ['Robotics', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Evolutionary Stochastic Policy Distillation',
+    authors: 'Sun  Hao, Pan  Xinyu, Dai  Bo, Lin  Dahua, Zhou  Bolei',
+    proceedings: 'arXiv preprint arXiv:2004.12909 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Evolutionary-Stochastic-Policy-Distillation-Sun-Pan/36e739a71e408e19d1c37ea4873370f293bfceb2'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Intra-and inter-action understanding via temporal action parsing',
+    authors: 'Shao  Dian, Zhao  Yue, Dai  Bo, Lin  Dahua',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Intra-and-Inter-Action-Understanding-via-Temporal-Shao-Zhao/c09af0b1bdbd5d532b0d5d2ba2a2a12b29ba4f19'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Novel policy seeking with constrained optimization',
+    authors: 'Sun  Hao, Peng  Zhenghao, Dai  Bo, Guo  Jian, Lin  Dahua, Zhou  Bolei',
+    proceedings: 'arXiv preprint arXiv:2005.10696 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Novel-Policy-Seeking-with-Constrained-Optimization-Sun-Peng/99bc5a19a5aa9f85e2c1ecdc9bf8add7b75dae45'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Video representation learning with visual tempo consistency',
+    authors: 'Yang  Ceyuan, Xu  Yinghao, Dai  Bo, Zhou  Bolei',
+    proceedings: 'arXiv preprint arXiv:2006.15489 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Video-Representation-Learning-with-Visual-Tempo-Yang-Xu/2e1e98779bf721a91c5b41e2ac00ffc305469da5'
+      },
+    ],
+    keys: ['Machine Learning', 'Video Understanding'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Unsupervised landmark learning from unpaired data',
+    authors: 'Xu  Yinghao, Yang  Ceyuan, Liu  Ziwei, Dai  Bo, Zhou  Bolei',
+    proceedings: 'arXiv preprint arXiv:2007.01053 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Unsupervised-Landmark-Learning-from-Unpaired-Data-Xu-Yang/15f7693004b67cf10ef9fa29847f4755dc17cee3'
+      },
+    ],
+    keys: ['Machine Learning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Do 2d gans know 3d shape? unsupervised 3d shape reconstruction from 2d image gans',
+    authors: 'Pan  Xingang, Dai  Bo, Liu  Ziwei, Loy  Chen Change, Luo  Ping',
+    proceedings: 'International Conference on Learning Representations (ICLR) 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Do-2D-GANs-Know-3D-Shape-Unsupervised-3D-shape-from-Pan-Dai/7d7d189796efa8fbd3f516b183954bc36f262f3f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Policy continuation and policy evolution with hindsight inverse dynamics',
+    authors: 'Sun  Hao, Dai  Bo, Li  Zhizhong, Liu  Xiaotong, Xu  Rui, Lin  Dahua, Zhou  Bolei',
+    proceedings: 'Optimization Foundations for Reinforcement Learning Workshop at NeurIPS 2019',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Policy-Continuation-and-Policy-Evolution-with-Sun-Dai/f52449c24b55852bff87205f50d30339166ba8df'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Visually informed binaural audio generation without binaural audios',
+    authors: 'Xu  Xudong, Zhou  Hang, Liu  Ziwei, Dai  Bo, Wang  Xiaogang, Lin  Dahua',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Visually-Informed-Binaural-Audio-Generation-without-Xu-Zhou/06a48439d4eab9d73f440c1db57fa67bf023f030'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Unsupervised 3D Shape Completion through GAN Inversion',
+    authors: 'Zhang  Junzhe, Chen  Xinyi, Cai  Zhongang, Pan  Liang, Zhao  Haiyu, Yi  Shuai, Yeo  Chai Kiat, Dai  Bo, Loy  Chen Change',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Unsupervised-3D-Shape-Completion-through-GAN-Zhang-Chen/99f2cadcaed68ad07d5377d15c7af8a5422af680'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Revisiting skeleton-based action recognition',
+    authors: 'Duan  Haodong, Zhao  Yue, Chen  Kai, Lin  Dahua, Dai  Bo',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Revisiting-Skeleton-based-Action-Recognition-Duan-Zhao/f8c4c5cc82f6270b62d5f68940e444b55ea2f13c'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Scene-aware Generative Network for Human Motion Synthesis',
+    authors: 'Wang  Jingbo, Yan  Sijie, Dai  Bo, LIn  Dahua',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Scene-aware-Generative-Network-for-Human-Motion-Wang-Yan/80446df79c7d5d5c76dea68b5f8873e24efdd40e'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Focal frequency loss for image reconstruction and synthesis',
+    authors: 'Jiang  Liming, Dai  Bo, Wu  Wayne, Loy  Chen Change',
+    proceedings: 'Proceedings of the IEEE/CVF international conference on computer vision 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Focal-Frequency-Loss-for-Image-Reconstruction-and-Jiang-Dai/05afe403fd398f774aed4e9872a0eca1dfa21d36'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Optimization variance: Exploring generalization properties of DNNs',
+    authors: 'Zhang  Xiao, Wu  Dongrui, Xiong  Haoyi, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2106.01714 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Optimization-Variance%3A-Exploring-Generalization-of-Zhang-Wu/0654d07f4b2e0841764bf2bd8415f78c371cad7f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Blockplanner: City block generation with vectorized graph representation',
+    authors: 'Xu  Linning, Xiangli  Yuanbo, Rao  Anyi, Zhao  Nanxuan, Dai  Bo, Liu  Ziwei, Lin  Dahua',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/BlockPlanner%3A-City-Block-Generation-with-Vectorized-Xu-Xiangli/a65fbfaba54f76d14f3ad25f61befa459cdffa84'
+      },
+    ],
+    keys: ['Graph Neural Networks', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'A Shading-Guided Generative Implicit Model for Shape-Accurate 3D-Aware Image Synthesis',
+    authors: 'Pan  Xingang, Xu  Xudong, Loy  Chen Change, Theobalt  Christian, Dai  Bo',
+    proceedings: 'Neural Information Processing Systems (NeurIPS) 2021 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/A-Shading-Guided-Generative-Implicit-Model-for-Pan-Xu/7f03aa91b5bfdfc2b5c1a177262ca5da21dfca04'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Deceive d: Adaptive pseudo augmentation for gan training with limited data',
+    authors: 'Jiang  Liming, Dai  Bo, Wu  Wayne, Loy  Chen Change',
+    proceedings: 'Advances in Neural Information Processing Systems 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/ba0eb489230fd50cb2848732e27424b77124ddcf'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Generative occupancy fields for 3d surface-aware image synthesis',
+    authors: 'Xu  Xudong, Pan  Xingang, Lin  Dahua, Dai  Bo',
+    proceedings: 'Advances in Neural Information Processing Systems 2021',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Generative-Occupancy-Fields-for-3D-Surface-Aware-Xu-Pan/0755a30a4da86f60534e38507d786fc4fcae6540'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Cross-Model Pseudo-Labeling for Semi-Supervised Action Recognition',
+    authors: 'Xu  Yinghao, Wei  Fangyun, Sun  Xiao, Yang  Ceyuan, Shen  Yujun, Dai  Bo, Zhou  Bolei, Lin  Stephen',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/138cd7e783062f51740fc6842e1a804b4fb32b3a'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'TransEditor: Transformer-Based Dual-Space GAN for Highly Controllable Facial Editing',
+    authors: 'Xu  Yanbo, Yin  Yueqin, Jiang  Liming, Wu  Qianyi, Zheng  Chengyao, Loy  Chen Change, Dai  Bo, Wu  Wayne',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/TransEditor%3A-Transformer-Based-Dual-Space-GAN-for-Xu-Yin/bc6c2e432840e1ac17738eda4745e9cce3753030'
+      },
+    ],
+    keys: ['Transformers'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Towards Diverse and Natural Scene-aware 3D Human Motion Synthesis',
+    authors: 'Wang  Jingbo, Rong  Yu, Liu  Jingyuan, Yan  Sijie, Lin  Dahua, Dai  Bo',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/69febe5c00d7e4d03f3df569ba324d074686938c'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation',
+    authors: 'Liu  Xian, Wu  Qianyi, Zhou  Hang, Xu  Yinghao, Qian  Rui, Lin  Xinyi, Zhou  Xiaowei, Wu  Wayne, Dai  Bo, Zhou  Bolei',
+    proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/769c2b7537dc0b9bddc1e4169e1d3b6f17bffc99'
+      },
+    ],
+    keys: ['Machine Learning', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Accelerating diffusion models via early stop of the diffusion process',
+    authors: 'Lyu  Zhaoyang, Xu  Xudong, Yang  Ceyuan, Lin  Dahua, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2205.12524 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Accelerating-Diffusion-Models-via-Early-Stop-of-the-Lyu-Xudong/77ee8ee73f146043e888574638adfc3fb05dbf7f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Guided diffusion model for adversarial purification',
+    authors: 'Wang  Jinyi, Lyu  Zhaoyang, Lin  Dahua, Dai  Bo, Fu  Hongfei',
+    proceedings: 'arXiv preprint arXiv:2205.14969 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/254e21a16df4a45899e6fd5e1fab9202c3491e4c'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'BRACE: The Breakdancing Competition Dataset for Dance Motion Synthesis',
+    authors: 'Moltisanti  Davide, Wu  Jinyi, Dai  Bo, Loy  Chen Change',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/2eb172cd942ce173e53b3466c14a15f4bccd51f4'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Monocular 3D Object Reconstruction with GAN Inversion',
+    authors: 'Zhang  Junzhe, Ren  Daxuan, Cai  Zhongang, Yeo  Chai Kiat, Dai  Bo, Loy  Chen Change',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/3bcf42780f142e0c5d7efc6741018a34ed161c3c'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Transformer with Implicit Edges for Particle-based Physics Simulation',
+    authors: 'Shao  Yidi, Loy  Chen Change, Dai  Bo',
+    proceedings: 'European Conference on Computer Vision (ECCV) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Transformer-with-Implicit-Edges-for-Particle-based-Shao-Loy/fb1036cddc05983c3c8d296b61d7bec2605118ef'
+      },
+    ],
+    keys: ['Transformers'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Improving GANs with A Dynamic Discriminator',
+    authors: 'Yang  Ceyuan, Shen  Yujun, Xu  Yinghao, Zhao  Deli, Dai  Bo, Zhou  Bolei',
+    proceedings: 'Neural Information Processing Systems (NeurIPS) 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Improving-GANs-with-A-Dynamic-Discriminator-Yang-Shen/533bd07bb49a6c8cb65bad96236a8490f8fd2182'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Bungeenerf: Progressive neural radiance field for extreme multi-scale scene rendering',
+    authors: 'Xiangli  Yuanbo, Xu  Linning, Pan  Xingang, Zhao  Nanxuan, Rao  Anyi, Theobalt  Christian, Dai  Bo, Lin  Dahua',
+    proceedings: 'European conference on computer vision 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/795fecd949592a89c88cc96d22478df04519d4f8'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Temporal and contextual transformer for multi-camera editing of TV shows',
+    authors: 'Rao  Anyi, Jiang  Xuekun, Wang  Sichen, Guo  Yuwei, Liu  Zihao, Dai  Bo, Pang  Long, Wu  Xiaoyu, Lin  Dahua, Jin  Libiao',
+    proceedings: 'arXiv preprint arXiv:2210.08737 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Temporal-and-Contextual-Transformer-for-Editing-of-Rao-Jiang/58aba12dc885e8f9383476744e356e8edc21b73c'
+      },
+    ],
+    keys: ['Transformers'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Rethinking Trajectory Prediction via'Team Game'',
+    authors: 'Wei  Zikai, Zhu  Xinge, Dai  Bo, Lin  Dahua',
+    proceedings: 'arXiv preprint arXiv:2210.08793 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Rethinking-Trajectory-Prediction-via-%22Team-Game%22-Wei-Zhu/4936f9a1385a5585ed385b5e58c4a0c48ecaceaa'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Extract free dense labels from clip',
+    authors: 'Zhou  Chong, Loy  Chen Change, Dai  Bo',
+    proceedings: 'European Conference on Computer Vision 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Extract-Free-Dense-Labels-from-CLIP-Zhou-Loy/0a7e7347e16bf13d710f6f3d30748baabdbb96ad'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Factor investing with a deep multi-factor model',
+    authors: 'Wei  Zikai, Dai  Bo, Lin  Dahua',
+    proceedings: 'arXiv preprint arXiv:2210.12462 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/189f18cda78d6756d0f0a9cfbde84b1a57e3fa69'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Deciwatch: A simple baseline for 10$\\times$ efficient 2d and 3d pose estimation',
+    authors: 'Zeng  Ailing, Ju  Xuan, Yang  Lei, Gao  Ruiyuan, Zhu  Xizhou, Dai  Bo, Xu  Qiang',
+    proceedings: 'European Conference on Computer Vision 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/32da58aa252700339b118b1e4f03bd721d2d5b55'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Self-supervised geometry-aware encoder for style-based 3D GAN inversion',
+    authors: 'Lan  Yushi, Meng  Xuyi, Yang  Shuai, Loy  Chen Change, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/94cda50f5e311975d00ba6e960f6e325b44d4b85'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Correspondence Distillation from NeRF-Based GAN',
+    authors: 'Lan  Yushi, Loy  Chen Change, Dai  Bo',
+    proceedings: 'International Journal of Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/a786b4faf741c9c24c10e0a99e2d43c7cd067744'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Controllable mesh generation through sparse latent point diffusion models',
+    authors: 'Lyu  Zhaoyang, Wang  Jinyi, An  Yuwei, Zhang  Ya, Lin  Dahua, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF conference on computer vision and pattern recognition 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/fb00c87e7d91205310ab673ed7d96b4b83e80181'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Task-Oriented Human-Object Interactions Generation with Implicit Neural Representations',
+    authors: 'Li  Quanzhou, Wang  Jingbo, Loy  Chen Change, Dai  Bo',
+    proceedings: 'IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/2e367a8a4945ea04e2560120e030afd28b89f488'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: '3d data augmentation for driving scenes on camera',
+    authors: 'Tong  Wenwen, Xie  Jiangwei, Li  Tianyu, Li  Yang, Deng  Hanming, Dai  Bo, Lu  Lewei, Zhao  Hao, Yan  Junchi, Li  Hongyang',
+    proceedings: 'Chinese Conference on Pattern Recognition and Computer Vision (PRCV) 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/ee93f9f277b0a41985658612ed9dbae45950f8d2'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Grid-guided neural radiance fields for large urban scenes',
+    authors: 'Xu  Linning, Xiangli  Yuanbo, Peng  Sida, Pan  Xingang, Zhao  Nanxuan, Theobalt  Christian, Dai  Bo, Lin  Dahua',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Grid-guided-Neural-Radiance-Fields-for-Large-Urban-Xu-Xiangli/b904a7f27dafcd2d29de5852fcad03041a1166f5'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'AssetField: Assets Mining and Reconfiguration in Ground Feature Plane Representation',
+    authors: 'Xiangli  Yuanbo, Xu  Linning, Pan  Xingang, Zhao  Nanxuan, Dai  Bo, Lin  Dahua',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/c4c2aed56ffc66d8154941d21e24cce61e4f03c8'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'SynBody: Synthetic Dataset with Layered Human Models for 3D Human Perception and Modeling',
+    authors: 'Yang  Zhitao, Cai  Zhongang, Mei  Haiyi, Liu  Shuai, Chen  Zhaoxi, Xiao  Weiye, Wei  Yukun, Qing  Zhongfei, Wei  Chen, Dai  Bo, others',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/SynBody%3A-Synthetic-Dataset-with-Layered-Human-for-Yang-Cai/7ea5344715d210dad8171af1ca5018c665e4972a'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Revisiting the Evaluation of Image Synthesis with GANs',
+    authors: 'Yang  Mengping, Yang  Ceyuan, Zhang  Yichi, Bai  Qingyan, Shen  Yujun, Dai  Bo',
+    proceedings: 'NeurIPS 2023 Datasets and Benchmarks 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/387ad594473a40115bc6d96796e8f856d59bad02'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Generative diffusion prior for unified image restoration and enhancement',
+    authors: 'Fei  Ben, Lyu  Zhaoyang, Pan  Liang, Zhang  Junzhe, Yang  Weidong, Luo  Tianyue, Zhang  Bo, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF conference on computer vision and pattern recognition 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Generative-Diffusion-Prior-for-Unified-Image-and-Fei-Lyu/5549dc3ceff07561d9fb59610c0f78c71617901a'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Hyperstyle3d: Text-guided 3d portrait stylization via hypernetworks',
+    authors: 'Chen  Zhuo, Xu  Xudong, Yan  Yichao, Pan  Ye, Zhu  Wenhan, Wu  Wayne, Dai  Bo, Yang  Xiaokang',
+    proceedings: 'IEEE Transactions on Circuits and Systems for Video Technology 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/HyperStyle3D%3A-Text-Guided-3D-Portrait-Stylization-Chen-Xu/00cb67b8a8efb17d7101db912f360398416e57f4'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Towards Multi-Layered 3D Garments Animation',
+    authors: 'Shao  Yidi, Loy  Chen Change, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023 ',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/cf7fa79e86dfe50101b96a1920978565430e552e'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'E2EAI: End-to-End Deep Learning Framework for Active Investing',
+    authors: 'Wei  Zikai, Dai  Bo, Lin  Dahua',
+    proceedings: 'Proceedings of the Fourth ACM International Conference on AI in Finance 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/7c83ce03af61b17f5ece31477faf6028de780bd8'
+      },
+    ],
+    keys: ['Machine Learning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Hirevae: An online and adaptive factor model based on hierarchical and regime-switch vae',
+    authors: 'Wei  Zikai, Rao  Anyi, Dai  Bo, Lin  Dahua',
+    proceedings: 'arXiv preprint arXiv:2306.02848 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/HireVAE%3A-An-Online-and-Adaptive-Factor-Model-Based-Wei-Rao/b2241edb47d3e65035c6eb6db2b0e644966a74de'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Leo: Generative latent image animator for human video synthesis',
+    authors: 'Wang  Yaohui, Ma  Xin, Chen  Xinyuan, Chen  Cunjian, Dantcheva  Antitza, Dai  Bo, Qiao  Yu',
+    proceedings: 'International Journal of Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/LEO%3A-Generative-Latent-Image-Animator-for-Human-Wang-Ma/43c93968ea54ea098879c548732272aa22ce04ab'
+      },
+    ],
+    keys: ['Video Understanding', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Animatediff: Animate your personalized text-to-image diffusion models without specific tuning',
+    authors: 'Guo  Yuwei, Yang  Ceyuan, Rao  Anyi, Liang  Zhengyang, Wang  Yaohui, Qiao  Yu, Agrawala  Maneesh, Lin  Dahua, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2307.04725 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/AnimateDiff%3A-Animate-Your-Personalized-Diffusion-Guo-Yang/c1caa303549764d220ff17dc1785985dd1ba6047'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Dna-rendering: A diverse neural actor repository for high-fidelity human-centric rendering',
+    authors: 'Cheng  Wei, Chen  Ruixiang, Fan  Siming, Yin  Wanqi, Chen  Keyu, Cai  Zhongang, Wang  Jingbo, Gao  Yang, Yu  Zhengming, Lin  Zhengyu, others',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/DNA-Rendering%3A-A-Diverse-Neural-Actor-Repository-Cheng-Chen/d711d09cf573b77ca8f43050e2b60462cc77223e'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Matlaber: Material-aware text-to-3d via latent brdf auto-encoder',
+    authors: 'Xu  Xudong, Lyu  Zhaoyang, Pan  Xingang, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2308.09278 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/MATLABER%3A-Material-Aware-Text-to-3D-via-LAtent-BRDF-Xu-Lyu/6af93090c0bef85cf21ef5db9ce16fe001159ab7'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Learning Modulated Transformation in GANs',
+    authors: 'Yang  Ceyuan, Zhang  Qihang, Xu  Yinghao, Zhu  Jiapeng, Shen  Yujun, Dai  Bo',
+    proceedings: 'Advances in Neural Information Processing Systems (NeurIPS) 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/c9f39cc087f49be1e71e9a0dd5ac37039368a72a'
+      },
+    ],
+    keys: ['Machine Learning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Diffbir: Toward blind image restoration with generative diffusion prior',
+    authors: 'Lin  Xinqi, He  Jingwen, Chen  Ziyan, Lyu  Zhaoyang, Dai  Bo, Yu  Fanghua, Qiao  Yu, Ouyang  Wanli, Dong  Chao',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/DiffBIR%3A-Toward-Blind-Image-Restoration-with-Prior-Lin-He/9f685f780a18606525926352dd91a1de4fbd0748'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Matrixcity: A large-scale city dataset for city-scale neural rendering and beyond',
+    authors: 'Li  Yixuan, Jiang  Lihan, Xu  Linning, Xiangli  Yuanbo, Wang  Zhenzhi, Lin  Dahua, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/MatrixCity%3A-A-Large-scale-City-Dataset-for-Neural-Li-Jiang/861593f632f98aa597802b95056a05b37e8955f8'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Interpret vision transformers as convnets with dynamic convolutions',
+    authors: 'Zhou  Chong, Loy  Chen Change, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2309.10713 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/fc773da8606fe08b835eb2071050fad8379e2dc6'
+      },
+    ],
+    keys: ['Transformers', 'Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Orthoplanes: A novel representation for better 3d-awareness of gans',
+    authors: 'He  Honglin, Yang  Zhuoqian, Li  Shikai, Dai  Bo, Wu  Wayne',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/7df7b0625fdf775611b8e6bb7bbad00fcc9fd074'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Linkgan: Linking gan latents to pixels for controllable image synthesis',
+    authors: 'Zhu  Jiapeng, Yang  Ceyuan, Shen  Yujun, Shi  Zifan, Dai  Bo, Zhao  Deli, Chen  Qifeng',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/0fc8bc437bd741410a5688d475bf8b0687aef039'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: '3dhumangan: 3d-aware human image generation with 3d pose mapping',
+    authors: 'Yang  Zhuoqian, Li  Shikai, Wu  Wayne, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/3DHumanGAN%3A-3D-Aware-Human-Image-Generation-with-3D-Yang-Li/f3f9a5e0f0b868a16c6940737c3af3a9efd6dc9c'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Lavie: High-quality video generation with cascaded latent diffusion models',
+    authors: 'Wang  Yaohui, Chen  Xinyuan, Ma  Xin, Zhou  Shangchen, Huang  Ziqi, Wang  Yi, Yang  Ceyuan, He  Yinan, Yu  Jiashuo, Yang  Peiqing, others',
+    proceedings: 'International Journal of Computer Vision 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/LAVIE%3A-High-Quality-Video-Generation-with-Cascaded-Wang-Chen/ed4603ea341acc26cab24f41aa40524fb7779917'
+      },
+    ],
+    keys: ['Video Understanding', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Constrained mdps can be solved by eearly-termination with recurrent models',
+    authors: 'Sun  Hao, Xu  Ziping, Peng  Zhenghao, Fang  Meng, Wang  Taiyi, Dai  Bo, Zhou  Bolei',
+    proceedings: 'NeurIPS 2022 Foundation Models for Decision Making Workshop 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openreview.net/forum?id=2WXr1CyDN4Q'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Zeroth-order supervised policy improvement',
+    authors: 'Sun  Hao, Xu  Ziping, Song  Yuhang, Fang  Meng, Xiong  Jiechao, Dai  Bo, Zhou  Bolei',
+    proceedings: 'arXiv preprint arXiv:2006.06600 2020',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Zeroth-Order-Supervised-Policy-Improvement-Sun-Xu/3f673101c2cac3b47639056e2988e018546c3c90'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'RenderMe-360: A Large Digital Asset Library and Benchmarks Towards High-fidelity Head Avatars',
+    authors: 'Pan  Dongwei, Zhuo  Long, Piao  Jingtan, Luo  Huiwen, Cheng  Wei, Wang  Yuxin, Fan  Siming, Liu  Shengqi, Yang  Lei, Dai  Bo, others',
+    proceedings: 'NeurIPS 2023 Datasets and Benchmarks 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/RenderMe-360%3A-A-Large-Digital-Asset-Library-and-Pan-Zhuo/3e09cec24d15564929a58af93d139c956a4a2128'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Point cloud pre-training with diffusion models',
+    authors: 'Zheng  Xiao, Huang  Xiaoshui, Mei  Guofeng, Hou  Yuenan, Lyu  Zhaoyang, Dai  Bo, Ouyang  Wanli, Gong  Yongshun',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/437c7836d32c7f221aad466047130075c7cb5336'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Sparsectrl: Adding sparse controls to text-to-video diffusion models',
+    authors: 'Guo  Yuwei, Yang  Ceyuan, Rao  Anyi, Agrawala  Maneesh, Lin  Dahua, Dai  Bo',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/SparseCtrl%3A-Adding-Sparse-Controls-to-Text-to-Video-Guo-Yang/40626a059bcd8d3e7f364b410f831b9baf997b0c'
+      },
+    ],
+    keys: ['Video Understanding'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Cinematic Behavior Transfer via NeRF-based Differentiable Filming',
+    authors: 'Jiang  Xuekun, Rao  Anyi, Wang  Jingbo, Lin  Dahua, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Cinematic-Behavior-Transfer-via-NeRF-based-Filming-Jiang-Rao/58fbdacd2435e00917da5f95778ad6a0e6d628f9'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Berfscene: Bev-conditioned equivariant radiance fields for infinite 3d scene generation',
+    authors: 'Zhang  Qihang, Xu  Yinghao, Shen  Yujun, Dai  Bo, Zhou  Bolei, Yang  Ceyuan',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/0f5d8ae5aec31c3c2d6a00d2ef8fbdf077dcafd0'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Scaffold-gs: Structured 3d gaussians for view-adaptive rendering',
+    authors: 'Lu  Tao, Yu  Mulin, Xu  Linning, Xiangli  Yuanbo, Wang  Limin, Lin  Dahua, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Scaffold-GS%3A-Structured-3D-Gaussians-for-Rendering-Lu-Yu/a294b8632fed59e7079ef6187b0afa532c97ed7f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Edgesam: Prompt-in-the-loop distillation for on-device deployment of sam',
+    authors: 'Zhou  Chong, Li  Xiangtai, Loy  Chen Change, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2312.06660 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/EdgeSAM%3A-Prompt-In-the-Loop-Distillation-for-of-SAM-Zhou-Li/36e75a2fac5f0414a649e2842f52fbfdf370b9cc'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'EpiDiff: Enhancing Multi-View Synthesis via Localized Epipolar-Constrained Diffusion',
+    authors: 'Huang  Zehuan, Wen  Hao, Dong  Junting, Wang  Yaohui, Li  Yangguang, Chen  Xinyuan, Cao  Yan-Pei, Liang  Ding, Qiao  Yu, Dai  Bo, others',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/EpiDiff%3A-Enhancing-Multi-View-Synthesis-via-Huang-Wen/bbd989e42384784c2c610df4a03be37db43859ec'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Unified human-scene interaction via prompted chain-of-contacts',
+    authors: 'Xiao  Zeqi, Wang  Tai, Wang  Jingbo, Cao  Jinkun, Zhang  Wenwei, Dai  Bo, Lin  Dahua, Pang  Jiangmiao',
+    proceedings: 'arXiv preprint arXiv:2309.07918 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/dca4ed6d4db18216796336d647f8d4bdf197f039'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Generalized predictive model for autonomous driving',
+    authors: 'Yang  Jiazhi, Gao  Shenyuan, Qiu  Yihang, Chen  Li, Li  Tianyu, Dai  Bo, Chitta  Kashyap, Wu  Penghao, Zeng  Jia, Luo  Ping, others',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/a70f267ce46eb8b46e9482e9bacb00e64b03c6ea'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Ln3diff: Scalable latent neural fields diffusion for speedy 3d generation',
+    authors: 'Lan  Yushi, Hong  Fangzhou, Yang  Shuai, Zhou  Shangchen, Meng  Xuyi, Dai  Bo, Pan  Xingang, Loy  Chen Change',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/c115fe03ce13e8cd7a1809e4325f95c36c06ef23'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Getmesh: A controllable model for high-quality mesh generation and manipulation',
+    authors: 'Lyu  Zhaoyang, Fei  Ben, Wang  Jinyi, Xu  Xudong, Zhang  Ya, Yang  Weidong, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2403.11990 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/GetMesh%3A-A-Controllable-Model-for-High-quality-Mesh-Lyu-Fei/7fd70fad9b3ac04aeca79076a977d27002049421'
+      },
+    ],
+    keys: ['Robotics', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Pacer+: On-demand pedestrian animation controller in driving scenarios',
+    authors: 'Wang  Jingbo, Luo  Zhengyi, Yuan  Ye, Li  Yixuan, Dai  Bo',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/PACER%2B%3A-On-Demand-Pedestrian-Animation-Controller-Wang-Luo/360d6e9d81b683811ad1aa8a09fa20e339cd9791'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Octree-gs: Towards consistent real-time rendering with lod-structured 3d gaussians',
+    authors: 'Ren  Kerui, Jiang  Lihan, Lu  Tao, Yu  Mulin, Xu  Linning, Ni  Zhangkai, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2403.17898 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/4ab763a5ccf2b84fd6f6e0834ee73f3a0cd8caa2'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Cameractrl: Enabling camera control for text-to-video generation',
+    authors: 'He  Hao, Xu  Yinghao, Guo  Yuwei, Wetzstein  Gordon, Dai  Bo, Li  Hongsheng, Yang  Ceyuan',
+    proceedings: 'arXiv preprint arXiv:2404.02101 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/3fc6184c72fd55b67409ef87493c333f15a33180'
+      },
+    ],
+    keys: ['Video Understanding', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Semgrasp: Semantic grasp generation via language aligned discretization',
+    authors: 'Li  Kailin, Wang  Jingbo, Yang  Lixin, Lu  Cewu, Dai  Bo',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/dd7b2817d54c20e6c0bf854b3463c17bb18014a0'
+      },
+    ],
+    keys: ['Image Captioning', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Motionlcm: Real-time controllable motion generation via latent consistency model',
+    authors: 'Dai  Wenxun, Chen  Ling-Hao, Wang  Jingbo, Liu  Jinpeng, Dai  Bo, Tang  Yansong',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/MotionLCM%3A-Real-time-Controllable-Motion-Generation-Dai-Chen/31cf335ceee3e5ed44aaaf04bd5631645c7d954c'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Make-it-vivid: dressing your animatable biped cartoon characters from text',
+    authors: 'Tang  Junshu, Zeng  Yanhong, Fan  Ke, Wang  Xuheng, Dai  Bo, Chen  Kai, Ma  Lizhuang',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Make-It-Vivid%3A-Dressing-Your-Animatable-Biped-from-Tang-Zeng/7834240ffa9b8c77738bf330bc56f3da4ebff5ce'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Roomtex: Texturing compositional indoor scenes via iterative inpainting',
+    authors: 'Wang  Qi, Lu  Ruijie, Xu  Xudong, Wang  Jingbo, Wang  Michael Yu, Dai  Bo, Zeng  Gang, Xu  Dan',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/RoomTex%3A-Texturing-Compositional-Indoor-Scenes-via-Wang-Lu/cf33b9a285888675ca13c5cbcba0dac7144f8fd2'
+      },
+    ],
+    keys: ['Visual Reasoning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Interactive Character Control with Auto-Regressive Motion Diffusion Models',
+    authors: 'Shi  Yi, Wang  Jingbo, Jiang  Xuekun, Lin  Bingkun, Dai  Bo, Peng  Xue Bin',
+    proceedings: 'ACM Transactions on Graphics (TOG) 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Interactive-Character-Control-with-Auto-Regressive-Shi-Wang/718c4a4851315ff334d097c524c18f5be6cf592c'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Humanvid: Demystifying training data for camera-controllable human image animation',
+    authors: 'Wang  Zhenzhi, Li  Yixuan, Zeng  Yanhong, Fang  Youqing, Guo  Yuwei, Liu  Wenran, Tan  Jing, Chen  Kai, Xue  Tianfan, Dai  Bo, others',
+    proceedings: 'The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/0d3e154082ec89b0b717e750f02b632fad30d8cc'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Flashgs: Efficient 3d gaussian splatting for large-scale and high-resolution rendering',
+    authors: 'Feng  Guofeng, Chen  Siyan, Fu  Rong, Liao  Zimu, Wang  Yi, Liu  Tao, Pei  Zhilin, Li  Hengjie, Zhang  Xingcheng, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2408.07967 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/FlashGS%3A-Efficient-3D-Gaussian-Splatting-for-and-Feng-Chen/18e4b2a2781c13a0c79a6534f832487bb2d38257'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'CinePreGen: Camera Controllable Video Previsualization via Engine-powered Diffusion',
+    authors: 'Chen  Yiran, Rao  Anyi, Jiang  Xuekun, Xiao  Shishi, Ma  Ruiqing, Wang  Zeyu, Xiong  Hui, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2408.17424 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/CinePreGen%3A-Camera-Controllable-Video-via-Diffusion-Chen-Rao/48fe88ea81ad8a04306f2b9d8ab5e0829fa9aa96'
+      },
+    ],
+    keys: ['Video Understanding'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye Cameras',
+    authors: 'Liao  Zimu, Chen  Siyan, Fu  Rong, Wang  Yi, Su  Zhongling, Luo  Hao, Ma  Li, Xu  Linning, Dai  Bo, Li  Hengjie, others',
+    proceedings: 'arXiv preprint arXiv:2409.04751 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/1d15616510afe3290bd80668bf7d05e5f9b4674f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Scaling laws for diffusion transformers',
+    authors: 'Liang  Zhengyang, He  Hao, Yang  Ceyuan, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2410.08184 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Scaling-Laws-For-Diffusion-Transformers-Liang-He/38bc7c4dc18399ecc6fe958dcf27cffd2ff98d63'
+      },
+    ],
+    keys: ['Transformers'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'GSDF: 3DGS Meets SDF for Improved Neural Rendering and Reconstruction',
+    authors: 'Yu  Mulin, Lu  Tao, Xu  Linning, Jiang  Lihan, Xiangli  Yuanbo, Dai  Bo',
+    proceedings: 'The Thirty-eighth Annual Conference on Neural Information Processing Systems 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/GSDF%3A-3DGS-Meets-SDF-for-Improved-Neural-Rendering-Yu-Lu/b16efea4daff9d23d54f099418cc9ba008ced274'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint',
+    authors: 'Wang  Zhenzhi, Wang  Jingbo, Li  Yixuan, Lin  Dahua, Dai  Bo',
+    proceedings: 'The Thirty-eighth Annual Conference on Neural Information Processing Systems 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/b9212638a1e32aa23c8384dc6a5718b831953afc'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Learning 3D Garment Animation from Trajectories of A Piece of Cloth',
+    authors: 'Shao  Yidi, Loy  Chen Change, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2501.01393 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Learning-3D-Garment-Animation-from-Trajectories-of-Shao-Loy/168a4d4c2a9e13188fb176b6ad28fb0063c5c0f3'
+      },
+    ],
+    keys: ['Machine Learning'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Gaussiananything: Interactive point cloud latent diffusion for 3d generation',
+    authors: 'Lan  Yushi, Zhou  Shangchen, Lyu  Zhaoyang, Hong  Fangzhou, Yang  Shuai, Dai  Bo, Pan  Xingang, Change Loy  Chen',
+    proceedings: 'arXiv e-prints 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/GaussianAnything%3A-Interactive-Point-Cloud-Latent-3D-Lan-Zhou/0f6d5df23da508163655df4e1ac19a1bc90e5feb'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Boosting 3D object generation through PBR materials',
+    authors: 'Wang  Yitong, Xu  Xudong, Ma  Li, Wang  Haoran, Dai  Bo',
+    proceedings: 'SIGGRAPH Asia 2024 Conference Papers 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/67167291c0ee3ca47454a60e59c05dbd58c70d51'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'DRiVE: Diffusion-based Rigging Empowers Generation of Versatile and Expressive Characters',
+    authors: 'Sun  Mingze, Chen  Junhao, Dong  Junting, Chen  Yurun, Jiang  Xinyu, Mao  Shiwei, Jiang  Puhua, Wang  Jingbo, Dai  Bo, Huang  Ruqi',
+    proceedings: 'arXiv preprint arXiv:2411.17423 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/4579b6151e95cea92b2178937df6811ebf5bec1f'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Tela: Text to layer-wise 3d clothed human generation',
+    authors: 'Dong  Junting, Fang  Qi, Huang  Zehuan, Xu  Xudong, Wang  Jingbo, Peng  Sida, Dai  Bo',
+    proceedings: 'European Conference on Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/a3810adf4dd5d23e732892dbe34f4ed924f8eeb8'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Horizon-GS: Unified 3D Gaussian Splatting for Large-Scale Aerial-to-Ground Scenes',
+    authors: 'Jiang  Lihan, Ren  Kerui, Yu  Mulin, Xu  Linning, Dong  Junting, Lu  Tao, Zhao  Feng, Lin  Dahua, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2412.01745 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Horizon-GS%3A-Unified-3D-Gaussian-Splatting-for-Jiang-Ren/d4c4047e8a2485114b6e8fa6e97bc2b50150a694'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Proc-GS: Procedural building generation for city assembly with 3D Gaussians',
+    authors: 'Li  Yixuan, Ran  Xingjian, Xu  Linning, Lu  Tao, Yu  Mulin, Wang  Zhenzhi, Xiangli  Yuanbo, Lin  Dahua, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2412.07660 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Proc-GS%3A-Procedural-Building-Generation-for-City-3D-Li-Ran/4f862b99b1fa0a67976b4dc24eb2a071828b41ce'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'ChatDyn: Language-Driven Multi-Actor Dynamics Generation in Street Scenes',
+    authors: 'Wei  Yuxi, Wang  Jingbo, Du  Yuwen, Wang  Dingju, Pan  Liang, Xu  Chenxin, Feng  Yao, Dai  Bo, Chen  Siheng',
+    proceedings: 'arXiv preprint arXiv:2412.08685 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/ChatDyn%3A-Language-Driven-Multi-Actor-Dynamics-in-Wei-Wang/baa224ea1dc76e4a3803155b36fa171c22a26b04'
+      },
+    ],
+    keys: ['Image Captioning', 'Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model',
+    authors: 'Lu  Shunlin, Wang  Jingbo, Lu  Zeyu, Chen  Ling-Hao, Dai  Wenxun, Dong  Junting, Dou  Zhiyang, Dai  Bo, Zhang  Ruimao',
+    proceedings: 'arXiv preprint arXiv:2412.14559 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/ScaMo%3A-Exploring-the-Scaling-Law-in-Autoregressive-Lu-Wang/fe1cf34f0f2dfcac81ab9d9f4c47ae8495cbb115'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'SLIDE: A Unified Mesh and Texture Generation Framework with Enhanced Geometric Control and Multi-view Consistency',
+    authors: 'Wang  Jinyi, Lyu  Zhaoyang, Fei  Ben, Yao  Jiangchao, Zhang  Ya, Dai  Bo, Lin  Dahua, He  Ying, Wang  Yanfeng',
+    proceedings: 'International Journal of Computer Vision 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/8b439d8244d9c6ad3ecfba055b43053d82e96c21'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Dual3d: Efficient and consistent text-to-3d generation with dual-mode multi-view latent diffusion',
+    authors: 'Li  Xinyang, Lai  Zhangyu, Xu  Linning, Guo  Jianfei, Cao  Liujuan, Zhang  Shengchuan, Dai  Bo, Ji  Rongrong',
+    proceedings: 'arXiv preprint arXiv:2405.09874 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Dual3D%3A-Efficient-and-Consistent-Text-to-3D-with-Li-Lai/119e415cf9cc2648a40ac173499ebfdef796174d'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Director3d: Real-world camera trajectory and 3d scene generation from text',
+    authors: 'Li  Xinyang, Lai  Zhangyu, Xu  Linning, Qu  Yansong, Cao  Liujuan, Zhang  Shengchuan, Dai  Bo, Ji  Rongrong',
+    proceedings: 'Advances in Neural Information Processing Systems 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Director3D%3A-Real-world-Camera-Trajectory-and-3D-Li-Lai/20df408b1705d519c9942c7fafc083314e183fed'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'GausSim: Foreseeing Reality by Gaussian Simulator for Elastic Objects',
+    authors: 'Shao  Yidi, Huang  Mu, Loy  Chen Change, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2412.17804 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/fed25b83ee6e2082d4c2d5ff730641f5c751c134'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'EdgeTAM: On-Device Track Anything Model',
+    authors: 'Zhou  Chong, Zhu  Chenchen, Xiong  Yunyang, Suri  Saksham, Xiao  Fanyi, Wu  Lemeng, Krishnamoorthi  Raghuraman, Dai  Bo, Loy  Chen Change, Chandra  Vikas, others',
+    proceedings: 'arXiv preprint arXiv:2501.07256 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/EdgeTAM%3A-On-Device-Track-Anything-Model-Zhou-Zhu/9cd045900af7880c36465d133f002256e4370668'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'GAS: Generative Avatar Synthesis from a Single Image',
+    authors: 'Lu  Yixing, Dong  Junting, Kwon  Youngjoong, Zhao  Qin, Dai  Bo, De la Torre  Fernando',
+    proceedings: 'arXiv preprint arXiv:2502.06957 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/GAS%3A-Generative-Avatar-Synthesis-from-a-Single-Lu-Dong/44065f181d479230c8c63460e9b86a698a62d031'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
+    authors: 'Yang  Jiazhi, Gao  Shenyuan, Qiu  Yihang, Chen  Li, Li  Tianyu, Dai  Bo, Chitta  Kashyap, Wu  Penghao, Zeng  Jia, Luo  Ping, others',
+    proceedings: 'arXiv preprint arXiv:2403.09630 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2403.09630'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Diffmorpher: Unleashing the capability of diffusion models for image morphing',
+    authors: 'Zhang  Kaiwen, Zhou  Yifan, Xu  Xudong, Dai  Bo, Pan  Xingang',
+    proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/82e51cc702a9a0508708cd85de052b86e897641f'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation',
+    authors: 'Dai  Minyue, Wang  Jingbo, Fan  Ke, Ji  Bin, Zhao  Haoyu, Dong  Junting, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2503.08180 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Towards-Synthesized-and-Editable-Motion-Through-Dai-Wang/adc2b96c5045daa53c61438f1a8beb768d539ca7'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation',
+    authors: 'Lian  Xinyu, Yu  Zichao, Liang  Ruiming, Wang  Yitong, Luo  Li Ray, Chen  Kaixu, Zhou  Yuanzhen, Tang  Qihong, Xu  Xudong, Lyu  Zhaoyang, others',
+    proceedings: 'arXiv preprint arXiv:2503.13424 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/Infinite-Mobility%3A-Scalable-High-Fidelity-Synthesis-Lian-Yu/de3bc870475d4fe7cac2b27467e077ad4e53ea77'
+      },
+    ],
+    keys: ['Generative Models'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
+    authors: 'Pan  Liang, Yang  Zeshi, Dou  Zhiyang, Wang  Wenjia, Huang  Buzhen, Dai  Bo, Komura  Taku, Wang  Jingbo',
+    proceedings: 'arXiv preprint arXiv:2503.19901 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/TokenHSI%3A-Unified-Synthesis-of-Physical-Human-Scene-Pan-Yang/ca08ecf7efd9a55d0ce65d667d5708b515516f24'
+      },
+    ],
+    keys: ['Computer Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Multi-identity Human Image Animation with Structural Video Diffusion',
+    authors: 'Wang  Zhenzhi, Li  Yixuan, Zeng  Yanhong, Guo  Yuwei, Lin  Dahua, Xue  Tianfan, Dai  Bo',
+    proceedings: 'arXiv preprint arXiv:2504.04126 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/5588e943742454b82444f2b800034cc11f8cb1ae'
+      },
+    ],
+    keys: ['Video Understanding'],
+    pis: ['Bo Dai'],
+  },
 ];
