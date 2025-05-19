@@ -21,6 +21,20 @@
 - use ```<div><Image></div>``` instead of ```<div className='background-image'></div>```
 - <FadeIn> for animation of all foreground elements, note that it could probabilistically change layout, check everytime when add this
 
+### Sort data
+- ```npx prettier --write "*.tsx"```
+- ```.prettierrc.json```: 
+```json
+{
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "arrowParens": "avoid"
+}
+```
 
 
 # 收集信息

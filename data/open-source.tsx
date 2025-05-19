@@ -25,56 +25,6 @@ export const open_sources: {
   id: string;
 }[] = [
   {
-    title: 'UniVLA: Learning to Act Anywhere with Task-centric Latent Actions',
-    description:
-      'UniVLA is a unified vision-language-action framework that enables policy learning across different environments. By deriving task-centric latent actions in an unsupervised manner, UniVLA can leverage data from arbitrary embodiments and perspectives without action labels. After large-scale pretraining from videos, UniVLA develops a cross-embodiment generalist policy that can be readily deployed across various robots by learning an action decoding with minimal cost.',
-    tags: ['Cross-Embodiment'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/UniVLA',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2505.06111',
-      },
-    ],
-    keys: ['Project', '2025', 'Highlight'],
-    pis: ['Hongyang Li', 'Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/UniVLA?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_univla.jpg',
-    id: 'UniVLA',
-  },
-  {
-    title: 'UniAD: Planning-oriented Autonomous Driving',
-    description:
-      'UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.',
-    tags: ['End-to-End', 'Autonomous Driving'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/UniAD',
-      },
-      {
-        website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html',
-      },
-      {
-        website: 'Video',
-        url: 'https://www.youtube.com/watch?v=cyrxJJ_nnaQ',
-      },
-      {
-        website: 'Slides',
-        url: 'https://opendrivelab.github.io/UniAD_plenary_talk_slides.pdf',
-      },
-    ],
-    keys: ['Project', '2023', 'Highlight'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/UniAD?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_uniad.jpg',
-    id: 'UniAD',
-  },
-  {
     title:
       'AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems',
     description:
@@ -109,52 +59,147 @@ export const open_sources: {
     id: 'AgiBot-World-Colosseo',
   },
   {
-    title: 'End-to-End Autonomous Driving: Challenges and Frontiers',
+    title: 'UniVLA: Learning to Act Anywhere with Task-centric Latent Actions',
     description:
-      'In this survey, we provide a comprehensive analysis of more than 270 papers on the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving.',
-    tags: ['End-to-End', 'Autonomous Driving'],
+      'UniVLA is a unified vision-language-action framework that enables policy learning across different environments. By deriving task-centric latent actions in an unsupervised manner, UniVLA can leverage data from arbitrary embodiments and perspectives without action labels. After large-scale pretraining from videos, UniVLA develops a cross-embodiment generalist policy that can be readily deployed across various robots by learning an action decoding with minimal cost.',
+    tags: ['Cross-Embodiment'],
     links: [
       {
         website: 'Github',
-        url: 'https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving',
+        url: 'https://github.com/OpenDriveLab/UniVLA',
       },
       {
         website: 'Paper',
-        url: 'https://ieeexplore.ieee.org/abstract/document/10614862/',
+        url: 'https://arxiv.org/abs/2505.06111',
       },
     ],
-    keys: ['Project', '2024'],
-    pis: ['Hongyang Li'],
-    githubstars:
-      'https://img.shields.io/github/stars/OpenDriveLab/End-to-end-Autonomous-Driving?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_e2esurvey.jpg',
-    id: 'E2E-Survey',
+    keys: ['Project', '2025', 'Highlight'],
+    pis: ['Hongyang Li', 'Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/UniVLA?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_univla.jpg',
+    id: 'UniVLA',
   },
   {
-    title:
-      'RobuDual: Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
+    title: 'Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation',
     description:
-      'Our objective is to develop a synergistic dual-system framework which supplements the generalizability of large-scale pre-trained generalist with the efficient and task-specific adaptation of specialist.',
-    tags: ['Manipulation', 'Dual-System'],
+      'Vanilla autoregressive models without inductive biases on visual signals can achieve state-of-the-art image generation performance if scaling properly.',
+    tags: ['Autoregressive Model', 'Image Generation'],
     links: [
       {
         website: 'Page',
-        url: 'https://opendrivelab.com/RoboDual/',
+        url: 'https://peizesun.github.io/llamagen/',
       },
       {
         website: 'Github',
-        url: 'https://github.com/OpenDriveLab/RoboDual',
+        url: 'https://github.com/FoundationVision/LlamaGen',
       },
       {
         website: 'Paper',
-        url: 'https://arxiv.org/abs/2410.08001',
+        url: 'https://arxiv.org/abs/2406.06525',
       },
     ],
-    keys: ['Project', '2024'],
+    keys: ['Project', '2024', 'Highlight'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/FoundationVision/LlamaGen?style=social',
+    img: 'https://mmlabassets.github.io/open-source/LlamaGen.jpg',
+    id: 'LlamaGen',
+  },
+  {
+    title: 'Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation',
+    description:
+      'Janus is a novel autoregressive framework that unifies multimodal understanding and generation.',
+    tags: ['Autoregressive Model'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/deepseek-ai/Janus',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2410.13848',
+      },
+    ],
+    keys: ['Project', '2024', 'Highlight'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/deepseek-ai/Janus?style=social',
+    img: 'https://mmlabassets.github.io/open-source/Janus.jpg',
+    id: 'Janus',
+  },
+  {
+    title:
+      'AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems',
+    description:
+      'Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios. Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution.',
+    tags: ['Manipulation'],
+    links: [
+      {
+        website: 'Blog',
+        url: 'https://opendrivelab.com/blog/agibot-world/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/AgiBot-World',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2503.06669',
+      },
+      {
+        website: 'Challenge',
+        url: 'https://opendrivelab.com/challenge2025/#agibot-world',
+      },
+    ],
+    keys: ['Dataset', '2024', 'Highlight'],
     pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/RoboDual?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_robodual.jpg',
-    id: 'RoboDual',
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_agibotworld.jpg',
+    id: 'AgiBot-World',
+  },
+  {
+    title: 'DriveLM: Driving with Graph Visual Question Answering',
+    description:
+      'Facilitating the Perception, Prediction, Planning, Behavior, Motion tasks with human-written reasoning logic as a connection in between.',
+    tags: ['Language', 'Planning'],
+    links: [
+      {
+        website: 'Page',
+        url: 'https://opendrivelab.com/DriveLM/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/DriveLM',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2312.14150',
+      },
+      {
+        website: 'Challenge',
+        url: 'https://opendrivelab.com/challenge2024/#driving_with_language',
+      },
+    ],
+    keys: ['Dataset', '2024', 'Highlight'],
+    pis: ['Hongyang Li', 'Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_drivelm.jpg',
+    id: 'DriveLM',
+  },
+  {
+    title: 'OpenDV',
+    description:
+      'The largest driving video dataset to date, containing more than 1700 hours of real-world driving videos.',
+    tags: ['Autonomous Driving', 'World Model'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv',
+      },
+    ],
+    keys: ['Dataset', '2024', 'Highlight'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_opendv.jpg',
+    id: 'OpenDV',
   },
   {
     title:
@@ -183,6 +228,85 @@ export const open_sources: {
     id: 'CLOVER',
   },
   {
+    title: 'ELM: Embodied Understanding of Driving Scenarios',
+    id: 'ELM',
+    description: 'Revive driving scene understanding by delving into the embodiment philosophy.',
+    tags: ['Scene Understanding'],
+    links: [
+      {
+        website: 'Page',
+        url: 'https://opendrivelab.github.io/elm.github.io/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/ELM',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2403.04593',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ELM?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_elm.jpg',
+  },
+  {
+    title: 'End-to-End Autonomous Driving: Challenges and Frontiers',
+    description:
+      'In this survey, we provide a comprehensive analysis of more than 270 papers on the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving.',
+    tags: ['End-to-End', 'Autonomous Driving'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving',
+      },
+      {
+        website: 'Paper',
+        url: 'https://ieeexplore.ieee.org/abstract/document/10614862/',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Hongyang Li'],
+    githubstars:
+      'https://img.shields.io/github/stars/OpenDriveLab/End-to-end-Autonomous-Driving?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_e2esurvey.jpg',
+    id: 'E2E-Survey',
+  },
+  {
+    title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
+    id: 'GenAD',
+    description:
+      'We aim to establish a generalized video prediction paradigm for autonomous driving by presenting the largest multimodal driving video dataset to date, OpenDV-2K, and a generative model that predicts the future given past visual and textual input, GenAD.',
+    tags: ['Autonomous Driving', 'World Model'],
+    links: [
+      {
+        website: 'Blog',
+        url: 'https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/DriveAGI',
+      },
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html',
+      },
+      {
+        website: 'Video',
+        url: 'https://www.youtube.com/watch?v=a4H6Jj-7IC0',
+      },
+      {
+        website: 'Slides',
+        url: 'https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Hongyang Li', 'Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_genad.jpg',
+  },
+  {
     title: 'MPI: Learning Manipulation by Predicting Interaction',
     id: 'MPI',
     description:
@@ -206,6 +330,57 @@ export const open_sources: {
     pis: ['Hongyang Li', 'Ping Luo'],
     githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social',
     img: 'https://mmlabassets.github.io/open-source/odl_mpi.jpg',
+  },
+  {
+    title:
+      'RobuDual: Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
+    description:
+      'Our objective is to develop a synergistic dual-system framework which supplements the generalizability of large-scale pre-trained generalist with the efficient and task-specific adaptation of specialist.',
+    tags: ['Manipulation', 'Dual-System'],
+    links: [
+      {
+        website: 'Page',
+        url: 'https://opendrivelab.com/RoboDual/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/RoboDual',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2410.08001',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/RoboDual?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_robodual.jpg',
+    id: 'RoboDual',
+  },
+  {
+    title: 'ViDAR: Visual Point Cloud Forecasting enables Scalable Autonomous Driving',
+    id: 'ViDAR',
+    description:
+      'A new self-supervised pre-training task for end-to-end autonomous driving, predicting future point clouds from historical visual inputs, joint modeling the 3D geometry and temporal dynamics for simultaneous perception, prediction, and planning.',
+    tags: ['Autonomous Driving', 'Point Cloud'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/ViDAR',
+      },
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html',
+      },
+      {
+        website: 'Challenge',
+        url: 'https://opendrivelab.com/challenge2024/#predictive_world_model',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ViDAR?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_vidar.jpg',
   },
   {
     title:
@@ -250,86 +425,55 @@ export const open_sources: {
     img: 'https://mmlabassets.github.io/open-source/odl_vista.jpg',
   },
   {
-    title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
-    id: 'GenAD',
+    title:
+      'PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis',
     description:
-      'We aim to establish a generalized video prediction paradigm for autonomous driving by presenting the largest multimodal driving video dataset to date, OpenDV-2K, and a generative model that predicts the future given past visual and textual input, GenAD.',
-    tags: ['Autonomous Driving', 'World Model'],
+      'PixArt-α is a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators.',
+    tags: ['Diffusion Transformer'],
     links: [
       {
-        website: 'Blog',
-        url: 'https://medium.com/@opendrivelab/towards-next-level-of-autonomous-driving-via-world-models-aff0eb7fee00',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/DriveAGI',
+        website: 'GitHub',
+        url: 'https://github.com/PixArt-alpha/PixArt-alpha',
       },
       {
         website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Generalized_Predictive_Model_for_Autonomous_Driving_CVPR_2024_paper.html',
+        url: 'https://arxiv.org/abs/2310.00426',
+      },
+    ],
+    keys: ['Project', '2023', 'Highlight'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/PixArt-alpha/PixArt-alpha?style=social',
+    img: 'https://mmlabassets.github.io/open-source/PixartAlpha.jpg',
+    id: 'PixArt',
+  },
+  {
+    title: 'UniAD: Planning-oriented Autonomous Driving',
+    description:
+      'UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.',
+    tags: ['End-to-End', 'Autonomous Driving'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/UniAD',
+      },
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html',
       },
       {
         website: 'Video',
-        url: 'https://www.youtube.com/watch?v=a4H6Jj-7IC0',
+        url: 'https://www.youtube.com/watch?v=cyrxJJ_nnaQ',
       },
       {
         website: 'Slides',
-        url: 'https://opendrivelab.github.io/content/GenAD_slides_with_vista.pdf',
+        url: 'https://opendrivelab.github.io/UniAD_plenary_talk_slides.pdf',
       },
     ],
-    keys: ['Project', '2024'],
-    pis: ['Hongyang Li', 'Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_genad.jpg',
-  },
-  {
-    title: 'ViDAR: Visual Point Cloud Forecasting enables Scalable Autonomous Driving',
-    id: 'ViDAR',
-    description:
-      'A new self-supervised pre-training task for end-to-end autonomous driving, predicting future point clouds from historical visual inputs, joint modeling the 3D geometry and temporal dynamics for simultaneous perception, prediction, and planning.',
-    tags: ['Autonomous Driving', 'Point Cloud'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/ViDAR',
-      },
-      {
-        website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Visual_Point_Cloud_Forecasting_enables_Scalable_Autonomous_Driving_CVPR_2024_paper.html',
-      },
-      {
-        website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2024/#predictive_world_model',
-      },
-    ],
-    keys: ['Project', '2024'],
+    keys: ['Project', '2023', 'Highlight'],
     pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ViDAR?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_vidar.jpg',
-  },
-  {
-    title: 'ELM: Embodied Understanding of Driving Scenarios',
-    id: 'ELM',
-    description: 'Revive driving scene understanding by delving into the embodiment philosophy.',
-    tags: ['Scene Understanding'],
-    links: [
-      {
-        website: 'Page',
-        url: 'https://opendrivelab.github.io/elm.github.io/',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/ELM',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2403.04593',
-      },
-    ],
-    keys: ['Project', '2024'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ELM?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_elm.jpg',
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/UniAD?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_uniad.jpg',
+    id: 'UniAD',
   },
   {
     title:
@@ -353,26 +497,95 @@ export const open_sources: {
     img: 'https://mmlabassets.github.io/open-source/odl_driveadapter.jpg',
   },
   {
-    title:
-      'Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Drivingg',
-    id: 'ThinkTwice',
-    description:
-      'A scalable decoder paradigm that generates the future trajectory and action of the ego vehicle for end-to-end autonomous driving.',
-    tags: ['End-to-End', 'Autonomous Driving'],
+    title: 'EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought',
+    description: 'A large-scale end-to-end multi-model foundation model for embodied AI.',
+    tags: ['Embodied AI'],
     links: [
       {
         website: 'Github',
-        url: 'https://github.com/OpenDriveLab/ThinkTwice',
+        url: 'https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch',
       },
       {
         website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html',
+        url: 'https://arxiv.org/abs/2305.15021',
+      },
+      {
+        website: 'Dataset',
+        url: 'https://github.com/EmbodiedGPT/EgoCOT_Dataset',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/EmbodiedGPT/EmbodiedGPT_Pytorch?style=social',
+    img: 'https://mmlabassets.github.io/open-source/EmbodiedGPT.jpg',
+    id: 'EmbodiedGPT',
+  },
+  {
+    title:
+      'HDGT: Heterogeneous Driving Graph Transformer for Multi-Agent Trajectory Prediction via Scene Encoding',
+    id: 'HDGT',
+    description:
+      'HDGT formulates the driving scene as a heterogeneous graph with different types of nodes and edges.',
+    tags: ['Autonomous Driving', 'Graph'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/HDGT',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2205.09753',
       },
     ],
     keys: ['Project', '2023'],
     pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ThinkTwice?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_thinktwice.jpg',
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/HDGT?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_hdgt.jpg',
+  },
+  {
+    title: 'OccNet: Scene as Occupancy',
+    id: 'OccNet',
+    description:
+      'Occupancy serves as a general representation of the scene and could facilitate perception and planning in the full-stack of autonomous driving.',
+    tags: ['Occupancy'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/OccNet',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2306.02851',
+      },
+      {
+        website: 'Challenge',
+        url: 'https://opendrivelab.com/challenge2024/#occupancy_and_flow',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Hongyang Li', 'Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_occnet.jpg',
+  },
+  {
+    title: 'OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models',
+    description: 'OmniQuant is a simple and powerful quantization technique for LLMs.',
+    tags: ['LLM Quantization'],
+    links: [
+      {
+        website: 'GitHub',
+        url: 'https://github.com/OpenGVLab/OmniQuant',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2308.13137',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenGVLab/OmniQuant?style=social',
+    img: 'https://mmlabassets.github.io/open-source/OmniQuant.jpg',
+    id: 'OmniQuant',
   },
   {
     title:
@@ -402,55 +615,25 @@ export const open_sources: {
   },
   {
     title:
-      'TCP: Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline',
-    id: 'TCP',
+      'Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Drivingg',
+    id: 'ThinkTwice',
     description:
-      'Take the initiative to explore the combination of controller based on a planned trajectory and perform control prediction.',
+      'A scalable decoder paradigm that generates the future trajectory and action of the ego vehicle for end-to-end autonomous driving.',
     tags: ['End-to-End', 'Autonomous Driving'],
     links: [
       {
-        website: 'Blog',
-        url: 'https://zhuanlan.zhihu.com/p/532665469',
-      },
-      {
         website: 'Github',
-        url: 'https://github.com/opendrivelab/TCP',
+        url: 'https://github.com/OpenDriveLab/ThinkTwice',
       },
       {
         website: 'Paper',
-        url: 'https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Jia_Think_Twice_Before_Driving_Towards_Scalable_Decoders_for_End-to-End_Autonomous_CVPR_2023_paper.html',
       },
     ],
-    keys: ['Project', '2022'],
+    keys: ['Project', '2023'],
     pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/TCP?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_tcp.jpg',
-  },
-  {
-    title:
-      'ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning',
-    id: 'ST-P3',
-    description:
-      'A spatial-temporal feature learning scheme towards a set of more representative features for perception, prediction and planning tasks simultaneously.',
-    tags: ['End-to-End', 'Autonomous Driving'],
-    links: [
-      {
-        website: 'Blog',
-        url: 'https://zhuanlan.zhihu.com/p/544387122',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/st-p3',
-      },
-      {
-        website: 'Paper',
-        url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31',
-      },
-    ],
-    keys: ['Project', '2022'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/st-p3?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_stp3.jpg',
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ThinkTwice?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_thinktwice.jpg',
   },
   {
     title: "Delving into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
@@ -475,51 +658,71 @@ export const open_sources: {
     img: 'https://mmlabassets.github.io/open-source/odl_bevsurvey.jpg',
   },
   {
-    title: 'OccNet: Scene as Occupancy',
-    id: 'OccNet',
+    title: 'LVLM-eHub: A Comprehensive Evaluation Benchmark for Large Vision-Language Models',
     description:
-      'Occupancy serves as a general representation of the scene and could facilitate perception and planning in the full-stack of autonomous driving.',
+      'LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).',
+    tags: ['Large Vision-Language Models', 'Benchmark'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenGVLab/Multi-Modality-Arena',
+      },
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2306.09265',
+      },
+    ],
+    keys: ['Dataset', '2023'],
+    pis: ['Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenGVLab/Multi-Modality-Arena?style=social',
+    img: 'https://mmlabassets.github.io/open-source/LVLM-eHub.jpg',
+    id: 'LVLM',
+  },
+  {
+    title: 'OpenLane-V2: The First Perception and Reasoning Benchmark for Road Driving',
+    description:
+      'The objective of the presented dataset is to advance research in understanding the structure of road scenes by examining the relationship between perceived entities, such as traffic elements and lanes. Leveraging existing datasets, OpenLane-V2 consists of 2,000 annotated road scenes that describe traffic elements and their correlation to the lanes.',
+    tags: ['Topology Recognition', '3D Lane Detection', 'Traffic Element Recognition'],
+    links: [
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/OpenLane-V2',
+      },
+      {
+        website: 'Paper',
+        url: 'https://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html',
+      },
+      {
+        website: 'Challenge',
+        url: 'https://opendrivelab.com/challenge2024/#mapless_driving',
+      },
+    ],
+    keys: ['Dataset', '2023'],
+    pis: ['Hongyang Li', 'Ping Luo'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenLane-V2?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_openlanev2.jpg',
+    id: 'OpenLane-V2',
+  },
+  {
+    title: 'OpenScene: 3D Occupancy Prediction Benchmark in Autonomous Driving',
+    description:
+      'OpenScene is a compact redistribution of the large-scale nuPlan dataset, retaining only relevant annotations and sensor data at 2Hz. This reduces the dataset size by a factor of >10. We cover a wide span of over 120 hours, and provide additional occupancy labels collected in various cities, from Boston, Pittsburgh, Las Vegas to Singapore.',
     tags: ['Occupancy'],
     links: [
       {
         website: 'Github',
-        url: 'https://github.com/OpenDriveLab/OccNet',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2306.02851',
+        url: 'https://github.com/OpenDriveLab/OpenScene',
       },
       {
         website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2024/#occupancy_and_flow',
+        url: 'https://opendrivelab.com/challenge2024/',
       },
     ],
-    keys: ['Project', '2023'],
-    pis: ['Hongyang Li', 'Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_occnet.jpg',
-  },
-  {
-    title:
-      'HDGT: Heterogeneous Driving Graph Transformer for Multi-Agent Trajectory Prediction via Scene Encoding',
-    id: 'HDGT',
-    description:
-      'HDGT formulates the driving scene as a heterogeneous graph with different types of nodes and edges.',
-    tags: ['Autonomous Driving', 'Graph'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/HDGT',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2205.09753',
-      },
-    ],
-    keys: ['Project', '2023'],
+    keys: ['Dataset', '2023'],
     pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/HDGT?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_hdgt.jpg',
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenScene?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_openscene.jpg',
+    id: 'OpenScene',
   },
   {
     title:
@@ -548,214 +751,49 @@ export const open_sources: {
     img: 'https://mmlabassets.github.io/open-source/odl_bevformer.jpg',
   },
   {
-    title: 'PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark',
-    id: 'PersFormer',
+    title: 'AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition',
     description:
-      'PersFormer adopts a unified 2D/3D anchor design and an auxiliary task to detect 2D/3D lanes; we release one of the first large-scale real-world 3D lane datasets, OpenLane.',
-    tags: ["Bird's-Eye-View"],
+      'Adapt Vision Transformers to downstream tasks by fine-tuning less than 2% parameters.',
+    tags: ['Vision Transformers'],
     links: [
       {
-        website: 'Blog',
-        url: 'https://patrick-llgc.github.io/Learning-Deep-Learning/paper_notes/persformer.html',
+        website: 'Page',
+        url: 'https://www.shoufachen.com/adaptformer-page/',
       },
       {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/PersFormer_3DLane',
+        website: 'GitHub',
+        url: 'https://github.com/ShoufaChen/AdaptFormer',
       },
       {
         website: 'Paper',
-        url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32',
+        url: 'https://arxiv.org/abs/2205.13535',
       },
     ],
     keys: ['Project', '2022'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/PersFormer_3DLane?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_persformer.jpg',
-  },
-  {
-    title:
-      'AgiBot-World: The Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems',
-    description:
-      'Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios. Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution.',
-    tags: ['Manipulation'],
-    links: [
-      {
-        website: 'Blog',
-        url: 'https://opendrivelab.com/blog/agibot-world/',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/AgiBot-World',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2503.06669',
-      },
-      {
-        website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2025/#agibot-world',
-      },
-    ],
-    keys: ['Dataset', '2024', 'Highlight'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_agibotworld.jpg',
-    id: 'AgiBot-World',
-  },
-  {
-    title: 'OpenDV',
-    description:
-      'The largest driving video dataset to date, containing more than 1700 hours of real-world driving videos.',
-    tags: ['Autonomous Driving', 'World Model'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/DriveAGI/tree/main/opendv',
-      },
-    ],
-    keys: ['Dataset', '2024', 'Highlight'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveAGI?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_opendv.jpg',
-    id: 'OpenDV',
-  },
-  {
-    title: 'DriveLM: Driving with Graph Visual Question Answering',
-    description:
-      'Facilitating the Perception, Prediction, Planning, Behavior, Motion tasks with human-written reasoning logic as a connection in between.',
-    tags: ['Language', 'Planning'],
-    links: [
-      {
-        website: 'Page',
-        url: 'https://opendrivelab.com/DriveLM/',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/DriveLM',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2312.14150',
-      },
-      {
-        website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2024/#driving_with_language',
-      },
-    ],
-    keys: ['Dataset', '2024', 'Highlight'],
-    pis: ['Hongyang Li', 'Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_drivelm.jpg',
-    id: 'DriveLM',
-  },
-  {
-    title: 'OpenScene: 3D Occupancy Prediction Benchmark in Autonomous Driving',
-    description:
-      'OpenScene is a compact redistribution of the large-scale nuPlan dataset, retaining only relevant annotations and sensor data at 2Hz. This reduces the dataset size by a factor of >10. We cover a wide span of over 120 hours, and provide additional occupancy labels collected in various cities, from Boston, Pittsburgh, Las Vegas to Singapore.',
-    tags: ['Occupancy'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/OpenScene',
-      },
-      {
-        website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2024/',
-      },
-    ],
-    keys: ['Dataset', '2023'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenScene?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_openscene.jpg',
-    id: 'OpenScene',
-  },
-  {
-    title: 'OpenLane-V2: The First Perception and Reasoning Benchmark for Road Driving',
-    description:
-      'The objective of the presented dataset is to advance research in understanding the structure of road scenes by examining the relationship between perceived entities, such as traffic elements and lanes. Leveraging existing datasets, OpenLane-V2 consists of 2,000 annotated road scenes that describe traffic elements and their correlation to the lanes.',
-    tags: ['Topology Recognition', '3D Lane Detection', 'Traffic Element Recognition'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/OpenLane-V2',
-      },
-      {
-        website: 'Paper',
-        url: 'https://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html',
-      },
-      {
-        website: 'Challenge',
-        url: 'https://opendrivelab.com/challenge2024/#mapless_driving',
-      },
-    ],
-    keys: ['Dataset', '2023'],
-    pis: ['Hongyang Li', 'Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenLane-V2?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_openlanev2.jpg',
-    id: 'OpenLane-V2',
-  },
-  {
-    title: 'OpenLane: Large-scale Realistic 3D Lane Dataset',
-    description:
-      'OpenLane is the first real-world and the largest scaled 3D lane dataset to date. Our dataset collects valuable contents from public perception dataset, providing lane and closest-in-path object(CIPO) annotations for 1000 segments. In short, OpenLane owns 200K frames and over 880K carefully annotated lanes.',
-    tags: ['3D Lane Detection'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/OpenDriveLab/OpenLane',
-      },
-    ],
-    keys: ['Dataset', '2022'],
-    pis: ['Hongyang Li'],
-    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenLane?style=social',
-    img: 'https://mmlabassets.github.io/open-source/odl_openlane.jpg',
-    id: 'OpenLane',
-  },
-  {
-    title: 'Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation',
-    description:
-      'Janus is a novel autoregressive framework that unifies multimodal understanding and generation.',
-    tags: ['Autoregressive Model'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/deepseek-ai/Janus',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2410.13848',
-      },
-    ],
-    keys: ['Project', '2024', 'Highlight'],
     pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/deepseek-ai/Janus?style=social',
-    img: 'https://mmlabassets.github.io/open-source/Janus.jpg',
-    id: 'Janus',
+    githubstars: 'https://img.shields.io/github/stars/ShoufaChen/AdaptFormer?style=social',
+    img: 'https://mmlabassets.github.io/open-source/AdaptFormer.jpg',
+    id: 'AdaptFormer',
   },
   {
-    title: 'Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation',
-    description:
-      'Vanilla autoregressive models without inductive biases on visual signals can achieve state-of-the-art image generation performance if scaling properly.',
-    tags: ['Autoregressive Model', 'Image Generation'],
+    title: 'DiffusionDet: Diffusion Model for Object Detection',
+    description: 'DiffusionDet is the first work of diffusion model for object detection.',
+    tags: ['Object Detection', 'Diffusion Model'],
     links: [
       {
-        website: 'Page',
-        url: 'https://peizesun.github.io/llamagen/',
-      },
-      {
-        website: 'Github',
-        url: 'https://github.com/FoundationVision/LlamaGen',
+        website: 'GitHub',
+        url: 'https://github.com/ShoufaChen/DiffusionDet',
       },
       {
         website: 'Paper',
-        url: 'https://arxiv.org/abs/2406.06525',
+        url: 'https://arxiv.org/abs/2211.09788',
       },
     ],
-    keys: ['Project', '2024', 'Highlight'],
+    keys: ['Project', '2022'],
     pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/FoundationVision/LlamaGen?style=social',
-    img: 'https://mmlabassets.github.io/open-source/LlamaGen.jpg',
-    id: 'LlamaGen',
+    githubstars: 'https://img.shields.io/github/stars/ShoufaChen/DiffusionDet?style=social',
+    img: 'https://mmlabassets.github.io/open-source/DiffusionDet.jpg',
+    id: 'DiffusionDet',
   },
   {
     title: 'MotionCtrl: A Unified and Flexible Motion Controller for Video Generation',
@@ -783,111 +821,81 @@ export const open_sources: {
     id: 'MotionCtrl',
   },
   {
-    title:
-      'PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis',
+    title: 'PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark',
+    id: 'PersFormer',
     description:
-      'PixArt-α is a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators.',
-    tags: ['Diffusion Transformer'],
+      'PersFormer adopts a unified 2D/3D anchor design and an auxiliary task to detect 2D/3D lanes; we release one of the first large-scale real-world 3D lane datasets, OpenLane.',
+    tags: ["Bird's-Eye-View"],
     links: [
       {
-        website: 'GitHub',
-        url: 'https://github.com/PixArt-alpha/PixArt-alpha',
+        website: 'Blog',
+        url: 'https://patrick-llgc.github.io/Learning-Deep-Learning/paper_notes/persformer.html',
       },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2310.00426',
-      },
-    ],
-    keys: ['Project', '2023', 'Highlight'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/PixArt-alpha/PixArt-alpha?style=social',
-    img: 'https://mmlabassets.github.io/open-source/PixartAlpha.jpg',
-    id: 'PixArt',
-  },
-  {
-    title: 'OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models',
-    description: 'OmniQuant is a simple and powerful quantization technique for LLMs.',
-    tags: ['LLM Quantization'],
-    links: [
-      {
-        website: 'GitHub',
-        url: 'https://github.com/OpenGVLab/OmniQuant',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2308.13137',
-      },
-    ],
-    keys: ['Project', '2023'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenGVLab/OmniQuant?style=social',
-    img: 'https://mmlabassets.github.io/open-source/OmniQuant.jpg',
-    id: 'OmniQuant',
-  },
-  {
-    title: 'LVLM-eHub: A Comprehensive Evaluation Benchmark for Large Vision-Language Models',
-    description:
-      'LVLM-eHub is a comprehensive evaluation benchmark for publicly available large multimodal models (LVLM).',
-    tags: ['Large Vision-Language Models', 'Benchmark'],
-    links: [
       {
         website: 'Github',
-        url: 'https://github.com/OpenGVLab/Multi-Modality-Arena',
+        url: 'https://github.com/OpenDriveLab/PersFormer_3DLane',
       },
       {
         website: 'Paper',
-        url: 'https://arxiv.org/abs/2306.09265',
-      },
-    ],
-    keys: ['Dataset', '2023'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/OpenGVLab/Multi-Modality-Arena?style=social',
-    img: 'https://mmlabassets.github.io/open-source/LVLM-eHub.jpg',
-    id: 'LVLM',
-  },
-  {
-    title: 'EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought',
-    description: 'A large-scale end-to-end multi-model foundation model for embodied AI.',
-    tags: ['Embodied AI'],
-    links: [
-      {
-        website: 'Github',
-        url: 'https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2305.15021',
-      },
-      {
-        website: 'Dataset',
-        url: 'https://github.com/EmbodiedGPT/EgoCOT_Dataset',
-      },
-    ],
-    keys: ['Project', '2023'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/EmbodiedGPT/EmbodiedGPT_Pytorch?style=social',
-    img: 'https://mmlabassets.github.io/open-source/EmbodiedGPT.jpg',
-    id: 'EmbodiedGPT',
-  },
-  {
-    title: 'DiffusionDet: Diffusion Model for Object Detection',
-    description: 'DiffusionDet is the first work of diffusion model for object detection.',
-    tags: ['Object Detection', 'Diffusion Model'],
-    links: [
-      {
-        website: 'GitHub',
-        url: 'https://github.com/ShoufaChen/DiffusionDet',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2211.09788',
+        url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32',
       },
     ],
     keys: ['Project', '2022'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/ShoufaChen/DiffusionDet?style=social',
-    img: 'https://mmlabassets.github.io/open-source/DiffusionDet.jpg',
-    id: 'DiffusionDet',
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/PersFormer_3DLane?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_persformer.jpg',
+  },
+  {
+    title:
+      'ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning',
+    id: 'ST-P3',
+    description:
+      'A spatial-temporal feature learning scheme towards a set of more representative features for perception, prediction and planning tasks simultaneously.',
+    tags: ['End-to-End', 'Autonomous Driving'],
+    links: [
+      {
+        website: 'Blog',
+        url: 'https://zhuanlan.zhihu.com/p/544387122',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/st-p3',
+      },
+      {
+        website: 'Paper',
+        url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31',
+      },
+    ],
+    keys: ['Project', '2022'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/st-p3?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_stp3.jpg',
+  },
+  {
+    title:
+      'TCP: Trajectory-guided Control Prediction for End-to-end Autonomous Driving: A Simple yet Strong Baseline',
+    id: 'TCP',
+    description:
+      'Take the initiative to explore the combination of controller based on a planned trajectory and perform control prediction.',
+    tags: ['End-to-End', 'Autonomous Driving'],
+    links: [
+      {
+        website: 'Blog',
+        url: 'https://zhuanlan.zhihu.com/p/532665469',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/opendrivelab/TCP',
+      },
+      {
+        website: 'Paper',
+        url: 'https://proceedings.neurips.cc/paper_files/paper/2022/hash/286a371d8a0a559281f682f8fbf89834-Abstract-Conference.html',
+      },
+    ],
+    keys: ['Project', '2022'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/TCP?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_tcp.jpg',
   },
   {
     title:
@@ -915,29 +923,43 @@ export const open_sources: {
     id: 'AMOS',
   },
   {
-    title: 'AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition',
+    title: 'OpenLane: Large-scale Realistic 3D Lane Dataset',
     description:
-      'Adapt Vision Transformers to downstream tasks by fine-tuning less than 2% parameters.',
-    tags: ['Vision Transformers'],
+      'OpenLane is the first real-world and the largest scaled 3D lane dataset to date. Our dataset collects valuable contents from public perception dataset, providing lane and closest-in-path object(CIPO) annotations for 1000 segments. In short, OpenLane owns 200K frames and over 880K carefully annotated lanes.',
+    tags: ['3D Lane Detection'],
     links: [
       {
-        website: 'Page',
-        url: 'https://www.shoufachen.com/adaptformer-page/',
+        website: 'Github',
+        url: 'https://github.com/OpenDriveLab/OpenLane',
       },
+    ],
+    keys: ['Dataset', '2022'],
+    pis: ['Hongyang Li'],
+    githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/OpenLane?style=social',
+    img: 'https://mmlabassets.github.io/open-source/odl_openlane.jpg',
+    id: 'OpenLane',
+  },
+  {
+    title:
+      'Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions',
+    description:
+      'Pyramid Vision Transformer (PVT) is a pure Transformer backbone for dense prediction tasks, such as object detection and semantic segmentation.',
+    tags: ['Vision Transformer'],
+    links: [
       {
         website: 'GitHub',
-        url: 'https://github.com/ShoufaChen/AdaptFormer',
+        url: 'https://github.com/whai362/PVT',
       },
       {
         website: 'Paper',
-        url: 'https://arxiv.org/abs/2205.13535',
+        url: 'https://arxiv.org/abs/2102.12122',
       },
     ],
-    keys: ['Project', '2022'],
+    keys: ['Project', '2021'],
     pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/ShoufaChen/AdaptFormer?style=social',
-    img: 'https://mmlabassets.github.io/open-source/AdaptFormer.jpg',
-    id: 'AdaptFormer',
+    githubstars: 'https://img.shields.io/github/stars/whai362/PVT?style=social',
+    img: 'https://mmlabassets.github.io/open-source/PVT.jpg',
+    id: 'Pyramid',
   },
   {
     title: 'SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers',
@@ -964,28 +986,6 @@ export const open_sources: {
     id: 'SegFormer',
   },
   {
-    title:
-      'Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions',
-    description:
-      'Pyramid Vision Transformer (PVT) is a pure Transformer backbone for dense prediction tasks, such as object detection and semantic segmentation.',
-    tags: ['Vision Transformer'],
-    links: [
-      {
-        website: 'GitHub',
-        url: 'https://github.com/whai362/PVT',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2102.12122',
-      },
-    ],
-    keys: ['Project', '2021'],
-    pis: ['Ping Luo'],
-    githubstars: 'https://img.shields.io/github/stars/whai362/PVT?style=social',
-    img: 'https://mmlabassets.github.io/open-source/PVT.jpg',
-    id: 'Pyramid',
-  },
-  {
     title: 'Sparse R-CNN: End-to-End Object Detection with Learnable Proposals',
     description:
       'Sparse R-CNN is a purely sparse method for object detection in images, which demonstrates its accuracy, run-time and training convergence performance on par with the wellestablished detector.',
@@ -1005,5 +1005,4 @@ export const open_sources: {
     githubstars: 'https://img.shields.io/github/stars/PeizeSun/SparseR-CNN?style=social',
     img: 'https://mmlabassets.github.io/open-source/SparseRCNN.jpg',
     id: 'Sparse',
-  },
-];
+  }];
