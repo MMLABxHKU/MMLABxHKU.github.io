@@ -170,6 +170,17 @@ export const publications: {
     keys: ['2024', 'Autonomous Driving'],
   },
   {
+    title: 'FastMAC: Stochastic Spectral Sampling of Correspondence Graph',
+    authors: 'Yifei Zhang, Hao Zhao, Hongyang Li, Siheng Chen',
+    proceedings: 'CVPR 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2403.08770' },
+      { website: 'GitHub', url: 'https://github.com/Forrest-110/FastMAC' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2024'],
+  },
+  {
     title: 'Generalized Predictive Model for Autonomous Driving',
     authors:
       'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
@@ -240,6 +251,31 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2024'],
+  },
+  {
+    title:
+      'Referred by Multi-Modality: A Unified Temporal Transformer for Video Object Segmentation',
+    authors:
+      'Shilin Yan, Renrui Zhang, Ziyu Guo, Wenchao Chen, Wei Zhang, Hongyang Li, Yu Qiao, Zhongjiang He, Peng Gao',
+    proceedings: 'AAAI 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2305.16318' },
+      { website: 'GitHub', url: 'https://github.com/OpenGVLab/MUTR' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2024'],
+  },
+  {
+    title:
+      'Test-time Correction with Human Feedback: An Online 3D Detection System via Visual Prompting',
+    authors: 'Zetong Yang, Hanxue Zhang, Yanan Sun, Li Chen, Fei Xia, Fatma Güney, Hongyang Li',
+    proceedings: 'arXiv 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2412.07768' },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2024'],
   },
   {
     title: 'Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
@@ -313,6 +349,17 @@ export const publications: {
     keys: ['Autonomous Driving', '2023'],
   },
   {
+    title: 'Mimic before Reconstruct: Enhancing Masked Autoencoders with Feature Mimicking',
+    authors: 'Peng Gao, Renrui Zhang, Rongyao Fang, Ziyi Lin, Hongyang Li, Hongsheng Li, Qiao Yu',
+    proceedings: 'IJCV 2023',
+    links: [
+      { website: 'Paper', url: 'https://link.springer.com/article/10.1007/s11263-023-01898-4' },
+      { website: 'GitHub', url: 'https://github.com/Alpha-VL/ConvMAE' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2023'],
+  },
+  {
     title: 'Planning-oriented Autonomous Driving',
     authors:
       'Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li',
@@ -351,6 +398,20 @@ export const publications: {
     keys: ['Autonomous Driving', '2023'],
   },
   {
+    title: 'Stare at What You See: Masked Image Modeling without Reconstruction',
+    authors: 'Hongwei Xue, Peng Gao, Hongyang Li, Yu Qiao, Hao Sun, Houqiang Li, Jiebo Luo',
+    proceedings: 'CVPR 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Xue_Stare_at_What_You_See_Masked_Image_Modeling_Without_Reconstruction_CVPR_2023_paper.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/maskalign' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2023'],
+  },
+  {
     title:
       'Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving',
     authors: 'Xiaosong Jia, Penghao Wu, Li Chen, Jiangwei Xie, Conghui He, Junchi Yan, Hongyang Li',
@@ -364,6 +425,21 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title: 'Align Representations With Base: A New Approach to Self-Supervised Learning',
+    authors:
+      'Shaofeng Zhang, Lyn Qiu, Feng Zhu, Junchi Yan, Hengrui Zhang, Rui Zhao, Hongyang Li, Xiaokang Yang',
+    proceedings: 'CVPR 2022',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Align_Representations_With_Base_A_New_Approach_to_Self-Supervised_Learning_CVPR_2022_paper.html',
+      },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['3D Vision', '2022'],
   },
   {
     title:

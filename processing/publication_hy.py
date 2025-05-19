@@ -2,69 +2,111 @@ import re
 
 pub = [
     {
-        'title': "Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation",
-        'link': "https://arxiv.org/abs/2410.08001",
-        'image': "/assets/publication/robodual.jpg",
-        'author': "Qingwen Bu, Hongyang Li, Li Chen, Jisong Cai, Jia Zeng, Heming Cui, Maoqing Yao, Yu Qiao",
+        'title': "Test-time Correction with Human Feedback: An Online 3D Detection System via Visual Prompting",
+        'link': "https://arxiv.org/abs/2412.07768",
+        'image': "/assets/publication/ttc.jpg",
+        'author': "Zetong Yang, Hanxue Zhang, Yanan Sun, Li Chen, Fei Xia, Fatma Güney, Hongyang Li",
         'note': "arXiv 2024",
         'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/RoboDual?style=social",
-        'starlink': "https://github.com/OpenDriveLab/RoboDual",
+        'star': "",
+        'starlink': "",
         'icon': [
             {
                 'type': "github",
-                'link': "https://github.com/OpenDriveLab/RoboDual",
-            },
-            {
-                'type': "webpage",
-                'link': "/RoboDual/",
+                'link': "",
             },
         ],
-        'description': "Our objective is to develop a synergistic dual-system framework which supplements the generalizability of large-scale pre-trained generalist with the efficient and task-specific adaptation of specialist.",
+        'description': "",
         'tag': "",
     },
     {
-        'title': "Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation",
-        'link': "https://arxiv.org/abs/2409.09016",
-        'image': "/assets/publication/clover.jpg",
-        'author': "Qingwen Bu, Jia Zeng, Li Chen, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li",
-        'note': "NeurIPS 2024",
+        'title': "FastMAC: Stochastic Spectral Sampling of Correspondence Graph",
+        'link': "https://arxiv.org/abs/2403.08770",
+        'image': "/assets/publication/FastMAC.jpg",
+        'author': "Yifei Zhang, Hao Zhao, Hongyang Li, Siheng Chen",
+        'note': "CVPR 2024",
         'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/CLOVER?style=social",
-        'starlink': "https://github.com/OpenDriveLab/CLOVER",
+        'star': "https://img.shields.io/github/stars/Forrest-110/FastMAC?style=social",
+        'starlink': "https://github.com/Forrest-110/FastMAC",
         'icon': [
             {
                 'type': "github",
-                'link': "https://github.com/OpenDriveLab/CLOVER",
-            },
-            {
-                'type': "bilibili",
-                'link': "https://www.bilibili.com/video/BV1rHqZYeECL",
+                'link': "https://github.com/Forrest-110/FastMAC",
             },
         ],
-        'description': "CLOVER employs a text-conditioned video diffusion model for generating visual plans as reference inputs, then these sub-goals guide the feedback-driven policy to generate actions with an error measurement strategy.",
+        'description': "",
         'tag': "",
     },
     {
-        'title': "Learning Manipulation by Predicting Interaction",
-        'link': "https://arxiv.org/abs/2406.00439",
-        'image': "/assets/publication/mpi.jpg",
-        'author': "Jia Zeng, Qingwen Bu, Bangjun Wang, Wenke Xia, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li",
-        'note': "RSS 2024",
+        'title': "Referred by Multi-Modality: A Unified Temporal Transformer for Video Object Segmentation",
+        'link': "https://arxiv.org/abs/2305.16318",
+        'image': "/assets/publication/mutr.jpg",
+        'author': "Shilin Yan, Renrui Zhang, Ziyu Guo, Wenchao Chen, Wei Zhang, Hongyang Li, Yu Qiao, Zhongjiang He, Peng Gao",
+        'note': "AAAI 2024",
         'noteoption': '',
-        'star': "https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social",
-        'starlink': "https://github.com/OpenDriveLab/MPI",
+        'star': "https://img.shields.io/github/stars/OpenGVLab/MUTR?style=social",
+        'starlink': "https://github.com/OpenGVLab/MUTR",
         'icon': [
             {
-                'type': "webpage",
-                'link': "/MPI/",
-            },
-            {
                 'type': "github",
-                'link': "https://github.com/OpenDriveLab/MPI",
+                'link': "https://github.com/OpenGVLab/MUTR",
             },
         ],
-        'description': "We propose a general pre-training pipeline that learns Manipulation by Predicting the Interaction (MPI).",
+        'description': "",
+        'tag': "",
+    },
+    {
+        'title': "Stare at What You See: Masked Image Modeling without Reconstruction",
+        'link': "https://openaccess.thecvf.com/content/CVPR2023/html/Xue_Stare_at_What_You_See_Masked_Image_Modeling_Without_Reconstruction_CVPR_2023_paper.html",
+        'image': "/assets/publication/maskalign.jpg",
+        'author': "Hongwei Xue, Peng Gao, Hongyang Li, Yu Qiao, Hao Sun, Houqiang Li, Jiebo Luo",
+        'note': "CVPR 2023",
+        'noteoption': '',
+        'star': "https://img.shields.io/github/stars/OpenDriveLab/maskalign?style=social",
+        'starlink': "https://github.com/OpenDriveLab/maskalign",
+        'icon': [
+            {
+                'type': "github",
+                'link': "https://github.com/OpenDriveLab/maskalign",
+            },
+        ],
+        'description': "An efficient MIM paradigm MaskAlign and a Dynamic Alignment module to apply learnable alignment to tackle the problem of input inconsistency.",
+        'tag': "",
+    },
+    {
+        'title': "Mimic before Reconstruct: Enhancing Masked Autoencoders with Feature Mimicking",
+        'link': "https://link.springer.com/article/10.1007/s11263-023-01898-4",
+        'image': "/assets/publication/mimic.jpg",
+        'author': "Peng Gao, Renrui Zhang, Rongyao Fang, Ziyi Lin, Hongyang Li, Hongsheng Li, Qiao Yu",
+        'note': "IJCV 2023",
+        'noteoption': '',
+        'star': "https://img.shields.io/github/stars/Alpha-VL/ConvMAE?style=social",
+        'starlink': "https://github.com/Alpha-VL/ConvMAE",
+        'icon': [
+            {
+                'type': "github",
+                'link': "https://github.com/Alpha-VL/ConvMAE",
+            },
+        ],
+        'description': "Introducing high-level and low-level representations to MAE without interference during pre-training.",
+        'tag': "",
+    },
+    {
+        'title': "Align Representations With Base: A New Approach to Self-Supervised Learning",
+        'link': "https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Align_Representations_With_Base_A_New_Approach_to_Self-Supervised_Learning_CVPR_2022_paper.html",
+        'image': "/assets/publication/arb.jpg",
+        'author': "Shaofeng Zhang, Lyn Qiu, Feng Zhu, Junchi Yan, Hengrui Zhang, Rui Zhao, Hongyang Li, Xiaokang Yang",
+        'note': "CVPR 2022",
+        'noteoption': '',
+        'star': "",
+        'starlink': "",
+        'icon': [
+            {
+                'type': "github",
+                'link': "",
+            },
+        ],
+        'description': "",
         'tag': "",
     },
 ]
@@ -110,7 +152,7 @@ for p in pub:
         new['pis'].append('Bo Dai')
 
     # key
-    new['keys'] = ['Embodied AI']
+    new['keys'] = ['Autonomous Driving']
     pattern = r'\d{4}'
     match = re.search(pattern, p['note'])
     if match:
