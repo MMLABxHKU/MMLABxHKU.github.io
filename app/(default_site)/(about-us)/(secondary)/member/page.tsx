@@ -150,45 +150,43 @@ export default function Home() {
                         </h2>
                     </div>
                     {pis.map((pi) => (
-                        <div key={pi.name}>
-                            <FadeIn>
-                                <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
-                                    <div className="flex-1/3 md:max-w-64">
-                                        <AspectRatio ratio={1/1}>
-                                            <Image
-                                                src={pi.img}
-                                                alt={pi.name}
-                                                fill
-                                                className="h-full w-full rounded-md object-cover bg-gradient-loading"
-                                            />
-                                        </AspectRatio>
-                                    </div>
-                                    <div className="flex-2/3 flex flex-col gap-6 scroll-mt-32" id={pi.id}>
-                                        <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-                                            {pi.name}
-                                        </h3>
-                                        <span>
-                                            {pi.title}
-                                        </span>
-                                        <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
-                                        <div className="flex gap-6 flex-wrap">
-                                            {pi.links.map((link) => (
-                                                <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
-                                                    <AspectRatio ratio={1/1}>
-                                                        <Image
-                                                            src={"/icon/" + link.icon + ".svg"}
-                                                            alt={link.link}
-                                                            fill
-                                                            className="group-hover:scale-125 transition duration-200"
-                                                        />
-                                                    </AspectRatio>
-                                                </Link>
-                                            ))}
-                                        </div>
+                        <FadeIn key={pi.name}>
+                            <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
+                                <div className="flex-1/3 md:max-w-64">
+                                    <AspectRatio ratio={1/1}>
+                                        <Image
+                                            src={pi.img}
+                                            alt={pi.name}
+                                            fill
+                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
+                                        />
+                                    </AspectRatio>
+                                </div>
+                                <div className="flex-2/3 flex flex-col gap-6 scroll-mt-32" id={pi.id}>
+                                    <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+                                        {pi.name}
+                                    </h3>
+                                    <span>
+                                        {pi.title}
+                                    </span>
+                                    <p className="member_bio" dangerouslySetInnerHTML={{ __html: pi.bio }}></p>
+                                    <div className="flex gap-6 flex-wrap">
+                                        {pi.links.map((link) => (
+                                            <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
+                                                <AspectRatio ratio={1/1}>
+                                                    <Image
+                                                        src={"/icon/" + link.icon + ".svg"}
+                                                        alt={link.link}
+                                                        fill
+                                                        className="group-hover:scale-125 transition duration-200"
+                                                    />
+                                                </AspectRatio>
+                                            </Link>
+                                        ))}
                                     </div>
                                 </div>
-                            </FadeIn>
-                        </div>
+                            </div>
+                        </FadeIn>
                     ))}
 
 
