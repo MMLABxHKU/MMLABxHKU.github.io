@@ -47,7 +47,7 @@ export default function Home() {
 
 
             <FadeIn>
-                <div className="w-full px-6 flex flex-row justify-center pt-32 pb-16 bg-gradient-to-br from-morange/60 via-mred/40 to-mblue/60 bg-fixed">
+                <div className="w-full px-6 flex flex-row justify-center pt-32 pb-32 lg:pb-16 bg-gradient-to-br from-morange/60 via-mred/40 to-mblue/60 bg-fixed">
                     <h1 className='max-w-7xl w-full flex flex-row font-bold text-t0'>
                         <RollinggText1/>
                         {/* <RollinggText2/>
@@ -60,7 +60,7 @@ export default function Home() {
             <FadeIn> 
                 <div className="w-full px-6 flex flex-row justify-center pb-32 bg-gradient-to-br from-morange/60 via-mred/40 to-mblue/60 bg-fixed">
                     <div className="max-w-7xl w-full flex flex-row">
-                        <div className="w-full justify-between flex flex-col lg:flex-row gap-20">
+                        <div className="w-full justify-between flex flex-col lg:flex-row gap-10 lg:gap-20">
                             <div className="flex-1">
                                 <Link href="/about-us" className="font-bold text-t1 animated-underline">About Us</Link>
                                 <span className="font-bold text-t1">&nbsp;{'>'}</span>
