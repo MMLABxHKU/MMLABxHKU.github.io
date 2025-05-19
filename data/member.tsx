@@ -127,124 +127,600 @@ export const members: {
   keys: string[];
 }[] = [
   {
-    name: 'Jiaming Xie',
-    img: 'https://mmlabassets.github.io/member/jiaming_xie_c.jpeg',
-    title: 'Ph.D.',
+    name: 'Haotian Liang',
+    img: 'https://mmlabassets.github.io/member/haotian_liang_c.jpeg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [],
-    keys: ['2017', '2023', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Nenglun Chen',
-    img: 'https://mmlabassets.github.io/member/nenglun_chen_c.jpg',
-    title: 'Ph.D.',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=UhjTC7AAAAAJ&hl=en',
-      },
-    ],
-    keys: ['2017', '2023', 'Alumni'],
+    name: 'Jianyu Zhang',
+    img: 'https://mmlabassets.github.io/member/jianyu_zhang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Bo Dai'],
+    links: [],
+    keys: ['2025'],
   },
   {
-    name: 'Xingang Pan',
-    img: 'https://mmlabassets.github.io/member/xingang_pan_c.jpeg',
-    title: 'Ph.D.',
+    name: 'Junsong Chen',
+    img: 'https://mmlabassets.github.io/member/junsong_chen_c.jpg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://xingangpan.github.io/',
+        link: 'https://lawrence-cj.github.io/',
       },
     ],
-    keys: ['2017', '2021', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Wenqi Shao',
-    img: 'https://mmlabassets.github.io/member/wenqi_shao_c.jpeg',
-    title: 'Ph.D.',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=Bs9mrwwAAAAJ&hl=en',
-      },
-    ],
-    keys: ['2018', '2022', 'Alumni'],
-  },
-  {
-    name: 'Anran Liu',
-    img: 'https://mmlabassets.github.io/member/anran_liu_c.jpeg',
-    title: 'Ph.D.',
+    name: 'Kaixuan Wang',
+    img: 'https://mmlabassets.github.io/member/kaixuan_wang_c.jpeg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [],
-    keys: ['2019', '2023', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Enze Xie',
-    img: 'https://mmlabassets.github.io/member/enze_xie_c.jpg',
-    title: 'Ph.D.',
+    name: 'Lingxiao Du',
+    img: 'https://mmlabassets.github.io/member/lingxiao_du_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2025'],
+  },
+  {
+    name: 'Lirui Zhao',
+    img: 'https://mmlabassets.github.io/member/lirui_zhao_c.jpg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://xieenze.github.io/',
+        link: 'https://liruizhao.com/',
       },
     ],
-    keys: ['2019', '2022', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Mingyu Ding',
-    img: 'https://mmlabassets.github.io/member/mingyu_ding_c.jpg',
-    title: 'Ph.D.',
+    name: 'Liuao Pei',
+    img: 'https://mmlabassets.github.io/member/liuao_pei_c.jpeg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://dingmyu.github.io/',
+        link: 'https://liuaopei.com/',
       },
     ],
-    keys: ['2019', '2023', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Yuying Ge',
-    img: 'https://mmlabassets.github.io/member/yuying_ge_c.jpeg',
-    title: 'Ph.D.',
+    name: 'Qingquan Lin',
+    img: 'https://mmlabassets.github.io/member/qingquan_lin_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2025'],
+  },
+  {
+    name: 'Tianxing Chen',
+    img: 'https://mmlabassets.github.io/member/tianxing_chen_c.jpg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://geyuying.github.io/',
+        link: 'https://tianxingchen.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=pvS8MH8AAAAJ&hl=en&oi=ao',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/tianxingchen',
       },
     ],
-    keys: ['2019', '2023', 'Alumni'],
+    keys: ['2025'],
   },
   {
-    name: 'Zhaoyang Zhang',
-    img: 'https://mmlabassets.github.io/member/zhaoyang_zhang_c.jpg',
-    title: 'Ph.D.',
+    name: 'Xingjian Ran',
+    img: 'https://mmlabassets.github.io/member/xingjian_ran_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Bo Dai'],
+    links: [
+      {
+        icon: 'email',
+        link: 'mailto:xjran03@gmail.com',
+      },
+    ],
+    keys: ['2025'],
+  },
+  {
+    name: 'Yixuan Pan',
+    img: 'https://mmlabassets.github.io/member/yixuan_pan_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Hongyang Li'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://lzpyx.github.io/',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:yixuanpan@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/lzpyx',
+      },
+    ],
+    keys: ['2025'],
+  },
+  {
+    name: 'Zhuoheng Li',
+    img: 'https://mmlabassets.github.io/member/zhuoheng_li_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Hongyang Li'],
+    links: [
+      {
+        icon: 'email',
+        link: 'mailto:zhuohengli@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/StarCycle/StarCycle',
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/lizhuoheng/',
+      },
+    ],
+    keys: ['2025'],
+  },
+  {
+    name: 'Jielin Li',
+    img: 'https://mmlabassets.github.io/member/jielin_li_c.jpg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=Pf6o7uAAAAAJ&hl=en',
+        link: 'https://scholar.google.com/citations?user=z2Tbc6MAAAAJ&hl=zh-CN',
       },
     ],
-    keys: ['2019', '2023', 'Alumni'],
+    keys: ['2024'],
   },
   {
-    name: 'Wenhai Wang',
-    img: 'https://mmlabassets.github.io/member/wenhai_wang_c.jpg',
-    title: 'RA',
+    name: 'Junli Ren',
+    img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
+    title: 'Ph.D. Candidate',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://whai362.github.io/',
+        link: 'https://renjunli99.github.io/',
       },
     ],
-    keys: ['2019', '2020', 'Alumni'],
+    keys: ['2024'],
+  },
+  {
+    name: 'Quanfeng Lu',
+    img: 'https://mmlabassets.github.io/member/quanfeng_lu_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=NlBS3nMAAAAJ&hl',
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/hflqf888/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Tianshuo Yang',
+    img: 'https://mmlabassets.github.io/member/tianshuo_yang_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=9b5dE40AAAAJ&hl',
+      },
+      {
+        icon: 'webpage',
+        link: 'https://violinarthur.github.io/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Yatai Ji',
+    img: 'https://mmlabassets.github.io/member/yatai_ji_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yataiji.github.io/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Yihang Qiu',
+    img: 'https://mmlabassets.github.io/member/yihang_qiu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=qgRUOdIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:qiuyihang@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/GihhArwtw',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Yuxuan Jiang',
+    img: 'https://mmlabassets.github.io/member/yuxuan_jiang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=ZcwQMfkAAAAJ',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Zhiheng Liu',
+    img: 'https://mmlabassets.github.io/member/zhiheng_liu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://johanan528.github.io/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Zhiqian Lan',
+    img: 'https://mmlabassets.github.io/member/zhiqian_lan_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=AkBBXcgAAAAJ',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Mengzhao Chen',
+    img: 'https://mmlabassets.github.io/member/mengzhao_chen_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://chenmnz.github.io/',
+      },
+    ],
+    keys: ['2024', '2024'],
+  },
+  {
+    name: 'Shuo Yang',
+    img: 'https://mmlabassets.github.io/member/shuo_yang_c.jpg',
+    title: 'Postdoc Fellow',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://faculty.hitsz.edu.cn/yangshuo',
+      },
+    ],
+    keys: ['2024', '2024', 'Alumni'],
+  },
+  {
+    name: 'Chengyue Wu',
+    img: 'https://mmlabassets.github.io/member/chengyue_wu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://hills-code.github.io/',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Chonghao Sima',
+    img: 'https://mmlabassets.github.io/member/chonghao_sima_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=dgYJ6esAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:u3010296@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/ChonghaoSima',
+      },
+      {
+        icon: 'twitter',
+        link: 'https://twitter.com/smch_1127',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Fanqing Meng',
+    img: 'https://mmlabassets.github.io/member/fanqing_meng_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2023'],
+  },
+  {
+    name: 'Jiahao Wang',
+    img: 'https://mmlabassets.github.io/member/jiahao_wang_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://www.zhihu.com/people/wang-jia-hao-53-3',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Jin Wang',
+    img: 'https://mmlabassets.github.io/member/jin_wang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://jinjinw.com/',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Li Chen',
+    img: 'https://mmlabassets.github.io/member/li_chen_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=ulZxvY0AAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:ilnehc@connect.hku.hk',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Mengkang Hu',
+    img: 'https://mmlabassets.github.io/member/mengkang_hu_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com.hk/citations?user=FhVRimUAAAAJ&hl=en&oi=ao',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Shilong Zhang',
+    img: 'https://mmlabassets.github.io/member/shilong_zhang_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://jshilong.github.io/',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Yuheng Lei',
+    img: 'https://mmlabassets.github.io/member/yuheng_lei_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://sites.google.com/view/yuhenglei',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Haibao Yu',
+    img: 'https://mmlabassets.github.io/member/haibao_yu_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'dblp',
+        link: 'https://dblp.org/pid/246/4643.html',
+      },
+    ],
+    keys: ['2022'],
+  },
+  {
+    name: 'Yizhuo Li',
+    img: 'https://mmlabassets.github.io/member/yizhuo_li_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://liyz15.github.io/',
+      },
+    ],
+    keys: ['2022'],
+  },
+  {
+    name: 'Yue Yang',
+    img: 'https://mmlabassets.github.io/member/yue_yang_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2022'],
+  },
+  {
+    name: 'Zeyue Xue',
+    img: 'https://mmlabassets.github.io/member/zeyue_xue_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2022'],
+  },
+  {
+    name: 'Zhixuan Liang',
+    img: 'https://mmlabassets.github.io/member/zhixuan_liang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://liang-zx.github.io/',
+      },
+    ],
+    keys: ['2022'],
+  },
+  {
+    name: 'Yutao Hu',
+    img: 'https://mmlabassets.github.io/member/yutao_hu_c.jpeg',
+    title: 'Postdoc Fellow',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com.hk/citations?user=4sXuGXAAAAAJ&hl=zh-CN',
+      },
+    ],
+    keys: ['2022', '2023', 'Alumni'],
+  },
+  {
+    name: 'Peng Xu',
+    img: 'https://mmlabassets.github.io/member/peng_xu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [],
+    keys: ['2021'],
+  },
+  {
+    name: 'Runjian Chen',
+    img: 'https://mmlabassets.github.io/member/runjian_chen_c.jpeg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://www.rjchen.site',
+      },
+    ],
+    keys: ['2021'],
+  },
+  {
+    name: 'Shoufa Chen',
+    img: 'https://mmlabassets.github.io/member/shoufa_chen_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://www.shoufachen.com',
+      },
+    ],
+    keys: ['2021'],
+  },
+  {
+    name: 'Yao Lai',
+    img: 'https://mmlabassets.github.io/member/yao_lai_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://laiyao1.github.io/',
+      },
+    ],
+    keys: ['2021'],
+  },
+  {
+    name: 'Yao Mu',
+    img: 'https://mmlabassets.github.io/member/yao_mu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yaomarkmu.github.io/',
+      },
+    ],
+    keys: ['2021'],
+  },
+  {
+    name: 'Yangyang Xu',
+    img: 'https://mmlabassets.github.io/member/yangyang_xu_c.jpeg',
+    title: 'Postdoc Fellow',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://cnnlstm.github.io/',
+      },
+    ],
+    keys: ['2021', '2023', 'Alumni'],
+  },
+  {
+    name: 'Qiang Zhai',
+    img: 'https://mmlabassets.github.io/member/qiang_zhai_c.jpeg',
+    title: 'Visitor',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'github',
+        link: 'https://github.com/zhaiqx',
+      },
+    ],
+    keys: ['2021', '2022', 'Alumni'],
   },
   {
     name: 'Chaofan Tao',
@@ -385,599 +861,122 @@ export const members: {
     keys: ['2020', '2023', 'Alumni'],
   },
   {
-    name: 'Yangyang Xu',
-    img: 'https://mmlabassets.github.io/member/yangyang_xu_c.jpeg',
-    title: 'Postdoc Fellow',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://cnnlstm.github.io/',
-      },
-    ],
-    keys: ['2021', '2023', 'Alumni'],
-  },
-  {
-    name: 'Qiang Zhai',
-    img: 'https://mmlabassets.github.io/member/qiang_zhai_c.jpeg',
-    title: 'Visitor',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'github',
-        link: 'https://github.com/zhaiqx',
-      },
-    ],
-    keys: ['2021', '2022', 'Alumni'],
-  },
-  {
-    name: 'Peng Xu',
-    img: 'https://mmlabassets.github.io/member/peng_xu_c.jpg',
-    title: 'Ph.D. Candidate',
+    name: 'Anran Liu',
+    img: 'https://mmlabassets.github.io/member/anran_liu_c.jpeg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [],
-    keys: ['2021'],
+    keys: ['2019', '2023', 'Alumni'],
   },
   {
-    name: 'Runjian Chen',
-    img: 'https://mmlabassets.github.io/member/runjian_chen_c.jpeg',
-    title: 'Ph.D. Candidate',
+    name: 'Mingyu Ding',
+    img: 'https://mmlabassets.github.io/member/mingyu_ding_c.jpg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://www.rjchen.site',
+        link: 'https://dingmyu.github.io/',
       },
     ],
-    keys: ['2021'],
+    keys: ['2019', '2023', 'Alumni'],
   },
   {
-    name: 'Shoufa Chen',
-    img: 'https://mmlabassets.github.io/member/shoufa_chen_c.jpg',
-    title: 'Ph.D. Candidate',
+    name: 'Yuying Ge',
+    img: 'https://mmlabassets.github.io/member/yuying_ge_c.jpeg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://www.shoufachen.com',
+        link: 'https://geyuying.github.io/',
       },
     ],
-    keys: ['2021'],
+    keys: ['2019', '2023', 'Alumni'],
   },
   {
-    name: 'Yao Lai',
-    img: 'https://mmlabassets.github.io/member/yao_lai_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://laiyao1.github.io/',
-      },
-    ],
-    keys: ['2021'],
-  },
-  {
-    name: 'Yao Mu',
-    img: 'https://mmlabassets.github.io/member/yao_mu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yaomarkmu.github.io/',
-      },
-    ],
-    keys: ['2021'],
-  },
-  {
-    name: 'Yutao Hu',
-    img: 'https://mmlabassets.github.io/member/yutao_hu_c.jpeg',
-    title: 'Postdoc Fellow',
+    name: 'Zhaoyang Zhang',
+    img: 'https://mmlabassets.github.io/member/zhaoyang_zhang_c.jpg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'scholar',
-        link: 'https://scholar.google.com.hk/citations?user=4sXuGXAAAAAJ&hl=zh-CN',
+        link: 'https://scholar.google.com/citations?user=Pf6o7uAAAAAJ&hl=en',
       },
     ],
-    keys: ['2022', '2023', 'Alumni'],
+    keys: ['2019', '2023', 'Alumni'],
   },
   {
-    name: 'Haibao Yu',
-    img: 'https://mmlabassets.github.io/member/haibao_yu_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'dblp',
-        link: 'https://dblp.org/pid/246/4643.html',
-      },
-    ],
-    keys: ['2022'],
-  },
-  {
-    name: 'Yizhuo Li',
-    img: 'https://mmlabassets.github.io/member/yizhuo_li_c.jpg',
-    title: 'Ph.D. Candidate',
+    name: 'Enze Xie',
+    img: 'https://mmlabassets.github.io/member/enze_xie_c.jpg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://liyz15.github.io/',
+        link: 'https://xieenze.github.io/',
       },
     ],
-    keys: ['2022'],
+    keys: ['2019', '2022', 'Alumni'],
   },
   {
-    name: 'Yue Yang',
-    img: 'https://mmlabassets.github.io/member/yue_yang_c.jpeg',
-    title: 'Ph.D. Candidate',
+    name: 'Wenhai Wang',
+    img: 'https://mmlabassets.github.io/member/wenhai_wang_c.jpg',
+    title: 'RA',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://whai362.github.io/',
+      },
+    ],
+    keys: ['2019', '2020', 'Alumni'],
+  },
+  {
+    name: 'Wenqi Shao',
+    img: 'https://mmlabassets.github.io/member/wenqi_shao_c.jpeg',
+    title: 'Ph.D.',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=Bs9mrwwAAAAJ&hl=en',
+      },
+    ],
+    keys: ['2018', '2022', 'Alumni'],
+  },
+  {
+    name: 'Jiaming Xie',
+    img: 'https://mmlabassets.github.io/member/jiaming_xie_c.jpeg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [],
-    keys: ['2022'],
+    keys: ['2017', '2023', 'Alumni'],
   },
   {
-    name: 'Zeyue Xue',
-    img: 'https://mmlabassets.github.io/member/zeyue_xue_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2022'],
-  },
-  {
-    name: 'Zhixuan Liang',
-    img: 'https://mmlabassets.github.io/member/zhixuan_liang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://liang-zx.github.io/',
-      },
-    ],
-    keys: ['2022'],
-  },
-  {
-    name: 'Chengyue Wu',
-    img: 'https://mmlabassets.github.io/member/chengyue_wu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://hills-code.github.io/',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Chonghao Sima',
-    img: 'https://mmlabassets.github.io/member/chonghao_sima_c.jpg',
-    title: 'Ph.D. Candidate',
+    name: 'Nenglun Chen',
+    img: 'https://mmlabassets.github.io/member/nenglun_chen_c.jpg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=dgYJ6esAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:u3010296@connect.hku.hk',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/ChonghaoSima',
-      },
-      {
-        icon: 'twitter',
-        link: 'https://twitter.com/smch_1127',
+        link: 'https://scholar.google.com/citations?user=UhjTC7AAAAAJ&hl=en',
       },
     ],
-    keys: ['2023'],
+    keys: ['2017', '2023', 'Alumni'],
   },
   {
-    name: 'Fanqing Meng',
-    img: 'https://mmlabassets.github.io/member/fanqing_meng_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2023'],
-  },
-  {
-    name: 'Jiahao Wang',
-    img: 'https://mmlabassets.github.io/member/jiahao_wang_c.jpeg',
-    title: 'Ph.D. Candidate',
+    name: 'Xingang Pan',
+    img: 'https://mmlabassets.github.io/member/xingang_pan_c.jpeg',
+    title: 'Ph.D.',
     pi: ['Ping Luo'],
     links: [
       {
         icon: 'webpage',
-        link: 'https://www.zhihu.com/people/wang-jia-hao-53-3',
+        link: 'https://xingangpan.github.io/',
       },
     ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Jin Wang',
-    img: 'https://mmlabassets.github.io/member/jin_wang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://jinjinw.com/',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Li Chen',
-    img: 'https://mmlabassets.github.io/member/li_chen_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=ulZxvY0AAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:ilnehc@connect.hku.hk',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Mengkang Hu',
-    img: 'https://mmlabassets.github.io/member/mengkang_hu_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com.hk/citations?user=FhVRimUAAAAJ&hl=en&oi=ao',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Shilong Zhang',
-    img: 'https://mmlabassets.github.io/member/shilong_zhang_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://jshilong.github.io/',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Yuheng Lei',
-    img: 'https://mmlabassets.github.io/member/yuheng_lei_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://sites.google.com/view/yuhenglei',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Shuo Yang',
-    img: 'https://mmlabassets.github.io/member/shuo_yang_c.jpg',
-    title: 'Postdoc Fellow',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://faculty.hitsz.edu.cn/yangshuo',
-      },
-    ],
-    keys: ['2024', '2024', 'Alumni'],
-  },
-  {
-    name: 'Yatai Ji',
-    img: 'https://mmlabassets.github.io/member/yatai_ji_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yataiji.github.io/',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Jielin Li',
-    img: 'https://mmlabassets.github.io/member/jielin_li_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=z2Tbc6MAAAAJ&hl=zh-CN',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Junli Ren',
-    img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://renjunli99.github.io/',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Mengzhao Chen',
-    img: 'https://mmlabassets.github.io/member/mengzhao_chen_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://chenmnz.github.io/',
-      },
-    ],
-    keys: ['2024', '2024'],
-  },
-  {
-    name: 'Quanfeng Lu',
-    img: 'https://mmlabassets.github.io/member/quanfeng_lu_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=NlBS3nMAAAAJ&hl',
-      },
-      {
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/hflqf888/',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Tianshuo Yang',
-    img: 'https://mmlabassets.github.io/member/tianshuo_yang_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=9b5dE40AAAAJ&hl',
-      },
-      {
-        icon: 'webpage',
-        link: 'https://violinarthur.github.io/',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Yihang Qiu',
-    img: 'https://mmlabassets.github.io/member/yihang_qiu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=qgRUOdIAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:qiuyihang@connect.hku.hk',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/GihhArwtw',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Yuxuan Jiang',
-    img: 'https://mmlabassets.github.io/member/yuxuan_jiang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=ZcwQMfkAAAAJ',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Zhiheng Liu',
-    img: 'https://mmlabassets.github.io/member/zhiheng_liu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://johanan528.github.io/',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Zhiqian Lan',
-    img: 'https://mmlabassets.github.io/member/zhiqian_lan_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=AkBBXcgAAAAJ',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Haotian Liang',
-    img: 'https://mmlabassets.github.io/member/haotian_liang_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2025'],
-  },
-  {
-    name: 'Junsong Chen',
-    img: 'https://mmlabassets.github.io/member/junsong_chen_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://lawrence-cj.github.io/',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Kaixuan Wang',
-    img: 'https://mmlabassets.github.io/member/kaixuan_wang_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2025'],
-  },
-  {
-    name: 'Lingxiao Du',
-    img: 'https://mmlabassets.github.io/member/lingxiao_du_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2025'],
-  },
-  {
-    name: 'Lirui Zhao',
-    img: 'https://mmlabassets.github.io/member/lirui_zhao_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://liruizhao.com/',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Liuao Pei',
-    img: 'https://mmlabassets.github.io/member/liuao_pei_c.jpeg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://liuaopei.com/',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Qingquan Lin',
-    img: 'https://mmlabassets.github.io/member/qingquan_lin_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [],
-    keys: ['2025'],
-  },
-  {
-    name: 'Tianxing Chen',
-    img: 'https://mmlabassets.github.io/member/tianxing_chen_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://tianxingchen.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=pvS8MH8AAAAJ&hl=en&oi=ao',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/tianxingchen',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Yixuan Pan',
-    img: 'https://mmlabassets.github.io/member/yixuan_pan_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Hongyang Li'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://lzpyx.github.io/',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:yixuanpan@connect.hku.hk',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/lzpyx',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Zhuoheng Li',
-    img: 'https://mmlabassets.github.io/member/zhuoheng_li_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Hongyang Li'],
-    links: [
-      {
-        icon: 'email',
-        link: 'mailto:zhuohengli@connect.hku.hk',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/StarCycle/StarCycle',
-      },
-      {
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/lizhuoheng/',
-      },
-    ],
-    keys: ['2025'],
-  },
-  {
-    name: 'Jianyu Zhang',
-    img: 'https://mmlabassets.github.io/member/jianyu_zhang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Bo Dai'],
-    links: [],
-    keys: ['2025'],
-  },
-  {
-    name: 'Xingjian Ran',
-    img: 'https://mmlabassets.github.io/member/xingjian_ran_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Bo Dai'],
-    links: [
-      {
-        icon: 'email',
-        link: 'mailto:xjran03@gmail.com',
-      },
-    ],
-    keys: ['2025'],
-  },
-];
+    keys: ['2017', '2021', 'Alumni'],
+  }];
