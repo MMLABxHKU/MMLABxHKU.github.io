@@ -979,4 +979,5 @@ export const members: {
       },
     ],
     keys: ['2017', '2021', 'Alumni'],
-  }];
+  },
+];

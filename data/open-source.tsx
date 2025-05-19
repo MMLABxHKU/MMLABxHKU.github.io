@@ -1005,4 +1005,5 @@ export const open_sources: {
     githubstars: 'https://img.shields.io/github/stars/PeizeSun/SparseR-CNN?style=social',
     img: 'https://mmlabassets.github.io/open-source/SparseRCNN.jpg',
     id: 'Sparse',
-  }];
+  },
+];

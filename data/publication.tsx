@@ -70,110 +70,6 @@ export const publications: {
 }[] = [
   {
     title:
-      'AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems',
-    authors: 'Team AgiBot World',
-    proceedings: 'arXiv 2025',
-    links: [
-      {
-        website: 'Blog',
-        url: 'https://opendrivelab.com/blog/agibot-world/',
-      },
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2503.06669',
-      },
-      {
-        website: 'GitHub',
-        url: 'https://github.com/OpenDriveLab/AgiBot-World',
-      },
-      {
-        website: 'Dataset',
-        url: 'https://huggingface.co/agibot-world',
-      },
-      {
-        website: 'Page',
-        url: 'http://agibot-world.com/',
-      },
-    ],
-    keys: ['2025', 'Embodied AI'],
-    pis: ['Hongyang Li'],
-  },
-  {
-    title: 'Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation',
-    authors:
-      'Qingwen Bu, Jia Zeng, Li Chen, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li',
-    proceedings: 'The Conference on Neural Information Processing Systems (NeurIPS). 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2409.09016',
-      },
-      {
-        website: 'GitHub',
-        url: 'https://github.com/OpenDriveLab/CLOVER',
-      },
-      {
-        website: 'Video',
-        url: 'https://www.bilibili.com/video/BV1rHqZYeECL',
-      },
-    ],
-    keys: ['2024', 'Embodied AI'],
-    pis: ['Hongyang Li'],
-  },
-  {
-    title: 'DriveLM: Driving with Graph Visual Question Answering',
-    authors:
-      'Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Jens Beißwenger, Ping Luo, Andreas Geiger, Hongyang Li',
-    proceedings: 'European Conference on Computer Vision (ECCV), 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://link.springer.com/chapter/10.1007/978-3-031-72943-0_15',
-      },
-      {
-        website: 'GitHub',
-        url: 'https://github.com/OpenDriveLab/DriveLM',
-      },
-      {
-        website: 'Dataset',
-        url: 'https://huggingface.co/datasets/OpenDriveLab/DriveLM',
-      },
-      {
-        website: 'Page',
-        url: 'https://opendrivelab.com/DriveLM/',
-      },
-    ],
-    keys: ['2024', 'Autonomous Driving'],
-    pis: ['Hongyang Li'],
-  },
-  {
-    title: 'Planning-oriented Autonomous Driving',
-    authors:
-      'Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li',
-    proceedings: 'CVPR 2023',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html',
-      },
-      {
-        website: 'GitHub',
-        url: 'https://github.com/OpenDriveLab/UniAD',
-      },
-      {
-        website: 'Video',
-        url: 'https://www.youtube.com/watch?v=cyrxJJ_nnaQ',
-      },
-      {
-        website: 'Slides',
-        url: 'https://opendrivelab.github.io/UniAD_plenary_talk_slides.pdf',
-      },
-    ],
-    keys: ['2023', 'Autonomous Driving', 'End-to-End'],
-    pis: ['Hongyang Li'],
-  },
-  {
-    title:
       '-Tuning: Transferring Multimodal Foundation Models with Optimal Multi-task Interpolation',
     authors: 'Chengyue Wu, Teng Wang, Yixiao Ge, Zeyu Lu, Ruisong Zhou, Ying Shan, Ping Luo',
     proceedings: 'International Conference on Machine Learning',
@@ -304,7 +200,7 @@ export const publications: {
       },
     ],
     keys: ['Survey', 'Machine Learning'],
-    pis: ['Hongyang Li', 'Xihui Liu', 'Ping Luo'],
+    pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
   },
   {
     title: 'A deep sum-product architecture for robust facial attributes analysis',
@@ -357,7 +253,7 @@ export const publications: {
       },
     ],
     keys: ['Survey', 'Machine Learning'],
-    pis: ['Hongyang Li', 'Xihui Liu', 'Ping Luo'],
+    pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
   },
   {
     title: 'A unified multi-scenario attacking network for visual object tracking',
@@ -1014,20 +910,6 @@ export const publications: {
     pis: ['Bo Dai'],
   },
   {
-    title: 'Centaur: Robust End-to-End Autonomous Driving with Test-Time Training',
-    authors:
-      'Chonghao Sima, Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M Alvarez',
-    proceedings: 'arXiv preprint arXiv:2503.11650',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BmWJbWwHJAwC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
-    pis: ['Ping Luo', 'Hongyang Li'],
-  },
-  {
     title: 'Channel Equilibrium Networks',
     authors: 'Wenqi Shao, Shitao Tang, Xingang Pan, Ping Tan, Xiaogang Wang, Ping Luo',
     proceedings: 'none',
@@ -1131,20 +1013,6 @@ export const publications: {
     ],
     keys: ['Computer Vision'],
     pis: ['Bo Dai'],
-  },
-  {
-    title: 'Closed-loop visuomotor control with generative expectation for robotic manipulation',
-    authors:
-      'Qingwen Bu, Jia Zeng, Li Chen, Yanchao Yang, Guyue Zhou, Junchi Yan, Ping Luo, Heming Cui, Yi Ma, Hongyang Li',
-    proceedings: 'arXiv preprint arXiv:2409.09016',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:0aBXIfxlw9sC',
-      },
-    ],
-    keys: ['Embodied AI', 'Generative Models'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title:
@@ -1820,20 +1688,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title: 'Delving into the devils of bird’s-eye-view perception: A review, evaluation and recipe',
-    authors:
-      'Hongyang Li, Chonghao Sima, Jifeng Dai, Wenhai Wang, Lewei Lu, Huijie Wang, Jia Zeng, Zhiqi Li, Jiazhi Yang, Hanming Deng, Hao Tian, Enze Xie, Jiangwei Xie, Li Chen, Tianyu Li, Yang Li, Yulu Gao, Xiaosong Jia, Si Liu, Jianping Shi, Dahua Lin, Yu Qiao',
-    proceedings: 'none',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HIFyuExEbWQC',
-      },
-    ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Hongyang Li'],
-  },
-  {
     title: 'Dense Distinct Query for End-to-End Object Detection (Supplementary Material)',
     authors:
       'Shilong Zhang, Xinjiang Wang, Jiaqi Wang, Jiangmiao Pang, Chengqi Lyu, Wenwei Zhang, Ping Luo, Kai Chen',
@@ -2254,20 +2108,6 @@ export const publications: {
     ],
     keys: ['Autonomous Driving', 'Machine Learning'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'Drivelm: Driving with graph visual question answering',
-    authors:
-      'Chonghao Sima, Katrin Renz, Kashyap Chitta, Li Chen, Hanxue Zhang, Chengen Xie, Jens Beißwenger, Ping Luo, Andreas Geiger, Hongyang Li',
-    proceedings: 'European Conference on Computer Vision',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mKu_rENv82IC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Graph Learning'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Dual3d: Efficient and consistent text-to-3d generation with dual-mode multi-view latent diffusion',
@@ -3097,76 +2937,6 @@ export const publications: {
     pis: ['Bo Dai'],
   },
   {
-    title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
-    authors:
-      'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
-    proceedings: 'arXiv preprint arXiv:2403.09630',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:G1UMdFYMoxkC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
-    pis: ['Bo Dai', 'Ping Luo', 'Hongyang Li'],
-  },
-  {
-    title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
-    authors: 'Yang  Jiazhi, Gao  Shenyuan, Qiu  Yihang, Chen  Li, Li  Tianyu, Dai  Bo, Chitta  Kashyap, Wu  Penghao, Zeng  Jia, Luo  Ping, others',
-    proceedings: 'arXiv preprint arXiv:2403.09630 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2403.09630'
-      },
-    ],
-    keys: ['Computer Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
-    title: 'Generalized Predictive Model for Autonomous Driving',
-    authors:
-      'Hongyang Li, Yu Qiao, Andreas Geiger, Jun Zhang, Ping Luo, Jia Zeng, Penghao Wu, Kashyap Chitta, Bo Dai, Tianyu Li, Li Chen, Yihang Qiu, Shenyuan Gao, Jiazhi Yang',
-    proceedings: 'none',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:k_7cPK9k7w8C',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
-    pis: ['Hongyang Li', 'Ping Luo', 'Bo Dai'],
-  },
-  {
-    title: 'Generalized Predictive Model for Autonomous Driving Supplementary Material',
-    authors:
-      'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
-    proceedings: 'none',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Xl6nMSl579sC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
-    pis: ['Bo Dai', 'Ping Luo', 'Hongyang Li'],
-  },
-  {
-    title: 'Generalized predictive model for autonomous driving',
-    authors:
-      'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
-    proceedings:
-      'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2l5NCbZemmgC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
-    pis: ['Bo Dai', 'Ping Luo', 'Hongyang Li'],
-  },
-  {
     title: 'Generalized predictive model for autonomous driving',
     authors: 'Yang  Jiazhi, Gao  Shenyuan, Qiu  Yihang, Chen  Li, Li  Tianyu, Dai  Bo, Chitta  Kashyap, Wu  Penghao, Zeng  Jia, Luo  Ping, others',
     proceedings: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
@@ -3313,20 +3083,6 @@ export const publications: {
     ],
     keys: ['Video Understanding', 'Generative Models'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'Graph-based topology reasoning for driving scenes',
-    authors:
-      'Tianyu Li, Li Chen, Huijie Wang, Yang Li, Jiazhi Yang, Xiangwei Geng, Shengyin Jiang, Yuting Wang, Hang Xu, Chunjing Xu, Junchi Yan, Ping Luo, Hongyang Li',
-    proceedings: 'arXiv preprint arXiv:2304.05277',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2v_ZtQDX9iAC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Graph Learning'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Grid-guided neural radiance fields for large urban scenes',
@@ -4202,20 +3958,6 @@ export const publications: {
     ],
     keys: ['Computer Vision', 'Machine Learning'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'Learning manipulation by predicting interaction',
-    authors:
-      'Jia Zeng, Qingwen Bu, Bangjun Wang, Wenke Xia, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li',
-    proceedings: 'arXiv preprint arXiv:2406.00439',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LXmCCkuhhTsC',
-      },
-    ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Learning object interactions and descriptions for semantic image segmentation',
@@ -5219,20 +4961,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title: 'Openlane-v2: A topology reasoning benchmark for unified 3d hd mapping',
-    authors:
-      'Huijie Wang, Tianyu Li, Yang Li, Li Chen, Chonghao Sima, Zhenbo Liu, Bangjun Wang, Peijin Jia, Yuting Wang, Shengyin Jiang, Feng Wen, Hang Xu, Ping Luo, Junchi Yan, Wei Zhang, Hongyang Li',
-    proceedings: 'Advances in Neural Information Processing Systems',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1Ye0OR6EYb4C',
-      },
-    ],
-    keys: ['3D Vision', 'Dataset/Benchmark'],
-    pis: ['Ping Luo', 'Hongyang Li'],
-  },
-  {
     title: 'Optimization variance: Exploring generalization properties of DNNs',
     authors: 'Zhang  Xiao, Wu  Dongrui, Xiong  Haoyi, Dai  Bo',
     proceedings: 'arXiv preprint arXiv:2106.01714 2021',
@@ -6124,21 +5852,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title:
-      'Road genome: A topology reasoning benchmark for scene understanding in autonomous driving',
-    authors:
-      'Huijie Wang, Zhenbo Liu, Yang Li, Tianyu Li, Li Chen, Chonghao Sima, Yuting Wang, Shengyin Jiang, Feng Wen, Hang Xu, Ping Luo, Junchi Yan, Wei Zhang, Jun Yao, Yu Qiao, Hongyang Li',
-    proceedings: 'arXiv preprint arXiv:2304.10440',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PVgj2kMGcgYC',
-      },
-    ],
-    keys: ['Autonomous Driving', 'Dataset/Benchmark'],
-    pis: ['Ping Luo', 'Hongyang Li'],
-  },
-  {
     title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins',
     authors:
       'Yao Mu, Tianxing Chen, Zanxin Chen, Shijia Peng, Zhiqian Lan, Zeyu Gao, Zhixuan Liang, Qiaojun Yu, Yude Zou, Mingkun Xu, Lunkai Lin, Zhiqiang Xie, Mingyu Ding, Ping Luo',
@@ -6410,20 +6123,6 @@ export const publications: {
     ],
     keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'Scene as occupancy',
-    authors:
-      'Wenwen Tong, Chonghao Sima, Tai Wang, Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, Ping Luo, Dahua Lin, Hongyang Li',
-    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IaI1MmNe2tcC',
-      },
-    ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Scene-aware Generative Network for Human Motion Synthesis',
