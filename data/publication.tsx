@@ -2,57 +2,18 @@ export const publication_categories: { c1: string; c2s: string[] }[] = [
   {
     c1: 'Topic',
     c2s: [
-      '3D Vision',
-      'Audio/Speech',
-      'Autonomous Driving',
-      'Classification',
-      'Computer Vision',
       'Dataset/Benchmark',
-      'Detection',
-      'Domain Adaptation',
-      'Efficiency',
       'Embodied AI',
-      'Face Recognition',
-      'Few-Shot Learning',
       'General',
-      'Generative Models',
-      'Graph Learning',
-      'Image Captioning',
-      'Machine Learning',
-      'Medical Imaging',
+      'Generative',
       'Multimodality',
-      'Navigation',
-      'Neural Rendering',
-      'Pose Estimation',
       'RL',
-      'Self-Supervised',
-      'Segmentation',
-      'Survey',
-      'Transformer',
-      'Tracking',
-      'Video Understanding',
+      'Vision',
     ],
   },
   {
     c1: 'Year',
-    c2s: [
-      '2025',
-      '2024',
-      '2023',
-      '2022',
-      '2021',
-      '2020',
-      '2019',
-      '2018',
-      '2017',
-      '2016',
-      '2015',
-      '2014',
-      '2013',
-      '2012',
-      '2011',
-      '2010',
-    ],
+    c2s: ['2025', '2024', '2023', '2022', '2021', '2020', '2019', 'Previous'],
   },
   {
     c1: 'PI',
@@ -97,7 +58,7 @@ export const publications: {
       { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/564295059' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2025'],
+    keys: ['Embodied AI', '2025'],
   },
   {
     title: 'Centaur: Robust End-to-End Autonomous Driving with Test-Time Training',
@@ -106,7 +67,7 @@ export const publications: {
     proceedings: 'arXiv 2025',
     links: [{ website: 'Paper', url: 'https://arxiv.org/abs/2503.11650' }],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['Autonomous Driving', '2025'],
+    keys: ['Embodied AI', '2025'],
   },
   {
     title: 'Decoupled Diffusion Sparks Adaptive Scene Generation',
@@ -118,7 +79,7 @@ export const publications: {
       { website: 'Page', url: 'https://opendrivelab.com/Nexus' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2025'],
+    keys: ['Embodied AI', '2025'],
   },
   {
     title: 'Learning to Act Anywhere with Task-centric Latent Actions',
@@ -139,7 +100,7 @@ export const publications: {
     proceedings: 'arXiv 2025',
     links: [{ website: 'Paper', url: 'https://arxiv.org/abs/2503.12552' }],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2025'],
+    keys: ['Embodied AI', '2025'],
   },
   {
     title: '3D Data Augmentation for Driving Scenes on Camera',
@@ -151,7 +112,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li', 'Bo Dai'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation',
@@ -178,7 +139,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveLM' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['2024', 'Autonomous Driving'],
+    keys: ['2024', 'Embodied AI', 'Dataset/Benchmark'],
   },
   {
     title: 'Embodied Understanding of Driving Scenarios',
@@ -191,7 +152,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ELM' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'End-to-End Autonomous Driving: Challenges and Frontiers',
@@ -202,7 +163,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['2024', 'Autonomous Driving'],
+    keys: ['2024', 'Embodied AI'],
   },
   {
     title: 'FastMAC: Stochastic Spectral Sampling of Correspondence Graph',
@@ -213,7 +174,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/Forrest-110/FastMAC' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2024'],
+    keys: ['Vision', '2024'],
   },
   {
     title: 'Fully Sparse 3D Occupancy Prediction',
@@ -225,7 +186,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/MCG-NJU/SparseOcc' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Generalized Predictive Model for Autonomous Driving',
@@ -244,7 +205,7 @@ export const publications: {
       },
     ],
     pis: ['Ping Luo', 'Hongyang Li', 'Bo Dai'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024', 'Generative', 'Dataset/Benchmark'],
   },
   {
     title: 'LaneSegNet: Map Learning with Lane Segment Perception for Autonomous Driving',
@@ -255,7 +216,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/LaneSegNet' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Learning Manipulation by Predicting Interaction',
@@ -280,7 +241,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/autonomousvision/navsim' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Open-sourced Data Ecosystem in Autonomous Driving: The Present and Future',
@@ -297,7 +258,7 @@ export const publications: {
       { website: 'Arxiv', url: 'https://arxiv.org/abs/2312.03408' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'Reasoning Multi-Agent Behavioral Topology for Interactive Autonomous Driving',
@@ -308,7 +269,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/BeTop' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title:
@@ -321,7 +282,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenGVLab/MUTR' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2024'],
+    keys: ['Vision', '2024'],
   },
   {
     title:
@@ -333,7 +294,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2024'],
+    keys: ['Vision', '2024'],
   },
   {
     title: 'Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation',
@@ -364,7 +325,7 @@ export const publications: {
       },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024', 'Generative'],
   },
   {
     title: 'Visual Point Cloud Forecasting enables Scalable Autonomous Driving',
@@ -378,7 +339,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ViDAR' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2024'],
+    keys: ['Embodied AI', '2024'],
   },
   {
     title: 'A Survey of Reasoning with Foundation Models: Concepts, Methodologies, and Outlook',
@@ -391,7 +352,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:oPLKW5k6eA4C',
       },
     ],
-    keys: ['Survey', 'Machine Learning', '2023'],
+    keys: ['General', 'General', '2023'],
     pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
   },
   {
@@ -406,7 +367,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title:
@@ -421,7 +382,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveAdapter' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Geometric-aware Pretraining for Vision-centric 3D Object Detection',
@@ -433,7 +394,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Graph-based Topology Reasoning for Driving Scenes',
@@ -445,7 +406,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/TopoNet' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title:
@@ -457,7 +418,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenPerceptionX/HDGT' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'LLM4Drive: A Survey of Large Language Models for Autonomous Driving',
@@ -468,7 +429,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/Thinklab-SJTU/Awesome-LLM4AD' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Leveraging Vision-Centric Multi-Modal Expertise for 3D Object Detection',
@@ -480,7 +441,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/Birds-eye-view-Perception' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Mimic before Reconstruct: Enhancing Masked Autoencoders with Feature Mimicking',
@@ -491,7 +452,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/Alpha-VL/ConvMAE' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2023'],
+    keys: ['Vision', '2023'],
   },
   {
     title: 'OpenLane-V2: A Topology Reasoning Benchmark for Unified 3D HD Mapping',
@@ -507,7 +468,7 @@ export const publications: {
       { website: 'Dataset', url: 'https://github.com/OpenDriveLab/OpenLane-V2' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023', 'Dataset/Benchmark'],
   },
   {
     title: 'Planning-oriented Autonomous Driving',
@@ -529,7 +490,7 @@ export const publications: {
       },
     ],
     pis: ['Hongyang Li'],
-    keys: ['2023', 'Autonomous Driving'],
+    keys: ['2023', 'Embodied AI'],
   },
   {
     title:
@@ -545,7 +506,7 @@ export const publications: {
       },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Scene as Occupancy',
@@ -557,7 +518,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/OccNet' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Sparse Dense Fusion for 3D Object Detection',
@@ -568,7 +529,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Stare at What You See: Masked Image Modeling without Reconstruction',
@@ -582,7 +543,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/maskalign' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2023'],
+    keys: ['Vision', '2023'],
   },
   {
     title:
@@ -597,7 +558,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/ThinkTwice' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: "Delving into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
@@ -609,7 +570,7 @@ export const publications: {
       { website: 'GitHub', url: 'https://github.com/opendrivelab/bevperception-survey-recipe' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title:
@@ -625,7 +586,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2023'],
+    keys: ['Embodied AI', '2023'],
   },
   {
     title: 'Align Representations With Base: A New Approach to Self-Supervised Learning',
@@ -640,7 +601,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['3D Vision', '2022'],
+    keys: ['Vision', '2022'],
   },
   {
     title: 'PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark',
@@ -658,7 +619,7 @@ export const publications: {
       { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/552908337' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2022'],
+    keys: ['Embodied AI', '2022', 'Dataset/Benchmark'],
   },
   {
     title:
@@ -671,7 +632,7 @@ export const publications: {
       { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/544387122' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2022'],
+    keys: ['Embodied AI', '2022'],
   },
   {
     title:
@@ -683,7 +644,7 @@ export const publications: {
       { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2022'],
+    keys: ['Embodied AI', '2022'],
   },
   {
     title:
@@ -699,21 +660,7 @@ export const publications: {
       { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/532665469' },
     ],
     pis: ['Hongyang Li'],
-    keys: ['Autonomous Driving', '2022'],
-  },
-  {
-    title: 'DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks',
-    authors:
-      'Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Hongyang Li, Kun Wang, Junjie Yan, Chen-Change Loy, Xiaoou Tang',
-    proceedings: 'TPAMI 2016',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35N4QoGY0k4C',
-      },
-    ],
-    keys: ['Detection', 'Machine Learning', '2016'],
-    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Embodied AI', '2022'],
   },
   {
     title:
@@ -726,7 +673,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4xDN1ZYqzskC',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -739,7 +686,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tkaPQYYpVKoC',
       },
     ],
-    keys: ['3D Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -753,7 +700,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KbBQZpvPDL4C',
       },
     ],
-    keys: ['3D Vision', 'Pose Estimation'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -767,7 +714,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/ee93f9f277b0a41985658612ed9dbae45950f8d2',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -781,7 +728,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Mojj43d5GZwC',
       },
     ],
-    keys: ['3D Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -794,7 +741,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mlAyqtXpCwEC',
       },
     ],
-    keys: ['3D Vision', 'Pose Estimation'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -807,7 +754,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/3DHumanGAN%3A-3D-Aware-Human-Image-Generation-with-3D-Yang-Li/f3f9a5e0f0b868a16c6940737c3af3a9efd6dc9c',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -820,7 +767,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/345a222fef6f5c1415056319ae7e87a369940d3f',
       },
     ],
-    keys: ['Image Captioning', 'Visual Reasoning'],
+    keys: ['Multimodality', 'Visual Reasoning'],
     pis: ['Bo Dai'],
   },
   {
@@ -833,7 +780,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/A-Shading-Guided-Generative-Implicit-Model-for-Pan-Xu/7f03aa91b5bfdfc2b5c1a177262ca5da21dfca04',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -846,7 +793,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:MXK_kJrjxJIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -859,7 +806,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8k81kl-MbHgC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -872,7 +819,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZeXyd9-uunAC',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Machine Learning'],
+    keys: ['Dataset/Benchmark', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -885,7 +832,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EYYDruWGBe4C',
       },
     ],
-    keys: ['Tracking', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -899,7 +846,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:U4n9YNQMCAIC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -912,7 +859,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Accelerating-Diffusion-Models-via-Early-Stop-of-the-Lyu-Xudong/77ee8ee73f146043e888574638adfc3fb05dbf7f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -926,7 +873,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BJbdYPG6LGMC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -939,7 +886,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:gVv57TyPmFsC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -952,7 +899,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:anf4URPfarAC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -966,7 +913,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:DrR-2ekChdkC',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -979,7 +926,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XiVPGOgt02cC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -992,7 +939,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SnGPuo6Feq8C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1005,7 +952,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Dem6FJhTUoYC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1019,7 +966,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hMsQuOkrut0C',
       },
     ],
-    keys: ['Domain Adaptation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1035,7 +982,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9vf0nzSNQJEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1050,7 +997,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zdjWy_NXXwUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1064,7 +1011,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:pS0ncopqnHgC',
       },
     ],
-    keys: ['Audio/Speech', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1077,7 +1024,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kw52XkFRtyQC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1092,7 +1039,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NXb4pA-qfm4C',
       },
     ],
-    keys: ['Segmentation', 'Medical Imaging'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1105,7 +1052,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:A8cqit5AE6sC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1119,7 +1066,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Hck25ST_3aIC',
       },
     ],
-    keys: ['Efficiency', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1133,7 +1080,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2ywjKiB__4kC',
       },
     ],
-    keys: ['Face Recognition', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1148,7 +1095,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/AnimateDiff%3A-Animate-Your-Personalized-Diffusion-Guo-Yang/c1caa303549764d220ff17dc1785985dd1ba6047',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1161,7 +1108,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RYcK_YlVTxYC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -1176,7 +1123,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:43bX7VzcjpAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1189,7 +1136,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zCSUwVk65WsC',
       },
     ],
-    keys: ['Embodied AI', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1203,7 +1150,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RJOyoaXV5v8C',
       },
     ],
-    keys: ['Tracking', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1216,7 +1163,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/c4c2aed56ffc66d8154941d21e24cce61e4f03c8',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1230,7 +1177,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:raTqNPD5sRQC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1244,7 +1191,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-6RzNnnwWf8C',
       },
     ],
-    keys: ['Survey', 'Computer Vision'],
+    keys: ['General', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1257,7 +1204,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:UmS_249rOGwC',
       },
     ],
-    keys: ['Generative Models', 'Computer Vision'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1271,7 +1218,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SGW5VrABaM0C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1286,7 +1233,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NMlhSUseqAsC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1299,7 +1246,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/2eb172cd942ce173e53b3466c14a15f4bccd51f4',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1312,7 +1259,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:J_g5lzvAfSwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1327,7 +1274,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/0f5d8ae5aec31c3c2d6a00d2ef8fbdf077dcafd0',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1342,7 +1289,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-nhnvRiOwuoC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1356,7 +1303,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:6bLC7aUMtPcC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1369,7 +1316,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yxmsSjX2EkcC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1383,7 +1330,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/BlockPlanner%3A-City-Block-Generation-with-Vectorized-Xu-Xiangli/a65fbfaba54f76d14f3ad25f61befa459cdffa84',
       },
     ],
-    keys: ['Graph Neural Networks', 'Generative Models'],
+    keys: ['Graph Neural Networks', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1396,7 +1343,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/67167291c0ee3ca47454a60e59c05dbd58c70d51',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1410,7 +1357,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:xtoqd-5pKcoC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -1423,7 +1370,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:TIZ-Mc8IlK0C',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1437,7 +1384,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/795fecd949592a89c88cc96d22478df04519d4f8',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1450,7 +1397,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yB1At4FlUx8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1464,7 +1411,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VaXvl8Fpj5cC',
       },
     ],
-    keys: ['Detection', 'Tracking'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1479,7 +1426,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:CNPyR2KL9-0C',
       },
     ],
-    keys: ['3D Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1493,7 +1440,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:0izLItjtcgwC',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1506,7 +1453,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NDuN12AVoxsC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1519,7 +1466,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5Ul4iDaHHb8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1533,7 +1480,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/3fc6184c72fd55b67409ef87493c333f15a33180',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1546,7 +1493,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eMMeJKvmdy0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1559,7 +1506,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:q3oQSFYPqjQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1573,7 +1520,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-95Q15plzcUC',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1587,7 +1534,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/ChatDyn%3A-Language-Driven-Multi-Actor-Dynamics-in-Wei-Wang/baa224ea1dc76e4a3803155b36fa171c22a26b04',
       },
     ],
-    keys: ['Image Captioning', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1600,7 +1547,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KNjnJ3z-R6IC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -1613,7 +1560,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1taIhTC69MYC',
       },
     ],
-    keys: ['Transformer', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1627,7 +1574,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/CinePreGen%3A-Camera-Controllable-Video-via-Diffusion-Chen-Rao/48fe88ea81ad8a04306f2b9d8ab5e0829fa9aa96',
       },
     ],
-    keys: ['Video Understanding'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -1641,7 +1588,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Cinematic-Behavior-Transfer-via-NeRF-based-Filming-Jiang-Rao/58fbdacd2435e00917da5f95778ad6a0e6d628f9',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1655,7 +1602,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:e5wmG9Sq2KIC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1668,7 +1615,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ULOm3_A8WrAC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1683,7 +1630,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:D_tqNUsBuKoC',
       },
     ],
-    keys: ['3D Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1696,7 +1643,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_Re3VWB3Y0AC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1709,7 +1656,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AvfA0Oy_GE0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -1722,7 +1669,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WZBGuue-350C',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1736,7 +1683,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ClCfbGk0d_YC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1749,7 +1696,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3bvyWxjaHKcC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1762,7 +1709,7 @@ export const publications: {
         url: 'https://openreview.net/forum?id=2WXr1CyDN4Q',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1776,7 +1723,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:q3CdL3IzO_QC',
       },
     ],
-    keys: ['Self-Supervised', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1789,7 +1736,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/83d66c1f808962536a68418587b691f30221c5a1',
       },
     ],
-    keys: ['Machine Learning', 'Image Captioning'],
+    keys: ['General', 'Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -1803,7 +1750,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/fb00c87e7d91205310ab673ed7d96b4b83e80181',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1818,7 +1765,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:z6xuaG2dYH0C',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Computer Vision'],
+    keys: ['Dataset/Benchmark', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1833,7 +1780,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:rTD5ala9j4wC',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Computer Vision'],
+    keys: ['Dataset/Benchmark', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -1847,7 +1794,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QUX0mv85b1cC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -1860,7 +1807,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HE397vMXCloC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1873,7 +1820,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/a786b4faf741c9c24c10e0a99e2d43c7cd067744',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1887,7 +1834,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/138cd7e783062f51740fc6842e1a804b4fb32b3a',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -1901,7 +1848,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:a9-T7VOCCH8C',
       },
     ],
-    keys: ['Transformer', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1915,7 +1862,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:cFHS6HbyZ2cC',
       },
     ],
-    keys: ['Graph Learning', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1928,7 +1875,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:p__nRnzSRKYC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1941,7 +1888,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:C33y2ycGS3YC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1956,7 +1903,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/4579b6151e95cea92b2178937df6811ebf5bec1f',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -1969,7 +1916,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:fFSKOagxvKUC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1983,7 +1930,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8Xgff_V0N9gC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1997,7 +1944,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:S16KYo8Pm5AC',
       },
     ],
-    keys: ['Tracking', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2010,7 +1957,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:k8Z6L05lTy4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -2023,7 +1970,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YohjEiUPhakC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2037,7 +1984,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LgRImbQfgY4C',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -2050,7 +1997,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/ba0eb489230fd50cb2848732e27424b77124ddcf',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2063,7 +2010,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/32da58aa252700339b118b1e4f03bd721d2d5b55',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2077,7 +2024,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RtRctb2lSbAC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2090,7 +2037,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:GnPB-g6toBAC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2103,7 +2050,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9ZlFYXVOiuMC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2116,7 +2063,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mB3voiENLucC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2129,7 +2076,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:TQgYirikUcIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2142,7 +2089,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XiSMed-E-HIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2155,7 +2102,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:isC4tDSrTZIC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2168,7 +2115,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:roLk4NBRz8UC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2181,7 +2128,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RHpTSmoSYBkC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2194,7 +2141,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:pqnbT2bcN3wC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2207,7 +2154,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mVmsd5A6BfQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2220,8 +2167,22 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XvxMoLDsR5gC',
       },
     ],
-    keys: ['Autonomous Driving', 'Dataset/Benchmark'],
+    keys: ['Embodied AI', 'Dataset/Benchmark'],
     pis: [],
+  },
+  {
+    title: 'DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks',
+    authors:
+      'Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Hongyang Li, Kun Wang, Junjie Yan, Chen-Change Loy, Xiaoou Tang',
+    proceedings: 'TPAMI 2016',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35N4QoGY0k4C',
+      },
+    ],
+    keys: ['Vision', 'General', 'Previous'],
+    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Deepaccident: A motion and accident prediction benchmark for v2x autonomous driving',
@@ -2234,7 +2195,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:F1b5ZUV5XREC',
       },
     ],
-    keys: ['Autonomous Driving', 'Dataset/Benchmark'],
+    keys: ['Embodied AI', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -2249,7 +2210,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:a0OBvERweLwC',
       },
     ],
-    keys: ['Segmentation', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2262,7 +2223,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_Qo2XoVZTnwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2276,7 +2237,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QIV2ME_5wuYC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2291,7 +2252,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vV6vV6tmYwMC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2304,7 +2265,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_axFR9aDTf0C',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2318,7 +2279,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1lhNe0rCu4AC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2333,7 +2294,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:artPoR2Yc-kC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2347,7 +2308,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:H_jBuBxbQIAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2361,7 +2322,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2KloaMYe4IUC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2388,7 +2349,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4aZ_i-5WJEQC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2402,7 +2363,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:unp9ATQDT5gC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2416,7 +2377,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zwpXiJ37cpgC',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -2430,7 +2391,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:65Yg0jNCQDAC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2445,7 +2406,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:69ZgNCALVd0C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2459,7 +2420,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/DiffBIR%3A-Toward-Blind-Image-Restoration-with-Prior-Lin-He/9f685f780a18606525926352dd91a1de4fbd0748',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -2473,7 +2434,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Tiz5es2fbqcC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2486,7 +2447,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:b0M2c_1WBrUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2499,7 +2460,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ML0RJ9NH7IQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2513,7 +2474,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eq2jaN3J8jMC',
       },
     ],
-    keys: ['Graph Learning', 'Pose Estimation'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2526,7 +2487,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ldfaerwXgEUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2540,7 +2501,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/82e51cc702a9a0508708cd85de052b86e897641f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2554,7 +2515,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LdasjJ6CEcoC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2568,7 +2529,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YlPif8NxrbYC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2581,7 +2542,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OP4eGU-M3BUC',
       },
     ],
-    keys: ['Detection', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -2594,7 +2555,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jE2MZjpN3IcC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2608,7 +2569,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Director3D%3A-Real-world-Camera-Trajectory-and-3D-Li-Lai/20df408b1705d519c9942c7fafc083314e183fed',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -2622,7 +2583,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VLnqNzywnoUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2637,21 +2598,8 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/DNA-Rendering%3A-A-Diverse-Neural-Actor-Repository-Cheng-Chen/d711d09cf573b77ca8f43050e2b60462cc77223e',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
-  },
-  {
-    title: 'Do 2d gans know 3d shape? unsupervised 3d shape reconstruction from 2d image gans',
-    authors: 'Xingang Pan, Bo Dai, Ziwei Liu, Chen Change Loy, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2011.00844',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Fu2w8maKXqMC',
-      },
-    ],
-    keys: ['3D Vision', 'Generative Models'],
-    pis: ['Bo Dai', 'Ping Luo'],
   },
   {
     title: 'Do 2d gans know 3d shape? unsupervised 3d shape reconstruction from 2d image gans',
@@ -2663,7 +2611,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Do-2D-GANs-Know-3D-Shape-Unsupervised-3D-shape-from-Pan-Dai/7d7d189796efa8fbd3f516b183954bc36f262f3f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2676,7 +2624,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:u_35RYKgDlwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2689,7 +2637,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kRWSkSYxWN8C',
       },
     ],
-    keys: ['Few-Shot Learning', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -2703,7 +2651,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OR75R8vi5nAC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2718,7 +2666,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:MIg0yeAD4ggC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2731,7 +2679,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eO3_k5sD8BwC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2746,7 +2694,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Dual3D%3A-Efficient-and-Consistent-Text-to-3D-with-Li-Lai/119e415cf9cc2648a40ac173499ebfdef796174d',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -2760,7 +2708,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:qE4H1tSSYIIC',
       },
     ],
-    keys: ['Multimodal', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2773,7 +2721,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SpbeaW3--B0C',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2786,7 +2734,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZuybSZzF8UAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2800,7 +2748,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kz9GbA2Ns4gC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2813,7 +2761,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/7c83ce03af61b17f5ece31477faf6028de780bd8',
       },
     ],
-    keys: ['Machine Learning'],
+    keys: ['General'],
     pis: ['Bo Dai'],
   },
   {
@@ -2827,7 +2775,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NyGDZy8z5eUC',
       },
     ],
-    keys: ['Embodied AI', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2841,7 +2789,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/EdgeTAM%3A-On-Device-Track-Anything-Model-Zhou-Zhu/9cd045900af7880c36465d133f002256e4370668',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2854,7 +2802,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/EdgeSAM%3A-Prompt-In-the-Loop-Distillation-for-of-SAM-Zhou-Li/36e75a2fac5f0414a649e2842f52fbfdf370b9cc',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -2867,7 +2815,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:27LrP4qxOz0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2880,7 +2828,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ALROH1vI_8AC',
       },
     ],
-    keys: ['Classification', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -2893,7 +2841,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hMod-77fHWUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2908,7 +2856,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4vMrXwiscB8C',
       },
     ],
-    keys: ['Embodied AI', 'Self-Supervised'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2922,7 +2870,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:v1_lew4L6wgC',
       },
     ],
-    keys: ['Embodied AI', 'Computer Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2935,7 +2883,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tuHXwOkdijsC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2948,7 +2896,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mWEH9CqjF64C',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2961,7 +2909,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ILKRHgRFtOwC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2974,7 +2922,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hCrLmN-GePgC',
       },
     ],
-    keys: ['Video Understanding', 'Transformer'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -2988,7 +2936,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OcBU2YAGkTUC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3003,7 +2951,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/EpiDiff%3A-Enhancing-Multi-View-Synthesis-via-Huang-Wen/bbd989e42384784c2c610df4a03be37db43859ec',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3016,7 +2964,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:fQNAKQ3IYiAC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -3029,7 +2977,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Evolutionary-Stochastic-Policy-Distillation-Sun-Pan/36e739a71e408e19d1c37ea4873370f293bfceb2',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3042,7 +2990,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_B80troHkn4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3056,7 +3004,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:V3AGJWp-ZtQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3069,7 +3017,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sNmaIFBj_lkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3082,7 +3030,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Exploiting-Deep-Generative-Prior-for-Versatile-and-Pan-Zhan/7101bc1c316740d99cd87185586829291a983a1d',
       },
     ],
-    keys: ['Robotics', 'Generative Models'],
+    keys: ['Robotics', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3095,7 +3043,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:bnK-pcrLprsC',
       },
     ],
-    keys: ['Generative Models', 'Computer Vision'],
+    keys: ['Generative', 'Vision'],
     pis: ['Bo Dai', 'Ping Luo'],
   },
   {
@@ -3108,7 +3056,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jU7OWUQzBzMC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3121,7 +3069,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Extract-Free-Dense-Labels-from-CLIP-Zhou-Loy/0a7e7347e16bf13d710f6f3d30748baabdbb96ad',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3135,7 +3083,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WJVC3Jt7v1AC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3148,7 +3096,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:R3hNpaxXUhUC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3162,8 +3110,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tOudhMTPpwUC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['Vision', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Face localization and enhancement',
@@ -3176,8 +3124,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8AbLer7MMksC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['Vision', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Facefeat-gan: a two-stage approach for identity-preserving face synthesis',
@@ -3189,7 +3137,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4OULZ7Gr8RgC',
       },
     ],
-    keys: ['Face Recognition', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -3203,7 +3151,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:70eg2SAEIzsC',
       },
     ],
-    keys: ['Face Recognition', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -3216,7 +3164,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:TFP_iSt0sucC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3230,7 +3178,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:qxL8FJ1GzNcC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3243,7 +3191,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/189f18cda78d6756d0f0a9cfbde84b1a57e3fa69',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3256,11 +3204,11 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4JMBOYKVnBMC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
-    title: 'Fashion retrieval via graph reasoning networks on a similarity pyramid',
+    title: 'Fashion Retrieval via Graph Reasoning Networks on A Similarity Pyramid',
     authors: 'Yiming Gao, Zhanghui Kuang, Guanbin Li, Ping Luo, Yimin Chen, Liang Lin, Wayne Zhang',
     proceedings: 'IEEE Transactions on Pattern Analysis and Machine Intelligence',
     links: [
@@ -3269,7 +3217,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:UHK10RUVsp4C',
       },
     ],
-    keys: ['Graph Learning', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3282,7 +3230,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:P5F9QuxV20EC',
       },
     ],
-    keys: ['Graph Learning', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3295,7 +3243,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:oNZyr7d5Mn4C',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3309,7 +3257,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35r97b3x0nAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3322,7 +3270,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Feature-Intertwiner-for-Object-Detection-Li-Dai/d2420d9ce64d101b28641660b4641c415fc7a6c9',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3335,7 +3283,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/FineGym%3A-A-Hierarchical-Video-Dataset-for-Action-Shao-Zhao/f5c35edc9cf622c7dd7e19ce6fbd5d563557de5b',
       },
     ],
-    keys: ['Video Understanding'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -3349,7 +3297,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/1d15616510afe3290bd80668bf7d05e5f9b4674f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3363,7 +3311,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RuPIJ_LgqDgC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3377,7 +3325,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:DkZNVXde3BIC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3391,7 +3339,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/FlashGS%3A-Efficient-3D-Gaussian-Splatting-for-and-Feng-Chen/18e4b2a2781c13a0c79a6534f832487bb2d38257',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3405,7 +3353,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HhcuHIWmDEUC',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3418,7 +3366,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-7ulzOJl1JYC',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3431,7 +3379,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ruyezt5ZtCIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3444,7 +3392,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Focal-Frequency-Loss-for-Image-Reconstruction-and-Jiang-Dai/05afe403fd398f774aed4e9872a0eca1dfa21d36',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3459,7 +3407,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:t-hv7AR41mYC',
       },
     ],
-    keys: ['Detection', 'Dataset/Benchmark'],
+    keys: ['Vision', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -3472,7 +3420,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XUvXOeBm_78C',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3485,7 +3433,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:r0BpntZqJG4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3498,7 +3446,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hFOr9nPyWt4C',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3513,7 +3461,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EsEWqaRxkBgC',
       },
     ],
-    keys: ['3D Vision', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -3527,7 +3475,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/GAS%3A-Generative-Avatar-Synthesis-from-a-Single-Lu-Dong/44065f181d479230c8c63460e9b86a698a62d031',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3541,7 +3489,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/GSDF%3A-3DGS-Meets-SDF-for-Improved-Neural-Rendering-Yu-Lu/b16efea4daff9d23d54f099418cc9ba008ced274',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3554,7 +3502,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/fed25b83ee6e2082d4c2d5ff730641f5c751c134',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3568,7 +3516,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/GaussianAnything%3A-Interactive-Point-Cloud-Latent-3D-Lan-Zhou/0f6d5df23da508163655df4e1ac19a1bc90e5feb',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3583,7 +3531,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Generative-Diffusion-Prior-for-Unified-Image-and-Fei-Lyu/5549dc3ceff07561d9fb59610c0f78c71617901a',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3596,7 +3544,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Generative-Occupancy-Fields-for-3D-Surface-Aware-Xu-Pan/0755a30a4da86f60534e38507d786fc4fcae6540',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3611,7 +3559,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-jrNzM816MMC',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -3624,7 +3572,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/GetMesh%3A-A-Controllable-Model-for-High-quality-Mesh-Lyu-Fei/7fd70fad9b3ac04aeca79076a977d27002049421',
       },
     ],
-    keys: ['Robotics', 'Generative Models'],
+    keys: ['Robotics', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -3638,7 +3586,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-mN3Mh-tlDkC',
       },
     ],
-    keys: ['Graph Learning', 'Computer Vision'],
+    keys: ['General', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3651,7 +3599,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XD-gHx7UXLsC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3664,7 +3612,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BrOSOlqYqPUC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: [],
   },
   {
@@ -3677,7 +3625,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kF1pexMAQbMC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3691,7 +3639,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:48xauSegjOkC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3705,7 +3653,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hvmnpdAuIbkC',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -3720,7 +3668,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Grid-guided-Neural-Radiance-Fields-for-Large-Urban-Xu-Xiangli/b904a7f27dafcd2d29de5852fcad03041a1166f5',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3734,7 +3682,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SIv7DqKytYAC',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Navigation'],
+    keys: ['Dataset/Benchmark', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -3747,7 +3695,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/254e21a16df4a45899e6fd5e1fab9202c3491e4c',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3760,7 +3708,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AYInfyleIOsC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3773,7 +3721,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KaMxkj08jr0C',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3787,7 +3735,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:wE-fMHVdjMkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3800,7 +3748,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:0EnyYjriUFMC',
       },
     ],
-    keys: ['3D Vision', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -3813,7 +3761,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LkGwnXOMwfcC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3827,7 +3775,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/HireVAE%3A-An-Online-and-Adaptive-Factor-Model-Based-Wei-Rao/b2241edb47d3e65035c6eb6db2b0e644966a74de',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3841,7 +3789,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:j7_hQOaDUrUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3855,7 +3803,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Horizon-GS%3A-Unified-3D-Gaussian-Splatting-for-Jiang-Ren/d4c4047e8a2485114b6e8fa6e97bc2b50150a694',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3868,7 +3816,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BrmTIyaxlBUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3883,7 +3831,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zLWjf1WUPmwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3897,8 +3845,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:geHnlv5EZngC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title:
@@ -3911,7 +3859,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:dBIO0h50nwkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -3924,7 +3872,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QYdC8u9Cj1oC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -3937,7 +3885,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9c2xU6iGI7YC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -3950,7 +3898,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4fKUyHm3Qg0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3964,8 +3912,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vRqMK49ujn8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Humanvid: Demystifying training data for camera-controllable human image animation',
@@ -3979,7 +3927,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/0d3e154082ec89b0b717e750f02b632fad30d8cc',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3993,7 +3941,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/HyperStyle3D%3A-Text-Guided-3D-Portrait-Stylization-Chen-Xu/00cb67b8a8efb17d7101db912f360398416e57f4',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4007,7 +3955,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:qwy9JoKyICEC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4020,7 +3968,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XoXfffV-tXoC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4033,7 +3981,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Aul-kAQHnToC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -4046,7 +3994,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EkHepimYqZsC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -4059,7 +4007,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:86PQX7AUzd4C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -4072,7 +4020,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PoWvk5oyLR8C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -4085,7 +4033,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Improving-GANs-with-A-Dynamic-Discriminator-Yang-Shen/533bd07bb49a6c8cb65bad96236a8490f8fd2182',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4100,7 +4048,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Infinite-Mobility%3A-Scalable-High-Fidelity-Synthesis-Lian-Yu/de3bc870475d4fe7cac2b27467e077ad4e53ea77',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4113,7 +4061,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9Nmd_mFXekcC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -4127,8 +4075,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:l7t_Zn2s7bgC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint',
@@ -4141,7 +4089,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/b9212638a1e32aa23c8384dc6a5718b831953afc',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4154,7 +4102,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Interactive-Character-Control-with-Auto-Regressive-Shi-Wang/718c4a4851315ff334d097c524c18f5be6cf592c',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4168,7 +4116,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:buQ7SEKw-1sC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4183,7 +4131,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:7H_MAutzIkAC',
       },
     ],
-    keys: ['Video Understanding', 'Multimodal'],
+    keys: ['Multimodality', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -4199,7 +4147,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RoXSNcbkSzsC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4212,7 +4160,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/fc773da8606fe08b835eb2071050fad8379e2dc6',
       },
     ],
-    keys: ['Transformers', 'Computer Vision'],
+    keys: ['Transformers', 'Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4225,7 +4173,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Intra-and-Inter-Action-Understanding-via-Temporal-Shao-Zhao/c09af0b1bdbd5d532b0d5d2ba2a2a12b29ba4f19',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4239,7 +4187,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:L_l9e5I586QC',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4253,7 +4201,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hGdtkIFZdKAC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4266,7 +4214,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:bEWYMUwI8FkC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4280,7 +4228,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:j3f4tGmQtD8C',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4293,7 +4241,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5nxA0vEk-isC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4306,7 +4254,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jSAVyFp_754C',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Machine Learning'],
+    keys: ['Dataset/Benchmark', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4319,7 +4267,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:fPk4N6BV_jEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4333,7 +4281,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SxCCDk4iOpsC',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4347,7 +4295,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:edDO8Oi4QzsC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -4361,7 +4309,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AXkvAH5U_nMC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4375,7 +4323,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ziOE8S1-AIUC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4389,7 +4337,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:MAUkC_7iAq8C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4402,7 +4350,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HeT0ZceujKMC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4416,7 +4364,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vDZJ-YLwNdEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4429,7 +4377,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:pyW8ca7W8N0C',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Machine Learning'],
+    keys: ['Dataset/Benchmark', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4443,7 +4391,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:URolC5Kub84C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4457,7 +4405,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/LAVIE%3A-High-Quality-Video-Generation-with-Cascaded-Wang-Chen/ed4603ea341acc26cab24f41aa40524fb7779917',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4470,7 +4418,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Learning-3D-Garment-Animation-from-Trajectories-of-Shao-Loy/168a4d4c2a9e13188fb176b6ad28fb0063c5c0f3',
       },
     ],
-    keys: ['Machine Learning'],
+    keys: ['General'],
     pis: ['Bo Dai'],
   },
   {
@@ -4484,7 +4432,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/769c2b7537dc0b9bddc1e4169e1d3b6f17bffc99',
       },
     ],
-    keys: ['Machine Learning', 'Generative Models'],
+    keys: ['General', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4497,7 +4445,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/c9f39cc087f49be1e71e9a0dd5ac37039368a72a',
       },
     ],
-    keys: ['Machine Learning'],
+    keys: ['General'],
     pis: ['Bo Dai'],
   },
   {
@@ -4511,7 +4459,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WA5NYHcadZ8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4524,7 +4472,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:aqlVkmm33-oC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4538,7 +4486,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IWHjjKOFINEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4551,7 +4499,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:blknAaTinKkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4564,7 +4512,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:qUcmZB5y_30C',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4578,7 +4526,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:D_sINldO8mEC',
       },
     ],
-    keys: ['3D Vision', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4592,7 +4540,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5icHVeHT4IsC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4605,7 +4553,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:maZDTaKrznsC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4619,7 +4567,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:otzGkya1bYkC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4633,7 +4581,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:UebtZRa9Y70C',
       },
     ],
-    keys: ['Segmentation', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4646,7 +4594,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-f6ydRqryjwC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4659,7 +4607,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SeFeTyx0c_EC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4673,7 +4621,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yFnVuubrUp4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -4687,7 +4635,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:t7zJ5fGR-2UC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4701,7 +4649,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/LEO%3A-Generative-Latent-Image-Animator-for-Human-Wang-Ma/43c93968ea54ea098879c548732272aa22ce04ab',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4715,7 +4663,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Zh0EY9V9P6UC',
       },
     ],
-    keys: ['Generative Models', 'Transformer'],
+    keys: ['Generative', 'Vision'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -4729,7 +4677,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/0fc8bc437bd741410a5688d475bf8b0687aef039',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4743,7 +4691,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:O0nohqN1r9EC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4757,7 +4705,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/c115fe03ce13e8cd7a1809e4325f95c36c06ef23',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4771,7 +4719,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:FiytvqdAVhgC',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Computer Vision'],
+    keys: ['Dataset/Benchmark', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4786,7 +4734,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Ri6SYOTghG4C',
       },
     ],
-    keys: ['3D Vision', 'Segmentation'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4799,7 +4747,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Ehil0879vHcC',
       },
     ],
-    keys: ['Detection', 'Graph Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4812,7 +4760,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_OXeSy2IsFwC',
       },
     ],
-    keys: ['Graph Learning', 'Computer Vision'],
+    keys: ['General', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4826,7 +4774,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Make-It-Vivid%3A-Dressing-Your-Animatable-Biped-from-Tang-Zeng/7834240ffa9b8c77738bf330bc56f3da4ebff5ce',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4840,7 +4788,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KWzIFqRkAKkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4854,7 +4802,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:xtRiw3GOFMkC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4867,7 +4815,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:F9fV5C73w3QC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4881,7 +4829,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:__bU50VfleQC',
       },
     ],
-    keys: ['Segmentation', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -4894,7 +4842,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/MATLABER%3A-Material-Aware-Text-to-3D-via-LAtent-BRDF-Xu-Lyu/6af93090c0bef85cf21ef5db9ce16fe001159ab7',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4908,7 +4856,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/MatrixCity%3A-A-Large-scale-City-Dataset-for-Neural-Li-Jiang/861593f632f98aa597802b95056a05b37e8955f8',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -4921,7 +4869,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:6_hjMsCP8ZoC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4936,7 +4884,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LPtt_HFRSbwC',
       },
     ],
-    keys: ['3D Vision', 'Segmentation'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4950,7 +4898,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:i2xiXl-TujoC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4963,7 +4911,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Dip1O2bNi0gC',
       },
     ],
-    keys: ['Video Understanding', 'Few-Shot Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4977,7 +4925,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WC9gN4BGCRcC',
       },
     ],
-    keys: ['3D Vision', 'Segmentation'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -4991,7 +4939,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:6yz0xqPARnAC',
       },
     ],
-    keys: ['Segmentation', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5005,7 +4953,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:abG-DnoFyZgC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: [],
   },
   {
@@ -5018,7 +4966,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:evX43VCCuoAC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -5031,7 +4979,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:fEOibwPWpKIC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -5044,7 +4992,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BqipwSGYUEgC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -5057,7 +5005,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2P1L_qKh6hAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -5072,7 +5020,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:GtLg2Ama23sC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -5085,7 +5033,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RGFaLdJalmkC',
       },
     ],
-    keys: ['Segmentation', 'Self-Supervised'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5099,7 +5047,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OBSaB-F7qqsC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5114,7 +5062,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YTuZlYwrTOUC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: [],
   },
   {
@@ -5128,7 +5076,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kJDgFkosVoMC',
       },
     ],
-    keys: ['Multimodal', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5143,7 +5091,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HJSXoJQnj-YC',
       },
     ],
-    keys: ['Multimodal', 'Dataset/Benchmark'],
+    keys: ['Multimodality', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -5156,7 +5104,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SAZ1SQo2q1kC',
       },
     ],
-    keys: ['Generative Models', 'Computer Vision'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5169,7 +5117,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:w1MjKQ0l0TYC',
       },
     ],
-    keys: ['Generative Models', 'Computer Vision'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5183,7 +5131,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:e_rmSamDkqQC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5196,7 +5144,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/3bcf42780f142e0c5d7efc6741018a34ed161c3c',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5210,7 +5158,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QyXJ3EUuO1IC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5223,7 +5171,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/MotionLCM%3A-Real-time-Controllable-Motion-Generation-Dai-Chen/31cf335ceee3e5ed44aaaf04bd5631645c7d954c',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -5236,7 +5184,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Move-Forward-and-Tell%3A-A-Progressive-Generator-of-Xiong-Dai/b74a094b6e35fab07e1a4694afd12cad9696f1c1',
       },
     ],
-    keys: ['Image Captioning', 'Video Understanding'],
+    keys: ['Multimodality', 'Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -5251,7 +5199,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BUYA1_V_uYcC',
       },
     ],
-    keys: ['Segmentation', 'Transformer'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5266,7 +5214,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vbGhcppDl1QC',
       },
     ],
-    keys: ['Detection', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -5280,7 +5228,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/5588e943742454b82444f2b800034cc11f8cb1ae',
       },
     ],
-    keys: ['Video Understanding'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -5293,7 +5241,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:GFxP56DSvIMC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5307,7 +5255,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Wp0gIr-vW9MC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5321,7 +5269,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jL-93Qbq4QoC',
       },
     ],
-    keys: ['Multimodal', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5336,7 +5284,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HGTzPopzzJcC',
       },
     ],
-    keys: ['Video Understanding', 'Multimodal'],
+    keys: ['Multimodality', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -5349,7 +5297,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZqE1mSdD_DYC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5363,7 +5311,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:silx2ntsSuwC',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5376,7 +5324,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3htObqc8RwsC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -5391,7 +5339,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sJsF-0ZLhtgC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5404,7 +5352,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/f96f30e7af13c3fbf83ee58e1c7f577414af1aa9',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5418,7 +5366,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:M7yex6snE4oC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -5431,7 +5379,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tYavs44e6CUC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -5444,7 +5392,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1yQoGdGgb4wC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -5459,7 +5407,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:umqufdRvDiIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5473,7 +5421,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:k_IJM867U9cC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5488,7 +5436,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4fGpz3EwCPoC',
       },
     ],
-    keys: ['Transformer', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5501,7 +5449,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Novel-Policy-Seeking-with-Constrained-Optimization-Sun-Peng/99bc5a19a5aa9f85e2c1ecdc9bf8add7b75dae45',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5515,7 +5463,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:lmc2jWPfTJgC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5528,7 +5476,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/4ab763a5ccf2b84fd6f6e0834ee73f3a0cd8caa2',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5542,7 +5490,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VN7nJs4JPk0C',
       },
     ],
-    keys: ['Medical Imaging', 'Dataset/Benchmark'],
+    keys: ['General', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -5556,7 +5504,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Br1UauaknNIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5571,7 +5519,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1sJd4Hv_s6UC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5585,7 +5533,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AXPGKjj_ei8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5599,7 +5547,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:g5Ck-dwhA_QC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5612,7 +5560,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Optimization-Variance%3A-Exploring-Generalization-of-Zhang-Wu/0654d07f4b2e0841764bf2bd8415f78c371cad7f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5625,7 +5573,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:M3ejUd6NZC8C',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5638,7 +5586,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/7df7b0625fdf775611b8e6bb7bbad00fcc9fd074',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5652,7 +5600,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:dQ2og3OwTAUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5667,7 +5615,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:An6A6Jpfc1oC',
       },
     ],
-    keys: ['Generative Models', 'Transformer'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5681,7 +5629,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:bz8QjSJIRt4C',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5695,7 +5643,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/PACER%2B%3A-On-Demand-Pedestrian-Animation-Controller-Wang-Luo/360d6e9d81b683811ad1aa8a09fa20e339cd9791',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5710,7 +5658,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:g3aElNc5_aQC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5724,7 +5672,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:j8SEvjWlNXcC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5738,7 +5686,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:UuEBAcK4md4C',
       },
     ],
-    keys: ['3D Vision', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5752,8 +5700,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:08ZZubdj9fEC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['Vision', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Pedestrian attribute recognition at far distance',
@@ -5765,7 +5713,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HoB7MX3m0LUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5778,7 +5726,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:dhFuZR0502QC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5791,7 +5739,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Se3iqnhoufwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5805,8 +5753,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sSrBHYA8nusC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Phybench: A physical commonsense benchmark for evaluating text-to-image models',
@@ -5819,7 +5767,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:qe6vwMD2xtsC',
       },
     ],
-    keys: ['Dataset/Benchmark', 'Computer Vision'],
+    keys: ['Dataset/Benchmark', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5834,7 +5782,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:DBa1UEJaJKAC',
       },
     ],
-    keys: ['Generative Models', 'Transformer'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -5848,7 +5796,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:uVUOdF_882EC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5861,7 +5809,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LGlY6t8CeOMC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5876,7 +5824,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PkcyUWeTMh0C',
       },
     ],
-    keys: ['Multimodal', 'Dataset/Benchmark'],
+    keys: ['Multimodality', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -5891,7 +5839,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/437c7836d32c7f221aad466047130075c7cb5336',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5905,7 +5853,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nrtMV_XWKgEC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5920,7 +5868,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WbkHhVStYXYC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5934,7 +5882,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ubry08Y2EpUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5947,7 +5895,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Policy-Continuation-and-Policy-Evolution-with-Sun-Dai/f52449c24b55852bff87205f50d30339166ba8df',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -5960,7 +5908,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4hFrxpcac9AC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5974,7 +5922,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yMeIxYmEMEAC',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5988,7 +5936,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IRz6iEL74y4C',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6002,7 +5950,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IUKN3-7HHlwC',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6016,7 +5964,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EPG8bYD4jVwC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6029,7 +5977,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:isU91gLudPYC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6043,7 +5991,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Proc-GS%3A-Procedural-Building-Generation-for-City-3D-Li-Ran/4f862b99b1fa0a67976b4dc24eb2a071828b41ce',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -6056,7 +6004,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:F2UWTTQJPOcC',
       },
     ],
-    keys: ['Graph Learning', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6070,7 +6018,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AzKEL7Gb_04C',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6085,7 +6033,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IsPWOBWtZBwC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6100,7 +6048,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:P7Ujq4OLJYoC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6113,7 +6061,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HbR8gkJAVGIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6128,7 +6076,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:MLfJN-KU85MC',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6143,7 +6091,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-_dYPAW6P2MC',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6156,7 +6104,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-uzm3Y7AvW0C',
       },
     ],
-    keys: ['Face Recognition', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6169,7 +6117,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:cK4Rrx0J3m0C',
       },
     ],
-    keys: ['Generative Models', 'Computer Vision'],
+    keys: ['Generative', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6182,7 +6130,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/7a2c9cc48062fcfd77a2e6e97aa48119a21c9f7d',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6197,7 +6145,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Bg7qf7VwUHIC',
       },
     ],
-    keys: ['Video Understanding', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6211,7 +6159,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_5tno0g5mFcC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6224,7 +6172,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Zph67rFs4hoC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6237,7 +6185,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Recursive-Visual-Sound-Separation-Using-Minus-Plus-Xu-Dai/b7a5f074e06cf8d71e26fb5d25b86b4164a5bb54',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6252,7 +6200,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5bg8sr1QxYwC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6265,7 +6213,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hkOj_22Ku90C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6280,7 +6228,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/RenderMe-360%3A-A-Large-Digital-Asset-Library-and-Pan-Zhuo/3e09cec24d15564929a58af93d139c956a4a2128',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6293,7 +6241,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3fE2CSJIrl8C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6307,7 +6255,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:L1USKYWJimsC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6321,7 +6269,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:FAceZFleit8C',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6336,7 +6284,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:CYCckWUYoCcC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6349,7 +6297,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Rethinking-Trajectory-Prediction-via-%22Team-Game%22-Wei-Zhu/4936f9a1385a5585ed385b5e58c4a0c48ecaceaa',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6362,7 +6310,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PYBJJbyH-FwC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6375,7 +6323,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mNrWkgRL2YcC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6388,7 +6336,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/94e3b75a6732b5918c4c2b87d127a9216ff07efc',
       },
     ],
-    keys: ['Image Captioning'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -6401,7 +6349,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:oi2SiIJ9l4AC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6414,7 +6362,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:epqYDVWIO7EC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6427,7 +6375,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Revisiting-Skeleton-based-Action-Recognition-Duan-Zhao/f8c4c5cc82f6270b62d5f68940e444b55ea2f13c',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6440,7 +6388,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/387ad594473a40115bc6d96796e8f856d59bad02',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6454,7 +6402,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LI9QrySNdTsC',
       },
     ],
-    keys: ['Self-Supervised', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6469,7 +6417,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BzfGm06jWhQC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -6483,7 +6431,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2tRrZ1ZAMYUC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -6496,7 +6444,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1tZ8xJnm2c8C',
       },
     ],
-    keys: ['Face Recognition', 'Generative Models'],
+    keys: ['Vision', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6510,7 +6458,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hQUaER0FWQ4C',
       },
     ],
-    keys: ['Embodied AI', 'Generative Models'],
+    keys: ['Embodied AI', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6523,7 +6471,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:JP7YXuLIOvAC',
       },
     ],
-    keys: ['Embodied AI', 'Generative Models'],
+    keys: ['Embodied AI', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6537,7 +6485,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YsrPvlHIBpEC',
       },
     ],
-    keys: ['Embodied AI', 'Multimodal'],
+    keys: ['Embodied AI', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -6552,7 +6500,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mUJArPsKIAAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6566,7 +6514,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eGYfIraVYiQC',
       },
     ],
-    keys: ['Embodied AI', 'Generative Models'],
+    keys: ['Embodied AI', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -6594,7 +6542,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8dzOF9BpDQoC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6607,7 +6555,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:M05iB0D1s5AC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6622,7 +6570,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mel-f30kHHgC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6637,7 +6585,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/8b439d8244d9c6ad3ecfba055b43053d82e96c21',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -6652,7 +6600,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:s9ia6_kGH2AC',
       },
     ],
-    keys: ['3D Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6665,7 +6613,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8xutWZnSdmoC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6679,7 +6627,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/ScaMo%3A-Exploring-the-Scaling-Law-in-Autoregressive-Lu-Wang/fe1cf34f0f2dfcac81ab9d9f4c47ae8495cbb115',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -6693,7 +6641,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Scaffold-GS%3A-Structured-3D-Gaussians-for-Rendering-Lu-Yu/a294b8632fed59e7079ef6187b0afa532c97ed7f',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6706,7 +6654,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:rbm3iO8VlycC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6720,7 +6668,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PR6Y55bgFSsC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6733,7 +6681,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PVjk1bu6vJQC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6747,7 +6695,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5qfkUJPXOUwC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6774,7 +6722,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:X9ykpCP0fEIC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6787,7 +6735,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Scene-aware-Generative-Network-for-Human-Motion-Wang-Yan/80446df79c7d5d5c76dea68b5f8873e24efdd40e',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -6800,7 +6748,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yD5IFk8b50cC',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6815,7 +6763,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:T_ojBgVMvoEC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6828,7 +6776,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ipzZ9siozwsC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6841,7 +6789,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:CdxZDUztZiMC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -6854,7 +6802,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Ade32sEp0pkC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -6868,7 +6816,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-DxkuPiZhfEC',
       },
     ],
-    keys: ['3D Vision', 'Segmentation'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6881,7 +6829,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tzM49s52ZIMC',
       },
     ],
-    keys: ['Segmentation', 'Transformer'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -6895,7 +6843,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5ugPr518TE4C',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6908,7 +6856,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2004.02788',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6921,7 +6869,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZzlSgRqYykMC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6935,8 +6883,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:B3FOqHPlNUQC',
       },
     ],
-    keys: ['Self-Supervised', 'Machine Learning'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Self-supervised geometry-aware encoder for style-based 3D GAN inversion',
@@ -6949,7 +6897,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/94cda50f5e311975d00ba6e960f6e325b44d4b85',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -6963,7 +6911,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vDijr-p_gm4C',
       },
     ],
-    keys: ['Video Understanding', 'Self-Supervised'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6978,7 +6926,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NJ774b8OgUMC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6992,7 +6940,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nPT8s1NX_-sC',
       },
     ],
-    keys: ['Neural Rendering', 'Pose Estimation'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7005,7 +6953,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hC7cP41nSMkC',
       },
     ],
-    keys: ['Segmentation', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7019,7 +6967,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:t6usbXjVLHcC',
       },
     ],
-    keys: ['Segmentation', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: [],
   },
   {
@@ -7032,7 +6980,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9pM33mqn1YgC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7045,7 +6993,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hqOjcs7Dif8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7058,7 +7006,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/dd7b2817d54c20e6c0bf854b3463c17bb18014a0',
       },
     ],
-    keys: ['Image Captioning', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -7073,7 +7021,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sszUF3NjhM4C',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7086,7 +7034,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nVrZBo8bIpAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7100,7 +7048,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WHdLCjDvYFkC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7115,7 +7063,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tKAzc9rXhukC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7128,7 +7076,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/SparseCtrl%3A-Adding-Sparse-Controls-to-Text-to-Video-Guo-Yang/40626a059bcd8d3e7f364b410f831b9baf997b0c',
       },
     ],
-    keys: ['Video Understanding'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -7141,7 +7089,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NaGl4SEjCO4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7155,7 +7103,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1yWc8FF-_SYC',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7170,7 +7118,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_xSYboBqXhAC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7183,7 +7131,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:gsN89kCJA0AC',
       },
     ],
-    keys: ['Transformer', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7197,7 +7145,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WC23djZS0W4C',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7211,7 +7159,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hsZV8lGYWTMC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7225,7 +7173,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:TlpoogIpr_IC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7239,7 +7187,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tHtfpZlB6tUC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7253,7 +7201,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kuK5TVdYjLIC',
       },
     ],
-    keys: ['Domain Adaptation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7267,7 +7215,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:uWiczbcajpAC',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7281,7 +7229,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:N5tVd3kTz84C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7296,7 +7244,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QsaTk4IG4EwC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7309,7 +7257,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_kc_bZDykSQC',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7322,7 +7270,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NhqRSupF_l8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7335,7 +7283,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EUQCXRtRnyEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7350,7 +7298,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/SynBody%3A-Synthetic-Dataset-with-Layered-Human-for-Yang-Cai/7ea5344715d210dad8171af1ca5018c665e4972a',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7363,7 +7311,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kVjdVfd2voEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7377,7 +7325,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hSRAE-fF4OAC',
       },
     ],
-    keys: ['Transformer', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7391,7 +7339,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NxmKEeNBbOMC',
       },
     ],
-    keys: ['3D Vision', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -7404,7 +7352,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3s1wT3WcHBgC',
       },
     ],
-    keys: ['Face Recognition', 'Audio/Speech'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -7417,7 +7365,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VL0QpB8kHFEC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: [],
   },
   {
@@ -7430,7 +7378,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ghEM2AJqZyQC',
       },
     ],
-    keys: ['Generative Models', 'Machine Learning'],
+    keys: ['Generative', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7444,7 +7392,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/2e367a8a4945ea04e2560120e030afd28b89f488',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -7458,7 +7406,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/a3810adf4dd5d23e732892dbe34f4ed924f8eeb8',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -7471,7 +7419,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/10db26c80238d70ca51d8a5293d893b6f1dedc8b',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7484,7 +7432,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:0CzhzZyukY4C',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7511,7 +7459,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:rO6llkc54NcC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7525,7 +7473,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YB4bud6kWLwC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7539,8 +7487,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tS2w5q8j5-wC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['General', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'The first visual object tracking segmentation vots2023 challenge results',
@@ -7553,7 +7501,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:q-HalDI95KYC',
       },
     ],
-    keys: ['Segmentation', 'Tracking'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7566,7 +7514,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HtS1dXgVpQUC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7580,7 +7528,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:owLR8QvbtFgC',
       },
     ],
-    keys: ['Multimodal', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7595,7 +7543,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/TokenHSI%3A-Unified-Synthesis-of-Physical-Human-Scene-Pan-Yang/ca08ecf7efd9a55d0ce65d667d5708b515516f24',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7610,7 +7558,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eAlLMO4JVmQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7623,7 +7571,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Towards-Diverse-and-Natural-Image-Descriptions-via-Dai-Fidler/24dc571a49d3431e8cb1f1008f86d5dd5b7a1613',
       },
     ],
-    keys: ['Image Captioning'],
+    keys: ['Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -7636,7 +7584,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/69febe5c00d7e4d03f3df569ba324d074686938c',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7650,7 +7598,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-yGd096yOn8C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7663,7 +7611,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/cf7fa79e86dfe50101b96a1920978565430e552e',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7677,7 +7625,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Towards-Synthesized-and-Editable-Motion-Through-Dai-Wang/adc2b96c5045daa53c61438f1a8beb768d539ca7',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7690,7 +7638,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zA6iFVUQeVQC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7703,7 +7651,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:6ZxmRoH8BuwC',
       },
     ],
-    keys: ['Tracking', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7716,7 +7664,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KUbvn5osdkgC',
       },
     ],
-    keys: ['Detection', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -7729,7 +7677,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nb7KW1ujOQ8C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7744,7 +7692,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mvPsJ3kp5DgC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7757,7 +7705,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:z_wVstp3MssC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7772,7 +7720,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Wq2b2clWBLsC',
       },
     ],
-    keys: ['Video Understanding', 'Dataset/Benchmark'],
+    keys: ['Multimodality', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -7785,7 +7733,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:L7CI7m0gUJcC',
       },
     ],
-    keys: ['Segmentation', 'Transformer'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7826,7 +7774,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZfRJV9d4-WMC',
       },
     ],
-    keys: ['Tracking', 'Transformer'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7840,7 +7788,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jFemdcug13IC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7853,7 +7801,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZHo1McVdvXMC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7867,7 +7815,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zGdJYJv2LkUC',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7881,7 +7829,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:O3NaXMp0MMsC',
       },
     ],
-    keys: ['Detection', 'Transformer'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -7895,7 +7843,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5MTHONV0fEkC',
       },
     ],
-    keys: ['Self-Supervised', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7909,7 +7857,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/dca4ed6d4db18216796336d647f8d4bdf197f039',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7922,7 +7870,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:wvYxNZNCP7wC',
       },
     ],
-    keys: ['3D Vision', 'Few-Shot Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7935,7 +7883,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kWvqk_afx_IC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -7949,7 +7897,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:CaZNVDsoPx4C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7963,7 +7911,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:gKiMpY-AVTkC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -7977,7 +7925,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Unsupervised-3D-Shape-Completion-through-GAN-Zhang-Chen/99f2cadcaed68ad07d5377d15c7af8a5422af680',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -7990,7 +7938,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Unsupervised-Landmark-Learning-from-Unpaired-Data-Xu-Yang/15f7693004b67cf10ef9fa29847f4755dc17cee3',
       },
     ],
-    keys: ['Machine Learning'],
+    keys: ['General'],
     pis: ['Bo Dai'],
   },
   {
@@ -8003,7 +7951,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:uJ-U7cs_P_0C',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8017,7 +7965,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:JQOojiI6XY0C',
       },
     ],
-    keys: ['3D Vision', 'Segmentation'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8033,7 +7981,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:wMgC3FpKEyYC',
       },
     ],
-    keys: ['Autonomous Driving', 'Dataset/Benchmark'],
+    keys: ['Embodied AI', 'Dataset/Benchmark'],
     pis: ['Ping Luo'],
   },
   {
@@ -8046,7 +7994,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:lvd772isFD0C',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8059,7 +8007,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jgBuDB5drN8C',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -8072,7 +8020,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:w0F2JDEymm0C',
       },
     ],
-    keys: ['Video Understanding', 'Generative Models'],
+    keys: ['Multimodality', 'Generative'],
     pis: ['Ping Luo'],
   },
   {
@@ -8085,7 +8033,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tH6gc1N1XXoC',
       },
     ],
-    keys: ['Autonomous Driving', '3D Vision'],
+    keys: ['Embodied AI', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8099,8 +8047,8 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Y5dfb0dijaUC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
-    pis: ['Ping Luo', 'Ping Luo'],
+    keys: ['Multimodality', 'General'],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Video classification via relational feature encoding networks',
@@ -8112,7 +8060,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ns9cj8rnVeAC',
       },
     ],
-    keys: ['Classification', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -8126,7 +8074,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NMxIlDl6LWMC',
       },
     ],
-    keys: ['Segmentation', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -8139,7 +8087,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Video-Representation-Learning-with-Visual-Tempo-Yang-Xu/2e1e98779bf721a91c5b41e2ac00ffc305469da5',
       },
     ],
-    keys: ['Machine Learning', 'Video Understanding'],
+    keys: ['General', 'Multimodality'],
     pis: ['Bo Dai'],
   },
   {
@@ -8153,7 +8101,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1DsIQWDZLl8C',
       },
     ],
-    keys: ['Video Understanding', 'Survey'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8167,7 +8115,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QD3KBmkZPeQC',
       },
     ],
-    keys: ['Video Understanding', 'Machine Learning'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8182,7 +8130,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:uc_IGeMz5qoC',
       },
     ],
-    keys: ['Video Understanding', 'Pose Estimation'],
+    keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8195,7 +8143,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:K3LRdlH-MEoC',
       },
     ],
-    keys: ['Audio/Speech', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8210,7 +8158,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:DyXnQzXoVgIC',
       },
     ],
-    keys: ['Multimodal', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8224,7 +8172,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:lgwcVrK6X84C',
       },
     ],
-    keys: ['Computer Vision', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8239,7 +8187,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AHdEip9mkN0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8252,7 +8200,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Visually-Informed-Binaural-Audio-Generation-without-Xu-Zhou/06a48439d4eab9d73f440c1db57fa67bf023f030',
       },
     ],
-    keys: ['Generative Models'],
+    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -8265,7 +8213,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HtEfBTGE9r8C',
       },
     ],
-    keys: ['Multimodal', 'Computer Vision'],
+    keys: ['Multimodality', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8279,7 +8227,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:b1wdh0AR-JQC',
       },
     ],
-    keys: ['Detection', 'Video Understanding'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -8293,7 +8241,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PELIpwtuRlgC',
       },
     ],
-    keys: ['Classification', 'Computer Vision'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8306,7 +8254,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:7T2F9Uy0os0C',
       },
     ],
-    keys: ['Detection', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8320,7 +8268,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:0KyAp5RtaNEC',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8334,7 +8282,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:v6i8RKmR8ToC',
       },
     ],
-    keys: ['Detection', 'Multimodal'],
+    keys: ['Vision', 'Multimodality'],
     pis: ['Ping Luo'],
   },
   {
@@ -8347,7 +8295,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SdhP9T11ey4C',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8361,7 +8309,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:bFI3QPDXJZMC',
       },
     ],
-    keys: ['Face Recognition', 'Machine Learning'],
+    keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8374,7 +8322,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HDshCWvjkbEC',
       },
     ],
-    keys: ['Face Recognition', 'Detection'],
+    keys: ['Vision', 'Vision'],
     pis: ['Ping Luo'],
   },
   {
@@ -8388,7 +8336,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PyEswDtIyv0C',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8401,7 +8349,7 @@ export const publications: {
         url: 'https://www.semanticscholar.org/paper/Zeroth-Order-Supervised-Policy-Improvement-Sun-Xu/3f673101c2cac3b47639056e2988e018546c3c90',
       },
     ],
-    keys: ['Computer Vision'],
+    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -8414,7 +8362,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OTTXONDVkokC',
       },
     ],
-    keys: ['Pose Estimation', 'Machine Learning'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8428,7 +8376,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LhH-TYMQEocC',
       },
     ],
-    keys: ['Autonomous Driving', 'Machine Learning'],
+    keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8443,7 +8391,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Ug5p-4gJ2f0C',
       },
     ],
-    keys: ['RL', 'Machine Learning'],
+    keys: ['RL', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -8458,7 +8406,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4MWp96NkSFoC',
       },
     ],
-    keys: ['Machine Learning', 'General'],
+    keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
 ];
