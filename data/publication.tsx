@@ -9,7 +9,7 @@ export const publication_categories: { c1: string; c2s: string[] }[] = [
       'Few-Shot Learning',
       'Detection',
       'Domain Adaptation',
-      'Self-Supervised Learning',
+      'Self-Supervised',
       'Face Recognition',
       'Autonomous Driving',
       'Pose Estimation',
@@ -22,13 +22,13 @@ export const publication_categories: { c1: string; c2s: string[] }[] = [
       'Neural Rendering',
       'Medical Imaging',
       'Dataset/Benchmark',
-      'Hardware Acceleration',
+      'Efficiency',
       'Navigation',
       'Audio/Speech',
       '3D Vision',
       'Survey',
       'Multimodal',
-      'Reinforcement Learning',
+      'RL',
       'Segmentation',
     ],
   },
@@ -211,7 +211,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Hck25ST_3aIC',
       },
     ],
-    keys: ['Hardware Acceleration', 'Machine Learning'],
+    keys: ['Efficiency', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -420,7 +420,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YTuZlYwrTOUC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: [],
   },
   {
@@ -1221,7 +1221,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IsPWOBWtZBwC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -1704,7 +1704,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:q3CdL3IzO_QC',
       },
     ],
-    keys: ['Self-Supervised Learning', 'Machine Learning'],
+    keys: ['Self-Supervised', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -2322,7 +2322,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4vMrXwiscB8C',
       },
     ],
-    keys: ['Embodied AI', 'Self-Supervised Learning'],
+    keys: ['Embodied AI', 'Self-Supervised'],
     pis: ['Ping Luo'],
   },
   {
@@ -2349,7 +2349,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5MTHONV0fEkC',
       },
     ],
-    keys: ['Self-Supervised Learning', 'Machine Learning'],
+    keys: ['Self-Supervised', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -2835,7 +2835,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OR75R8vi5nAC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -2918,7 +2918,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:P7Ujq4OLJYoC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -3082,7 +3082,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RtRctb2lSbAC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -3314,7 +3314,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Ug5p-4gJ2f0C',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -3576,7 +3576,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:e_rmSamDkqQC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -3617,7 +3617,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LI9QrySNdTsC',
       },
     ],
-    keys: ['Self-Supervised Learning', 'Machine Learning'],
+    keys: ['Self-Supervised', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -3776,7 +3776,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vDijr-p_gm4C',
       },
     ],
-    keys: ['Video Understanding', 'Self-Supervised Learning'],
+    keys: ['Video Understanding', 'Self-Supervised'],
     pis: ['Ping Luo'],
   },
   {
@@ -4706,7 +4706,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:B3FOqHPlNUQC',
       },
     ],
-    keys: ['Self-Supervised Learning', 'Machine Learning'],
+    keys: ['Self-Supervised', 'Machine Learning'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -5049,7 +5049,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yD5IFk8b50cC',
       },
     ],
-    keys: ['Reinforcement Learning', 'Machine Learning'],
+    keys: ['RL', 'Machine Learning'],
     pis: ['Ping Luo'],
   },
   {
@@ -5206,7 +5206,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:RGFaLdJalmkC',
       },
     ],
-    keys: ['Segmentation', 'Self-Supervised Learning'],
+    keys: ['Segmentation', 'Self-Supervised'],
     pis: ['Ping Luo'],
   },
   {
