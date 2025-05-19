@@ -85,7 +85,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#25520d]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 lg:pb-12 gap-6 bg-[#25520d]">
                         <h1 className="text-6xl font-bold text-[#b5a774] mb-6">
                             <FadeIn>MMLab @ HKU</FadeIn>
                         </h1>
@@ -99,6 +99,12 @@ export default function Home() {
                                 Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
                             </p>
                         </FadeIn>
+                        <div className="flex justify-end mt-6">
+                            <FadeIn>
+                                <Link href="#" className="text-[#b5a774] animated-underline">Explore</Link>
+                                <span className="text-[#b5a774]">&nbsp;{'>'}</span>
+                            </FadeIn>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +118,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#652371]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 lg:pb-12 gap-6 bg-[#652371]">
                         <h1 className="text-6xl font-bold text-[#e59c2e] mb-6">
                             <FadeIn>MMLab @ CUHK</FadeIn>
                         </h1>
@@ -145,7 +151,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-3/5">
-                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 gap-6 bg-[#181C62]">
+                    <div className="flex flex-col p-6 pt-16 pb-10 lg:p-20 lg:pb-12 gap-6 bg-[#181C62]">
                         <h1 className="text-6xl font-bold text-[#D71440] mb-6">
                             <FadeIn>MMLab @ NTU</FadeIn>
                         </h1>
