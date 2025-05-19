@@ -26,7 +26,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+            <div className="w-full   h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
                 <div>
                     <Image
                         src="https://ik.imagekit.io/mmlab/uhRgPO215cE.jpg"
@@ -35,7 +35,7 @@ export default function Home() {
                         className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                     />
                 </div>
-                <div className="w-full max-w-7xl flex absolute flex-col gap-6 items-center 2xl:items-start">
+                <div className="w-full px-6 xl:px-0 max-w-7xl flex absolute flex-col gap-6 items-start">
                     <h1 className="font-bold text-t0 text-white">
                         <FadeIn>Multimedia</FadeIn>
                     </h1>
