@@ -149,6 +149,7 @@ export default function Home() {
                             </FadeIn>
                         </h2>
                     </div>
+                    {/* to keep the same in /about-us / img */}
                     {pis.map((pi) => (
                         <FadeIn key={pi.name}>
                             <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">

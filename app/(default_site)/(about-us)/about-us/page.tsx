@@ -106,7 +106,8 @@ export default function Home() {
 
 
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                
+
+                {/* to keep the same in /member / img_full */}
                 {pis.map((pi) => (
                     <FadeIn key={pi.name}>
                         <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
