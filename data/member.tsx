@@ -959,4 +959,25 @@ export const members: {
     ],
     keys: ['2025'],
   },
+  {
+    name: 'Jianyu Zhang',
+    img: 'https://mmlabassets.github.io/member/jianyu_zhang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Bo Dai'],
+    links: [],
+    keys: ['2025'],
+  },
+  {
+    name: 'Xingjian Ran',
+    img: 'https://mmlabassets.github.io/member/xingjian_ran_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Bo Dai'],
+    links: [
+      {
+        icon: 'email',
+        link: 'mailto:xjran03@gmail.com',
+      },
+    ],
+    keys: ['2025'],
+  },
 ];
