@@ -2,34 +2,34 @@ export const publication_categories: { c1: string; c2s: string[] }[] = [
   {
     c1: 'Topic',
     c2s: [
-      'Machine Learning',
-      'Dataset/Benchmark',
-      'Self-Supervised',
-      'Few-Shot Learning',
-      'Domain Adaptation',
-      'Graph Learning',
-      'Transformer',
-      'Classification',
-      'Segmentation',
-      'Embodied AI',
-      'Generative Models',
       '3D Vision',
-      'Tracking',
-      'Detection',
-      'Face Recognition',
-      'Pose Estimation',
-      'Autonomous Driving',
-      'Navigation',
-      'Video Understanding',
-      'Computer Vision',
-      'Neural Rendering',
-      'Medical Imaging',
-      'Efficiency',
       'Audio/Speech',
-      'Survey',
-      'Multimodal',
+      'Autonomous Driving',
+      'Classification',
+      'Computer Vision',
+      'Dataset/Benchmark',
+      'Detection',
+      'Domain Adaptation',
+      'Efficiency',
+      'Embodied AI',
+      'Face Recognition',
+      'Few-Shot Learning',
+      'General',
+      'Generative Models',
+      'Graph Learning',
+      'Machine Learning',
+      'Medical Imaging',
+      'Multimodality',
+      'Navigation',
+      'Neural Rendering',
+      'Pose Estimation',
       'RL',
-      'Other',
+      'Self-Supervised',
+      'Segmentation',
+      'Survey',
+      'Transformer',
+      'Tracking',
+      'Video Understanding',
     ],
   },
   {
@@ -322,7 +322,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:YB4bud6kWLwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -392,7 +392,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KWzIFqRkAKkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -433,7 +433,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZqE1mSdD_DYC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -462,7 +462,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:H_jBuBxbQIAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -703,7 +703,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:C33y2ycGS3YC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -731,7 +731,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:isU91gLudPYC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -744,7 +744,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AYInfyleIOsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -759,7 +759,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eAlLMO4JVmQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -843,7 +843,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PyEswDtIyv0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -953,7 +953,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:wE-fMHVdjMkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -982,7 +982,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zdjWy_NXXwUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1010,7 +1010,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:X9ykpCP0fEIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1065,7 +1065,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:27LrP4qxOz0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1107,7 +1107,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8Xgff_V0N9gC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1163,7 +1163,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:LXmCCkuhhTsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
@@ -1262,7 +1262,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:rbm3iO8VlycC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1374,7 +1374,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NDuN12AVoxsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1473,7 +1473,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mUJArPsKIAAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1488,7 +1488,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:-nhnvRiOwuoC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1501,7 +1501,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:KNjnJ3z-R6IC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -1529,7 +1529,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:O0nohqN1r9EC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1840,7 +1840,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:OBSaB-F7qqsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -1894,7 +1894,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HIFyuExEbWQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Hongyang Li'],
   },
   {
@@ -1921,7 +1921,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:jFemdcug13IC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2021,7 +2021,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Br1UauaknNIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2034,7 +2034,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:p__nRnzSRKYC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2157,7 +2157,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:kVjdVfd2voEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2267,7 +2267,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:GFxP56DSvIMC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2280,7 +2280,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nVrZBo8bIpAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2539,7 +2539,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IaI1MmNe2tcC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
@@ -2595,7 +2595,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ubry08Y2EpUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2682,7 +2682,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AHdEip9mkN0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2754,7 +2754,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:gKiMpY-AVTkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2781,7 +2781,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yFnVuubrUp4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -2808,7 +2808,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vDZJ-YLwNdEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -2821,7 +2821,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:F9fV5C73w3QC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3029,7 +3029,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:umqufdRvDiIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3042,7 +3042,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HeT0ZceujKMC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3068,7 +3068,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3htObqc8RwsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -3122,7 +3122,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WJVC3Jt7v1AC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3149,7 +3149,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sNmaIFBj_lkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3175,7 +3175,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ruyezt5ZtCIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3188,7 +3188,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:z_wVstp3MssC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3340,7 +3340,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HbR8gkJAVGIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3366,7 +3366,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VL0QpB8kHFEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -3409,7 +3409,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:j7_hQOaDUrUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3630,7 +3630,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:epqYDVWIO7EC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3696,7 +3696,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:k8Z6L05lTy4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -3710,7 +3710,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:lmc2jWPfTJgC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3789,7 +3789,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hkOj_22Ku90C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3804,7 +3804,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4MWp96NkSFoC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3817,7 +3817,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ML0RJ9NH7IQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3883,7 +3883,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:yB1At4FlUx8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3909,7 +3909,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9Nmd_mFXekcC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -3923,7 +3923,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:t7zJ5fGR-2UC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -3950,7 +3950,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35r97b3x0nAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4099,7 +4099,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AvfA0Oy_GE0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4114,7 +4114,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zLWjf1WUPmwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4157,7 +4157,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:VLnqNzywnoUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4184,7 +4184,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:j8SEvjWlNXcC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4268,7 +4268,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:q3oQSFYPqjQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4307,7 +4307,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZuybSZzF8UAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4347,7 +4347,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1yQoGdGgb4wC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4373,7 +4373,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HE397vMXCloC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4386,7 +4386,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XiVPGOgt02cC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4412,7 +4412,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:2P1L_qKh6hAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4425,7 +4425,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:BrmTIyaxlBUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4439,7 +4439,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:dBIO0h50nwkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4452,7 +4452,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QYdC8u9Cj1oC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4465,7 +4465,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9c2xU6iGI7YC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: [],
   },
   {
@@ -4478,7 +4478,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_Re3VWB3Y0AC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4537,7 +4537,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:9vf0nzSNQJEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4565,7 +4565,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:AXPGKjj_ei8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4593,7 +4593,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:WA5NYHcadZ8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4621,7 +4621,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:V3AGJWp-ZtQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4678,7 +4678,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:geHnlv5EZngC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -4692,7 +4692,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:sSrBHYA8nusC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -4719,7 +4719,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:4fKUyHm3Qg0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4733,7 +4733,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:tS2w5q8j5-wC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -4747,7 +4747,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:vRqMK49ujn8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -4789,7 +4789,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:l7t_Zn2s7bgC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo', 'Ping Luo'],
   },
   {
@@ -4832,7 +4832,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Tiz5es2fbqcC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4845,7 +4845,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:XiSMed-E-HIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4859,7 +4859,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:dQ2og3OwTAUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4873,7 +4873,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:PR6Y55bgFSsC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4886,7 +4886,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:nb7KW1ujOQ8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4899,7 +4899,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NhqRSupF_l8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4925,7 +4925,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:b0M2c_1WBrUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4952,7 +4952,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:5Ul4iDaHHb8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -4993,7 +4993,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:1sJd4Hv_s6UC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5006,7 +5006,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:EUQCXRtRnyEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5021,7 +5021,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_xSYboBqXhAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5089,7 +5089,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:u_35RYKgDlwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5128,7 +5128,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:zA6iFVUQeVQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5167,7 +5167,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ldfaerwXgEUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5180,7 +5180,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:r0BpntZqJG4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5193,7 +5193,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:NaGl4SEjCO4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5219,7 +5219,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:J_g5lzvAfSwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5232,7 +5232,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:fPk4N6BV_jEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5245,7 +5245,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:ZHo1McVdvXMC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5352,7 +5352,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:blknAaTinKkC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5392,7 +5392,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hMod-77fHWUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5446,7 +5446,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:URolC5Kub84C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5486,7 +5486,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_Qo2XoVZTnwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5553,7 +5553,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:IWHjjKOFINEC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5592,7 +5592,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:mVmsd5A6BfQC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5605,7 +5605,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:SeFeTyx0c_EC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5618,7 +5618,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:TQgYirikUcIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5710,7 +5710,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HoB7MX3m0LUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5751,7 +5751,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Zph67rFs4hoC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5831,7 +5831,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:HtS1dXgVpQUC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5844,7 +5844,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:MXK_kJrjxJIC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5857,7 +5857,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:Se3iqnhoufwC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -5922,7 +5922,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hqOjcs7Dif8C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6030,7 +6030,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:A8cqit5AE6sC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6102,7 +6102,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:QUX0mv85b1cC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Xihui Liu', 'Ping Luo'],
   },
   {
@@ -6141,7 +6141,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:3bvyWxjaHKcC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6226,7 +6226,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:43bX7VzcjpAC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6267,7 +6267,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:CaZNVDsoPx4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6293,7 +6293,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:8xutWZnSdmoC',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6430,7 +6430,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:N5tVd3kTz84C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6443,7 +6443,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:_B80troHkn4C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
@@ -6469,7 +6469,7 @@ export const publications: {
         url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=400&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:eMMeJKvmdy0C',
       },
     ],
-    keys: ['Machine Learning', 'Other'],
+    keys: ['Machine Learning', 'General'],
     pis: ['Ping Luo'],
   },
   {
