@@ -978,6 +978,6 @@ export const members: {
         link: 'mailto:xjran03@gmail.com',
       },
     ],
-    keys': ['2025'],
+    keys: ['2025'],
   },
 ];
