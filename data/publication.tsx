@@ -77,12 +77,27 @@ export const publications: {
       { website: 'Paper', url: 'https://arxiv.org/abs/2503.06669' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/AgiBot-World' },
       { website: 'Article', url: 'https://opendrivelab.com/blog/agibot-world/' },
-      { website: 'Page', url: 'http://agibot-world.com/' },
-      { website: 'Hugging Face', url: 'https://huggingface.co/agibot-world' },
       { website: 'bilibili', url: 'https://www.bilibili.com/video/BV1sNdGYWEBY' },
     ],
     pis: ['Hongyang Li'],
     keys: ['2025', 'Embodied AI', 'Dataset/Benchmark'],
+  },
+  {
+    title:
+      'BEVFormer: Learning Bird’s-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers',
+    authors:
+      'Zhiqi Li, Wenhai Wang, Hongyang Li, Enze Xie, Chonghao Sima, Tong Lu, Yu Qiao, Jifeng Dai',
+    proceedings: 'TPAMI 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ',
+      },
+      { website: 'GitHub', url: 'https://github.com/fundamentalvision/BEVFormer' },
+      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/564295059' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2025'],
   },
   {
     title: 'Centaur: Robust End-to-End Autonomous Driving with Test-Time Training',
@@ -100,7 +115,7 @@ export const publications: {
     proceedings: 'arXiv 2025',
     links: [
       { website: 'Paper', url: 'https://arxiv.org/abs/2504.10485' },
-      { website: 'Page', url: '/Nexus' },
+      { website: 'Page', url: 'https://opendrivelab.com/Nexus' },
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2025'],
@@ -116,6 +131,27 @@ export const publications: {
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
     keys: ['2025', 'Embodied AI'],
+  },
+  {
+    title: 'MTGS: Multi-Traversal Gaussian Splatting',
+    authors:
+      'Tianyu Li, Yihang Qiu, Zhenhua Wu, Carl Lindström, Peng Su, Matthias Nießner, Hongyang Li',
+    proceedings: 'arXiv 2025',
+    links: [{ website: 'Paper', url: 'https://arxiv.org/abs/2503.12552' }],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2025'],
+  },
+  {
+    title: '3D Data Augmentation for Driving Scenes on Camera',
+    authors:
+      'Wenwen Tong, Jiangwei Xie, Tianyu Li, Yang Li, Hanming Deng, Bo Dai, Lewei Lu, Hao Zhao, Junchi Yan, Hongyang Li',
+    proceedings: 'PRCV 2024',
+    links: [
+      { website: 'Paper', url: 'https://link.springer.com/chapter/10.1007/978-981-97-8508-7_4' },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li', 'Bo Dai'],
+    keys: ['Autonomous Driving', '2024'],
   },
   {
     title: 'Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation',
@@ -140,7 +176,6 @@ export const publications: {
       { website: 'Dataset', url: 'https://github.com/OpenDriveLab/DriveLM' },
       { website: 'Page', url: 'https://opendrivelab.com/DriveLM/' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveLM' },
-      { website: 'Hugging Face', url: 'https://huggingface.co/datasets/OpenDriveLab-org/DriveLM' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
     keys: ['2024', 'Autonomous Driving'],
@@ -181,6 +216,18 @@ export const publications: {
     keys: ['3D Vision', '2024'],
   },
   {
+    title: 'Fully Sparse 3D Occupancy Prediction',
+    authors:
+      'Haisong Liu, Yang Chen, Haiguang Wang, Zetong Yang, Tianyu Li, Jia Zeng, Li Chen, Hongyang Li, Limin Wang',
+    proceedings: 'ECCV 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2312.17118' },
+      { website: 'GitHub', url: 'https://github.com/MCG-NJU/SparseOcc' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
     title: 'Generalized Predictive Model for Autonomous Driving',
     authors:
       'Jiazhi Yang, Shenyuan Gao, Yihang Qiu, Li Chen, Tianyu Li, Bo Dai, Kashyap Chitta, Penghao Wu, Jia Zeng, Ping Luo, Jun Zhang, Andreas Geiger, Yu Qiao, Hongyang Li',
@@ -200,13 +247,24 @@ export const publications: {
     keys: ['Autonomous Driving', '2024'],
   },
   {
+    title: 'LaneSegNet: Map Learning with Lane Segment Perception for Autonomous Driving',
+    authors: 'Tianyu Li, Peijin Jia, Bangjun Wang, Li Chen, Kun Jiang, Junchi Yan, Hongyang Li',
+    proceedings: 'ICLR 2024',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2312.16108' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/LaneSegNet' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2024'],
+  },
+  {
     title: 'Learning Manipulation by Predicting Interaction',
     authors:
       'Jia Zeng, Qingwen Bu, Bangjun Wang, Wenke Xia, Li Chen, Hao Dong, Haoming Song, Dong Wang, Di Hu, Ping Luo, Heming Cui, Bin Zhao, Xuelong Li, Yu Qiao, Hongyang Li',
     proceedings: 'RSS 2024',
     links: [
       { website: 'Paper', url: 'https://arxiv.org/abs/2406.00439' },
-      { website: 'Page', url: '/MPI/' },
+      { website: 'Page', url: 'https://opendrivelab.com/MPI/' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/MPI' },
     ],
     pis: ['Ping Luo', 'Hongyang Li'],
@@ -285,7 +343,7 @@ export const publications: {
     links: [
       { website: 'Paper', url: 'https://arxiv.org/abs/2410.08001' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/RoboDual' },
-      { website: 'Page', url: '/RoboDual/' },
+      { website: 'Page', url: 'https://opendrivelab.com/RoboDual/' },
     ],
     pis: ['Hongyang Li'],
     keys: ['Embodied AI', '2024'],
@@ -298,7 +356,7 @@ export const publications: {
     proceedings: 'NeurIPS 2024',
     links: [
       { website: 'Paper', url: 'https://arxiv.org/abs/2405.17398' },
-      { website: 'Page', url: '/Vista/' },
+      { website: 'Page', url: 'https://opendrivelab.com/Vista/' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/Vista' },
       {
         website: 'Medium',
@@ -323,6 +381,34 @@ export const publications: {
     keys: ['Autonomous Driving', '2024'],
   },
   {
+    title: 'A Survey of Reasoning with Foundation Models: Concepts, Methodologies, and Outlook',
+    authors:
+      'Jiankai Sun, Chuanyang Zheng, Enze Xie, Zhengying Liu, Ruihang Chu, Jianing Qiu, Jiaqi Xu, Mingyu Ding, Hongyang Li, Mengzhe Geng, Yue Wu, Wenhai Wang, Junsong Chen, Zhangyue Yin, Xiaozhe Ren, Jie Fu, Junxian He, Yuan Wu, Qi Liu, Xihui Liu, Yu Li, Hao Dong, Yu Cheng, Ming Zhang, Pheng Ann Heng, Jifeng Dai, Ping Luo, Jingdong Wang, Ji-Rong Wen, Xipeng Qiu, Yike Guo, Hui Xiong, Qun Liu, Zhenguo Li',
+    proceedings: 'ACM Computing Surveys 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:oPLKW5k6eA4C',
+      },
+    ],
+    keys: ['Survey', 'Machine Learning', '2023'],
+    pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
+  },
+  {
+    title: 'Distilling Focal Knowledge from Imperfect Expert for 3D Object Detection',
+    authors: 'Jia Zeng, Li Chen, Hanming Deng, Lewei Lu, Junchi Yan, Yu Qiao, Hongyang Li',
+    proceedings: 'CVPR 2023',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Zeng_Distilling_Focal_Knowledge_From_Imperfect_Expert_for_3D_Object_Detection_CVPR_2023_paper.html',
+      },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
     title:
       'DriveAdapter: Breaking the Coupling Barrier of Perception and Planning in End-to-End Autonomous Driving',
     authors: 'Xiaosong Jia, Yulu Gao, Li Chen, Junchi Yan, Patrick Langechuan Liu, Hongyang Li',
@@ -333,6 +419,42 @@ export const publications: {
         url: 'https://openaccess.thecvf.com/content/ICCV2023/html/Jia_DriveAdapter_Breaking_the_Coupling_Barrier_of_Perception_and_Planning_in_ICCV_2023_paper.html',
       },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/DriveAdapter' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title: 'Geometric-aware Pretraining for Vision-centric 3D Object Detection',
+    authors:
+      'Linyan Huang, Huijie Wang, Jia Zeng, Shengchuan Zhang, Liujuan Cao, Rongrong Ji, Junchi Yan, Hongyang Li',
+    proceedings: 'arXiv 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2304.03105' },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title: 'Graph-based Topology Reasoning for Driving Scenes',
+    authors:
+      'Tianyu Li, Li Chen, Huijie Wang, Yang Li, Jiazhi Yang, Xiangwei Geng, Shengyin Jiang, Yuting Wang, Hang Xu, Chunjing Xu, Junchi Yan, Ping Luo, Hongyang Li',
+    proceedings: 'arXiv 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2304.05277' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/TopoNet' },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title:
+      'HDGT: Heterogeneous Driving Graph Transformer for Multi-Agent Trajectory Prediction via Scene Encoding',
+    authors: 'Xiaosong Jia, Penghao Wu, Li Chen, Hongyang Li, Yu Liu, Junchi Yan',
+    proceedings: 'TPAMI 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2205.09753' },
+      { website: 'GitHub', url: 'https://github.com/OpenPerceptionX/HDGT' },
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2023'],
@@ -349,6 +471,18 @@ export const publications: {
     keys: ['Autonomous Driving', '2023'],
   },
   {
+    title: 'Leveraging Vision-Centric Multi-Modal Expertise for 3D Object Detection',
+    authors:
+      'Linyan Huang, Zhiqi Li, Chonghao Sima, Wenhai Wang, Jingdong Wang, Yu Qiao, Hongyang Li',
+    proceedings: 'NeurIPS 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2310.15670' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/Birds-eye-view-Perception' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
     title: 'Mimic before Reconstruct: Enhancing Masked Autoencoders with Feature Mimicking',
     authors: 'Peng Gao, Renrui Zhang, Rongyao Fang, Ziyi Lin, Hongyang Li, Hongsheng Li, Qiao Yu',
     proceedings: 'IJCV 2023',
@@ -358,6 +492,22 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['3D Vision', '2023'],
+  },
+  {
+    title: 'OpenLane-V2: A Topology Reasoning Benchmark for Unified 3D HD Mapping',
+    authors:
+      'Huijie Wang, Tianyu Li, Yang Li, Li Chen, Chonghao Sima, Zhenbo Liu, Bangjun Wang, Peijin Jia, Yuting Wang, Shengyin Jiang, Feng Wen, Hang Xu, Ping Luo, Junchi Yan, Wei Zhang, Hongyang Li',
+    proceedings: 'NeurIPS 2023 Track Datasets and Benchmarks',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://proceedings.neurips.cc/paper_files/paper/2023/hash/3c0a4c8c236144f1b99b7e1531debe9c-Abstract-Datasets_and_Benchmarks.html',
+      },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/OpenLane-V2' },
+      { website: 'Dataset', url: 'https://github.com/OpenDriveLab/OpenLane-V2' },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
   },
   {
     title: 'Planning-oriented Autonomous Driving',
@@ -398,6 +548,29 @@ export const publications: {
     keys: ['Autonomous Driving', '2023'],
   },
   {
+    title: 'Scene as Occupancy',
+    authors:
+      'Chonghao Sima, Wenwen Tong, Tai Wang, Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, Ping Luo, Dahua Lin, Hongyang Li',
+    proceedings: 'ICCV 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2306.02851' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/OccNet' },
+    ],
+    pis: ['Ping Luo', 'Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title: 'Sparse Dense Fusion for 3D Object Detection',
+    authors: 'Yulu Gao, Chonghao Sima, Shaoshuai Shi, Shangzhe Di, Si Liu, Hongyang Li',
+    proceedings: 'IROS 2023',
+    links: [
+      { website: 'Paper', url: 'https://arxiv.org/abs/2304.04179' },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
     title: 'Stare at What You See: Masked Image Modeling without Reconstruction',
     authors: 'Hongwei Xue, Peng Gao, Hongyang Li, Yu Qiao, Hao Sun, Houqiang Li, Jiebo Luo',
     proceedings: 'CVPR 2023',
@@ -427,6 +600,34 @@ export const publications: {
     keys: ['Autonomous Driving', '2023'],
   },
   {
+    title: "Delving into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
+    authors:
+      'Hongyang Li, Chonghao Sima, Jifeng Dai, Wenhai Wang, Lewei Lu, Huijie Wang, Jia Zeng, Zhiqi Li, Jiazhi Yang, Hanming Deng, Hao Tian, Enze Xie, Jiangwei Xie, Li Chen, Tianyu Li, Yang Li, Yulu Gao, Xiaosong Jia, Si Liu, Jianping Shi, Dahua Lin, Yu Qiao',
+    proceedings: 'TPAMI 2023',
+    links: [
+      { website: 'Paper', url: 'https://ieeexplore.ieee.org/document/10321736' },
+      { website: 'GitHub', url: 'https://github.com/opendrivelab/bevperception-survey-recipe' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
+    title:
+      "BEVFormer v2: Adapting Modern Image Backbones to Bird's-Eye-View Recognition via Perspective Supervision",
+    authors:
+      'Chenyu Yang, Yuntao Chen, Hao Tian, Chenxin Tao, Xizhou Zhu, Zhaoxiang Zhang, Gao Huang, Hongyang Li, Yu Qiao, Lewei Lu, Jie Zhou, Jifeng Dai',
+    proceedings: 'CVPR 2023 Highlight',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content/CVPR2023/html/Yang_BEVFormer_v2_Adapting_Modern_Image_Backbones_to_Birds-Eye-View_Recognition_via_CVPR_2023_paper.html',
+      },
+      { website: 'GitHub', url: '' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2023'],
+  },
+  {
     title: 'Align Representations With Base: A New Approach to Self-Supervised Learning',
     authors:
       'Shaofeng Zhang, Lyn Qiu, Feng Zhu, Junchi Yan, Hengrui Zhang, Rui Zhao, Hongyang Li, Xiaokang Yang',
@@ -442,6 +643,24 @@ export const publications: {
     keys: ['3D Vision', '2022'],
   },
   {
+    title: 'PersFormer: 3D Lane Detection via Perspective Transformer and the OpenLane Benchmark',
+    authors:
+      'Li Chen, Chonghao Sima, Yang Li, Zehan Zheng, Jiajie Xu, Xiangwei Geng, Hongyang Li, Conghui He, Jianping Shi, Yu Qiao, Junchi Yan',
+    proceedings: 'ECCV 2022 Oral',
+    links: [
+      { website: 'Paper', url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_32' },
+      { website: 'GitHub', url: 'https://github.com/OpenDriveLab/PersFormer_3DLane' },
+      { website: 'Dataset', url: 'https://github.com/OpenDriveLab/OpenLane' },
+      {
+        website: 'Article',
+        url: 'https://patrick-llgc.github.io/Learning-Deep-Learning/paper_notes/persformer.html',
+      },
+      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/552908337' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2022'],
+  },
+  {
     title:
       'ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning',
     authors: 'Shengchao Hu, Li Chen, Penghao Wu, Hongyang Li, Junchi Yan, Dacheng Tao',
@@ -450,6 +669,18 @@ export const publications: {
       { website: 'Paper', url: 'https://link.springer.com/chapter/10.1007/978-3-031-19839-7_31' },
       { website: 'GitHub', url: 'https://github.com/OpenDriveLab/st-p3' },
       { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/544387122' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Autonomous Driving', '2022'],
+  },
+  {
+    title:
+      'Towards Capturing the Temporal Dynamics for Trajectory Prediction: a Coarse-to-Fine Approach',
+    authors: 'Xiaosong Jia, Li Chen, Penghao Wu, Jia Zeng, Junchi Yan, Hongyang Li, Yu Qiao',
+    proceedings: 'CoRL 2022',
+    links: [
+      { website: 'Paper', url: 'https://proceedings.mlr.press/v205/jia23a.html' },
+      { website: 'GitHub', url: '' },
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2022'],
@@ -469,6 +700,20 @@ export const publications: {
     ],
     pis: ['Hongyang Li'],
     keys: ['Autonomous Driving', '2022'],
+  },
+  {
+    title: 'DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks',
+    authors:
+      'Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Hongyang Li, Kun Wang, Junjie Yan, Chen-Change Loy, Xiaoou Tang',
+    proceedings: 'TPAMI 2016',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35N4QoGY0k4C',
+      },
+    ],
+    keys: ['Detection', 'Machine Learning', '2016'],
+    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title:
@@ -592,20 +837,6 @@ export const publications: {
     pis: ['Bo Dai'],
   },
   {
-    title: 'A Survey of Reasoning with Foundation Models: Concepts, Methodologies, and Outlook',
-    authors:
-      'Jiankai Sun, Chuanyang Zheng, Enze Xie, Zhengying Liu, Ruihang Chu, Jianing Qiu, Jiaqi Xu, Mingyu Ding, Hongyang Li, Mengzhe Geng, Yue Wu, Wenhai Wang, Junsong Chen, Zhangyue Yin, Xiaozhe Ren, Jie Fu, Junxian He, Yuan Wu, Qi Liu, Xihui Liu, Yu Li, Hao Dong, Yu Cheng, Ming Zhang, Pheng Ann Heng, Jifeng Dai, Ping Luo, Jingdong Wang, Ji-Rong Wen, Xipeng Qiu, Yike Guo, Hui Xiong, Qun Liu, Zhenguo Li',
-    proceedings: 'none',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:oPLKW5k6eA4C',
-      },
-    ],
-    keys: ['Survey', 'Machine Learning'],
-    pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
-  },
-  {
     title: 'A deep sum-product architecture for robust facial attributes analysis',
     authors: 'Ping Luo, Xiaogang Wang, Xiaoou Tang',
     proceedings: 'Proceedings of the IEEE International Conference on Computer Vision',
@@ -643,20 +874,6 @@ export const publications: {
     ],
     keys: ['Dataset/Benchmark', 'Machine Learning'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'A survey of reasoning with foundation models',
-    authors:
-      'Jiankai Sun, Chuanyang Zheng, Enze Xie, Zhengying Liu, Ruihang Chu, Jianing Qiu, Jiaqi Xu, Mingyu Ding, Hongyang Li, Mengzhe Geng, Yue Wu, Wenhai Wang, Junsong Chen, Zhangyue Yin, Xiaozhe Ren, Jie Fu, Junxian He, Wu Yuan, Qi Liu, Xihui Liu, Yu Li, Hao Dong, Yu Cheng, Ming Zhang, Pheng Ann Heng, Jifeng Dai, Ping Luo, Jingdong Wang, Ji-Rong Wen, Xipeng Qiu, Yike Guo, Hui Xiong, Qun Liu, Zhenguo Li',
-    proceedings: 'arXiv preprint arXiv:2312.11562',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:U_HPUtbDl20C',
-      },
-    ],
-    keys: ['Survey', 'Machine Learning'],
-    pis: ['Ping Luo', 'Xihui Liu', 'Hongyang Li'],
   },
   {
     title: 'A unified multi-scenario attacking network for visual object tracking',
@@ -2005,20 +2222,6 @@ export const publications: {
     ],
     keys: ['Autonomous Driving', 'Dataset/Benchmark'],
     pis: [],
-  },
-  {
-    title: 'DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks',
-    authors:
-      'Wanli Ouyang, Xingyu Zeng, Xiaogang Wang, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Hongyang Li, Kun Wang, Junjie Yan, Chen-Change Loy, Xiaoou Tang',
-    proceedings: 'IEEE Transactions on Pattern Analysis and Machine Intelligence',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&cstart=300&pagesize=100&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:35N4QoGY0k4C',
-      },
-    ],
-    keys: ['Detection', 'Machine Learning'],
-    pis: ['Ping Luo', 'Hongyang Li'],
   },
   {
     title: 'Deepaccident: A motion and accident prediction benchmark for v2x autonomous driving',
