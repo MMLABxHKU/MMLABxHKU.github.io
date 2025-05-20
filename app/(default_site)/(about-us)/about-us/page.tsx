@@ -45,27 +45,28 @@ export default function Home() {
             </div>
 
 
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <div className="w-full flex flex-col items-center mt-20">
-                    <div className="w-full max-w-7xl flex flex-col relative p-10 gap-6">
-                        <div className="absolute top-0 left-0 w-8 h-8 border-t-8 border-l-8 border-black"></div>
-                        <div className="absolute bottom-0 right-0 w-8 h-8 border-b-8 border-r-8 border-black"></div>
-                        <h2 className="text-xl font-bold">
-                            In Memoriam: Xiaoou Tang
-                        </h2>
-                        <p>
-                            The Multimedia Laboratory (MMLab) is established by Prof. Xiaoou Tang  (24 January 1968 - 15 December 2023) in July 2001.
-                        </p>
-                        <p>
-                            Prof. Xiaoou Tang's expertise covered a wide spectrum of computer vision and image processing areas. Among the pioneering and influential examples, he significantly advanced the facial recognition system to the level that exceeded human capability when their GaussianFace system designed by him and collaborators, achieving a world-record accuracy of 98.52% on the Labeled Faces in the Wild benchmark in 2014. He is also well known for his number of excellent works on image super-resolution, image haze removal, and object detection and recognition.
-                        </p>
-                        <p>
-                            Prof. Xiaoou Tang's influence went beyond his research achievements. Throughout two decades, he guided and inspired a new generation of scholars in the fields of AI and computer vision, creating a lasting imprint for generations to come. For those fortunate enough to have known Xiaoou, his clever wit remains memorable, making the time with him both pleasant and intellectually engaging. He will be greatly missed, but his memory will serve as an enduring source of inspiration, motivating all of us to strive for better things.
-                        </p>
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <div className="w-full flex flex-col items-center mt-20">
+                        <div className="w-full max-w-7xl flex flex-col relative p-10 gap-6">
+                            <div className="absolute top-0 left-0 w-8 h-8 border-t-8 border-l-8 border-black"></div>
+                            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-8 border-r-8 border-black"></div>
+                            <h2 className="text-xl font-bold">
+                                In Memoriam: Xiaoou Tang
+                            </h2>
+                            <p>
+                                The Multimedia Laboratory (MMLab) is established by Prof. Xiaoou Tang  (24 January 1968 - 15 December 2023) in July 2001.
+                            </p>
+                            <p>
+                                Prof. Xiaoou Tang's expertise covered a wide spectrum of computer vision and image processing areas. Among the pioneering and influential examples, he significantly advanced the facial recognition system to the level that exceeded human capability when their GaussianFace system designed by him and collaborators, achieving a world-record accuracy of 98.52% on the Labeled Faces in the Wild benchmark in 2014. He is also well known for his number of excellent works on image super-resolution, image haze removal, and object detection and recognition.
+                            </p>
+                            <p>
+                                Prof. Xiaoou Tang's influence went beyond his research achievements. Throughout two decades, he guided and inspired a new generation of scholars in the fields of AI and computer vision, creating a lasting imprint for generations to come. For those fortunate enough to have known Xiaoou, his clever wit remains memorable, making the time with him both pleasant and intellectually engaging. He will be greatly missed, but his memory will serve as an enduring source of inspiration, motivating all of us to strive for better things.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeIn>
 
 
 

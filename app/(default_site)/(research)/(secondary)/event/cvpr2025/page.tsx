@@ -405,7 +405,7 @@ export default function Home() {
                     </div>
                     <FadeIn>
                         <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
-                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR")).map(( publication) => (
+                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR 202")).map(( publication) => (
                                 <FadeIn key={publication.title}>
                                     <Card className="border-border rounded-none">
                                         <CardHeader>
@@ -461,19 +461,21 @@ export default function Home() {
                             </FadeIn>
                         </h2>
                     </div>
-                    <div className="mt-20">
-                        <p>
-                            Many team members make their contribution to CVPR 2024, altogether we are building a more professional community to shape the future of AI. We sincerely thank all for their service:
-                        </p>
-                        <ul className="mt-6 ml-6 space-y-6 list-outside list-disc">
-                            <li>
-                                <b>Area Chair</b>: Hongyang Li
-                            </li>
-                            <li>
-                                <b>Reviewer</b>: Li Chen, Chonghao Sima
-                            </li>
-                        </ul>
-                    </div>
+                    <FadeIn>
+                        <div className="mt-20">
+                            <p>
+                                Many team members make their contribution to CVPR 2025, altogether we are building a more professional community to shape the future of AI. We sincerely thank all for their service:
+                            </p>
+                            <ul className="mt-6 ml-6 space-y-6 list-outside list-disc">
+                                <li>
+                                    <b>Area Chair</b>: Hongyang Li
+                                </li>
+                                <li>
+                                    <b>Reviewer</b>: Li Chen, Chonghao Sima
+                                </li>
+                            </ul>
+                        </div>
+                    </FadeIn>
                     
 
 
