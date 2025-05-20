@@ -22,6 +22,7 @@ import {
     HoverCardContent,
     HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
 
@@ -172,12 +173,49 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-10 select-none">
 
                                     {/* to keep the same */}
+                                    <HoverCard>
+                                        <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
+                                            <AspectRatio ratio={1/1}>
+                                                <Image
+                                                    src='/icon/IDS.jpg'
+                                                    alt='HKU-Shanghai ICRC'
+                                                    fill
+                                                />
+                                            </AspectRatio>
+                                        </HoverCardTrigger>
+                                        <HoverCardContent className="border-0 w-fit">
+                                            <Link href="https://hku-sh-icrc.com/" target="_blank" className="select-none hover:text-mred">HKU-Shanghai ICRC</Link>
+                                        </HoverCardContent>
+                                    </HoverCard>
+                                    <HoverCard>
+                                        <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
+                                            <AspectRatio ratio={1/1}>
+                                                <Image
+                                                    src='/icon/jc_stem_lab.png'
+                                                    alt='JC STEM LAB'
+                                                    fill
+                                                />
+                                            </AspectRatio>
+                                        </HoverCardTrigger>
+                                        <HoverCardContent className="border-0 w-fit">
+                                            <span className="select-none hover:text-mred">JC STEM LAB</span>
+                                        </HoverCardContent>
+                                    </HoverCard>
+                                    <Link href="https://opendrivelab.com/" target="_blank" className="h-8 w-8">
+                                        <AspectRatio ratio={1/1}>
+                                            <Image
+                                                src='/icon/OpenDriveLab.svg'
+                                                alt='OpenDriveLab'
+                                                fill
+                                            />
+                                        </AspectRatio>
+                                    </Link>
                                     {/* <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                         </svg>
-                                    </Link>
-                                    <HoverCard>
+                                    </Link> */}
+                                    {/* <HoverCard>
                                         <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
                                             <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                 <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
@@ -196,12 +234,49 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 flex-wrap">
 
                                 {/* to keep the same */}
+                                <HoverCard>
+                                    <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
+                                        <AspectRatio ratio={1/1}>
+                                            <Image
+                                                src='/icon/IDS.jpg'
+                                                alt='HKU-Shanghai ICRC'
+                                                fill
+                                            />
+                                        </AspectRatio>
+                                    </HoverCardTrigger>
+                                    <HoverCardContent className="border-0 w-fit">
+                                        <Link href="https://hku-sh-icrc.com/" target="_blank" className="select-none hover:text-mred">HKU-Shanghai ICRC</Link>
+                                    </HoverCardContent>
+                                </HoverCard>
+                                <HoverCard>
+                                    <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
+                                        <AspectRatio ratio={1/1}>
+                                            <Image
+                                                src='/icon/jc_stem_lab.png'
+                                                alt='JC STEM LAB'
+                                                fill
+                                            />
+                                        </AspectRatio>
+                                    </HoverCardTrigger>
+                                    <HoverCardContent className="border-0 w-fit">
+                                        <span className="select-none hover:text-mred">JC STEM LAB</span>
+                                    </HoverCardContent>
+                                </HoverCard>
+                                <Link href="https://opendrivelab.com/" target="_blank" className="h-8 w-8">
+                                    <AspectRatio ratio={1/1}>
+                                        <Image
+                                            src='/icon/OpenDriveLab.svg'
+                                            alt='OpenDriveLab'
+                                            fill
+                                        />
+                                    </AspectRatio>
+                                </Link>
                                 {/* <Link href="https://x.com/" target="_blank" className="select-none hover:text-mred">
                                     <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                     </svg>
-                                </Link>
-                                <HoverCard>
+                                </Link> */}
+                                {/* <HoverCard>
                                     <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                             <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
