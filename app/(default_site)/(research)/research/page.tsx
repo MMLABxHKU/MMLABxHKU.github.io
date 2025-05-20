@@ -200,10 +200,10 @@ export default function Home() {
                                                     <CardHeader>
                                                         <CardTitle className="text-xl select-none">{publications[index].title}</CardTitle>
                                                     </CardHeader>
-                                                    <CardContent>
+                                                    <CardContent className="hidden md:block">
                                                         <p className="select-none">{publications[index].proceedings}</p>
                                                     </CardContent>
-                                                    <div className="flex justify-end">
+                                                    <div className=" hidden md:flex justify-end">
                                                         <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                                             <span>[</span>
                                                             {publications[index].pis.map((pi, i) => (
