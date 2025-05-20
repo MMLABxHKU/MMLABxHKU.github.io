@@ -405,7 +405,7 @@ export default function Home() {
                     </div>
                     <FadeIn>
                         <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
-                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR 202")).map(( publication) => (
+                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR 2025")).map(( publication) => (
                                 <FadeIn key={publication.title}>
                                     <Card className="border-border rounded-none">
                                         <CardHeader>
