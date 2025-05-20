@@ -3494,7 +3494,7 @@ export const publications: {
     authors:
       'Shoufa Chen, Mengmeng Xu, Jiawei Ren, Yuren Cong, Sen He, Yanping Xie, Animesh Sinha, Ping Luo, Tao Xiang, Juan-Manuel Perez-Rua',
     proceedings:
-      'CVPR 2025',
+      'CVPR 2024',
     links: [
       {
         website: 'Paper',
