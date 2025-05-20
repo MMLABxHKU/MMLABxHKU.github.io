@@ -4092,7 +4092,7 @@ export const publications: {
     title: 'Janus: Decoupling visual encoding for unified multimodal understanding and generation',
     authors:
       'Chengyue Wu, Xiaokang Chen, Zhiyu Wu, Yiyang Ma, Xingchao Liu, Zizheng Pan, Wen Liu, Zhenda Xie, Xingkai Yu, Chong Ruan, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2410.13848',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
