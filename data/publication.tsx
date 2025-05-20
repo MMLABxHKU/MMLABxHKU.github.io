@@ -2587,21 +2587,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title:
-      'Dna-rendering: A diverse neural actor repository for high-fidelity human-centric rendering',
-    authors:
-      'Cheng  Wei, Chen  Ruixiang, Fan  Siming, Yin  Wanqi, Chen  Keyu, Cai  Zhongang, Wang  Jingbo, Gao  Yang, Yu  Zhengming, Lin  Zhengyu, others',
-    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/DNA-Rendering%3A-A-Diverse-Neural-Actor-Repository-Cheng-Chen/d711d09cf573b77ca8f43050e2b60462cc77223e',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
     title: 'Do 2d gans know 3d shape? unsupervised 3d shape reconstruction from 2d image gans',
     authors: 'Pan  Xingang, Dai  Bo, Liu  Ziwei, Loy  Chen Change, Luo  Ping',
     proceedings: 'International Conference on Learning Representations (ICLR) 2021',
@@ -2779,20 +2764,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title: 'EdgeTAM: On-Device Track Anything Model',
-    authors:
-      'Zhou  Chong, Zhu  Chenchen, Xiong  Yunyang, Suri  Saksham, Xiao  Fanyi, Wu  Lemeng, Krishnamoorthi  Raghuraman, Dai  Bo, Loy  Chen Change, Chandra  Vikas, others',
-    proceedings: 'arXiv preprint arXiv:2501.07256 2025',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/EdgeTAM%3A-On-Device-Track-Anything-Model-Zhou-Zhu/9cd045900af7880c36465d133f002256e4370668',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
     title: 'Edgesam: Prompt-in-the-loop distillation for on-device deployment of sam',
     authors: 'Zhou  Chong, Li  Xiangtai, Loy  Chen Change, Dai  Bo',
     proceedings: 'arXiv preprint arXiv:2312.06660 2023',
@@ -2938,21 +2909,6 @@ export const publications: {
     ],
     keys: ['Embodied AI', 'General'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'EpiDiff: Enhancing Multi-View Synthesis via Localized Epipolar-Constrained Diffusion',
-    authors:
-      'Huang  Zehuan, Wen  Hao, Dong  Junting, Wang  Yaohui, Li  Yangguang, Chen  Xinyuan, Cao  Yan-Pei, Liang  Ding, Qiao  Yu, Dai  Bo, others',
-    proceedings:
-      'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/EpiDiff%3A-Enhancing-Multi-View-Synthesis-via-Huang-Wen/bbd989e42384784c2c610df4a03be37db43859ec',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
   },
   {
     title: 'Every frame counts: Joint learning of video segmentation and optical flow',
@@ -3284,20 +3240,6 @@ export const publications: {
       },
     ],
     keys: ['Multimodality'],
-    pis: ['Bo Dai'],
-  },
-  {
-    title: 'Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye Cameras',
-    authors:
-      'Liao  Zimu, Chen  Siyan, Fu  Rong, Wang  Yi, Su  Zhongling, Luo  Hao, Ma  Li, Xu  Linning, Dai  Bo, Li  Hengjie, others',
-    proceedings: 'arXiv preprint arXiv:2409.04751 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/1d15616510afe3290bd80668bf7d05e5f9b4674f',
-      },
-    ],
-    keys: ['Vision'],
     pis: ['Bo Dai'],
   },
   {
@@ -3916,21 +3858,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title: 'Humanvid: Demystifying training data for camera-controllable human image animation',
-    authors:
-      'Wang  Zhenzhi, Li  Yixuan, Zeng  Yanhong, Fang  Youqing, Guo  Yuwei, Liu  Wenran, Tan  Jing, Chen  Kai, Xue  Tianfan, Dai  Bo, others',
-    proceedings:
-      'The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2024',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/0d3e154082ec89b0b717e750f02b632fad30d8cc',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
     title: 'Hyperstyle3d: Text-guided 3d portrait stylization via hypernetworks',
     authors:
       'Chen  Zhuo, Xu  Xudong, Yan  Yichao, Pan  Ye, Zhu  Wenhan, Wu  Wayne, Dai  Bo, Yang  Xiaokang',
@@ -4034,21 +3961,6 @@ export const publications: {
       },
     ],
     keys: ['Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
-    title:
-      'Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation',
-    authors:
-      'Lian  Xinyu, Yu  Zichao, Liang  Ruiming, Wang  Yitong, Luo  Li Ray, Chen  Kaixu, Zhou  Yuanzhen, Tang  Qihong, Xu  Xudong, Lyu  Zhaoyang, others',
-    proceedings: 'arXiv preprint arXiv:2503.13424 2025',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/Infinite-Mobility%3A-Scalable-High-Fidelity-Synthesis-Lian-Yu/de3bc870475d4fe7cac2b27467e077ad4e53ea77',
-      },
-    ],
-    keys: ['Generative'],
     pis: ['Bo Dai'],
   },
   {
@@ -4393,20 +4305,6 @@ export const publications: {
     ],
     keys: ['General', 'General'],
     pis: ['Ping Luo'],
-  },
-  {
-    title: 'Lavie: High-quality video generation with cascaded latent diffusion models',
-    authors:
-      'Wang  Yaohui, Chen  Xinyuan, Ma  Xin, Zhou  Shangchen, Huang  Ziqi, Wang  Yi, Yang  Ceyuan, He  Yinan, Yu  Jiashuo, Yang  Peiqing, others',
-    proceedings: 'International Journal of Computer Vision 2025',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/LAVIE%3A-High-Quality-Video-Generation-with-Cascaded-Wang-Chen/ed4603ea341acc26cab24f41aa40524fb7779917',
-      },
-    ],
-    keys: ['Multimodality', 'Generative'],
-    pis: ['Bo Dai'],
   },
   {
     title: 'Learning 3D Garment Animation from Trajectories of A Piece of Cloth',
@@ -6217,21 +6115,6 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
-    title:
-      'RenderMe-360: A Large Digital Asset Library and Benchmarks Towards High-fidelity Head Avatars',
-    authors:
-      'Pan  Dongwei, Zhuo  Long, Piao  Jingtan, Luo  Huiwen, Cheng  Wei, Wang  Yuxin, Fan  Siming, Liu  Shengqi, Yang  Lei, Dai  Bo, others',
-    proceedings: 'NeurIPS 2023 Datasets and Benchmarks 2023',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/RenderMe-360%3A-A-Large-Digital-Asset-Library-and-Pan-Zhuo/3e09cec24d15564929a58af93d139c956a4a2128',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
-  },
-  {
     title: 'Representing and recognizing objects with massive local image patches',
     authors: 'Liang Lin, Ping Luo, Xiaowu Chen, Kun Zeng',
     proceedings: 'Pattern Recognition',
@@ -7285,21 +7168,6 @@ export const publications: {
     ],
     keys: ['General', 'General'],
     pis: ['Ping Luo'],
-  },
-  {
-    title:
-      'SynBody: Synthetic Dataset with Layered Human Models for 3D Human Perception and Modeling',
-    authors:
-      'Yang  Zhitao, Cai  Zhongang, Mei  Haiyi, Liu  Shuai, Chen  Zhaoxi, Xiao  Weiye, Wei  Yukun, Qing  Zhongfei, Wei  Chen, Dai  Bo, others',
-    proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/SynBody%3A-Synthetic-Dataset-with-Layered-Human-for-Yang-Cai/7ea5344715d210dad8171af1ca5018c665e4972a',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
   },
   {
     title: 'Syndock: N rigid protein docking via learnable group synchronization',
