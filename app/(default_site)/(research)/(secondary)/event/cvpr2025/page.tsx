@@ -267,7 +267,7 @@ export default function Home() {
                             <Link href="https://coop-intelligence.github.io/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
-                                        <CardDescription>June 12 | location xxx</CardDescription>
+                                        <CardDescription>June 12</CardDescription>
                                         <CardTitle className="text-xl">Multi-Agent Embodied Intelligent Systems Meet Generative-AI Era: Opportunities, Challenges and Futures</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
@@ -468,7 +468,7 @@ export default function Home() {
                             </p>
                             <ul className="mt-6 ml-6 space-y-6 list-outside list-disc">
                                 <li>
-                                    <b>Area Chair</b>: Hongyang Li
+                                    <b>Area Chair</b>: Ping Luo, Xihui, Liu, Hongyang Li
                                 </li>
                                 <li>
                                     <b>Reviewer</b>: Li Chen, Chonghao Sima
