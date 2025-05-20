@@ -91,7 +91,7 @@ export default function Home() {
                         </h1>
                         <FadeIn>
                             <p className="text-white">
-                                The Multimedia Lab at The University of Hong Kong is a leading research group dedicated to deep learning, reinforcement learning, robotics, etc. The lab focuses on various key areas, such as autonomous driving, multimodality, generative AI, and 3D vision. The lab has built a global reputation for cutting-edge research and impactful open-source contributions with a strong publication record in top-tier conferences like CVPR, ICCV, ECCV, NeurIPS, and ICLR.
+                                The Multimedia Lab at The University of Hong Kong is a leading research group dedicated to deep learning, reinforcement learning, robotics, <i>etc.</i> The lab focuses on various key areas, such as autonomous driving, multimodality, generative AI, and 3D vision. The lab has built a global reputation for cutting-edge research and impactful open-source contributions with a strong publication record in top-tier conferences like CVPR, ICCV and NeurIPS.
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
