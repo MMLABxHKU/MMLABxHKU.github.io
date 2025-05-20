@@ -9,7 +9,7 @@ export const open_source_categories: { category: string; years: string[] }[] = [
   },
   {
     category: 'Dataset',
-    years: ['2025', '2024', '2023', '2022'],
+    years: ['2024', '2023', '2022'],
   },
 ];
 
