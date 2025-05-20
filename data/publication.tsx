@@ -1623,7 +1623,7 @@ export const publications: {
       'CompGS: Unleashing 2D Compositionality for Compositional Text-to-3D via Dynamically Optimizing 3D Gaussians',
     authors:
       'Chongjian Ge, Chenfeng Xu, Yuanfeng Ji, Chensheng Peng, Masayoshi Tomizuka, Ping Luo, Mingyu Ding, Varun Jampani, Wei Zhan',
-    proceedings: 'arXiv preprint arXiv:2410.20723',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -2342,7 +2342,7 @@ export const publications: {
     title: 'DexHandDiff: Interaction-aware Diffusion Planning for Adaptive Dexterous Manipulation',
     authors:
       'Zhixuan Liang, Yao Mu, Yixiao Wang, Tianxing Chen, Wenqi Shao, Wei Zhan, Masayoshi Tomizuka, Ping Luo, Mingyu Ding',
-    proceedings: 'none',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -3342,7 +3342,7 @@ export const publications: {
       'Forensics-Bench: A Comprehensive Forgery Detection Benchmark Suite for Large Vision Language Models',
     authors:
       'Jin Wang, Chenghui Lv, Xian Li, Shichao Dong, Huadong Li, Chao Li, Wenqi Shao, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2503.15024',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -3396,7 +3396,7 @@ export const publications: {
       'G3Flow: Generative 3D Semantic Flow for Pose-aware and Generalizable Object Manipulation',
     authors:
       'Tianxing Chen, Yao Mu, Zhixuan Liang, Zanxin Chen, Shijia Peng, Qiangyu Chen, Mingkun Xu, Ruizhen Hu, Hongyuan Zhang, Xuelong Li, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2411.18369',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -3494,7 +3494,7 @@ export const publications: {
     authors:
       'Shoufa Chen, Mengmeng Xu, Jiawei Ren, Yuren Cong, Sen He, Yanping Xie, Animesh Sinha, Ping Luo, Tao Xiang, Juan-Manuel Perez-Rua',
     proceedings:
-      'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition',
+      'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -4106,7 +4106,7 @@ export const publications: {
     title:
       'JiSAM: Alleviate Labeling Burden and Corner Case Problems in Autonomous Driving via Minimal Real-World Data',
     authors: 'Runjian Chen, Wenqi Shao, Bo Zhang, Shaoshuai Shi, Li Jiang, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2503.08422',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -4679,7 +4679,7 @@ export const publications: {
     title: 'MangaNinja: Line Art Colorization with Precise Reference Following',
     authors:
       'Zhiheng Liu, Ka Leong Cheng, Xi Chen, Jie Xiao, Hao Ouyang, Kai Zhu, Yu Liu, Yujun Shen, Qifeng Chen, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2501.08332',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -5188,7 +5188,7 @@ export const publications: {
   {
     title: 'NADER: Neural Architecture Design via Multi-Agent Collaboration',
     authors: 'Zekang Yang, Wang Zeng, Sheng Jin, Chen Qian, Ping Luo, Wentao Liu',
-    proceedings: 'arXiv preprint arXiv:2412.19206',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -6334,7 +6334,7 @@ export const publications: {
     title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins',
     authors:
       'Yao Mu, Tianxing Chen, Zanxin Chen, Shijia Peng, Zhiqian Lan, Zeyu Gao, Zhixuan Liang, Qiaojun Yu, Yude Zou, Mingkun Xu, Lunkai Lin, Zhiqiang Xie, Mingyu Ding, Ping Luo',
-    proceedings: 'arXiv preprint arXiv:2504.13059',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
