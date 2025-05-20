@@ -19,7 +19,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 export default function NotFound() {
     return (
         <main>
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-loading">
                 <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
                     <FadeIn>
                         <h1 className="font-bold text-t0 text-white">
