@@ -84,7 +84,7 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
-                    <h1 className="font-bold text-6xl text-white">
+                    <h1 className="font-bold text-t1 text-white">
                         <FadeIn>
                             Projects & Datasets
                         </FadeIn>
@@ -117,7 +117,7 @@ export default function Home() {
                                     <div className="mt-20" key={year}>
 
                                         <FadeIn>
-                                            <h2 className="w-full max-w-7xl mb-20 text-6xl font-bold"> 
+                                            <h2 className="w-full max-w-7xl mb-20 text-t1 font-bold"> 
                                                 {year}                    
                                             </h2>
                                         </FadeIn>

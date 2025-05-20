@@ -81,7 +81,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-6xl font-bold"> 
+                        <h2 className="text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#member" className="scroll-mt-32 group flex items-center" id="member">
                                     Members
@@ -123,7 +123,7 @@ export default function Home() {
                                 </AspectRatio>
                             </div>
                             <div className="flex-2/3 flex flex-col gap-6 scroll-mt-32" id={pi.id}>
-                                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+                                <h3 className="text-3xl sm:text-4xl text-t1 font-bold">
                                     {pi.name}
                                 </h3>
                                 <span>
@@ -163,7 +163,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl flex flex-row justify-between">
-                        <h2 className="text-6xl font-bold"> 
+                        <h2 className="text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#career" className="scroll-mt-32 group flex items-center" id="career">
                                     Career

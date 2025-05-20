@@ -161,7 +161,7 @@ export default function Home() {
 
                     <div className="flex flex-row justify-between w-full xl:overflow-visible xl:h-[416px] gap-20">
                         <div className="pt-20 flex flex-col gap-6 flex-2/3">
-                            <h1 className="font-bold text-6xl">
+                            <h1 className="font-bold text-t1">
                                 <FadeIn>
                                     MMLab at CVPR 2025
                                 </FadeIn>
@@ -203,7 +203,7 @@ export default function Home() {
 
                     {/* competition */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#competition" className="scroll-mt-32 group flex items-center" id="competition">
                                     Competition
@@ -248,7 +248,7 @@ export default function Home() {
 
                     {/* workshop */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#workshop" className="scroll-mt-32 group flex items-center" id="workshop">
                                     Workshop
@@ -345,7 +345,7 @@ export default function Home() {
 
                     {/* tutorial */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#tutorial" className="scroll-mt-32 group flex items-center" id="tutorial">
                                     Tutorial
@@ -389,7 +389,7 @@ export default function Home() {
 
                     {/* paper */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#paper" className="scroll-mt-32 group flex items-center" id="paper">
                                 Paper
@@ -405,7 +405,7 @@ export default function Home() {
                     </div>
                     <FadeIn>
                         <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
-                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR 2025")).map(( publication) => (
+                            {[...publications.values()].filter(publication => publication.proceedings.includes("CVPR 2025")).map((publication) => (
                                 <FadeIn key={publication.title}>
                                     <Card className="border-border rounded-none">
                                         <CardHeader>
@@ -447,7 +447,7 @@ export default function Home() {
 
                     {/* service */}
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#service" className="scroll-mt-32 group flex items-center" id="service">
                                     Service

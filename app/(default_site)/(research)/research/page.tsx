@@ -65,7 +65,7 @@ export default function Home() {
 
             {/* Publication */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                     <FadeIn>
                         <Link href="#publication" className="scroll-mt-32 group flex items-center" id="publication">
                             Publication
@@ -234,7 +234,7 @@ export default function Home() {
 
             {/* Open Source */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                     <FadeIn>
                         <Link href="#open-source" className="scroll-mt-32 group flex items-center" id="open-source">
                             Open Source
@@ -267,7 +267,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         UniAD
                                     </h3>
                                 </div>
@@ -287,7 +287,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         LlamaGen
                                     </h3>
                                 </div>
@@ -311,7 +311,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         UniVLA
                                     </h3>
                                 </div>
@@ -331,7 +331,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         AgiBot World
                                     </h3>
                                 </div>
@@ -351,7 +351,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         Janus
                                     </h3>
                                 </div>
@@ -370,7 +370,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-6xl">
+                                    <h3 className="text-white font-bold text-t1">
                                         DriveLM
                                     </h3>
                                 </div>
@@ -405,7 +405,7 @@ export default function Home() {
 
             {/* Event */}
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                     <FadeIn>
                         <Link href="#event" className="scroll-mt-32 group flex items-center" id="event">
                             Event
@@ -437,7 +437,7 @@ export default function Home() {
                                         />
                                     </div>
                                     <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">
-                                        <h3 className="text-white font-bold text-6xl">
+                                        <h3 className="text-white font-bold text-t1">
                                             {item.location}
                                         </h3>
                                     </div>
