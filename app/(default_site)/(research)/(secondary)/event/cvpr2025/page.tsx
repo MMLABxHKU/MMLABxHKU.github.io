@@ -468,7 +468,7 @@ export default function Home() {
                             </p>
                             <ul className="mt-6 ml-6 space-y-6 list-outside list-disc">
                                 <li>
-                                    <b>Area Chair</b>: Ping Luo, Xihui, Liu, Hongyang Li
+                                    <b>Area Chair</b>: Ping Luo, Xihui Liu, Hongyang Li
                                 </li>
                                 <li>
                                     <b>Reviewer</b>: Li Chen, Chonghao Sima
