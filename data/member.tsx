@@ -980,4 +980,75 @@ export const members: {
     ],
     keys: ['2017', '2021', 'Alumni'],
   },
+  {
+    name: 'Yao Teng',
+    img: 'https://mmlabassets.github.io/member/yao_teng_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://tyshiwo1.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=eLIsViIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'tengyao19980325@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/tyshiwo1',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Meng Wei',
+    img: 'https://mmlabassets.github.io/member/meng_wei_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=Wx8ChLcAAAAJ&hl=en',
+      },
+      {
+        icon: 'email',
+        link: 'kellymeng0427@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/kellyiss',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Jiwen Yu',
+    img: 'https://mmlabassets.github.io/member/jiwen_yu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yujiwen.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'yujiwen.hk@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/yujiwen',
+      },
+    ],
+    keys: ['2024'],
+  },
 ];
