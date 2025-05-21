@@ -8289,7 +8289,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
         "Survey",
     ],
     pis: [
@@ -8308,7 +8308,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8334,7 +8334,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8360,7 +8360,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8391,8 +8391,9 @@ export const publications: {
     keys: [
         "2025",
         "3D Vision",
-        "Generative Models",
+        "Generative",
         "Segmentation",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8423,6 +8424,7 @@ export const publications: {
     keys: [
         "2024",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8444,7 +8446,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8458,7 +8460,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8477,7 +8479,8 @@ export const publications: {
     keys: [
         "2025",
         "3D Vision",
-        "Generative Models",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8504,8 +8507,8 @@ export const publications: {
     keys: [
         "2025",
         "Dataset/Benchmark",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8531,7 +8534,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8562,8 +8565,8 @@ export const publications: {
     keys: [
         "2024",
         "Dataset/Benchmark",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8582,7 +8585,7 @@ export const publications: {
     keys: [
         "2024",
         "Dataset/Benchmark",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8604,7 +8607,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Multimodal",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8631,7 +8634,8 @@ export const publications: {
     keys: [
         "2024",
         "3D Vision",
-        "Generative Models",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8649,7 +8653,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8671,8 +8675,8 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8725,6 +8729,7 @@ export const publications: {
     keys: [
         "2024",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8754,7 +8759,7 @@ export const publications: {
     ],
     keys: [
         "2025",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8780,8 +8785,8 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8807,8 +8812,8 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8862,7 +8867,7 @@ export const publications: {
         "2024",
         "AI for Science",
         "Dataset/Benchmark",
-        "Multimodal",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -8888,7 +8893,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8906,7 +8911,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8932,7 +8937,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -8963,6 +8968,7 @@ export const publications: {
     keys: [
         "2024",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -8988,7 +8994,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9049,7 +9055,7 @@ export const publications: {
     keys: [
         "2024",
         "Dataset/Benchmark",
-        "Multimodal",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -9071,7 +9077,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9097,8 +9103,8 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -9120,8 +9126,8 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -9143,7 +9149,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9170,7 +9176,8 @@ export const publications: {
     keys: [
         "2023",
         "3D Vision",
-        "Generative Models",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9201,7 +9208,8 @@ export const publications: {
     keys: [
         "2023",
         "3D Vision",
-        "Generative Models",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9233,6 +9241,7 @@ export const publications: {
         "2023",
         "3D Vision",
         "Embodied AI",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9255,6 +9264,7 @@ export const publications: {
     keys: [
         "2023",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9278,6 +9288,7 @@ export const publications: {
         "2023",
         "3D Vision",
         "Dataset/Benchmark",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9311,7 +9322,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9337,7 +9348,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9359,7 +9370,7 @@ export const publications: {
     ],
     keys: [
         "2024",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9386,6 +9397,8 @@ export const publications: {
     keys: [
         "2023",
         "Other",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9420,8 +9433,8 @@ export const publications: {
     keys: [
         "2023",
         "Dataset/Benchmark",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -9478,6 +9491,8 @@ export const publications: {
     keys: [
         "2023",
         "Other",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9504,6 +9519,7 @@ export const publications: {
     keys: [
         "2023",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9526,6 +9542,7 @@ export const publications: {
     keys: [
         "2023",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9547,7 +9564,7 @@ export const publications: {
     ],
     keys: [
         "2022",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9570,6 +9587,7 @@ export const publications: {
     keys: [
         "2022",
         "3D Vision",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9595,7 +9613,7 @@ export const publications: {
     ],
     keys: [
         "2022",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9621,7 +9639,7 @@ export const publications: {
     ],
     keys: [
         "2023",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9644,6 +9662,7 @@ export const publications: {
     keys: [
         "2023",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9666,6 +9685,7 @@ export const publications: {
     keys: [
         "2022",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9692,7 +9712,7 @@ export const publications: {
     keys: [
         "2022",
         "Dataset/Benchmark",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9719,8 +9739,8 @@ export const publications: {
     keys: [
         "2021",
         "Dataset/Benchmark",
-        "Generative Models",
-        "Multimodal",
+        "Generative",
+        "Multimodality",
     ],
     pis: [
         "Xihui Liu",
@@ -9751,6 +9771,8 @@ export const publications: {
     keys: [
         "2020",
         "Other",
+        "Generative",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9776,7 +9798,7 @@ export const publications: {
     ],
     keys: [
         "2019",
-        "Generative Models",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9799,6 +9821,7 @@ export const publications: {
     keys: [
         "2019",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9821,6 +9844,8 @@ export const publications: {
     keys: [
         "2019",
         "Other",
+        "Vision",
+        "Generative",
     ],
     pis: [
         "Xihui Liu",
@@ -9839,6 +9864,7 @@ export const publications: {
     keys: [
         "2018",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9857,6 +9883,7 @@ export const publications: {
     keys: [
         "2018",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9879,6 +9906,7 @@ export const publications: {
     keys: [
         "2018",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9909,6 +9937,7 @@ export const publications: {
     keys: [
         "2017",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9931,6 +9960,7 @@ export const publications: {
     keys: [
         "2017",
         "Other",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
@@ -9957,6 +9987,7 @@ export const publications: {
     keys: [
         "2017",
         "Detection",
+        "Vision",
     ],
     pis: [
         "Xihui Liu",
