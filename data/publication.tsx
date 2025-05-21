@@ -8277,4 +8277,1689 @@ export const publications: {
     keys: ['General', 'General'],
     pis: ['Ping Luo'],
   },
+  {
+    title: "A Survey of Interactive Generative Video",
+    authors: "Jiwen Yu*, Yiran Qin*, Haoxuan Che*, Quande Liu, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2504.21853",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+        "Survey",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Position: Interactive Generative Video as Next-Generation Game Engine",
+    authors: "Jiwen Yu*, Yiran Qin*, Haoxuan Che, Quande Liu, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2503.17359",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "TokenBridge: Bridging Continuous and Discrete Tokens for Autoregressive Visual Generation",
+    authors: "Yuqing Wang, Zhijie Lin, Yao Teng, Yuanzhi Zhu, Shuhuai Ren, Jiashi Feng, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2503.16430",
+        },
+        {
+            website: "Project Page",
+            url: "https://yuqingwang1029.github.io/TokenBridge/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/yuqingwang1029/TokenBridge",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation",
+    authors: "Tianwei Xiong, Jun Hao Liew, Zilong Huang, Jiashi Feng, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2504.08736",
+        },
+        {
+            website: "Project Page",
+            url: "https://silentview.github.io/GigaTok/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/SilentView/GigaTok",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "HoloPart: Generative 3D Part Amodal Segmentation",
+    authors: "Yunhan Yang, Yuan-Chen Guo, Yukun Huang, Zi-Xin Zou, Zhipeng Yu, Yangguang Li, Yan-Pei Cao, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2504.07943",
+        },
+        {
+            website: "Project Page",
+            url: "https://vast-ai-research.github.io/HoloPart/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/VAST-AI-Research/HoloPart",
+        },
+        {
+            website: "Interactive Demo",
+            url: "https://huggingface.co/spaces/VAST-AI/HoloPart",
+        },
+    ],
+    keys: [
+        "2025",
+        "3D Vision",
+        "Generative Models",
+        "Segmentation",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "SAMPart3D: Segment Any Part in 3D Objects",
+    authors: "Yunhan Yang, Yukun Huang, Yuan-Chen Guo, Liangjun Lu, Xiaoyang Wu, Edmund Y. Lam, Yan-Pei Cao, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2411.07184",
+        },
+        {
+            website: "Project Page",
+            url: "https://yhyang-myron.github.io/SAMPart3D-website/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/SAMPart3D",
+        },
+        {
+            website: "Dataset",
+            url: "https://huggingface.co/datasets/yhyang-myron/PartObjaverse-Tiny",
+        },
+    ],
+    keys: [
+        "2024",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "WorldSimBench: Towards Video Generation Models as World Simulators",
+    authors: "Yiran Qin*, Zhelun Shi*, Jiwen Yu, Xijun Wang, Enshen Zhou, Lijun Li, Zhenfei Yin, Xihui Liu, Lu Sheng, Jing Shao, Lei Bai, Wanli Ouyang, Ruimao Zhang",
+    proceedings: "ICML 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2410.18072",
+        },
+        {
+            website: "Project page",
+            url: "https://iranqin.github.io/WorldSimBench.github.io/",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "UniMC: Taming Diffusion Transformer for Unified Keypoint-Guided Multi-Class Image Generation",
+    authors: "Qin Guo, Ailing Zeng, Dongxu Yue, Ceyuan Yang, Yang Cao, Hanzhong Guo, Fei Shen, Wei Liu, Xihui Liu, Dan Xu",
+    proceedings: "ICML 2025",
+    links: [
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "DreamComposer++: Empowering Diffusion Models with Multi-View Conditions for 3D Content Generation",
+    authors: "Yunhan Yang*, Shuo Chen*, Yukun Huang*, Xiaoyang Wu, Yuan-Chen Guo, Edmund Y. Lam, Hengshuang Zhao, Tong He, Xihui Liu",
+    proceedings: "TPAMI 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://ieeexplore.ieee.org/document/10847875",
+        },
+    ],
+    keys: [
+        "2025",
+        "3D Vision",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "T2I-CompBench++: An Enhanced and Comprehensive Benchmark for Compositional Text-to-Image Generation",
+    authors: "Kaiyi Huang, Chengqi Duan, Kaiyue Sun, Enze Xie, Zhenguo Li, Xihui Liu",
+    proceedings: "TPAMI 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://ieeexplore.ieee.org/document/10847875",
+        },
+        {
+            website: "Project page",
+            url: "https://karine-h.github.io/T2I-CompBench-new/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Karine-Huang/T2I-CompBench",
+        },
+    ],
+    keys: [
+        "2025",
+        "Dataset/Benchmark",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Parallelized Autoregressive Visual Generation",
+    authors: "Yuqing Wang, Shuhuai Ren, Zhijie Lin, Yujin Han, Haoyuan Guo, Zhenheng Yang, Difan Zou, Jiashi Feng, Xihui Liu",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2412.15119",
+        },
+        {
+            website: "Project Page",
+            url: "https://epiphqny.github.io/PAR-project/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Epiphqny/PAR",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
+    authors: "Kaiyue Sun, Kaiyi Huang, Xian Liu, Yue Wu, Zihan Xu, Zhenguo Li, Xihui Liu",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2407.14505",
+        },
+        {
+            website: "Project Page",
+            url: "https://t2v-compbench.github.io/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/KaiyueSun98/T2V-CompBench",
+        },
+        {
+            website: "LeaderBoard",
+            url: "https://huggingface.co/spaces/Kaiyue/T2V-CompBench_Leaderboard",
+        },
+    ],
+    keys: [
+        "2024",
+        "Dataset/Benchmark",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "T2ISafety: Benchmark for Assessing Fairness, Toxicity, and Privacy in Image Generation",
+    authors: "Lijun Li, Zhelun Shi, Xuhao Hu, Bowen Dong, Yiran Qin, Xihui Liu, Lu Sheng, Jing Shao",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2501.12612",
+        },
+    ],
+    keys: [
+        "2024",
+        "Dataset/Benchmark",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "MBQ: Modality-Balanced Quantization for Large Vision-Language Models",
+    authors: "Shiyao Li, Yingchun Hu, Xuefei Ning, Xihui Liu, Ke Hong, xiaotao jia, Xiuhong Li, Yaqi Yan, PEI RAN, Guohao Dai, Shengen Yan, Huazhong Yang, Yu Wang",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2412.19509",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/thu-nics/MBQ",
+        },
+    ],
+    keys: [
+        "2024",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation",
+    authors: "Zehuan Huang, Yuan-Chen Guo, Xingqiao An, Yunhan Yang, Yangguang Li, Zi-Xin Zou, Ding Liang, Xihui Liu, Yan-Pei Cao, Lu Sheng",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2412.03558",
+        },
+        {
+            website: "Project Page",
+            url: "https://huanngzh.github.io/MIDI-Page/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/huanngzh/MIDI",
+        },
+    ],
+    keys: [
+        "2024",
+        "3D Vision",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "HMAR: Efficient Hierarchical Masked AutoRegressive Image Generation",
+    authors: "Hermann Kumbong, Xian Liu, Tsung-Yi Lin, Ming-Yu Liu, Xihui Liu, Ziwei Liu, Daniel Y Fu, Christopher Re, David W. Romero",
+    proceedings: "CVPR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://cvpr.thecvf.com/virtual/2025/poster/34513",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding",
+    authors: "Yao Teng, Han Shi, Xian Liu, Xuefei Ning, Guohao Dai, Yu Wang, Zhenguo Li, Xihui Liu",
+    proceedings: "ICLR 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2410.01699",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/tyshiwo1/Accelerating-T2I-AR-with-SJD/",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Moto: Latent Motion Token as the Bridging Language for Robot Manipulation",
+    authors: "Yi Chen, Yuying Ge, Yizhuo Li, Yixiao Ge, Mingyu Ding, Ying Shan, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2412.04445",
+        },
+        {
+            website: "Project Page",
+            url: "https://chenyi99.github.io/moto/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/TencentARC/Moto",
+        },
+    ],
+    keys: [
+        "2024",
+        "Embodied AI",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D Capabilities",
+    authors: "Chenming Zhu, Tai Wang, Wenwei Zhang, Jiangmiao Pang, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2409.18125",
+        },
+        {
+            website: "Project Page",
+            url: "https://zcmax.github.io/projects/LLaVA-3D/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/ZCMax/LLaVA-3D",
+        },
+    ],
+    keys: [
+        "2024",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "GameFactory: Creating New Games with Generative Interactive Videos",
+    authors: "Jiwen Yu, Yiran Qin, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu",
+    proceedings: "arXiv 2025",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2501.08325",
+        },
+        {
+            website: "Project Page",
+            url: "https://vvictoryuki.github.io/gamefactory/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/KwaiVGI/GameFactory",
+        },
+        {
+            website: "Dataset",
+            url: "https://huggingface.co/datasets/KwaiVGI/GameFactory-Dataset",
+        },
+    ],
+    keys: [
+        "2025",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration",
+    authors: "Kaiyi Huang, Yukun Huang, Xuefei Ning, Zinan Lin, Yu Wang, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2412.04440",
+        },
+        {
+            website: "Project Page",
+            url: "https://karine-h.github.io/GenMAC/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Karine-Huang/GenMAC",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "GenArtist: Multimodal LLM as an Agent for Unified Image Generation and Editing",
+    authors: "Zhenyu Wang, Aoxue Li, Zhenguo Li, Xihui Liu",
+    proceedings: "NeurIPS 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://proceedings.neurips.cc/paper_files/paper/2024/file/e7c786024ca718f2487712bfe9f51030-Paper-Conference.pdf",
+        },
+        {
+            website: "Project Page",
+            url: "https://zhenyuw16.github.io/GenArtist_page/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/zhenyuw16/GenArtist",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "LVD-2M: A Long-take Video Dataset with Temporally Dense Captions",
+    authors: "Tianwei Xiong, Yuqing Wang, Daquan Zhou, Zhijie Lin, Jiashi Feng, Xihui Liu",
+    proceedings: "NeurIPS 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://proceedings.neurips.cc/paper_files/paper/2024/file/1df493ec1c2530c038d94d7300b5b368-Paper-Datasets_and_Benchmarks_Track.pdf",
+        },
+        {
+            website: "Project Page",
+            url: "https://silentview.github.io/LVD-2M/",
+        },
+        {
+            website: "Code and Dataset",
+            url: "https://github.com/SilentView/LVD-2M",
+        },
+    ],
+    keys: [
+        "2024",
+        "Dataset/Benchmark",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+    authors: "Yuchen Ren, Zhiyuan Chen, Lifeng Qiao, Hongtai Jing, Yuchen Cai, Sheng Xu, Peng Ye, Xinzhu Ma, Siqi Sun, Hongliang Yan, Dong Yuan, Wanli Ouyang, Xihui Liu",
+    proceedings: "NeurIPS 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "hhttps://proceedings.neurips.cc/paper_files/paper/2024/file/a8ea503d91320fcfe12cba61c8a6d285-Paper-Datasets_and_Benchmarks_Track.pdf",
+        },
+        {
+            website: "Project Page",
+            url: "https://silentview.github.io/LVD-2M/",
+        },
+        {
+            website: "Code and Dataset",
+            url: "https://github.com/terry-r123/RNABenchmark",
+        },
+    ],
+    keys: [
+        "2024",
+        "AI for Science",
+        "Dataset/Benchmark",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "4Diffusion: Multi-view Video Diffusion Model for 4D Generation",
+    authors: "Haiyu Zhang, Xinyuan Chen, Yaohui Wang, Xihui Liu, Yunhong Wang, Yu Qiao",
+    proceedings: "NeurIPS 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2405.20674",
+        },
+        {
+            website: "Project Page",
+            url: "https://aejion.github.io/4diffusion/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/aejion/4Diffusion",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Scene Graph Disentanglement and Composition for Generalizable Complex Image Generation",
+    authors: "Yunnan Wang, Ziqiang Li, Wenyao Zhang, Zequn Zhang, Baao Xie, Xihui Liu, Wenjun Zeng, Xin Jin",
+    proceedings: "NeurIPS 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://proceedings.neurips.cc/paper_files/paper/2024/file/b288470688e72f58c02031304ad6339f-Paper-Conference.pdf",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "PUMA: Empowering Unified MLLM with Multi-granular Visual Generation",
+    authors: "Rongyao Fang, Chengqi Duan, Kun Wang, Hao Li, Hao Tian, Xingyu Zeng, Rui Zhao, Jifeng Dai, Hongsheng Li, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2410.13861",
+        },
+        {
+            website: "Project Page",
+            url: "https://rongyaofang.github.io/puma/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/rongyaofang/PUMA",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Empowering 3D Visual Grounding with Reasoning Capabilities",
+    authors: "Chenming Zhu, Tai Wang, Wenwei Zhang, Kai Chen, Xihui Liu",
+    proceedings: "ECCV 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2407.01525",
+        },
+        {
+            website: "Project Page",
+            url: "https://zcmax.github.io/projects/ScanReason/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/ZCMax/ScanReason",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/ZCMax/ScanReason",
+        },
+    ],
+    keys: [
+        "2024",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "TC4D: Trajectory-Conditioned Text-to-4D Generation",
+    authors: "Sherwin Bahmani*, Xian Liu*, Yifan Wang*, Ivan Skorokhodov, Victor Rong, Ziwei Liu, Xihui Liu, Jeong Joon Park, Sergey Tulyakov, Gordon Wetzstein, Andrea Tagliasacchi, David B. Lindell",
+    proceedings: "ECCV 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2403.17920",
+        },
+        {
+            website: "Project Page",
+            url: "https://sherwinbahmani.github.io/tc4d/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/sherwinbahmani/tc4d",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "PredBench: Benchmarking Spatio-Temporal Prediction across Diverse Disciplines",
+    authors: "ZiDong Wang, Zeyu Lu, Di Huang, Tong He, Xihui Liu, Wanli Ouyang, Lei Bai",
+    proceedings: "ECCV 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07567.pdf",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/OpenEarthLab/PredBench",
+        },
+    ],
+    keys: [
+        "2024",
+        "Dataset/Benchmark",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "EgoPlan-Bench: Benchmarking Multimodal Large Language Models for Human-Level Planning",
+    authors: "Yi Chen, Yuying Ge, Yixiao Ge, Mingyu Ding, Bohao Li, Rui Wang, Ruifeng Xu, Ying Shan, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.06722",
+        },
+        {
+            website: "Project Page",
+            url: "https://chenyi99.github.io/ego_plan/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/ChenYi99/EgoPlan",
+        },
+        {
+            website: "Challenge",
+            url: "https://chenyi99.github.io/ego_plan_challenge/",
+        },
+        {
+            website: "Data",
+            url: "https://drive.google.com/drive/folders/1qVtPzhHmCgdQ5JlMeAL3OZtvbHaXktTo",
+        },
+        {
+            website: "Leaderboard",
+            url: "https://huggingface.co/spaces/ChenYi99/EgoPlan-Bench_Leaderboard",
+        },
+    ],
+    keys: [
+        "2024",
+        "Dataset/Benchmark",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "DiM: Diffusion Mamba for Efficient High-Resolution Image Synthesis",
+    authors: "Yao Teng, Yue Wu, Han Shi, Xuefei Ning, Guohao Dai, Yu Wang, Zhenguo Li, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://www.arxiv.org/abs/2405.14224",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/tyshiwo1/DiM-DiffusionMamba",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Editing Massive Concepts in Text-to-Image Diffusion Models",
+    authors: "Tianwei Xiong, Yue Wu, Enze Xie, Yue Wu, Zhenguo Li, Xihui Liu",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2403.13807",
+        },
+        {
+            website: "Project Page",
+            url: "https://github.com/SilentView/EMCID/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/SilentView/EMCID",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Divide and Conquer: Language Models can Plan and Self-Correct for Compositional Text-to-Image Generation",
+    authors: "Zhenyu Wang, Enze Xie, Aoxue Li, Zhongdao Wang, Xihui Liu, Zhenguo Li",
+    proceedings: "arXiv 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2401.15688",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/zhenyuw16/CompAgent_code",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+},
+{
+    title: "FiT: Flexible Vision Transformer for Diffusion Model",
+    authors: "Zeyu Lu, Zidong Wang, Di Huang, Chengyue Wu, Xihui Liu, Wanli Ouyang, Lei Bai",
+    proceedings: "ICML 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2402.12376",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/whlzy/FiT",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "DreamComposer: Controllable 3D Object Generation via Multi-View Conditions",
+    authors: "Yunhan Yang*, Yukun Huang*, Xiaoyang Wu, Yuan-Chen Guo, Song-Hai Zhang, Hengshuang Zhao, Tong He, Xihui Liu",
+    proceedings: "CVPR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2311.17061",
+        },
+        {
+            website: "Project Page",
+            url: "https://yhyang-myron.github.io/DreamComposer/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/yhyang-myron/DreamComposer",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "HumanGaussian: Text-driven 3d Human Generation with Gaussian Splatting",
+    authors: "Xian Liu, Xiaohang Zhan, Jiaxiang Tang, Ying Shan, Gang Zeng, Dahua Lin, Xihui Liu, Ziwei Liu",
+    proceedings: "CVPR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.03611",
+        },
+        {
+            website: "Project Page",
+            url: "https://alvinliu0.github.io/projects/HumanGaussian",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/alvinliu0/HumanGaussian",
+        },
+        {
+            website: "video",
+            url: "https://www.youtube.com/watch?v=S3djzHoqPKY",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "EmbodiedScan: A Holistic Multi-Modal 3D Perception Suite Towards Embodied AI",
+    authors: "Tai Wang*, Xiaohan Mao*, Chenming Zhu*, Runsen Xu, Ruiyuan Lyu, Peisen Li, Xiao Chen, Wenwei Zhang, Kai Chen, Tianfan Xue, Xihui Liu, Cewu Lu, Dahua Lin, Jiangmiao Pang",
+    proceedings: "CVPR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.16170",
+        },
+        {
+            website: "Project Page",
+            url: "https://tai-wang.github.io/embodiedscan/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/OpenRobotLab/EmbodiedScan",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/OpenRobotLab/EmbodiedScan",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+        "Embodied AI",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Point Transformer V3: Simpler, Faster, Stronger",
+    authors: "Xiaoyang Wu, Li Jiang, Peng-Shuai Wang, Zhijian Liu, Xihui Liu, Yu Qiao, Wanli Ouyang, Tong He, Hengshuang Zhao",
+    proceedings: "CVPR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.10035",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/PointTransformerV3",
+        },
+    ],
+    keys: [
+        "2023",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Towards Large-scale 3D Representation Learning with Multi-dataset Point Prompt Training",
+    authors: "Xiaoyang Wu, Zhuotao Tian, Xin Wen, Bohao Peng, Xihui Liu, Kaicheng Yu, Hengshuang Zhao",
+    proceedings: "CVPR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2308.09718",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/Pointcept?tab=readme-ov-file#point-prompt-training-ppt",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+        "Dataset/Benchmark",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "HyperHuman: Hyper-Realistic Human Generation with Latent Structural Diffusion",
+    authors: "Xian Liu, Jian Ren, Aliaksandr Siarohin, Ivan Skorokhodov, Yanyu Li, Dahua Lin, Xihui Liu, Ziwei Liu, Sergey Tulyakov",
+    proceedings: "ICLR 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2310.08579",
+        },
+        {
+            website: "Project Page",
+            url: "https://snap-research.github.io/HyperHuman/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/snap-research/HyperHuman",
+        },
+        {
+            website: "Short video",
+            url: "https://www.youtube.com/watch?v=eRPZW1pwxog",
+        },
+        {
+            website: "Long video",
+            url: "https://www.youtube.com/watch?v=CxGfbwZOcyU",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Shape-Guided Diffusion with Inside-Outside Attention",
+    authors: "Dong Huk Park*, Grace Luo*, Clayton Andrew Toste, Samaneh Azadi, Xihui Liu, Makrine Karalashvili, Anna Rohrbach, Trevor Darrell",
+    proceedings: "WACV 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2212.00210",
+        },
+        {
+            website: "Project Page",
+            url: "https://shape-guided-diffusion.github.io/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/shape-guided-diffusion/shape-guided-diffusion",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Hierarchical Diffusion Autoencoders and Disentangled Image Manipulation",
+    authors: "Zeyu Lu, Chengyue Wu, Xinyuan Chen, Yaohui Wang, Yu Qiao, Xihui Liu",
+    proceedings: "WACV 2024",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2304.11829",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/whlzy/Hierarchical-Diffusion-Autoencoders",
+        },
+    ],
+    keys: [
+        "2024",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Drag-A-Video: Non-rigid Video Editing with Point-based Interaction",
+    authors: "Yao Teng, Enze Xie, Yue Wu, Haoyu Han, Zhenguo Li, Xihui Liu",
+    proceedings: "arXiv 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.02936",
+        },
+        {
+            website: "Project Page",
+            url: "https://drag-a-video.github.io/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/tyshiwo1/drag-a-video",
+        },
+    ],
+    keys: [
+        "2023",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation",
+    authors: "Kaiyi Huang, Kaiyue Sun, Enze Xie, Zhenguo Li, Xihui Liu",
+    proceedings: "NeurIPS 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2307.06350",
+        },
+        {
+            website: "Project Page",
+            url: "https://karine-h.github.io/T2I-CompBench/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Karine-Huang/T2I-CompBench",
+        },
+        {
+            website: "Data",
+            url: "https://connecthkuhk-my.sharepoint.com/personal/huangky_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhuangky%5Fconnect%5Fhku%5Fhk%2FDocuments%2FT2I%2DCompBench&ga=1",
+        },
+        {
+            website: "T2I-CompBench++",
+            url: "https://karine-h.github.io/T2I-CompBench-new/",
+        },
+    ],
+    keys: [
+        "2023",
+        "Dataset/Benchmark",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "OV-PARTS: Towards Open-Vocabulary Part Segmentation",
+    authors: "Meng Wei, Xiaoyu Yue, Wenwei Zhang, Shu Kong, Xihui Liu, Jiangmiao Pang",
+    proceedings: "NeurIPS 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/pdf/2310.05107",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/OpenRobotLab/OV_PARTS",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/OpenRobotLab/OV_PARTS",
+        },
+        {
+            website: "Challenge",
+            url: "https://ov-parts.github.io/",
+        },
+    ],
+    keys: [
+        "2023",
+        "Segmentation",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Seeing is not always believing: A Quantitative Study on Human Perception of AI-Generated Images",
+    authors: "Zeyu Lu*, Di Huang*, Lei Bai*, Jingjing Qu, Chengyue Wu, Xihui Liu, Wanli Ouyang",
+    proceedings: "NeurIPS 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2304.13023",
+        },
+        {
+            website: "Project Page",
+            url: "https://github.com/Inf-imagine/Sentry",
+        },
+        {
+            website: "Data",
+            url: "https://huggingface.co/datasets/InfImagine/FakeImageDataset",
+        },
+    ],
+    keys: [
+        "2023",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "CorresNeRF: Image Correspondence Priors for Neural Radiance Fields",
+    authors: "Yixing Lao, Xiaogang Xu, Zhipeng Cai, Xihui Liu, Hengshuang Zhao",
+    proceedings: "NeurIPS 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2312.06642",
+        },
+        {
+            website: "Project Page",
+            url: "https://yxlao.github.io/corres-nerf/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/yxlao/corres-nerf",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "SAM3D: Segment Anything in 3D Scenes",
+    authors: "Yunhan Yang, Xiaoyang Wu, Tong He, Hengshuang Zhao, Xihui Liu",
+    proceedings: "ICCV Workshop 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2306.03908",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/SegmentAnything3D",
+        },
+    ],
+    keys: [
+        "2023",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Back to the Source: Diffusion-Driven Test-Time Adaptation",
+    authors: "Jin Gao*, Jialing Zhang*, Xihui Liu, Trevor Darrell, Evan Shelhamer, Dequan Wang",
+    proceedings: "CVPR 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2207.03442",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/shiyegao/DDA",
+        },
+    ],
+    keys: [
+        "2022",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Masked Scene Contrast: A Scalable Framework for Unsupervised 3D Representation Learning",
+    authors: "Xiaoyang Wu, Xin Wen, Xihui Liu, Hengshuang Zhao",
+    proceedings: "CVPR 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2303.14191",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/Pointcept?tab=readme-ov-file#masked-scene-contrast-msc",
+        },
+    ],
+    keys: [
+        "2022",
+        "3D Vision",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "GLeaD: Improving GANs with A Generator-Leading Task",
+    authors: "Qingyan Bai, Ceyuan Yang, Yinghao Xu, Xihui Liu, Yujiu Yang, Yujun Shen",
+    proceedings: "CVPR 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2212.03752",
+        },
+        {
+            website: "Project Page",
+            url: "https://ezioby.github.io/glead/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/EzioBy/glead/",
+        },
+    ],
+    keys: [
+        "2022",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "More Control for Free! Image Synthesis with Semantic Diffusion Guidance",
+    authors: "Xihui Liu, Dong Huk Park, Samaneh Azadi, Gong Zhang, Arman Chopikyan, Yuxiao Hu, Humphrey Shi, Anna Rohrbach, Trevor Darrell",
+    proceedings: "WACV 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2112.05744",
+        },
+        {
+            website: "Project Page",
+            url: "https://xh-liu.github.io/sdg/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/xh-liu/SDG_code",
+        },
+    ],
+    keys: [
+        "2023",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "TVTSv2: Learning Out-of-the-box Spatiotemporal Visual Representations at Scale",
+    authors: "Ziyun Zeng, Zhan Tong, Xihui Liu, Bin Chen, Shu-Tao Xia, Yixiao Ge",
+    proceedings: "arXiv 2023",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2305.14173",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/TencentARC/TVTS?tab=readme-ov-file",
+        },
+    ],
+    keys: [
+        "2023",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Point Transformer V2: Grouped Vector Attention and Partition-based Pooling",
+    authors: "Xiaoyang Wu, Yixing Lao, Li Jiang, Xihui Liu, Hengshuang Zhao",
+    proceedings: "NeurIPS 2022",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2210.05666",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Pointcept/PointTransformerV2",
+        },
+    ],
+    keys: [
+        "2022",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "The ArtBench Dataset: Benchmarking Generative Models with Artworks",
+    authors: "Peiyuan Liao*, Xiuyu Li*, Xihui Liu, Kurt Keutzer",
+    proceedings: "arXiv 2022",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2206.11404",
+        },
+        {
+            website: "Project Page",
+            url: "https://github.com/liaopeiyuan/artbench",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/liaopeiyuan/artbench?tab=readme-ov-file#accessing-dataset",
+        },
+    ],
+    keys: [
+        "2022",
+        "Dataset/Benchmark",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Benchmark for Compositional Text-to-Image Synthesis",
+    authors: "Dong Huk Park, Samaneh Azadi, Xihui Liu, Trevor Darrell, Anna Rohrbach",
+    proceedings: "NeurIPS Datasets and Benchmarks 2021",
+    links: [
+        {
+            website: "Paper",
+            url: "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/0a09c8844ba8f0936c20bd791130d6b6-Paper-round1.pdf",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/Seth-Park/comp-t2i-dataset",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/Seth-Park/comp-t2i-dataset",
+        },
+    ],
+    keys: [
+        "2021",
+        "Dataset/Benchmark",
+        "Generative Models",
+        "Multimodal",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Open-Edit: Open-Domain Image Manipulation with Open-Vocabulary Instructions",
+    authors: "Xihui Liu, Zhe Lin, Jianming Zhang, Handong Zhao, Quan Tran, Xiaogang Wang, Hongsheng Li",
+    proceedings: "ECCV 2020",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2008.01576",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/xh-liu/Open-Edit",
+        },
+        {
+            website: "Video",
+            url: "https://www.youtube.com/watch?v=8E3bwvjCHYE",
+        },
+        {
+            website: "Slides",
+            url: "https://drive.google.com/file/d/1m3JKSUotm6sRImak_qjwBMtMtd037XeK/view",
+        },
+    ],
+    keys: [
+        "2020",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Learning to Predict Layout-to-image Conditional Convolutions for Semantic Image Synthesis",
+    authors: "Xihui Liu, Guojun Yin, Jing Shao, Xiaogang Wang, Hongsheng Li",
+    proceedings: "NeurIPS 2019",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1910.06809",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/xh-liu/CC-FPSE",
+        },
+        {
+            website: "Slides",
+            url: "https://drive.google.com/file/d/1ocpgYFmRkG_myEMzWu7uFVx7_adJUD4r/view",
+        },
+    ],
+    keys: [
+        "2019",
+        "Generative Models",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "CAMP: Cross-Modal Adaptive Message Passing for Text-Image Retrieval",
+    authors: "Zihao Wang, Xihui Liu, Hongsheng Li, Lu Sheng, Junjie Yan, Xiaogang Wang, Jing Shao",
+    proceedings: "ICCV 2019",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1909.05506",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/ZihaoWang-CV/CAMP_iccv19",
+        },
+    ],
+    keys: [
+        "2019",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Improving Referring Expression Grounding with Cross-modal Attention-guided Erasing",
+    authors: "Xihui Liu, Zihao Wang, Jing Shao, Xiaogang Wang, Hongsheng Li",
+    proceedings: "CVPR 2019",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1903.00839",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/xh-liu/CM-Erase-REG",
+        },
+    ],
+    keys: [
+        "2019",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data",
+    authors: "Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang",
+    proceedings: "ECCV 2018",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1803.08314",
+        },
+    ],
+    keys: [
+        "2018",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Improving Deep Visual Representation for Person Re-identiﬁcation by Global and Local Image-language Association",
+    authors: "Dapeng Chen, Hongsheng Li, Xihui Liu, Yantao Shen, Jing Shao, Zejian Yuan, Xiaogang Wang",
+    proceedings: "ECCV 2018",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1808.01571",
+        },
+    ],
+    keys: [
+        "2018",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Localization Guided Learning for Pedestrian Attribute Recognition",
+    authors: "Pengze Liu, Xihui Liu, Junjie Yan, Jing Shao",
+    proceedings: "BMVC 2018",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1808.09102",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/lpzjerry/Pedestrian-Attribute-LGNet",
+        },
+    ],
+    keys: [
+        "2018",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "HydraPlus-Net: Attentive Deep Features for Pedestrian Analysis",
+    authors: "Xihui Liu*, Haiyu Zhao*, Maoqing Tian, Lu Sheng, Jing Shao, Shuai Yi, Junjie Yan, Xiaogang Wang",
+    proceedings: "ICCV 2017",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1709.09930",
+        },
+        {
+            website: "Project Page",
+            url: "https://xh-liu.github.io/HydraPlus-Net/",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/xh-liu/HydraPlus-Net",
+        },
+        {
+            website: "Data",
+            url: "https://drive.google.com/drive/folders/0B5_Ra3JsEOyOUlhKM0VPZ1ZWR2M?resourcekey=0-CdctEkdX1j2GSMSWWfrPSQ&usp=sharing",
+        },
+    ],
+    keys: [
+        "2017",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Orientation Invariant Feature Embedding and Spatial Temporal Regularization for Vehicle Re-identification",
+    authors: "Zhongdao Wang*, Luming Tang*, Xihui Liu, Zhuliang Yao, Shuai Yi, Jing Shao, Junjie Yan, Shengjin Wang, Hongsheng Li, Xiaogang Wang",
+    proceedings: "ICCV 2017",
+    links: [
+        {
+            website: "Paper",
+            url: "https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_Orientation_Invariant_Feature_ICCV_2017_paper.pdf",
+        },
+        {
+            website: "Data",
+            url: "https://github.com/Zhongdao/VehicleReIDKeyPointData",
+        },
+    ],
+    keys: [
+        "2017",
+        "Other",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
+  {
+    title: "Object Detection in Videos With Tubelet Proposal Networks",
+    authors: "Kai Kang, Hongsheng Li, Tong Xiao, Wanli Ouyang, Junjie Yan, Xihui Liu, Xiaogang Wang",
+    proceedings: "CVPR 2017",
+    links: [
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/1702.06355",
+        },
+        {
+            website: "Code",
+            url: "https://github.com/myfavouritekk/tpn",
+        },
+        {
+            website: "Winner of ImageNet ILSVRC 2016 Task 3c: Object detection/tracking from video",
+            url: "https://www.image-net.org/challenges/LSVRC/2016/results.php#:~:text=Task%203c%3A%20Object%20detection/tracking%20from%20video%20with%20provided%20training%20data",
+        },
+    ],
+    keys: [
+        "2017",
+        "Detection",
+    ],
+    pis: [
+        "Xihui Liu",
+    ],
+  },
 ];
