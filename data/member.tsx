@@ -35,7 +35,7 @@ export const pis: {
     img: 'https://mmlabassets.github.io/member/xihui_liu_c.jpg',
     img_full: 'https://ik.imagekit.io/mmlab/xihui_liu.jpg',
     title: 'Assistant Professor',
-    bio: "I am an Assistant Professor at the Department of Electrical and Electronic Engineering and Institute of Data Science (IDS), The University of Hong Kong. Before joining HKU, I was a postdoc Scholar at EECS Department and <a href='https://bair.berkeley.edu/' target='_blank'>BAIR</a> at UC Berkeley, advised by Prof. Trevor Darrell. I obtained my Ph.D. degree from <a href='http://mmlab.ie.cuhk.edu.hk/' target='_blank'>Multimedia Lab (MMLab)</a>, Chinese University of Hong Kong, supervised by <a href='http://www.ee.cuhk.edu.hk/~xgwang/' target='_blank'>Prof. Xiaogang Wang</a> and <a href='http://www.ee.cuhk.edu.hk/~hsli/' target='_blank'>Prof. Hongsheng Li</a>. I received bachelor's degree in Electronic Engineering in <a href='http://www.tsinghua.edu.cn/publish/thu2018en/index.html' target='_blank'>Tsinghua University</a>.",
+    bio: "Xihui Liu is an Assistant Professor at the Department of Electrical and Electronic Engineering and Institute of Data Science, The University of Hong Kong. Before joining HKU, she was a Postdoctoral Scholar at UC Berkeley advised by Prof. Trevor Darrell. She obtained her Ph.D. degree from <a href='http://mmlab.ie.cuhk.edu.hk/' target='_blank'>Multimedia Lab (MMLab)</a>, the Chinese University of Hong Kong in 2021, supervised by <a href='http://www.ee.cuhk.edu.hk/~xgwang/' target='_blank'>Professor Xiaogang Wang</a> and <a href='http://www.ee.cuhk.edu.hk/~hsli/' target='_blank'>Professor Hongsheng Li</a>. Before that, she received her bachelor's degree from <a href='http://www.tsinghua.edu.cn/publish/thu2018en/index.html' target='_blank'>Tsinghua University</a> in 2017. Her research interests cover computer vision, machine learning, and artificial intelligence. She is particularly interested in visual synthesis, generative models, and multimodal AI, as well as their applications in other areas such as embodied AI and AI for Science. She was awarded Adobe Research Fellowship 2020, EECS Rising Stars 2021, and World Artificial Intelligence Conference (WAIC) Yunfan Rising Star Award 2022. She serves as area chairs for CVPR 2024, ACM MM 2024, ICLR 2025, CVPR 2025, and NeurIPS 2025.",
     links: [
       {
         icon: 'webpage',
@@ -1006,6 +1006,31 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Yunhan Yang',
+    img: 'https://mmlabassets.github.io/member/yunhan_yang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yhyang-myron.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=1aRD_e8AAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'yhyang.myron@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/yhyang-myron',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Meng Wei',
     img: 'https://mmlabassets.github.io/member/meng_wei_c.jpg',
     title: 'Ph.D. Candidate',
@@ -1022,6 +1047,31 @@ export const members: {
       {
         icon: 'github',
         link: 'https://github.com/kellyiss',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Chenming Zhu',
+    img: 'https://mmlabassets.github.io/member/chenming_zhu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://zcmax.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=QabwS_wAAAAJ&hl=zh-CN',
+      },
+      {
+        icon: 'email',
+        link: 'zcm952742165@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/ZCMax',
       },
     ],
     keys: ['2023'],
