@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
             },
         ],
         dangerouslyAllowSVG: true,
-      },
+    },
 };
 
 export default nextConfig;
