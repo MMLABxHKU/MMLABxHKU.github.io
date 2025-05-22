@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 // import Link from 'next/link'
 
+import { redirect, usePathname } from 'next/navigation'
 
 
 import { FadeIn } from "@/components/animation/fade-in"
@@ -17,6 +18,8 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 export default function NotFound() {
+ 
+    redirect('/')
     return (
         <main>
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-loading">
