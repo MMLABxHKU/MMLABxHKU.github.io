@@ -22,15 +22,6 @@ const nextConfig: NextConfig = {
         ],
         dangerouslyAllowSVG: true,
     },
-    async redirects() {
-        return [
-          {
-            source: '/aboutus',
-            destination: '/about-us',
-            permanent: true,
-          },
-        ]
-      },
 };
 
 export default nextConfig;
