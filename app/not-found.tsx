@@ -1,3 +1,5 @@
+'use client'
+
 import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "404 | MMLab",
@@ -18,8 +20,16 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 export default function NotFound() {
- 
-    redirect('/')
+
+
+
+    const pathname = usePathname()
+    if (pathname.startsWith('/test')) {
+        redirect('/')
+    }
+
+
+
     return (
         <main>
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-loading">
