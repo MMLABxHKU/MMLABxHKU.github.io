@@ -1,5 +1,3 @@
-'use client'
-
 import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "404 | MMLab",
@@ -9,46 +7,12 @@ export const metadata: Metadata = {
 
 
 
-// import Link from 'next/link'
-
-import { redirect, usePathname } from 'next/navigation'
-
-
-import { FadeIn } from "@/components/animation/fade-in"
-
+import NotFound404 from '@/components/ui/404'
 
 
 
 export default function NotFound() {
-
-
-
-    const pathname = usePathname()
-    if (pathname.startsWith('/test')) {
-        redirect('/')
-    }
-
-
-
     return (
-        <main>
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-loading">
-                <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
-                    <FadeIn>
-                        <h1 className="font-bold text-t0 text-white">
-                            404
-                        </h1>
-                    </FadeIn>
-                    <FadeIn>
-                        <h1 className="font-bold text-t0 text-white">
-                            Not Found
-                        </h1>
-                    </FadeIn>
-                    {/* <Link href="/" className='font-bold text-white animated-underline'>
-                        return home
-                    </Link> */}
-                </div>
-            </div>
-        </main>
+        <NotFound404/>
     )
 }
