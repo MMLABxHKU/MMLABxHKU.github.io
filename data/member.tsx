@@ -92,7 +92,7 @@ export const pis: {
     img: 'https://mmlabassets.github.io/member/bo_dai_c.jpg',
     img_full: 'https://ik.imagekit.io/mmlab/bo_dai.jpg',
     title: 'Assistant Professor',
-    bio: 'Dr. Bo Dai is a scientist with Shanghai AI Laboratory, leading a research group on Content Generation and Digitization. Prior to joining Shanghai AI Lab, he worked as a Research Assistant Professor with S-Lab, Nanyang Technological University, Singapore. He was a Postdoctoral Research Fellow in Multimedia Laboratory (MMLab), CUHK. He received his Ph.D. (2014-2018) from Multimedia Laboratory (MMLab) at CUHK, advised by Prof.Dahua Lin. He obtained his B.Eng. (2010-2014) from ACM class of SJTU.',
+    bio: 'Bo Dai is an Assistant Professor in the Musketeers Foundation Institute of Data Science, The University of Hong Kong. He obtained his PhD degree from The Chinese University of Hong Kong, working with Prof. Dahua Lin. His research interests include Generative AI and its interdisciplinary applications in areas covering Embodied AI, Scientific Discovery, Metaverse and Creativity. His representative works include AnimateDiff, a pioneering work and milestone in video generation, as well as a leading research series in city-scale scene reconstruction and rendering such as CityNeRF, GridNeRF, LandMark, and Scaffold-GS. He is an Area Chair of NeurIPS2024 and AAAI 2021.',
     links: [
       {
         icon: 'webpage',
