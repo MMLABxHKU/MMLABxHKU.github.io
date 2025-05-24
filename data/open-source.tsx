@@ -1380,4 +1380,196 @@ export const open_sources: {
     img: "https://mmlabassets.github.io/open-source/PUMA.jpg",
     id: "PUMA",
   },
+  {
+    title: 'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
+    description: 'TokenHSI proposes a unified transformer-based framework for synthesizing physical human-scene interactions by tokenizing tasks. It integrates proprioceptive and task-specific tokens, enabling flexible and generalizable multi-skill learning across diverse human-scene interaction tasks.',
+    tags: ['Human-Scene Interaction', 'Multi-Task Learning'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2503.19901'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://liangpan99.github.io/TokenHSI/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/liangpan99/TokenHSI'
+      }
+    ],
+    keys: ['Project', '2025'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/liangpan99/TokenHSI?style=social',
+    img: 'https://mmlabassets.github.io/open-source/TokenHSI.jpg',
+    id: 'TokenHSI'
+  },
+  {
+    title: 'Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering',
+    description: 'Scaffold-GS organizes sparse 3D Gaussians around structured anchors in space, dynamically predicting rendering attributes based on viewpoint and distance. It improves rendering quality and efficiency through structured anchor growth and pruning strategies.',
+    tags: ['3D Gaussian Rendering', 'View-Adaptivity'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2312.00109'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://city-super.github.io/scaffold-gs/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/city-super/Scaffold-GS'
+      }
+    ],
+    keys: ['Project', '2023', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/city-super/Scaffold-GS?style=social',
+    img: 'https://mmlabassets.github.io/open-source/Scaffold-GS.jpg',
+    id: 'ScaffoldGS'
+  },
+  {
+    title: 'AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning',
+    description: 'AnimateDiff enables animation generation from personalized text-to-image diffusion models by training plug-and-play motion modules. These modules learn transferable motion priors and use MotionLoRA for efficient adaptation without tuning the base models.',
+    tags: ['Text-to-Image', 'Diffusion Animation'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2307.04725'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://animatediff.github.io/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/guoyww/animatediff'
+      }
+    ],
+    keys: ['Project', '2023', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/guoyww/animatediff?style=social',
+    img: 'https://mmlabassets.github.io/open-source/AnimateDiff.jpg',
+    id: 'AnimateDiff'
+  },
+  {
+    title: 'Towards Multi-Layered 3D Garments Animation',
+    description: 'LayersNet models multi-layer garment animation using a dual-layer architecture and rotationally equivariant networks to simulate particle-based cloth dynamics. It introduces a new large-scale dataset and achieves superior realism in cloth simulation.',
+    tags: ['Garment Animation', 'Physics-Based Simulation'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2305.10418'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://mmlab-ntu.github.io/project/layersnet/index.html'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/ftbabi/LayersNet_ICCV2023'
+      }
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/ftbabi/LayersNet_ICCV2023?style=social',
+    img: 'https://mmlabassets.github.io/open-source/LayersNet.jpg',
+    id: 'LayersNet'
+  },
+  {
+    title: 'Cinematic Behavior Transfer via NeRF-based Differentiable Filming',
+    description: 'This work uses differentiable NeRF-based filming to estimate and transfer cinematic behaviors, jointly optimizing camera trajectories and character motion for recreating complex behaviors in new 2D/3D scenes.',
+    tags: ['NeRF', 'Behavior Transfer'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2311.17754'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://virtualfilmstudio.github.io/projects/cinetransfer/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/VirtualFilmStudio/Cinetransfer'
+      }
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/VirtualFilmStudio/Cinetransfer?style=social',
+    img: 'https://mmlabassets.github.io/open-source/CineTransfer.jpg',
+    id: 'CineTransfer'
+  },
+  {
+    title: 'BungeeNeRF: Progressive Neural Radiance Field for Extreme Multi-Scale Scene Rendering',
+    description: 'BungeeNeRF introduces a progressive training scheme that incrementally refines NeRF representations to support extreme multi-scale scene rendering, from city-scale context to high-detail objects.',
+    tags: ['NeRF', 'Multi-Scale Rendering'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2112.05504'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://city-super.github.io/citynerf/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/city-super/BungeeNeRF'
+      }
+    ],
+    keys: ['Project', '2021', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/city-super/BungeeNeRF?style=social',
+    img: 'https://mmlabassets.github.io/open-source/BungeeNeRF.jpg',
+    id: 'BungeeNeRF'
+  },
+  {
+    title: 'Extract Free Dense Labels from CLIP',
+    description: 'MaskCLIP leverages CLIP’s image-language alignment to produce dense segmentation masks without manual labels. MaskCLIP+ extends it via pseudo-label self-training to significantly boost open-vocabulary segmentation performance.',
+    tags: ['CLIP', 'Semantic Segmentation'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2112.01071'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://www.mmlab-ntu.com/project/maskclip/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/chongzhou96/MaskCLIP'
+      }
+    ],
+    keys: ['Project', '2021'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/chongzhou96/MaskCLIP?style=social',
+    img: 'https://mmlabassets.github.io/open-source/MaskCLIP.jpg',
+    id: 'MaskCLIP'
+  },
+  {
+    title: 'EdgeSAM: Prompt-in-the-Loop Distillation for On-Device Deployment of SAM',
+    description: 'EdgeSAM distills the Segment Anything Model (SAM) into a lightweight CNN using a prompt-guided distillation strategy, enabling efficient on-device segmentation at real-time speeds with high accuracy.',
+    tags: ['Model Distillation', 'Image Segmentation'],
+    links: [
+      {
+        website: 'Paper',
+        'url': 'https://arxiv.org/abs/2312.06660'
+      },
+      {
+        website: 'Project Page',
+        'url': 'https://mmlab-ntu.github.io/project/edgesam/'
+      },
+      {
+        website: 'Github',
+        'url': 'https://github.com/chongzhou96/EdgeSAM'
+      }
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/chongzhou96/EdgeSAM?style=social',
+    img: 'https://mmlabassets.github.io/open-source/EdgeSAM.jpg',
+    id: 'EdgeSAM'
+  },
 ];
