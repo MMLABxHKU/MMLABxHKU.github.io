@@ -1126,4 +1126,25 @@ export const members: {
     ],
     keys: ['2024'],
   },
+  {
+    name: 'Chengqi Duan',
+    img: 'https://mmlabassets.github.io/member/chengqi_duan_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      { 
+        icon: 'scholar', 
+        link: 'https://scholar.google.com/citations?user=r9qb4ZwAAAAJ&hl=zh-CN', 
+      },
+      { 
+        icon: 'email', 
+        link: 'duancq24@connect.hku.hk', 
+      },
+      { 
+        icon: 'github', 
+        link: 'https://github.com/gogoduan', 
+      }, 
+    ],
+    keys: ['2024'],
+  },
 ];
