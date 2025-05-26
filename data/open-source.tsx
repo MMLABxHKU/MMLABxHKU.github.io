@@ -1010,32 +1010,32 @@ export const open_sources: {
     title: "HoloPart: Generative 3D Part Amodal Segmentation",
     description: "HoloPart is a novel diffusion-based model that completes partial 3D part segments into full, semantically meaningful parts, even when occluded. It combines local attention for fine-grained geometry and global context attention for shape consistency.",
     tags: [
-      "Generative Model",
-      "3D Vision"
+        "Generative Model",
+        "3D Vision"
     ],
     links: [
-      {
-          website: "Paper",
-          url: "https://arxiv.org/abs/2504.07943",
-      },
-      {
-          website: "Project Page",
-          url: "https://vast-ai-research.github.io/HoloPart/",
-      },
-      {
-          website: "Github",
-          url: "https://github.com/VAST-AI-Research/HoloPart",
-      },
+        {
+            website: "Paper",
+            url: "https://arxiv.org/abs/2504.07943",
+        },
+        {
+            website: "Project Page",
+            url: "https://vast-ai-research.github.io/HoloPart/",
+        },
+        {
+            website: "Github",
+            url: "https://github.com/VAST-AI-Research/HoloPart",
+        },
     ],
-    keys: [
-      "Project", "2025", "Highlight"
+    keys :[
+        "Project", "2025", "Hightlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/VAST-AI-Research/HoloPart?style=social",
-    img: "https://mmlabassets.github.io/open-source/holopart.mp4",
-    id: 'HoloPart',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/holopart.jpg",
+    id: "HoloPart", 
+},
+{
     title: "LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D Capabilities",
     description: "LLaVA-3D is a unified framework that efficiently adapts LLaVA for 3D scene understanding while maintaining 2D capabilities. It enhances 2D CLIP patches with 3D spatial context through position embeddings, enabling direct 3D spatial perception without external segmentors. The model achieves 3.5x faster convergence and state-of-the-art performance across 3D tasks while preserving 2D understanding capabilities.",
     tags: [
@@ -1060,10 +1060,10 @@ export const open_sources: {
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/ZCMax/LLaVA-3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/llava-3D.png",  
-    id: 'LLaVA-3D',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/llava-3D.jpg",  
+    id: "llava-3D", 
+},
+{
     title: "SAMPart3D: Segment Any Part in 3D Objects",
     description: "A scalable zero-shot 3D part segmentation framework that segments 3D objects into semantic parts at multiple granularities without requiring text prompts, enabling applications in robotics, 3D generation, and editing.",
     tags: [
@@ -1084,14 +1084,14 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2024", "Highlight"
+        "Project", "2024", "Hightlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Pointcept/SAMPart3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/SAMPart3D.png",  
-    id: 'SAMPart3D',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/SAMPart3D.jpg",  
+    id: "SAMPart3D", 
+},
+{
     title: "SAM3D: Segment Anything in 3D Scenes",
     description: "SAM3D is a zero-shot framework that leverages SAM to segment 3D point clouds by projecting and merging 2D masks from posed RGB images, achieving fine-grained 3D segmentation without training.",
     tags: [
@@ -1112,14 +1112,14 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2023", "Highlight"
+        "Project", "2023", "Hightlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Pointcept/SAM3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/SAM3D.png",  
-    id: 'SAM3D',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/SAM3D.jpg", 
+    id: "SAM3D", 
+},
+{
     title: "DreamComposer: Controllable 3D Object Generation via Multi-View Conditions",
     description: "DreamComposer is a flexible framework that enhances view-aware diffusion models by injecting multi-view conditions, enabling high-fidelity novel view synthesis and controllable 3D object reconstruction.",
     tags: [
@@ -1145,10 +1145,10 @@ export const open_sources: {
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/yhyang-myron/DreamComposer?style=social",
-    img: "https://mmlabassets.github.io/open-source/DreamComposer.mov",  
-    id: 'DreamComposer',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/DreamComposer.jpg",  
+    id: "DreamComposer",
+},
+{
     title: "T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation",
     description: "T2I-CompBench is a comprehensive benchmark with 6,000 compositional prompts across attribute binding, object relationships, and complex compositions. It includes novel evaluation metrics and GORS, a fine-tuning approach to enhance compositional generation capabilities.",
     tags: [
@@ -1170,14 +1170,14 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2023", "Highlight"
+        "Project", "2023", "Hightlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench?style=social",
-    img: "https://mmlabassets.github.io/open-source/T2I-CompBench.png",  
-    id: 'T2I-CompBench',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/T2I-CompBench.jpg",  
+    id: "T2I-CompBench",
+},
+{
     title: "T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
     description: "T2V-CompBench is the first benchmark for evaluating compositional text-to-video generation, covering 7 categories with 1400 prompts across attribute binding, spatial relationships, motion binding, and more. It provides MLLM-based, detection-based, and tracking-based metrics validated by human evaluation.",
     tags: [
@@ -1202,11 +1202,11 @@ export const open_sources: {
         "Dataset", "2025"
     ],
     pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench?style=social",
-    img: "https://mmlabassets.github.io/open-source/T2I-CompBench.png",  
-    id: 'T2V-CompBench',
-  },
-  {
+    githubstars: "https://img.shields.io/github/stars/KaiyueSun98/T2V-CompBench?style=social",
+    img: "https://mmlabassets.github.io/open-source/T2V-CompBench.jpg",  
+    id: "T2V-CompBench",
+},
+{
     title: "DiM: Diffusion Mamba for Efficient High-Resolution Image Synthesis",
     description: "Diffusion Mamba (DiM) leverages State Space Models (SSM) to create an efficient diffusion model for high-resolution image synthesis, overcoming Transformer limitations through novel 2D adaptations and training strategies.",
     tags: [
@@ -1232,10 +1232,10 @@ export const open_sources: {
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/tyshiwo1/DiM-DiffusionMamba?style=social",
-    img: "https://mmlabassets.github.io/open-source/DiM.png",
-    id: 'DiM',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/DiM.jpg",
+    id: "DiM",
+},
+{
     title: "GameFactory: Creating New Games with Generative Interactive Videos",
     description: "GameFactory is a framework for creating action-controlled, scene-generalizable game videos. It introduces the GF-Minecraft dataset for action controllability, supports autoregressive generation for unlimited-length videos, and leverages pre-trained video diffusion models for scene generalization. A multi-phase training strategy with a domain adapter decouples game style from action control, enabling open-domain, action-controllable game video generation.",
     tags: [
@@ -1261,10 +1261,10 @@ export const open_sources: {
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/KwaiVGI/GameFactory?style=social",
-    img: "https://mmlabassets.github.io/open-source/gamefactory.mov",
-    id: 'GameFactory',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/gamefactory.jpg",
+    id: "gamefactory",
+},
+{
     title: "Parallelized Autoregressive Visual Generation",
     description: "This paper proposes a simple yet effective approach for parallelized autoregressive visual generation that improves generation efficiency while preserving the advantages of autoregressive modeling. By generating distant tokens with weak dependencies in parallel and maintaining sequential generation for strongly dependent local tokens, the method achieves significant speedups (3.6x with comparable quality, up to 9.5x with minimal quality degradation) across image and video generation tasks without modifying the model architecture or tokenizer.",
     tags: [
@@ -1290,10 +1290,10 @@ export const open_sources: {
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Epiphqny/PAR?style=social",
-    img: "https://mmlabassets.github.io/open-source/PAR.png",
-    id: 'PAR',
-  },
-  {
+    img: "https://mmlabassets.github.io/open-source/PAR.jpg",
+    id: "PAR",
+},
+{
     title: "GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation",
     description: "GigaTok addresses the challenge in autoregressive image generation where scaling visual tokenizers improves image reconstruction but degrades generation quality. It proposes semantic regularization to align tokenizer features with a pre-trained visual encoder, managing latent space complexity. Combined with practices like using 1D tokenizers, prioritizing decoder scaling, and employing entropy loss, GigaTok, scaled to 3 billion parameters, achieves state-of-the-art performance in image reconstruction, generation, and representation learning.",
     tags: [
@@ -1321,8 +1321,8 @@ export const open_sources: {
     githubstars: "https://img.shields.io/github/stars/SilentView/GigaTok?style=social",
     img: "https://mmlabassets.github.io/open-source/GigaTok.png",
     id: "GigaTok",
-  },
-  {
+},
+{
     title: "TokenBridge: Bridging Continuous and Discrete Tokens for Autoregressive Visual Generation",
     description: "TokenBridge is a novel framework for autoregressive visual generation that aims to combine the benefits of both discrete and continuous token representations. It addresses the dilemma where discrete tokens are easy to model but lose information, while continuous tokens preserve details but complicate modeling. TokenBridge achieves this by decoupling discretization from tokenizer training. It uses a post-training, dimension-wise quantization strategy to obtain discrete tokens from continuous representations and employs a lightweight autoregressive mechanism to predict them. Experiments show TokenBridge achieves comparable reconstruction and generation quality to continuous methods while using simpler categorical prediction, suggesting a promising direction for high-quality visual generation.",
     tags: [
@@ -1350,8 +1350,8 @@ export const open_sources: {
     githubstars: "https://img.shields.io/github/stars/yuqingwang1029/TokenBridge?style=social",
     img: "https://mmlabassets.github.io/open-source/TokenBridge.png",
     id: "TokenBridge",
-  },
-  {
+},
+{
     title: "PUMA: Empowering Unified MLLM with Multi-granular Visual Generation",
     description: "PUMA is a framework that empowers Unified Multimodal Large Language Models (MLLMs) with multi-granular visual generation. It unifies these visual features as both inputs and outputs, enabling a single MLLM to adeptly handle a variety of image generation tasks with differing granularity requirements.",
     tags: [
@@ -1379,7 +1379,7 @@ export const open_sources: {
     githubstars: "https://img.shields.io/github/stars/rongyaofang/PUMA?style=social",
     img: "https://mmlabassets.github.io/open-source/PUMA.jpg",
     id: "PUMA",
-  },
+},
   {
     title: 'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
     description: 'TokenHSI proposes a unified transformer-based framework for synthesizing physical human-scene interactions by tokenizing tasks. It integrates proprioceptive and task-specific tokens, enabling flexible and generalizable multi-skill learning across diverse human-scene interaction tasks.',
