@@ -1101,4 +1101,29 @@ export const members: {
     ],
     keys: ['2024'],
   },
+  {
+    name: 'Tianwei Xiong',
+    img: 'https://mmlabassets.github.io/member/tianwei_xiong_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      { 
+        icon: 'webpage', 
+        link: 'https://silentview.github.io/', 
+      },
+      { 
+        icon: 'scholar', 
+        link: 'https://scholar.google.com/citations?user=tTMKGSYAAAAJ&hl', 
+      },
+      { 
+        icon: 'email', 
+        link: 'xiongtw20@gmail.com', 
+      },
+      { 
+        icon: 'github', 
+        link: 'https://github.com/SilentView', 
+      }, 
+    ],
+    keys: ['2024'],
+  },
 ];
