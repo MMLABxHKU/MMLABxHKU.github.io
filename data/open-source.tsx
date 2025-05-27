@@ -1422,7 +1422,7 @@ export const open_sources: {
         'url': 'https://github.com/city-super/Scaffold-GS'
       }
     ],
-    keys: ['Project', '2023', 'Highlight'],
+    keys: ['Project', '2024', 'Highlight'],
     pis: ['Bo Dai'],
     githubstars: 'https://img.shields.io/github/stars/city-super/Scaffold-GS?style=social',
     img: 'https://mmlabassets.github.io/open-source/Scaffold-GS.jpg',
@@ -1431,7 +1431,7 @@ export const open_sources: {
   {
     title: 'AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning',
     description: 'AnimateDiff enables animation generation from personalized text-to-image diffusion models by training plug-and-play motion modules. These modules learn transferable motion priors and use MotionLoRA for efficient adaptation without tuning the base models.',
-    tags: ['Text-to-Image', 'Diffusion Animation'],
+    tags: ['Text-to-Video', 'Diffusion Animation'],
     links: [
       {
         website: 'Paper',
@@ -1446,7 +1446,7 @@ export const open_sources: {
         'url': 'https://github.com/guoyww/animatediff'
       }
     ],
-    keys: ['Project', '2023', 'Highlight'],
+    keys: ['Project', '2024', 'Highlight'],
     pis: ['Bo Dai'],
     githubstars: 'https://img.shields.io/github/stars/guoyww/animatediff?style=social',
     img: 'https://mmlabassets.github.io/open-source/AnimateDiff.jpg',
@@ -1494,7 +1494,7 @@ export const open_sources: {
         'url': 'https://github.com/VirtualFilmStudio/Cinetransfer'
       }
     ],
-    keys: ['Project', '2023'],
+    keys: ['Project', '2024'],
     pis: ['Bo Dai'],
     githubstars: 'https://img.shields.io/github/stars/VirtualFilmStudio/Cinetransfer?style=social',
     img: 'https://mmlabassets.github.io/open-source/CineTransfer.jpg',
