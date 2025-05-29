@@ -173,7 +173,7 @@ export default function Home() {
                             </h2>
                             <FadeIn>
                                 <p>
-                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in <b className="text-mred">xxx</b> competitions, workshops, and tutorials, and <b className="text-mred">xxx</b> papers being presented at the main conference.
+                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 8 competitions, workshops, and tutorials, and 19 papers being presented at the main conference.
                                 </p>
                             </FadeIn>
                             <FadeIn>
@@ -449,18 +449,20 @@ export default function Home() {
                                                     <Link href={link.url} target="_blank" className="animated-underline text-mred" key={link.website}>{link.website}</Link>
                                                 ))} 
                                             </CardFooter>
-                                            <CardFooter className="flex flex-row gap-1 text-mgray text-sm justify-end">
-                                                <span>[</span>
-                                                {publication.pis.map((pi, index) => (
-                                                    <div key={pi}>
-                                                        <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
-                                                        {index < publication.pis.length - 1 && (
-                                                            <span className="select-none"> | </span>
-                                                        )}
-                                                    </div>
-                                                ))} 
-                                                <span>]</span>
-                                            </CardFooter>
+                                            {publication.pis.length > 0 && (
+                                                <CardFooter className="flex flex-row gap-1 text-mgray text-sm justify-end">
+                                                    <span>[</span>
+                                                    {publication.pis.map((pi, index) => (
+                                                        <div key={pi}>
+                                                            <Link href={"/about-us/#" + pi.toLowerCase().replace(/ /g, '_')} target="_self" className="animated-underline">{pi}</Link>
+                                                            {index < publication.pis.length - 1 && (
+                                                                <span className="select-none"> | </span>
+                                                            )}
+                                                        </div>
+                                                    ))} 
+                                                    <span>]</span>
+                                                </CardFooter>
+                                            )} 
                                         </div>
                                     </Card>
                                 </FadeIn>
