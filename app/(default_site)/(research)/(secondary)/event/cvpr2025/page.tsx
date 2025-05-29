@@ -234,6 +234,36 @@ export default function Home() {
                                     </div>
                                 </Card>
                             </Link>
+                            <Link href="https://coop-intelligence.github.io/V2X-Sec_MEIS/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardTitle className="text-xl">End-to-End Autonomous Driving through V2X Cooperation</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Haibao Yu</b>, <b>Jiahao Wang</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="http://robotwin-benchmark.github.io/cvpr-2025-challenge" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardTitle className="text-xl">RoboTwin Dual-Arm Collaboration Challenge</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Yao Mu</b>, <b>Tianxing Chen</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
                         </div>
                     </FadeIn>
 
@@ -264,28 +294,11 @@ export default function Home() {
                     </div>
                     <FadeIn>
                         <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
-                            <Link href="https://coop-intelligence.github.io/" target="_blank" className="group">
-                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
-                                    <CardHeader className="p-0">
-                                        <CardDescription>June 12</CardDescription>
-                                        <CardTitle className="text-xl">Multi-Agent Embodied Intelligent Systems Meet Generative-AI Era: Opportunities, Challenges and Futures</CardTitle>
-                                    </CardHeader>
-                                    <CardContent className="p-0 text-mgray">
-                                        <p>
-                                            Organizer: <b>Ping Luo</b>, <b>Haibao Yu</b>, <b>Yao Mu</b>, <b>Li Chen</b>
-                                            <br></br>
-                                            Speaker: <b>Hongyang Li</b>
-                                        </p>
-                                    </CardContent>
-                                    <div className="flex justify-end select-none group-hover:text-mred">
-                                        More&nbsp;{'>'}
-                                    </div>
-                                </Card>
-                            </Link>
+
                             <Link href="https://opendrivelab.com/cvpr2025/workshop/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
-                                        <CardDescription>June 11</CardDescription>
+                                        <CardDescription>June 11 | Grand B1</CardDescription>
                                         <CardTitle className="text-xl">Embodied Intelligence for Autonomous Systems on the Horizon</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
@@ -322,6 +335,24 @@ export default function Home() {
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
                                         <p>
+                                            Speaker: <b>Hongyang Li</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="https://coop-intelligence.github.io/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 12</CardDescription>
+                                        <CardTitle className="text-xl">Multi-Agent Embodied Intelligent Systems Meet Generative-AI Era: Opportunities, Challenges and Futures</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Ping Luo</b>, <b>Haibao Yu</b>, <b>Yao Mu</b>, <b>Li Chen</b>
+                                            <br></br>
                                             Speaker: <b>Hongyang Li</b>
                                         </p>
                                     </CardContent>
@@ -471,7 +502,7 @@ export default function Home() {
                                     <b>Area Chair</b>: Ping Luo, Xihui Liu, Hongyang Li
                                 </li>
                                 <li>
-                                    <b>Reviewer</b>: Li Chen, Chonghao Sima
+                                    <b>Reviewer</b>: Chengyue Wu, Chonghao Sima, Fanqing Meng, Haibao Yu, Jiahao Wang, Jin Wang, Li Chen, Mengzhao Chen, Quanfeng Lu, Runjian Chen, Shilong Zhang, Shoufa Chen, Yao Mu, Yihang Qiu, Yizhuo Li, Zhiheng Liu, Zhixuan Liang
                                 </li>
                             </ul>
                         </div>
