@@ -9643,4 +9643,60 @@ export const publications: {
     keys: ['2017', 'Detection', 'Vision'],
     pis: ['Xihui Liu'],
   },
+  {
+    title: 'RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete',
+    authors:
+      'Yuheng Ji, Huajie Tan, Jiayu Shi, Xiaoshuai Hao, Yuan Zhang, Hengyuan Zhang, Pengwei Wang, Mengdi Zhao, Yao Mu, Pengju An, Xinda Xue, Qinghang Su, Huaihai Lyu, Xiaolong Zheng, Jiaming Liu, Zhongyuan Wang, Shanghang Zhang',
+    proceedings: 'CVPR 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2502.21257',
+      },
+    ],
+    keys: [],
+    pis: [],
+  },
+  {
+    title: 'GraphMimic: Graph-to-Graphs Generative Modeling from Videos for Policy Learning',
+    authors:
+      'Guangyan Chen, Te Cui, Meiling Wang, Yang Chengcai, Mengxiao Hu, Haoyang Lu, Yao Mu, Zicai Peng, Tianxing Zhou, XINRAN JIANG, Yi Yang, Yufeng Yue',
+    proceedings: 'CVPR 2025',
+    links: [
+      {
+        website: 'Page',
+        url: 'https://cvpr.thecvf.com/virtual/2025/poster/34942',
+      },
+    ],
+    keys: [],
+    pis: [],
+  },
+  {
+    title: 'Distilling Monocular Foundation Model for Fine-grained Depth Completion',
+    authors:
+      'Yingping Liang, Yutao Hu, Wenqi Shao, Ying Fu',
+    proceedings: 'CVPR 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2503.16970',
+      },
+    ],
+    keys: [],
+    pis: [],
+  },
+  {
+    title: 'OpenING: A Comprehensive Benchmark for Judging Open-ended Interleaved Image-Text Generation',
+    authors:
+      'Pengfei Zhou, Xiaopeng Peng, Jiajun Song, Chuanhao Li, Zhaopan Xu, Yue Yang, Ziyao Guo, Hao Zhang, Yuqi Lin, Yefei He, Lirui Zhao, Shuo Liu, Tianhua Li, Yuxuan Xie, Xiaojun Chang, Yu Qiao, Wenqi Shao, Kaipeng Zhang',
+    proceedings: 'CVPR 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2411.18499',
+      },
+    ],
+    keys: [],
+    pis: [],
+  },
 ];
