@@ -257,91 +257,7 @@ export default function Home() {
                         
 
                         <div className="flex flex-col gap-6 2xl:col-span-2">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#UniAD">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/odl_uniad.jpg"
-                                        alt="UniAD"
-                                        fill
-                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
-                                        UniAD
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#LlamaGen">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
-                                        alt="LlamaGen"
-                                        fill
-                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
-                                        LlamaGen
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-
-
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#UniVLA">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/odl_univla.jpg"
-                                        alt="UniVLA"
-                                        fill
-                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
-                                        UniVLA
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-
-
-
-                        <div className="flex flex-col gap-6 2xl:col-span-2">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#AgiBot-World">
-                                <div>
-                                    <Image
-                                        src="https://mmlabassets.github.io/open-source/odl_agibotworld.jpg"
-                                        alt="AgiBot World"
-                                        fill
-                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                    />
-                                </div>
-                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
-                                        AgiBot World
-                                    </h3>
-                                </div>
-                            </Link>
-                        </div>
-                        
-
-
-                        <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#Janus">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://github.com/deepseek-ai/Janus">
                                 <div>
                                     <Image
                                         src="https://mmlabassets.github.io/open-source/Janus.jpg"
@@ -351,31 +267,141 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
                                         Janus
                                     </h3>
                                 </div>
                             </Link>
                         </div>
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://peizesun.github.io/llamagen/">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/LlamaGen.png"
+                                        alt="LlamaGen"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        LlamaGen
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
 
 
                         <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="/open-source#DriveLM">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://arxiv.org/abs/2306.03908">
                                 <div>
                                     <Image
-                                        src="https://mmlabassets.github.io/open-source/odl_drivelm.jpg"
-                                        alt="DriveLM"
+                                        src="https://mmlabassets.github.io/open-source/SAM3D.jpg"
+                                        alt="SAM3D"
                                         fill
                                         className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
-                                    <h3 className="text-white font-bold text-t1">
-                                        DriveLM
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        SAM3D
                                     </h3>
                                 </div>
                             </Link>
                         </div>
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://vast-ai-research.github.io/HoloPart/">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/holopart.jpg"
+                                        alt="HoloPart"
+                                        fill
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        HoloPart
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://opendrivelab.com/blog/agibot-world/">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_agibotworld.jpg"
+                                        alt="AgiBot World"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        AgiBot World
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://github.com/OpenDriveLab/UniAD">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/odl_uniad.jpg"
+                                        alt="UniAD"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        UniAD
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
+
+
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://city-super.github.io/scaffold-gs/">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/Scaffold-GS.jpg"
+                                        alt="Scaffold-GS"
+                                        fill
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        Scaffold-GS
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="flex flex-col gap-6 2xl:col-span-2">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://animatediff.github.io/">
+                                <div>
+                                    <Image
+                                        src="https://mmlabassets.github.io/open-source/AnimateDiff.jpg"
+                                        alt="AnimateDiff"
+                                        fill
+                                        className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        AnimateDiff
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
+
 
 
                     </div>
@@ -437,7 +463,7 @@ export default function Home() {
                                         />
                                     </div>
                                     <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">
-                                        <h3 className="text-white font-bold text-t1">
+                                        <h3 className="text-white font-bold text-t1 bg-black/30">
                                             {item.location}
                                         </h3>
                                     </div>

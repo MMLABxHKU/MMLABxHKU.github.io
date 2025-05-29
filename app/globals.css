@@ -163,6 +163,12 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+.color-text-2 {
+    width: fit-content;
+    background-image: linear-gradient(to right, #ee2e69, #ee2e69, #ee2e69);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
 

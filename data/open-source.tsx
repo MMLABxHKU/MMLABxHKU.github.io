@@ -1019,7 +1019,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2504.07943",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://vast-ai-research.github.io/HoloPart/",
         },
         {
@@ -1047,7 +1047,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2409.18125",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://zcmax.github.io/projects/LLaVA-3D/",
         },
         {
@@ -1075,7 +1075,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2411.07184",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://yhyang-myron.github.io/SAMPart3D-website/",
         },
         {
@@ -1103,7 +1103,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2306.03908",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://yhyang-myron.github.io/SAM3D-website/",
         },
         {
@@ -1132,7 +1132,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2312.03611",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://yhyang-myron.github.io/DreamComposer/",
         },
         {
@@ -1161,7 +1161,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2307.06350",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://karine-h.github.io/T2I-CompBench/",
         },
         {
@@ -1190,7 +1190,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2407.14505",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://t2v-compbench.github.io/",
         },
         {
@@ -1219,7 +1219,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2405.14224",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://tyshiwo1.github.io/DiM/",
         },
         {
@@ -1248,7 +1248,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2501.08325",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://vvictoryuki.github.io/gamefactory/",
         },
         {
@@ -1277,7 +1277,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2412.15119",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://yuqingwang1029.github.io/PAR-project/",
         },
         {
@@ -1306,7 +1306,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2504.08736",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://silentview.github.io/GigaTok/",
         },
         {
@@ -1335,7 +1335,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2503.16430",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://yuqingwang1029.github.io/TokenBridge/",
         },
         {
@@ -1364,7 +1364,7 @@ export const open_sources: {
             url: "https://arxiv.org/abs/2410.13861",
         },
         {
-            website: "Project Page",
+            website: "Page",
             url: "https://rongyaofang.github.io/puma/",
         },
         {
@@ -1390,7 +1390,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2503.19901'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://liangpan99.github.io/TokenHSI/'
       },
       {
@@ -1414,7 +1414,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2312.00109'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://city-super.github.io/scaffold-gs/'
       },
       {
@@ -1438,7 +1438,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2307.04725'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://animatediff.github.io/'
       },
       {
@@ -1462,7 +1462,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2305.10418'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://mmlab-ntu.github.io/project/layersnet/index.html'
       },
       {
@@ -1486,7 +1486,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2311.17754'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://virtualfilmstudio.github.io/projects/cinetransfer/'
       },
       {
@@ -1510,7 +1510,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2112.05504'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://city-super.github.io/citynerf/'
       },
       {
@@ -1534,7 +1534,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2112.01071'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://www.mmlab-ntu.com/project/maskclip/'
       },
       {
@@ -1558,7 +1558,7 @@ export const open_sources: {
         'url': 'https://arxiv.org/abs/2312.06660'
       },
       {
-        website: 'Project Page',
+        website: "Page",
         'url': 'https://mmlab-ntu.github.io/project/edgesam/'
       },
       {
