@@ -1028,7 +1028,7 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2025", "Hightlight"
+        "Project", "2025", "Highlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/VAST-AI-Research/HoloPart?style=social",
@@ -1084,7 +1084,7 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2024", "Hightlight"
+        "Project", "2024", "Highlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Pointcept/SAMPart3D?style=social",
@@ -1112,7 +1112,7 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2023", "Hightlight"
+        "Project", "2023", "Highlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Pointcept/SAM3D?style=social",
@@ -1170,7 +1170,7 @@ export const open_sources: {
         },
     ],
     keys :[
-        "Project", "2023", "Hightlight"
+        "Project", "2023", "Highlight"
     ],
     pis: ["Xihui Liu"],
     githubstars: "https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench?style=social",

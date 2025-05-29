@@ -48,7 +48,7 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         links: [
             {
                 subtitle: "Member",
-                href: "/about-us#member",
+                href: "/member",
                 target: "_self",
             },
             {
@@ -64,12 +64,12 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         links: [
             {
                 subtitle: "Publication",
-                href: "/research#publication",
+                href: "/publication",
                 target: "_self",
             },            
             {
                 subtitle: "Open Source",
-                href: "/research#open-source",
+                href: "/open-source",
                 target: "_self",
             },
             {
