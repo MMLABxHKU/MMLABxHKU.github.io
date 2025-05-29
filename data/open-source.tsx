@@ -59,6 +59,31 @@ export const open_sources: {
     id: 'AgiBot-World-Colosseo',
   },
   {
+    title: 'HoloPart: Generative 3D Part Amodal Segmentation',
+    description:
+      'HoloPart is a novel diffusion-based model that completes partial 3D part segments into full, semantically meaningful parts, even when occluded. It combines local attention for fine-grained geometry and global context attention for shape consistency.',
+    tags: ['Generative Model', '3D Vision'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2504.07943',
+      },
+      {
+        website: 'Page',
+        url: 'https://vast-ai-research.github.io/HoloPart/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/VAST-AI-Research/HoloPart',
+      },
+    ],
+    keys: ['Project', '2025', 'Highlight'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/VAST-AI-Research/HoloPart?style=social',
+    img: 'https://mmlabassets.github.io/open-source/holopart.jpg',
+    id: 'HoloPart',
+  },
+  {
     title: 'UniVLA: Learning to Act Anywhere with Task-centric Latent Actions',
     description:
       'UniVLA is a unified vision-language-action framework that enables policy learning across different environments. By deriving task-centric latent actions in an unsupervised manner, UniVLA can leverage data from arbitrary embodiments and perspectives without action labels. After large-scale pretraining from videos, UniVLA develops a cross-embodiment generalist policy that can be readily deployed across various robots by learning an action decoding with minimal cost.',
@@ -78,6 +103,160 @@ export const open_sources: {
     githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/UniVLA?style=social',
     img: 'https://mmlabassets.github.io/open-source/odl_univla.jpg',
     id: 'UniVLA',
+  },
+  {
+    title:
+      'GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation',
+    description:
+      'GigaTok addresses the challenge in autoregressive image generation where scaling visual tokenizers improves image reconstruction but degrades generation quality. It proposes semantic regularization to align tokenizer features with a pre-trained visual encoder, managing latent space complexity. Combined with practices like using 1D tokenizers, prioritizing decoder scaling, and employing entropy loss, GigaTok, scaled to 3 billion parameters, achieves state-of-the-art performance in image reconstruction, generation, and representation learning.',
+    tags: ['Generative Model', 'Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2504.08736',
+      },
+      {
+        website: 'Page',
+        url: 'https://silentview.github.io/GigaTok/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/SilentView/GigaTok',
+      },
+    ],
+    keys: ['Project', '2025'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/SilentView/GigaTok?style=social',
+    img: 'https://mmlabassets.github.io/open-source/GigaTok.png',
+    id: 'GigaTok',
+  },
+  {
+    title: 'PUMA: Empowering Unified MLLM with Multi-granular Visual Generation',
+    description:
+      'PUMA is a framework that empowers Unified Multimodal Large Language Models (MLLMs) with multi-granular visual generation. It unifies these visual features as both inputs and outputs, enabling a single MLLM to adeptly handle a variety of image generation tasks with differing granularity requirements.',
+    tags: ['Generative Model', 'Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2410.13861',
+      },
+      {
+        website: 'Page',
+        url: 'https://rongyaofang.github.io/puma/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/rongyaofang/PUMA',
+      },
+    ],
+    keys: ['Project', '2025'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/rongyaofang/PUMA?style=social',
+    img: 'https://mmlabassets.github.io/open-source/PUMA.jpg',
+    id: 'PUMA',
+  },
+  {
+    title:
+      'TokenBridge: Bridging Continuous and Discrete Tokens for Autoregressive Visual Generation',
+    description:
+      'TokenBridge is a novel framework for autoregressive visual generation that aims to combine the benefits of both discrete and continuous token representations. It addresses the dilemma where discrete tokens are easy to model but lose information, while continuous tokens preserve details but complicate modeling. TokenBridge achieves this by decoupling discretization from tokenizer training. It uses a post-training, dimension-wise quantization strategy to obtain discrete tokens from continuous representations and employs a lightweight autoregressive mechanism to predict them. Experiments show TokenBridge achieves comparable reconstruction and generation quality to continuous methods while using simpler categorical prediction, suggesting a promising direction for high-quality visual generation.',
+    tags: ['Generative Model', 'Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2503.16430',
+      },
+      {
+        website: 'Page',
+        url: 'https://yuqingwang1029.github.io/TokenBridge/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/yuqingwang1029/TokenBridge',
+      },
+    ],
+    keys: ['Project', '2025'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/yuqingwang1029/TokenBridge?style=social',
+    img: 'https://mmlabassets.github.io/open-source/TokenBridge.png',
+    id: 'TokenBridge',
+  },
+  {
+    title:
+      'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
+    description:
+      'TokenHSI proposes a unified transformer-based framework for synthesizing physical human-scene interactions by tokenizing tasks. It integrates proprioceptive and task-specific tokens, enabling flexible and generalizable multi-skill learning across diverse human-scene interaction tasks.',
+    tags: ['Human-Scene Interaction', 'Multi-Task Learning'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2503.19901',
+      },
+      {
+        website: 'Page',
+        url: 'https://liangpan99.github.io/TokenHSI/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/liangpan99/TokenHSI',
+      },
+    ],
+    keys: ['Project', '2025'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/liangpan99/TokenHSI?style=social',
+    img: 'https://mmlabassets.github.io/open-source/TokenHSI.jpg',
+    id: 'TokenHSI',
+  },
+  {
+    title: 'T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation',
+    description:
+      'T2V-CompBench is the first benchmark for evaluating compositional text-to-video generation, covering 7 categories with 1400 prompts across attribute binding, spatial relationships, motion binding, and more. It provides MLLM-based, detection-based, and tracking-based metrics validated by human evaluation.',
+    tags: ['Generative Model', 'Text-to-Video Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2407.14505',
+      },
+      {
+        website: 'Page',
+        url: 'https://t2v-compbench.github.io/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/KaiyueSun98/T2V-CompBench',
+      },
+    ],
+    keys: ['Dataset', '2025'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/KaiyueSun98/T2V-CompBench?style=social',
+    img: 'https://mmlabassets.github.io/open-source/T2V-CompBench.jpg',
+    id: 'T2V-CompBench',
+  },
+  {
+    title:
+      'AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning',
+    description:
+      'AnimateDiff enables animation generation from personalized text-to-image diffusion models by training plug-and-play motion modules. These modules learn transferable motion priors and use MotionLoRA for efficient adaptation without tuning the base models.',
+    tags: ['Text-to-Video', 'Diffusion Animation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2307.04725',
+      },
+      {
+        website: 'Page',
+        url: 'https://animatediff.github.io/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/guoyww/animatediff',
+      },
+    ],
+    keys: ['Project', '2024', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/guoyww/animatediff?style=social',
+    img: 'https://mmlabassets.github.io/open-source/AnimateDiff.jpg',
+    id: 'AnimateDiff',
   },
   {
     title: 'Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation',
@@ -124,6 +303,56 @@ export const open_sources: {
     githubstars: 'https://img.shields.io/github/stars/deepseek-ai/Janus?style=social',
     img: 'https://mmlabassets.github.io/open-source/Janus.jpg',
     id: 'Janus',
+  },
+  {
+    title: 'SAMPart3D: Segment Any Part in 3D Objects',
+    description:
+      'A scalable zero-shot 3D part segmentation framework that segments 3D objects into semantic parts at multiple granularities without requiring text prompts, enabling applications in robotics, 3D generation, and editing.',
+    tags: ['3D Vision'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2411.07184',
+      },
+      {
+        website: 'Page',
+        url: 'https://yhyang-myron.github.io/SAMPart3D-website/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/Pointcept/SAMPart3D',
+      },
+    ],
+    keys: ['Project', '2024', 'Highlight'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/Pointcept/SAMPart3D?style=social',
+    img: 'https://mmlabassets.github.io/open-source/SAMPart3D.jpg',
+    id: 'SAMPart3D',
+  },
+  {
+    title: 'Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering',
+    description:
+      'Scaffold-GS organizes sparse 3D Gaussians around structured anchors in space, dynamically predicting rendering attributes based on viewpoint and distance. It improves rendering quality and efficiency through structured anchor growth and pruning strategies.',
+    tags: ['3D Gaussian Rendering', 'View-Adaptivity'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2312.00109',
+      },
+      {
+        website: 'Page',
+        url: 'https://city-super.github.io/scaffold-gs/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/city-super/Scaffold-GS',
+      },
+    ],
+    keys: ['Project', '2024', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/city-super/Scaffold-GS?style=social',
+    img: 'https://mmlabassets.github.io/open-source/Scaffold-GS.jpg',
+    id: 'ScaffoldGS',
   },
   {
     title:
@@ -228,6 +457,56 @@ export const open_sources: {
     id: 'CLOVER',
   },
   {
+    title: 'Cinematic Behavior Transfer via NeRF-based Differentiable Filming',
+    description:
+      'This work uses differentiable NeRF-based filming to estimate and transfer cinematic behaviors, jointly optimizing camera trajectories and character motion for recreating complex behaviors in new 2D/3D scenes.',
+    tags: ['NeRF', 'Behavior Transfer'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2311.17754',
+      },
+      {
+        website: 'Page',
+        url: 'https://virtualfilmstudio.github.io/projects/cinetransfer/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/VirtualFilmStudio/Cinetransfer',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/VirtualFilmStudio/Cinetransfer?style=social',
+    img: 'https://mmlabassets.github.io/open-source/CineTransfer.jpg',
+    id: 'CineTransfer',
+  },
+  {
+    title: 'DiM: Diffusion Mamba for Efficient High-Resolution Image Synthesis',
+    description:
+      'Diffusion Mamba (DiM) leverages State Space Models (SSM) to create an efficient diffusion model for high-resolution image synthesis, overcoming Transformer limitations through novel 2D adaptations and training strategies.',
+    tags: ['Generative Model', 'Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2405.14224',
+      },
+      {
+        website: 'Page',
+        url: 'https://tyshiwo1.github.io/DiM/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/tyshiwo1/DiM-DiffusionMamba',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/tyshiwo1/DiM-DiffusionMamba?style=social',
+    img: 'https://mmlabassets.github.io/open-source/DiM.jpg',
+    id: 'DiM',
+  },
+  {
     title: 'ELM: Embodied Understanding of Driving Scenarios',
     id: 'ELM',
     description: 'Revive driving scene understanding by delving into the embodiment philosophy.',
@@ -274,6 +553,31 @@ export const open_sources: {
     id: 'E2E-Survey',
   },
   {
+    title: 'GameFactory: Creating New Games with Generative Interactive Videos',
+    description:
+      'GameFactory is a framework for creating action-controlled, scene-generalizable game videos. It introduces the GF-Minecraft dataset for action controllability, supports autoregressive generation for unlimited-length videos, and leverages pre-trained video diffusion models for scene generalization. A multi-phase training strategy with a domain adapter decouples game style from action control, enabling open-domain, action-controllable game video generation.',
+    tags: ['Generative Model', 'Video Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2501.08325',
+      },
+      {
+        website: 'Page',
+        url: 'https://vvictoryuki.github.io/gamefactory/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/KwaiVGI/GameFactory',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/KwaiVGI/GameFactory?style=social',
+    img: 'https://mmlabassets.github.io/open-source/gamefactory.jpg',
+    id: 'gamefactory',
+  },
+  {
     title: 'GenAD: Generalized Predictive Model for Autonomous Driving',
     id: 'GenAD',
     description:
@@ -307,6 +611,31 @@ export const open_sources: {
     img: 'https://mmlabassets.github.io/open-source/odl_genad.jpg',
   },
   {
+    title: 'LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D Capabilities',
+    description:
+      'LLaVA-3D is a unified framework that efficiently adapts LLaVA for 3D scene understanding while maintaining 2D capabilities. It enhances 2D CLIP patches with 3D spatial context through position embeddings, enabling direct 3D spatial perception without external segmentors. The model achieves 3.5x faster convergence and state-of-the-art performance across 3D tasks while preserving 2D understanding capabilities.',
+    tags: ['3D Vision'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2409.18125',
+      },
+      {
+        website: 'Page',
+        url: 'https://zcmax.github.io/projects/LLaVA-3D/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/ZCMax/LLaVA-3D',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/ZCMax/LLaVA-3D?style=social',
+    img: 'https://mmlabassets.github.io/open-source/llava-3D.jpg',
+    id: 'llava-3D',
+  },
+  {
     title: 'MPI: Learning Manipulation by Predicting Interaction',
     id: 'MPI',
     description:
@@ -330,6 +659,31 @@ export const open_sources: {
     pis: ['Hongyang Li', 'Ping Luo'],
     githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/MPI?style=social',
     img: 'https://mmlabassets.github.io/open-source/odl_mpi.jpg',
+  },
+  {
+    title: 'Parallelized Autoregressive Visual Generation',
+    description:
+      'This paper proposes a simple yet effective approach for parallelized autoregressive visual generation that improves generation efficiency while preserving the advantages of autoregressive modeling. By generating distant tokens with weak dependencies in parallel and maintaining sequential generation for strongly dependent local tokens, the method achieves significant speedups (3.6x with comparable quality, up to 9.5x with minimal quality degradation) across image and video generation tasks without modifying the model architecture or tokenizer.',
+    tags: ['Generative Model', 'Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2412.15119',
+      },
+      {
+        website: 'Page',
+        url: 'https://yuqingwang1029.github.io/PAR-project/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/Epiphqny/PAR',
+      },
+    ],
+    keys: ['Project', '2024'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/Epiphqny/PAR?style=social',
+    img: 'https://mmlabassets.github.io/open-source/PAR.jpg',
+    id: 'PAR',
   },
   {
     title:
@@ -447,6 +801,57 @@ export const open_sources: {
     id: 'PixArt',
   },
   {
+    title: 'SAM3D: Segment Anything in 3D Scenes',
+    description:
+      'SAM3D is a zero-shot framework that leverages SAM to segment 3D point clouds by projecting and merging 2D masks from posed RGB images, achieving fine-grained 3D segmentation without training.',
+    tags: ['3D Vision'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2306.03908',
+      },
+      {
+        website: 'Page',
+        url: 'https://yhyang-myron.github.io/SAM3D-website/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/Pointcept/SAM3D',
+      },
+    ],
+    keys: ['Project', '2023', 'Highlight'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/Pointcept/SAM3D?style=social',
+    img: 'https://mmlabassets.github.io/open-source/SAM3D.jpg',
+    id: 'SAM3D',
+  },
+  {
+    title:
+      'T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation',
+    description:
+      'T2I-CompBench is a comprehensive benchmark with 6,000 compositional prompts across attribute binding, object relationships, and complex compositions. It includes novel evaluation metrics and GORS, a fine-tuning approach to enhance compositional generation capabilities.',
+    tags: ['Generative Model', 'Text-to-Image Generation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2307.06350',
+      },
+      {
+        website: 'Page',
+        url: 'https://karine-h.github.io/T2I-CompBench/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/Karine-Huang/T2I-CompBench',
+      },
+    ],
+    keys: ['Project', '2023', 'Highlight'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench?style=social',
+    img: 'https://mmlabassets.github.io/open-source/T2I-CompBench.jpg',
+    id: 'T2I-CompBench',
+  },
+  {
     title: 'UniAD: Planning-oriented Autonomous Driving',
     description:
       'UniAD is a Unified Autonomous Driving algorithm framework following a planning-oriented philosophy. Instead of standalone modular design and multi-task learning, we cast a series of tasks, including perception, prediction and planning tasks hierarchically.',
@@ -476,6 +881,31 @@ export const open_sources: {
     id: 'UniAD',
   },
   {
+    title: 'DreamComposer: Controllable 3D Object Generation via Multi-View Conditions',
+    description:
+      'DreamComposer is a flexible framework that enhances view-aware diffusion models by injecting multi-view conditions, enabling high-fidelity novel view synthesis and controllable 3D object reconstruction.',
+    tags: ['Generative Model', '3D Vision'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2312.03611',
+      },
+      {
+        website: 'Page',
+        url: 'https://yhyang-myron.github.io/DreamComposer/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/yhyang-myron/DreamComposer',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Xihui Liu'],
+    githubstars: 'https://img.shields.io/github/stars/yhyang-myron/DreamComposer?style=social',
+    img: 'https://mmlabassets.github.io/open-source/DreamComposer.jpg',
+    id: 'DreamComposer',
+  },
+  {
     title:
       'DriveAdapter: Breaking the Coupling Barrier of Perception and Planning in End-to-End Autonomous Driving',
     id: 'DriveAdapter',
@@ -495,6 +925,31 @@ export const open_sources: {
     pis: ['Hongyang Li'],
     githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/DriveAdapter?style=social',
     img: 'https://mmlabassets.github.io/open-source/odl_driveadapter.jpg',
+  },
+  {
+    title: 'EdgeSAM: Prompt-in-the-Loop Distillation for On-Device Deployment of SAM',
+    description:
+      'EdgeSAM distills the Segment Anything Model (SAM) into a lightweight CNN using a prompt-guided distillation strategy, enabling efficient on-device segmentation at real-time speeds with high accuracy.',
+    tags: ['Model Distillation', 'Image Segmentation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2312.06660',
+      },
+      {
+        website: 'Page',
+        url: 'https://mmlab-ntu.github.io/project/edgesam/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/chongzhou96/EdgeSAM',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/chongzhou96/EdgeSAM?style=social',
+    img: 'https://mmlabassets.github.io/open-source/EdgeSAM.jpg',
+    id: 'EdgeSAM',
   },
   {
     title: 'EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought',
@@ -634,6 +1089,31 @@ export const open_sources: {
     pis: ['Hongyang Li'],
     githubstars: 'https://img.shields.io/github/stars/OpenDriveLab/ThinkTwice?style=social',
     img: 'https://mmlabassets.github.io/open-source/odl_thinktwice.jpg',
+  },
+  {
+    title: 'Towards Multi-Layered 3D Garments Animation',
+    description:
+      'LayersNet models multi-layer garment animation using a dual-layer architecture and rotationally equivariant networks to simulate particle-based cloth dynamics. It introduces a new large-scale dataset and achieves superior realism in cloth simulation.',
+    tags: ['Garment Animation', 'Physics-Based Simulation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2305.10418',
+      },
+      {
+        website: 'Page',
+        url: 'https://mmlab-ntu.github.io/project/layersnet/index.html',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/ftbabi/LayersNet_ICCV2023',
+      },
+    ],
+    keys: ['Project', '2023'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/ftbabi/LayersNet_ICCV2023?style=social',
+    img: 'https://mmlabassets.github.io/open-source/LayersNet.jpg',
+    id: 'LayersNet',
   },
   {
     title: "Delving into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
@@ -940,6 +1420,56 @@ export const open_sources: {
     id: 'OpenLane',
   },
   {
+    title: 'BungeeNeRF: Progressive Neural Radiance Field for Extreme Multi-Scale Scene Rendering',
+    description:
+      'BungeeNeRF introduces a progressive training scheme that incrementally refines NeRF representations to support extreme multi-scale scene rendering, from city-scale context to high-detail objects.',
+    tags: ['NeRF', 'Multi-Scale Rendering'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2112.05504',
+      },
+      {
+        website: 'Page',
+        url: 'https://city-super.github.io/citynerf/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/city-super/BungeeNeRF',
+      },
+    ],
+    keys: ['Project', '2021', 'Highlight'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/city-super/BungeeNeRF?style=social',
+    img: 'https://mmlabassets.github.io/open-source/BungeeNeRF.jpg',
+    id: 'BungeeNeRF',
+  },
+  {
+    title: 'Extract Free Dense Labels from CLIP',
+    description:
+      'MaskCLIP leverages CLIP’s image-language alignment to produce dense segmentation masks without manual labels. MaskCLIP+ extends it via pseudo-label self-training to significantly boost open-vocabulary segmentation performance.',
+    tags: ['CLIP', 'Semantic Segmentation'],
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2112.01071',
+      },
+      {
+        website: 'Page',
+        url: 'https://www.mmlab-ntu.com/project/maskclip/',
+      },
+      {
+        website: 'Github',
+        url: 'https://github.com/chongzhou96/MaskCLIP',
+      },
+    ],
+    keys: ['Project', '2021'],
+    pis: ['Bo Dai'],
+    githubstars: 'https://img.shields.io/github/stars/chongzhou96/MaskCLIP?style=social',
+    img: 'https://mmlabassets.github.io/open-source/MaskCLIP.jpg',
+    id: 'MaskCLIP',
+  },
+  {
     title:
       'Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions',
     description:
@@ -1005,571 +1535,5 @@ export const open_sources: {
     githubstars: 'https://img.shields.io/github/stars/PeizeSun/SparseR-CNN?style=social',
     img: 'https://mmlabassets.github.io/open-source/SparseRCNN.jpg',
     id: 'Sparse',
-  },
-  {
-    title: "HoloPart: Generative 3D Part Amodal Segmentation",
-    description: "HoloPart is a novel diffusion-based model that completes partial 3D part segments into full, semantically meaningful parts, even when occluded. It combines local attention for fine-grained geometry and global context attention for shape consistency.",
-    tags: [
-        "Generative Model",
-        "3D Vision"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2504.07943",
-        },
-        {
-            website: "Page",
-            url: "https://vast-ai-research.github.io/HoloPart/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/VAST-AI-Research/HoloPart",
-        },
-    ],
-    keys :[
-        "Project", "2025", "Highlight"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/VAST-AI-Research/HoloPart?style=social",
-    img: "https://mmlabassets.github.io/open-source/holopart.jpg",
-    id: "HoloPart", 
-},
-{
-    title: "LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D Capabilities",
-    description: "LLaVA-3D is a unified framework that efficiently adapts LLaVA for 3D scene understanding while maintaining 2D capabilities. It enhances 2D CLIP patches with 3D spatial context through position embeddings, enabling direct 3D spatial perception without external segmentors. The model achieves 3.5x faster convergence and state-of-the-art performance across 3D tasks while preserving 2D understanding capabilities.",
-    tags: [
-        "3D Vision"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2409.18125",
-        },
-        {
-            website: "Page",
-            url: "https://zcmax.github.io/projects/LLaVA-3D/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/ZCMax/LLaVA-3D",
-        },
-    ],
-    keys :[
-        "Project", "2024"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/ZCMax/LLaVA-3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/llava-3D.jpg",  
-    id: "llava-3D", 
-},
-{
-    title: "SAMPart3D: Segment Any Part in 3D Objects",
-    description: "A scalable zero-shot 3D part segmentation framework that segments 3D objects into semantic parts at multiple granularities without requiring text prompts, enabling applications in robotics, 3D generation, and editing.",
-    tags: [
-        "3D Vision"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2411.07184",
-        },
-        {
-            website: "Page",
-            url: "https://yhyang-myron.github.io/SAMPart3D-website/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/Pointcept/SAMPart3D",
-        },
-    ],
-    keys :[
-        "Project", "2024", "Highlight"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/Pointcept/SAMPart3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/SAMPart3D.jpg",  
-    id: "SAMPart3D", 
-},
-{
-    title: "SAM3D: Segment Anything in 3D Scenes",
-    description: "SAM3D is a zero-shot framework that leverages SAM to segment 3D point clouds by projecting and merging 2D masks from posed RGB images, achieving fine-grained 3D segmentation without training.",
-    tags: [
-        "3D Vision"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2306.03908",
-        },
-        {
-            website: "Page",
-            url: "https://yhyang-myron.github.io/SAM3D-website/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/Pointcept/SAM3D",
-        },
-    ],
-    keys :[
-        "Project", "2023", "Highlight"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/Pointcept/SAM3D?style=social",
-    img: "https://mmlabassets.github.io/open-source/SAM3D.jpg", 
-    id: "SAM3D", 
-},
-{
-    title: "DreamComposer: Controllable 3D Object Generation via Multi-View Conditions",
-    description: "DreamComposer is a flexible framework that enhances view-aware diffusion models by injecting multi-view conditions, enabling high-fidelity novel view synthesis and controllable 3D object reconstruction.",
-    tags: [
-        "Generative Model",
-        "3D Vision"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2312.03611",
-        },
-        {
-            website: "Page",
-            url: "https://yhyang-myron.github.io/DreamComposer/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/yhyang-myron/DreamComposer",
-        },
-    ],
-    keys :[
-        "Project", "2023"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/yhyang-myron/DreamComposer?style=social",
-    img: "https://mmlabassets.github.io/open-source/DreamComposer.jpg",  
-    id: "DreamComposer",
-},
-{
-    title: "T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation",
-    description: "T2I-CompBench is a comprehensive benchmark with 6,000 compositional prompts across attribute binding, object relationships, and complex compositions. It includes novel evaluation metrics and GORS, a fine-tuning approach to enhance compositional generation capabilities.",
-    tags: [
-        "Generative Model",
-        "Text-to-Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2307.06350",
-        },
-        {
-            website: "Page",
-            url: "https://karine-h.github.io/T2I-CompBench/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/Karine-Huang/T2I-CompBench",
-        },
-    ],
-    keys :[
-        "Project", "2023", "Highlight"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/Karine-Huang/T2I-CompBench?style=social",
-    img: "https://mmlabassets.github.io/open-source/T2I-CompBench.jpg",  
-    id: "T2I-CompBench",
-},
-{
-    title: "T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
-    description: "T2V-CompBench is the first benchmark for evaluating compositional text-to-video generation, covering 7 categories with 1400 prompts across attribute binding, spatial relationships, motion binding, and more. It provides MLLM-based, detection-based, and tracking-based metrics validated by human evaluation.",
-    tags: [
-        "Generative Model",
-        "Text-to-Video Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2407.14505",
-        },
-        {
-            website: "Page",
-            url: "https://t2v-compbench.github.io/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/KaiyueSun98/T2V-CompBench",
-        },
-    ],
-    keys :[
-        "Dataset", "2025"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/KaiyueSun98/T2V-CompBench?style=social",
-    img: "https://mmlabassets.github.io/open-source/T2V-CompBench.jpg",  
-    id: "T2V-CompBench",
-},
-{
-    title: "DiM: Diffusion Mamba for Efficient High-Resolution Image Synthesis",
-    description: "Diffusion Mamba (DiM) leverages State Space Models (SSM) to create an efficient diffusion model for high-resolution image synthesis, overcoming Transformer limitations through novel 2D adaptations and training strategies.",
-    tags: [
-        "Generative Model",
-        "Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2405.14224",
-        },
-        {
-            website: "Page",
-            url: "https://tyshiwo1.github.io/DiM/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/tyshiwo1/DiM-DiffusionMamba",
-        },
-    ],
-    keys :[
-        "Project", "2024"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/tyshiwo1/DiM-DiffusionMamba?style=social",
-    img: "https://mmlabassets.github.io/open-source/DiM.jpg",
-    id: "DiM",
-},
-{
-    title: "GameFactory: Creating New Games with Generative Interactive Videos",
-    description: "GameFactory is a framework for creating action-controlled, scene-generalizable game videos. It introduces the GF-Minecraft dataset for action controllability, supports autoregressive generation for unlimited-length videos, and leverages pre-trained video diffusion models for scene generalization. A multi-phase training strategy with a domain adapter decouples game style from action control, enabling open-domain, action-controllable game video generation.",
-    tags: [
-        "Generative Model",
-        "Video Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2501.08325",
-        },
-        {
-            website: "Page",
-            url: "https://vvictoryuki.github.io/gamefactory/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/KwaiVGI/GameFactory",
-        },
-    ],
-    keys :[
-        "Project", "2024"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/KwaiVGI/GameFactory?style=social",
-    img: "https://mmlabassets.github.io/open-source/gamefactory.jpg",
-    id: "gamefactory",
-},
-{
-    title: "Parallelized Autoregressive Visual Generation",
-    description: "This paper proposes a simple yet effective approach for parallelized autoregressive visual generation that improves generation efficiency while preserving the advantages of autoregressive modeling. By generating distant tokens with weak dependencies in parallel and maintaining sequential generation for strongly dependent local tokens, the method achieves significant speedups (3.6x with comparable quality, up to 9.5x with minimal quality degradation) across image and video generation tasks without modifying the model architecture or tokenizer.",
-    tags: [
-        "Generative Model",
-        "Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2412.15119",
-        },
-        {
-            website: "Page",
-            url: "https://yuqingwang1029.github.io/PAR-project/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/Epiphqny/PAR",
-        },
-    ],
-    keys :[
-        "Project", "2024"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/Epiphqny/PAR?style=social",
-    img: "https://mmlabassets.github.io/open-source/PAR.jpg",
-    id: "PAR",
-},
-{
-    title: "GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation",
-    description: "GigaTok addresses the challenge in autoregressive image generation where scaling visual tokenizers improves image reconstruction but degrades generation quality. It proposes semantic regularization to align tokenizer features with a pre-trained visual encoder, managing latent space complexity. Combined with practices like using 1D tokenizers, prioritizing decoder scaling, and employing entropy loss, GigaTok, scaled to 3 billion parameters, achieves state-of-the-art performance in image reconstruction, generation, and representation learning.",
-    tags: [
-        "Generative Model",
-        "Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2504.08736",
-        },
-        {
-            website: "Page",
-            url: "https://silentview.github.io/GigaTok/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/SilentView/GigaTok",
-        },
-    ],
-    keys :[
-        "Project", "2025"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/SilentView/GigaTok?style=social",
-    img: "https://mmlabassets.github.io/open-source/GigaTok.png",
-    id: "GigaTok",
-},
-{
-    title: "TokenBridge: Bridging Continuous and Discrete Tokens for Autoregressive Visual Generation",
-    description: "TokenBridge is a novel framework for autoregressive visual generation that aims to combine the benefits of both discrete and continuous token representations. It addresses the dilemma where discrete tokens are easy to model but lose information, while continuous tokens preserve details but complicate modeling. TokenBridge achieves this by decoupling discretization from tokenizer training. It uses a post-training, dimension-wise quantization strategy to obtain discrete tokens from continuous representations and employs a lightweight autoregressive mechanism to predict them. Experiments show TokenBridge achieves comparable reconstruction and generation quality to continuous methods while using simpler categorical prediction, suggesting a promising direction for high-quality visual generation.",
-    tags: [
-        "Generative Model",
-        "Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2503.16430",
-        },
-        {
-            website: "Page",
-            url: "https://yuqingwang1029.github.io/TokenBridge/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/yuqingwang1029/TokenBridge",
-        },
-    ],
-    keys :[
-        "Project", "2025"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/yuqingwang1029/TokenBridge?style=social",
-    img: "https://mmlabassets.github.io/open-source/TokenBridge.png",
-    id: "TokenBridge",
-},
-{
-    title: "PUMA: Empowering Unified MLLM with Multi-granular Visual Generation",
-    description: "PUMA is a framework that empowers Unified Multimodal Large Language Models (MLLMs) with multi-granular visual generation. It unifies these visual features as both inputs and outputs, enabling a single MLLM to adeptly handle a variety of image generation tasks with differing granularity requirements.",
-    tags: [
-        "Generative Model",
-        "Image Generation"
-    ],
-    links: [
-        {
-            website: "Paper",
-            url: "https://arxiv.org/abs/2410.13861",
-        },
-        {
-            website: "Page",
-            url: "https://rongyaofang.github.io/puma/",
-        },
-        {
-            website: "Github",
-            url: "https://github.com/rongyaofang/PUMA",
-        },
-    ],
-    keys :[
-        "Project", "2025"
-    ],
-    pis: ["Xihui Liu"],
-    githubstars: "https://img.shields.io/github/stars/rongyaofang/PUMA?style=social",
-    img: "https://mmlabassets.github.io/open-source/PUMA.jpg",
-    id: "PUMA",
-},
-  {
-    title: 'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
-    description: 'TokenHSI proposes a unified transformer-based framework for synthesizing physical human-scene interactions by tokenizing tasks. It integrates proprioceptive and task-specific tokens, enabling flexible and generalizable multi-skill learning across diverse human-scene interaction tasks.',
-    tags: ['Human-Scene Interaction', 'Multi-Task Learning'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2503.19901'
-      },
-      {
-        website: "Page",
-        'url': 'https://liangpan99.github.io/TokenHSI/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/liangpan99/TokenHSI'
-      }
-    ],
-    keys: ['Project', '2025'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/liangpan99/TokenHSI?style=social',
-    img: 'https://mmlabassets.github.io/open-source/TokenHSI.jpg',
-    id: 'TokenHSI'
-  },
-  {
-    title: 'Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering',
-    description: 'Scaffold-GS organizes sparse 3D Gaussians around structured anchors in space, dynamically predicting rendering attributes based on viewpoint and distance. It improves rendering quality and efficiency through structured anchor growth and pruning strategies.',
-    tags: ['3D Gaussian Rendering', 'View-Adaptivity'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2312.00109'
-      },
-      {
-        website: "Page",
-        'url': 'https://city-super.github.io/scaffold-gs/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/city-super/Scaffold-GS'
-      }
-    ],
-    keys: ['Project', '2024', 'Highlight'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/city-super/Scaffold-GS?style=social',
-    img: 'https://mmlabassets.github.io/open-source/Scaffold-GS.jpg',
-    id: 'ScaffoldGS'
-  },
-  {
-    title: 'AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning',
-    description: 'AnimateDiff enables animation generation from personalized text-to-image diffusion models by training plug-and-play motion modules. These modules learn transferable motion priors and use MotionLoRA for efficient adaptation without tuning the base models.',
-    tags: ['Text-to-Video', 'Diffusion Animation'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2307.04725'
-      },
-      {
-        website: "Page",
-        'url': 'https://animatediff.github.io/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/guoyww/animatediff'
-      }
-    ],
-    keys: ['Project', '2024', 'Highlight'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/guoyww/animatediff?style=social',
-    img: 'https://mmlabassets.github.io/open-source/AnimateDiff.jpg',
-    id: 'AnimateDiff'
-  },
-  {
-    title: 'Towards Multi-Layered 3D Garments Animation',
-    description: 'LayersNet models multi-layer garment animation using a dual-layer architecture and rotationally equivariant networks to simulate particle-based cloth dynamics. It introduces a new large-scale dataset and achieves superior realism in cloth simulation.',
-    tags: ['Garment Animation', 'Physics-Based Simulation'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2305.10418'
-      },
-      {
-        website: "Page",
-        'url': 'https://mmlab-ntu.github.io/project/layersnet/index.html'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/ftbabi/LayersNet_ICCV2023'
-      }
-    ],
-    keys: ['Project', '2023'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/ftbabi/LayersNet_ICCV2023?style=social',
-    img: 'https://mmlabassets.github.io/open-source/LayersNet.jpg',
-    id: 'LayersNet'
-  },
-  {
-    title: 'Cinematic Behavior Transfer via NeRF-based Differentiable Filming',
-    description: 'This work uses differentiable NeRF-based filming to estimate and transfer cinematic behaviors, jointly optimizing camera trajectories and character motion for recreating complex behaviors in new 2D/3D scenes.',
-    tags: ['NeRF', 'Behavior Transfer'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2311.17754'
-      },
-      {
-        website: "Page",
-        'url': 'https://virtualfilmstudio.github.io/projects/cinetransfer/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/VirtualFilmStudio/Cinetransfer'
-      }
-    ],
-    keys: ['Project', '2024'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/VirtualFilmStudio/Cinetransfer?style=social',
-    img: 'https://mmlabassets.github.io/open-source/CineTransfer.jpg',
-    id: 'CineTransfer'
-  },
-  {
-    title: 'BungeeNeRF: Progressive Neural Radiance Field for Extreme Multi-Scale Scene Rendering',
-    description: 'BungeeNeRF introduces a progressive training scheme that incrementally refines NeRF representations to support extreme multi-scale scene rendering, from city-scale context to high-detail objects.',
-    tags: ['NeRF', 'Multi-Scale Rendering'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2112.05504'
-      },
-      {
-        website: "Page",
-        'url': 'https://city-super.github.io/citynerf/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/city-super/BungeeNeRF'
-      }
-    ],
-    keys: ['Project', '2021', 'Highlight'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/city-super/BungeeNeRF?style=social',
-    img: 'https://mmlabassets.github.io/open-source/BungeeNeRF.jpg',
-    id: 'BungeeNeRF'
-  },
-  {
-    title: 'Extract Free Dense Labels from CLIP',
-    description: 'MaskCLIP leverages CLIP’s image-language alignment to produce dense segmentation masks without manual labels. MaskCLIP+ extends it via pseudo-label self-training to significantly boost open-vocabulary segmentation performance.',
-    tags: ['CLIP', 'Semantic Segmentation'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2112.01071'
-      },
-      {
-        website: "Page",
-        'url': 'https://www.mmlab-ntu.com/project/maskclip/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/chongzhou96/MaskCLIP'
-      }
-    ],
-    keys: ['Project', '2021'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/chongzhou96/MaskCLIP?style=social',
-    img: 'https://mmlabassets.github.io/open-source/MaskCLIP.jpg',
-    id: 'MaskCLIP'
-  },
-  {
-    title: 'EdgeSAM: Prompt-in-the-Loop Distillation for On-Device Deployment of SAM',
-    description: 'EdgeSAM distills the Segment Anything Model (SAM) into a lightweight CNN using a prompt-guided distillation strategy, enabling efficient on-device segmentation at real-time speeds with high accuracy.',
-    tags: ['Model Distillation', 'Image Segmentation'],
-    links: [
-      {
-        website: 'Paper',
-        'url': 'https://arxiv.org/abs/2312.06660'
-      },
-      {
-        website: "Page",
-        'url': 'https://mmlab-ntu.github.io/project/edgesam/'
-      },
-      {
-        website: 'Github',
-        'url': 'https://github.com/chongzhou96/EdgeSAM'
-      }
-    ],
-    keys: ['Project', '2023'],
-    pis: ['Bo Dai'],
-    githubstars: 'https://img.shields.io/github/stars/chongzhou96/EdgeSAM?style=social',
-    img: 'https://mmlabassets.github.io/open-source/EdgeSAM.jpg',
-    id: 'EdgeSAM'
   },
 ];

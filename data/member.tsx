@@ -282,6 +282,27 @@ export const members: {
     keys: ['2025'],
   },
   {
+    name: 'Chengqi Duan',
+    img: 'https://mmlabassets.github.io/member/chengqi_duan_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=r9qb4ZwAAAAJ&hl=zh-CN',
+      },
+      {
+        icon: 'email',
+        link: 'duancq24@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/gogoduan',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
     name: 'Jielin Li',
     img: 'https://mmlabassets.github.io/member/jielin_li_c.jpg',
     title: 'Ph.D. Candidate',
@@ -290,6 +311,31 @@ export const members: {
       {
         icon: 'scholar',
         link: 'https://scholar.google.com/citations?user=z2Tbc6MAAAAJ&hl=zh-CN',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Jiwen Yu',
+    img: 'https://mmlabassets.github.io/member/jiwen_yu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yujiwen.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'yujiwen.hk@connect.hku.hk',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/yujiwen',
       },
     ],
     keys: ['2024'],
@@ -337,6 +383,31 @@ export const members: {
       {
         icon: 'webpage',
         link: 'https://violinarthur.github.io/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Tianwei Xiong',
+    img: 'https://mmlabassets.github.io/member/tianwei_xiong_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://silentview.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=tTMKGSYAAAAJ&hl',
+      },
+      {
+        icon: 'email',
+        link: 'xiongtw20@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/SilentView',
       },
     ],
     keys: ['2024'],
@@ -454,6 +525,31 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Chenming Zhu',
+    img: 'https://mmlabassets.github.io/member/chenming_zhu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://zcmax.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=QabwS_wAAAAJ&hl=zh-CN',
+      },
+      {
+        icon: 'email',
+        link: 'zcm952742165@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/ZCMax',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Chonghao Sima',
     img: 'https://mmlabassets.github.io/member/chonghao_sima_c.jpg',
     title: 'Ph.D. Candidate',
@@ -530,6 +626,27 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Meng Wei',
+    img: 'https://mmlabassets.github.io/member/meng_wei_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=Wx8ChLcAAAAJ&hl=en',
+      },
+      {
+        icon: 'email',
+        link: 'kellymeng0427@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/kellyiss',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Mengkang Hu',
     img: 'https://mmlabassets.github.io/member/mengkang_hu_c.jpeg',
     title: 'Ph.D. Candidate',
@@ -556,6 +673,31 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Yao Teng',
+    img: 'https://mmlabassets.github.io/member/yao_teng_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://tyshiwo1.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=eLIsViIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'tengyao19980325@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/tyshiwo1',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Yuheng Lei',
     img: 'https://mmlabassets.github.io/member/yuheng_lei_c.jpeg',
     title: 'Ph.D. Candidate',
@@ -564,6 +706,31 @@ export const members: {
       {
         icon: 'webpage',
         link: 'https://sites.google.com/view/yuhenglei',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Yunhan Yang',
+    img: 'https://mmlabassets.github.io/member/yunhan_yang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yhyang-myron.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=1aRD_e8AAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'yhyang.myron@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/yhyang-myron',
       },
     ],
     keys: ['2023'],
@@ -979,172 +1146,5 @@ export const members: {
       },
     ],
     keys: ['2017', '2021', 'Alumni'],
-  },
-  {
-    name: 'Yao Teng',
-    img: 'https://mmlabassets.github.io/member/yao_teng_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://tyshiwo1.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=eLIsViIAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'tengyao19980325@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/tyshiwo1',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Yunhan Yang',
-    img: 'https://mmlabassets.github.io/member/yunhan_yang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yhyang-myron.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=1aRD_e8AAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'yhyang.myron@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/yhyang-myron',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Meng Wei',
-    img: 'https://mmlabassets.github.io/member/meng_wei_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=Wx8ChLcAAAAJ&hl=en',
-      },
-      {
-        icon: 'email',
-        link: 'kellymeng0427@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/kellyiss',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Chenming Zhu',
-    img: 'https://mmlabassets.github.io/member/chenming_zhu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://zcmax.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=QabwS_wAAAAJ&hl=zh-CN',
-      },
-      {
-        icon: 'email',
-        link: 'zcm952742165@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/ZCMax',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Jiwen Yu',
-    img: 'https://mmlabassets.github.io/member/jiwen_yu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yujiwen.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com.hk/citations?user=uoRPLHIAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'yujiwen.hk@connect.hku.hk',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/yujiwen',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Tianwei Xiong',
-    img: 'https://mmlabassets.github.io/member/tianwei_xiong_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      { 
-        icon: 'webpage', 
-        link: 'https://silentview.github.io/', 
-      },
-      { 
-        icon: 'scholar', 
-        link: 'https://scholar.google.com/citations?user=tTMKGSYAAAAJ&hl', 
-      },
-      { 
-        icon: 'email', 
-        link: 'xiongtw20@gmail.com', 
-      },
-      { 
-        icon: 'github', 
-        link: 'https://github.com/SilentView', 
-      }, 
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Chengqi Duan',
-    img: 'https://mmlabassets.github.io/member/chengqi_duan_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      { 
-        icon: 'scholar', 
-        link: 'https://scholar.google.com/citations?user=r9qb4ZwAAAAJ&hl=zh-CN', 
-      },
-      { 
-        icon: 'email', 
-        link: 'duancq24@connect.hku.hk', 
-      },
-      { 
-        icon: 'github', 
-        link: 'https://github.com/gogoduan', 
-      }, 
-    ],
-    keys: ['2024'],
   },
 ];
