@@ -77,7 +77,7 @@ export const publications: {
   },
   {
     title:
-      'BEVFormer: Learning Bird’s-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers',
+      "BEVFormer: Learning Bird's-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers",
     authors:
       'Zhiqi Li, Wenhai Wang, Hongyang Li, Enze Xie, Chonghao Sima, Tong Lu, Yu Qiao, Jifeng Dai',
     proceedings: 'TPAMI 2025',
@@ -138,7 +138,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2501.08325',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://vvictoryuki.github.io/gamefactory/',
       },
       {
@@ -164,7 +164,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2504.08736',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://silentview.github.io/GigaTok/',
       },
       {
@@ -186,7 +186,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2504.07943',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://vast-ai-research.github.io/HoloPart/',
       },
       {
@@ -247,7 +247,7 @@ export const publications: {
         url: 'https://ieeexplore.ieee.org/document/10847875',
       },
       {
-        website: 'Project page',
+        website: 'Page',
         url: 'https://karine-h.github.io/T2I-CompBench-new/',
       },
       {
@@ -269,7 +269,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2503.16430',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://yuqingwang1029.github.io/TokenBridge/',
       },
       {
@@ -301,7 +301,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2410.18072',
       },
       {
-        website: 'Project page',
+        website: 'Page',
         url: 'https://iranqin.github.io/WorldSimBench.github.io/',
       },
     ],
@@ -330,7 +330,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2405.20674',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://aejion.github.io/4diffusion/',
       },
       {
@@ -352,7 +352,7 @@ export const publications: {
         url: 'hhttps://proceedings.neurips.cc/paper_files/paper/2024/file/a8ea503d91320fcfe12cba61c8a6d285-Paper-Datasets_and_Benchmarks_Track.pdf',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://silentview.github.io/LVD-2M/',
       },
       {
@@ -435,7 +435,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2403.13807',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://github.com/SilentView/EMCID/',
       },
       {
@@ -457,7 +457,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2312.06722',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://chenyi99.github.io/ego_plan/',
       },
       {
@@ -471,10 +471,6 @@ export const publications: {
       {
         website: 'Data',
         url: 'https://drive.google.com/drive/folders/1qVtPzhHmCgdQ5JlMeAL3OZtvbHaXktTo',
-      },
-      {
-        website: 'Leaderboard',
-        url: 'https://huggingface.co/spaces/ChenYi99/EgoPlan-Bench_Leaderboard',
       },
     ],
     keys: ['2024', 'Dataset/Benchmark', 'Multimodality'],
@@ -503,7 +499,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2407.01525',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://zcmax.github.io/projects/ScanReason/',
       },
       {
@@ -579,7 +575,7 @@ export const publications: {
         url: 'https://proceedings.neurips.cc/paper_files/paper/2024/file/e7c786024ca718f2487712bfe9f51030-Paper-Conference.pdf',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://zhenyuw16.github.io/GenArtist_page/',
       },
       {
@@ -600,7 +596,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2412.04440',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://karine-h.github.io/GenMAC/',
       },
       {
@@ -672,7 +668,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2310.08579',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://snap-research.github.io/HyperHuman/',
       },
       {
@@ -701,7 +697,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2409.18125',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://zcmax.github.io/projects/LLaVA-3D/',
       },
       {
@@ -722,7 +718,7 @@ export const publications: {
         url: 'https://proceedings.neurips.cc/paper_files/paper/2024/file/1df493ec1c2530c038d94d7300b5b368-Paper-Datasets_and_Benchmarks_Track.pdf',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://silentview.github.io/LVD-2M/',
       },
       {
@@ -786,7 +782,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2412.03558',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://huanngzh.github.io/MIDI-Page/',
       },
       {
@@ -807,7 +803,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2412.04445',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://chenyi99.github.io/moto/',
       },
       {
@@ -858,7 +854,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2410.13861',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://rongyaofang.github.io/puma/',
       },
       {
@@ -880,7 +876,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2412.15119',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://epiphqny.github.io/PAR-project/',
       },
       {
@@ -943,7 +939,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2411.07184',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://yhyang-myron.github.io/SAMPart3D-website/',
       },
       {
@@ -983,7 +979,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2212.00210',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://shape-guided-diffusion.github.io/',
       },
       {
@@ -1018,7 +1014,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2407.14505',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://t2v-compbench.github.io/',
       },
       {
@@ -1044,7 +1040,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2403.17920',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://sherwinbahmani.github.io/tc4d/',
       },
       {
@@ -1136,7 +1132,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2312.06642',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://yxlao.github.io/corres-nerf/',
       },
       {
@@ -1171,7 +1167,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2312.02936',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://drag-a-video.github.io/',
       },
       {
@@ -1193,7 +1189,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2311.17061',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://yhyang-myron.github.io/DreamComposer/',
       },
       {
@@ -1230,7 +1226,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2312.16170',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://tai-wang.github.io/embodiedscan/',
       },
       {
@@ -1292,7 +1288,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2312.03611',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://alvinliu0.github.io/projects/HumanGaussian',
       },
       {
@@ -1352,7 +1348,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2112.05744',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://xh-liu.github.io/sdg/',
       },
       {
@@ -1500,7 +1496,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2304.13023',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://github.com/Inf-imagine/Sentry',
       },
       {
@@ -1547,7 +1543,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2307.06350',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://karine-h.github.io/T2I-CompBench/',
       },
       {
@@ -1687,7 +1683,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2212.03752',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://ezioby.github.io/glead/',
       },
       {
@@ -1774,7 +1770,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/2206.11404',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://github.com/liaopeiyuan/artbench',
       },
       {
@@ -1928,7 +1924,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/1808.01571',
       },
     ],
-    keys: ['2018', 'Other', 'Vision'],
+    keys: ['Previous', 'Other', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -1945,7 +1941,7 @@ export const publications: {
         url: 'https://github.com/lpzjerry/Pedestrian-Attribute-LGNet',
       },
     ],
-    keys: ['2018', 'Other', 'Vision'],
+    keys: ['Previous', 'Other', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -1959,7 +1955,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/1803.08314',
       },
     ],
-    keys: ['2018', 'Other', 'Vision'],
+    keys: ['Previous', 'Other', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -1973,7 +1969,7 @@ export const publications: {
         url: 'https://arxiv.org/abs/1709.09930',
       },
       {
-        website: 'Project Page',
+        website: 'Page',
         url: 'https://xh-liu.github.io/HydraPlus-Net/',
       },
       {
@@ -1985,7 +1981,7 @@ export const publications: {
         url: 'https://drive.google.com/drive/folders/0B5_Ra3JsEOyOUlhKM0VPZ1ZWR2M?resourcekey=0-CdctEkdX1j2GSMSWWfrPSQ&usp=sharing',
       },
     ],
-    keys: ['2017', 'Other', 'Vision'],
+    keys: ['Previous', 'Other', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -2007,7 +2003,7 @@ export const publications: {
         url: 'https://www.image-net.org/challenges/LSVRC/2016/results.php#:~:text=Task%203c%3A%20Object%20detection/tracking%20from%20video%20with%20provided%20training%20data',
       },
     ],
-    keys: ['2017', 'Detection', 'Vision'],
+    keys: ['Previous', 'Detection', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -2026,7 +2022,7 @@ export const publications: {
         url: 'https://github.com/Zhongdao/VehicleReIDKeyPointData',
       },
     ],
-    keys: ['2017', 'Other', 'Vision'],
+    keys: ['Previous', 'Other', 'Vision'],
     pis: ['Xihui Liu'],
   },
   {
@@ -2476,7 +2472,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title:
@@ -2915,7 +2911,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Chipformer: Transferable chip placement via offline decision transformer',
@@ -3024,7 +3020,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Compressed video contrastive learning',
@@ -3325,7 +3321,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Davit: Dual attention vision transformers',
@@ -3535,7 +3531,7 @@ export const publications: {
       },
     ],
     keys: ['Embodied AI', 'Dataset/Benchmark'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'DeepID-Net: Object Detection with Deformable Part Based Convolutional Neural Networks',
@@ -4934,7 +4930,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'Vision'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Going deeper into face detection: A survey. arXiv 2021',
@@ -5195,7 +5191,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Human Centric Visual Analysis with Deep Learning, Springer, Singapore, 2020, pp. 47–54',
@@ -5208,7 +5204,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Human Centric Visual Analysis with Deep Learning, Springer, Singapore, 2020, pp. 69–83',
@@ -5221,7 +5217,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Human centric visual analysis with deep learning',
@@ -5302,7 +5298,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Image processing method and apparatus, computer device, and computer storage medium',
@@ -5315,7 +5311,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Image processing method and apparatus, computer device, and storage medium',
@@ -5328,7 +5324,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Image processing method and apparatus, electronic device and storage medium',
@@ -5341,7 +5337,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Improving GANs with A Dynamic Discriminator',
@@ -5367,7 +5363,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Instance-Level Human Parsing',
@@ -6245,7 +6241,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'Multimodality'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Method and device for image processing, and computer storage medium',
@@ -6258,7 +6254,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Method and device for image processing, electronic device, and storage medium',
@@ -6271,7 +6267,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Method and system for exacting face features from data of face images',
@@ -6284,7 +6280,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Methods and systems for social relation identification',
@@ -6297,7 +6293,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title:
@@ -6354,7 +6350,7 @@ export const publications: {
       },
     ],
     keys: ['RL', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Mmiu: Multimodal multi-image understanding for evaluating large vision-language models',
@@ -6616,7 +6612,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo', 'Bo Dai'],
   },
   {
     title:
@@ -6658,7 +6654,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Neural network training method and image matching method and apparatus',
@@ -6671,7 +6667,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Normalization method and apparatus for deep neural network, and storage media',
@@ -6684,7 +6680,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title:
@@ -8273,7 +8269,7 @@ export const publications: {
       },
     ],
     keys: ['Vision', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Semantic-aware pretraining for dense video captioning',
@@ -8656,7 +8652,7 @@ export const publications: {
       },
     ],
     keys: ['General', 'General'],
-    pis: [],
+    pis: ['Ping Luo'],
   },
   {
     title: 'Task-Oriented Diffusion Inversion for High-Fidelity Text-based Editing',
