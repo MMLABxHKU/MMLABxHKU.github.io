@@ -791,6 +791,27 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Kaiyi Huang',
+    img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=dB86D_cAAAAJ&hl=zh-CN&oi=sra',
+      },
+      {
+        icon: 'email',
+        link: 'huangky2022@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/Karine-Huang',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Kaiyue Sun',
     img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
     title: 'Ph.D. Candidate',
