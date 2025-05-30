@@ -804,6 +804,19 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Jintao Lin',
+    img: 'https://mmlabassets.github.io/member/jintao_lin_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'github',
+        link: 'https://github.com/dreamerlin',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Haibao Yu',
     img: 'https://mmlabassets.github.io/member/haibao_yu_c.jpeg',
     title: 'Ph.D. Candidate',
