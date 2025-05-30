@@ -341,6 +341,23 @@ export const members: {
     keys: ['2024'],
   },
   {
+    name: 'Lu Qiu',
+    img: 'https://mmlabassets.github.io/member/lu_qiu_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?hl=en&user=66jKtREAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'qiulu0509@gmail.com',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
     name: 'Junli Ren',
     img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
     title: 'Ph.D. Candidate',
