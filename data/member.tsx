@@ -692,7 +692,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'kellymeng0427@gmail.com',
+        link: 'mailto:kellymeng0427@gmail.com',
       },
       {
         icon: 'github',
@@ -743,7 +743,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'tengyao19980325@gmail.com',
+        link: 'mailto:tengyao19980325@gmail.com',
       },
       {
         icon: 'github',
@@ -781,7 +781,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'yhyang.myron@gmail.com',
+        link: 'mailto:yhyang.myron@gmail.com',
       },
       {
         icon: 'github',
@@ -802,7 +802,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'huangky2022@gmail.com',
+        link: 'mailto:huangky2022@gmail.com',
       },
       {
         icon: 'github',
@@ -849,7 +849,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'yuqingwang1029@gmail.com',
+        link: 'mailto:yuqingwang1029@gmail.com',
       },
       {
         icon: 'github',
@@ -874,7 +874,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'kunh6414@gmail.com',
+        link: 'mailto:kunh6414@gmail.com',
       },
       {
         icon: 'github',
