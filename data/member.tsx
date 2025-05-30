@@ -792,7 +792,7 @@ export const members: {
   },
   {
     name: 'Kaiyi Huang',
-    img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
+    img: 'https://mmlabassets.github.io/member/kaiyi_huang.jpg',
     title: 'Ph.D. Candidate',
     pi: ['Xihui Liu'],
     links: [
