@@ -462,7 +462,7 @@ export default function Home() {
                                     <b>Area Chair</b>: Ping Luo, Xihui Liu, Hongyang Li
                                 </li>
                                 <li>
-                                    <b>Reviewer</b>: Chengyue Wu, Chonghao Sima, Fanqing Meng, Haibao Yu, Jiahao Wang, Jin Wang, Li Chen, Mengzhao Chen, Quanfeng Lu, Runjian Chen, Shilong Zhang, Shoufa Chen, Yao Mu, Yihang Qiu, Yizhuo Li, Zhiheng Liu, Zhixuan Liang
+                                    <b>Reviewer</b>: Chengyue Wu, Chonghao Sima, Fanqing Meng, Haibao Yu, Jiahao Wang, Jin Wang, Li Chen, Lirui Zhao, Mengzhao Chen, Quanfeng Lu, Runjian Chen, Shilong Zhang, Shoufa Chen, Yao Mu, Yihang Qiu, Yizhuo Li, Zhiheng Liu, Zhixuan Liang
                                 </li>
                             </ul>
                         </div>
