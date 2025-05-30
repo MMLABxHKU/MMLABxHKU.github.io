@@ -283,22 +283,6 @@ export default function Home() {
                     <FadeIn>
                         <div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-6 mt-20">
 
-                            <Link href="https://worldmodelbench.github.io/" target="_blank" className="group">
-                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
-                                    <CardHeader className="p-0">
-                                        <CardDescription>June 12</CardDescription>
-                                        <CardTitle className="text-xl">Workshop on Benchmarking World Models</CardTitle>
-                                    </CardHeader>
-                                    <CardContent className="p-0 text-mgray">
-                                        <p>
-                                            Speaker: <b>Xihui Liu</b>
-                                        </p>
-                                    </CardContent>
-                                    <div className="flex justify-end select-none group-hover:text-mred">
-                                        More&nbsp;{'>'}
-                                    </div>
-                                </Card>
-                            </Link>
                             <Link href="https://opendrivelab.com/cvpr2025/workshop/" target="_blank" className="group">
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
@@ -374,6 +358,22 @@ export default function Home() {
                                     <CardContent className="p-0 text-mgray">
                                         <p>
                                             Organizer: <b>Chonghao Sima</b>
+                                        </p>
+                                    </CardContent>
+                                    <div className="flex justify-end select-none group-hover:text-mred">
+                                        More&nbsp;{'>'}
+                                    </div>
+                                </Card>
+                            </Link>
+                            <Link href="https://worldmodelbench.github.io/" target="_blank" className="group">
+                                <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
+                                    <CardHeader className="p-0">
+                                        <CardDescription>June 12</CardDescription>
+                                        <CardTitle className="text-xl">Workshop on Benchmarking World Models</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="p-0 text-mgray">
+                                        <p>
+                                            Organizer: <b>Xihui Liu</b>
                                         </p>
                                     </CardContent>
                                     <div className="flex justify-end select-none group-hover:text-mred">
