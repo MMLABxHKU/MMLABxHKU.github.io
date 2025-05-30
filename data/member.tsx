@@ -372,7 +372,7 @@ export const members: {
   },
   {
     name: 'Zhiyuan Chen',
-    img: '',
+    img: 'https://mmlabassets.github.io/member/zhiyuan_chen_c.jpg',
     title: 'Mphil',
     pi: ['Xihui Liu'],
     links: [
