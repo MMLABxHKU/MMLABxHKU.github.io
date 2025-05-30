@@ -369,7 +369,7 @@ export default function Home() {
                                 <Card className="border-border rounded-none p-6 group-hover:border-mred group-hover:shadow-mred">
                                     <CardHeader className="p-0">
                                         <CardDescription>June 12</CardDescription>
-                                        <CardTitle className="text-xl">Workshop on Benchmarking World Models</CardTitle>
+                                        <CardTitle className="text-xl">The 1st Workshop on Benchmarking World Models</CardTitle>
                                     </CardHeader>
                                     <CardContent className="p-0 text-mgray">
                                         <p>
