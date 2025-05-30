@@ -838,6 +838,27 @@ export const members: {
     keys: ['2023'],
   },
   {
+    name: 'Yuqing Wang',
+    img: 'https://mmlabassets.github.io/member/yuqing_wang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?hl=zh-CN&user=QC7nNe0AAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'yuqingwang1029@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/yuqingwang1029',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
     name: 'Yukun Huang',
     img: 'https://mmlabassets.github.io/member/yukun_huang_c.jpg',
     title: 'Postdoc Fellow',
