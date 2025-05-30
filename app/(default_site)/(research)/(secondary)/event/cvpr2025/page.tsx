@@ -401,6 +401,8 @@ export default function Home() {
                                     <CardContent className="p-0 text-mgray">
                                         <p>
                                             Organizer: <b>Hongyang Li</b>
+                                            <br></br>
+                                            Speaker: <b>Chonghao Sima</b>
                                         </p>
                                     </CardContent>
                                     <div className="flex justify-end select-none group-hover:text-mred">
