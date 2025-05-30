@@ -358,6 +358,44 @@ export const members: {
     keys: ['2024'],
   },
   {
+    name: 'Yi Chen',
+    img: 'https://mmlabassets.github.io/member/yi_chen_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=3ep5ODoAAAAJ&hl=zh-CN',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Zhiyuan Chen',
+    img: 'https://mmlabassets.github.io/member/lu_qiu_c.jpg',
+    title: 'Mphil',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'zyc.ai',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=CKiY8PIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'this@zyc.ai',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/ZhiyuanChen',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
     name: 'Junli Ren',
     img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
     title: 'Ph.D. Candidate',
@@ -748,6 +786,19 @@ export const members: {
       {
         icon: 'github',
         link: 'https://github.com/yhyang-myron',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Kaiyue Sun',
+    img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'github',
+        link: 'https://github.com/KaiyueSun98',
       },
     ],
     keys: ['2023'],
