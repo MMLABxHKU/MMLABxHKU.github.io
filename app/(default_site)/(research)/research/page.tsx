@@ -463,7 +463,7 @@ export default function Home() {
                                         />
                                     </div>
                                     <div className="w-full h-full absolute flex flex-col justify-end items-end p-6">
-                                        <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        <h3 className="text-white font-bold text-t1">
                                             {item.location}
                                         </h3>
                                     </div>
