@@ -293,7 +293,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'duancq24@connect.hku.hk',
+        link: 'mailto:duancq24@connect.hku.hk',
       },
       {
         icon: 'github',
@@ -331,7 +331,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'yujiwen.hk@connect.hku.hk',
+        link: 'mailto:yujiwen.hk@connect.hku.hk',
       },
       {
         icon: 'github',
@@ -352,7 +352,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'qiulu0509@gmail.com',
+        link: 'mailto:qiulu0509@gmail.com',
       },
     ],
     keys: ['2024'],
@@ -386,7 +386,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'this@zyc.ai',
+        link: 'mailto:this@zyc.ai',
       },
       {
         icon: 'github',
@@ -458,7 +458,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'xiongtw20@gmail.com',
+        link: 'mailto:xiongtw20@gmail.com',
       },
       {
         icon: 'github',
@@ -595,7 +595,7 @@ export const members: {
       },
       {
         icon: 'email',
-        link: 'zcm952742165@gmail.com',
+        link: 'mailto:zcm952742165@gmail.com',
       },
       {
         icon: 'github',
