@@ -189,16 +189,16 @@ export default function Home() {
                             </p>
                             <ul className="ml-6 space-y-6 list-outside list-disc">
                                 <li>
-                                    <Link href="mailto:pluo.lhi@gmail.com" className="text-mred animated-underline">pluo.lhi@gmail.com</Link> [ <Link target="_self" href="/about-us/#ping_luo" className="text-mred animated-underline">Ping Luo</Link> ]
+                                    <Link href="mailto:pluo@hku.hk" className="text-mred animated-underline">pluo@hku.hk</Link> [ <Link target="_self" href="/about-us/#ping_luo" className="text-mred animated-underline">Ping Luo</Link> ]
                                 </li>
                                 <li>
-                                    <Link href="mailto:xihuiliu@eee.hku.hk" className="text-mred animated-underline">xihuiliu@eee.hku.hk</Link> [ <Link  target="_self" href="/about-us/#xihui_liu" className="text-mred animated-underline">Xihui Liu</Link> ]
+                                    <Link href="mailto:xihuiliu@hku.hk" className="text-mred animated-underline">xihuiliu@hku.hk</Link> [ <Link  target="_self" href="/about-us/#xihui_liu" className="text-mred animated-underline">Xihui Liu</Link> ]
                                 </li>
                                 <li>
                                     <Link href="mailto:hongyang@hku.hk" className="text-mred animated-underline">hongyang@hku.hk</Link> [ <Link target="_self" href="/about-us/#hongyang_li" className="text-mred animated-underline">Hongyang Li</Link> ]
                                 </li>
                                 <li>
-                                    <Link href="mailto:doubledaibo@gmail.com" className="text-mred animated-underline">doubledaibo@gmail.com</Link> [ <Link target="_self" href="/about-us/#bo_dai" className="text-mred animated-underline">Bo Dai</Link> ]
+                                    <Link href="mailto:bdai@hku.hk" className="text-mred animated-underline">bdai@hku.hk</Link> [ <Link target="_self" href="/about-us/#bo_dai" className="text-mred animated-underline">Bo Dai</Link> ]
                                 </li>
                             </ul>
                         </div>
