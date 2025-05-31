@@ -59,13 +59,13 @@ const headers: { title: string; href: string; classname: string; }[] = [
     {
         title: "Event",
         href: "/research#event",
-        classname: "hidden lg:block",
+        classname: "hidden md:block",
 
     },
     {
         title: "Join",
         href: "/about-us#career",
-        classname: "hidden lg:block",
+        classname: "hidden md:block",
     },
 ]
 
