@@ -3259,7 +3259,7 @@ export const publications: {
       'DRiVE: Diffusion-based Rigging Empowers Generation of Versatile and Expressive Characters',
     authors:
       'Sun  Mingze, Chen  Junhao, Dong  Junting, Chen  Yurun, Jiang  Xinyu, Mao  Shiwei, Jiang  Puhua, Wang  Jingbo, Dai  Bo, Huang  Ruqi',
-    proceedings: 'arXiv preprint arXiv:2411.17423 2024',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -4650,7 +4650,7 @@ export const publications: {
     title: 'Flashgs: Efficient 3d gaussian splatting for large-scale and high-resolution rendering',
     authors:
       'Feng  Guofeng, Chen  Siyan, Fu  Rong, Liao  Zimu, Wang  Yi, Liu  Tao, Pei  Zhilin, Li  Hengjie, Zhang  Xingcheng, Dai  Bo',
-    proceedings: 'arXiv preprint arXiv:2408.07967 2024',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -5127,7 +5127,7 @@ export const publications: {
     title: 'Horizon-GS: Unified 3D Gaussian Splatting for Large-Scale Aerial-to-Ground Scenes',
     authors:
       'Jiang  Lihan, Ren  Kerui, Yu  Mulin, Xu  Linning, Dong  Junting, Lu  Tao, Zhao  Feng, Lin  Dahua, Dai  Bo',
-    proceedings: 'arXiv preprint arXiv:2412.01745 2024',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -7921,7 +7921,7 @@ export const publications: {
     title: 'ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model',
     authors:
       'Lu  Shunlin, Wang  Jingbo, Lu  Zeyu, Chen  Ling-Hao, Dai  Wenxun, Dong  Junting, Dou  Zhiyang, Dai  Bo, Zhang  Ruimao',
-    proceedings: 'arXiv preprint arXiv:2412.14559 2024',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
@@ -8822,7 +8822,7 @@ export const publications: {
       'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
     authors:
       'Pan  Liang, Yang  Zeshi, Dou  Zhiyang, Wang  Wenjia, Huang  Buzhen, Dai  Bo, Komura  Taku, Wang  Jingbo',
-    proceedings: 'arXiv preprint arXiv:2503.19901 2025',
+    proceedings: 'CVPR 2025',
     links: [
       {
         website: 'Paper',
