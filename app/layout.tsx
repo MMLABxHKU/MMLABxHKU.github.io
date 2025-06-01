@@ -44,18 +44,28 @@ export const metadata: Metadata = {
 
 
 // header
-const headers: { title: string; href: string; }[] = [
+const headers: { title: string; href: string; classname: string; }[] = [
     {
         title: "About Us",
         href: "/about-us",
+        classname: "",
     },
     {
         title: "Research",
         href: "/research",
+        classname: "",
+
+    },
+    {
+        title: "Event",
+        href: "/research#event",
+        classname: "hidden md:block",
+
     },
     {
         title: "Join",
         href: "/about-us#career",
+        classname: "hidden md:block",
     },
 ]
 
@@ -86,7 +96,7 @@ export default function RootLayout({
                             </Link>
                         </Button>
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-mred hover:text-white">
+                            <Button asChild key={header.title} className={"bg-background text-foreground hover:bg-mred hover:text-white " + header.classname}>
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
