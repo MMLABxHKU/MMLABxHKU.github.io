@@ -2069,7 +2069,7 @@ export const publications: {
   {
     title: '3d data augmentation for driving scenes on camera',
     authors:
-      'Wenwen Tong, Jiangwei Xie, Tianyu Li, Yang Li, Hanming Deng, Dai Bo, Lewei Lu, Hao Zhao, Junchi Yan, Hongyang Li',
+      'Wenwen Tong, Jiangwei Xie, Tianyu Li, Yang Li, Hanming Deng, Bo Dai, Lewei Lu, Hao Zhao, Junchi Yan, Hongyang Li',
     proceedings: 'Chinese Conference on Pattern Recognition and Computer Vision (PRCV) 2024',
     links: [
       {
@@ -2109,7 +2109,7 @@ export const publications: {
   },
   {
     title: '3dhumangan: 3d-aware human image generation with 3d pose mapping',
-    authors: 'Zhuoqian Yang, Shikai Li, Wayne Wu, Dai Bo',
+    authors: 'Zhuoqian Yang, Shikai Li, Wayne Wu, Bo Dai',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -2122,7 +2122,7 @@ export const publications: {
   },
   {
     title: 'A Neural Compositional Paradigm for Image Captioning',
-    authors: 'Dai Bo, Sanja Fidler, Dahua Lin',
+    authors: 'Bo Dai, Sanja Fidler, Dahua Lin',
     proceedings: '32nd Conference on Neural Information Processing Systems (NIPS 2018)',
     links: [
       {
@@ -2135,7 +2135,7 @@ export const publications: {
   },
   {
     title: 'A Shading-Guided Generative Implicit Model for Shape-Accurate 3D-Aware Image Synthesis',
-    authors: 'Xingang Pan, Xudong Xu, Change Loy Chen, Christian Theobalt, Dai Bo',
+    authors: 'Xingang Pan, Xudong Xu, Change Loy Chen, Christian Theobalt, Bo Dai',
     proceedings: 'Neural Information Processing Systems (NeurIPS) 2021 ',
     links: [
       {
@@ -2214,7 +2214,7 @@ export const publications: {
   },
   {
     title: 'Accelerating diffusion models via early stop of the diffusion process',
-    authors: 'Zhaoyang Lyu, Xudong Xu, Ceyuan Yang, Dahua Lin, Dai Bo',
+    authors: 'Zhaoyang Lyu, Xudong Xu, Ceyuan Yang, Dahua Lin, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2205.12524 2022',
     links: [
       {
@@ -2450,7 +2450,7 @@ export const publications: {
     title:
       'Animatediff: Animate your personalized text-to-image diffusion models without specific tuning',
     authors:
-      'Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Maneesh Agrawala, Dahua Lin, Dai Bo',
+      'Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Maneesh Agrawala, Dahua Lin, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2307.04725 2023',
     links: [
       {
@@ -2518,7 +2518,7 @@ export const publications: {
   },
   {
     title: 'AssetField: Assets Mining and Reconfiguration in Ground Feature Plane Representation',
-    authors: 'Yuanbo Xiangli, Linning Xu, Xingang Pan, Nanxuan Zhao, Dai Bo, Dahua Lin',
+    authors: 'Yuanbo Xiangli, Linning Xu, Xingang Pan, Nanxuan Zhao, Bo Dai, Dahua Lin',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -2601,7 +2601,7 @@ export const publications: {
   },
   {
     title: 'BRACE: The Breakdancing Competition Dataset for Dance Motion Synthesis',
-    authors: 'Davide Moltisanti, Jinyi Wu, Dai Bo, Change Loy Chen',
+    authors: 'Davide Moltisanti, Jinyi Wu, Bo Dai, Change Loy Chen',
     proceedings: 'European Conference on Computer Vision (ECCV) 2022',
     links: [
       {
@@ -2628,7 +2628,7 @@ export const publications: {
   {
     title:
       'Berfscene: Bev-conditioned equivariant radiance fields for infinite 3d scene generation',
-    authors: 'Qihang Zhang, Yinghao Xu, Yujun Shen, Dai Bo, Bolei Zhou, Ceyuan Yang',
+    authors: 'Qihang Zhang, Yinghao Xu, Yujun Shen, Bo Dai, Bolei Zhou, Ceyuan Yang',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -2685,7 +2685,7 @@ export const publications: {
   {
     title: 'Blockplanner: City block generation with vectorized graph representation',
     authors:
-      'Linning Xu, Yuanbo Xiangli, Anyi Rao, Nanxuan Zhao, Dai Bo, Ziwei Liu, Dahua Lin',
+      'Linning Xu, Yuanbo Xiangli, Anyi Rao, Nanxuan Zhao, Bo Dai, Ziwei Liu, Dahua Lin',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2021',
     links: [
       {
@@ -2698,7 +2698,7 @@ export const publications: {
   },
   {
     title: 'Boosting 3D object generation through PBR materials',
-    authors: 'Yitong Wang, Xudong Xu, Li Ma, Haoran Wang, Dai Bo',
+    authors: 'Yitong Wang, Xudong Xu, Li Ma, Haoran Wang, Bo Dai',
     proceedings: 'SIGGRAPH Asia 2024 Conference Papers 2024',
     links: [
       {
@@ -2739,7 +2739,7 @@ export const publications: {
   {
     title: 'Bungeenerf: Progressive neural radiance field for extreme multi-scale scene rendering',
     authors:
-      'Yuanbo Xiangli, Linning Xu, Xingang Pan, Nanxuan Zhao, Anyi Rao, Christian Theobalt, Dai Bo, Dahua Lin',
+      'Yuanbo Xiangli, Linning Xu, Xingang Pan, Nanxuan Zhao, Anyi Rao, Christian Theobalt, Bo Dai, Dahua Lin',
     proceedings: 'European conference on computer vision 2022',
     links: [
       {
@@ -2835,7 +2835,7 @@ export const publications: {
   {
     title: 'Cameractrl: Enabling camera control for text-to-video generation',
     authors:
-      'Hao He, Yinghao Xu, Yuwei Guo, Gordon Wetzstein, Dai Bo, Hongsheng Li, Ceyuan Yang',
+      'Hao He, Yinghao Xu, Yuwei Guo, Gordon Wetzstein, Bo Dai, Hongsheng Li, Ceyuan Yang',
     proceedings: 'arXiv preprint arXiv:2404.02101 2024',
     links: [
       {
@@ -2889,7 +2889,7 @@ export const publications: {
   {
     title: 'ChatDyn: Language-Driven Multi-Actor Dynamics Generation in Street Scenes',
     authors:
-      'Yuxi Wei, Jingbo Wang, Yuwen Du, Dingju Wang, Liang Pan, Chenxin Xu, Yao Feng, Dai Bo, Siheng Chen',
+      'Yuxi Wei, Jingbo Wang, Yuwen Du, Dingju Wang, Liang Pan, Chenxin Xu, Yao Feng, Bo Dai, Siheng Chen',
     proceedings: 'arXiv preprint arXiv:2412.08685 2024',
     links: [
       {
@@ -2929,7 +2929,7 @@ export const publications: {
   {
     title: 'CinePreGen: Camera Controllable Video Previsualization via Engine-powered Diffusion',
     authors:
-      'Yiran Chen, Anyi Rao, Xuekun Jiang, Shishi Xiao, Ruiqing Ma, Zeyu Wang, Hui Xiong, Dai Bo',
+      'Yiran Chen, Anyi Rao, Xuekun Jiang, Shishi Xiao, Ruiqing Ma, Zeyu Wang, Hui Xiong, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2408.17424 2024',
     links: [
       {
@@ -2942,7 +2942,7 @@ export const publications: {
   },
   {
     title: 'Cinematic Behavior Transfer via NeRF-based Differentiable Filming',
-    authors: 'Xuekun Jiang, Anyi Rao, Jingbo Wang, Dahua Lin, Dai Bo',
+    authors: 'Xuekun Jiang, Anyi Rao, Jingbo Wang, Dahua Lin, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -3064,7 +3064,7 @@ export const publications: {
   },
   {
     title: 'Constrained mdps can be solved by eearly-termination with recurrent models',
-    authors: 'Hao Sun, Ziping Xu, Zhenghao Peng, Meng Fang, Taiyi Wang, Dai Bo, Bolei Zhou',
+    authors: 'Hao Sun, Ziping Xu, Zhenghao Peng, Meng Fang, Taiyi Wang, Bo Dai, Bolei Zhou',
     proceedings: 'NeurIPS 2022 Foundation Models for Decision Making Workshop 2022',
     links: [
       {
@@ -3091,7 +3091,7 @@ export const publications: {
   },
   {
     title: 'Contrastive Learning for Image Captioning',
-    authors: 'Dai Bo, Dahua Lin',
+    authors: 'Bo Dai, Dahua Lin',
     proceedings: '31st Conference on Neural Information Processing Systems (NIPS 2017) 2017',
     links: [
       {
@@ -3104,7 +3104,7 @@ export const publications: {
   },
   {
     title: 'Controllable mesh generation through sparse latent point diffusion models',
-    authors: 'Zhaoyang Lyu, Jinyi Wang, Yuwei An, Ya Zhang, Dahua Lin, Dai Bo',
+    authors: 'Zhaoyang Lyu, Jinyi Wang, Yuwei An, Ya Zhang, Dahua Lin, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF conference on computer vision and pattern recognition 2023',
     links: [
@@ -3175,7 +3175,7 @@ export const publications: {
   },
   {
     title: 'Correspondence Distillation from NeRF-Based GAN',
-    authors: 'Yushi Lan, Change Loy Chen, Dai Bo',
+    authors: 'Yushi Lan, Change Loy Chen, Bo Dai',
     proceedings: 'International Journal of Computer Vision 2024',
     links: [
       {
@@ -3189,7 +3189,7 @@ export const publications: {
   {
     title: 'Cross-Model Pseudo-Labeling for Semi-Supervised Action Recognition',
     authors:
-      'Yinghao Xu, Fangyun Wei, Xiao Sun, Ceyuan Yang, Yujun Shen, Dai Bo, Bolei Zhou, Stephen Lin',
+      'Yinghao Xu, Fangyun Wei, Xiao Sun, Ceyuan Yang, Yujun Shen, Bo Dai, Bolei Zhou, Stephen Lin',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022',
     links: [
       {
@@ -3258,7 +3258,7 @@ export const publications: {
     title:
       'DRiVE: Diffusion-based Rigging Empowers Generation of Versatile and Expressive Characters',
     authors:
-      'Mingze Sun, Junhao Chen, Junting Dong, Yurun Chen, Xinyu Jiang, Shiwei Mao, Puhua Jiang, Jingbo Wang, Dai Bo, Ruqi Huang',
+      'Mingze Sun, Junhao Chen, Junting Dong, Yurun Chen, Xinyu Jiang, Shiwei Mao, Puhua Jiang, Jingbo Wang, Bo Dai, Ruqi Huang',
     proceedings: 'CVPR 2025',
     links: [
       {
@@ -3352,7 +3352,7 @@ export const publications: {
   },
   {
     title: 'Deceive d: Adaptive pseudo augmentation for gan training with limited data',
-    authors: 'Liming Jiang, Dai Bo, Wayne Wu, Change Loy Chen',
+    authors: 'Liming Jiang, Bo Dai, Wayne Wu, Change Loy Chen',
     proceedings: 'Advances in Neural Information Processing Systems 2021',
     links: [
       {
@@ -3365,7 +3365,7 @@ export const publications: {
   },
   {
     title: 'Deciwatch: A simple baseline for 10x efficient 2d and 3d pose estimation',
-    authors: 'Ailing Zeng, Xuan Ju, Lei Yang, Ruiyuan Gao, Xizhou Zhu, Dai Bo, Qiang Xu',
+    authors: 'Ailing Zeng, Xuan Ju, Lei Yang, Ruiyuan Gao, Xizhou Zhu, Bo Dai, Qiang Xu',
     proceedings: 'European Conference on Computer Vision 2022',
     links: [
       {
@@ -3690,7 +3690,7 @@ export const publications: {
   },
   {
     title: 'Detecting Visual Relationships with Deep Relational Networks',
-    authors: 'Dai Bo, Yuqi Zhang, Dahua Lin',
+    authors: 'Bo Dai, Yuqi Zhang, Dahua Lin',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2017',
     links: [
       {
@@ -3775,7 +3775,7 @@ export const publications: {
   {
     title: 'Diffbir: Toward blind image restoration with generative diffusion prior',
     authors:
-      'Xinqi Lin, Jingwen He, Ziyan Chen, Zhaoyang Lyu, Dai Bo, Fanghua Yu, Yu Qiao, Wanli Ouyang, Chao Dong',
+      'Xinqi Lin, Jingwen He, Ziyan Chen, Zhaoyang Lyu, Bo Dai, Fanghua Yu, Yu Qiao, Wanli Ouyang, Chao Dong',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -3855,7 +3855,7 @@ export const publications: {
   },
   {
     title: 'Diffmorpher: Unleashing the capability of diffusion models for image morphing',
-    authors: 'Kaiwen Zhang, Yifan Zhou, Xudong Xu, Dai Bo, Xingang Pan',
+    authors: 'Kaiwen Zhang, Yifan Zhou, Xudong Xu, Bo Dai, Xingang Pan',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -3924,7 +3924,7 @@ export const publications: {
   {
     title: 'Director3d: Real-world camera trajectory and 3d scene generation from text',
     authors:
-      'Xinyang Li, Zhangyu Lai, Linning Xu, Yansong Qu, Liujuan Cao, Shengchuan Zhang, Dai Bo, Rongrong Ji',
+      'Xinyang Li, Zhangyu Lai, Linning Xu, Yansong Qu, Liujuan Cao, Shengchuan Zhang, Bo Dai, Rongrong Ji',
     proceedings: 'Advances in Neural Information Processing Systems 2024',
     links: [
       {
@@ -3964,7 +3964,7 @@ export const publications: {
   },
   {
     title: 'Do 2d gans know 3d shape? unsupervised 3d shape reconstruction from 2d image gans',
-    authors: 'Xingang Pan, Dai Bo, Ziwei Liu, Change Loy Chen, Ping Luo',
+    authors: 'Xingang Pan, Bo Dai, Ziwei Liu, Change Loy Chen, Ping Luo',
     proceedings: 'International Conference on Learning Representations (ICLR) 2021',
     links: [
       {
@@ -4047,7 +4047,7 @@ export const publications: {
     title:
       'Dual3d: Efficient and consistent text-to-3d generation with dual-mode multi-view latent diffusion',
     authors:
-      'Xinyang Li, Zhangyu Lai, Linning Xu, Jianfei Guo, Liujuan Cao, Shengchuan Zhang, Dai Bo, Rongrong Ji',
+      'Xinyang Li, Zhangyu Lai, Linning Xu, Jianfei Guo, Liujuan Cao, Shengchuan Zhang, Bo Dai, Rongrong Ji',
     proceedings: 'arXiv preprint arXiv:2405.09874 2024',
     links: [
       {
@@ -4114,7 +4114,7 @@ export const publications: {
   },
   {
     title: 'E2EAI: End-to-End Deep Learning Framework for Active Investing',
-    authors: 'Zikai Wei, Dai Bo, Dahua Lin',
+    authors: 'Zikai Wei, Bo Dai, Dahua Lin',
     proceedings: 'Proceedings of the Fourth ACM International Conference on AI in Finance 2023',
     links: [
       {
@@ -4141,7 +4141,7 @@ export const publications: {
   },
   {
     title: 'Edgesam: Prompt-in-the-loop distillation for on-device deployment of sam',
-    authors: 'Chong Zhou, Xiangtai Li, Change Loy Chen, Dai Bo',
+    authors: 'Chong Zhou, Xiangtai Li, Change Loy Chen, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2312.06660 2023',
     links: [
       {
@@ -4301,7 +4301,7 @@ export const publications: {
   },
   {
     title: 'Evolutionary Stochastic Policy Distillation',
-    authors: 'Hao Sun, Xinyu Pan, Dai Bo, Dahua Lin, Bolei Zhou',
+    authors: 'Hao Sun, Xinyu Pan, Bo Dai, Dahua Lin, Bolei Zhou',
     proceedings: 'arXiv preprint arXiv:2004.12909 2020',
     links: [
       {
@@ -4354,7 +4354,7 @@ export const publications: {
   },
   {
     title: 'Exploiting Deep Generative Prior for Versatile Image Restoration and Manipulation',
-    authors: 'Xingang Pan, Xiaohang Zhan, Dai Bo, Dahua Lin, Change Loy Chen, Ping Luo',
+    authors: 'Xingang Pan, Xiaohang Zhan, Bo Dai, Dahua Lin, Change Loy Chen, Ping Luo',
     proceedings: 'European Conference on Computer Vision (ECCV) 2020',
     links: [
       {
@@ -4393,7 +4393,7 @@ export const publications: {
   },
   {
     title: 'Extract free dense labels from clip',
-    authors: 'Chong Zhou, Change Loy Chen, Dai Bo',
+    authors: 'Chong Zhou, Change Loy Chen, Bo Dai',
     proceedings: 'European Conference on Computer Vision 2022',
     links: [
       {
@@ -4515,7 +4515,7 @@ export const publications: {
   },
   {
     title: 'Factor investing with a deep multi-factor model',
-    authors: 'Zikai Wei, Dai Bo, Dahua Lin',
+    authors: 'Zikai Wei, Bo Dai, Dahua Lin',
     proceedings: 'arXiv preprint arXiv:2210.12462 2022',
     links: [
       {
@@ -4594,7 +4594,7 @@ export const publications: {
   },
   {
     title: 'Feature Intertwiner for Object Detection',
-    authors: 'Hongyang Li, Dai Bo, Shaoshuai Shi, Wanli Ouyang, Xiaogang Wang',
+    authors: 'Hongyang Li, Bo Dai, Shaoshuai Shi, Wanli Ouyang, Xiaogang Wang',
     proceedings: 'International Conference on Learning Representation (ICLR) 2019',
     links: [
       {
@@ -4607,7 +4607,7 @@ export const publications: {
   },
   {
     title: 'FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding',
-    authors: 'Dian Shao, Yue Zhao, Dai Bo, Dahua Lin',
+    authors: 'Dian Shao, Yue Zhao, Bo Dai, Dahua Lin',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
     links: [
       {
@@ -4649,7 +4649,7 @@ export const publications: {
   {
     title: 'Flashgs: Efficient 3d gaussian splatting for large-scale and high-resolution rendering',
     authors:
-      'Guofeng Feng, Siyan Chen, Rong Fu, Zimu Liao, Yi Wang, Tao Liu, Zhilin Pei, Hengjie Li, Xingcheng Zhang, Dai Bo',
+      'Guofeng Feng, Siyan Chen, Rong Fu, Zimu Liao, Yi Wang, Tao Liu, Zhilin Pei, Hengjie Li, Xingcheng Zhang, Bo Dai',
     proceedings: 'CVPR 2025',
     links: [
       {
@@ -4702,7 +4702,7 @@ export const publications: {
   },
   {
     title: 'Focal frequency loss for image reconstruction and synthesis',
-    authors: 'Liming Jiang, Dai Bo, Wayne Wu, Change Loy Chen',
+    authors: 'Liming Jiang, Bo Dai, Wayne Wu, Change Loy Chen',
     proceedings: 'Proceedings of the IEEE/CVF international conference on computer vision 2021',
     links: [
       {
@@ -4785,7 +4785,7 @@ export const publications: {
   {
     title: 'GAS: Generative Avatar Synthesis from a Single Image',
     authors:
-      'Yixing Lu, Junting Dong, Youngjoong Kwon, Qin Zhao, Dai Bo, Fernando De la Torre',
+      'Yixing Lu, Junting Dong, Youngjoong Kwon, Qin Zhao, Bo Dai, Fernando De la Torre',
     proceedings: 'arXiv preprint arXiv:2502.06957 2025',
     links: [
       {
@@ -4798,7 +4798,7 @@ export const publications: {
   },
   {
     title: 'GSDF: 3DGS Meets SDF for Improved Neural Rendering and Reconstruction',
-    authors: 'Mulin Yu, Tao Lu, Linning Xu, Lihan Jiang, Yuanbo Xiangli, Dai Bo',
+    authors: 'Mulin Yu, Tao Lu, Linning Xu, Lihan Jiang, Yuanbo Xiangli, Bo Dai',
     proceedings:
       'The Thirty-eighth Annual Conference on Neural Information Processing Systems 2024',
     links: [
@@ -4812,7 +4812,7 @@ export const publications: {
   },
   {
     title: 'GausSim: Foreseeing Reality by Gaussian Simulator for Elastic Objects',
-    authors: 'Yidi Shao, Mu Huang, Change Loy Chen, Dai Bo',
+    authors: 'Yidi Shao, Mu Huang, Change Loy Chen, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2412.17804 2024',
     links: [
       {
@@ -4826,7 +4826,7 @@ export const publications: {
   {
     title: 'Gaussiananything: Interactive point cloud latent diffusion for 3d generation',
     authors:
-      'Yushi Lan, Shangchen Zhou, Zhaoyang Lyu, Fangzhou Hong, Shuai Yang, Dai Bo, Xingang Pan, Chen Change Loy',
+      'Yushi Lan, Shangchen Zhou, Zhaoyang Lyu, Fangzhou Hong, Shuai Yang, Bo Dai, Xingang Pan, Chen Change Loy',
     proceedings: 'arXiv e-prints 2024',
     links: [
       {
@@ -4840,7 +4840,7 @@ export const publications: {
   {
     title: 'Generative diffusion prior for unified image restoration and enhancement',
     authors:
-      'Ben Fei, Zhaoyang Lyu, Liang Pan, Junzhe Zhang, Weidong Yang, Tianyue Luo, Bo Zhang, Dai Bo',
+      'Ben Fei, Zhaoyang Lyu, Liang Pan, Junzhe Zhang, Weidong Yang, Tianyue Luo, Bo Zhang, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF conference on computer vision and pattern recognition 2023',
     links: [
@@ -4854,7 +4854,7 @@ export const publications: {
   },
   {
     title: 'Generative occupancy fields for 3d surface-aware image synthesis',
-    authors: 'Xudong Xu, Xingang Pan, Dahua Lin, Dai Bo',
+    authors: 'Xudong Xu, Xingang Pan, Dahua Lin, Bo Dai',
     proceedings: 'Advances in Neural Information Processing Systems 2021',
     links: [
       {
@@ -4881,7 +4881,7 @@ export const publications: {
   },
   {
     title: 'Getmesh: A controllable model for high-quality mesh generation and manipulation',
-    authors: 'Zhaoyang Lyu, Ben Fei, Jinyi Wang, Xudong Xu, Ya Zhang, Weidong Yang, Dai Bo',
+    authors: 'Zhaoyang Lyu, Ben Fei, Jinyi Wang, Xudong Xu, Ya Zhang, Weidong Yang, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2403.11990 2024',
     links: [
       {
@@ -4990,7 +4990,7 @@ export const publications: {
   {
     title: 'Grid-guided neural radiance fields for large urban scenes',
     authors:
-      'Linning Xu, Yuanbo Xiangli, Sida Peng, Xingang Pan, Nanxuan Zhao, Christian Theobalt, Dai Bo, Dahua Lin',
+      'Linning Xu, Yuanbo Xiangli, Sida Peng, Xingang Pan, Nanxuan Zhao, Christian Theobalt, Bo Dai, Dahua Lin',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023',
     links: [
@@ -5018,7 +5018,7 @@ export const publications: {
   },
   {
     title: 'Guided diffusion model for adversarial purification',
-    authors: 'Jinyi Wang, Zhaoyang Lyu, Dahua Lin, Dai Bo, Hongfei Fu',
+    authors: 'Jinyi Wang, Zhaoyang Lyu, Dahua Lin, Bo Dai, Hongfei Fu',
     proceedings: 'arXiv preprint arXiv:2205.14969 2022',
     links: [
       {
@@ -5098,7 +5098,7 @@ export const publications: {
   {
     title:
       'Hirevae: An online and adaptive factor model based on hierarchical and regime-switch vae',
-    authors: 'Zikai Wei, Anyi Rao, Dai Bo, Dahua Lin',
+    authors: 'Zikai Wei, Anyi Rao, Bo Dai, Dahua Lin',
     proceedings: 'arXiv preprint arXiv:2306.02848 2023',
     links: [
       {
@@ -5126,7 +5126,7 @@ export const publications: {
   {
     title: 'Horizon-GS: Unified 3D Gaussian Splatting for Large-Scale Aerial-to-Ground Scenes',
     authors:
-      'Lihan Jiang, Kerui Ren, Mulin Yu, Linning Xu, Junting Dong, Tao Lu, Feng Zhao, Dahua Lin, Dai Bo',
+      'Lihan Jiang, Kerui Ren, Mulin Yu, Linning Xu, Junting Dong, Tao Lu, Feng Zhao, Dahua Lin, Bo Dai',
     proceedings: 'CVPR 2025',
     links: [
       {
@@ -5249,7 +5249,7 @@ export const publications: {
   {
     title: 'Hyperstyle3d: Text-guided 3d portrait stylization via hypernetworks',
     authors:
-      'Zhuo Chen, Xudong Xu, Yichao Yan, Ye Pan, Wenhan Zhu, Wayne Wu, Dai Bo, Xiaokang Yang',
+      'Zhuo Chen, Xudong Xu, Yichao Yan, Ye Pan, Wenhan Zhu, Wayne Wu, Bo Dai, Xiaokang Yang',
     proceedings: 'IEEE Transactions on Circuits and Systems for Video Technology 2024',
     links: [
       {
@@ -5341,7 +5341,7 @@ export const publications: {
   },
   {
     title: 'Improving GANs with A Dynamic Discriminator',
-    authors: 'Ceyuan Yang, Yujun Shen, Yinghao Xu, Deli Zhao, Dai Bo, Bolei Zhou',
+    authors: 'Ceyuan Yang, Yujun Shen, Yinghao Xu, Deli Zhao, Bo Dai, Bolei Zhou',
     proceedings: 'Neural Information Processing Systems (NeurIPS) 2022',
     links: [
       {
@@ -5381,7 +5381,7 @@ export const publications: {
   },
   {
     title: 'InterControl: Zero-shot Human Interaction Generation by Controlling Every Joint',
-    authors: 'Zhenzhi Wang, Jingbo Wang, Yixuan Li, Dahua Lin, Dai Bo',
+    authors: 'Zhenzhi Wang, Jingbo Wang, Yixuan Li, Dahua Lin, Bo Dai',
     proceedings:
       'The Thirty-eighth Annual Conference on Neural Information Processing Systems 2024',
     links: [
@@ -5395,7 +5395,7 @@ export const publications: {
   },
   {
     title: 'Interactive Character Control with Auto-Regressive Motion Diffusion Models',
-    authors: 'Yi Shi, Jingbo Wang, Xuekun Jiang, Bingkun Lin, Dai Bo, Bin Peng Xue',
+    authors: 'Yi Shi, Jingbo Wang, Xuekun Jiang, Bingkun Lin, Bo Dai, Bin Peng Xue',
     proceedings: 'ACM Transactions on Graphics (TOG) 2024',
     links: [
       {
@@ -5453,7 +5453,7 @@ export const publications: {
   },
   {
     title: 'Interpret vision transformers as convnets with dynamic convolutions',
-    authors: 'Chong Zhou, Change Loy Chen, Dai Bo',
+    authors: 'Chong Zhou, Change Loy Chen, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2309.10713 2023',
     links: [
       {
@@ -5466,7 +5466,7 @@ export const publications: {
   },
   {
     title: 'Intra-and inter-action understanding via temporal action parsing',
-    authors: 'Dian Shao, Yue Zhao, Dai Bo, Dahua Lin',
+    authors: 'Dian Shao, Yue Zhao, Bo Dai, Dahua Lin',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
     links: [
       {
@@ -5697,7 +5697,7 @@ export const publications: {
   },
   {
     title: 'Learning 3D Garment Animation from Trajectories of A Piece of Cloth',
-    authors: 'Yidi Shao, Change Loy Chen, Dai Bo',
+    authors: 'Yidi Shao, Change Loy Chen, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2501.01393 2025',
     links: [
       {
@@ -5711,7 +5711,7 @@ export const publications: {
   {
     title: 'Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation',
     authors:
-      'Xian Liu, Qianyi Wu, Hang Zhou, Yinghao Xu, Rui Qian, Xinyi Lin, Xiaowei Zhou, Wayne Wu, Dai Bo, Bolei Zhou',
+      'Xian Liu, Qianyi Wu, Hang Zhou, Yinghao Xu, Rui Qian, Xinyi Lin, Xiaowei Zhou, Wayne Wu, Bo Dai, Bolei Zhou',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
     links: [
       {
@@ -5724,7 +5724,7 @@ export const publications: {
   },
   {
     title: 'Learning Modulated Transformation in GANs',
-    authors: 'Ceyuan Yang, Qihang Zhang, Yinghao Xu, Jiapeng Zhu, Yujun Shen, Dai Bo',
+    authors: 'Ceyuan Yang, Qihang Zhang, Yinghao Xu, Jiapeng Zhu, Yujun Shen, Bo Dai',
     proceedings: 'Advances in Neural Information Processing Systems (NeurIPS) 2023',
     links: [
       {
@@ -5928,7 +5928,7 @@ export const publications: {
   {
     title: 'Leo: Generative latent image animator for human video synthesis',
     authors:
-      'Yaohui Wang, Xin Ma, Xinyuan Chen, Cunjian Chen, Antitza Dantcheva, Dai Bo, Yu Qiao',
+      'Yaohui Wang, Xin Ma, Xinyuan Chen, Cunjian Chen, Antitza Dantcheva, Bo Dai, Yu Qiao',
     proceedings: 'International Journal of Computer Vision 2024',
     links: [
       {
@@ -5956,7 +5956,7 @@ export const publications: {
   {
     title: 'Linkgan: Linking gan latents to pixels for controllable image synthesis',
     authors:
-      'Jiapeng Zhu, Ceyuan Yang, Yujun Shen, Zifan Shi, Dai Bo, Deli Zhao, Qifeng Chen',
+      'Jiapeng Zhu, Ceyuan Yang, Yujun Shen, Zifan Shi, Bo Dai, Deli Zhao, Qifeng Chen',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -5984,7 +5984,7 @@ export const publications: {
   {
     title: 'Ln3diff: Scalable latent neural fields diffusion for speedy 3d generation',
     authors:
-      'Yushi Lan, Fangzhou Hong, Shuai Yang, Shangchen Zhou, Xuyi Meng, Dai Bo, Xingang Pan, Change Loy Chen',
+      'Yushi Lan, Fangzhou Hong, Shuai Yang, Shangchen Zhou, Xuyi Meng, Bo Dai, Xingang Pan, Change Loy Chen',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -6052,7 +6052,7 @@ export const publications: {
   },
   {
     title: 'Make-it-vivid: dressing your animatable biped cartoon characters from text',
-    authors: 'Junshu Tang, Yanhong Zeng, Ke Fan, Xuheng Wang, Dai Bo, Kai Chen, Lizhuang Ma',
+    authors: 'Junshu Tang, Yanhong Zeng, Ke Fan, Xuheng Wang, Bo Dai, Kai Chen, Lizhuang Ma',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -6121,7 +6121,7 @@ export const publications: {
   },
   {
     title: 'Matlaber: Material-aware text-to-3d via latent brdf auto-encoder',
-    authors: 'Xudong Xu, Zhaoyang Lyu, Xingang Pan, Dai Bo',
+    authors: 'Xudong Xu, Zhaoyang Lyu, Xingang Pan, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2308.09278 2023',
     links: [
       {
@@ -6135,7 +6135,7 @@ export const publications: {
   {
     title: 'Matrixcity: A large-scale city dataset for city-scale neural rendering and beyond',
     authors:
-      'Yixuan Li, Lihan Jiang, Linning Xu, Yuanbo Xiangli, Zhenzhi Wang, Dahua Lin, Dai Bo',
+      'Yixuan Li, Lihan Jiang, Linning Xu, Yuanbo Xiangli, Zhenzhi Wang, Dahua Lin, Bo Dai',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -6423,7 +6423,7 @@ export const publications: {
   },
   {
     title: 'Monocular 3D Object Reconstruction with GAN Inversion',
-    authors: 'Junzhe Zhang, Daxuan Ren, Zhongang Cai, Kiat Yeo Chai, Dai Bo, Change Loy Chen',
+    authors: 'Junzhe Zhang, Daxuan Ren, Zhongang Cai, Kiat Yeo Chai, Bo Dai, Change Loy Chen',
     proceedings: 'European Conference on Computer Vision (ECCV) 2022',
     links: [
       {
@@ -6450,7 +6450,7 @@ export const publications: {
   },
   {
     title: 'Motionlcm: Real-time controllable motion generation via latent consistency model',
-    authors: 'Wenxun Dai, Ling-Hao Chen, Jingbo Wang, Jinpeng Liu, Dai Bo, Yansong Tang',
+    authors: 'Wenxun Dai, Ling-Hao Chen, Jingbo Wang, Jinpeng Liu, Bo Dai, Yansong Tang',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -6463,7 +6463,7 @@ export const publications: {
   },
   {
     title: 'Move Forward and Tell: A Progressive Generator of Video Descriptions',
-    authors: 'Yilei Xiong, Dai Bo, Dahua Lin',
+    authors: 'Yilei Xiong, Bo Dai, Dahua Lin',
     proceedings: 'European Conference on Computer Vision (ECCV) 2018',
     links: [
       {
@@ -6507,7 +6507,7 @@ export const publications: {
   {
     title: 'Multi-identity Human Image Animation with Structural Video Diffusion',
     authors:
-      'Zhenzhi Wang, Yixuan Li, Yanhong Zeng, Yuwei Guo, Dahua Lin, Tianfan Xue, Dai Bo',
+      'Zhenzhi Wang, Yixuan Li, Yanhong Zeng, Yuwei Guo, Dahua Lin, Tianfan Xue, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2504.04126 2025',
     links: [
       {
@@ -6631,7 +6631,7 @@ export const publications: {
   },
   {
     title: 'Neural Network Encapsulation',
-    authors: 'Hongyang Li, Xiaoyang Guo, Dai Bo, Wanli Ouyang, Xiaogang Wang',
+    authors: 'Hongyang Li, Xiaoyang Guo, Bo Dai, Wanli Ouyang, Xiaogang Wang',
     proceedings: 'European Conference on Computer Vision (ECCV) 2018',
     links: [
       {
@@ -6728,7 +6728,7 @@ export const publications: {
   },
   {
     title: 'Novel policy seeking with constrained optimization',
-    authors: 'Hao Sun, Zhenghao Peng, Dai Bo, Jian Guo, Dahua Lin, Bolei Zhou',
+    authors: 'Hao Sun, Zhenghao Peng, Bo Dai, Jian Guo, Dahua Lin, Bolei Zhou',
     proceedings: 'arXiv preprint arXiv:2005.10696 2020',
     links: [
       {
@@ -6755,7 +6755,7 @@ export const publications: {
   },
   {
     title: 'Octree-gs: Towards consistent real-time rendering with lod-structured 3d gaussians',
-    authors: 'Kerui Ren, Lihan Jiang, Tao Lu, Mulin Yu, Linning Xu, Zhangkai Ni, Dai Bo',
+    authors: 'Kerui Ren, Lihan Jiang, Tao Lu, Mulin Yu, Linning Xu, Zhangkai Ni, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2403.17898 2024',
     links: [
       {
@@ -6854,7 +6854,7 @@ export const publications: {
   },
   {
     title: 'Optimization variance: Exploring generalization properties of DNNs',
-    authors: 'Xiao Zhang, Dongrui Wu, Haoyi Xiong, Dai Bo',
+    authors: 'Xiao Zhang, Dongrui Wu, Haoyi Xiong, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2106.01714 2021',
     links: [
       {
@@ -6880,7 +6880,7 @@ export const publications: {
   },
   {
     title: 'Orthoplanes: A novel representation for better 3d-awareness of gans',
-    authors: 'Honglin He, Zhuoqian Yang, Shikai Li, Dai Bo, Wayne Wu',
+    authors: 'Honglin He, Zhuoqian Yang, Shikai Li, Bo Dai, Wayne Wu',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -6936,7 +6936,7 @@ export const publications: {
   },
   {
     title: 'Pacer+: On-demand pedestrian animation controller in driving scenarios',
-    authors: 'Jingbo Wang, Zhengyi Luo, Ye Yuan, Yixuan Li, Dai Bo',
+    authors: 'Jingbo Wang, Zhengyi Luo, Ye Yuan, Yixuan Li, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -7132,7 +7132,7 @@ export const publications: {
   {
     title: 'Point cloud pre-training with diffusion models',
     authors:
-      'Xiao Zheng, Xiaoshui Huang, Guofeng Mei, Yuenan Hou, Zhaoyang Lyu, Dai Bo, Wanli Ouyang, Yongshun Gong',
+      'Xiao Zheng, Xiaoshui Huang, Guofeng Mei, Yuenan Hou, Zhaoyang Lyu, Bo Dai, Wanli Ouyang, Yongshun Gong',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -7189,7 +7189,7 @@ export const publications: {
   },
   {
     title: 'Policy continuation and policy evolution with hindsight inverse dynamics',
-    authors: 'Hao Sun, Dai Bo, Zhizhong Li, Xiaotong Liu, Rui Xu, Dahua Lin, Bolei Zhou',
+    authors: 'Hao Sun, Bo Dai, Zhizhong Li, Xiaotong Liu, Rui Xu, Dahua Lin, Bolei Zhou',
     proceedings: 'Optimization Foundations for Reinforcement Learning Workshop at NeurIPS 2019',
     links: [
       {
@@ -7285,7 +7285,7 @@ export const publications: {
   {
     title: 'Proc-GS: Procedural building generation for city assembly with 3D Gaussians',
     authors:
-      'Yixuan Li, Xingjian Ran, Linning Xu, Tao Lu, Mulin Yu, Zhenzhi Wang, Yuanbo Xiangli, Dahua Lin, Dai Bo',
+      'Yixuan Li, Xingjian Ran, Linning Xu, Tao Lu, Mulin Yu, Zhenzhi Wang, Yuanbo Xiangli, Dahua Lin, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2412.07660 2024',
     links: [
       {
@@ -7424,7 +7424,7 @@ export const publications: {
   },
   {
     title: 'Real or Not Real, that is the Question',
-    authors: 'Yuanbo Xiangli, Yubin Deng, Dai Bo, Change Loy Chen, Dahua Lin',
+    authors: 'Yuanbo Xiangli, Yubin Deng, Bo Dai, Change Loy Chen, Dahua Lin',
     proceedings: 'International Conference on Learning Representation (ICLR) 2020',
     links: [
       {
@@ -7479,7 +7479,7 @@ export const publications: {
   },
   {
     title: 'Recursive Visual Sound Separation Using Minus-Plus Net',
-    authors: 'Xudong Xu, Dai Bo, Dahua Lin',
+    authors: 'Xudong Xu, Bo Dai, Dahua Lin',
     proceedings: 'IEEE International Conference on Computer Vision (ICCV) 2019',
     links: [
       {
@@ -7576,7 +7576,7 @@ export const publications: {
   },
   {
     title: 'Rethinking Trajectory Prediction via Team Game',
-    authors: 'Zikai Wei, Xinge Zhu, Dai Bo, Dahua Lin',
+    authors: 'Zikai Wei, Xinge Zhu, Bo Dai, Dahua Lin',
     proceedings: 'arXiv preprint arXiv:2210.08793 2022',
     links: [
       {
@@ -7615,7 +7615,7 @@ export const publications: {
   },
   {
     title: 'Rethinking the Form of Latent States in Image Captioning',
-    authors: 'Dai Bo, Deming Ye, Dahua Lin',
+    authors: 'Bo Dai, Deming Ye, Dahua Lin',
     proceedings: 'European Conference on Computer Vision (ECCV) 2018',
     links: [
       {
@@ -7654,7 +7654,7 @@ export const publications: {
   },
   {
     title: 'Revisiting skeleton-based action recognition',
-    authors: 'Haodong Duan, Yue Zhao, Kai Chen, Dahua Lin, Dai Bo',
+    authors: 'Haodong Duan, Yue Zhao, Kai Chen, Dahua Lin, Bo Dai',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022',
     links: [
       {
@@ -7667,7 +7667,7 @@ export const publications: {
   },
   {
     title: 'Revisiting the Evaluation of Image Synthesis with GANs',
-    authors: 'Mengping Yang, Ceyuan Yang, Yichi Zhang, Qingyan Bai, Yujun Shen, Dai Bo',
+    authors: 'Mengping Yang, Ceyuan Yang, Yichi Zhang, Qingyan Bai, Yujun Shen, Bo Dai',
     proceedings: 'NeurIPS 2023 Datasets and Benchmarks 2023',
     links: [
       {
@@ -7821,7 +7821,7 @@ export const publications: {
   {
     title: 'Roomtex: Texturing compositional indoor scenes via iterative inpainting',
     authors:
-      'Qi Wang, Ruijie Lu, Xudong Xu, Jingbo Wang, Yu Wang Michael, Dai Bo, Gang Zeng, Dan Xu',
+      'Qi Wang, Ruijie Lu, Xudong Xu, Jingbo Wang, Yu Wang Michael, Bo Dai, Gang Zeng, Dan Xu',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -7878,7 +7878,7 @@ export const publications: {
     title:
       'SLIDE: A Unified Mesh and Texture Generation Framework with Enhanced Geometric Control and Multi-view Consistency',
     authors:
-      'Jinyi Wang, Zhaoyang Lyu, Ben Fei, Jiangchao Yao, Ya Zhang, Dai Bo, Dahua Lin, Ying He, Yanfeng Wang',
+      'Jinyi Wang, Zhaoyang Lyu, Ben Fei, Jiangchao Yao, Ya Zhang, Bo Dai, Dahua Lin, Ying He, Yanfeng Wang',
     proceedings: 'International Journal of Computer Vision 2024',
     links: [
       {
@@ -7920,7 +7920,7 @@ export const publications: {
   {
     title: 'ScaMo: Exploring the Scaling Law in Autoregressive Motion Generation Model',
     authors:
-      'Shunlin Lu, Jingbo Wang, Zeyu Lu, Ling-Hao Chen, Wenxun Dai, Junting Dong, Zhiyang Dou, Dai Bo, Ruimao Zhang',
+      'Shunlin Lu, Jingbo Wang, Zeyu Lu, Ling-Hao Chen, Wenxun Dai, Junting Dong, Zhiyang Dou, Bo Dai, Ruimao Zhang',
     proceedings: 'CVPR 2025',
     links: [
       {
@@ -7933,7 +7933,7 @@ export const publications: {
   },
   {
     title: 'Scaffold-gs: Structured 3d gaussians for view-adaptive rendering',
-    authors: 'Tao Lu, Mulin Yu, Linning Xu, Yuanbo Xiangli, Limin Wang, Dahua Lin, Dai Bo',
+    authors: 'Tao Lu, Mulin Yu, Linning Xu, Yuanbo Xiangli, Limin Wang, Dahua Lin, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024',
     links: [
@@ -8001,7 +8001,7 @@ export const publications: {
   },
   {
     title: 'Scaling laws for diffusion transformers',
-    authors: 'Zhengyang Liang, Hao He, Ceyuan Yang, Dai Bo',
+    authors: 'Zhengyang Liang, Hao He, Ceyuan Yang, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2410.08184 2024',
     links: [
       {
@@ -8028,7 +8028,7 @@ export const publications: {
   },
   {
     title: 'Scene-aware Generative Network for Human Motion Synthesis',
-    authors: 'Jingbo Wang, Sijie Yan, Dai Bo, Dahua LIn',
+    authors: 'Jingbo Wang, Sijie Yan, Bo Dai, Dahua LIn',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021',
     links: [
       {
@@ -8149,7 +8149,7 @@ export const publications: {
   },
   {
     title: 'Self-Supervised Scene De-occlusion',
-    authors: 'Xiaohang Zhan, Xingang Pan, Dai Bo, Ziwei Liu, Dahua Lin, Change Loy Chen',
+    authors: 'Xiaohang Zhan, Xingang Pan, Bo Dai, Ziwei Liu, Dahua Lin, Change Loy Chen',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
     links: [
       {
@@ -8189,7 +8189,7 @@ export const publications: {
   },
   {
     title: 'Self-supervised geometry-aware encoder for style-based 3D GAN inversion',
-    authors: 'Yushi Lan, Xuyi Meng, Shuai Yang, Change Loy Chen, Dai Bo',
+    authors: 'Yushi Lan, Xuyi Meng, Shuai Yang, Change Loy Chen, Bo Dai',
     proceedings:
       'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023',
     links: [
@@ -8299,7 +8299,7 @@ export const publications: {
   },
   {
     title: 'Semgrasp: Semantic grasp generation via language aligned discretization',
-    authors: 'Kailin Li, Jingbo Wang, Lixin Yang, Cewu Lu, Dai Bo',
+    authors: 'Kailin Li, Jingbo Wang, Lixin Yang, Cewu Lu, Bo Dai',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -8369,7 +8369,7 @@ export const publications: {
   },
   {
     title: 'Sparsectrl: Adding sparse controls to text-to-video diffusion models',
-    authors: 'Yuwei Guo, Ceyuan Yang, Anyi Rao, Maneesh Agrawala, Dahua Lin, Dai Bo',
+    authors: 'Yuwei Guo, Ceyuan Yang, Anyi Rao, Maneesh Agrawala, Dahua Lin, Bo Dai',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -8670,7 +8670,7 @@ export const publications: {
   {
     title:
       'Task-Oriented Human-Object Interactions Generation with Implicit Neural Representations',
-    authors: 'Quanzhou Li, Jingbo Wang, Change Loy Chen, Dai Bo',
+    authors: 'Quanzhou Li, Jingbo Wang, Change Loy Chen, Bo Dai',
     proceedings: 'IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024',
     links: [
       {
@@ -8684,7 +8684,7 @@ export const publications: {
   {
     title: 'Tela: Text to layer-wise 3d clothed human generation',
     authors:
-      'Junting Dong, Qi Fang, Zehuan Huang, Xudong Xu, Jingbo Wang, Sida Peng, Dai Bo',
+      'Junting Dong, Qi Fang, Zehuan Huang, Xudong Xu, Jingbo Wang, Sida Peng, Bo Dai',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
@@ -8697,7 +8697,7 @@ export const publications: {
   },
   {
     title: 'Temporal Pyramid Network for Action Recognition',
-    authors: 'Ceyuan Yang, Yinghao Xu, Jianping Shi, Dai Bo, Bolei Zhou',
+    authors: 'Ceyuan Yang, Yinghao Xu, Jianping Shi, Bo Dai, Bolei Zhou',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020',
     links: [
       {
@@ -8724,7 +8724,7 @@ export const publications: {
   {
     title: 'Temporal and contextual transformer for multi-camera editing of TV shows',
     authors:
-      'Anyi Rao, Xuekun Jiang, Sichen Wang, Yuwei Guo, Zihao Liu, Dai Bo, Long Pang, Xiaoyu Wu, Dahua Lin, Libiao Jin',
+      'Anyi Rao, Xuekun Jiang, Sichen Wang, Yuwei Guo, Zihao Liu, Bo Dai, Long Pang, Xiaoyu Wu, Dahua Lin, Libiao Jin',
     proceedings: 'arXiv preprint arXiv:2210.08737 2022',
     links: [
       {
@@ -8821,7 +8821,7 @@ export const publications: {
     title:
       'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
     authors:
-      'Liang Pan, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Dai Bo, Taku Komura, Jingbo Wang',
+      'Liang Pan, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Bo Dai, Taku Komura, Jingbo Wang',
     proceedings: 'CVPR 2025',
     links: [
       {
@@ -8849,7 +8849,7 @@ export const publications: {
   },
   {
     title: 'Towards Diverse and Natural Image Descriptions via a Conditional GAN',
-    authors: 'Dai Bo, Sanja Fidler, Raquel Urtasun, Dahua Lin',
+    authors: 'Bo Dai, Sanja Fidler, Raquel Urtasun, Dahua Lin',
     proceedings: 'IEEE International Conference on Computer Vision (ICCV) 2017',
     links: [
       {
@@ -8862,7 +8862,7 @@ export const publications: {
   },
   {
     title: 'Towards Diverse and Natural Scene-aware 3D Human Motion Synthesis',
-    authors: 'Jingbo Wang, Yu Rong, Jingyuan Liu, Sijie Yan, Dahua Lin, Dai Bo',
+    authors: 'Jingbo Wang, Yu Rong, Jingyuan Liu, Sijie Yan, Dahua Lin, Bo Dai',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
     links: [
       {
@@ -8889,7 +8889,7 @@ export const publications: {
   },
   {
     title: 'Towards Multi-Layered 3D Garments Animation',
-    authors: 'Yidi Shao, Change Loy Chen, Dai Bo',
+    authors: 'Yidi Shao, Change Loy Chen, Bo Dai',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023 ',
     links: [
       {
@@ -8903,7 +8903,7 @@ export const publications: {
   {
     title:
       'Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation',
-    authors: 'Minyue Dai, Jingbo Wang, Ke Fan, Bin Ji, Haoyu Zhao, Junting Dong, Dai Bo',
+    authors: 'Minyue Dai, Jingbo Wang, Ke Fan, Bin Ji, Haoyu Zhao, Junting Dong, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2503.08180 2025',
     links: [
       {
@@ -9025,7 +9025,7 @@ export const publications: {
   {
     title: 'TransEditor: Transformer-Based Dual-Space GAN for Highly Controllable Facial Editing',
     authors:
-      'Yanbo Xu, Yueqin Yin, Liming Jiang, Qianyi Wu, Chengyao Zheng, Change Loy Chen, Dai Bo, Wayne Wu',
+      'Yanbo Xu, Yueqin Yin, Liming Jiang, Qianyi Wu, Chengyao Zheng, Change Loy Chen, Bo Dai, Wayne Wu',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022 ',
     links: [
       {
@@ -9038,7 +9038,7 @@ export const publications: {
   },
   {
     title: 'Transformer with Implicit Edges for Particle-based Physics Simulation',
-    authors: 'Yidi Shao, Change Loy Chen, Dai Bo',
+    authors: 'Yidi Shao, Change Loy Chen, Bo Dai',
     proceedings: 'European Conference on Computer Vision (ECCV) 2022',
     links: [
       {
@@ -9135,7 +9135,7 @@ export const publications: {
   {
     title: 'Unified human-scene interaction via prompted chain-of-contacts',
     authors:
-      'Zeqi Xiao, Tai Wang, Jingbo Wang, Jinkun Cao, Wenwei Zhang, Dai Bo, Dahua Lin, Jiangmiao Pang',
+      'Zeqi Xiao, Tai Wang, Jingbo Wang, Jinkun Cao, Wenwei Zhang, Bo Dai, Dahua Lin, Jiangmiao Pang',
     proceedings: 'arXiv preprint arXiv:2309.07918 2023',
     links: [
       {
@@ -9203,7 +9203,7 @@ export const publications: {
   {
     title: 'Unsupervised 3D Shape Completion through GAN Inversion',
     authors:
-      'Junzhe Zhang, Xinyi Chen, Zhongang Cai, Liang Pan, Haiyu Zhao, Shuai Yi, Kiat Yeo Chai, Dai Bo, Change Loy Chen',
+      'Junzhe Zhang, Xinyi Chen, Zhongang Cai, Liang Pan, Haiyu Zhao, Shuai Yi, Kiat Yeo Chai, Bo Dai, Change Loy Chen',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021 ',
     links: [
       {
@@ -9216,7 +9216,7 @@ export const publications: {
   },
   {
     title: 'Unsupervised landmark learning from unpaired data',
-    authors: 'Yinghao Xu, Ceyuan Yang, Ziwei Liu, Dai Bo, Bolei Zhou',
+    authors: 'Yinghao Xu, Ceyuan Yang, Ziwei Liu, Bo Dai, Bolei Zhou',
     proceedings: 'arXiv preprint arXiv:2007.01053 2020',
     links: [
       {
@@ -9365,7 +9365,7 @@ export const publications: {
   },
   {
     title: 'Video representation learning with visual tempo consistency',
-    authors: 'Ceyuan Yang, Yinghao Xu, Dai Bo, Bolei Zhou',
+    authors: 'Ceyuan Yang, Yinghao Xu, Bo Dai, Bolei Zhou',
     proceedings: 'arXiv preprint arXiv:2006.15489 2020',
     links: [
       {
@@ -9478,7 +9478,7 @@ export const publications: {
   },
   {
     title: 'Visually informed binaural audio generation without binaural audios',
-    authors: 'Xudong Xu, Hang Zhou, Ziwei Liu, Dai Bo, Xiaogang Wang, Dahua Lin',
+    authors: 'Xudong Xu, Hang Zhou, Ziwei Liu, Bo Dai, Xiaogang Wang, Dahua Lin',
     proceedings: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021 ',
     links: [
       {
@@ -9627,7 +9627,7 @@ export const publications: {
   },
   {
     title: 'Zeroth-order supervised policy improvement',
-    authors: 'Hao Sun, Ziping Xu, Yuhang Song, Meng Fang, Jiechao Xiong, Dai Bo, Bolei Zhou',
+    authors: 'Hao Sun, Ziping Xu, Yuhang Song, Meng Fang, Jiechao Xiong, Bo Dai, Bolei Zhou',
     proceedings: 'arXiv preprint arXiv:2006.06600 2020',
     links: [
       {
