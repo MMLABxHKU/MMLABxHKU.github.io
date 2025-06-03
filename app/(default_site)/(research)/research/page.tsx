@@ -134,6 +134,54 @@ export default function Home() {
 
                 <FadeIn>
                     <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
+                        <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://github.com/Karine-Huang/T2I-CompBench" target="_blank">
+                            <div>
+                                <Image
+                                    src="https://ik.imagekit.io/mmlab/T2I-CompBench.png"
+                                    alt="T2I-CompBench"
+                                    fill
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                />
+                            </div>
+                        </Link>
+                        <div className="flex-2/3 flex flex-col gap-6">
+                            <Link className="text-3xl font-bold hover:text-mred" href="https://github.com/Karine-Huang/T2I-CompBench" target="_blank">
+                                Comprehensive Compositional Text-to-Image Generation 
+                            </Link>
+                            <div className="flex flex-col gap-3">
+                                <p>
+                                    T2I-CompBench and T2I-CompBench++ are the <b>first comprehensive benchmark</b> for compositional text-to-image generation. It uniquely incorporates both <b>template-based and natural language formats</b>, and covers <b>seen and unseen</b> compositions, as well as scenarios with multiple and mixed objects and attributes. The prompts in this benchmark offer significant diversity, including:
+                                </p>
+                                <ul className="ml-6 space-y-3 list-outside list-disc">
+                                    <li>
+                                        <b>8,000</b> prompts of <b>compositionality</b>, featuring 2,470 nouns, 33 colors, 32 shapes, 23 textures, 10 spatial relationships, and 875 non-spatial relationships.
+                                    </li>
+                                    <li>
+                                        <b>4 categories</b> and <b>8 sub-categories</b>, addressing attribute binding, numeracy, object relationships, and complex compositions.
+                                    </li>
+                                    <li>
+                                        <b>4 types</b> of evalution metrics, specifically designed for accuracy assessment.
+                                    </li>
+                                </ul>
+                                <p>
+                                    The benchmark can be used as both training and test sets to evaluate multiple text-to-image generation capabilities: compositional text-to-image generation, prompt following ability, and the generation of images from complex prompts.
+                                </p>
+                            </div>
+                            <div className="flex justify-end">
+                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                    <span>[</span>
+                                        <Link target="_self" href="/about-us/#xihui_liu" className="animated-underline">Xihui Liu</Link>
+                                    <span>]</span>
+                                </CardFooter>
+                            </div>
+                        </div>
+                    </div>
+                </FadeIn>
+
+
+
+                <FadeIn>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
                         <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://github.com/opendrivelab/uniad" target="_blank">
                             <div>
                                 <Image
@@ -160,6 +208,57 @@ export default function Home() {
                                 <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
                                     <span>[</span>
                                         <Link target="_self" href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link>
+                                    <span>]</span>
+                                </CardFooter>
+                            </div>
+                        </div>
+                    </div>
+                </FadeIn>
+
+
+
+                <FadeIn>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
+                        <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://animatediff.github.io/" target="_blank">
+                            <div>
+                                <Image
+                                    src="https://ik.imagekit.io/mmlab/AnimateDiff.png"
+                                    alt="AnimateDiff"
+                                    fill
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                />
+                            </div>
+                        </Link>
+                        <div className="flex-2/3 flex flex-col gap-6">
+                            <Link className="text-3xl font-bold hover:text-mred" href="https://animatediff.github.io/" target="_blank">
+                                AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning
+                            </Link>
+                            <div className="flex flex-col gap-3">
+                                <p>
+                                    AnimateDiff is an innovative AI model that extends text-to-image generation to create animated videos. It achieves this by integrating a motion module, trained on vast amounts of video data to understand realistic movement. This allows users to generate dynamic animation sequences directly from text prompts. Key features include:
+                                </p>
+                                <ul className="ml-6 space-y-3 list-outside list-disc">
+                                    <li>
+                                        Transforming static images into dynamic video.
+                                    </li>
+                                    <li>
+                                        Diverse animation styles, from anime to photorealistic. 
+                                    </li>
+                                    <li>
+                                        Precise camera motion control (pan, zoom, rotate) using LoRA.
+                                    </li>
+                                    <li>
+                                        Compatibility with existing models like Stable Diffusion and ControlNet.
+                                    </li>
+                                </ul>
+                                <p>
+                                    AnimateDiff significantly lowers the barrier to animation creation, enabling more creators to bring their textual ideas to life.
+                                </p>
+                            </div>
+                            <div className="flex justify-end">
+                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                    <span>[</span>
+                                        <Link target="_self" href="/about-us/#bo_dai" className="animated-underline">Bo Dai</Link>
                                     <span>]</span>
                                 </CardFooter>
                             </div>
