@@ -341,6 +341,19 @@ export const members: {
     keys: ['2024'],
   },
   {
+    name: 'Junli Ren',
+    img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Ping Luo'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://renjunli99.github.io/',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
     name: 'Lu Qiu',
     img: 'https://mmlabassets.github.io/member/lu_qiu_c.jpg',
     title: 'Ph.D. Candidate',
@@ -353,57 +366,6 @@ export const members: {
       {
         icon: 'email',
         link: 'mailto:qiulu0509@gmail.com',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Yi Chen',
-    img: 'https://mmlabassets.github.io/member/yi_chen_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=3ep5ODoAAAAJ&hl=zh-CN',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Zhiyuan Chen',
-    img: 'https://mmlabassets.github.io/member/zhiyuan_chen_c.jpg',
-    title: 'Mphil',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'zyc.ai',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=CKiY8PIAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:this@zyc.ai',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/ZhiyuanChen',
-      },
-    ],
-    keys: ['2024'],
-  },
-  {
-    name: 'Junli Ren',
-    img: 'https://mmlabassets.github.io/member/junli_ren_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://renjunli99.github.io/',
       },
     ],
     keys: ['2024'],
@@ -481,6 +443,19 @@ export const members: {
     keys: ['2024'],
   },
   {
+    name: 'Yi Chen',
+    img: 'https://mmlabassets.github.io/member/yi_chen_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=3ep5ODoAAAAJ&hl=zh-CN',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
     name: 'Yihang Qiu',
     img: 'https://mmlabassets.github.io/member/yihang_qiu_c.jpg',
     title: 'Ph.D. Candidate',
@@ -539,6 +514,56 @@ export const members: {
       },
     ],
     keys: ['2024'],
+  },
+  {
+    name: 'Zhiyuan Chen',
+    img: 'https://mmlabassets.github.io/member/zhiyuan_chen_c.jpg',
+    title: 'Mphil',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'zyc.ai',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=CKiY8PIAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:this@zyc.ai',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/ZhiyuanChen',
+      },
+    ],
+    keys: ['2024'],
+  },
+  {
+    name: 'Yukun Huang',
+    img: 'https://mmlabassets.github.io/member/yukun_huang_c.jpg',
+    title: 'Postdoc Fellow',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yukun-huang.github.io/',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=lHb5gzoAAAAJ',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:kunh6414@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/Yukun-Huang',
+      },
+    ],
+    keys: ['2024', '2025', 'Alumni'],
   },
   {
     name: 'Mengzhao Chen',
@@ -659,6 +684,53 @@ export const members: {
       {
         icon: 'webpage',
         link: 'https://jinjinw.com/',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Jintao Lin',
+    img: 'https://mmlabassets.github.io/member/jintao_lin_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'github',
+        link: 'https://github.com/dreamerlin',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Kaiyi Huang',
+    img: 'https://mmlabassets.github.io/member/kaiyi_huang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=dB86D_cAAAAJ&hl=zh-CN&oi=sra',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:huangky2022@gmail.com',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/Karine-Huang',
+      },
+    ],
+    keys: ['2023'],
+  },
+  {
+    name: 'Kaiyue Sun',
+    img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Xihui Liu'],
+    links: [
+      {
+        icon: 'github',
+        link: 'https://github.com/KaiyueSun98',
       },
     ],
     keys: ['2023'],
@@ -791,53 +863,6 @@ export const members: {
     keys: ['2023'],
   },
   {
-    name: 'Kaiyi Huang',
-    img: 'https://mmlabassets.github.io/member/kaiyi_huang_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=dB86D_cAAAAJ&hl=zh-CN&oi=sra',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:huangky2022@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/Karine-Huang',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Kaiyue Sun',
-    img: 'https://mmlabassets.github.io/member/kaiyue_sun_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'github',
-        link: 'https://github.com/KaiyueSun98',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
-    name: 'Jintao Lin',
-    img: 'https://mmlabassets.github.io/member/jintao_lin_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'github',
-        link: 'https://github.com/dreamerlin',
-      },
-    ],
-    keys: ['2023'],
-  },
-  {
     name: 'Yuqing Wang',
     img: 'https://mmlabassets.github.io/member/yuqing_wang_c.jpg',
     title: 'Ph.D. Candidate',
@@ -857,31 +882,6 @@ export const members: {
       },
     ],
     keys: ['2023'],
-  },
-  {
-    name: 'Yukun Huang',
-    img: 'https://mmlabassets.github.io/member/yukun_huang_c.jpg',
-    title: 'Postdoc Fellow',
-    pi: ['Xihui Liu'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yukun-huang.github.io/',
-      },
-      {
-        icon: 'scholar',
-        link: 'https://scholar.google.com/citations?user=lHb5gzoAAAAJ',
-      },
-      {
-        icon: 'email',
-        link: 'mailto:kunh6414@gmail.com',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/Yukun-Huang',
-      },
-    ],
-    keys: ['2024', '2025', 'Alumni'],
   },
   {
     name: 'Haibao Yu',

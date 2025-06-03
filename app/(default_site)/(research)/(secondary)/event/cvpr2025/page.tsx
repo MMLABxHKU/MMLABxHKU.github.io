@@ -161,7 +161,7 @@ export default function Home() {
                             </h2>
                             <FadeIn>
                                 <p>
-                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 8 competitions, workshops, and tutorials, and 19 papers being presented at the main conference.
+                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 9 competitions, workshops, and tutorials, and 19 papers being presented at the main conference.
                                 </p>
                             </FadeIn>
                             <FadeIn>
@@ -478,7 +478,10 @@ export default function Home() {
                                     <b>Area Chair</b>: Ping Luo, Xihui Liu, Hongyang Li
                                 </li>
                                 <li>
-                                    <b>Reviewer</b>: Chengyue Wu, Chonghao Sima, Fanqing Meng, Haibao Yu, Jiahao Wang, Jin Wang, Li Chen, Lirui Zhao, Mengzhao Chen, Quanfeng Lu, Runjian Chen, Shilong Zhang, Shoufa Chen, Yao Mu, Yihang Qiu, Yizhuo Li, Zhiheng Liu, Zhixuan Liang, Yuqing Wang (Outstanding Reviewer), Zhiyuan Chen, Jiwen Yu, Yunhan Yang, Yukun Huang, Yi Chen
+                                    <b>Outstanding Reviewer</b>: Yuqing Wang
+                                </li>
+                                <li>
+                                    <b>Reviewer</b>: Chengyue Wu, Chonghao Sima, Fanqing Meng, Haibao Yu, Jiahao Wang, Jin Wang, Jiwen Yu, Li Chen, Lirui Zhao, Mengzhao Chen, Quanfeng Lu, Runjian Chen, Shilong Zhang, Shoufa Chen, Yao Mu, Yi Chen, Yihang Qiu, Yizhuo Li, Yukun Huang, Yunhan Yang, Zhiheng Liu, Zhixuan Liang, Zhiyuan Chen
                                 </li>
                             </ul>
                         </div>

@@ -76,23 +76,6 @@ export const publications: {
     keys: ['2025', 'Embodied AI', 'Dataset/Benchmark'],
   },
   {
-    title:
-      "BEVFormer: Learning Bird's-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers",
-    authors:
-      'Zhiqi Li, Wenhai Wang, Hongyang Li, Enze Xie, Chonghao Sima, Tong Lu, Yu Qiao, Jifeng Dai',
-    proceedings: 'TPAMI 2025',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ',
-      },
-      { website: 'GitHub', url: 'https://github.com/fundamentalvision/BEVFormer' },
-      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/564295059' },
-    ],
-    pis: ['Hongyang Li'],
-    keys: ['Embodied AI', '2025'],
-  },
-  {
     title: 'Centaur: Robust End-to-End Autonomous Driving with Test-Time Training',
     authors:
       'Chonghao Sima, Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez',
@@ -307,6 +290,23 @@ export const publications: {
     ],
     keys: ['2025', 'Generative'],
     pis: ['Xihui Liu'],
+  },
+  {
+    title:
+      "BEVFormer: Learning Bird's-Eye-View Representation From LiDAR-Camera via Spatiotemporal Transformers",
+    authors:
+      'Zhiqi Li, Wenhai Wang, Hongyang Li, Enze Xie, Chonghao Sima, Tong Lu, Yu Qiao, Jifeng Dai',
+    proceedings: 'TPAMI 2025',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ',
+      },
+      { website: 'GitHub', url: 'https://github.com/fundamentalvision/BEVFormer' },
+      { website: 'Zhihu', url: 'https://zhuanlan.zhihu.com/p/564295059' },
+    ],
+    pis: ['Hongyang Li'],
+    keys: ['Embodied AI', '2025'],
   },
   {
     title: '3D Data Augmentation for Driving Scenes on Camera',
@@ -1914,119 +1914,6 @@ export const publications: {
   },
   {
     title:
-      'Improving Deep Visual Representation for Person Re-identiﬁcation by Global and Local Image-language Association',
-    authors:
-      'Dapeng Chen, Hongsheng Li, Xihui Liu, Yantao Shen, Jing Shao, Zejian Yuan, Xiaogang Wang',
-    proceedings: 'ECCV 2018',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/1808.01571',
-      },
-    ],
-    keys: ['Previous', 'Other', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title: 'Localization Guided Learning for Pedestrian Attribute Recognition',
-    authors: 'Pengze Liu, Xihui Liu, Junjie Yan, Jing Shao',
-    proceedings: 'BMVC 2018',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/1808.09102',
-      },
-      {
-        website: 'Code',
-        url: 'https://github.com/lpzjerry/Pedestrian-Attribute-LGNet',
-      },
-    ],
-    keys: ['Previous', 'Other', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title:
-      'Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data',
-    authors: 'Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang',
-    proceedings: 'ECCV 2018',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/1803.08314',
-      },
-    ],
-    keys: ['Previous', 'Other', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title: 'HydraPlus-Net: Attentive Deep Features for Pedestrian Analysis',
-    authors:
-      'Xihui Liu*, Haiyu Zhao*, Maoqing Tian, Lu Sheng, Jing Shao, Shuai Yi, Junjie Yan, Xiaogang Wang',
-    proceedings: 'ICCV 2017',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/1709.09930',
-      },
-      {
-        website: 'Page',
-        url: 'https://xh-liu.github.io/HydraPlus-Net/',
-      },
-      {
-        website: 'Code',
-        url: 'https://github.com/xh-liu/HydraPlus-Net',
-      },
-      {
-        website: 'Data',
-        url: 'https://drive.google.com/drive/folders/0B5_Ra3JsEOyOUlhKM0VPZ1ZWR2M?resourcekey=0-CdctEkdX1j2GSMSWWfrPSQ&usp=sharing',
-      },
-    ],
-    keys: ['Previous', 'Other', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title: 'Object Detection in Videos With Tubelet Proposal Networks',
-    authors:
-      'Kai Kang, Hongsheng Li, Tong Xiao, Wanli Ouyang, Junjie Yan, Xihui Liu, Xiaogang Wang',
-    proceedings: 'CVPR 2017',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/1702.06355',
-      },
-      {
-        website: 'Code',
-        url: 'https://github.com/myfavouritekk/tpn',
-      },
-      {
-        website: 'Winner of ImageNet ILSVRC 2016 Task 3c: Object detection/tracking from video',
-        url: 'https://www.image-net.org/challenges/LSVRC/2016/results.php#:~:text=Task%203c%3A%20Object%20detection/tracking%20from%20video%20with%20provided%20training%20data',
-      },
-    ],
-    keys: ['Previous', 'Detection', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title:
-      'Orientation Invariant Feature Embedding and Spatial Temporal Regularization for Vehicle Re-identification',
-    authors:
-      'Zhongdao Wang*, Luming Tang*, Xihui Liu, Zhuliang Yao, Shuai Yi, Jing Shao, Junjie Yan, Shengjin Wang, Hongsheng Li, Xiaogang Wang',
-    proceedings: 'ICCV 2017',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_Orientation_Invariant_Feature_ICCV_2017_paper.pdf',
-      },
-      {
-        website: 'Data',
-        url: 'https://github.com/Zhongdao/VehicleReIDKeyPointData',
-      },
-    ],
-    keys: ['Previous', 'Other', 'Vision'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title:
       '-Tuning: Transferring Multimodal Foundation Models with Optimal Multi-task Interpolation',
     authors: 'Chengyue Wu, Teng Wang, Yixiao Ge, Zeyu Lu, Ruisong Zhou, Ying Shan, Ping Luo',
     proceedings: 'International Conference on Machine Learning',
@@ -2684,8 +2571,7 @@ export const publications: {
   },
   {
     title: 'Blockplanner: City block generation with vectorized graph representation',
-    authors:
-      'Linning Xu, Yuanbo Xiangli, Anyi Rao, Nanxuan Zhao, Bo Dai, Ziwei Liu, Dahua Lin',
+    authors: 'Linning Xu, Yuanbo Xiangli, Anyi Rao, Nanxuan Zhao, Bo Dai, Ziwei Liu, Dahua Lin',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2021',
     links: [
       {
@@ -2834,8 +2720,7 @@ export const publications: {
   },
   {
     title: 'Cameractrl: Enabling camera control for text-to-video generation',
-    authors:
-      'Hao He, Yinghao Xu, Yuwei Guo, Gordon Wetzstein, Bo Dai, Hongsheng Li, Ceyuan Yang',
+    authors: 'Hao He, Yinghao Xu, Yuwei Guo, Gordon Wetzstein, Bo Dai, Hongsheng Li, Ceyuan Yang',
     proceedings: 'arXiv preprint arXiv:2404.02101 2024',
     links: [
       {
@@ -4784,8 +4669,7 @@ export const publications: {
   },
   {
     title: 'GAS: Generative Avatar Synthesis from a Single Image',
-    authors:
-      'Yixing Lu, Junting Dong, Youngjoong Kwon, Qin Zhao, Bo Dai, Fernando De la Torre',
+    authors: 'Yixing Lu, Junting Dong, Youngjoong Kwon, Qin Zhao, Bo Dai, Fernando De la Torre',
     proceedings: 'arXiv preprint arXiv:2502.06957 2025',
     links: [
       {
@@ -5247,6 +5131,32 @@ export const publications: {
     pis: ['Ping Luo'],
   },
   {
+    title: 'HydraPlus-Net: Attentive Deep Features for Pedestrian Analysis',
+    authors:
+      'Xihui Liu*, Haiyu Zhao*, Maoqing Tian, Lu Sheng, Jing Shao, Shuai Yi, Junjie Yan, Xiaogang Wang',
+    proceedings: 'ICCV 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/1709.09930',
+      },
+      {
+        website: 'Page',
+        url: 'https://xh-liu.github.io/HydraPlus-Net/',
+      },
+      {
+        website: 'Code',
+        url: 'https://github.com/xh-liu/HydraPlus-Net',
+      },
+      {
+        website: 'Data',
+        url: 'https://drive.google.com/drive/folders/0B5_Ra3JsEOyOUlhKM0VPZ1ZWR2M?resourcekey=0-CdctEkdX1j2GSMSWWfrPSQ&usp=sharing',
+      },
+    ],
+    keys: ['Previous', 'Other', 'Vision'],
+    pis: ['Xihui Liu'],
+  },
+  {
     title: 'Hyperstyle3d: Text-guided 3d portrait stylization via hypernetworks',
     authors:
       'Zhuo Chen, Xudong Xu, Yichao Yan, Ye Pan, Wenhan Zhu, Wayne Wu, Bo Dai, Xiaokang Yang',
@@ -5338,6 +5248,21 @@ export const publications: {
     ],
     keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
+  },
+  {
+    title:
+      'Improving Deep Visual Representation for Person Re-identiﬁcation by Global and Local Image-language Association',
+    authors:
+      'Dapeng Chen, Hongsheng Li, Xihui Liu, Yantao Shen, Jing Shao, Zejian Yuan, Xiaogang Wang',
+    proceedings: 'ECCV 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/1808.01571',
+      },
+    ],
+    keys: ['Previous', 'Other', 'Vision'],
+    pis: ['Xihui Liu'],
   },
   {
     title: 'Improving GANs with A Dynamic Discriminator',
@@ -5927,8 +5852,7 @@ export const publications: {
   },
   {
     title: 'Leo: Generative latent image animator for human video synthesis',
-    authors:
-      'Yaohui Wang, Xin Ma, Xinyuan Chen, Cunjian Chen, Antitza Dantcheva, Bo Dai, Yu Qiao',
+    authors: 'Yaohui Wang, Xin Ma, Xinyuan Chen, Cunjian Chen, Antitza Dantcheva, Bo Dai, Yu Qiao',
     proceedings: 'International Journal of Computer Vision 2024',
     links: [
       {
@@ -5955,8 +5879,7 @@ export const publications: {
   },
   {
     title: 'Linkgan: Linking gan latents to pixels for controllable image synthesis',
-    authors:
-      'Jiapeng Zhu, Ceyuan Yang, Yujun Shen, Zifan Shi, Bo Dai, Deli Zhao, Qifeng Chen',
+    authors: 'Jiapeng Zhu, Ceyuan Yang, Yujun Shen, Zifan Shi, Bo Dai, Deli Zhao, Qifeng Chen',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -5994,6 +5917,23 @@ export const publications: {
     ],
     keys: ['Generative'],
     pis: ['Bo Dai'],
+  },
+  {
+    title: 'Localization Guided Learning for Pedestrian Attribute Recognition',
+    authors: 'Pengze Liu, Xihui Liu, Junjie Yan, Jing Shao',
+    proceedings: 'BMVC 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/1808.09102',
+      },
+      {
+        website: 'Code',
+        url: 'https://github.com/lpzjerry/Pedestrian-Attribute-LGNet',
+      },
+    ],
+    keys: ['Previous', 'Other', 'Vision'],
+    pis: ['Xihui Liu'],
   },
   {
     title: 'Lvlm-ehub: A comprehensive evaluation benchmark for large vision-language models',
@@ -6134,8 +6074,7 @@ export const publications: {
   },
   {
     title: 'Matrixcity: A large-scale city dataset for city-scale neural rendering and beyond',
-    authors:
-      'Yixuan Li, Lihan Jiang, Linning Xu, Yuanbo Xiangli, Zhenzhi Wang, Dahua Lin, Bo Dai',
+    authors: 'Yixuan Li, Lihan Jiang, Linning Xu, Yuanbo Xiangli, Zhenzhi Wang, Dahua Lin, Bo Dai',
     proceedings: 'Proceedings of the IEEE/CVF International Conference on Computer Vision 2023',
     links: [
       {
@@ -6506,8 +6445,7 @@ export const publications: {
   },
   {
     title: 'Multi-identity Human Image Animation with Structural Video Diffusion',
-    authors:
-      'Zhenzhi Wang, Yixuan Li, Yanhong Zeng, Yuwei Guo, Dahua Lin, Tianfan Xue, Bo Dai',
+    authors: 'Zhenzhi Wang, Yixuan Li, Yanhong Zeng, Yuwei Guo, Dahua Lin, Tianfan Xue, Bo Dai',
     proceedings: 'arXiv preprint arXiv:2504.04126 2025',
     links: [
       {
@@ -6740,6 +6678,28 @@ export const publications: {
     pis: ['Bo Dai'],
   },
   {
+    title: 'Object Detection in Videos With Tubelet Proposal Networks',
+    authors:
+      'Kai Kang, Hongsheng Li, Tong Xiao, Wanli Ouyang, Junjie Yan, Xihui Liu, Xiaogang Wang',
+    proceedings: 'CVPR 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/1702.06355',
+      },
+      {
+        website: 'Code',
+        url: 'https://github.com/myfavouritekk/tpn',
+      },
+      {
+        website: 'Winner of ImageNet ILSVRC 2016 Task 3c: Object detection/tracking from video',
+        url: 'https://www.image-net.org/challenges/LSVRC/2016/results.php#:~:text=Task%203c%3A%20Object%20detection/tracking%20from%20video%20with%20provided%20training%20data',
+      },
+    ],
+    keys: ['Previous', 'Detection', 'Vision'],
+    pis: ['Xihui Liu'],
+  },
+  {
     title: 'Objects in semantic topology',
     authors:
       'Shuo Yang, Peize Sun, Yi Jiang, Xiaobo Xia, Ruiheng Zhang, Zehuan Yuan, Changhu Wang, Ping Luo, Min Xu',
@@ -6877,6 +6837,25 @@ export const publications: {
     ],
     keys: ['Vision', 'General'],
     pis: ['Ping Luo'],
+  },
+  {
+    title:
+      'Orientation Invariant Feature Embedding and Spatial Temporal Regularization for Vehicle Re-identification',
+    authors:
+      'Zhongdao Wang*, Luming Tang*, Xihui Liu, Zhuliang Yao, Shuai Yi, Jing Shao, Junjie Yan, Shengjin Wang, Hongsheng Li, Xiaogang Wang',
+    proceedings: 'ICCV 2017',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_Orientation_Invariant_Feature_ICCV_2017_paper.pdf',
+      },
+      {
+        website: 'Data',
+        url: 'https://github.com/Zhongdao/VehicleReIDKeyPointData',
+      },
+    ],
+    keys: ['Previous', 'Other', 'Vision'],
+    pis: ['Xihui Liu'],
   },
   {
     title: 'Orthoplanes: A novel representation for better 3d-awareness of gans',
@@ -8312,6 +8291,20 @@ export const publications: {
   },
   {
     title:
+      'Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data',
+    authors: 'Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang',
+    proceedings: 'ECCV 2018',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/1803.08314',
+      },
+    ],
+    keys: ['Previous', 'Other', 'Vision'],
+    pis: ['Xihui Liu'],
+  },
+  {
+    title:
       'Skilldiffuser: Interpretable hierarchical planning via skill abstractions in diffusion-based task execution',
     authors: 'Zhixuan Liang, Yao Mu, Hengbo Ma, Masayoshi Tomizuka, Mingyu Ding, Ping Luo',
     proceedings:
@@ -8683,8 +8676,7 @@ export const publications: {
   },
   {
     title: 'Tela: Text to layer-wise 3d clothed human generation',
-    authors:
-      'Junting Dong, Qi Fang, Zehuan Huang, Xudong Xu, Jingbo Wang, Sida Peng, Bo Dai',
+    authors: 'Junting Dong, Qi Fang, Zehuan Huang, Xudong Xu, Jingbo Wang, Sida Peng, Bo Dai',
     proceedings: 'European Conference on Computer Vision 2024',
     links: [
       {
