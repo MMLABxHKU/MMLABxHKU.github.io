@@ -447,18 +447,18 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="flex flex-col gap-6">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://github.com/OpenDriveLab/UniAD">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://opendrivelab.com/DriveLM/">
                                 <div>
                                     <Image
-                                        src="https://mmlabassets.github.io/open-source/odl_uniad.jpg"
-                                        alt="UniAD"
+                                        src="https://mmlabassets.github.io/open-source/odl_drivelm.jpg"
+                                        alt="DriveLM"
                                         fill
                                         className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
                                     <h3 className="text-white font-bold text-t1 bg-black/30">
-                                        UniAD
+                                        DriveLM
                                     </h3>
                                 </div>
                             </Link>
@@ -484,18 +484,18 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="flex flex-col gap-6 2xl:col-span-2">
-                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://animatediff.github.io/">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://city-super.github.io/citynerf/">
                                 <div>
                                     <Image
-                                        src="https://mmlabassets.github.io/open-source/AnimateDiff.jpg"
-                                        alt="AnimateDiff"
+                                        src="https://mmlabassets.github.io/open-source/BungeeNeRF.jpg"
+                                        alt="BungeeNeRF"
                                         fill
                                         className="object-cover object-right bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                     />
                                 </div>
                                 <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
                                     <h3 className="text-white font-bold text-t1 bg-black/30">
-                                        AnimateDiff
+                                        BungeeNeRF
                                     </h3>
                                 </div>
                             </Link>
