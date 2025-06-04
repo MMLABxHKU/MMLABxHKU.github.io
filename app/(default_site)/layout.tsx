@@ -173,20 +173,15 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-10 select-none">
 
                                     {/* to keep the same */}
-                                    <HoverCard>
-                                        <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
-                                            <AspectRatio ratio={1/1}>
-                                                <Image
-                                                    src='/icon/IDS.jpg'
-                                                    alt='HKU-Shanghai ICRC'
-                                                    fill
-                                                />
-                                            </AspectRatio>
-                                        </HoverCardTrigger>
-                                        <HoverCardContent className="border-0 w-fit">
-                                            <Link href="https://hku-sh-icrc.com/" target="_blank" className="select-none hover:text-mred">HKU-Shanghai ICRC</Link>
-                                        </HoverCardContent>
-                                    </HoverCard>
+                                    <Link href="https://hku-sh-icrc.com/" target="_blank" className="h-8 w-8">
+                                        <AspectRatio ratio={1/1}>
+                                            <Image
+                                                src='/icon/IDS.jpg'
+                                                alt='HKU-Shanghai ICRC'
+                                                fill
+                                            />
+                                        </AspectRatio>
+                                    </Link>
                                     <HoverCard>
                                         <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
                                             <AspectRatio ratio={1/1}>
@@ -234,20 +229,15 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 flex-wrap">
 
                                 {/* to keep the same */}
-                                <HoverCard>
-                                    <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
-                                        <AspectRatio ratio={1/1}>
-                                            <Image
-                                                src='/icon/IDS.jpg'
-                                                alt='HKU-Shanghai ICRC'
-                                                fill
-                                            />
-                                        </AspectRatio>
-                                    </HoverCardTrigger>
-                                    <HoverCardContent className="border-0 w-fit">
-                                        <Link href="https://hku-sh-icrc.com/" target="_blank" className="select-none hover:text-mred">HKU-Shanghai ICRC</Link>
-                                    </HoverCardContent>
-                                </HoverCard>
+                                <Link href="https://hku-sh-icrc.com/" target="_blank" className="h-8 w-8">
+                                    <AspectRatio ratio={1/1}>
+                                        <Image
+                                            src='/icon/IDS.jpg'
+                                            alt='HKU-Shanghai ICRC'
+                                            fill
+                                        />
+                                    </AspectRatio>
+                                </Link>
                                 <HoverCard>
                                     <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer h-8 w-8">
                                         <AspectRatio ratio={1/1}>
