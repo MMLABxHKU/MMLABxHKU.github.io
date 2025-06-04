@@ -184,8 +184,7 @@ export default function Home() {
                     <div className="w-full flex flex-col items-center mt-20">
                         <div className="w-full max-w-7xl flex flex-col gap-6">
                             <p>
-                                Positions of Postdocs, RAs, full-time/part-time PhDs, Internships, Research Scientists, <i>etc.</i>, are available.
-                                Enquiries about the duties of the posts could be sent to:
+                                Positions of Postdocs, RAs, full-time/part-time PhDs, Internships, Research Scientists, <i>etc.</i>, are available. Inquiries can be directed to <Link href="mailto:mmlab-hku@googlegroups.com" className="text-mred animated-underline">mmlab-hku@googlegroups.com</Link>, which will reach all relevant team members:
                             </p>
                             <ul className="ml-6 space-y-6 list-outside list-disc">
                                 <li>
