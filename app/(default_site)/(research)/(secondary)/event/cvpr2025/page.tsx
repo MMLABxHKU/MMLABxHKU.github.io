@@ -161,7 +161,7 @@ export default function Home() {
                             </h2>
                             <FadeIn>
                                 <p>
-                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 9 competitions, workshops, and tutorials, and 19 papers being presented at the main conference.
+                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 9 competitions, workshops, and tutorials, and 24 papers being presented at the main conference.
                                 </p>
                             </FadeIn>
                             <FadeIn>
