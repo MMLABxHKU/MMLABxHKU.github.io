@@ -173,6 +173,16 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-10 select-none">
 
                                     {/* to keep the same */}
+                                    <HoverCard>
+                                        <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
+                                            <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+                                            </svg>
+                                        </HoverCardTrigger>
+                                        <HoverCardContent className="border-0 w-fit">
+                                            <Link href="mailto:mmlab-hku@googlegroups.com" target="_blank" className="select-none hover:text-mred">mmlab-hku@googlegroups.com</Link>
+                                        </HoverCardContent>
+                                    </HoverCard>
                                     <Link href="https://hku-sh-icrc.com/" target="_blank" className="h-8 w-8">
                                         <AspectRatio ratio={1/1}>
                                             <Image
@@ -229,6 +239,16 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-10 flex-wrap">
 
                                 {/* to keep the same */}
+                                <HoverCard>
+                                    <HoverCardTrigger  className="select-none hover:text-mred hover:cursor-pointer">
+                                        <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+                                        </svg>
+                                    </HoverCardTrigger>
+                                    <HoverCardContent className="border-0 w-fit">
+                                        <Link href="mailto:mmlab-hku@googlegroups.com" target="_blank" className="select-none hover:text-mred">mmlab-hku@googlegroups.com</Link>
+                                    </HoverCardContent>
+                                </HoverCard>
                                 <Link href="https://hku-sh-icrc.com/" target="_blank" className="h-8 w-8">
                                     <AspectRatio ratio={1/1}>
                                         <Image
