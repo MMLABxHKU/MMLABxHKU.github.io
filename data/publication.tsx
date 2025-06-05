@@ -8814,7 +8814,7 @@ export const publications: {
       'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
     authors:
       'Liang Pan, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Bo Dai, Taku Komura, Jingbo Wang',
-    proceedings: 'CVPR 2025',
+    proceedings: 'CVPR 2025 Oral',
     links: [
       {
         website: 'Paper',
