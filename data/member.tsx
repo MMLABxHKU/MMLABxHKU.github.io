@@ -152,6 +152,20 @@ export const pis: {
   },
 ];
 
+  // {
+  //   name: 'Yao Mu',
+  //   img: 'https://mmlabassets.github.io/member/yao_mu_c.jpg',
+  //   title: 'Ph.D. Candidate',
+  //   pi: ['Ping Luo'],
+  //   links: [
+  //     {
+  //       icon: 'webpage',
+  //       link: 'https://yaomarkmu.github.io/',
+  //     },
+  //   ],
+  //   keys: ['2021'],
+  // },
+
 export const members: {
   name: string;
   img: string;
@@ -1028,19 +1042,6 @@ export const members: {
       {
         icon: 'webpage',
         link: 'https://laiyao1.github.io/',
-      },
-    ],
-    keys: ['2021'],
-  },
-  {
-    name: 'Yao Mu',
-    img: 'https://mmlabassets.github.io/member/yao_mu_c.jpg',
-    title: 'Ph.D. Candidate',
-    pi: ['Ping Luo'],
-    links: [
-      {
-        icon: 'webpage',
-        link: 'https://yaomarkmu.github.io/',
       },
     ],
     keys: ['2021'],
