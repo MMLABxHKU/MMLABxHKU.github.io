@@ -415,6 +415,11 @@ export default function Home() {
                                     <Card className="border-border rounded-none">
                                         <CardHeader>
                                             <CardTitle className="text-xl">{publication.title}</CardTitle>
+                                            {publication.proceedings.startsWith("CVPR 2025 ") && (
+                                                <CardDescription className="text-mred">
+                                                    {publication.proceedings.split("CVPR 2025 ")[1]}
+                                                </CardDescription>
+                                            )}
                                             <CardDescription>{publication.authors}</CardDescription>
                                         </CardHeader>
                                         <div className="flex flex-col lg:flex-row justify-between gap-3">
