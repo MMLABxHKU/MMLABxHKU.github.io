@@ -869,7 +869,7 @@ export const publications: {
     title: 'Parallelized Autoregressive Visual Generation',
     authors:
       'Yuqing Wang, Shuhuai Ren, Zhijie Lin, Yujin Han, Haoyuan Guo, Zhenheng Yang, Difan Zou, Jiashi Feng, Xihui Liu',
-    proceedings: 'CVPR 2025',
+    proceedings: 'CVPR 2025 Highlight',
     links: [
       {
         website: 'Paper',
