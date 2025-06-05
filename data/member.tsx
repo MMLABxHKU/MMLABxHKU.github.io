@@ -116,6 +116,40 @@ export const pis: {
       },
     ],
   },
+  {
+    name: 'Yao Mu',
+    id: 'yao_mu',
+    img: 'https://mmlabassets.github.io/member/yao_mu_c.jpg',
+    img_full: 'https://ik.imagekit.io/mmlab/yao_mu.jpg',
+    title: 'Assistant Professor',
+    bio: 'Yao Mu is a tenure-track Assistant Professor, at AI Institute, School of Computer Science in Shanghai Jiao Tong University, where he works closely with Professor Xiaokang Yang at SJTU, Prof. Ping Luo at HKU, and Professor Mingyu Ding at UNC. Previously, he received my doctoral degree of Computer Science at the University of Hong Kong, fortunately supervised by Prof. Ping Luo and co-advised by Prof. Xiaoou Tang at the MMLab@HKU. Previously he obtained the M.Phil Degree from Tsinghua University in June 2021,under the supervision of Prof. Bo Cheng and Prof. Shengbo Li at the Intelligent Driving Laboratory and Prof. Jianyu Chen at the Institute for Interdisciplinary Information Sciences in Tsinghua University.',
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://yaomarkmu.github.io/',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/YaoMarkMu',
+      },
+      {
+        icon: 'scholar',
+        link: 'https://scholar.google.com/citations?user=HK4x3fkAAAAJ',
+      },
+      {
+        icon: 'twitter',
+        link: 'http://twitter.com/YaoMarkMu1',
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/mu-yao-308607185',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:yaomarkmu@gmail.com',
+      },
+    ],
+  },
 ];
 
 export const members: {
