@@ -161,12 +161,17 @@ export default function Home() {
                             </h2>
                             <FadeIn>
                                 <p>
-                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday June, 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 9 competitions, workshops, and tutorials, and 24 papers being presented at the main conference.
+                                    The <Link className="text-mred animated-underline" href="https://cvpr.thecvf.com/Conferences/2025" target="_blank">CVPR 2025</Link> is being held Wednesday, June 11th through Sunday, June 15th, 2025 at the Music City Center, Nashville TN, USA. MMLab at HKU will have a presence with active involvement in 9 competitions, workshops, and tutorials, and 24 papers being presented at the main conference.
                                 </p>
                             </FadeIn>
-                            <FadeIn>
+                            {/* <FadeIn>
                                 <p>
                                     Many of the greatest ideas come from a diverse mix of minds, backgrounds, and experiences. We provide equal opportunities to all participants without regard to nationality, affiliation, race, religion, color, age, disability, or any other restriction. We believe diversity drives innovation. When we say we welcome participation from everyone, we mean everyone.
+                                </p>
+                            </FadeIn> */}
+                            <FadeIn>
+                                <p>
+                                    The following members will attend CVPR in person: <b>Chonghao Sima, Kaiyue Sun, Xihui Liu, Yuqing Wang</b>. Meet us on-site - we'd love to connect, chat, and exchange ideas! Please feel free to reach out through <Link className="text-mred animated-underline" href="/about-us#career">this link</Link> if you are interested in joining us or have any other inquiries.
                                 </p>
                             </FadeIn>
                         </div>
