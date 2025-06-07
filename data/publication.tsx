@@ -30,6 +30,43 @@ export const publications: {
   pis: string[];
 }[] = [
   {
+    title:
+      'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
+    authors:
+      'Liang Pan, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Bo Dai, Taku Komura, Jingbo Wang',
+    proceedings: 'CVPR 2025 Oral',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://www.semanticscholar.org/paper/TokenHSI%3A-Unified-Synthesis-of-Physical-Human-Scene-Pan-Yang/ca08ecf7efd9a55d0ce65d667d5708b515516f24',
+      },
+    ],
+    keys: ['Vision'],
+    pis: ['Bo Dai'],
+  },
+  {
+    title: 'Parallelized Autoregressive Visual Generation',
+    authors:
+      'Yuqing Wang, Shuhuai Ren, Zhijie Lin, Yujin Han, Haoyuan Guo, Zhenheng Yang, Difan Zou, Jiashi Feng, Xihui Liu',
+    proceedings: 'CVPR 2025 Highlight',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://arxiv.org/abs/2412.15119',
+      },
+      {
+        website: 'Page',
+        url: 'https://epiphqny.github.io/PAR-project/',
+      },
+      {
+        website: 'Code',
+        url: 'https://github.com/Epiphqny/PAR',
+      },
+    ],
+    keys: ['2024', 'Generative'],
+    pis: ['Xihui Liu'],
+  },
+  {
     title: 'A Survey of Interactive Generative Video',
     authors:
       'Jiwen Yu*, Yiran Qin*, Haoxuan Che*, Quande Liu, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu',
@@ -860,28 +897,6 @@ export const publications: {
       {
         website: 'Code',
         url: 'https://github.com/rongyaofang/PUMA',
-      },
-    ],
-    keys: ['2024', 'Generative'],
-    pis: ['Xihui Liu'],
-  },
-  {
-    title: 'Parallelized Autoregressive Visual Generation',
-    authors:
-      'Yuqing Wang, Shuhuai Ren, Zhijie Lin, Yujin Han, Haoyuan Guo, Zhenheng Yang, Difan Zou, Jiashi Feng, Xihui Liu',
-    proceedings: 'CVPR 2025 Highlight',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://arxiv.org/abs/2412.15119',
-      },
-      {
-        website: 'Page',
-        url: 'https://epiphqny.github.io/PAR-project/',
-      },
-      {
-        website: 'Code',
-        url: 'https://github.com/Epiphqny/PAR',
       },
     ],
     keys: ['2024', 'Generative'],
@@ -8808,21 +8823,6 @@ export const publications: {
     ],
     keys: ['Multimodality', 'General'],
     pis: ['Ping Luo'],
-  },
-  {
-    title:
-      'TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization',
-    authors:
-      'Liang Pan, Zeshi Yang, Zhiyang Dou, Wenjia Wang, Buzhen Huang, Bo Dai, Taku Komura, Jingbo Wang',
-    proceedings: 'CVPR 2025 Oral',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://www.semanticscholar.org/paper/TokenHSI%3A-Unified-Synthesis-of-Physical-Human-Scene-Pan-Yang/ca08ecf7efd9a55d0ce65d667d5708b515516f24',
-      },
-    ],
-    keys: ['Vision'],
-    pis: ['Bo Dai'],
   },
   {
     title:

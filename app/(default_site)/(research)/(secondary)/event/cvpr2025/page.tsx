@@ -421,8 +421,10 @@ export default function Home() {
                                         <CardHeader>
                                             <CardTitle className="text-xl">{publication.title}</CardTitle>
                                             {publication.proceedings.startsWith("CVPR 2025 ") && (
-                                                <CardDescription className="text-mred">
-                                                    {publication.proceedings.split("CVPR 2025 ")[1]}
+                                                <CardDescription className="flex">
+                                                    <div className="bg-mred text-white px-2 py-1 rounded-sm">
+                                                        {publication.proceedings.split("CVPR 2025 ")[1]}
+                                                    </div>
                                                 </CardDescription>
                                             )}
                                             <CardDescription>{publication.authors}</CardDescription>
