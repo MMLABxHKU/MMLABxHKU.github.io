@@ -48,7 +48,7 @@ const headers: { title: string; href: string; classname: string; }[] = [
     {
         title: "About Us",
         href: "/about-us",
-        classname: "",
+        classname: "hidden md:block",
     },
     {
         title: "Research",
@@ -59,7 +59,7 @@ const headers: { title: string; href: string; classname: string; }[] = [
     {
         title: "Event",
         href: "/research#event",
-        classname: "hidden md:block",
+        classname: "",
 
     },
     {
