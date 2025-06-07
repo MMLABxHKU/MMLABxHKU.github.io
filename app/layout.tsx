@@ -51,6 +51,11 @@ const headers: { title: string; href: string; classname: string; }[] = [
         classname: "hidden md:block",
     },
     {
+        title: "Member",
+        href: "/member",
+        classname: "hidden md:block",
+    },
+    {
         title: "Research",
         href: "/research",
         classname: "",
