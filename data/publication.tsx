@@ -67,6 +67,20 @@ export const publications: {
     pis: ['Xihui Liu'],
   },
   {
+    title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins',
+    authors:
+      'Yao Mu, Tianxing Chen, Zanxin Chen, Shijia Peng, Zhiqian Lan, Zeyu Gao, Zhixuan Liang, Qiaojun Yu, Yude Zou, Mingkun Xu, Lunkai Lin, Zhiqiang Xie, Mingyu Ding, Ping Luo',
+    proceedings: 'CVPR 2025 Highlight',
+    links: [
+      {
+        website: 'Paper',
+        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hQUaER0FWQ4C',
+      },
+    ],
+    keys: ['Embodied AI', 'Generative'],
+    pis: ['Ping Luo'],
+  },
+  {
     title: 'A Survey of Interactive Generative Video',
     authors:
       'Jiwen Yu*, Yiran Qin*, Haoxuan Che*, Quande Liu, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Hao Chen, Xihui Liu',
@@ -7741,20 +7755,6 @@ export const publications: {
     ],
     keys: [],
     pis: [],
-  },
-  {
-    title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins',
-    authors:
-      'Yao Mu, Tianxing Chen, Zanxin Chen, Shijia Peng, Zhiqian Lan, Zeyu Gao, Zhixuan Liang, Qiaojun Yu, Yude Zou, Mingkun Xu, Lunkai Lin, Zhiqiang Xie, Mingyu Ding, Ping Luo',
-    proceedings: 'CVPR 2025 Highlight',
-    links: [
-      {
-        website: 'Paper',
-        url: 'https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=aXdjxb4AAAAJ&sortby=pubdate&citation_for_view=aXdjxb4AAAAJ:hQUaER0FWQ4C',
-      },
-    ],
-    keys: ['Embodied AI', 'Generative'],
-    pis: ['Ping Luo'],
   },
   {
     title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins (early version)',
