@@ -7746,7 +7746,7 @@ export const publications: {
     title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins',
     authors:
       'Yao Mu, Tianxing Chen, Zanxin Chen, Shijia Peng, Zhiqian Lan, Zeyu Gao, Zhixuan Liang, Qiaojun Yu, Yude Zou, Mingkun Xu, Lunkai Lin, Zhiqiang Xie, Mingyu Ding, Ping Luo',
-    proceedings: 'CVPR 2025',
+    proceedings: 'CVPR 2025 Highlight',
     links: [
       {
         website: 'Paper',
