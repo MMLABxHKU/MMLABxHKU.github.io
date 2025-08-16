@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
                 pathname: '/mmlab/**',
             },
         ],
+        domains: ["ik.imagekit.io"], 
         dangerouslyAllowSVG: true,
     },
 };

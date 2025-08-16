@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-    title: "Member | MMLab",
-    description: "Multimedia Laboratory",
-    keywords: ["Member", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
-};
+// export const metadata: Metadata = {
+//     title: "Member | MMLab",
+//     description: "Multimedia Laboratory",
+//     keywords: ["Member", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+// };
 
 
 
@@ -41,17 +41,17 @@ const paths: { path: string; url: string; }[] = [
 const instructors = [
   {
     name: "Hongyang Li",
-    avatar: "https://mmlabassets.github.io/member/hongyang_li_c.jpg", // 头像路径
+    avatar: "https://ik.imagekit.io/xxyvnpkee/hongyang_li_c.jpg?updatedAt=1755327798056", // 头像路径
     profileUrl: "https://lihongyang.info/" // 个人主页链接
   },
   {
     name: "Ping Luo",
-    avatar: "https://mmlabassets.github.io/member/ping_luo_c.jpg", // 头像路径
+    avatar: "https://ik.imagekit.io/xxyvnpkee/ping_luo_c.jpg?updatedAt=1755327798194", // 头像路径
     profileUrl: "http://luoping.me/" // 个人主页链接
   },
   {
     name: "Yi Ma",
-    avatar: "https://mmlabassets.github.io/member/mayi_c.png", // 头像路径
+    avatar: "https://ik.imagekit.io/xxyvnpkee/mayi_c.png?updatedAt=1755327798226", // 头像路径
     profileUrl: "https://people.eecs.berkeley.edu/~yima/" // 个人主页链接
   },
 ];
@@ -59,7 +59,7 @@ const instructors = [
 const teachingAssistants = [
   {
     name: "Hai Zhang",
-    avatar: "https://mmlabassets.github.io/member/hai_zhang_c.jpg",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/hai_zhang_c.jpg?updatedAt=1755327798154",
     profileUrl: "https://betray12138.github.io/resume/"
   },
 ];
@@ -69,32 +69,14 @@ export default function Home() {
     return (
         <main>
             {/* Landing */}
-            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-landing bg-fixed">
-                <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
-                    <FadeIn>
-                        <Breadcrumb>
-                            <BreadcrumbList>
-                                {paths.map((path) => (
-                                    <BreadcrumbList key={path.path}>
-                                        <BreadcrumbLink asChild>
-                                            <Link href={path.url} className="text-white animated-underline hover:text-white">
-                                                {path.path}
-                                            </Link>
-                                        </BreadcrumbLink>
-                                        <BreadcrumbSeparator>
-                                            <Slash className="text-white" />
-                                        </BreadcrumbSeparator>
-                                    </BreadcrumbList>
-                                ))}
-                            </BreadcrumbList>
-                        </Breadcrumb>
-                    </FadeIn>
-                    <h1 className="font-bold text-5xl text-white text-center">
+            <div className="w-full min-h-[18rem] px-6 flex flex-row justify-center bg-gradient-landing bg-fixed overflow-y-auto">
+                <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-6 pt-20"> {/* 新增 pt-20 */}
+                    <h1 className="font-bold text-3xl md:text-5xl text-white text-center">
                         <FadeIn>
                             CCAI9025: AI-driven Robotics for Humankind
                         </FadeIn>
                     </h1>
-                    <h1 className="text-3xl text-white text-center">
+                    <h1 className="text-xl md:text-3xl text-white text-center">
                         <FadeIn>
                             The University of Hong Kong - Fall 2025
                         </FadeIn>
@@ -170,7 +152,7 @@ export default function Home() {
                             <div className="w-full max-w-7xl mt-6">
                                 <AspectRatio ratio={16/9}> {/* 根据你的图片比例调整这个值 */}
                                 <Image
-                                    src="https://mmlabassets.github.io/open-source/ai_and_humankind.png"
+                                    src="https://ik.imagekit.io/xxyvnpkee/ai_and_humankind.png?updatedAt=1755327798468"
                                     alt="Full width image"
                                     fill
                                     className="h-full w-full rounded-md object-cover bg-gradient-loading"

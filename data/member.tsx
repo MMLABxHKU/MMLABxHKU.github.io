@@ -330,6 +330,44 @@ export const members: {
     keys: ['2025'],
   },
   {
+    name: 'Hai Zhang',
+    img: 'https://mmlabassets.github.io/member/hai_zhang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Hongyang Li'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://betray12138.github.io/resume/',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:hai.zhang@connect.hku.hk',
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/henry-zhang-176402373/',
+      },
+    ],
+    keys: ['2025'],
+  },
+  {
+    name: 'Ziye Wang',
+    img: 'https://mmlabassets.github.io/member/ziye_wang_c.jpg',
+    title: 'Ph.D. Candidate',
+    pi: ['Hongyang Li'],
+    links: [
+      {
+        icon: 'webpage',
+        link: 'https://ziyeeee.github.io/',
+      },
+      {
+        icon: 'email',
+        link: 'mailto:ziye.wang1998@outlook.com',
+      },
+    ],
+    keys: ['2025'],
+  },
+  {
     name: 'Chengqi Duan',
     img: 'https://mmlabassets.github.io/member/chengqi_duan_c.jpg',
     title: 'Ph.D. Candidate',
