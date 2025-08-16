@@ -167,7 +167,6 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex flex-col">
 
                     <FadeIn>
-                        <Link href="#course" className="scroll-mt-32 group" id="course">
                             <div className="w-full max-w-7xl mt-6">
                                 <AspectRatio ratio={16/9}> {/* 根据你的图片比例调整这个值 */}
                                 <Image
@@ -178,7 +177,6 @@ export default function Home() {
                                 />
                                 </AspectRatio>
                             </div>
-                        </Link>
                     </FadeIn>
 
                     {/* course Description */}
@@ -200,7 +198,6 @@ export default function Home() {
                     <div className="pb-2 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
                         <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
                             <FadeIn>
-                                <Link href="#course" className="scroll-mt-32 group" id="course">
                                     <p className="leading-relaxed">
                                         Robots have become a pervasive part of our lives, evolving from obscure novelties to indispensable components of modern life. Since the dawn of the Industrial Revolution, robots have become an increasingly integral part of our society and daily lives. With each stride in robot technology, tasks that were once solely within the domain of human capability are now effortlessly executed by robotic counterparts, heralding a new era of efficiency and innovation.
                                         <br /><br />
@@ -208,7 +205,6 @@ export default function Home() {
                                         <br /><br />
                                         This course is fundamentally transdisciplinary and is designed for students who are new to robotics and AI. We will cultivate a foundational understanding of AI-driven robotics. The course will focus on the role of robotics in our society, considering its practical and potential uses, and how it can dramatically revolutionize our society in the future. This course does not assume previous knowledge.
                                     </p>
-                                </Link>
                             </FadeIn>
                         </div>
                     </div>
