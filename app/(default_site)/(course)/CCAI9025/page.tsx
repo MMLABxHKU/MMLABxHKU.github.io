@@ -38,6 +38,31 @@ const paths: { path: string; url: string; }[] = [
     },
 ]
 
+const instructors = [
+  {
+    name: "Hongyang Li",
+    avatar: "https://mmlabassets.github.io/member/hongyang_li_c.jpg", // 头像路径
+    profileUrl: "https://lihongyang.info/" // 个人主页链接
+  },
+  {
+    name: "Ping Luo",
+    avatar: "https://mmlabassets.github.io/member/ping_luo_c.jpg", // 头像路径
+    profileUrl: "http://luoping.me/" // 个人主页链接
+  },
+  {
+    name: "Yi Ma",
+    avatar: "https://mmlabassets.github.io/member/mayi_c.png", // 头像路径
+    profileUrl: "https://people.eecs.berkeley.edu/~yima/" // 个人主页链接
+  },
+];
+
+const teachingAssistants = [
+  {
+    name: "Hai Zhang",
+    avatar: "https://mmlabassets.github.io/member/hai_zhang_c.jpg",
+    profileUrl: "https://betray12138.github.io/resume/"
+  },
+];
 
 
 export default function Home() {
@@ -64,9 +89,14 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
-                    <h1 className="font-bold text-t1 text-white">
+                    <h1 className="font-bold text-5xl text-white text-center">
                         <FadeIn>
                             CCAI9025: AI-driven Robotics for Humankind
+                        </FadeIn>
+                    </h1>
+                    <h1 className="text-3xl text-white text-center">
+                        <FadeIn>
+                            The University of Hong Kong - Fall 2025
                         </FadeIn>
                     </h1>
                 </div>
@@ -80,7 +110,7 @@ export default function Home() {
 
                 {/* navigator */}
                 <div className="w-48 hidden 3xl:block">
-                    <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
+                    {/* <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         <Link className="select-none flex items-center gap-3 group" href="#course" key="course">
                             <FadeIn>
                                 <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
@@ -117,7 +147,7 @@ export default function Home() {
                                 </span>
                             </FadeIn>
                         </Link>
-                        {/* <Link className="select-none flex items-center gap-3 group" href="#alumni" key="alumni">
+                        <Link className="select-none flex items-center gap-3 group" href="#alumni" key="alumni">
                             <FadeIn>
                                 <span className="border-l-4 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
@@ -128,34 +158,47 @@ export default function Home() {
                                     Alumni
                                 </span>
                             </FadeIn>
-                        </Link> */}
-                    </div>
+                        </Link>
+                    </div> */}
                 </div>
                 
 
 
                 <div className="w-full max-w-7xl flex flex-col">
 
-                    
-                    {/* course Overview */}
-                    <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                    <FadeIn>
+                        <Link href="#course" className="scroll-mt-32 group" id="course">
+                            <div className="w-full max-w-7xl mt-6">
+                                <AspectRatio ratio={16/9}> {/* 根据你的图片比例调整这个值 */}
+                                <Image
+                                    src="https://mmlabassets.github.io/open-source/ai_and_humankind.png"
+                                    alt="Full width image"
+                                    fill
+                                    className="h-full w-full rounded-md object-cover bg-gradient-loading"
+                                />
+                                </AspectRatio>
+                            </div>
+                        </Link>
+                    </FadeIn>
+
+                    {/* course Description */}
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
                             <FadeIn>
-                                <Link href="#course" className="scroll-mt-32 group flex items-center" id="course">
-                                Course Overview
+
+                                Course Description
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
                                             <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                         </svg>
                                     </span> 
-                                </Link>
+
                             </FadeIn>
                         </h2>
                     </div>
-                    
-                    <div className="w-full flex flex-col items-center">
-                        <div className="w-full max-w-7xl mt-20 text-base font-normal"> 
+                    <div className="pb-2 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
                             <FadeIn>
                                 <Link href="#course" className="scroll-mt-32 group" id="course">
                                     <p className="leading-relaxed">
@@ -170,29 +213,74 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <FadeIn>
-                        <Link href="#course" className="scroll-mt-32 group" id="course">
-                            <div className="w-full max-w-7xl mt-20">
-                                <AspectRatio ratio={16/9}> {/* 根据你的图片比例调整这个值 */}
-                                <Image
-                                    src="https://mmlabassets.github.io/open-source/ai_and_humankind.png"
-                                    alt="Full width image"
-                                    fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-loading"
-                                />
-                                </AspectRatio>
-                            </div>
-                        </Link>
-                    </FadeIn>
-
-
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
-                    </div>
 
                     {/* Faculty */}
-                    <div className="w-full flex flex-col items-center">
+                    {/* Faculty & TAs Section */}
+                    <div className="w-full max-w-7xl mx-auto mt-20">
+                    {/* Two-column layout */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                        {/* Instructors Column */}
+                        <div>
+                        <h3 className="text-3xl font-bold mb-6 border-b pb-2">Instructors</h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+                            {instructors.map((person) => (
+                            <FadeIn key={person.name}>
+                                <div className="flex flex-col items-center text-center">
+                                {/* 圆形头像 */}
+                                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-4 border-2 border-mgray">
+                                    <Image
+                                    src={person.avatar}
+                                    alt={person.name}
+                                    fill
+                                    className="object-cover"
+                                    />
+                                </div>
+                                {/* 带链接的名字 */}
+                                <Link 
+                                    href={person.profileUrl} 
+                                    target="_blank"
+                                    className="text-lg font-medium hover:text-mred transition-colors"
+                                >
+                                    {person.name}
+                                </Link>
+                                </div>
+                            </FadeIn>
+                            ))}
+                        </div>
+                        </div>
+
+                        {/* TAs Column */}
+                        <div className="pb-6">
+                            <h3 className="text-3xl font-bold mb-6 border-b pb-2">Teaching Assistants</h3>
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+                                {teachingAssistants.map((person) => (
+                                <FadeIn key={person.name}>
+                                    <div className="flex flex-col items-center text-center">
+                                    {/* 圆形头像 */}
+                                    <div className="relative rounded-full overflow-hidden w-24 h-24 mb-4 border-2 border-mgray">
+                                        <Image
+                                        src={person.avatar}
+                                        alt={person.name}
+                                        fill
+                                        className="object-cover"
+                                        />
+                                    </div>
+                                    {/* 带链接的名字 */}
+                                    <Link 
+                                        href={person.profileUrl} 
+                                        target="_blank"
+                                        className="text-lg font-medium hover:text-mred transition-colors"
+                                    >
+                                        {person.name}
+                                    </Link>
+                                    </div>
+                                </FadeIn>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    {/* <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                             <FadeIn>
                                 <Link href="#faculty" className="scroll-mt-32 group flex items-center" id="faculty">
@@ -206,9 +294,9 @@ export default function Home() {
                                 </Link>
                             </FadeIn>
                         </h2>
-                    </div>
+                    </div> */}
                     {/* to keep the same in /about-us / img */}
-                    {pis.map((pi) => (
+                    {/* {pis.map((pi) => (
                         <FadeIn key={pi.name}>
                             <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
                                 <div className="flex-1/3 md:max-w-64">
@@ -246,35 +334,119 @@ export default function Home() {
                                 </div>
                             </div>
                         </FadeIn>
-                    ))}
+                    ))} */}
 
 
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
-                    </div>
-
-
-
-                    {/* Student */}
-                    <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                    {/* Course Logistics */}
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
                             <FadeIn>
-                                <Link href="#student" className="scroll-mt-32 group flex items-center" id="student">
-                                Schedule
+                                Course Logistics
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
                                             <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                         </svg>
                                     </span> 
-                                </Link>
+                            </FadeIn>
+                        </h2>
+                    </div>
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
+                            <FadeIn>
+                                <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
+                                <li>
+                                    <span className="font-semibold">Lectures</span> 
+                                    <br/> Wednesday 1:00-2:50PM HKT at WLGH.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Tutorials</span> 
+                                    <br/> Wednesday 3:00-3:50PM HKT at <span className="break-words">[MB225/MB125/MB126/MB127/MB135/MB154/MB224/MB113C/MB226/MB230A].</span>
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Lecture Slides</span> 
+                                    <br/> Will be posted on this website shortly after each lecture.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Contact</span> 
+                                    <br/> For enquiries, emergencies, or personal matters, you can email us at <a href="mailto:ccai9025-staff-fall25@hku.hk" className="text-blue-600 hover:text-blue-800 hover:underline">ccai9025-staff-fall25@hku.hk</a>.
+                                </li><br/>
+                                </ul>
+                            </FadeIn>
+                        </div>
+                    </div>
+
+                    
+                    
+                    {/* Coursework */}
+                    <div className="pb-0 w-full flex flex-col items-center p-8">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
+                            <FadeIn>
+                                Coursework
+                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                        </svg>
+                                    </span> 
+                            </FadeIn>
+                        </h2>
+                    </div>
+                    <div className="pb-0 w-full flex flex-col items-center p-8">
+                        <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
+                            <FadeIn>
+                                <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
+                                <li>
+                                    <span className="font-semibold">Poster (10%)</span> 
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Essay (20%)</span> 
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Reflection Report About the Field Trips (10%)</span>
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Participation (20%)</span> 
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Group Project (30%)</span>
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Social Media Outreach (10%)</span> 
+                                    <br/>Details will be posted on this website shortly.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Regrade Requests</span> 
+                                    <br/>If you believe that the course staff made an objective error in grading, you may submit a regrade request and email us within 3 days of the grade release. Your request should briefly summarize why the original grading was incorrect. Note that staff may regrade the entire submission, so it is possible for you to lose more points than you gain if a mistake was overlooked in the first time.
+                                </li><br/>
+                                </ul>
+                            </FadeIn>
+                        </div>
+                    </div>
+
+
+                    {/* course schedule */}
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold "> 
+                            <FadeIn>
+                                Course Schedule
+                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                        </svg>
+                                    </span> 
                             </FadeIn>
                         </h2>
                     </div>
                     
-                    <div className="w-full flex flex-col items-center">
-                        <div className="w-full max-w-7xl mt-20">
+                    <div className="w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <div className="w-full max-w-7xl mt-6">
                             <FadeIn>
                             <div className="scroll-mt-32" id="schedule">
                                 {/* 表格部分 */}
@@ -282,84 +454,72 @@ export default function Home() {
                                 <table className="w-full border-collapse">
                                     <thead>
                                     <tr className="border-b border-gray-200">
-                                        <th className="text-2xl font-semibold mb-4">Time</th>
-                                        <th className="text-2xl font-semibold mb-4">Subject</th>
-                                        <th className="text-2xl font-semibold mb-4">Materials</th>
-                                        <th className="text-2xl font-semibold mb-4">Activities</th>
+                                        <th className="text-2xl font-semibold mb-4">Date</th>
+                                        <th className="text-2xl font-semibold mb-4">Topic</th>
+                                        <th className="text-2xl font-semibold mb-4">Slides</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 1</th>
+                                        <th className="py-3 px-4 font-medium">Sep 3, 2025</th>
                                         <th className="py-3 px-4 font-medium">Introduction to Robotics</th>
-                                        <th className="py-3 px-4 text-left font-medium">-</th>
-                                        <th className="py-3 px-4 text-left font-medium">Guest Lecture: <span className="font-bold">Startups: Taking the First Step</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 2</th>
+                                        <th className="py-3 px-4 font-medium">Sep 10, 2025</th>
                                         <th className="py-3 px-4 font-medium">The History of AI</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.perlego.com/book/3631630/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains-pdf" className="text-blue-600 hover:text-blue-800 hover:underline">A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Hands-on Study of AI Technologies</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 3</th>
+                                        <th className="py-3 px-4 font-medium">Sep 17, 2025</th>
                                         <th className="py-3 px-4 font-medium">AI-driven Robotics for Humankind: An Overview</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=QWWgr2rN45o" className="text-blue-600 hover:text-blue-800 hover:underline">Responsible AI development.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Basic Concepts Behind Robotics</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 4</th>
+                                        <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=ODSJsviD_SU" className="text-blue-600 hover:text-blue-800 hover:underline">Tesla AI Day 2022.</a> <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLCBtJRMPXXZ4dmgCQ_X3DGTFNKjXdXFU " className="text-blue-600 hover:text-blue-800 hover:underline">MIT Embodied Intelligence Seminars.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Building a Foundation Team</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 5</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=U9mJuUkhUzk" className="text-blue-600 hover:text-blue-800 hover:underline">OpenAI DevDay: Opening Keynote.</a> <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLCBtJRMPXXZ4dmgCQ_X3DGTFNKjXdXFU" className="text-blue-600 hover:text-blue-800 hover:underline">MIT Embodied Intelligence Seminars.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Hands-on Projects in Robotics / Preparation for Group Project</span></th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Oct 1, 2025</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO LECTURE </th> 
+                                        {/* Robotic Applications: Manufacturing */}
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 6</th>
+                                        <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotic Applications: Drones and Low-altitude Economy</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=outcGtbnMuQ" className="text-blue-600 hover:text-blue-800 hover:underline">GPT-4 Developer Livestream.</a> <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLCBtJRMPXXZ4dmgCQ_X3DGTFNKjXdXFU" className="text-blue-600 hover:text-blue-800 hover:underline">MIT Embodied Intelligence Seminars.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">User Research and Early Product Building</span> <br /> Field Trip: <span className="font-bold">Low-altitude Economy, Shenzhen</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 7</th>
+                                        <th className="py-3 px-4 font-medium">Oct 15, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://anthology-of-data.science/resources/prince2023udl.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">Understanding Deep Learning.</a> <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/6v6dbxPlsXs" className="text-blue-600 hover:text-blue-800 hover:underline">We, Robot | Tesla Cybercab Unveil.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Hands-on Projects with Foundation Models / Preparation for Group Project</span> </th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 8</th>
+                                        <th className="py-3 px-4 font-medium">Oct 22, 2025</th>
                                         <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://www.stateof.ai/2024" className="text-blue-600 hover:text-blue-800 hover:underline">State of AI Report 2024.</a> <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=R2meHtrO1n8" className="text-blue-600 hover:text-blue-800 hover:underline">Talk AI, Tech & the Future.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">Kicking Off Commercialization</span> <br /> Field Trip: <span className="font-bold">Autonomous Driving and Robotics, Guangzhou</span></th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 9</th>
+                                        <th className="py-3 px-4 font-medium">Oct 29, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotics in the Next Ten Years</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2211.06318" className="text-blue-600 hover:text-blue-800 hover:underline">Artificial Intelligence and Life in 2030.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Panel: <span className="font-bold">Will Robots Replace Humans</span> </th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 10</th>
+                                        <th className="py-3 px-4 font-medium">Nov 5, 2025</th>
                                         <th className="py-3 px-4 font-medium">Principles and Techniques in AI-driven Robotics</th>
-                                        <th className="py-3 px-4 text-left font-medium"><a target="_blank" rel="noopener noreferrer" href="https://people.disim.univaq.it/~costanzo.manes/EDU_stuff/Robotics_Modelling,%20Planning%20and%20Control_Sciavicco_extract.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">Robotics, Modelling, Planning and Control.</a></th>
-                                        <th className="py-3 px-4 text-left font-medium">Poster Presentation <br /> Essay Sharing <br /> Field Trips Reflection </th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 11</th>
+                                        <th className="py-3 px-4 font-medium">Nov 12, 2025</th>
                                         <th className="py-3 px-4 font-medium">AI-driven Robotics into the Future</th>
-                                        <th className="py-3 px-4 text-left font-medium">-</th>
-                                        <th className="py-3 px-4 text-left font-medium">Tutorial: <span className="font-bold">How to Raise Your First Round of Funding</span> </th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Week 12</th>
+                                        <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
                                         <th className="py-3 px-4 font-medium">Course Summary and Group Presentation</th>
-                                        <th className="py-3 px-4 text-left font-medium">-</th>
-                                        <th className="py-3 px-4 text-left font-medium">Group Presentation </th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -371,82 +531,94 @@ export default function Home() {
 
 
 
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
-                    </div>
-
-
-
-                    {/* Alumni */}
-                    {/* <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                    {/* Course Materials */}
+                    <div className="pb-0 w-full flex flex-col items-center p-8">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
                             <FadeIn>
-                                <Link href="#alumni" className="scroll-mt-32 group flex items-center" id="alumni">
-                                Alumni
+                                Course Materials
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
                                             <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                         </svg>
                                     </span> 
-                                </Link>
                             </FadeIn>
                         </h2>
                     </div>
-                    <FadeIn>
-                        <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
-                            {[...members.values()].filter(member => member.keys.includes("Alumni")).map((member) => (
-                                <div className="flex flex-col gap-3" key={member.name}>
-                                    <AspectRatio ratio={1/1}>
-                                        <Image
-                                            src={member.img}
-                                            alt={member.name}
-                                            fill
-                                            className="h-full w-full rounded-md object-cover bg-gradient-loading"
-                                        />
-                                    </AspectRatio>
-                                    <span className="font-bold text-xl">{member.name}</span>
-                                    <span>{member.title}</span>
-                                    <div className="flex flex-row gap-1 flex-wrap text-mgray text-sm">
-                                        <span>
-                                            Supervised by: 
-                                        </span>
-                                        {member.pi.map((pi, index) => (
-                                            <div key={pi}>
-                                                <Link href={"/member/#" + pi.toLowerCase().replace(/ /g, '_')} className="animated-underline" >{pi}</Link>
-                                                {index < member.pi.length - 1 && (
-                                                    <span className="select-none"> | </span>
-                                                )}
-                                            </div>
-                                        ))} 
-                                    </div>
-                                    <div className="flex gap-3 flex-wrap">
-                                        {member.links.map((link) => (
-                                            <Link href={link.link} target="_blank" key={link.icon}  className="h-8 w-8 group">
-                                                <AspectRatio ratio={1/1}>
-                                                    <Image
-                                                        src={"/icon/" + link.icon + ".svg"}
-                                                        alt={link.link}
-                                                        fill
-                                                        className="group-hover:scale-125 transition duration-200"
-                                                    />
-                                                </AspectRatio>
-                                            </Link>
-                                        ))}
-                                    </div>
-
-                                </div>
-                            ))}
+                    <div className="w-full flex flex-col items-center p-8">
+                        <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
+                            <FadeIn>
+                                <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.perlego.com/book/3631630/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains-pdf" className="text-blue-600 hover:text-blue-800 hover:underline">A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2211.06318" className="text-blue-600 hover:text-blue-800 hover:underline">Artificial Intelligence and Life in 2030.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.stateof.ai/2024" className="text-blue-600 hover:text-blue-800 hover:underline">State of AI Report 2024.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://anthology-of-data.science/resources/prince2023udl.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">Understanding Deep Learning.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://people.disim.univaq.it/~costanzo.manes/EDU_stuff/Robotics_Modelling,%20Planning%20and%20Control_Sciavicco_extract.pdf" className="text-blue-600 hover:text-blue-800 hover:underline">Robotics, Modelling, Planning and Control.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=U9mJuUkhUzk" className="text-blue-600 hover:text-blue-800 hover:underline">OpenAI DevDay: Opening Keynote.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=outcGtbnMuQ" className="text-blue-600 hover:text-blue-800 hover:underline">GPT-4 Developer Livestream.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/6v6dbxPlsXs" className="text-blue-600 hover:text-blue-800 hover:underline">We, Robot | Tesla Cybercab Unveil.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=ODSJsviD_SU" className="text-blue-600 hover:text-blue-800 hover:underline">Tesla AI Day 2022.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLCBtJRMPXXZ4dmgCQ_X3DGTFNKjXdXFU " className="text-blue-600 hover:text-blue-800 hover:underline">MIT Embodied Intelligence Seminars.</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=R2meHtrO1n8" className="text-blue-600 hover:text-blue-800 hover:underline">Talk AI, Tech & the Future.</a>                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=QWWgr2rN45o" className="text-blue-600 hover:text-blue-800 hover:underline">Responsible AI development.</a>                                </li>
+                                </ul>
+                            </FadeIn>
                         </div>
-                    </FadeIn> */}
-
-{/* 
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
                     </div>
- */}
 
+                    
+                    {/* FAQ */}
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
+                            <FadeIn>
+                                FAQ
+                                    <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                            <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                        </svg>
+                                    </span> 
+                            </FadeIn>
+                        </h2>
+                    </div>
+                    <div className="pb-0 w-full flex flex-col items-center bg-[rgba(245,245,245,0.8)] p-8 backdrop-blur-sm">
+                        <div className="w-full max-w-7xl mt-2 text-xl font-normal"> 
+                            <FadeIn>
+                                <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
+                                <li>
+                                    <span className="font-semi">Can I audit or sit in?</span> 
+                                    <br/> <em>In general, we are very open to auditing if you are a member of the HKU community (registered student, staff, and/or faculty). Out of courtesy, we would appreciate if you first email us or talk to the instructor after the first class you attend.</em>
+                                </li><br/>
+                                <li>
+                                    <span className="font-semi">I have a question about the class. What is the best way to reach the course staff?</span> 
+                                    <br/> <em>For discussions regarding course content, please contact the TAs via the email addresses listed on their personal websites. For all other inquiries, kindly reach out directly to the course instructors.</em>
+                                </li><br/>
+                                </ul>
+                            </FadeIn>
+                        </div>
+                    </div>
 
                 </div>
 
