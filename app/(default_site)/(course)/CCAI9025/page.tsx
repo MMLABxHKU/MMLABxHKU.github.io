@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-// export const metadata: Metadata = {
-//     title: "Member | MMLab",
-//     description: "Multimedia Laboratory",
-//     keywords: ["Member", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
-// };
+export const metadata: Metadata = {
+    title: "CCAI9025 | HKU",
+    description: "CCAI9025 @ The university of Hong Kong",
+    keywords: ["CCAI9025", "The university of Hong Kong", "MMLab", "HKU", "CUHK", "NTU"],
+};
 
 
 
