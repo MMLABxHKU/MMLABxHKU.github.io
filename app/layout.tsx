@@ -62,6 +62,12 @@ const headers: { title: string; href: string; classname: string; }[] = [
 
     },
     {
+        title: "Course",
+        href: "/CCAI9025",
+        classname: "",
+
+    },
+    {
         title: "Event",
         href: "/research#event",
         classname: "",

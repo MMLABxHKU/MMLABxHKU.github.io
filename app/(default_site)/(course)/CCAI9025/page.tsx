@@ -334,12 +334,13 @@ export default function Home() {
                             <FadeIn>
                                 <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
                                 <li>
-                                    <span className="font-semibold">Lectures</span> 
+                                    <span className="font-semibold">Lecture Venue and Time</span> 
                                     <br/> Wednesday 1:00-2:50PM HKT at WLGH.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Tutorials</span> 
-                                    <br/> Wednesday 3:00-3:50PM HKT at <span className="break-words">[MB225/MB125/MB126/MB127/MB135/MB154/MB224/MB113C/MB226/MB230A].</span>
+                                    <span className="font-semibold">Tutorial Time</span> 
+                                    <br/> Wednesday 3:00-3:50PM HKT 
+                                    {/* at <span className="break-words">[MB225/MB125/MB126/MB127/MB135/MB154/MB224/MB113C/MB226/MB230A].</span> */}
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Lecture Slides</span> 
@@ -347,7 +348,12 @@ export default function Home() {
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Contact</span> 
-                                    <br/> For enquiries, emergencies, or personal matters, you can email us at <a href="mailto:ccai9025-staff-fall25@hku.hk" className="text-blue-600 hover:text-blue-800 hover:underline">ccai9025-staff-fall25@hku.hk</a>.
+                                    <br/> For enquiries, emergencies, or personal matters, you can email us through <a href="mailto:ccai9025-staff@googlegroups.com" className="text-blue-600 hover:text-blue-800 hover:underline">ccai9025-staff@googlegroups.com</a>.
+                                </li><br/>
+                                <li>
+                                    <span className="font-semibold">Related Links</span> 
+                                    <br/> <a href="https://commoncore.hku.hk/CCAI9025/" className="text-blue-600 hover:text-blue-800 hover:underline">HKU commoncore website</a>.
+                                    <br/> <a href="https://datascience.hku.hk/study/research-postgraduate/ccai9025/" className="text-blue-600 hover:text-blue-800 hover:underline">HKU-IDS website</a>.
                                 </li><br/>
                                 </ul>
                             </FadeIn>
@@ -360,7 +366,7 @@ export default function Home() {
                     <div className="pb-0 w-full flex flex-col items-center p-8">
                         <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
                             <FadeIn>
-                                Coursework
+                                Coursework Assesment
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
@@ -376,30 +382,30 @@ export default function Home() {
                                 <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
                                 <li>
                                     <span className="font-semibold">Poster (10%)</span> 
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to make a poster to showcase their understanding of both technical and non-technical aspects covered in the lectures, using figures to illustrate the pipeline of a specific robotics application. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Essay (20%)</span> 
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to apply the knowledge acquired throughout the course by developing an individual essay that explores robotics applications, including societal impact and future trend analysis. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Reflection Report About the Field Trips (10%)</span>
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to develop a "report" to describe what they gain during the field trip. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Participation (20%)</span> 
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to actively participate in a variety of interactive activities—such as panels, debates, role-playings, and discussions with guest speakers—across lectures, tutorials, and field trips.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Group Project (30%)</span>
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to cooperate to finish a group project to demonstrate their comprehensive and overall summary of the whole course. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Social Media Outreach (10%)</span> 
-                                    <br/>Details will be posted on this website shortly.
+                                    <br/>Students are encouraged to share their thoughts and ideas about state-of-the-art AI-driven robotics applications worldwide.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Regrade Requests</span> 
+                                    <span className="font-semibold">Regrade Request</span> 
                                     <br/>If you believe that the course staff made an objective error in grading, you may submit a regrade request and email us within 3 days of the grade release. Your request should briefly summarize why the original grading was incorrect. Note that staff may regrade the entire submission, so it is possible for you to lose more points than you gain if a mistake was overlooked in the first time.
                                 </li><br/>
                                 </ul>
@@ -591,7 +597,7 @@ export default function Home() {
                                 </li><br/>
                                 <li>
                                     <span className="font-semi">I have a question about the class. What is the best way to reach the course staff?</span> 
-                                    <br/> <em>For discussions regarding course content, please contact the TAs via the email addresses listed on their personal websites. For all other inquiries, kindly reach out directly to the course instructors.</em>
+                                    <br/> <em>For discussions regarding course content, please directly email us through <a href="mailto:ccai9025-staff@googlegroups.com" className="text-blue-600 hover:text-blue-800 hover:underline">ccai9025-staff@googlegroups.com</a>. For all other inquiries, kindly reach out directly to the course instructors.</em>
                                 </li><br/>
                                 </ul>
                             </FadeIn>
