@@ -77,16 +77,16 @@ const teachingAssistants = [
     avatar: "https://ik.imagekit.io/xxyvnpkee/yixuan_pan_c.jpg?updatedAt=1756525833345",
     profileUrl: "https://lzpyx.github.io"
   },
-//   {
-//     name: "Bowen Wang",
-//     avatar: "",
-//     profileUrl: ""
-//   },
-//   {
-//     name: "Junli Ren",
-//     avatar: "",
-//     profileUrl: ""
-//   },
+  {
+    name: "Bowen Wang",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/bowen_wang.jpg?updatedAt=1756534518082",
+    profileUrl: "https://bowenbryanwang.github.io/"
+  },
+  {
+    name: "Junli Ren",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/junli_ren.jpg?updatedAt=1756534129995",
+    profileUrl: "https://renjunli99.github.io"
+  },
   {
     name: "Ruizhe Liu",
     avatar: "https://ik.imagekit.io/xxyvnpkee/ruize_liu.jpg?updatedAt=1756526506019",
