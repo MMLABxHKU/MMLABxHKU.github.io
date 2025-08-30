@@ -535,7 +535,7 @@ export default function Home() {
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Teleoperation and Data Collection</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Oct 29, 2025</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Oct 29, 2025</th>
                                         <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotics in the Next Ten Years (Recording)</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Data Pre-processing</th>
                                     </tr>
