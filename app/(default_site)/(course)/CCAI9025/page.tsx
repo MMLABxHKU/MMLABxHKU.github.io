@@ -62,6 +62,56 @@ const teachingAssistants = [
     avatar: "https://ik.imagekit.io/xxyvnpkee/hai_zhang_c.jpg?updatedAt=1755327798154",
     profileUrl: "https://betray12138.github.io/resume/"
   },
+  {
+    name: "Ziye Wang",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/ziye_wang_c.jpg?updatedAt=1756525596773",
+    profileUrl: "https://ziyeeee.github.io"
+  },
+  {
+    name: "Zhuoheng Li",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/zhuoheng_li_c.jpg?updatedAt=1756525944543",
+    profileUrl: "https://github.com/StarCycle"
+  },
+  {
+    name: "Yixuan Pan",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/yixuan_pan_c.jpg?updatedAt=1756525833345",
+    profileUrl: "https://lzpyx.github.io"
+  },
+//   {
+//     name: "Bowen Wang",
+//     avatar: "",
+//     profileUrl: ""
+//   },
+//   {
+//     name: "Junli Ren",
+//     avatar: "",
+//     profileUrl: ""
+//   },
+  {
+    name: "Ruizhe Liu",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/ruize_liu.jpg?updatedAt=1756526506019",
+    profileUrl: "https://scholar.google.com/citations?hl=zh-CN&user=cHY_UJ8AAAAJ"
+  },
+  {
+    name: "Jianrui Wu",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/Jianrui_wu.jpg?updatedAt=1756526652630",
+    profileUrl: "https://jer-ry.github.io"
+  },
+  {
+    name: "Tianle Li",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/tianle_li.jpg?updatedAt=1756526739918",
+    profileUrl: ""
+  },
+  {
+    name: "Jiayu Weng",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/jiayu_weng.jpg?updatedAt=1756526834066",
+    profileUrl: "https://scholar.google.com/citations?user=KZGlHNIAAAAJ&hl=en"
+  },
+  {
+    name: "Haoguang Mai",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/haoguang_mai.jpg?updatedAt=1756526921679",
+    profileUrl: ""
+  },
 ];
 
 
@@ -70,7 +120,7 @@ export default function Home() {
         <main>
             {/* Landing */}
             <div className="w-full min-h-[18rem] px-6 flex flex-row justify-center bg-gradient-landing bg-fixed overflow-y-auto">
-                <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-6 pt-20"> {/* 新增 pt-20 */}
+                <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-6 pt-30"> {/* 新增 pt-30 */}
                     <h1 className="font-bold text-3xl md:text-5xl text-white text-center">
                         <FadeIn>
                             CCAI9025: AI-driven Robotics for Humankind
@@ -335,16 +385,18 @@ export default function Home() {
                                 <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
                                 <li>
                                     <span className="font-semibold">Lecture Venue and Time</span> 
-                                    <br/> Wednesday 1:00-2:50PM HKT at WLGH.
+                                    <br/> Wednesday 1:00-2:50PM HKT at Wang Gungwu Lecture Hall.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Tutorial Time</span> 
-                                    <br/> Wednesday 3:00-3:50PM HKT 
-                                    {/* at <span className="break-words">[MB225/MB125/MB126/MB127/MB135/MB154/MB224/MB113C/MB226/MB230A].</span> */}
+                                    <span className="font-semibold">Available Tutorial Timeslots</span> 
+                                    <br/> Monday <select><option>2:00-2:50PM HKT</option><option>3:00-3:50PM HKT</option><option>4:00-4:50PM HKT</option></select>
+                                    <br/> Thursday <select><option>1:00-1:50PM HKT</option></select>
+                                    <br/> Friday <select><option>10:00-10:50AM HKT</option><option>11:00-11:50AM HKT</option><option>1:00-1:50PM HKT</option><option>2:00-2:50PM HKT</option><option>3:00-3:50PM HKT</option><option>4:00-4:50PM HKT</option></select>
+                                    <br/> Each student may select a suitable timeslot based on their schedule. Allocation will primarily follow a first-come, first-served basis. Priority consideration will be given to students from specific majors who only have availability in certain timeslots. Members for the group project will be automatically determined according to tutorial selections.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Lecture Slides</span> 
-                                    <br/> Will be posted on this website shortly after each lecture.
+                                    <span className="font-semibold">Lecture Slides and Recordings</span> 
+                                    <br/> Will be posted on the <a href="https://moodle.hku.hk/course/view.php?id=127252" className="text-blue-600 hover:text-blue-800 hover:underline">Moodle website</a> shortly after each lecture.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Contact</span> 
@@ -354,6 +406,7 @@ export default function Home() {
                                     <span className="font-semibold">Related Links</span> 
                                     <br/> <a href="https://commoncore.hku.hk/CCAI9025/" className="text-blue-600 hover:text-blue-800 hover:underline">HKU commoncore website</a>.
                                     <br/> <a href="https://datascience.hku.hk/study/research-postgraduate/ccai9025/" className="text-blue-600 hover:text-blue-800 hover:underline">HKU-IDS website</a>.
+                                    <br/> <a href="https://moodle.hku.hk/course/view.php?id=127252" className="text-blue-600 hover:text-blue-800 hover:underline">Moodle website (HKU student only)</a>.
                                 </li><br/>
                                 </ul>
                             </FadeIn>
@@ -381,15 +434,11 @@ export default function Home() {
                             <FadeIn>
                                 <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
                                 <li>
-                                    <span className="font-semibold">Poster (10%)</span> 
-                                    <br/>Students are encouraged to make a poster to showcase their understanding of both technical and non-technical aspects covered in the lectures, using figures to illustrate the pipeline of a specific robotics application. Details will be announced throughout the lectures and tutorials.
-                                </li><br/>
-                                <li>
-                                    <span className="font-semibold">Essay (20%)</span> 
+                                    <span className="font-semibold">Essay (30%)</span> 
                                     <br/>Students are encouraged to apply the knowledge acquired throughout the course by developing an individual essay that explores robotics applications, including societal impact and future trend analysis. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Reflection Report About the Field Trips (10%)</span>
+                                    <span className="font-semibold">Reflection Report About the Field Trips (15%)</span>
                                     <br/>Students are encouraged to develop a "report" to describe what they gain during the field trip. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
@@ -401,7 +450,7 @@ export default function Home() {
                                     <br/>Students are encouraged to cooperate to finish a group project to demonstrate their comprehensive and overall summary of the whole course. Details will be announced throughout the lectures and tutorials.
                                 </li><br/>
                                 <li>
-                                    <span className="font-semibold">Social Media Outreach (10%)</span> 
+                                    <span className="font-semibold">Social Media Outreach (5%)</span> 
                                     <br/>Students are encouraged to share their thoughts and ideas about state-of-the-art AI-driven robotics applications worldwide.
                                 </li><br/>
                                 <li>
@@ -439,71 +488,76 @@ export default function Home() {
                                     <thead>
                                     <tr className="border-b border-gray-200">
                                         <th className="text-2xl font-semibold mb-4">Date</th>
-                                        <th className="text-2xl font-semibold mb-4">Topic</th>
-                                        <th className="text-2xl font-semibold mb-4">Slides</th>
+                                        <th className="text-2xl font-semibold mb-4">Lecture</th>
+                                        <th className="text-2xl font-semibold mb-4">Tutorial</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 3, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Introduction to Robotics</th>
+                                        <th className="py-3 px-4 font-medium">Introduction to Embodied AI, Machine Learning and Beyond</th>
                                         <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 10, 2025</th>
-                                        <th className="py-3 px-4 font-medium">The History of AI</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Pursuing the Nature of Intelligence</th>
+                                        <th className="py-3 px-4 font-medium">Details for Grading Policy and Course Assessment</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 17, 2025</th>
-                                        <th className="py-3 px-4 font-medium">AI-driven Robotics for Humankind: An Overview</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Group Project and Essay Preparation</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Innovation Week: Guest Lecture from Miracle Plus</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Basic Knowledge of Robotics</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 1, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO LECTURE </th> 
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare (Recording) </th> 
                                         {/* Robotic Applications: Manufacturing */}
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Python and Pytorch</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Drones and Low-altitude Economy</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of the Lerobot Platform</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Oct 15, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Oct 15 (tentative), 2025</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE LECTURE <br/> Field Trip to Shenzhen</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 22, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Drones and Low-altitude Economy</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Teleoperation and Data Collection</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 29, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotics in the Next Ten Years</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotics in the Next Ten Years (Recording)</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Data Pre-processing</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 5, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Principles and Techniques in AI-driven Robotics</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Robotics with Learning Methods(1h) <br/> Panel: Will Robots Replace Humans? (1h)</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Training</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 12, 2025</th>
-                                        <th className="py-3 px-4 font-medium">AI-driven Robotics into the Future</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Inference</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Course Summary and Group Presentation</th>
-                                        <th className="py-3 px-4 font-medium">-</th>
+                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
+                                        <th className="py-3 px-4 font-medium">Demonstration of Songling Robotic Arm and Humanoid</th>
+                                    </tr>
+                                    <tr className="border-b border-gray-200">
+                                        <th className="py-3 px-4 font-medium">Nov 26, 2025</th>
+                                        <th className="py-3 px-4 font-medium">Group Project Presentation</th>
+                                        <th className="py-3 px-4 font-medium">Brilliant Builds of HKU Robotics Teams</th>
                                     </tr>
                                     </tbody>
                                 </table>
