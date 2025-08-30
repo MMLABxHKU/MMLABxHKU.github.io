@@ -108,7 +108,7 @@ const teachingAssistants = [
     profileUrl: "https://scholar.google.com/citations?user=KZGlHNIAAAAJ&hl=en"
   },
   {
-    name: "Haoguang Mai",
+    name: "Hugo Mak",
     avatar: "https://ik.imagekit.io/xxyvnpkee/haoguang_mai.jpg?updatedAt=1756526921679",
     profileUrl: ""
   },
@@ -510,7 +510,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Innovation Week: Guest Lecture from Miracle Plus</th>
+                                        <th className="py-3 px-4 font-medium">Innovation Week: Guest Lecture from MiraclePlus</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Basic Knowledge of Robotics</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
