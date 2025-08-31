@@ -419,7 +419,7 @@ export default function Home() {
                     <div className="pb-0 w-full flex flex-col items-center p-8">
                         <h2 className="w-full max-w-7xl mt-6 text-3xl font-bold"> 
                             <FadeIn>
-                                Coursework Assesment
+                                Coursework Assessment
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                             <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
