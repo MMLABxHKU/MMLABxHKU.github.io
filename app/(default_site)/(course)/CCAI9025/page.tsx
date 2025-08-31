@@ -552,7 +552,7 @@ export default function Home() {
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
                                         <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
-                                        <th className="py-3 px-4 font-medium">Demonstration of Songling Robotic Arm and Humanoid</th>
+                                        <th className="py-3 px-4 font-medium">Demonstration of Agilex Robotic Arm and Humanoid</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 26, 2025</th>
