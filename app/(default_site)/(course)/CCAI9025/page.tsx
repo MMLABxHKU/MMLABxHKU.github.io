@@ -390,8 +390,8 @@ export default function Home() {
                                 <li>
                                     <span className="font-semibold">Available Tutorial Timeslots</span> 
                                     <br/> Monday <select><option>2:00-2:50PM HKT</option><option>3:00-3:50PM HKT</option><option>4:00-4:50PM HKT</option></select>
-                                    <br/> Thursday <select><option>1:00-1:50PM HKT</option></select>
-                                    <br/> Friday <select><option>10:00-10:50AM HKT</option><option>11:00-11:50AM HKT</option><option>1:00-1:50PM HKT</option><option>2:00-2:50PM HKT</option><option>3:00-3:50PM HKT</option><option>4:00-4:50PM HKT</option></select>
+                                    <br/> Thursday <select><option>1:00-1:50PM HKT</option><option>7:00-7:50PM HKT</option></select>
+                                    <br/> Friday <select><option>10:00-10:50AM HKT</option><option>11:00-11:50AM HKT</option><option>1:00-1:50PM HKT</option><option>2:00-2:50PM HKT</option><option>3:00-3:50PM HKT</option></select>
                                     <br/> Each student may select a suitable timeslot based on their schedule. Allocation will primarily follow a first-come, first-served basis. Priority consideration will be given to students from specific majors who only have availability in certain timeslots. Members for the group project will be automatically determined according to tutorial selections.
                                 </li><br/>
                                 <li>
@@ -501,42 +501,42 @@ export default function Home() {
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 10, 2025</th>
                                         <th className="py-3 px-4 font-medium">Pursuing the Nature of Intelligence</th>
-                                        <th className="py-3 px-4 font-medium">Details for Grading Policy and Course Assessment</th>
+                                        <th className="py-3 px-4 font-medium">Details of Course Assessment and Introduction of Basic Math</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 17, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Group Project and Essay Preparation</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Machine Learning</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
                                         <th className="py-3 px-4 font-medium">Innovation Week: Guest Lecture from MiraclePlus</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Basic Knowledge of Robotics</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Robotics and 2D Vision</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 1, 2025</th>
                                         <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare (Recording) </th> 
                                         {/* Robotic Applications: Manufacturing */}
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Python and Pytorch</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of 3D Vision and Coding</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of the Lerobot Platform</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of the Robotic Simulation</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Oct 15 (tentative), 2025</th>
+                                        <th className="py-3 px-4 font-medium">Oct 16 (tentative), 2025</th>
                                         <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE LECTURE <br/> Field Trip to Shenzhen</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL <br/> Just Brainstorm Your Group Project</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 22, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Drones and Low-altitude Economy</th>
+                                        <th className="py-3 px-4 font-medium">Multi-agent Robotic Systems</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Teleoperation and Data Collection</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 29, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotics in the Next Ten Years (Recording)</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Drones and Low-altitude Economy (Recording)</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Data Pre-processing</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
@@ -552,7 +552,7 @@ export default function Home() {
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
                                         <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
-                                        <th className="py-3 px-4 font-medium">Demonstration of Agilex Robotic Arm and Humanoid</th>
+                                        <th className="py-3 px-4 font-medium">Demonstration of Unitree-G1 Humanoid</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 26, 2025</th>
