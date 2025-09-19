@@ -501,7 +501,23 @@ export default function Home() {
                             </Link>
                         </div>
 
-
+                        <div className="flex flex-col gap-6">
+                            <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" target="_blank" href="https://opendrivelab.com/OpenGO1/">
+                                <div>
+                                    <Image
+                                        src="https://ik.imagekit.io/xxyvnpkee/opengo1.png?updatedAt=1758262946369"
+                                        alt="OpenGO1"
+                                        fill
+                                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-center items-center p-6">
+                                    <h3 className="text-white font-bold text-t1 bg-black/30">
+                                        OpenGO1
+                                    </h3>
+                                </div>
+                            </Link>
+                        </div>
 
                     </div>
                 </div>
