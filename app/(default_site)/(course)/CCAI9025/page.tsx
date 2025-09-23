@@ -510,7 +510,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
                                         <th className="py-3 px-4 font-medium">Basic Knowledge of Robotics and 2D Vision</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
@@ -521,12 +521,12 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
+                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of the Robotic Simulation</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
-                                        <th className="py-3 px-4 font-medium">Oct 16, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE LECTURE <br/> Field Trip to Shenzhen</th>
+                                        <th className="py-3 px-4 font-medium">Oct 13 ~ Oct 17, 2025</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE LECTURE <br/>Field Trip to Hong Kong 10.15 <br/> Field Trip to Shenzhen 10.16</th>
                                         <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL <br/> Just Brainstorm Your Group Project</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
