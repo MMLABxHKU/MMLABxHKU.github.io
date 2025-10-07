@@ -495,39 +495,39 @@ export default function Home() {
                                     <tbody>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 3, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Introduction to Embodied AI, Machine Learning and Beyond</th>
+                                        <th className="py-3 px-4 font-medium">Introduction to Embodied AI, Machine Learning and Beyond [<a href="https://drive.google.com/file/d/1-OgCJsJadfIyyyEgGl3NEvXuokaA25dD/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                         <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 10, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Pursuing the Nature of Intelligence</th>
-                                        <th className="py-3 px-4 font-medium">Details of Course Assessment and Introduction of Basic Math</th>
+                                        <th className="py-3 px-4 font-medium">Pursuing the Nature of Intelligence [<a href="https://drive.google.com/file/d/1a9hCYLeB0my4RbQrJ_DYw5INd7vsEdyz/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
+                                        <th className="py-3 px-4 font-medium">Details of Course Assessment and Introduction of Basic Math [<a href="https://drive.google.com/file/d/1jtqdI42IMlk_Z-n60Axrx6MnGduZ_DIt/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 17, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation</th>
-                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Machine Learning</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Autonomous Driving and Transportation [<a href="https://drive.google.com/file/d/1tKPXP7cAJQNmlafU3QgirP9sniGbnXnM/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Machine Learning [<a href="https://drive.google.com/file/d/1KLDiU0bwzgHBOHdypf84ARe1eC-VANcn/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Sep 24, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing</th>
-                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Robotics and 2D Vision</th>
+                                        <th className="py-3 px-4 font-medium">Robotic Applications: Manufacturing [<a href="https://drive.google.com/file/d/1WCJQJPs7Zqr9ZDA0M89s-UqqV9JVvZ7s/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of Robotics and 2D Vision [<a href="https://drive.google.com/file/d/1TtHJJOh5oGa_q1AnJN-QAJFWlB4XLpu8/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 1, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare (Recording) </th> 
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare (Recording) [<a href="https://drive.google.com/file/d/1Q5KQV2PdVOfTGVxvyffQHC7D7csDECB1/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th> 
                                         {/* Robotic Applications: Manufacturing */}
-                                        <th className="py-3 px-4 font-medium">Basic Knowledge of 3D Vision and Coding</th>
+                                        <th className="py-3 px-4 font-medium">Basic Knowledge of 3D Vision and Coding [<a href="https://drive.google.com/file/d/130U1eWpp5nXVh76uNhLnD5CJ8vCC9vHn/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
                                         <th className="py-3 px-4 font-medium">Robotics with Foundation Models</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of the Robotic Simulation</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of the Robotic Simulation [<a href="https://drive.google.com/file/d/1_OAGut-ePxrO3WCK9CiyQhqrWMyfi2zp/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 13 ~ Oct 17, 2025</th>
                                         <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE LECTURE <br/>Field Trip to Hong Kong 10.15 <br/> Field Trip to Shenzhen 10.16</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL <br/> Just Brainstorm Your Group Project</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">Reading Week, NO ONSITE TUTORIAL </th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 22, 2025</th>
