@@ -592,7 +592,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 8, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models [<a href="https://drive.google.com/file/d/1baL5Yj6KQpktQQPj5RIY5HKMNbQsDi19/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
+                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models Part 1 [<a href="https://drive.google.com/file/d/1baL5Yj6KQpktQQPj5RIY5HKMNbQsDi19/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of the Robotic Simulation [<a href="https://drive.google.com/file/d/1_OAGut-ePxrO3WCK9CiyQhqrWMyfi2zp/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
@@ -602,7 +602,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Oct 22, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Multi-agent Robotic Systems [<a href="https://drive.google.com/file/d/12aPnBGdUAoKT0j25iMY3GvrHv-jhQH0u/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
+                                        <th className="py-3 px-4 font-medium">Robotics with Foundation Models Part 2 and Multi-agent Robotic Systems [<a href="https://drive.google.com/file/d/12aPnBGdUAoKT0j25iMY3GvrHv-jhQH0u/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Teleoperation and Data Collection [<a href="https://drive.google.com/file/d/18kNWRL-2JIK5rQa6WBhePP0lQcOYYk4D/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
