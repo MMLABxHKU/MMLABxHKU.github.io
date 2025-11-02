@@ -586,7 +586,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 1, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare (Recording) [<a href="https://drive.google.com/file/d/1Q5KQV2PdVOfTGVxvyffQHC7D7csDECB1/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th> 
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Healthcare [<a href="https://drive.google.com/file/d/1Q5KQV2PdVOfTGVxvyffQHC7D7csDECB1/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th> 
                                         {/* Robotic Applications: Manufacturing */}
                                         <th className="py-3 px-4 font-medium">Basic Knowledge of 3D Vision and Coding [<a href="https://drive.google.com/file/d/130U1eWpp5nXVh76uNhLnD5CJ8vCC9vHn/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
@@ -607,12 +607,12 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium text-red-500">Oct 29, 2025</th>
-                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Drones and Low-altitude Economy (Recording)</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Data Pre-processing</th>
+                                        <th className="py-3 px-4 font-medium text-red-500">HK Holiday, NO ONSITE LECTURE <br/> Robotic Applications: Drones and Low-altitude Economy [<a href="https://drive.google.com/file/d/1e9yc0QwSq5nBJPwMxRNwRFSkCPL6Nb5E/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Data Pre-processing [<a href="https://drive.google.com/file/d/1wqfOVJ-TRd4gO-7i1UoHqWNsGcUek42Z/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 5, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Guest Lecture from MiraclePlus</th>
+                                        <th className="py-3 px-4 font-medium">Crossing the "Uncanny Valley": How to Inject "Soul" into Robots</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Policy Training</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
@@ -628,7 +628,7 @@ export default function Home() {
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 26, 2025</th>
                                         <th className="py-3 px-4 font-medium">Group Project Presentation</th>
-                                        <th className="py-3 px-4 font-medium">Brilliant Builds of HKU Robotics Teams</th>
+                                        <th className="py-3 px-4 font-medium">-</th>
                                     </tr>
                                     </tbody>
                                 </table>
