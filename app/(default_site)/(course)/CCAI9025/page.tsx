@@ -617,7 +617,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 12, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Robotics with Learning Methods(1h) <br/> Panel: Will Robots Replace Humans? (1h)</th>
+                                        <th className="py-3 px-4 font-medium">Towards Dexterous Hands(1h) <br/> Panel: Will Robots Replace Humans? (1h)</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Policy Inference</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
