@@ -613,12 +613,12 @@ export default function Home() {
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 5, 2025</th>
                                         <th className="py-3 px-4 font-medium">Crossing the "Uncanny Valley": How to Inject "Soul" into Robots</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Training</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Training [<a href="https://drive.google.com/file/d/1ZVS8YkajsqysrZTteaCxUbKEfR1oH4h4/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 12, 2025</th>
                                         <th className="py-3 px-4 font-medium">Towards Dexterous Hands(1h) <br/> Panel: Will Robots Replace Humans? (1h)</th>
-                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Inference</th>
+                                        <th className="py-3 px-4 font-medium">Hands-on Study of Policy Inference [<a href="https://drive.google.com/file/d/1xYRA7qj31DJFsAYypJ24mN17vgF7Q1mV/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
