@@ -617,7 +617,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 12, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Towards Dexterous Hands(1h) <br/> Panel: Will Robots Replace Humans? (1h)</th>
+                                        <th className="py-3 px-4 font-medium">Towards Dexterous Hands(1h) [<a href="https://drive.google.com/file/d/1rz9q5vKT8ECqhL7XdFLyQdrd1erLnF0v/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] <br/> Panel: Will Robots Replace Humans? (1h) [<a href="https://drive.google.com/file/d/1vs-YRYXamnL_K5JOvv7UtrtNKLNrPcE6/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                         <th className="py-3 px-4 font-medium">Hands-on Study of Policy Inference [<a href="https://drive.google.com/file/d/1xYRA7qj31DJFsAYypJ24mN17vgF7Q1mV/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>]</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
