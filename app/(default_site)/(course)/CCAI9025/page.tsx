@@ -63,14 +63,39 @@ const teachingAssistants = [
     profileUrl: "https://betray12138.github.io/resume/"
   },
   {
+    name: "Hugo Mak",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/haoguang_mai.jpg?updatedAt=1756526921679",
+    profileUrl: ""
+  },
+  {
     name: "Ziye Wang",
     avatar: "https://ik.imagekit.io/xxyvnpkee/ziye_wang_c.jpg?updatedAt=1756525596773",
     profileUrl: "https://ziyeeee.github.io"
   },
   {
+    name: "Ruizhe Liu",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/ruize_liu.jpg?updatedAt=1756526506019",
+    profileUrl: "https://scholar.google.com/citations?hl=zh-CN&user=cHY_UJ8AAAAJ"
+  },
+  {
     name: "Zhuoheng Li",
     avatar: "https://ik.imagekit.io/xxyvnpkee/zhuoheng_li_c.jpg?updatedAt=1756525944543",
     profileUrl: "https://github.com/StarCycle"
+  },
+  {
+    name: "Jiayu Weng",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/jiayu_weng.jpg?updatedAt=1756526834066",
+    profileUrl: "https://scholar.google.com/citations?user=KZGlHNIAAAAJ&hl=en"
+  },
+  {
+    name: "Jianrui Wu",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/Jianrui_wu.jpg?updatedAt=1756526652630",
+    profileUrl: "https://jer-ry.github.io"
+  },
+  {
+    name: "Tianle Li",
+    avatar: "https://ik.imagekit.io/xxyvnpkee/tianle_li.jpg?updatedAt=1756526739918",
+    profileUrl: ""
   },
   {
     name: "Yixuan Pan",
@@ -86,31 +111,6 @@ const teachingAssistants = [
     name: "Junli Ren",
     avatar: "https://ik.imagekit.io/xxyvnpkee/junli_ren.jpg?updatedAt=1756534129995",
     profileUrl: "https://renjunli99.github.io"
-  },
-  {
-    name: "Ruizhe Liu",
-    avatar: "https://ik.imagekit.io/xxyvnpkee/ruize_liu.jpg?updatedAt=1756526506019",
-    profileUrl: "https://scholar.google.com/citations?hl=zh-CN&user=cHY_UJ8AAAAJ"
-  },
-  {
-    name: "Jianrui Wu",
-    avatar: "https://ik.imagekit.io/xxyvnpkee/Jianrui_wu.jpg?updatedAt=1756526652630",
-    profileUrl: "https://jer-ry.github.io"
-  },
-  {
-    name: "Tianle Li",
-    avatar: "https://ik.imagekit.io/xxyvnpkee/tianle_li.jpg?updatedAt=1756526739918",
-    profileUrl: ""
-  },
-  {
-    name: "Jiayu Weng",
-    avatar: "https://ik.imagekit.io/xxyvnpkee/jiayu_weng.jpg?updatedAt=1756526834066",
-    profileUrl: "https://scholar.google.com/citations?user=KZGlHNIAAAAJ&hl=en"
-  },
-  {
-    name: "Hugo Mak",
-    avatar: "https://ik.imagekit.io/xxyvnpkee/haoguang_mai.jpg?updatedAt=1756526921679",
-    profileUrl: ""
   },
 ];
 
@@ -622,7 +622,7 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact</th>
+                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact and Class Recap </th>
                                         <th className="py-3 px-4 font-medium">Demonstration of Unitree-G1 Humanoid</th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
