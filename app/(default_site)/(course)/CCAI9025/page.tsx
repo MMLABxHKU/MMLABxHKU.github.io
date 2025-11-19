@@ -622,8 +622,8 @@ export default function Home() {
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 19, 2025</th>
-                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact and Class Recap </th>
-                                        <th className="py-3 px-4 font-medium">Demonstration of Unitree-G1 Humanoid</th>
+                                        <th className="py-3 px-4 font-medium">Embodied AI on the Societal Impact and Class Recap  [<a href="https://drive.google.com/file/d/1rzcEz2uq763IvuF2kJA0q4tEdE32kWhZ/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
+                                        <th className="py-3 px-4 font-medium">Demonstration of Humanoid  [<a href="https://drive.google.com/file/d/1SusA-Bow0o6VqeHLFbEKJwOCDQTpnDr8/view?usp=sharing" className="text-blue-500 hover:underline">slides</a>] </th>
                                     </tr>
                                     <tr className="border-b border-gray-200">
                                         <th className="py-3 px-4 font-medium">Nov 26, 2025</th>
