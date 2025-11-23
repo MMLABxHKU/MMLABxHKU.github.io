@@ -505,12 +505,12 @@ export default function Home() {
                             <FadeIn>
                                 <ul className="list-disc pl-5 space-y-2"> {/* 圆点列表 + 左内边距 + 项间距 */}
                                 <li>
-                                    <span className="font-semibold">Essay (30%)</span> 
-                                    <br/>Students are encouraged to apply the knowledge acquired throughout the course by developing an individual essay that explores robotics applications, including societal impact and future trend analysis. Details will be announced throughout the lectures and tutorials.
+                                    <span className="font-semibold">Individual Essay (30%)</span> 
+                                    <br/>Students are encouraged to cover the personal contributions and the analysis of why you suit the role in the group project.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Reflection Report About the Field Trips (15%)</span>
-                                    <br/>Students are encouraged to develop a "report" to describe what they gain during the field trip. Details will be announced throughout the lectures and tutorials.
+                                    <br/>Students are encouraged to develop a "report" to describe what they gain and what they experience during the field trip.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Participation (20%)</span> 
@@ -518,7 +518,7 @@ export default function Home() {
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Group Project (30%)</span>
-                                    <br/>Students are encouraged to cooperate to finish a group project to demonstrate their comprehensive and overall summary of the whole course. Details will be announced throughout the lectures and tutorials.
+                                    <br/>Students are encouraged to cooperate to finish a group project to demonstrate their comprehensive and overall summary of the whole course. We design four directions for the group project: Simulation Robot, Real-world Robot, Index Report, and Business Plan.
                                 </li><br/>
                                 <li>
                                     <span className="font-semibold">Social Media Outreach (5%)</span> 
