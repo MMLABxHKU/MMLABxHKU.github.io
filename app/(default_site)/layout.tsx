@@ -80,8 +80,8 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         ],
     },
     {
-        title: "",
-        href: "",
+        title: "Course",
+        href: "/CCAI9025",
         links: [
         ],
     },

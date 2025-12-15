@@ -48,22 +48,16 @@ const headers: { title: string; href: string; classname: string; }[] = [
     {
         title: "About Us",
         href: "/about-us",
-        classname: "hidden md:block",
+        classname: "",
     },
-    {
-        title: "Member",
-        href: "/member",
-        classname: "hidden md:block",
-    },
+    // {
+    //     title: "Member",
+    //     href: "/member",
+    //     classname: "hidden md:block",
+    // },
     {
         title: "Research",
         href: "/research",
-        classname: "",
-
-    },
-    {
-        title: "Course",
-        href: "/CCAI9025",
         classname: "",
 
     },
