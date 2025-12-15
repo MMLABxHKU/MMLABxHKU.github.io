@@ -72,12 +72,28 @@ export default function Home() {
                     {/* navigator */}
                     <div className="w-48 hidden 3xl:block">
                         <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                            <Link className="select-none flex items-center gap-3 group" href="#competition">
+                            <Link className="select-none flex items-center gap-3 group" href="#veni">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Competition
+                                    Veni
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#vidi">
+                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-sm text-mgray group-hover:text-mred">
+                                    Vidi
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#vici">
+                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-sm text-mgray group-hover:text-mred">
+                                    Vici
                                 </span>
                             </Link>
                         </div>
@@ -128,7 +144,7 @@ export default function Home() {
 
 
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-3xl font-bold"> 
                             <Link href="#veni" className="scroll-mt-32 group flex items-center flex-row" id="veni">
                                 <h2>
                                     Veni: Mining Failure Modes from On-Policy Experience
@@ -144,20 +160,14 @@ export default function Home() {
                             </Link>
                         </h2>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-6 leading-relaxed">
                         文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
                     </div>
 
-                    
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
-                    </div>
-
 
 
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-3xl font-bold"> 
                             <Link href="#vidi" className="scroll-mt-32 group flex items-center flex-row" id="vidi">
                                 <h2>
                                     Vidi: Model Algebra as a Shortcut for Mode Extrapolation
@@ -173,20 +183,14 @@ export default function Home() {
                             </Link>
                         </h2>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-6 leading-relaxed">
                     文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）文字部分：Model Arithmetic （20% 到80%, 性能）
                     </div>
 
-                    
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
-                    </div>
-
 
 
                     <div className="w-full flex flex-col items-center">
-                        <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
+                        <h2 className="w-full max-w-7xl mt-20 text-3xl font-bold"> 
                             <Link href="#vici" className="scroll-mt-32 group flex items-center flex-row" id="vici">
                                 <h2>
                                     Vici: Distribution-aware Advantage as Mode-Orchestrator
@@ -202,14 +206,8 @@ export default function Home() {
                             </Link>
                         </h2>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-6 leading-relaxed">
                         文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)文字部分：Stage Orchestrator (80%-100%, 拔尖)
-                    </div>
-
-                    
-
-                    <div className="w-full flex flex-col items-center">
-                        <Separator className="max-w-7xl mt-20"/>
                     </div>
 
 
