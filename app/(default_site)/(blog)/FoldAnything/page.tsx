@@ -143,6 +143,26 @@ export default function Home() {
 
 
 
+                    <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center mt-20">
+                            <div className="w-full max-w-4xl flex flex-col relative p-10 gap-6">
+                                <div className="absolute top-0 left-0 w-8 h-8 border-t-6 border-l-6 border-black"></div>
+                                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-6 border-r-6 border-black"></div>
+                                <h2 className="text-3xl font-bold">
+                                    Veni, vidi, vici.
+                                </h2>
+                                <h2 className="text-3xl font-bold">
+                                    Eng. Ver: I came, I saw, I conquered.
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="w-full max-w-4xl flex flex-row justify-end mt-6">
+                            <i>Julius Caesar</i>
+                        </div> 
+                    </div>
+
+
+
                     <div className="w-full flex flex-col items-center">
                         <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                             <Link href="#veni" className="scroll-mt-32 group flex items-center flex-row" id="veni">
