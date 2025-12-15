@@ -192,6 +192,44 @@ export default function Home() {
                         </p>
                         <div></div>
                     </div>
+                    <div className="mt-6 flex flex-col gap-3">
+                        <div className="grid grid-cols-3 gap-6">
+                            <video
+                                autoPlay muted loop controls playsInline
+                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                className="w-full aspect-video rounded-sm"
+                            >
+                                <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                            </video>
+                            <video
+                                autoPlay muted loop controls playsInline
+                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                className="w-full aspect-video rounded-sm"
+                            >
+                                <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                            </video>
+                            <video
+                                autoPlay muted loop controls playsInline
+                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                className="w-full aspect-video rounded-sm"
+                            >
+                                <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <i>
+                            explain the image
+                        </i>
+                    </div>
+                    <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div></div>
+                        <p className="leading-relaxed max-w-4xl">
+                            文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                        </p>
+                        <div></div>
+                    </div>
+
+
+
 
 
 
