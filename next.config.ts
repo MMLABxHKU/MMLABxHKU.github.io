@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
                 hostname: 'ik.imagekit.io',
                 pathname: '/mmlab/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'assets.kinetixai.cn',
+                pathname: '/**',
+            },
         ],
         domains: ["ik.imagekit.io"], 
         dangerouslyAllowSVG: true,
