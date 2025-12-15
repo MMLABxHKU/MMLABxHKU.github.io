@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    --color-kwhite: var(--kwhite);
     --color-mblue: var(--mblue);
     --color-morange: var(--morange);
     --color-mred: var(--mred);
@@ -46,6 +47,7 @@
 }
 
 :root {
+    --kwhite: #f4f6e1;
     --mblue: #4ec6df;
     --morange: #f9a61a;
     --mred: #ee2e69;
@@ -85,6 +87,7 @@
 }
 
 .dark {
+    --kwhite: #f4f6e1;
     --mblue: #4ec6df;
     --morange: #f9a61a;
     --mred: #ee2e69;
