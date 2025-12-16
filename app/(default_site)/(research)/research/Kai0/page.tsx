@@ -126,6 +126,9 @@ export default function Home() {
                                     Published
                                 </h2>
                                 <h2>
+                                    Paper
+                                </h2>
+                                <h2>
                                     Email
                                 </h2>
                                 <h2>
@@ -135,6 +138,9 @@ export default function Home() {
                             <div className="flex flex-col">
                                 <h2>
                                     December 24, 2025
+                                </h2>
+                                <h2>
+                                    Available in Late January 2026
                                 </h2>
                                 <h2>
                                     <b className="text-red-500">TODO research@mmlab.hk</b>
