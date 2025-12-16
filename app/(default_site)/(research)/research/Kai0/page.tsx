@@ -11,6 +11,10 @@ import './local.css'
 
 
 
+import { ExampleChart } from "./chart/examplechart"
+
+
+
 import Image from 'next/image'
 import Link from "next/link"
 import { Slash } from "lucide-react"
@@ -318,6 +322,11 @@ export default function Home() {
                                 文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
                             </p>
                             <div></div>
+                        </div>
+                        <div className="mt-6 flex flex-row justify-center">
+                            <div className="max-w-7xl">
+                                <ExampleChart />
+                            </div>
                         </div>
 
 
