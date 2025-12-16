@@ -46,7 +46,7 @@ export default function Home() {
 
 
                 {/* Landing */}
-                <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-fixed">
+                <div className="w-full h-48 flex flex-row justify-center bg-fixed">
                     <div className="w-full h-full max-w-7xl px-6 flex flex-col justify-end pb-10 gap-6">
                         <Breadcrumb>
                             <BreadcrumbList>
