@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "MMLab at CVPR 2025",
+    title: "Kai0 | HKU MMLab",
     description: "Multimedia Laboratory",
-    keywords: ["CVPR 2025", "Event", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+    keywords: ["Kai0", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 
