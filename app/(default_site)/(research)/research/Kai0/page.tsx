@@ -116,7 +116,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl flex flex-col">
 
 
-                        <div className="flex flex-col w-full gap-6">
+                        <div className="flex flex-col w-full gap-6 px-6">
                             <h1 className="font-bold text-t1 leading-tight">
                                 Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
                             </h1>
@@ -164,8 +164,8 @@ export default function Home() {
 
 
 
-                        <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                            <div className="w-full flex flex-col items-center mt-20">
+                        <div className="w-full flex flex-col items-center">
+                            <div className="w-full flex flex-col items-center px-6 mt-20">
                                 <div className="w-full max-w-4xl flex flex-col relative p-10 gap-6">
                                     <div className="absolute top-0 left-0 w-8 h-8 border-t-6 border-l-6 border-black"></div>
                                     <div className="absolute bottom-0 right-0 w-8 h-8 border-b-6 border-r-6 border-black"></div>
@@ -181,7 +181,7 @@ export default function Home() {
 
 
 
-                        <div className="w-full flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                                 <Link href="#abstract" className="scroll-mt-32 group flex items-center flex-row" id="abstract">
                                     <h2>
@@ -246,7 +246,7 @@ export default function Home() {
 
 
 
-                        <div className="w-full flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                                 <Link href="#veni" className="scroll-mt-32 group flex items-center flex-row" id="veni">
                                     <h2>
@@ -274,7 +274,7 @@ export default function Home() {
 
 
 
-                        <div className="w-full flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                                 <Link href="#vidi" className="scroll-mt-32 group flex items-center flex-row" id="vidi">
                                     <h2>
@@ -301,7 +301,7 @@ export default function Home() {
 
 
 
-                        <div className="w-full flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                                 <Link href="#vici" className="scroll-mt-32 group flex items-center flex-row" id="vici">
                                     <h2>
@@ -328,7 +328,7 @@ export default function Home() {
 
 
 
-                        <div className="w-full flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                                 <Link href="#citation" className="scroll-mt-32 group flex items-center flex-row" id="citation">
                                     <h2>
