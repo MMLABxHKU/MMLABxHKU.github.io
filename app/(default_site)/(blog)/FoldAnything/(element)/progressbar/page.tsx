@@ -114,7 +114,7 @@ export default function Home() {
 
                     <div className="flex flex-col w-full gap-6">
                         <h1 className="font-bold text-t1 leading-tight">
-                            Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
+                            title
                         </h1>
                         <div className="flex flex-row gap-20">
                             <div className="flex flex-col">
@@ -169,7 +169,7 @@ export default function Home() {
                         <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
                             <Link href="#abstract" className="scroll-mt-32 group flex items-center flex-row" id="abstract">
                                 <h2>
-                                    Abstact
+                                    0%
                                 </h2>
                                 <div className="min-w-12 select-none">
                                     <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
@@ -279,6 +279,8 @@ export default function Home() {
                         <div></div>
                         <p className="w-full leading-relaxed max-w-4xl">
                             文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projecrides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                            <br></br>
+                            100%
                         </p>
                         <div></div>
                     </div>
