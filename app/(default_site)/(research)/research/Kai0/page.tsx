@@ -43,7 +43,7 @@ export default function Home() {
 
                 {/* Landing */}
                 <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-fixed">
-                    <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
+                    <div className="w-full h-full max-w-7xl px-6 flex flex-col justify-end pb-10 gap-6">
                         <Breadcrumb>
                             <BreadcrumbList>
                                 {paths.map((path) => (
@@ -120,6 +120,9 @@ export default function Home() {
                             <h1 className="font-bold text-t1 leading-tight">
                                 Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
                             </h1>
+                            <i>
+                                TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
+                            </i>
                             <div className="flex flex-row gap-20">
                                 <div className="flex flex-col">
                                     <h2>
@@ -201,7 +204,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                                <Link className="text-foreground animated-underline hover:text-mred" href="/" >this is a link</Link><br></br>文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
                             </p>
                             <div></div>
                         </div>
