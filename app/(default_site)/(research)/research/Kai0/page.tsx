@@ -122,7 +122,7 @@ export default function Home() {
 
                         <div className="flex flex-col w-full gap-6 px-6">
                             <h1 className="font-bold text-t1 leading-tight">
-                                Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
+                                <span>π</span><sup>*</sup><sub>0.6</sub>Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
                             </h1>
                             <i>
                                 TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
