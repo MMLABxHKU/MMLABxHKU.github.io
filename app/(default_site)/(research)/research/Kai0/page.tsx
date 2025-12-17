@@ -150,7 +150,9 @@ export default function Home() {
                                         Available in Late January 2026
                                     </h2>
                                     <h2>
-                                        <b className="text-red-500">TODO research@mmlab.hk</b>
+                                        <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" >
+                                            research@mmlab.hk
+                                        </Link>
                                     </h2>
                                     <h2>
                                         HKU Manipulation Team
@@ -284,7 +286,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="leading-relaxed max-w-4xl">
-                                <Link className="text-foreground animated-underline hover:text-mred" href="/" >this is a link</Link><br></br>文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
                             </p>
                             <div></div>
                         </div>
