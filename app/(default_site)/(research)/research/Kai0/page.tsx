@@ -12,6 +12,7 @@ import './local.css'
 
 
 import { ExampleChart } from "./chart/examplechart"
+import { EmailSubscribe } from "./mailing"
 
 
 
@@ -27,7 +28,6 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { EmailSubscribe } from "@/components/layout/mailing"
 
 
 
@@ -120,7 +120,7 @@ export default function Home() {
                             <i>
                                 TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
                             </i>
-                            <div className="flex flex-row gap-20">
+                            <div className="flex flex-row gap-20 xl:gap-40">
                                 <div className="flex flex-col">
                                     <h2>
                                         Published
@@ -136,6 +136,9 @@ export default function Home() {
                                     </h2>
                                     <h2>
                                         Challenge
+                                    </h2>
+                                    <h2>
+                                        Share
                                     </h2>
                                 </div>
                                 <div className="flex flex-col">
@@ -157,6 +160,9 @@ export default function Home() {
                                         <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
                                             Workshop at CVPR 2026
                                         </Link>
+                                    </h2>
+                                    <h2>
+                                        X
                                     </h2>
                                 </div>
                             </div>
@@ -201,6 +207,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* Is massive scale the only path to robotic dexterity? While foundational models like Pi05 and GO-1 leverage massive compute and data to achieve task-generalization, we explore a "resource-aware" alternative for state-generalization. We present a comprehensive guideline for mastering long-horizon garment manipulation, taking a system from 0% to 100% reliability with a fraction of the standard cost—specifically, within 20 hours of human demonstration, 8*A100 gpus, rather than tens of thousands of hrs data and hundreds of GPUs which are typically required. */}
 
 
 
@@ -211,6 +218,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* Our system enables collaborative, dual-arm robots to perform complex folding tasks over extended horizons (up to 6 minutes), demonstrating exceptional robustness to the compounding errors that plague collaborative handovers. This reliability extends to "in-the-wild" scenarios, handling interruptions and varied lighting with ease. */}
 
 
 
@@ -221,6 +229,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* The core of our efficiency lies in a new philosophical approach to Imitation Learning: */}
 
 
 
@@ -232,18 +241,21 @@ export default function Home() {
                                     </b>
                                     We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge Q<sub>model</sub>, and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
                                 </li>
+                                {/* We argue that not all data is created equal. By strictly aligning the human demonstration distribution ($P_{train}$), the model's knowledge ($Q_{model}$), and the test-time distribution ($P_{test}$), we minimize in-distribution shifts that lead to failure. */}
                                 <li>
                                     <b>
                                         Model Arithmetic:&nbsp;
                                     </b>
                                     Rather than relying on a single checkpoint, we identify that models trained on different data subsets learn distinct manifolds. We introduce a "shortcut" to merge these manifolds—condensing several diverse models into a single, adaptive policy without the complexity of MoE architectures.
                                 </li>
+                                {/* Rather than relying on a single checkpoint, we identify that models trained on different data subsets learn distinct manifolds. We introduce a "shortcut" to merge these manifolds—condensing several diverse models into a single, adaptive policy without the complexity of MoE architectures. */}
                                 <li>
                                     <b>
                                         Distribution-Aware Orchestration:&nbsp;
                                     </b>
                                     A specialized mechanism to handle the "last mile" of precision (the final 80-100% performance gain).
                                 </li>
+                                {/* A specialized mechanism to handle the "last mile" of precision (the final 80-100% performance gain). */}
                             </ol>
                         </div>
 
@@ -256,6 +268,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* This recipe is universally applicable, functioning across different embodiments (AgileX Piper, ARX X5) and model architectures (pi series, x-vla, go-1), proving that efficient, high-performance manipulation is accessible without industrial-scale resources. */}
 
 
 
@@ -266,6 +279,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* We will release data, checkpoints and host Challenge in 2026. */}
 
 
 
@@ -305,6 +319,7 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
+                        {/* Achieving robust manipulation is akin to solving a chaotic "three-body problem" between $$P_{train}$$(human demonstration), $$Q_{model}$$(action projection on model weights), and $$P_{test}$$(policy action in the real-world). In this foundation stage, we train a preliminary model on minimizing the $$KL(P_{train}|Q_{model})$$. This process yields an initial $$Q_{model}$$, and deploying this model on real robots provides us with the initial $$P_{test}$$. We achieve basic alignment through three targeted strategies:  */}
 
 
 
@@ -316,18 +331,21 @@ export default function Home() {
                                     </b>
                                     Basic trajectory data sampled on some standard procedures often miss the failure modes unique to real-world inference. When Q<sub>model</sub> encounters states outside P<sub>train</sub>, performance collapses. We  inject DAgger-style interative on-policy recovery data to fill these missing distribution peaks. By integrating these "corrected" trajectories, we expand P<sub>train</sub> with on-policy recovery data to enhance Q<sub>model</sub>, ensuring P<sub>test</sub> is resilient to the inevitable drift found in real-world distribution P<sub>real</sub>.
                                 </li>
+                                {/* Basic trajectory data sampled on some standard procedures often miss the failure modes unique to real-world inference. When $$Q_{model}$$encounters states outside $$P_{train}$$, performance collapses. We  inject DAgger-style interative on-policy recovery data to fill these missing distribution peaks. By integrating these "corrected" trajectories, we expand $$P_{train}$$with on-policy recovery data to enhance $$Q_{model}$$, ensuring $$P_{test}$$is resilient to the inevitable drift found in real-world distribution $$P_{real}$$. */}
                                 <li>
                                     <b>
                                         Strategic Data Augmentation:&nbsp;
                                     </b>
                                     To further bridge the P<sub>train</sub> <i>vs.</i> P<sub>test</sub> gap, we employ two specific augmentations. Time-scaling introduces up/down-sampled trajectories to adapt to varying control frequencies, while Wrist-mirroring enhances the model's spatial understanding of dual-arm coordination.
                                 </li>
+                                {/* To further bridge the $$P_{train}$$ vs. $$P_{test}$$gap, we employ two specific augmentations. Time-scaling introduces up/down-sampled trajectories to adapt to varying control frequencies, while Wrist-mirroring enhances the model's spatial understanding of dual-arm coordination. */}
                                 <li>
                                     <b>
                                         Inference-Control Optimization:&nbsp;
                                     </b>
                                     To handle the final projection from Q<sub>model</sub> to P<sub>test</sub>, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution.
                                 </li>
+                                {/* To handle the final projection from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
                             </ol>
                         </div>
 
