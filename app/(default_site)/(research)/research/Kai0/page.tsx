@@ -27,6 +27,7 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import { EmailSubscribe } from "@/components/layout/mailing"
 
 
 
@@ -158,6 +159,9 @@ export default function Home() {
                                         HKU Manipulation Team
                                     </h2>
                                 </div>
+                            </div>
+                            <div>
+                                <EmailSubscribe />
                             </div>
                         </div>
 
