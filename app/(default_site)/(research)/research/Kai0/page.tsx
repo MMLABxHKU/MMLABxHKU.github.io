@@ -78,36 +78,28 @@ export default function Home() {
                     {/* navigator */}
                     <div className="w-48 hidden 3xl:block">
                         <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group" href="#abstract">
+                            <Link className="select-none flex items-center gap-3 group" href="#methology">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Abstract
+                                    Methodoloy
                                 </span>
                             </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#veni">
+                            <Link className="select-none flex items-center gap-3 group" href="#data">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Veni
+                                    Data / Infra
                                 </span>
                             </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#vidi">
+                            <Link className="select-none flex items-center gap-3 group" href="#recipe">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Vidi
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#vici">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
-                                    Vici
+                                    Bottom Line / Recipe
                                 </span>
                             </Link>
                         </div>
@@ -123,7 +115,7 @@ export default function Home() {
 
                         <div className="flex flex-col w-full gap-6 px-6">
                             <h1 className="font-bold text-t1 leading-tight">
-                                <span>π</span><sup>*</sup><sub>0.6</sub>Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
+                                How to Build Robust Live-streaming Robotic Manipulation from Scratch in One Day
                             </h1>
                             <i>
                                 TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
@@ -238,7 +230,7 @@ export default function Home() {
                                     <b>
                                         Mode Consistency:&nbsp;
                                     </b>
-                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution ($P_train$), the model's knowledge ($Q_model$), and the test-time distribution ($P_test$), we minimize in-distribution shifts that lead to failure.
+                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge Q<sub>model</sub>, and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
                                 </li>
                                 <li>
                                     <b>
@@ -260,7 +252,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                This recipe is universally applicable, functioning across different embodiments (AgileX Piper, ARX X5) and model architectures (pi series, x-vla, go-1), proving that efficient, high-performance manipulation is accessible without industrial-scale resources.
+                                This recipe is universally applicable, functioning across different embodiments (AgileX Piper, ARX X5) and model architectures (π series, x-VLA, GO-1), proving that efficient, high-performance manipulation is accessible without industrial-scale resources.
                             </p>
                             <div></div>
                         </div>
@@ -270,7 +262,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We will release data, checkpoints and host Challenge in 2026.
+                                We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
                             </p>
                             <div></div>
                         </div>
@@ -280,9 +272,9 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
-                                <Link href="#abstract" className="scroll-mt-32 group flex items-center flex-row" id="abstract">
+                                <Link href="#methodoloy" className="scroll-mt-32 group flex items-center flex-row" id="methodoloy">
                                     <h2>
-                                        Abstact
+                                        Methodoloy
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
@@ -295,13 +287,110 @@ export default function Home() {
                                 </Link>
                             </h2>
                         </div>
+
+
+
+                        <div className="w-full flex flex-col items-center px-6">
+                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
+                                Mode Consistency: The "Three-Body Problem" (0-20% Foundation Stage)
+                            </h2>
+                        </div>
+
+
+
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Achieving robust manipulation is akin to solving a chaotic "three-body problem" between P<sub>train</sub> (human demonstration), Q<sub>model</sub> (action projection on model weights), and P<sub>test</sub> (policy action in the real-world). In this foundation stage, we train a preliminary model on minimizing the KL(P<sub>train</sub>|Q<sub>model</sub>). This process yields an initial Q<sub>model</sub>, and deploying this model on real robots provides us with the initial P<sub>test</sub>. We achieve basic alignment through three targeted strategies: 
                             </p>
                             <div></div>
                         </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
+                                <li>
+                                    <b>
+                                        F DAgger:&nbsp;
+                                    </b>
+                                    Basic trajectory data sampled on some standard procedures often miss the failure modes unique to real-world inference. When Q<sub>model</sub> encounters states outside P<sub>train</sub>, performance collapses. We  inject DAgger-style interative on-policy recovery data to fill these missing distribution peaks. By integrating these "corrected" trajectories, we expand P<sub>train</sub> with on-policy recovery data to enhance Q<sub>model</sub>, ensuring P<sub>test</sub> is resilient to the inevitable drift found in real-world distribution P<sub>real</sub>.
+                                </li>
+                                <li>
+                                    <b>
+                                        Strategic Data Augmentation:&nbsp;
+                                    </b>
+                                    To further bridge the P<sub>train</sub> <i>vs.</i> P<sub>test</sub> gap, we employ two specific augmentations. Time-scaling introduces up/down-sampled trajectories to adapt to varying control frequencies, while Wrist-mirroring enhances the model's spatial understanding of dual-arm coordination.
+                                </li>
+                                <li>
+                                    <b>
+                                        Inference-Control Optimization:&nbsp;
+                                    </b>
+                                    To handle the final projection from Q<sub>model</sub> to P<sub>test</sub>, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution.
+                                </li>
+                            </ol>
+                        </div>
+
+
+
+                        <div className="w-full flex flex-col items-center px-6">
+                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
+                                Arithmetic
+                            </h2>
+                        </div>
+
+
+
+                        <div className="w-full flex flex-col items-center px-6">
+                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
+                                Advantage: Stage-Orchestrator(80-100% Pro Max Stage)
+                            </h2>
+                        </div>
+
+
+
+                        <div className="w-full flex flex-col items-center px-6">
+                            <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
+                                <Link href="#data" className="scroll-mt-32 group flex items-center flex-row" id="data">
+                                    <h2>
+                                        Data / Infra
+                                    </h2>
+                                    <div className="min-w-12 select-none">
+                                        <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                            </svg>
+                                        </span> 
+                                    </div>
+                                </Link>
+                            </h2>
+                        </div>
+
+
+
+                        <div className="w-full flex flex-col items-center px-6">
+                            <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
+                                <Link href="#recipe" className="scroll-mt-32 group flex items-center flex-row" id="recipe">
+                                    <h2>
+                                        Bottom Line / Recipe
+                                    </h2>
+                                    <div className="min-w-12 select-none">
+                                        <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                            </svg>
+                                        </span> 
+                                    </div>
+                                </Link>
+                            </h2>
+                        </div>
+
+
+
+
+ 
                         <div className="mt-6 flex flex-col gap-3">
                             <div className="grid grid-cols-3 gap-6">
                                 <video
