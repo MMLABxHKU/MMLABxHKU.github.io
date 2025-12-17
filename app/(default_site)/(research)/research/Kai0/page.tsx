@@ -142,6 +142,9 @@ export default function Home() {
                                     <h2>
                                         By
                                     </h2>
+                                    <h2>
+                                        Challenge
+                                    </h2>
                                 </div>
                                 <div className="flex flex-col">
                                     <h2>
@@ -157,6 +160,11 @@ export default function Home() {
                                     </h2>
                                     <h2>
                                         HKU Manipulation Team
+                                    </h2>
+                                    <h2>
+                                        <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
+                                            Workshop at CVPR 2026
+                                        </Link>
                                     </h2>
                                 </div>
                             </div>
