@@ -437,8 +437,12 @@ export default function Home() {
                         </div>
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                TODO
+                            <p className="w-full leading-relaxed max-w-4xl p-4 bg-background rounded-sm text-foreground/70">
+                                @article&#123;xxx,
+                                <br></br>
+                                author = &#123;xxx&#125;,
+                                <br></br>
+                                &#125;
                             </p>
                             <div></div>
                         </div>
