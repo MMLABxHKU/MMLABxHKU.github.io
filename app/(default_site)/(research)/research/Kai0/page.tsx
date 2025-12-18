@@ -684,6 +684,13 @@ export default function Home() {
                                 <ConsistencyBarChart2 />
                             </div>
                         </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Evolution of Data Collection / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
 
 
 
@@ -694,6 +701,13 @@ export default function Home() {
                                 <ConsistencyBarChart5 />
                             </div>
                         </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
 
 
 
@@ -702,6 +716,13 @@ export default function Home() {
                                 <ConsistencyBarChart6 />
                                 <ConsistencyBarChart7 />
                             </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
                         </div>
 
 
@@ -713,6 +734,13 @@ export default function Home() {
                                 <ConsistencyBarChart10 />
                             </div>
                         </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Inference Optimization Methods Comparison / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
 
 
 
@@ -721,7 +749,14 @@ export default function Home() {
                                 <SoupingBarChart1 />
                             </div>
                         </div>
-
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Souping / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+                        
 
 
                         <div className="w-full flex flex-col items-center px-6">
