@@ -117,9 +117,9 @@ export default function Home() {
                             <h1 className="font-bold text-t1 leading-tight">
                                 How to Build Robust Live-streaming Robotic Manipulation from Scratch in One Day
                             </h1>
-                            <i>
+                            {/* <i>
                                 TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
-                            </i>
+                            </i> */}
                             <div className="flex flex-row gap-20 xl:gap-40">
                                 <div className="flex flex-col">
                                     <h2>
@@ -158,7 +158,7 @@ export default function Home() {
                                     </h2>
                                     <h2>
                                         <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
-                                            Workshop at CVPR 2026
+                                            At CVPR 2026
                                         </Link>
                                     </h2>
                                     <h2>
@@ -173,13 +173,13 @@ export default function Home() {
 
 
 
-                        <Image
+                        {/* <Image
                             src="https://ik.imagekit.io/mmlab/mmlab@hku.jpg"
                             alt="Nashville" 
                             width={352}
                             height={384}
                             className="w-full h-6/12 object-cover object-center rounded-sm bg-gradient-loading select-none mt-20"
-                        />
+                        /> */}
 
 
 
@@ -306,7 +306,7 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Mode Consistency: The "Three-Body Problem" (0-20% Foundation Stage)
+                                Mode Consistency: The "Whac-a-Mole" Problem / The Impossible Trinity / A Trilemma (0-20% Foundation Stage)
                             </h2>
                         </div>
 
@@ -315,11 +315,98 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Achieving robust manipulation is akin to solving a chaotic "three-body problem" between P<sub>train</sub> (human demonstration), Q<sub>model</sub> (action projection on model weights), and P<sub>test</sub> (policy action in the real-world). In this foundation stage, we train a preliminary model on minimizing the KL(P<sub>train</sub>|Q<sub>model</sub>). This process yields an initial Q<sub>model</sub>, and deploying this model on real robots provides us with the initial P<sub>test</sub>. We achieve basic alignment through three targeted strategies: 
+                                We assume that, for certain task, there exists a distribution P<sub>real</sub> consisting of all actions that can accomplish such task. Achieving robust manipulation is akin to solving a chaotic "whac-a-mole" problem between three distributions:
                             </p>
                             <div></div>
                         </div>
-                        {/* Achieving robust manipulation is akin to solving a chaotic "three-body problem" between $$P_{train}$$(human demonstration), $$Q_{model}$$(action projection on model weights), and $$P_{test}$$(policy action in the real-world). In this foundation stage, we train a preliminary model on minimizing the $$KL(P_{train}|Q_{model})$$. This process yields an initial $$Q_{model}$$, and deploying this model on real robots provides us with the initial $$P_{test}$$. We achieve basic alignment through three targeted strategies:  */}
+                        {/* We assume that, for certain task, there exists a distribution $$P_{real}$$ consisting of all actions that can accomplish such task. Achieving robust manipulation is akin to solving a chaotic "whac-a-mole" problem between three distributions:  */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
+                                <li>
+                                    P<sub>train</sub> (human demonstration), collected from Q<sub>human</sub> (human expert policy). This is a subset of P<sub>real</sub>.
+                                </li>
+                                {/* $$P_{train}$$(human demonstration), collected from $$Q_{human}$$(human expert policy). This is a subset of $$P_{real}$$. */}
+                                <li>
+                                    Q<sub>model</sub> (action projection on model weights).
+                                </li>
+                                {/* $$Q_{model}$$(action projection on model weights). */}
+                                <li>
+                                    P<sub>test</sub> (executed action in the real-world), inferred from Q<sub>model</sub>. The part lies inside P<sub>real</sub> means success and outside means failure.
+                                </li>
+                                {/* $$P_{test}$$(executed action in the real-world), inferred from $$Q_{model}$$. The part lies inside $$P_{real}$$means success and outside means failure. */}
+                            </ol>
+                        </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Current training strategy, in most cases, imitation learning, can be interpreted as minimizing the KL(Q<sub>model</sub>|Q<sub>human</sub>) via P<sub>train</sub> (cite). This process yields a finetuned Q<sub>model</sub>, and deploying this model on real robots (denoted as Inference() function) give us P<sub>test</sub>. 
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Current training strategy, in most cases, imitation learning, can be interpreted as minimizing the $$KL(Q_{model}|Q_{human})$$ via $$P_{train}$$(cite). This process yields a finetuned $$Q_{model}$$, and deploying this model on real robots (denoted as $$Inference()$$ function) give us $$P_{test}$$.   */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Consistency gif 1. 
+                            </p>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                We found several key issues hiding in this process:
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* We found several key issues hiding in this process:  */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
+                                <li>
+                                    Misalignment between P<sub>train</sub> and P<sub>test</sub>, interpreted as many failure states do not exist in training data.
+                                </li>
+                                {/* Misalignment between $$P_{train}$$and $$P_{test}$$, interpreted as many failure states do not exist in training data. */}
+                                <li>
+                                    Misalignment between Q<sub>model</sub> and P<sub>test</sub>, shown as model inference results could be mis-deployed by the Inference() function and causes unexpected failure.
+                                </li>
+                                {/* Misalignment between $$Q_{model}$$ and $$P_{test}$$, shown as model inference results could be mis-deployed by the $$Inference()$$ function and causes unexpected failure. */}
+                            </ol>
+                        </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Consistency gif 2 /3 
+                            </p>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Back to basics, we propose two "behind the scenes" strategies that actually work: 
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Back to basics, we propose two "behind the scenes" strategies that actually work:   */}
 
 
 
@@ -327,25 +414,32 @@ export default function Home() {
                             <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
                                 <li>
                                     <b>
-                                        F DAgger:&nbsp;
+                                        Data augmentation.
                                     </b>
-                                    Basic trajectory data sampled on some standard procedures often miss the failure modes unique to real-world inference. When Q<sub>model</sub> encounters states outside P<sub>train</sub>, performance collapses. We  inject DAgger-style interative on-policy recovery data to fill these missing distribution peaks. By integrating these "corrected" trajectories, we expand P<sub>train</sub> with on-policy recovery data to enhance Q<sub>model</sub>, ensuring P<sub>test</sub> is resilient to the inevitable drift found in real-world distribution P<sub>real</sub>.
+                                    <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-[lower-alpha] px-4 md:px-6 mt-3">
+                                        <li>
+                                            <b>
+                                                Dagger-augmentation:&nbsp;
+                                            </b>
+                                            Offline demonstrations often miss some failure modes that only emerge during real-world deployment. We inject on-policy recovery trajectories, both heurisitic and iterative DAgger, to fill these missing modes. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. The learned policy Q<sub>model</sub> better covers these modes in P<sub>real</sub>, ensuring the execution P<sub>test</sub> is resilient to the inevitable drift found in P<sub>real</sub>. 
+                                        </li>
+                                        {/* Offline demonstrations often miss some failure modes that only emerge during real-world deployment. We inject on-policy recovery trajectories, both heurisitic and iterative DAgger, to fill these missing modes. By integrating these "corrected" trajectories, we expand $$P_{train}$$ towards underrepresented but critical regions of $$P_{real}$$. The learned policy $$Q_{model}$$ better covers these modes in $$P_{real}$$, ensuring the execution  $$P_{test}$$is resilient to the inevitable drift found in $$P_{real}$$.  */}
+                                        <li>
+                                            <b>
+                                                Input/output Augmentation:&nbsp;
+                                            </b>
+                                            To further bridge the P<sub>train</sub> <i>vs.</i> P<sub>test</sub> gap, we employ two specific augmentations. At the output level, time-scaling introduces down-sampled trajectories to adapt to varying control frequencies, while at the input level, wrist-mirroring enhances the model's spatial understanding of dual-arm coordination.
+                                        </li>
+                                        {/* To further bridge the $$P_{train}$$ vs. $$P_{test}$$gap, we employ two specific augmentations. At the output level, time-scaling introduces down-sampled trajectories to adapt to varying control frequencies, while at the input level, wrist-mirroring enhances the model's spatial understanding of dual-arm coordination. */}
+                                    </ol>
                                 </li>
-                                {/* Basic trajectory data sampled on some standard procedures often miss the failure modes unique to real-world inference. When $$Q_{model}$$encounters states outside $$P_{train}$$, performance collapses. We  inject DAgger-style interative on-policy recovery data to fill these missing distribution peaks. By integrating these "corrected" trajectories, we expand $$P_{train}$$with on-policy recovery data to enhance $$Q_{model}$$, ensuring $$P_{test}$$is resilient to the inevitable drift found in real-world distribution $$P_{real}$$. */}
                                 <li>
                                     <b>
-                                        Strategic Data Augmentation:&nbsp;
+                                        Inference Optimization.&nbsp;
                                     </b>
-                                    To further bridge the P<sub>train</sub> <i>vs.</i> P<sub>test</sub> gap, we employ two specific augmentations. Time-scaling introduces up/down-sampled trajectories to adapt to varying control frequencies, while Wrist-mirroring enhances the model's spatial understanding of dual-arm coordination.
+                                    To address the Inference() function from Q<sub>model</sub> to P<sub>test</sub>, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution.
                                 </li>
-                                {/* To further bridge the $$P_{train}$$ vs. $$P_{test}$$gap, we employ two specific augmentations. Time-scaling introduces up/down-sampled trajectories to adapt to varying control frequencies, while Wrist-mirroring enhances the model's spatial understanding of dual-arm coordination. */}
-                                <li>
-                                    <b>
-                                        Inference-Control Optimization:&nbsp;
-                                    </b>
-                                    To handle the final projection from Q<sub>model</sub> to P<sub>test</sub>, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution.
-                                </li>
-                                {/* To handle the final projection from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
+                                {/* To address the $$Inference()$$ function from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
                             </ol>
                         </div>
 
@@ -353,7 +447,7 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Arithmetic
+                                Arithmetic (Q<sub>model</sub>) (20-80% Pro Stage)
                             </h2>
                         </div>
 
@@ -361,7 +455,7 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Advantage: Stage-Orchestrator(80-100% Pro Max Stage)
+                                Advantage: Stage composer (P<sub>train</sub>)(80-100% Pro Max Stage)
                             </h2>
                         </div>
 
