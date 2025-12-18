@@ -305,8 +305,20 @@ export default function Home() {
 
 
                         <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Mode Consistency: The "Whac-a-Mole" Problem / The Impossible Trinity / A Trilemma (0-20% Foundation Stage)
+                            <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
+                                <Link href="#mode_consistency" className="scroll-mt-32 group flex items-center flex-row" id="mode_consistency">
+                                    <h2>
+                                        Mode Consistency
+                                    </h2>
+                                    <div className="min-w-12 select-none">
+                                        <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                            </svg>
+                                        </span> 
+                                    </div>
+                                </Link>
                             </h2>
                         </div>
 
@@ -446,18 +458,141 @@ export default function Home() {
 
 
                         <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Arithmetic (Q<sub>model</sub>) (20-80% Pro Stage)
+                            <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
+                                <Link href="#model_arithmetic" className="scroll-mt-32 group flex items-center flex-row" id="model_arithmetic">
+                                    <h2>
+                                        Model Arithmetic
+                                    </h2>
+                                    <div className="min-w-12 select-none">
+                                        <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                            </svg>
+                                        </span> 
+                                    </div>
+                                </Link>
                             </h2>
                         </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <b className="w-full leading-relaxed max-w-4xl">
+                                How can we efficiently advance through iterative research cycles in embodied AI? 
+                            </b>
+                            <div></div>
+                        </div>
+                        {/* How can we efficiently advance through iterative research cycles in embodied AI?   */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive. */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones <b>at the weight level</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* We propose Model Arithmetic (MA): train only on newly collected data subsets, then merge the resulting model with previous ones at the weight level[1]. Remarkably, this synthesis can even surpass the performance of models trained on the entire dataset at once. */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                讲完以上部分，放Arithmetic gif
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* 讲完以上部分，放Arithmetic gif */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes and knowledge from these diverse manifolds, ensuring mode consistency in the final model. This approach elegantly soaks up capabilities from each iteration without costly full retraining.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* But how does MA work? Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes and knowledge from these diverse manifolds, ensuring mode consistency in the final model. This approach elegantly soaks up capabilities from each iteration without costly full retraining. */}
 
 
 
                         <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-6 font-bold"> 
-                                Advantage: Stage composer (P<sub>train</sub>)(80-100% Pro Max Stage)
+                            <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
+                                <Link href="#stage_composer" className="scroll-mt-32 group flex items-center flex-row" id="stage_composer">
+                                    <h2>
+                                        Stage Composer
+                                    </h2>
+                                    <div className="min-w-12 select-none">
+                                        <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
+                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
+                                            </svg>
+                                        </span> 
+                                    </div>
+                                </Link>
                             </h2>
                         </div>
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in the cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06).
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in the cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06）. */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Prior approaches obtain advantage indirectly: they score the current state and the state reached after executing an action chunk, and estimate advantage as the difference between these two state-level progress scores. From a modeling perspective, this formulation assumes that advantage can be decomposed into the difference of two independently estimated state values. However, advantage is inherently a relational quantity that depends on how an action transforms one state into another. Treating the two states independently ignores their temporal relationship and forces the model to infer action effects only through value differencing.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Prior approaches obtain advantage indirectly: they score the current state and the state reached after executing an action chunk, and estimate advantage as the difference between these two state-level progress scores. From a modeling perspective, this formulation assumes that advantage can be decomposed into the difference of two independently estimated state values. However, advantage is inherently a relational quantity that depends on how an action transforms one state into another. Treating the two states independently ignores their temporal relationship and forces the model to infer action effects only through value differencing. */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                We take a more direct route by treating advantage as a first-class modeling target (direct learning target). Instead of deriving it from value predictions, we predict relative improvement directly from paired observations. This reframes advantage estimation as a single prediction problem, replacing two independently estimated state scores and their subtraction, and thereby avoiding error compounding while yielding a cleaner, more reliable state-to-state supervision signal.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* We take a more direct route by treating advantage as a first-class modeling target (direct learning target). Instead of deriving it from value predictions, we predict relative improvement directly from paired observations. This reframes advantage estimation as a single prediction problem, replacing two independently estimated state scores and their subtraction, and thereby avoiding error compounding while yielding a cleaner, more reliable state-to-state supervision signal. */}
+
+
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                Built on this, the Stage Composer structures the task into discrete stages and scores each action chunk by its local contribution within the current stage. This yields clearer, compositional feedback and significantly sharper control in the last mile—improving both task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation.
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* Built on this, the Stage Composer structures the task into discrete stages and scores each action chunk by its local contribution within the current stage. This yields clearer, compositional feedback and significantly sharper control in the last mile—improving both task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. */}
 
 
 
@@ -508,130 +643,6 @@ export default function Home() {
                         </div>
 
 
- 
-                        <div className="mt-6 flex flex-col gap-3">
-                            <div className="grid grid-cols-3 gap-6">
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
-                                    className="w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
-                                </video>
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
-                                    className="w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
-                                </video>
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
-                                    className="w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
-                                </video>
-                            </div>
-                            <i>
-                                explain the image
-                            </i>
-                        </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
-                            </p>
-                            <div></div>
-                        </div>
-
-
-
-
-
-
-
-                        <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
-                                <Link href="#veni" className="scroll-mt-32 group flex items-center flex-row" id="veni">
-                                    <h2>
-                                        Veni: Mining Failure Modes from On-Policy Experience
-                                    </h2>
-                                    <div className="min-w-12 select-none">
-                                        <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                            </svg>
-                                        </span> 
-                                    </div>
-                                </Link>
-                            </h2>
-                        </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
-                            </p>
-                            <div></div>
-                        </div>
-
-
-
-
-                        <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
-                                <Link href="#vidi" className="scroll-mt-32 group flex items-center flex-row" id="vidi">
-                                    <h2>
-                                        Vidi: Model Algebra as a Shortcut for Mode Extrapolation
-                                    </h2>
-                                    <div className="min-w-12 select-none">
-                                        <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                            </svg>
-                                        </span> 
-                                    </div>
-                                </Link>
-                            </h2>
-                        </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projecrides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
-                            </p>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
-                                <Link href="#vici" className="scroll-mt-32 group flex items-center flex-row" id="vici">
-                                    <h2>
-                                        Vici: Distribution-aware Advantage as Mode-Orchestrator
-                                    </h2>
-                                    <div className="min-w-12 select-none">
-                                        <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                            </svg>
-                                        </span> 
-                                    </div>
-                                </Link>
-                            </h2>
-                        </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (hutween Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
-                            </p>
-                            <div></div>
-                        </div>
-
-
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
@@ -653,9 +664,27 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl p-4 bg-background rounded-sm text-foreground/70">
-                                @article&#123;xxx,
+                                @article&#123;kaimanipteam2025kai0,
                                 <br></br>
-                                author = &#123;xxx&#125;,
+                                <span className="select-none">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>author = &#123;KAI Manipulation Team&#125;,
+                                <br></br>
+                                <span className="select-none">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>title = &#123;XXX&#125;,
+                                <br></br>
+                                <span className="select-none">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>journal = &#123;HKU MMLab Research Blog&#125;,
+                                <br></br>
+                                <span className="select-none">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>year = &#123;2025&#125;,
+                                <br></br>
+                                <span className="select-none">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>note = &#123;https://mmlab.hk/research/Kai0&#125;,
                                 <br></br>
                                 &#125;
                             </p>
