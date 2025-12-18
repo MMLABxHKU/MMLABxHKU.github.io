@@ -56,6 +56,12 @@ export function ExampleBarChart() {
 
 
 
+            <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
+                <CardDescription>January - June 2024</CardDescription>
+            </CardHeader>
+
+
+
             <CardContent className="px-0">
                 <ChartContainer config={chartConfig}>
                     <BarChart accessibilityLayer data={chartData}>
@@ -72,14 +78,15 @@ export function ExampleBarChart() {
                             orientation="left"
                             tickLine={false}
                             axisLine={false}
-                            tickMargin={8}
+                            tickMargin={10}
+                            width={Math.max(...chartData.map((d) => String(d.desktop).length)) * 11}
                         >
-                            <Label
+                            {/* <Label
                                 value="Visitors"
                                 angle={-90}
                                 position="insideLeft"
                                 style={{ textAnchor: "middle" }}
-                            />
+                            /> */}
                         </YAxis>
                         <ChartTooltip
                             cursor={false}

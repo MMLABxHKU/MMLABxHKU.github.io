@@ -79,12 +79,36 @@ export default function Home() {
                     {/* navigator */}
                     <div className="w-48 hidden 3xl:block">
                         <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                            <Link className="select-none flex items-center gap-3 group" href="#methology">
+                            <Link className="select-none flex items-center gap-3 group" href="#methodology">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Methodoloy
+                                    Methodology
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
+                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-sm text-mgray group-hover:text-mred">
+                                    Mode Consistency
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
+                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-sm text-mgray group-hover:text-mred">
+                                    Model Arithmetic
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#stage_composer">
+                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-sm text-mgray group-hover:text-mred">
+                                    Stage Composer
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#data">
@@ -287,9 +311,9 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
-                                <Link href="#methodoloy" className="scroll-mt-32 group flex items-center flex-row" id="methodoloy">
+                                <Link href="#metholody" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
                                     <h2>
-                                        Methodoloy
+                                        Methodology
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
@@ -309,7 +333,7 @@ export default function Home() {
                             <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
                                 <Link href="#mode_consistency" className="scroll-mt-32 group flex items-center flex-row" id="mode_consistency">
                                     <h2>
-                                        Mode Consistency
+                                        Mode Consistency: The "Whac-a-Mole" Problem / The Impossible Trinity / A Trilemma
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
@@ -640,14 +664,6 @@ export default function Home() {
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-4xl w-full">
                                 <ExampleBarChart />
-                            </div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-4xl w-full">
-                                <ExampleChart />
                             </div>
                         </div>
 
