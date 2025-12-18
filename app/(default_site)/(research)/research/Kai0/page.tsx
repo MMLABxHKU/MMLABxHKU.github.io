@@ -11,8 +11,15 @@ import './local.css'
 
 
 
-import { ExampleChart } from "./chart/examplechart"
-import { ExampleBarChart } from "./chart/barchart"
+// import { ExampleChart } from "./chart/examplechart"
+// import { ExampleBarChart } from "./chart/barchart"
+
+
+
+import { ConsistencyBarChart1 } from "./chart/consistency/consistency1"
+
+
+
 import { EmailSubscribe } from "./mailing"
 
 
@@ -663,7 +670,7 @@ export default function Home() {
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-4xl w-full">
-                                <ExampleBarChart />
+                                <ConsistencyBarChart1 />
                             </div>
                         </div>
 
