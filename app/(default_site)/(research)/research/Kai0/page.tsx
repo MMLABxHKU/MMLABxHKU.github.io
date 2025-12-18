@@ -12,6 +12,7 @@ import './local.css'
 
 
 import { ExampleChart } from "./chart/examplechart"
+import { ExampleBarChart } from "./chart/barchart"
 import { EmailSubscribe } from "./mailing"
 
 
@@ -632,6 +633,14 @@ export default function Home() {
                                     </div>
                                 </Link>
                             </h2>
+                        </div>
+
+
+
+                        <div className="mt-6 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ExampleBarChart />
+                            </div>
                         </div>
 
 
