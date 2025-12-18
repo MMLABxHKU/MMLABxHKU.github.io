@@ -3,7 +3,7 @@
 
 
 import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis, LabelList } from "recharts"
+import { Bar, BarChart, CartesianGrid, XAxis, LabelList, ErrorBar  } from "recharts"
 
 
 
@@ -27,12 +27,12 @@ import {
 
 
 const chartData = [
-    { month: "January", desktop: 186, mobile: 80 },
-    { month: "February", desktop: 305, mobile: 200 },
-    { month: "March", desktop: 237, mobile: 120 },
-    { month: "April", desktop: 73, mobile: 190 },
-    { month: "May", desktop: 209, mobile: 130 },
-    { month: "June", desktop: 214, mobile: 140 },
+    { month: "January", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
+    { month: "February", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
+    { month: "March", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
+    { month: "April", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
+    { month: "May", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
+    { month: "June", desktop: 186, desktopStd: [16.6, 20.6], mobile: 80, mobileStd: [16.6, 20.6], },
 ]
 
 
@@ -90,7 +90,12 @@ export function ExampleBarChart() {
                                 fontSize={12}
                             />
                         </Bar>
-                        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+                        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4}>
+                            <ErrorBar 
+                                dataKey="desktopStd" 
+                                direction="y" 
+                            />
+                        </Bar>
                     </BarChart>
                 </ChartContainer>
             </CardContent>
