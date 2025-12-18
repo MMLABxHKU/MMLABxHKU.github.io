@@ -57,7 +57,7 @@ export function ExampleBarChart() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>January - June 2024</CardDescription>
+                <CardDescription>January - June 2024 &#8593; &#8595;</CardDescription>
             </CardHeader>
 
 
