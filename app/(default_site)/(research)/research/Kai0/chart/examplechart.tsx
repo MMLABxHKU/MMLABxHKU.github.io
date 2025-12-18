@@ -44,7 +44,7 @@ const chartConfig = {
 
 export function ExampleChart() {
     return (
-        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0">
+        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3">
 
 
             <CardContent className="px-0">
@@ -59,26 +59,26 @@ export function ExampleChart() {
                     >
                         <CartesianGrid vertical={false} />
                         <XAxis
-                        dataKey="month"
-                        tickLine={false}
-                        axisLine={false}
-                        tickMargin={8}
-                        tickFormatter={(value) => value.slice(0, 3)}
+                            dataKey="month"
+                            tickLine={false}
+                            axisLine={false}
+                            tickMargin={8}
+                            tickFormatter={(value) => value.slice(0, 3)}
                         />
                         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
                         <Line
-                        dataKey="desktop"
-                        type="monotone"
-                        stroke="var(--color-desktop)"
-                        strokeWidth={2}
-                        dot={false}
+                            dataKey="desktop"
+                            type="monotone"
+                            stroke="var(--color-desktop)"
+                            strokeWidth={2}
+                            dot={false}
                         />
                         <Line
-                        dataKey="mobile"
-                        type="monotone"
-                        stroke="var(--color-mobile)"
-                        strokeWidth={2}
-                        dot={false}
+                            dataKey="mobile"
+                            type="monotone"
+                            stroke="var(--color-mobile)"
+                            strokeWidth={2}
+                            dot={false}
                         />
                     </LineChart>
                 </ChartContainer>
@@ -91,7 +91,7 @@ export function ExampleChart() {
                     <i className="leading-relaxed font-normal text-sm">
                         Example Chart
                     </i>
-            </div>
+                </div>
             </CardFooter>
 
 

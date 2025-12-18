@@ -52,21 +52,11 @@ const chartConfig = {
 
 export function ExampleBarChart() {
     return (
+        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3">
 
 
 
-        <Card>
-
-
-
-            <CardHeader>
-                <CardTitle>Bar Chart - Multiple</CardTitle>
-                <CardDescription>January - June 2024</CardDescription>
-            </CardHeader>
-
-
-
-            <CardContent>
+            <CardContent className="px-0">
                 <ChartContainer config={chartConfig}>
                     <BarChart accessibilityLayer data={chartData}>
                         <CartesianGrid vertical={false} />
@@ -116,12 +106,11 @@ export function ExampleBarChart() {
 
 
 
-            <CardFooter className="flex-col items-start gap-2 text-sm">
-                <div className="flex gap-2 leading-none font-medium">
-                    Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-                </div>
-                <div className="text-muted-foreground leading-none">
-                    Showing total visitors for the last 6 months
+            <CardFooter className="px-0 [.border-t]:pt-0">
+                <div className="flex w-full items-start">
+                    <i className="leading-relaxed font-normal text-sm">
+                        Example Bar Chart
+                    </i>
                 </div>
             </CardFooter>
 
