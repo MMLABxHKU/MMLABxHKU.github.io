@@ -3,7 +3,7 @@
 
 
 import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis, LabelList, ErrorBar  } from "recharts"
+import { Bar, BarChart, CartesianGrid, XAxis, LabelList, ErrorBar, YAxis, Label  } from "recharts"
 
 
 
@@ -71,18 +71,32 @@ export function ExampleBarChart() {
                     <BarChart accessibilityLayer data={chartData}>
                         <CartesianGrid vertical={false} />
                         <XAxis
-                        dataKey="month"
-                        tickLine={false}
-                        tickMargin={10}
-                        axisLine={false}
-                        tickFormatter={(value) => value.slice(0, 3)}
+                            dataKey="month"
+                            tickLine={false}
+                            tickMargin={10}
+                            axisLine={false}
+                            tickFormatter={(value) => value.slice(0, 3)}
                         />
+                        <YAxis
+                            yAxisId="left"
+                            orientation="left"
+                            tickLine={false}
+                            axisLine={false}
+                            tickMargin={8}
+                        >
+                            <Label
+                                value="Visitors"
+                                angle={-90}
+                                position="insideLeft"
+                                style={{ textAnchor: "middle" }}
+                            />
+                        </YAxis>
                         <ChartTooltip
-                        cursor={false}
-                        content={<ChartTooltipContent indicator="dashed" />}
+                            cursor={false}
+                            content={<ChartTooltipContent indicator="dashed" />}
                         />
                         <ChartLegend content={<ChartLegendContent />} />
-                        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4}>
+                        <Bar dataKey="desktop" fill="var(--color-desktop)" yAxisId="left" radius={4}>
                             <LabelList
                                 position="top"
                                 offset={12}
@@ -90,7 +104,7 @@ export function ExampleBarChart() {
                                 fontSize={12}
                             />
                         </Bar>
-                        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4}>
+                        <Bar dataKey="mobile" fill="var(--color-mobile)" yAxisId="left" radius={4}>
                             <ErrorBar 
                                 dataKey="desktopStd" 
                                 direction="y" 
