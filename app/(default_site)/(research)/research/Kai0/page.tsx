@@ -17,6 +17,12 @@ import './local.css'
 
 
 import { ConsistencyBarChart1 } from "./chart/consistency/consistency1"
+import { ConsistencyBarChart2 } from "./chart/consistency/consistency2"
+import { ConsistencyBarChart3 } from "./chart/consistency/consistency3"
+import { ConsistencyBarChart4 } from "./chart/consistency/consistency4"
+import { ConsistencyBarChart5 } from "./chart/consistency/consistency5"
+import { ConsistencyBarChart6 } from "./chart/consistency/consistency6"
+import { ConsistencyBarChart7 } from "./chart/consistency/consistency7"
 
 
 
@@ -674,6 +680,53 @@ export default function Home() {
                             </div>
                         </div>
 
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart2 />
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart3 />
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart4 />
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart5 />
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart6 />
+                            </div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <ConsistencyBarChart7 />
+                            </div>
+                        </div>
 
 
                         <div className="w-full flex flex-col items-center px-6">

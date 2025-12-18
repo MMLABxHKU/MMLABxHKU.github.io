@@ -1,0 +1,116 @@
+"use client"
+
+
+
+import { Bar, BarChart, CartesianGrid, XAxis, LabelList, ErrorBar, YAxis, Label  } from "recharts"
+
+
+
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+import {
+    ChartContainer,
+    ChartTooltip,
+    ChartTooltipContent,
+    ChartLegend,
+    ChartLegendContent,
+    type ChartConfig,
+} from "@/components/ui/chart"
+
+
+
+const chartData = [
+    { trick: "standard", pi05: 1.8, pi05_std: [0.3, 0.3], pi0: 0, pi0_std: [0, 1], },
+    { trick: "improved standard", pi05: 9.6, pi05_std: [1.2, 1.2], pi0: 5.33, pi0_std: [1, 1], },
+    { trick: "+ heuristic dagger", pi05: 7.7, pi05_std: [0.8, 0.8], pi0: 9.25, pi0_std: [1.1, 1.1], },
+    { trick: "+ dagger", pi05: 3.9, pi05_std: [0.5, 0.5], pi0: 8.25, pi0_std: [0.9, 0.9], },
+]
+
+
+
+const chartConfig = {
+    pi05: {
+        label: "pi05",
+        color: "var(--chart-1)",
+    },
+    pi0: {
+        label: "pi0",
+        color: "var(--chart-2)",
+    },
+} satisfies ChartConfig
+
+
+
+export function ConsistencyBarChart2() {
+    return (
+        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3">
+
+
+
+            <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
+                <CardDescription>Recover Cost &#8595;</CardDescription>
+            </CardHeader>
+
+
+
+            <CardContent className="px-0">
+                <ChartContainer config={chartConfig}>
+                    <BarChart accessibilityLayer data={chartData}>
+                        <CartesianGrid vertical={false} />
+                        <XAxis
+                            dataKey="trick"
+                            tickLine={false}
+                            tickMargin={6}
+                            axisLine={false}
+                            tickFormatter={(value) => value}
+                        />
+                        <YAxis
+                            yAxisId="left"
+                            orientation="left"
+                            tickLine={false}
+                            axisLine={false}
+                            tickMargin={6}
+                            width={Math.max(...chartData.map((d) => String(d.pi05).length)) * 8}
+                        />
+                        <ChartTooltip
+                            cursor={false}
+                            content={<ChartTooltipContent indicator="dashed" />}
+                        />
+                        <ChartLegend content={<ChartLegendContent />} />
+                        <Bar dataKey="pi05" fill="var(--color-pi05)" yAxisId="left" radius={4}>
+                            <ErrorBar 
+                                dataKey="pi05_std" 
+                                direction="y" 
+                            />
+                        </Bar>
+                        <Bar dataKey="pi0" fill="var(--color-pi0)" yAxisId="left" radius={4}>
+                            <ErrorBar 
+                                dataKey="pi0_std" 
+                                direction="y" 
+                            />
+                        </Bar>
+                    </BarChart>
+                </ChartContainer>
+            </CardContent>
+
+
+
+            <CardFooter className="px-0 [.border-t]:pt-0">
+                <div className="flex w-full items-start">
+                    <i className="leading-relaxed font-normal text-sm">
+                        Evolution of Data Collection
+                    </i>
+                </div>
+            </CardFooter>
+
+
+
+        </Card>
+    )
+}
