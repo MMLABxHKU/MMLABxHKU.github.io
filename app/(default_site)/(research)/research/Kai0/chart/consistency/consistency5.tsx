@@ -47,7 +47,7 @@ const chartConfig = {
 
 export function ConsistencyBarChart5() {
     return (
-        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3">
+        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 

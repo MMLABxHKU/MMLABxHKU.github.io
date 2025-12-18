@@ -26,8 +26,10 @@ import {
 
 
 const chartData = [
-    { trick: "baseline", absolute: 13.05, absolute_std: [1.2, 1.2], delta: 6.54, delta_std: [0.9, 0.9], },
-    { trick: "w/. space mirroring", absolute: 4.32, absolute_std: [0.8, 0.8], delta: 3.6, delta_std: [0.6, 0.6], },
+    { trick: "sync", absolute: 36.7, absolute_std: [4, 4], delta: 36.7, delta_std: [4.7, 4.7], },
+    { trick: "+ inchunk smoothing", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
+    { trick: "+ temporal smoothing", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "+ real-time chunking", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
 ]
 
 
@@ -45,14 +47,14 @@ const chartConfig = {
 
 
 
-export function ConsistencyBarChart7() {
+export function ConsistencyBarChart8() {
     return (
         <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Recorver Cost (%) &#8595;</CardDescription>
+                <CardDescription>Success Rate (%) &#8593;</CardDescription>
             </CardHeader>
 
 
@@ -99,13 +101,13 @@ export function ConsistencyBarChart7() {
 
 
 
-            {/* <CardFooter className="px-0 [.border-t]:pt-0">
+            <CardFooter className="px-0 [.border-t]:pt-0">
                 <div className="flex w-full items-start">
                     <i className="leading-relaxed font-normal text-sm">
-                        Evolution of Data Collection
+                        Inference Optimization Methods Comparison
                     </i>
                 </div>
-            </CardFooter> */}
+            </CardFooter>
 
 
 
