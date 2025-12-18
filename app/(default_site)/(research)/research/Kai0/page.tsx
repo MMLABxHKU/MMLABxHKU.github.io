@@ -637,7 +637,7 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row justify-center px-6">
+                        <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-4xl w-full">
                                 <ExampleBarChart />
                             </div>
@@ -645,7 +645,7 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row justify-center px-6">
+                        <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-4xl w-full">
                                 <ExampleChart />
                             </div>
