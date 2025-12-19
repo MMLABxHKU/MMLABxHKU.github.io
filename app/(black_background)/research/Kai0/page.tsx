@@ -171,9 +171,9 @@ export default function Home() {
                                         {/* <h2>
                                             Challenge
                                         </h2> */}
-                                        <h2>
+                                        {/* <h2>
                                             Share
-                                        </h2>
+                                        </h2> */}
                                     </div>
                                     <div className="flex flex-col">
                                         <h2>
@@ -195,9 +195,9 @@ export default function Home() {
                                                 At CVPR 2026
                                             </Link>
                                         </h2> */}
-                                        <h2>
+                                        {/* <h2>
                                             X
-                                        </h2>
+                                        </h2> */}
                                     </div>
                                 </div>
                             </div>
@@ -355,14 +355,14 @@ export default function Home() {
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
+                                    poster="https://assets.kinetixai.cn/FoldAnything/step_2.png"
                                     className="max-w-xl w-full aspect-video rounded-sm"
                                 >
                                     <source src="https://assets.kinetixai.cn/FoldAnything/step_2.mp4" type="video/mp4" />
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
+                                    poster="https://assets.kinetixai.cn/FoldAnything/step_3.png"
                                     className="max-w-xl w-full aspect-video rounded-sm"
                                 >
                                     <source src="https://assets.kinetixai.cn/FoldAnything/step_3.mp4" type="video/mp4" />
@@ -466,7 +466,7 @@ export default function Home() {
                                 <div className="w-full max-w-4xl aspect-video">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
-                                    className="w-full h-full border-2 md:border-4 border-black hover:border-[#174BE5] transition-colors duration-300 rounded-lg"
+                                    className="w-full h-full"
                                 />
                                 </div>
                             </div>
