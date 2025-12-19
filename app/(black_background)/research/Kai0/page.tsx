@@ -463,7 +463,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black.html"
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
                                     className="max-w-4xl w-[2000px] h-[512px] border-2 md:border-4 border-black hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
                                 ></iframe>
                             </div>
