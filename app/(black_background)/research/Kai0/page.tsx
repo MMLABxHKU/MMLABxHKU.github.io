@@ -475,7 +475,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                                Best experienced on desktop.
                             </i>
                             <div></div>
                         </div>
