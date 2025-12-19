@@ -1,158 +1,47 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-    title: "MMLab at CVPR 2025",
-    description: "Multimedia Laboratory",
-    keywords: ["CVPR 2025", "Event", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
-};
+'use client';
 
+import { useEffect, useRef, useState } from 'react';
 
+import { EmailShareButton, LinkedinShareButton, TwitterShareButton } from 'react-share';
 
-import Image from 'next/image'
-import Link from "next/link"
-import { Slash } from "lucide-react"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Separator } from "@/components/ui/separator"
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+import './share.scss';
 
+export default function Share({ title, content }: { title: string; content: string }) {
+  // 复制链接
+  async function copyToClip(content: string) {
+    if (!content) return;
 
+    if (navigator?.clipboard?.writeText) {
+      await navigator?.clipboard?.writeText(content);
+    } else {
+      const aux = document.createElement('textarea');
+      aux.value = content;
+      document.body.appendChild(aux);
+      aux.select();
+      document?.execCommand('copy');
+      document.body.removeChild(aux);
+    }
 
-const paths: { path: string; url: string; }[] = [
-    {
-        path: "MMLab",
-        url: "/"
-    },
-]
-
-
-
-export default function Home() {
-    return (
-        <main>
-
-
-
-                {/* Landing */}
-                <div className="w-full h-48 pl-6 pr-6 flex flex-row justify-center bg-fixed">
-                    <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
-                        <Breadcrumb>
-                            <BreadcrumbList>
-                                {paths.map((path) => (
-                                    <BreadcrumbList key={path.path}>
-                                        <BreadcrumbLink asChild>
-                                            <Link href={path.url} className="text-foreground animated-underline hover:text-mred">
-                                                {path.path}
-                                            </Link>
-                                        </BreadcrumbLink>
-                                        <BreadcrumbSeparator>
-                                            <Slash className="text-foreground" />
-                                        </BreadcrumbSeparator>
-                                    </BreadcrumbList>
-                                ))}
-                            </BreadcrumbList>
-                        </Breadcrumb>
-                    </div>
-                </div>
-
-
-
-
-                <div className="w-full pl-6 pr-6 flex justify-center 2xl:justify-evenly">
-
-
-
-                    {/* navigator */}
-                    <div className="w-48 hidden 3xl:block">
-                        <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <Link className="select-none flex items-center gap-3 group" href="#abstract">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
-                                    Abstract
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#veni">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
-                                    Veni
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#vidi">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
-                                    Vidi
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#vici">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
-                                    Vici
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
-                    
-
-
-
-
-                {/* transferable */}
-                <div className="w-full max-w-7xl flex flex-col">
-
-
-                    <div className="flex flex-col w-full gap-6">
-                        <h1 className="font-bold text-t1 leading-tight">
-                            Mastering Garment Manipulation from 0 to 100% in 500,000 rmb/20 Hours
-                        </h1>
-                        <div className="flex flex-row gap-20">
-                            <div className="flex flex-col">
-                                <h2>
-                                    Published
-                                </h2>
-                                <h2>
-                                    By
-                                </h2>
-                                <h2>
-                                    Share
-                                </h2>
-                            </div>
-                            <div className="flex flex-col">
-                                <h2>
-                                    Christmas Eve, 2025
-                                </h2>
-                                <h2>
-                                    HKU Manipulation Team
-                                </h2>
-                                <h2>
-                                    <Link href="/" className="text-foreground animated-underline hover:text-mred">test</Link>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    
-
-
-                </div>
-
-
-
-                <div className="w-48 hidden 3xl:block"></div>
-            </div>
-        </main>
-    );
+    alert('复制成功');
+  }
+  return (
+    <div className="Share flex">
+      <div className="one">
+        <TwitterShareButton url={window?.location?.href} title={title}>
+          X
+        </TwitterShareButton>
+      </div>
+      <div className="one">
+        <LinkedinShareButton url={window?.location?.href}>In</LinkedinShareButton>
+      </div>
+      <div className="one">
+        <EmailShareButton url={window?.location?.href} subject={title}>
+          邮件
+        </EmailShareButton>
+      </div>
+      <div className="one" onClick={() => copyToClip(window?.location?.href)}>
+        链接
+      </div>
+    </div>
+  );
 }

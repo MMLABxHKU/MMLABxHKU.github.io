@@ -1,0 +1,24 @@
+.TextTip {
+  overflow: hidden;
+
+  .htmlDiv {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .tipDiv {
+    width: 200px;
+    overflow: hidden;
+    padding: 0 0 0 30px;
+    font-size: 12px;
+
+    .tip {
+      overflow: hidden;
+
+      .sup {
+        overflow: hidden;
+        padding: 0 5px 0 0;
+      }
+    }
+  }
+}
