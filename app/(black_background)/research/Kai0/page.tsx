@@ -280,7 +280,7 @@ export default function Home() {
                                     <b>
                                         Mode Consistency:&nbsp;
                                     </b>
-                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge Q<sub>model</sub>, and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
+                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (Q<sub>model</sub>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
                                 </li>
                                 {/* We argue that not all data is created equal. By strictly aligning the human demonstration distribution ($P_{train}$), the model's knowledge ($Q_{model}$), and the test-time distribution ($P_{test}$), we minimize in-distribution shifts that lead to failure. */}
                                 <li>
@@ -305,7 +305,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                This recipe is universally applicable across different embodiments (AgileX Piper, ARX X5) and architectures (Pi series, X-VLA), proving that 100% robotic mastery is a matter of strategic alignment, not just massive scale.
+                                This recipe provide strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
                             </p>
                             <div></div>
                         </div>
@@ -313,13 +313,13 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        {/* <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
                                 We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
                             </p>
                             <div></div>
-                        </div>
+                        </div> */}
                         {/* We will release data, checkpoints and host Challenge in 2026. */}
 
 
