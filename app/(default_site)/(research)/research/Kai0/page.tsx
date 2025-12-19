@@ -374,7 +374,6 @@ export default function Home() {
                         </div>
 
 
-
                         <div className="mt-10 w-full flex flex-row justify-center px-6">
                             <div className="w-full grid grid-rows-3 xl:grid-rows-1 xl:grid-cols-3 gap-6 justify-center items-center">
                                 <video
