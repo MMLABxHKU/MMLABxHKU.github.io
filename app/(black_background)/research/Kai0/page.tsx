@@ -207,7 +207,7 @@ export default function Home() {
                         <div className="mt-20 px-6">
                             <video
                                 autoPlay muted loop controls playsInline
-                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg" // TODO
+                                poster="https://assets.kinetixai.cn/FoldAnything/full.png"
                                 className="w-full aspect-video rounded-sm"
                             >
                                 <source src="https://assets.kinetixai.cn/FoldAnything/full.mp4" type="video/mp4" />
@@ -347,21 +347,21 @@ export default function Home() {
                             <div className="w-full grid grid-rows-3 xl:grid-rows-1 xl:grid-cols-3 gap-6 justify-center items-center">
                                 <video
                                     autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
                                     className="max-w-xl w-full aspect-video rounded-sm"
                                 >
                                     <source src="https://assets.kinetixai.cn/FoldAnything/step_1.mp4" type="video/mp4" />
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
                                     className="max-w-xl w-full aspect-video rounded-sm"
                                 >
                                     <source src="https://assets.kinetixai.cn/FoldAnything/step_2.mp4" type="video/mp4" />
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
                                     className="max-w-xl w-full aspect-video rounded-sm"
                                 >
                                     <source src="https://assets.kinetixai.cn/FoldAnything/step_3.mp4" type="video/mp4" />
