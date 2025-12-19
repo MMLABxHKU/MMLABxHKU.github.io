@@ -82,7 +82,7 @@ export function ConsistencyBarChart9() {
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
                             <ErrorBar 
                                 dataKey="absolute_std" 

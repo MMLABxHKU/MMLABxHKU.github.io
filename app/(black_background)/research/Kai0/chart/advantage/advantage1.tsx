@@ -88,7 +88,7 @@ export function AdvantageBarChart1() {
                             cursor={false}
                             content={<ChartTooltipContent hideLabel />}
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar
                             yAxisId="left"
                             dataKey="MAD"

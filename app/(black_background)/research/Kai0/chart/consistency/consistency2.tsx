@@ -82,7 +82,7 @@ export function ConsistencyBarChart2() {
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="pi05" fill="var(--color-pi05)" yAxisId="left" radius={4}>
                             <ErrorBar 
                                 dataKey="pi05_std" 

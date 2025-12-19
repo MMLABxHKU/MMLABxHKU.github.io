@@ -85,7 +85,7 @@ export function SoupingBarChart1() {
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="single" fill="var(--color-single)" yAxisId="left" radius={4}>
                             <ErrorBar 
                                 dataKey="single_std" 

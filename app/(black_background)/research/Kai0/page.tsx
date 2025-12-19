@@ -612,23 +612,22 @@ export default function Home() {
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart3 />
                                 <ConsistencyBarChart4 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                                caption
+                            </i>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart5 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart6 />
-                                <ConsistencyBarChart7 />
                             </div>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
@@ -643,7 +642,22 @@ export default function Home() {
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <ConsistencyBarChart7 />
                                 <ConsistencyBarChart8 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                                caption
+                            </i>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart9 />
                                 <ConsistencyBarChart10 />
                             </div>

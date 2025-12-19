@@ -92,7 +92,7 @@ export function ExampleBarChart() {
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="desktop" fill="var(--color-desktop)" yAxisId="left" radius={4}>
                             <LabelList
                                 position="top"
