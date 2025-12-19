@@ -69,7 +69,7 @@ export default function Home() {
 
                 {/* Landing */}
                 {/* <div className="w-full h-48 flex flex-row justify-center bg-fixed">
-                    <div className="w-full h-full max-w-7xl px-6 flex flex-col justify-end pb-10 gap-6">
+                    <div className="w-full h-full max-w-6xl px-6 flex flex-col justify-end pb-10 gap-6">
                         <Breadcrumb>
                             <BreadcrumbList>
                                 {paths.map((path) => (
@@ -96,45 +96,45 @@ export default function Home() {
 
 
                     {/* navigator */}
-                    <div className="w-48 hidden 3xl:block">
+                    <div className="w-48 ml-6 hidden lg:block">
                         <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                             <Link className="select-none flex items-center gap-3 group" href="#methodology">
-                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
-                                <span className="text-sm text-black/700 group-hover:text-mred">
+                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
                                     Methodology
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
-                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-black/700 group-hover:text-mred">
+                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
                                     Mode Consistency
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
-                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-black/700 group-hover:text-mred">
+                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
                                     Model Arithmetic
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
-                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-black/700 group-hover:text-mred">
+                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
                                     Stage Advantage
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#citation">
-                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
-                                <span className="text-sm text-black/700 group-hover:text-mred">
+                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
                                     Citation
                                 </span>
                             </Link>
@@ -144,60 +144,61 @@ export default function Home() {
 
 
                     {/* transferable */}
-                    <div className="w-full max-w-7xl flex flex-col mt-48">
+                    <div className="w-full max-w-6xl flex flex-col mt-48">
 
-
-                        <div className="flex flex-col w-full gap-6 px-6">
-                            <h1 className="font-bold text-t1 leading-tight">
-                                How to Build Robust Live-streaming Robotic Manipulation from Scratch in One Day
-                            </h1>
-                            {/* <i>
-                                TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
-                            </i> */}
-                            <div className="flex flex-row gap-20 xl:gap-40">
-                                <div className="flex flex-col">
-                                    <h2>
-                                        Published
-                                    </h2>
-                                    <h2>
-                                        Paper
-                                    </h2>
-                                    <h2>
-                                        Email
-                                    </h2>
-                                    <h2>
-                                        By
-                                    </h2>
-                                    {/* <h2>
-                                        Challenge
-                                    </h2> */}
-                                    <h2>
-                                        Share
-                                    </h2>
-                                </div>
-                                <div className="flex flex-col">
-                                    <h2>
-                                        December 24, 2025
-                                    </h2>
-                                    <h2>
-                                        Available in Late January 2026
-                                    </h2>
-                                    <h2>
-                                        <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" >
-                                            research@mmlab.hk
-                                        </Link>
-                                    </h2>
-                                    <h2>
-                                        HKU Manipulation Team
-                                    </h2>
-                                    {/* <h2>
-                                        <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
-                                            At CVPR 2026
-                                        </Link>
-                                    </h2> */}
-                                    <h2>
-                                        X
-                                    </h2>
+                        <div className="w-full flex flex-row justify-center">
+                            <div className="flex flex-col w-full gap-6 px-6 max-w-4xl">
+                                <h1 className="font-bold text-3xl leading-tight">
+                                    How to Build Robust Live-streaming Robotic Manipulation from Scratch in One Day
+                                </h1>
+                                {/* <i>
+                                    TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
+                                </i> */}
+                                <div className="flex flex-row gap-20 xl:gap-40">
+                                    <div className="flex flex-col">
+                                        <h2>
+                                            Published
+                                        </h2>
+                                        <h2>
+                                            Paper
+                                        </h2>
+                                        <h2>
+                                            Email
+                                        </h2>
+                                        <h2>
+                                            By
+                                        </h2>
+                                        {/* <h2>
+                                            Challenge
+                                        </h2> */}
+                                        <h2>
+                                            Share
+                                        </h2>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <h2>
+                                            December 24, 2025
+                                        </h2>
+                                        <h2>
+                                            Available in Late January 2026
+                                        </h2>
+                                        <h2>
+                                            <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" >
+                                                research@mmlab.hk
+                                            </Link>
+                                        </h2>
+                                        <h2>
+                                            HKU Manipulation Team
+                                        </h2>
+                                        {/* <h2>
+                                            <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
+                                                At CVPR 2026
+                                            </Link>
+                                        </h2> */}
+                                        <h2>
+                                            X
+                                        </h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +216,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-7xl">
+                            <i className="w-full leading-relaxed max-w-6xl">
                                 Video Description todo
                             </i>
                             <div></div>
@@ -440,7 +441,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fpqp.gif"
                                     alt="Consistency" 
@@ -461,11 +462,13 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex justify-center">
+                                <div className="w-full max-w-4xl aspect-video">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
-                                    className="max-w-4xl w-[2000px] h-[512px] border-2 md:border-4 border-black hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
-                                ></iframe>
+                                    className="w-full h-full border-2 md:border-4 border-black hover:border-[#174BE5] transition-colors duration-300 rounded-lg"
+                                />
+                                </div>
                             </div>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
@@ -505,7 +508,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fdagger.gif"
                                     alt="Consistency" 
@@ -526,7 +529,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve.gif"
                                     alt="Consistency" 
@@ -593,7 +596,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart1 />
                                 <ConsistencyBarChart2 />
                             </div>
@@ -609,7 +612,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart3 />
                                 <ConsistencyBarChart4 />
                             </div>
@@ -625,7 +628,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart5 />
                                 <ConsistencyBarChart6 />
                             </div>
@@ -641,7 +644,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart7 />
                                 <ConsistencyBarChart8 />
                             </div>
@@ -657,7 +660,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart9 />
                                 <ConsistencyBarChart10 />
                             </div>
@@ -727,7 +730,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fsouping1.gif"
                                     alt="Consistency" 
@@ -748,7 +751,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fsouping_curve.gif"
                                     alt="Consistency" 
@@ -781,7 +784,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <SoupingBarChart1 />
                             </div>
                         </div>
@@ -849,7 +852,7 @@ export default function Home() {
 
 
                         <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Ftechblog.gif"
                                     alt="Consistency" 
@@ -891,7 +894,7 @@ export default function Home() {
 
                         
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                            <div className="max-w-6xl w-full flex flex-row gap-10">
                                 <AdvantageBarChart1 />
                                 <AdvantageBarChart2 />
                                 <AdvantageBarChart3 />
