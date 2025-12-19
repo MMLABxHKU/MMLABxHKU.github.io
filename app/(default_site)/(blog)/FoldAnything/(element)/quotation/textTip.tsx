@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-import './textTip.scss';
+// import './textTip.scss';
 
 let timeSet: any = null;
 export default function textTip({ html, tipList }: { html: string; tipList: any }) {
