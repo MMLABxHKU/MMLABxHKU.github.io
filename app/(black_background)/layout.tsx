@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator"
 
 
 
-import "../globals.css";
+import "./globals.css";
 
 
 

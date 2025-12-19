@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 
 
-import './local.css'
+// import './local.css'
 
 
 
