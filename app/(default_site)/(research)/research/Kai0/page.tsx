@@ -238,6 +238,7 @@ export default function Home() {
                         </div>
 
 
+
                         <div className="flex flex-row justify-center px-6 mt-20">
                             <div className="max-w-4xl w-full flex flex-row gap-10 justify-center">
                                 <EmailSubscribe />
@@ -250,6 +251,7 @@ export default function Home() {
                             </i>
                             <div></div>
                         </div>
+
 
 
                         <div className="w-full flex flex-col items-center my-20 px-6">
