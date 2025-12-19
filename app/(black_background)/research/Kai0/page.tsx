@@ -464,7 +464,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-4xl w-full flex flex-row gap-10 justify-center ">
                                 <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_12191729.html"
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black.html"
                                     width="800"
                                     height="450"
                                     className="rounded-sm w-[800px]"
