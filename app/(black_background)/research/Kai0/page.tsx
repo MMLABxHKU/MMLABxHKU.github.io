@@ -447,7 +447,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -515,7 +515,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -536,7 +536,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -737,7 +737,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -758,7 +758,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -859,7 +859,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
