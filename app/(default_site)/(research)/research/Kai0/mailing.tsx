@@ -58,9 +58,9 @@ export function EmailSubscribe() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onFocus={handleFocus}
-                className='rounded-full text-xs md:text-xs h-5 max-w-xs focus-visible:ring-0'
+                className='rounded-sm h-6 focus-visible:ring-0'
             />
-            <Button onClick={handleSubmit} disabled={!valid || loading} className='text-xs h-5 p-2 font-light bg-foreground'>
+            <Button onClick={handleSubmit} disabled={!valid || loading} className='h-6 p-2 font-light bg-foreground rounded-sm'>
                 {loading ? '...' : "subscribe"}
             </Button>
         </div>

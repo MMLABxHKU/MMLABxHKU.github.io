@@ -216,9 +216,6 @@ export default function Home() {
                                     </h2>
                                 </div>
                             </div>
-                            <div>
-                                <EmailSubscribe />
-                            </div>
                         </div>
 
 
@@ -240,6 +237,19 @@ export default function Home() {
                             <div></div>
                         </div>
 
+
+                        <div className="flex flex-row justify-center px-6 mt-20">
+                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center">
+                                <EmailSubscribe />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Stay up to date with our live demos, challenges, and more.
+                            </i>
+                            <div></div>
+                        </div>
 
 
                         <div className="w-full flex flex-col items-center my-20 px-6">
