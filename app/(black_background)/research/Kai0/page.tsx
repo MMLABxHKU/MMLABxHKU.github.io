@@ -149,7 +149,7 @@ export default function Home() {
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-4xl">
                                 <h1 className="font-bold text-3xl leading-tight">
-                                    How to Build Robust Live-streaming Robotic Manipulation from Scratch in One Day
+                                    Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation.
                                 </h1>
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
@@ -214,13 +214,13 @@ export default function Home() {
                                 <source src="https://assets.kinetixai.cn/FoldAnything/full.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                        {/* <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-6xl">
                                 Video Description todo
                             </i>
                             <div></div>
-                        </div>
+                        </div> */}
 
 
 
@@ -244,7 +244,7 @@ export default function Home() {
                         <div className="flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Is massive scale the only path to robotic dexterity? While foundational models like Pi05 and GO-1 leverage massive compute and data to achieve task-generalization, we explore a "resource-aware" alternative for state-generalization. We present a comprehensive guideline for mastering long-horizon garment manipulation, taking a system from 0% to 100% reliability with a fraction of the standard cost—specifically, within 20 hours of human demonstration, 8*A100 gpus, rather than tens of thousands of hrs data and hundreds of GPUs which are typically required.
+                            “Veni, Vidi, Vici” — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                             </p>
                             <div></div>
                         </div>
@@ -255,7 +255,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Our system enables collaborative, dual-arm robots to perform complex folding tasks over extended horizons (up to 6 minutes), demonstrating exceptional robustness to the compounding errors that plague collaborative handovers. This reliability extends to "in-the-wild" scenarios, handling interruptions and varied lighting with ease.
+                            Our system enables dual-arm robots to master complex, long-horizon folding tasks (up to 6 minutes), maintaining exceptional robustness against compounding errors and "in-the-wild" environmental shifts.
                             </p>
                             <div></div>
                         </div>
@@ -266,7 +266,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                The core of our efficiency lies in a new philosophical approach to Imitation Learning:
+                                We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
                             </p>
                             <div></div>
                         </div>
@@ -287,14 +287,14 @@ export default function Home() {
                                     <b>
                                         Model Arithmetic:&nbsp;
                                     </b>
-                                    Rather than relying on a single checkpoint, we identify that models trained on different data subsets learn distinct manifolds. We introduce a "shortcut" to merge these manifolds—condensing several diverse models into a single, adaptive policy without the complexity of MoE architectures.
+                                    We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy—capturing diverse knowledge without the architectural complexity of MoE.
                                 </li>
                                 {/* Rather than relying on a single checkpoint, we identify that models trained on different data subsets learn distinct manifolds. We introduce a "shortcut" to merge these manifolds—condensing several diverse models into a single, adaptive policy without the complexity of MoE architectures. */}
                                 <li>
                                     <b>
-                                        Distribution-Aware Orchestration:&nbsp;
+                                        Stage Advantage:&nbsp;
                                     </b>
-                                    A specialized mechanism to handle the "last mile" of precision (the final 80-100% performance gain).
+                                    To conquer the "last mile", we decompose tasks into semantic stages. By estimating a stage-aware advantage signal, we provide the model with "long-horizon vision," ensuring every action makes measurable progress toward the goal.
                                 </li>
                                 {/* A specialized mechanism to handle the "last mile" of precision (the final 80-100% performance gain). */}
                             </ol>
@@ -305,7 +305,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                This recipe is universally applicable, functioning across different embodiments (AgileX Piper, ARX X5) and model architectures (π series, x-VLA, GO-1), proving that efficient, high-performance manipulation is accessible without industrial-scale resources.
+                                This recipe is universally applicable across different embodiments (AgileX Piper, ARX X5) and architectures (Pi series, X-VLA), proving that 100% robotic mastery is a matter of strategic alignment, not just massive scale.
                             </p>
                             <div></div>
                         </div>
@@ -372,7 +372,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl">
-                                三个任务，每个任务覆盖4小时，100倍速视频，部分片段2-5倍速高亮重点
+                                Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
                             </i>
                             <div></div>
                         </div>
@@ -383,7 +383,7 @@ export default function Home() {
                             <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
                                 <Link href="#mode_consistency" className="scroll-mt-32 group flex items-center flex-row" id="mode_consistency">
                                     <h2>
-                                        Mode Consistency: The "Whac-a-Mole" Problem / The Impossible Trinity / A Trilemma
+                                        Mode Consistency: Addressing the Distributional Trilemma
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
@@ -402,7 +402,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We assume that, for certain task, there exists a distribution P<sub>real</sub> consisting of all actions that can accomplish such task. Achieving robust manipulation is akin to solving a chaotic "whac-a-mole" problem between three distributions:
+                                We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem—akin to a game of "Whac-a-Mole"—among three distinct distributions:
                             </p>
                             <div></div>
                         </div>
@@ -413,15 +413,15 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center px-6">
                             <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
                                 <li>
-                                    P<sub>train</sub> (human demonstration), collected from Q<sub>human</sub> (human expert policy). This is a subset of P<sub>real</sub>.
+                                    P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
                                 </li>
                                 {/* $$P_{train}$$(human demonstration), collected from $$Q_{human}$$(human expert policy). This is a subset of $$P_{real}$$. */}
                                 <li>
-                                    Q<sub>model</sub> (action projection on model weights).
+                                    Q<sub>model</sub> (Learned Policy): The policy distribution parameterized by the model weights.
                                 </li>
                                 {/* $$Q_{model}$$(action projection on model weights). */}
                                 <li>
-                                    P<sub>test</sub> (executed action in the real-world), inferred from Q<sub>model</sub>. The part lies inside P<sub>real</sub> means success and outside means failure.
+                                    P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> failling outside P<sub>real</sub> constitutes the failure modes.
                                 </li>
                                 {/* $$P_{test}$$(executed action in the real-world), inferred from $$Q_{model}$$. The part lies inside $$P_{real}$$means success and outside means failure. */}
                             </ol>
@@ -432,7 +432,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Current training strategy, in most cases, imitation learning, can be interpreted as minimizing the KL(Q<sub>model</sub>|Q<sub>human</sub>) via P<sub>train</sub> (cite). This process yields a finetuned Q<sub>model</sub>, and deploying this model on real robots (denoted as Inference() function) give us P<sub>test</sub>. 
+                                Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub> (cite Danqi and Stefano). This process yields a finetuned Q<sub>model</sub>; deploying this model via an inference function (denoted as <i>Inference()</i>) results in the realized distribution P<sub>test</sub>. 
                             </p>
                             <div></div>
                         </div>
@@ -443,7 +443,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fpqp.gif"
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fpqp_1220_1258.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
@@ -485,7 +485,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We found several key issues hiding in this process:
+                                However, we identify latent inconsistencies within this standard process:
                             </p>
                             <div></div>
                         </div>
@@ -496,11 +496,11 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center px-6">
                             <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
                                 <li>
-                                    Misalignment between P<sub>train</sub> and P<sub>test</sub>, interpreted as many failure states do not exist in training data.
+                                    Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                 </li>
                                 {/* Misalignment between $$P_{train}$$and $$P_{test}$$, interpreted as many failure states do not exist in training data. */}
                                 <li>
-                                    Misalignment between Q<sub>model</sub> and P<sub>test</sub>, shown as model inference results could be mis-deployed by the Inference() function and causes unexpected failure.
+                                    Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
                                 </li>
                                 {/* Misalignment between $$Q_{model}$$ and $$P_{test}$$, shown as model inference results could be mis-deployed by the $$Inference()$$ function and causes unexpected failure. */}
                             </ol>
@@ -511,7 +511,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fdagger.gif"
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
@@ -532,7 +532,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve.gif"
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve_1220_1258.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
@@ -553,7 +553,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Back to basics, we propose two "behind the scenes" strategies that actually work: 
+                                Back to basics, we propose two fundamental strategies—operating on Data Scope and Inference Scope—to stabilize these distributions: 
                             </p>
                             <div></div>
                         </div>
@@ -565,30 +565,30 @@ export default function Home() {
                             <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
                                 <li>
                                     <b>
-                                        Data augmentation.
+                                        Data Scope.
                                     </b>
                                     <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-[lower-alpha] px-4 md:px-6 mt-3">
                                         <li>
                                             <b>
-                                                Dagger-augmentation:&nbsp;
+                                                DAgger (Iterative Correction):&nbsp;
                                             </b>
-                                            Offline demonstrations often miss some failure modes that only emerge during real-world deployment. We inject on-policy recovery trajectories, both heurisitic and iterative DAgger, to fill these missing modes. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. The learned policy Q<sub>model</sub> better covers these modes in P<sub>real</sub>, ensuring the execution P<sub>test</sub> is resilient to the inevitable drift found in P<sub>real</sub>. 
+                                            Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment. We inject on-policy recovery trajectories—utilizing both heuristic methods and iterative DAgger—to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
                                         </li>
                                         {/* Offline demonstrations often miss some failure modes that only emerge during real-world deployment. We inject on-policy recovery trajectories, both heurisitic and iterative DAgger, to fill these missing modes. By integrating these "corrected" trajectories, we expand $$P_{train}$$ towards underrepresented but critical regions of $$P_{real}$$. The learned policy $$Q_{model}$$ better covers these modes in $$P_{real}$$, ensuring the execution  $$P_{test}$$is resilient to the inevitable drift found in $$P_{real}$$.  */}
                                         <li>
                                             <b>
-                                                Input/output Augmentation:&nbsp;
+                                                Spatio-Temporal Augmentation:&nbsp;
                                             </b>
-                                            To further bridge the P<sub>train</sub> <i>vs.</i> P<sub>test</sub> gap, we employ two specific augmentations. At the output level, time-scaling introduces down-sampled trajectories to adapt to varying control frequencies, while at the input level, wrist-mirroring enhances the model's spatial understanding of dual-arm coordination.
+                                            To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
                                         </li>
                                         {/* To further bridge the $$P_{train}$$ vs. $$P_{test}$$gap, we employ two specific augmentations. At the output level, time-scaling introduces down-sampled trajectories to adapt to varying control frequencies, while at the input level, wrist-mirroring enhances the model's spatial understanding of dual-arm coordination. */}
                                     </ol>
                                 </li>
                                 <li>
                                     <b>
-                                        Inference Optimization.&nbsp;
+                                        Inference Scope:&nbsp;
                                     </b>
-                                    To address the Inference() function from Q<sub>model</sub> to P<sub>test</sub>, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution.
+                                    To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (cite RTC). This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
                                 </li>
                                 {/* To address the $$Inference()$$ function from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
                             </ol>
@@ -697,13 +697,13 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        {/* <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <b className="w-full leading-relaxed max-w-4xl">
                                 How can we efficiently advance through iterative research cycles in embodied AI? 
                             </b>
                             <div></div>
-                        </div>
+                        </div> */}
                         {/* How can we efficiently advance through iterative research cycles in embodied AI?   */}
 
 
@@ -711,7 +711,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                                <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
                             </p>
                             <div></div>
                         </div>
@@ -722,7 +722,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones <b>at the weight level</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation (cite xx) guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                             </p>
                             <div></div>
                         </div>
@@ -733,7 +733,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fsouping1.gif"
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fsouping1_1220_1254.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
@@ -751,7 +751,7 @@ export default function Home() {
 
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
+                        {/* <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fsouping_curve.gif"
@@ -768,14 +768,14 @@ export default function Home() {
                                 caption
                             </i>
                             <div></div>
-                        </div>
+                        </div> */}
 
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes and knowledge from these diverse manifolds, ensuring mode consistency in the final model. This approach elegantly soaks up capabilities from each iteration without costly full retraining.
+                                <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
                             </p>
                             <div></div>
                         </div>
@@ -852,11 +852,31 @@ export default function Home() {
 
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
+                        {/* <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Ftechblog.gif"
                                     alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                                caption
+                            </i>
+                            <div></div>
+                        </div> */}
+
+
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fstage_advantage_1220_0116.jpg"
+                                    alt="Stage Advantage" 
                                     width={500}
                                     height={200}
                                     className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
