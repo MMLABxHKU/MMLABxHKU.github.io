@@ -27,9 +27,9 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", MAD: 80, MADLabel: "80", fill: "var(--color-chrome)" },
-    { trick: "safari", MAD: 76, MADLabel: "76", fill: "var(--color-safari)" },
-    { trick: "firefox", MAD: 67, MADLabel: "67", fill: "var(--color-firefox)" },
+    { trick: "chrome", SuccessRate: 80, SuccessRateLabel: "80", fill: "var(--color-chrome)" },
+    { trick: "safari", SuccessRate: 76, SuccessRateLabel: "76", fill: "var(--color-safari)" },
+    { trick: "firefox", SuccessRate: 67, SuccessRateLabel: "67", fill: "var(--color-firefox)" },
 ]
 
 
@@ -91,14 +91,14 @@ export function AdvantageBarChart3() {
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar
                             yAxisId="left"
-                            dataKey="MAD"
+                            dataKey="SuccessRate"
                             strokeWidth={2}
                             radius={4}
                             activeIndex={2}
                             activeBar={({ ...props }) => <Rectangle {...props} fillOpacity={0.8} />}
                         >
                             <LabelList
-                                dataKey="MAD"
+                                dataKey="SuccessRate"
                                 position="top"
                             />
                         </Bar>
