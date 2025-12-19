@@ -37,11 +37,11 @@ const chartData = [
 const chartConfig = {
     pi05: {
         label: "pi05",
-        color: "var(--chart-1)",
+        color: "#4286F3",
     },
     pi0: {
         label: "pi0",
-        color: "var(--chart-2)",
+        color: "#ebb017",
     },
 } satisfies ChartConfig
 

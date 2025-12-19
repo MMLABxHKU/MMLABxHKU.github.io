@@ -36,15 +36,15 @@ const chartData = [
 const chartConfig = {
     single: {
         label: "single",
-        color: "var(--chart-1)",
+        color: "#4286F3",
     },
     full: {
         label: "full data",
-        color: "var(--chart-2)",
+        color: "#ebb017",
     },
     model: {
         label: "model arithmetic",
-        color: "var(--chart-3)",
+        color: "#55AF7B",
     },
 } satisfies ChartConfig
 

@@ -37,15 +37,15 @@ const chartData = [
 const chartConfig = {
     chrome: {
         label: "2T_SL (ours)",
-        color: "var(--chart-1)",
+        color: "#4286F3",
     },
     safari: {
         label: "2T_TL",
-        color: "var(--chart-2)",
+        color: "#ebb017",
     },
     firefox: {
         label: "1T_TL (pi06)",
-        color: "var(--chart-3)",
+        color: "#55AF7B",
     },
 } satisfies ChartConfig
 

@@ -35,11 +35,11 @@ const chartData = [
 const chartConfig = {
     absolute: {
         label: "absolute",
-        color: "var(--chart-1)",
+        color: "#4286F3",
     },
     delta: {
         label: "delta action",
-        color: "var(--chart-2)",
+        color: "#ebb017",
     },
 } satisfies ChartConfig
 
