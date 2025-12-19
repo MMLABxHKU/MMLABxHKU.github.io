@@ -27,24 +27,24 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", MAD: 0.0115, MADLabel: "0.0115", fill: "var(--color-chrome)" },
+    { trick: "chrome", MAD: 0.0160, MADLabel: "0.0160", fill: "var(--color-chrome)" },
     { trick: "safari", MAD: 0.0151, MADLabel: "0.0151", fill: "var(--color-safari)" },
-    { trick: "firefox", MAD: 0.0160, MADLabel: "0.0160", fill: "var(--color-firefox)" },
+    { trick: "firefox", MAD: 0.0115, MADLabel: "0.0115", fill: "var(--color-firefox)" },
 ]
 
 
 
 const chartConfig = {
     chrome: {
-        label: "2T_SL (ours)",
+        label: "Value-diff",
         color: "#4286F3",
     },
     safari: {
-        label: "2T_TL",
+        label: "Direct",
         color: "#ebb017",
     },
     firefox: {
-        label: "1T_TL (pi06)",
+        label: "Direct+Stage",
         color: "#55AF7B",
     },
 } satisfies ChartConfig
@@ -58,7 +58,7 @@ export function AdvantageBarChart1() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Mean Absolute Difference (MAD)</CardDescription>
+                <CardDescription>Mean Absolute Difference (MAD) &#8595;</CardDescription>
             </CardHeader>
 
 

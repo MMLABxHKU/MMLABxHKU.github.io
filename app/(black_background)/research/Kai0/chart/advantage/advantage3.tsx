@@ -27,24 +27,24 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", SuccessRate: 80, SuccessRateLabel: "80", fill: "var(--color-chrome)" },
+    { trick: "chrome", SuccessRate: 67, SuccessRateLabel: "67", fill: "var(--color-chrome)" },
     { trick: "safari", SuccessRate: 76, SuccessRateLabel: "76", fill: "var(--color-safari)" },
-    { trick: "firefox", SuccessRate: 67, SuccessRateLabel: "67", fill: "var(--color-firefox)" },
+    { trick: "firefox", SuccessRate: 80, SuccessRateLabel: "80", fill: "var(--color-firefox)" },
 ]
 
 
 
 const chartConfig = {
     chrome: {
-        label: "2T_SL (ours)",
+        label: "Value-diff",
         color: "#4286F3",
     },
     safari: {
-        label: "2T_TL",
+        label: "Direct",
         color: "#ebb017",
     },
     firefox: {
-        label: "1T_TL (pi06)",
+        label: "Direct+Stage",
         color: "#55AF7B",
     },
 } satisfies ChartConfig
@@ -58,7 +58,7 @@ export function AdvantageBarChart3() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Success Rate (%)</CardDescription>
+                <CardDescription>Success Rate (%) &#8593;</CardDescription>
             </CardHeader>
 
 
