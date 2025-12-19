@@ -484,7 +484,7 @@ export default function Home() {
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black.html"
-                                    className="max-w-1/3 w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
+                                    className="max-w-4xl w-[2000px] h-[512px] border-2 md:border-4 border-black hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
                                 ></iframe>
                             </div>
                         </div>
