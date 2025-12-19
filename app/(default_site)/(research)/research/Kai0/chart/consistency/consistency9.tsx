@@ -49,7 +49,7 @@ const chartConfig = {
 
 export function ConsistencyBarChart9() {
     return (
-        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
+        <Card className="max-w-1/3 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 

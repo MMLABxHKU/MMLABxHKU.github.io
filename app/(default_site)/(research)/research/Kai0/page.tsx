@@ -422,7 +422,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -440,7 +440,7 @@ export default function Home() {
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <iframe
                                     src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model.html"
-                                    className="w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
+                                    className="max-w-1/3 w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
                                 ></iframe>
                             </div>
                         </div>
@@ -487,14 +487,14 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -555,7 +555,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart1 />
                                 <ConsistencyBarChart2 />
                             </div>
@@ -571,7 +571,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart3 />
                                 <ConsistencyBarChart4 />
                                 <ConsistencyBarChart5 />
@@ -588,7 +588,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart6 />
                                 <ConsistencyBarChart7 />
                             </div>
@@ -597,6 +597,23 @@ export default function Home() {
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl">
                                 Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+
+
+                        
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                                <ConsistencyBarChart8 />
+                                <ConsistencyBarChart9 />
+                                <ConsistencyBarChart10 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Inference Optimization Methods Comparison / Figure description TODO
                             </i>
                             <div></div>
                         </div>
@@ -664,14 +681,14 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fsouping_curve.gif"
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
@@ -772,7 +789,7 @@ export default function Home() {
                                     alt="Consistency" 
                                     width={500}
                                     height={200}
-                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                    className="max-w-1/3 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
                         </div>
