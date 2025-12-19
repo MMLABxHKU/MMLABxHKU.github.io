@@ -453,8 +453,15 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl flex flex-col items-center">
+
+                                <b>Distribution Generation of P<sub>train</sub>, Q<sub>model</sub> and P<sub>test</sub>.</b>
+                                <br />
+                                {/* <p>
+                                P<sub>train</sub> = ExpertDemo(Q<sub>human</sub>), 
+                                Q<sub>model</sub> = Train(P<sub>train</sub>), 
+                                P<sub>test</sub> = Inference(Q<sub>model</sub>)
+                                </p> */}
                             </i>
                             <div></div>
                         </div>
@@ -474,8 +481,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                Best experienced on desktop.
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                            This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. 
                             </i>
                             <div></div>
                         </div>
@@ -521,8 +528,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                <b>Dagger</b>: Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
                             </i>
                             <div></div>
                         </div>
@@ -542,8 +549,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                <b>Inference Optimization</b>: Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
                             </i>
                             <div></div>
                         </div>
