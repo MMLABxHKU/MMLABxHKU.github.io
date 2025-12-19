@@ -120,12 +120,12 @@ export default function Home() {
                                     Model Arithmetic
                                 </span>
                             </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#stage_composer">
+                            <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
                                 <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
                                 <span className="text-sm text-mgray group-hover:text-mred">
-                                    Stage Composer
+                                    Stage Advantage
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#data">
@@ -706,9 +706,9 @@ export default function Home() {
                         
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
-                                <Link href="#stage_composer" className="scroll-mt-32 group flex items-center flex-row" id="stage_composer">
+                                <Link href="#stage_advantage" className="scroll-mt-32 group flex items-center flex-row" id="stage_advantage">
                                     <h2>
-                                        Stage Composer
+                                        Stage Advantage
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
@@ -727,33 +727,33 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in the cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06).
+                                Long-horizon manipulation inheretly is hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06).
                             </p>
                             <div></div>
                         </div>
-                        {/* Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in the cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06）. */}
+                        {/* Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06）. */}
 
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Prior approaches obtain advantage indirectly: they score the current state and the state reached after executing an action chunk, and estimate advantage as the difference between these two state-level progress scores. From a modeling perspective, this formulation assumes that advantage can be decomposed into the difference of two independently estimated state values. However, advantage is inherently a relational quantity that depends on how an action transforms one state into another. Treating the two states independently ignores their temporal relationship and forces the model to infer action effects only through value differencing.
+                                Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a <b>relational quantity</b> that depends on how an action transforms one state into another.
                             </p>
                             <div></div>
                         </div>
-                        {/* Prior approaches obtain advantage indirectly: they score the current state and the state reached after executing an action chunk, and estimate advantage as the difference between these two state-level progress scores. From a modeling perspective, this formulation assumes that advantage can be decomposed into the difference of two independently estimated state values. However, advantage is inherently a relational quantity that depends on how an action transforms one state into another. Treating the two states independently ignores their temporal relationship and forces the model to infer action effects only through value differencing. */}
+                        {/* Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another. */}
 
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We take a more direct route by treating advantage as a first-class modeling target (direct learning target). Instead of deriving it from value predictions, we predict relative improvement directly from paired observations. This reframes advantage estimation as a single prediction problem, replacing two independently estimated state scores and their subtraction, and thereby avoiding error compounding while yielding a cleaner, more reliable state-to-state supervision signal.
+                                We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal.
                             </p>
                             <div></div>
                         </div>
-                        {/* We take a more direct route by treating advantage as a first-class modeling target (direct learning target). Instead of deriving it from value predictions, we predict relative improvement directly from paired observations. This reframes advantage estimation as a single prediction problem, replacing two independently estimated state scores and their subtraction, and thereby avoiding error compounding while yielding a cleaner, more reliable state-to-state supervision signal. */}
+                        {/* We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal. */}
 
 
 
@@ -781,14 +781,24 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                Built on this, the Stage Composer structures the task into discrete stages and scores each action chunk by its local contribution within the current stage. This yields clearer, compositional feedback and significantly sharper control in the last mile—improving both task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation.
+                                Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training. 
                             </p>
                             <div></div>
                         </div>
-                        {/* Built on this, the Stage Composer structures the task into discrete stages and scores each action chunk by its local contribution within the current stage. This yields clearer, compositional feedback and significantly sharper control in the last mile—improving both task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. */}
+                        {/* Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training.  */}
 
 
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <p className="w-full leading-relaxed max-w-4xl">
+                                The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. 
+                            </p>
+                            <div></div>
+                        </div>
+                        {/* The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation.  */}
 
+
+                        
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-7xl w-full flex flex-row gap-10">
                                 <ConsistencyBarChart8 />
@@ -803,7 +813,7 @@ export default function Home() {
                             </i>
                             <div></div>
                         </div>
-                        
+
                         
 
                         <div className="w-full flex flex-col items-center px-6">
