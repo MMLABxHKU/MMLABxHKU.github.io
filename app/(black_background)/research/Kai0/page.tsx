@@ -611,8 +611,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recovery cost.
                             </i>
                             <div></div>
                         </div>
@@ -627,8 +627,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                Time scaling on the full dataset, while affecting the model's success rate, can improve the overall execution efficiency of the model.
                             </i>
                             <div></div>
                         </div>
@@ -643,8 +643,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                Space mirroring augmentation utilizes mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance, leading to improved success rate and throughput.
                             </i>
                             <div></div>
                         </div>
@@ -659,8 +659,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                Chunk-wise temporal smoothing and real-time chunking minimize execution jitter, ensuring smooth translation from Q<sub>model</sub> to P<sub>test</sub> and significantly improving success rate (right).
                             </i>
                             <div></div>
                         </div>
@@ -675,8 +675,8 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput and reducing recovery cost.
                             </i>
                             <div></div>
                         </div>
