@@ -27,9 +27,9 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", MAD: 60.5, fill: "var(--color-chrome)" },
-    { trick: "safari", MAD: 50.6, fill: "var(--color-safari)" },
-    { trick: "firefox", MAD: 46.1, fill: "var(--color-firefox)" },
+    { trick: "chrome", MAD: 60.5, MADLabel: "60.5", fill: "var(--color-chrome)" },
+    { trick: "safari", MAD: 50.6, MADLabel: "50.6", fill: "var(--color-safari)" },
+    { trick: "firefox", MAD: 46.1, MADLabel: "46.1", fill: "var(--color-firefox)" },
 ]
 
 
@@ -100,7 +100,6 @@ export function AdvantageBarChart2() {
                             <LabelList
                                 dataKey="MAD"
                                 position="top"
-                                formatter={(value) => value.toString()}
                             />
                         </Bar>
                     </BarChart>
