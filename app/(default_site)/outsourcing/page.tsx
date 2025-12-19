@@ -20,7 +20,7 @@ import TextTip from "@/app/(default_site)/(blog)/FoldAnything/(element)/quotatio
 import LineNum from "@/app/(default_site)/(blog)/FoldAnything/(element)/progressbar/lineNum"
 import SwiperVideo from "@/app/(default_site)/(blog)/FoldAnything/(element)/video/swiperVideo"
 import CopyText from "@/app/(default_site)/(blog)/FoldAnything/(element)/copy/copyText"
-import Share from "@/app/(default_site)/(blog)/FoldAnything/(element)/share/share"
+// import Share from "@/app/(default_site)/(blog)/FoldAnything/(element)/share/share"
 
 import data from './data';
 import results from './value_evaluation_results';
@@ -242,9 +242,9 @@ export default function Home() {
                 <CopyText html={data.copyHtml} />
             </div>
 
-            <div className="w-full max-w-7xl pl-6 pr-6" style={{margin:'50px auto 0 auto'}}>
+            {/* <div className="w-full max-w-7xl pl-6 pr-6" style={{margin:'50px auto 0 auto'}}>
                 <Share />
-            </div>
+            </div> */}
             {/* 测试组件 结束 */}
         </main>
     );
