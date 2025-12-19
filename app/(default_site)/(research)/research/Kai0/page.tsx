@@ -232,6 +232,13 @@ export default function Home() {
                                 <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
                             </video>
                         </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-7xl">
+                                Video Description todo
+                            </i>
+                            <div></div>
+                        </div>
 
 
 
