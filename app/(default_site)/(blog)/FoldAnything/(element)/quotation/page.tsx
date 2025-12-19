@@ -220,11 +220,24 @@ export default function Home() {
                     <div className="mt-6 flex flex-row gap-6 justify-center">
                         <div></div>
                         <p className="leading-relaxed max-w-4xl">
-                            文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                            文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).<sup>1</sup>  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)<sup>2</sup>
                         </p>
                         <div></div>
                     </div>
-
+                    <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div></div>
+                        <p className="leading-relaxed max-w-4xl">
+                            <sup>1</sup> abcsa kcawoc cklan casnc j
+                        </p>
+                        <div></div>
+                    </div>
+                    <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div></div>
+                        <p className="leading-relaxed max-w-4xl">
+                            <sup>2</sup> abcsa kcawoc cklan casnc jceawl kaca jcosajo c 
+                        </p>
+                        <div></div>
+                    </div>
 
 
 
