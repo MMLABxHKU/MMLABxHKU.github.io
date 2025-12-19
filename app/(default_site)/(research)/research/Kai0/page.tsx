@@ -233,7 +233,7 @@ export default function Home() {
                             </video>
                         </div>
 
-                        
+
 
                         <div className="w-full flex flex-col items-center my-20 px-6">
                             <div className="w-full flex flex-col items-center">
@@ -356,6 +356,41 @@ export default function Home() {
 
 
 
+                        <div className="mt-10 w-full flex flex-row justify-center px-6">
+                            <div className="grid grid-cols-3 gap-10">
+                                <video
+                                    autoPlay muted loop controls playsInline
+                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    className="w-full aspect-video rounded-sm"
+                                >
+                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                </video>
+                                <video
+                                    autoPlay muted loop controls playsInline
+                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    className="w-full aspect-video rounded-sm"
+                                >
+                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                </video>
+                                <video
+                                    autoPlay muted loop controls playsInline
+                                    poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                    className="w-full aspect-video rounded-sm"
+                                >
+                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                三个任务，每个任务覆盖4小时，100倍速视频，部分片段2-5倍速高亮重点
+                            </i>
+                            <div></div>
+                        </div>
+
+
+                        
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
                                 <Link href="#mode_consistency" className="scroll-mt-32 group flex items-center flex-row" id="mode_consistency">
