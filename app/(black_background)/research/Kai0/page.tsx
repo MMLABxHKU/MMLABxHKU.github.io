@@ -460,15 +460,34 @@ export default function Home() {
                         </div>
                         
 
-
-                        <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-6xl w-full flex justify-center">
-                                <div className="w-full max-w-4xl aspect-video">
+                        {/* <div className="flex justify-center px-6 mt-6">
+                            <div className="max-w-4xl w-full overflow-hidden">
+                                <div
+                                className="origin-top-left"
+                                style={{
+                                    width: 800,
+                                    height: 500,
+                                }}
+                                >
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
-                                    className="w-full h-full"
+                                    width="800"
+                                    height="500"
+                                    className="border-2 md:border-4 border-black rounded-lg"
+                                    scrolling="no"
                                 />
                                 </div>
+                            </div>
+                        </div> */}
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center ">
+                                <iframe
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
+                                    width="800"
+                                    height="450"
+                                    className="border-2 md:border-4 border-black rounded-lg w-[800px]"
+                                    scrolling="no"
+                                />
                             </div>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
