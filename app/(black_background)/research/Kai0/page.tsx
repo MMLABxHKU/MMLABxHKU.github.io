@@ -99,42 +99,42 @@ export default function Home() {
                     <div className="w-48 hidden 3xl:block">
                         <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                             <Link className="select-none flex items-center gap-3 group" href="#methodology">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
+                                <span className="text-sm text-black/700 group-hover:text-mred">
                                     Methodology
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
+                                <span className="text-sm text-black/700 group-hover:text-mred">
                                     Mode Consistency
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
+                                <span className="text-sm text-black/700 group-hover:text-mred">
                                     Model Arithmetic
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
+                                <span className="text-sm text-black/700 group-hover:text-mred">
                                     Stage Advantage
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#citation">
-                                <span className="border-l-2 border-l-mgray text-sm group-hover:border-l-mred">
+                                <span className="border-l-2 border-l-black/700 text-sm group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
-                                <span className="text-sm text-mgray group-hover:text-mred">
+                                <span className="text-sm text-black/700 group-hover:text-mred">
                                     Citation
                                 </span>
                             </Link>
@@ -168,9 +168,9 @@ export default function Home() {
                                     <h2>
                                         By
                                     </h2>
-                                    <h2>
+                                    {/* <h2>
                                         Challenge
-                                    </h2>
+                                    </h2> */}
                                     <h2>
                                         Share
                                     </h2>
@@ -190,11 +190,11 @@ export default function Home() {
                                     <h2>
                                         HKU Manipulation Team
                                     </h2>
-                                    <h2>
+                                    {/* <h2>
                                         <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
                                             At CVPR 2026
                                         </Link>
-                                    </h2>
+                                    </h2> */}
                                     <h2>
                                         X
                                     </h2>
@@ -226,14 +226,14 @@ export default function Home() {
                         <div className="w-full flex flex-col items-center my-20 px-6">
                             <div className="w-full flex flex-col items-center">
                                 <div className="w-full max-w-4xl flex flex-col relative p-10 gap-6">
-                                    <div className="absolute top-0 left-0 w-8 h-8 border-t-6 border-l-6 border-black"></div>
-                                    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-6 border-r-6 border-black"></div>
+                                    <div className="absolute top-0 left-0 xl:left-64 w-8 h-8 border-t-6 border-l-6 border-white"></div>
+                                    <div className="absolute bottom-0 right-0 xl:right-64 w-8 h-8 border-b-6 border-r-6 border-white"></div>
                                     <h2 className="text-3xl font-bold text-center">
                                         Veni, vidi, vici.
                                     </h2>
                                 </div>
                             </div>
-                            <div className="w-full max-w-4xl flex flex-row justify-end mt-6">
+                            <div className="w-full max-w-4xl flex flex-row justify-end mt-6 xl:pr-64">
                                 <i>Julius Caesar</i>
                             </div> 
                         </div>
@@ -884,7 +884,7 @@ export default function Home() {
                         </div>
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl p-4 bg-background rounded-sm text-foreground/70">
+                            <p className="w-full leading-relaxed max-w-4xl p-4 bg-white/10 rounded-sm text-foreground">
                                 @article&#123;kaimanipteam2025kai0,
                                 <br></br>
                                 <span className="select-none">

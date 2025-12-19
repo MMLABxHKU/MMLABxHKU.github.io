@@ -60,7 +60,7 @@ export function EmailSubscribe() {
                 onFocus={handleFocus}
                 className='rounded-sm h-6 focus-visible:ring-0'
             />
-            <Button onClick={handleSubmit} disabled={!valid || loading} className='h-6 p-2 font-light bg-foreground rounded-sm'>
+            <Button onClick={handleSubmit} disabled={!valid || loading} className='h-6 p-2 font-fore bg-blackground rounded-sm'>
                 {loading ? '...' : "subscribe"}
             </Button>
         </div>

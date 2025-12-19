@@ -54,7 +54,7 @@
     --mgray: #76777B;
     --radius: 0.625rem;
     --background: oklch(1 0 0);
-    --foreground: #0d0d0d;
+    --foreground: #000000;
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
