@@ -913,7 +913,7 @@ export default function Home() {
 
                         
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
                                 <AdvantageBarChart1 />
                                 <AdvantageBarChart2 />
                                 <AdvantageBarChart3 />
