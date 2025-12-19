@@ -252,13 +252,13 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        {/* <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
                             Our system enables dual-arm robots to master complex, long-horizon folding tasks (up to 6 minutes), maintaining exceptional robustness against compounding errors and "in-the-wild" environmental shifts.
                             </p>
                             <div></div>
-                        </div>
+                        </div> */}
                         {/* Our system enables collaborative, dual-arm robots to perform complex folding tasks over extended horizons (up to 6 minutes), demonstrating exceptional robustness to the compounding errors that plague collaborative handovers. This reliability extends to "in-the-wild" scenarios, handling interruptions and varied lighting with ease. */}
 
 
@@ -280,7 +280,7 @@ export default function Home() {
                                     <b>
                                         Mode Consistency:&nbsp;
                                     </b>
-                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge Q<sub>model</sub>, and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
+                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (Q<sub>model</sub>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
                                 </li>
                                 {/* We argue that not all data is created equal. By strictly aligning the human demonstration distribution ($P_{train}$), the model's knowledge ($Q_{model}$), and the test-time distribution ($P_{test}$), we minimize in-distribution shifts that lead to failure. */}
                                 <li>
@@ -305,7 +305,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                This recipe is universally applicable across different embodiments (AgileX Piper, ARX X5) and architectures (Pi series, X-VLA), proving that 100% robotic mastery is a matter of strategic alignment, not just massive scale.
+                                This recipe provide strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
                             </p>
                             <div></div>
                         </div>
@@ -313,13 +313,13 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        {/* <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
                                 We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
                             </p>
                             <div></div>
-                        </div>
+                        </div> */}
                         {/* We will release data, checkpoints and host Challenge in 2026. */}
 
 
@@ -751,7 +751,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                                We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
                             </i>
                             <div></div>
                         </div>
@@ -799,7 +799,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                                The merged model surpasses both the best constituent models and the oracle model trained on the full dataset across multiple tasks, evidencing that Model Arithmetic successfully assimilates the distinct policy manifolds learned from diverse data subsets.
                             </i>
                             <div></div>
                         </div>
@@ -893,7 +893,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                caption
+                                Illustration of the estimated progress given a video clip. Direct+Stage (ours) has better stability in progress estimation.
                             </i>
                             <div></div>
                         </div>
@@ -931,7 +931,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex justify-center">
-                                Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training.
+                                Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is more stable (lower MAD), smoother (high SFR) and more reliable (higher success rate).
                             </i>
                             <div></div>
                         </div>
