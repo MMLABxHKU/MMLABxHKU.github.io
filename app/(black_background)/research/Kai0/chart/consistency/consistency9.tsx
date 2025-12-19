@@ -84,13 +84,13 @@ export function ConsistencyBarChart9() {
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
-                            <ErrorBar 
+                            <ErrorBar stroke="white" 
                                 dataKey="absolute_std" 
                                 direction="y" 
                             />
                         </Bar>
                         <Bar dataKey="delta" fill="var(--color-delta)" yAxisId="left" radius={4}>
-                            <ErrorBar 
+                            <ErrorBar stroke="white" 
                                 dataKey="delta_std" 
                                 direction="y" 
                             />

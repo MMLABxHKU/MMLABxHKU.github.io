@@ -87,19 +87,19 @@ export function SoupingBarChart1() {
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar dataKey="single" fill="var(--color-single)" yAxisId="left" radius={4}>
-                            <ErrorBar 
+                            <ErrorBar stroke="white" 
                                 dataKey="single_std" 
                                 direction="y" 
                             />
                         </Bar>
                         <Bar dataKey="full" fill="var(--color-full)" yAxisId="left" radius={4}>
-                            <ErrorBar 
+                            <ErrorBar stroke="white" 
                                 dataKey="full_std" 
                                 direction="y" 
                             />
                         </Bar>
                         <Bar dataKey="model" fill="var(--color-model)" yAxisId="left" radius={4}>
-                            <ErrorBar 
+                            <ErrorBar stroke="white" 
                                 dataKey="model_std" 
                                 direction="y" 
                             />
