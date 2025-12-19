@@ -2,7 +2,8 @@
 
 
 
-import { Bar, BarChart, CartesianGrid, XAxis, LabelList, ErrorBar, YAxis, Label  } from "recharts"
+import { TrendingUp } from "lucide-react"
+import { Bar, BarChart, CartesianGrid, Rectangle, XAxis, LabelList, YAxis } from "recharts"
 
 
 
@@ -26,52 +27,54 @@ import {
 
 
 const chartData = [
-    { trick: "Task A", single: 60, single_std: [9.4, 9.4], full: 73.33, full_std: [4.7, 4.7], model: 90, model_std: [4.7, 4.7], },
-    { trick: "Task B", single: 63.33, single_std: [4.7, 4.7], full: 80, full_std: [4.7, 4.7], model: 86.66, model_std: [9.4, 9.4], },
-    { trick: "Task C", single: 16.66, single_std: [4.7, 4.7], full: 26.66, full_std: [9.4, 9.4], model: 53.33, model_std: [14, 14], },
+    { trick: "chrome", MAD: 0.0115, fill: "var(--color-chrome)" },
+    { trick: "safari", MAD: 0.0151, fill: "var(--color-safari)" },
+    { trick: "firefox", MAD: 0.0160, fill: "var(--color-firefox)" },
 ]
 
 
 
 const chartConfig = {
-    single: {
-        label: "single",
+    chrome: {
+        label: "2T_SL (ours)",
         color: "var(--chart-1)",
     },
-    full: {
-        label: "full data",
+    safari: {
+        label: "2T_TL",
         color: "var(--chart-2)",
     },
-    model: {
-        label: "model arithmetic",
+    firefox: {
+        label: "1T_TL (pi06)",
         color: "var(--chart-3)",
     },
 } satisfies ChartConfig
 
 
 
-export function SoupingBarChart1() {
+export function AdvantageBarChart1() {
     return (
         <Card className="max-w-1/3 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Success Rate (%) &#8593;</CardDescription>
+                <CardDescription>Mean Absolute Difference (MAD)</CardDescription>
             </CardHeader>
 
 
 
             <CardContent className="px-0">
                 <ChartContainer config={chartConfig}>
-                    <BarChart accessibilityLayer data={chartData}>
+                    <BarChart accessibilityLayer data={chartData} margin={{ top: 16, right: 0, left: 0, bottom: 0 }}>
                         <CartesianGrid vertical={false} />
                         <XAxis
                             dataKey="trick"
                             tickLine={false}
                             tickMargin={6}
                             axisLine={false}
-                            tickFormatter={(value) => value}
+                            tickFormatter={(value) =>
+                                chartConfig[value as keyof typeof chartConfig]?.label
+                        }
                         />
                         <YAxis
                             yAxisId="left"
@@ -79,29 +82,25 @@ export function SoupingBarChart1() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={Math.max(...chartData.map((d) => String(d.single).length)) * 8}
+                            width={48}
                         />
                         <ChartTooltip
                             cursor={false}
-                            content={<ChartTooltipContent indicator="dashed" />}
+                            content={<ChartTooltipContent hideLabel />}
                         />
                         <ChartLegend content={<ChartLegendContent />} />
-                        <Bar dataKey="single" fill="var(--color-single)" yAxisId="left" radius={4}>
-                            <ErrorBar 
-                                dataKey="single_std" 
-                                direction="y" 
-                            />
-                        </Bar>
-                        <Bar dataKey="full" fill="var(--color-full)" yAxisId="left" radius={4}>
-                            <ErrorBar 
-                                dataKey="full_std" 
-                                direction="y" 
-                            />
-                        </Bar>
-                        <Bar dataKey="model" fill="var(--color-model)" yAxisId="left" radius={4}>
-                            <ErrorBar 
-                                dataKey="model_std" 
-                                direction="y" 
+                        <Bar
+                            yAxisId="left"
+                            dataKey="MAD"
+                            strokeWidth={2}
+                            radius={4}
+                            activeIndex={2}
+                            activeBar={({ ...props }) => <Rectangle {...props} fillOpacity={0.8} />}
+                        >
+                            <LabelList
+                                dataKey="MAD"
+                                position="top"
+                                formatter={(value) => value.toString()}
                             />
                         </Bar>
                     </BarChart>

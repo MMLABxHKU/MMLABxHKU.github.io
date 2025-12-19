@@ -27,6 +27,9 @@ import { ConsistencyBarChart8 } from "./chart/consistency/consistency8"
 import { ConsistencyBarChart9 } from "./chart/consistency/consistency9"
 import { ConsistencyBarChart10 } from "./chart/consistency/consistency10"
 import { SoupingBarChart1 } from "./chart/souping/souping1"
+import { AdvantageBarChart1 } from "./chart/advantage/advantage1"
+import { AdvantageBarChart2 } from "./chart/advantage/advantage2"
+import { AdvantageBarChart3 } from "./chart/advantage/advantage3"
 
 
 
@@ -602,9 +605,9 @@ export default function Home() {
                         </div>
 
 
-                        
+
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <ConsistencyBarChart8 />
                                 <ConsistencyBarChart9 />
                                 <ConsistencyBarChart10 />
@@ -715,7 +718,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-4xl w-full">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <SoupingBarChart1 />
                             </div>
                         </div>
@@ -826,9 +829,9 @@ export default function Home() {
                         
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-7xl w-full flex flex-row gap-10">
-                                <ConsistencyBarChart8 />
-                                <ConsistencyBarChart9 />
-                                <ConsistencyBarChart10 />
+                                <AdvantageBarChart1 />
+                                <AdvantageBarChart2 />
+                                <AdvantageBarChart3 />
                             </div>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
