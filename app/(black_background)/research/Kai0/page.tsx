@@ -52,12 +52,12 @@ import {
 
 
 
-const paths: { path: string; url: string; }[] = [
-    {
-        path: "MMLab",
-        url: "/"
-    },
-]
+// const paths: { path: string; url: string; }[] = [
+//     {
+//         path: "MMLab",
+//         url: "/"
+//     },
+// ]
 
 
 
@@ -68,7 +68,7 @@ export default function Home() {
 
 
                 {/* Landing */}
-                <div className="w-full h-48 flex flex-row justify-center bg-fixed">
+                {/* <div className="w-full h-48 flex flex-row justify-center bg-fixed">
                     <div className="w-full h-full max-w-7xl px-6 flex flex-col justify-end pb-10 gap-6">
                         <Breadcrumb>
                             <BreadcrumbList>
@@ -87,7 +87,7 @@ export default function Home() {
                             </BreadcrumbList>
                         </Breadcrumb>
                     </div>
-                </div>
+                </div> */}
 
 
 
@@ -144,7 +144,7 @@ export default function Home() {
 
 
                     {/* transferable */}
-                    <div className="w-full max-w-7xl flex flex-col">
+                    <div className="w-full max-w-7xl flex flex-col mt-48">
 
 
                         <div className="flex flex-col w-full gap-6 px-6">
@@ -217,21 +217,6 @@ export default function Home() {
                             <div></div>
                             <i className="w-full leading-relaxed max-w-7xl">
                                 Video Description todo
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="flex flex-row justify-center px-6 mt-20">
-                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center">
-                                <EmailSubscribe />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Stay up to date with our live demos, challenges, and more.
                             </i>
                             <div></div>
                         </div>
@@ -924,6 +909,21 @@ export default function Home() {
                                 <br></br>
                                 &#125;
                             </p>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="flex flex-row justify-center px-6 mt-20">
+                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center">
+                                <EmailSubscribe />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Stay up to date with our live demos, challenges, and more.
+                            </i>
                             <div></div>
                         </div>
 
