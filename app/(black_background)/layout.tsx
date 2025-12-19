@@ -55,7 +55,7 @@ export default function RootLayout({
 
 
                 <FadeIn>
-                    <footer className="w-full mb-20 flex flex-col gab-10 ml-3">
+                    <footer className="w-full mb-20 flex flex-col gab-10 pl-6">
                         <div className="w-full pl-6 pr-6 flex flex-row justify-center mt-20">
                             <div className="max-w-4xl w-full flex flex-row justify-between">
                                 <div className="flex-1 flex flex-col justify-start">
