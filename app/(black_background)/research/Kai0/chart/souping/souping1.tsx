@@ -110,13 +110,13 @@ export function SoupingBarChart1() {
 
 
 
-            {/* <CardFooter className="px-0 [.border-t]:pt-0">
-                <div className="flex w-full items-start">
-                    <i className="leading-relaxed font-normal text-sm">
-                        Evolution of Data Collection
+            <CardFooter className="px-0 [.border-t]:pt-0">
+                <div className="flex w-full justify-center">
+                    <i className="leading-relaxed font-normal text-white text-sm">
+                       desc
                     </i>
                 </div>
-            </CardFooter> */}
+            </CardFooter>
 
 
 
