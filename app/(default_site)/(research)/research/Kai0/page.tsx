@@ -91,7 +91,6 @@ export default function Home() {
 
 
 
-
                 <div className="w-full flex justify-center 2xl:justify-evenly">
 
 
@@ -160,8 +159,6 @@ export default function Home() {
                     
 
 
-
-
                     {/* transferable */}
                     <div className="w-full max-w-7xl flex flex-col">
 
@@ -226,15 +223,17 @@ export default function Home() {
 
 
 
-                        {/* <Image
-                            src="https://ik.imagekit.io/mmlab/mmlab@hku.jpg"
-                            alt="Nashville" 
-                            width={352}
-                            height={384}
-                            className="w-full h-6/12 object-cover object-center rounded-sm bg-gradient-loading select-none mt-20"
-                        /> */}
+                        <div className="mt-20 px-6">
+                            <video
+                                autoPlay muted loop controls playsInline
+                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                className="w-full aspect-video rounded-sm"
+                            >
+                                <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
 
-
+                        
 
                         <div className="w-full flex flex-col items-center my-20 px-6">
                             <div className="w-full flex flex-col items-center">
