@@ -226,10 +226,10 @@ export default function Home() {
                         <div className="mt-20 px-6">
                             <video
                                 autoPlay muted loop controls playsInline
-                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
+                                poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg" // TODO
                                 className="w-full aspect-video rounded-sm"
                             >
-                                <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                <source src="https://assets.kinetixai.cn/FoldAnything/full.mp4" type="video/mp4" />
                             </video>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
@@ -370,21 +370,21 @@ export default function Home() {
                                     poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
                                     className="w-full aspect-video rounded-sm"
                                 >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_1.mp4" type="video/mp4" />
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
                                     poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
                                     className="w-full aspect-video rounded-sm"
                                 >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_2.mp4" type="video/mp4" />
                                 </video>
                                 <video
                                     autoPlay muted loop controls playsInline
                                     poster="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.jpg"
                                     className="w-full aspect-video rounded-sm"
                                 >
-                                    <source src="https://assets.kinetixai.cn/kinetixai/research/detail-1/video-7-2.mp4" type="video/mp4" />
+                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_3.mp4" type="video/mp4" />
                                 </video>
                             </div>
                         </div>
@@ -483,7 +483,7 @@ export default function Home() {
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
                                 <iframe
-                                    src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model.html"
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black.html"
                                     className="max-w-1/3 w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
                                 ></iframe>
                             </div>
