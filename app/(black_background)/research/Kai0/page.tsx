@@ -460,32 +460,14 @@ export default function Home() {
                         </div>
                         
 
-                        {/* <div className="flex justify-center px-6 mt-6">
-                            <div className="max-w-4xl w-full overflow-hidden">
-                                <div
-                                className="origin-top-left"
-                                style={{
-                                    width: 800,
-                                    height: 500,
-                                }}
-                                >
-                                <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
-                                    width="800"
-                                    height="500"
-                                    className="border-2 md:border-4 border-black rounded-lg"
-                                    scrolling="no"
-                                />
-                                </div>
-                            </div>
-                        </div> */}
+
                         <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-4xl w-full flex flex-row gap-10 justify-center ">
                                 <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_12191548.html"
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_12191729.html"
                                     width="800"
                                     height="450"
-                                    className="border-2 md:border-4 border-black rounded-lg w-[800px]"
+                                    className="rounded-sm w-[800px]"
                                     scrolling="no"
                                 />
                             </div>
@@ -615,7 +597,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart1 />
                                 <ConsistencyBarChart2 />
                             </div>
@@ -631,7 +613,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart3 />
                                 <ConsistencyBarChart4 />
                             </div>
@@ -647,7 +629,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart5 />
                                 <ConsistencyBarChart6 />
                             </div>
@@ -663,7 +645,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart7 />
                                 <ConsistencyBarChart8 />
                             </div>
@@ -679,7 +661,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart9 />
                                 <ConsistencyBarChart10 />
                             </div>
@@ -803,7 +785,7 @@ export default function Home() {
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <SoupingBarChart1 />
                             </div>
                         </div>
@@ -913,7 +895,7 @@ export default function Home() {
 
                         
                         <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <AdvantageBarChart1 />
                                 <AdvantageBarChart2 />
                                 <AdvantageBarChart3 />
