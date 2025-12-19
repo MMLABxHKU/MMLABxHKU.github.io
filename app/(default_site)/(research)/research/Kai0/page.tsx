@@ -407,11 +407,40 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fpqp.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                Consistency gif 1. 
-                            </p>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+                        
+
+
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <iframe
+                                    src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model.html"
+                                    className="w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
                             <div></div>
                         </div>
 
@@ -443,11 +472,29 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fdagger.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                Consistency gif 2 /3 
-                            </p>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
                             <div></div>
                         </div>
 
@@ -496,6 +543,56 @@ export default function Home() {
                                 {/* To address the $$Inference()$$ function from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
                             </ol>
                         </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                                <ConsistencyBarChart1 />
+                                <ConsistencyBarChart2 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Evolution of Data Collection / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                                <ConsistencyBarChart3 />
+                                <ConsistencyBarChart4 />
+                                <ConsistencyBarChart5 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+
+
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                                <ConsistencyBarChart6 />
+                                <ConsistencyBarChart7 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+
 
 
 
@@ -552,14 +649,31 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fsouping1.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Fsouping_curve.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                讲完以上部分，放Arithmetic gif
-                            </p>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
                             <div></div>
                         </div>
-                        {/* 讲完以上部分，放Arithmetic gif */}
 
 
 
@@ -574,6 +688,22 @@ export default function Home() {
 
 
 
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-4xl w-full">
+                                <SoupingBarChart1 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Souping / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+
+
+                        
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-10 text-xl font-bold"> 
                                 <Link href="#stage_composer" className="scroll-mt-32 group flex items-center flex-row" id="stage_composer">
@@ -627,6 +757,27 @@ export default function Home() {
 
 
 
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10 justify-center">
+                                <Image
+                                    src="https://assets.kinetixai.cn/FoldAnything%2Ftechblog.gif"
+                                    alt="Consistency" 
+                                    width={500}
+                                    height={200}
+                                    className="object-cover object-center rounded-sm bg-gradient-loading select-none"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+                        
+
+
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
@@ -637,6 +788,23 @@ export default function Home() {
                         {/* Built on this, the Stage Composer structures the task into discrete stages and scores each action chunk by its local contribution within the current stage. This yields clearer, compositional feedback and significantly sharper control in the last mile—improving both task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. */}
 
 
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-7xl w-full flex flex-row gap-10">
+                                <ConsistencyBarChart8 />
+                                <ConsistencyBarChart9 />
+                                <ConsistencyBarChart10 />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl">
+                                Inference Optimization Methods Comparison / Figure description TODO
+                            </i>
+                            <div></div>
+                        </div>
+                        
+                        
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
@@ -674,87 +842,6 @@ export default function Home() {
                                     </div>
                                 </Link>
                             </h2>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
-                                <ConsistencyBarChart1 />
-                                <ConsistencyBarChart2 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Evolution of Data Collection / Figure description TODO
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
-                                <ConsistencyBarChart3 />
-                                <ConsistencyBarChart4 />
-                                <ConsistencyBarChart5 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Figure description TODO
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
-                                <ConsistencyBarChart6 />
-                                <ConsistencyBarChart7 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Figure description TODO
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-7xl w-full flex flex-row gap-10">
-                                <ConsistencyBarChart8 />
-                                <ConsistencyBarChart9 />
-                                <ConsistencyBarChart10 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Inference Optimization Methods Comparison / Figure description TODO
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-4xl w-full">
-                                <SoupingBarChart1 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
-                                Souping / Figure description TODO
-                            </i>
-                            <div></div>
                         </div>
                         
 
