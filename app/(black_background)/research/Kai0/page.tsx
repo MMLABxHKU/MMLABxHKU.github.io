@@ -639,28 +639,13 @@ export default function Home() {
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart5 />
                                 <ConsistencyBarChart6 />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                Space mirroring augmentation utilizes mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance, leading to improved success rate and throughput.
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart7 />
-                                <ConsistencyBarChart8 />
                             </div>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                Chunk-wise temporal smoothing and real-time chunking minimize execution jitter, ensuring smooth translation from Q<sub>model</sub> to P<sub>test</sub> and significantly improving success rate (right).
+                                Space mirroring augmentation utilizes mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance, leading to improved success rate and throughput. Chunk-wise temporal smoothing and real-time chunking minimize execution jitter, ensuring smooth translation from Q<sub>model</sub> to P<sub>test</sub> and significantly improving success rate (right).
                             </i>
                             <div></div>
                         </div>
@@ -669,6 +654,7 @@ export default function Home() {
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
+                                <ConsistencyBarChart8 />
                                 <ConsistencyBarChart9 />
                                 <ConsistencyBarChart10 />
                             </div>
@@ -680,8 +666,6 @@ export default function Home() {
                             </i>
                             <div></div>
                         </div>
-
-
 
 
                         <div className="w-full flex flex-col items-center px-6">
