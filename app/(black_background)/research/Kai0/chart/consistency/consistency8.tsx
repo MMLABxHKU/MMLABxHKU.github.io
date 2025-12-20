@@ -27,9 +27,9 @@ import {
 
 const chartData = [
     { trick: "sync", absolute: 36.7, absolute_std: [4, 4], delta: 36.7, delta_std: [4.7, 4.7], },
-    { trick: "+ inchunk smoothing", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
-    { trick: "+ temporal smoothing", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
-    { trick: "+ real-time chunking", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "+ inchunk\nsmooth", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
+    { trick: "+ temp\nsmooth", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "+ RTC", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
 ]
 
 
@@ -68,7 +68,30 @@ export function ConsistencyBarChart8() {
                             tickLine={false}
                             tickMargin={6}
                             axisLine={false}
-                            tickFormatter={(value) => value}
+                            height={60}
+                            angle={0}
+                            textAnchor="middle"
+                            tick={(props: any) => {
+                                const { x, y, payload } = props;
+                                return (
+                                    <g transform={`translate(${x},${y})`}>
+                                        <text
+                                            x={0}
+                                            y={0}
+                                            dy={16}
+                                            textAnchor="middle"
+                                            fill="#fff"
+                                            fontSize={10}
+                                        >
+                                            {payload.value.split('\n').map((line: string, i: number) => (
+                                                <tspan key={i} x={0} dy={i === 0 ? 0 : 14}>
+                                                    {line}
+                                                </tspan>
+                                            ))}
+                                        </text>
+                                    </g>
+                                );
+                            }}
                         />
                         <YAxis
                             yAxisId="left"

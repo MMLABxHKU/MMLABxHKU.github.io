@@ -628,7 +628,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                Time scaling on the full dataset, while affecting the model's success rate, can improve the overall execution efficiency of the model.
+                                Time scaling affects success rate to some extent while maintaining throughput without significant degradation, especially for models predicting delta actions.
                             </i>
                             <div></div>
                         </div>
@@ -645,7 +645,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                Space mirroring augmentation utilizes mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance, leading to improved success rate and throughput. Chunk-wise temporal smoothing and real-time chunking minimize execution jitter, ensuring smooth translation from Q<sub>model</sub> to P<sub>test</sub> and significantly improving success rate (right).
+                                Space mirroring augmentation comprehensively improves the model's overall performance across all metrics.
                             </i>
                             <div></div>
                         </div>
@@ -662,7 +662,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput and reducing recovery cost.
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution.
                             </i>
                             <div></div>
                         </div>

@@ -66,7 +66,30 @@ export function ConsistencyBarChart6() {
                             tickLine={false}
                             tickMargin={6}
                             axisLine={false}
-                            tickFormatter={(value) => value}
+                            height={60}
+                            angle={0}
+                            textAnchor="middle"
+                            tick={(props: any) => {
+                                const { x, y, payload } = props;
+                                return (
+                                    <g transform={`translate(${x},${y})`}>
+                                        <text
+                                            x={0}
+                                            y={0}
+                                            dy={16}
+                                            textAnchor="middle"
+                                            fill="#fff"
+                                            fontSize={10}
+                                        >
+                                            {payload.value.split('\n').map((line: string, i: number) => (
+                                                <tspan key={i} x={0} dy={i === 0 ? 0 : 14}>
+                                                    {line}
+                                                </tspan>
+                                            ))}
+                                        </text>
+                                    </g>
+                                );
+                            }}
                         />
                         <YAxis
                             yAxisId="left"
