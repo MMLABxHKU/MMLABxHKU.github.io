@@ -455,7 +455,7 @@ export default function Home() {
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl flex flex-col items-center">
 
-                                <b>Distribution generation of P<sub>train</sub>, Q<sub>model</sub> and P<sub>test</sub>.</b>
+                                Distribution dynamics of <b>P<sub>train</sub></b>, <b>Q<sub>model</sub></b> and <b>P<sub>test</sub></b>.
                                 <br />
                                 {/* <p>
                                 P<sub>train</sub> = ExpertDemo(Q<sub>human</sub>), 
