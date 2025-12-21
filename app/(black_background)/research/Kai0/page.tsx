@@ -711,7 +711,7 @@ export default function Home() {
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
                             <p className="w-full leading-relaxed max-w-4xl">
-                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation (cite xx) guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation (cite Model soups) guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                             </p>
                             <div></div>
                         </div>
