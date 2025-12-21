@@ -71,7 +71,8 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
     const handleLoadedMetadata = () => {
       if (videoRef.current) {
         updateDimensions();
-        setDuration(videoRef.current.duration || 0);
+        const videoDuration = videoRef.current.duration || 0;
+        setDuration(videoDuration);
       }
     };
 
@@ -86,6 +87,14 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
 
     const video = videoRef.current;
     if (video) {
+      // 检查视频是否已经加载完成
+      if (video.readyState >= 1) {
+        const videoDuration = video.duration || 0;
+        if (videoDuration > 0) {
+          setDuration(videoDuration);
+        }
+      }
+      
       video.addEventListener('loadedmetadata', handleLoadedMetadata);
       video.addEventListener('loadeddata', updateDimensions);
       video.addEventListener('timeupdate', handleTimeUpdate);
@@ -150,44 +159,36 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
     }
   }, [activeIndex, chartData]);
 
-  const handleProgressClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!progressBarRef.current || !videoRef.current || chartData.length === 0 || !duration) return;
-    const rect = progressBarRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const percentage = Math.max(0, Math.min(1, x / rect.width));
+  const updateProgressPosition = useCallback((clientX: number) => {
+    if (!progressBarRef.current || chartData.length === 0) {
+      return;
+    }
     
-    // 更新视频时间
-    const newTime = percentage * duration;
-    videoRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
+    const rect = progressBarRef.current.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const percentage = Math.max(0, Math.min(1, x / rect.width));
     
     // 更新图表选中
     const targetIndex = Math.floor(percentage * (chartData.length - 1));
     setActiveIndex(targetIndex);
-  };
-
-  const handleProgressDrag = useCallback((e: MouseEvent) => {
-    if (!progressBarRef.current || !videoRef.current || chartData.length === 0 || !duration) return;
-    const rect = progressBarRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const percentage = Math.max(0, Math.min(1, x / rect.width));
     
-    // 更新视频时间
-    const newTime = percentage * duration;
-    videoRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-    
-    // 更新图表选中
-    const targetIndex = Math.floor(percentage * (chartData.length - 1));
-    setActiveIndex(targetIndex);
+    // 更新视频时间（如果视频和duration已加载）
+    if (videoRef.current && duration > 0) {
+      const newTime = percentage * duration;
+      videoRef.current.currentTime = newTime;
+      setCurrentTime(newTime);
+    }
   }, [chartData.length, duration]);
 
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
     setIsDragging(true);
-    handleProgressClick(e);
+    
+    // 立即更新位置
+    updateProgressPosition(e.clientX);
     
     const handleMouseMove = (e: MouseEvent) => {
-      handleProgressDrag(e);
+      updateProgressPosition(e.clientX);
     };
     
     const handleMouseUp = () => {
@@ -214,7 +215,9 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
 
   // 处理图表点击事件
   const handleChartClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!chartContainerRef.current || !videoRef.current || chartData.length === 0 || !duration) return;
+    if (!chartContainerRef.current || chartData.length === 0) {
+      return;
+    }
     
     const rect = chartContainerRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -224,10 +227,12 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
     const targetIndex = Math.floor(percentage * (chartData.length - 1));
     setActiveIndex(targetIndex);
     
-    // 更新视频时间
-    const newTime = percentage * duration;
-    videoRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
+    // 更新视频时间（如果视频和duration已加载）
+    if (videoRef.current && duration > 0) {
+      const newTime = percentage * duration;
+      videoRef.current.currentTime = newTime;
+      setCurrentTime(newTime);
+    }
   };
 
   return (
@@ -377,7 +382,6 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
           <div
             ref={progressBarRef}
             className="relative h-2 bg-muted rounded-full cursor-pointer group"
-            onClick={handleProgressClick}
             onMouseDown={handleMouseDown}
           >
             <div
