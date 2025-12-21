@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useEffect, useState, useCallback } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Line, LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, ReferenceLine, Label } from "recharts";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Line, LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { ChartContainer, ChartTooltip, type ChartConfig } from "@/components/ui/chart";
 
 import { stageData } from "./stage-data";
@@ -15,9 +15,12 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function StageVideo1() {
+  const [activeTab, setActiveTab] = useState(stageData[0]?.title || "");
+
   return (
     <Tabs
-      defaultValue={stageData[0]?.title}
+      value={activeTab}
+      onValueChange={setActiveTab}
       className="w-full flex flex-col items-center"
     >
       <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 mt-6 bg-zinc-900/50 border border-zinc-800">
@@ -32,149 +35,212 @@ export function StageVideo1() {
         ))}
       </TabsList>
 
-      {stageData.map((stage) => {
-        const chartData = stage.evaluationData1.map((item) => ({
-          frame_idx: item.frame_idx,
-          relative_advantage: item.relative_advantage,
-        }));
+      <div className="relative w-full">
+        {stageData.map((stage) => {
+          const chartData = stage.evaluationData.map((item) => ({
+            frame_idx: item.frame_idx,
+            relative_advantage: item.relative_advantage,
+          }));
 
-        return (
-          <VideoWithChart key={stage.video} stage={stage} chartData={chartData} />
-        );
-      })}
+          return (
+            <VideoWithChart 
+              key={stage.title} 
+              stage={stage} 
+              chartData={chartData}
+              isActive={activeTab === stage.title}
+            />
+          );
+        })}
+      </div>
     </Tabs>
   );
 }
 
-function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], chartData: Array<{ frame_idx: number; relative_advantage: number }> }) {
+function VideoWithChart({ 
+  stage, 
+  chartData, 
+  isActive 
+}: { 
+  stage: typeof stageData[0]; 
+  chartData: Array<{ frame_idx: number; relative_advantage: number }>; 
+  isActive: boolean;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const videoContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
-  const chartContainerRef = useRef<HTMLDivElement>(null);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [activeIndex, setActiveIndex] = useState<number | undefined>(undefined);
+  
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isDragging, setIsDragging] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number } | null>(null);
-
-  useEffect(() => {
-    const updateDimensions = () => {
-      if (videoRef.current) {
-        const video = videoRef.current;
-        const rect = video.getBoundingClientRect();
-        setDimensions({ width: rect.width, height: rect.height });
-      }
-    };
-
-    const handleLoadedMetadata = () => {
-      if (videoRef.current) {
-        updateDimensions();
-        const videoDuration = videoRef.current.duration || 0;
-        setDuration(videoDuration);
-      }
-    };
-
-    const handleTimeUpdate = () => {
-      if (videoRef.current && !isDragging) {
-        setCurrentTime(videoRef.current.currentTime);
-      }
-    };
-
-    const handlePlay = () => setIsPlaying(true);
-    const handlePause = () => setIsPlaying(false);
-
+  
+  // 使用 ref 来避免闭包问题（同步当前状态）
+  const isActiveRef = useRef(isActive);
+  const isDraggingRef = useRef(isDragging);
+  isActiveRef.current = isActive;
+  isDraggingRef.current = isDragging;
+  const getActualDuration = () => {
     const video = videoRef.current;
-    if (video) {
-      // 检查视频是否已经加载完成
-      if (video.readyState >= 1) {
-        const videoDuration = video.duration || 0;
-        if (videoDuration > 0) {
-          setDuration(videoDuration);
-        }
+    if (video && !Number.isNaN(video.duration) && video.duration > 0) {
+      return video.duration;
+    }
+    return duration;
+  };
+  
+  // 当 tab 激活/停用时，控制视频播放和同步状态
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (!isActive) {
+      // Tab 变为不活动时，暂停视频（如果正在播放）
+      if (!video.paused) {
+        video.pause();
       }
-      
-      video.addEventListener('loadedmetadata', handleLoadedMetadata);
-      video.addEventListener('loadeddata', updateDimensions);
-      video.addEventListener('timeupdate', handleTimeUpdate);
-      video.addEventListener('play', handlePlay);
-      video.addEventListener('pause', handlePause);
+      return;
     }
 
-    updateDimensions();
-    
-    const resizeObserver = new ResizeObserver(updateDimensions);
-    if (videoRef.current) {
-      resizeObserver.observe(videoRef.current);
+    let cancelled = false;
+    let intervalId: number | undefined;
+
+    const syncVideoState = () => {
+      const v = videoRef.current;
+      if (!v || cancelled) return false;
+
+      const videoDuration = getActualDuration();
+      const videoCurrentTime = v.currentTime || 0;
+      const videoIsPlaying = !v.paused;
+      
+      if (videoDuration > 0) {
+        setDuration(videoDuration);
+        setCurrentTime(videoCurrentTime);
+        setIsPlaying(videoIsPlaying);
+        
+        if (chartData.length > 0) {
+          const progress = videoCurrentTime / videoDuration;
+          const targetIndex = Math.floor(progress * (chartData.length - 1));
+          setActiveIndex(targetIndex);
+        }
+        return true;
+      }
+      return false;
+    };
+
+    const stopPolling = () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = undefined;
+      }
+    };
+
+    // 如果视频已经加载，立即同步；否则定时尝试直到拿到 duration
+    if (!syncVideoState()) {
+      const handleLoadedMetadata = () => {
+        if (syncVideoState()) {
+          stopPolling();
+        }
+      };
+      video.addEventListener('loadedmetadata', handleLoadedMetadata, { once: true });
+      video.load();
+      intervalId = window.setInterval(() => {
+        if (syncVideoState()) {
+          stopPolling();
+        }
+      }, 200);
+
+      return () => {
+        cancelled = true;
+        stopPolling();
+        video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      };
     }
-    
-    window.addEventListener('resize', updateDimensions);
 
     return () => {
-      if (video) {
-        video.removeEventListener('loadedmetadata', handleLoadedMetadata);
-        video.removeEventListener('loadeddata', updateDimensions);
-        video.removeEventListener('timeupdate', handleTimeUpdate);
-        video.removeEventListener('play', handlePlay);
-        video.removeEventListener('pause', handlePause);
-      }
-      resizeObserver.disconnect();
-      window.removeEventListener('resize', updateDimensions);
+      cancelled = true;
+      stopPolling();
     };
-  }, [isDragging]);
+  }, [isActive, chartData.length]);
 
-  // 根据视频时间更新activeIndex
+  // 监听视频播放状态 - 不负责初始化
   useEffect(() => {
-    if (duration > 0 && !isDragging) {
-      const progress = currentTime / duration;
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleTimeUpdate = () => {
+      // 使用 ref 来检查，避免闭包问题
+      if (!isDraggingRef.current && isActiveRef.current) {
+        setCurrentTime(video.currentTime);
+        const actualDuration = getActualDuration();
+        if (actualDuration > 0 && duration === 0) {
+          setDuration(actualDuration);
+        }
+      }
+    };
+
+    const handlePlay = () => {
+      setIsPlaying(true);
+    };
+    
+    const handlePause = () => {
+      setIsPlaying(false);
+    };
+
+    // 添加事件监听器
+    video.addEventListener('timeupdate', handleTimeUpdate);
+    video.addEventListener('play', handlePlay);
+    video.addEventListener('pause', handlePause);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+      video.removeEventListener('play', handlePlay);
+      video.removeEventListener('pause', handlePause);
+    };
+  }, [duration]);
+
+
+  // 根据视频时间更新activeIndex - 使用 ref 避免过度渲染
+  useEffect(() => {
+    const actualDuration = getActualDuration();
+    if (isActiveRef.current && actualDuration > 0 && !isDraggingRef.current && chartData.length > 0) {
+      const progress = currentTime / actualDuration;
       const targetIndex = Math.floor(progress * (chartData.length - 1));
       setActiveIndex(targetIndex);
     }
-  }, [currentTime, duration, chartData.length, isDragging]);
+  }, [currentTime, chartData.length]);
 
-  // 计算tooltip和虚线位置
-  useEffect(() => {
-    if (activeIndex !== undefined && chartData[activeIndex] && chartContainerRef.current) {
-      const container = chartContainerRef.current;
-      const containerRect = container.getBoundingClientRect();
-      
-      // 计算数据点在图表中的位置
-      const dataLength = chartData.length;
-      const minValue = Math.min(...chartData.map(d => d.relative_advantage));
-      const maxValue = Math.max(...chartData.map(d => d.relative_advantage));
-      
-      // X位置：根据activeIndex在数据数组中的位置
-      const xPercent = dataLength > 1 ? activeIndex / (dataLength - 1) : 0.5;
-      const xPos = containerRect.width * xPercent;
-      
-      // Y位置：根据relative_advantage的值
-      const currentValue = chartData[activeIndex].relative_advantage;
-      const yPercent = maxValue > minValue ? (maxValue - currentValue) / (maxValue - minValue) : 0.5;
-      const yPos = containerRect.height * yPercent;
-      
-      setTooltipPosition({ x: xPos, y: yPos });
-    } else {
-      setTooltipPosition(null);
-    }
+  // 计算tooltip X位置（只计算X，Y固定在底部）
+  const getTooltipX = useCallback(() => {
+    if (chartData.length === 0) return 0;
+    const xPercent = chartData.length > 1 ? activeIndex / (chartData.length - 1) : 0.5;
+    return xPercent * 100; // 返回百分比
+  }, [activeIndex, chartData.length]);
+
+  // 计算虚线Y位置
+  const getLineY = useCallback(() => {
+    if (!chartData[activeIndex]) return 0;
+    const minValue = Math.min(...chartData.map(d => d.relative_advantage));
+    const maxValue = Math.max(...chartData.map(d => d.relative_advantage));
+    const currentValue = chartData[activeIndex].relative_advantage;
+    const yPercent = maxValue > minValue ? (maxValue - currentValue) / (maxValue - minValue) : 0.5;
+    return yPercent * 100; // 返回百分比
   }, [activeIndex, chartData]);
 
   const updateProgressPosition = useCallback((clientX: number) => {
-    if (!progressBarRef.current || chartData.length === 0) {
-      return;
-    }
+    if (!progressBarRef.current || chartData.length === 0) return;
     
     const rect = progressBarRef.current.getBoundingClientRect();
     const x = clientX - rect.left;
     const percentage = Math.max(0, Math.min(1, x / rect.width));
+    const actualDuration = getActualDuration();
     
     // 更新图表选中
     const targetIndex = Math.floor(percentage * (chartData.length - 1));
     setActiveIndex(targetIndex);
     
-    // 更新视频时间（如果视频和duration已加载）
-    if (videoRef.current && duration > 0) {
-      const newTime = percentage * duration;
+    // 更新视频时间
+    if (videoRef.current && actualDuration > 0) {
+      const newTime = percentage * actualDuration;
       videoRef.current.currentTime = newTime;
       setCurrentTime(newTime);
     }
@@ -183,8 +249,6 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(true);
-    
-    // 立即更新位置
     updateProgressPosition(e.clientX);
     
     const handleMouseMove = (e: MouseEvent) => {
@@ -201,47 +265,68 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
     document.addEventListener('mouseup', handleMouseUp);
   };
 
-  const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
-
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  };
-
-  // 处理图表点击事件
   const handleChartClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!chartContainerRef.current || chartData.length === 0) {
-      return;
+    const video = videoRef.current;
+    if (!video) return;
+    
+    const actualDuration = getActualDuration();
+    if (actualDuration > 0 && duration === 0) {
+      setDuration(actualDuration);
+      setCurrentTime(video.currentTime || 0);
+      setIsPlaying(!video.paused);
     }
     
-    const rect = chartContainerRef.current.getBoundingClientRect();
+    const container = e.currentTarget;
+    const rect = container.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const percentage = Math.max(0, Math.min(1, x / rect.width));
     
-    // 更新图表选中
     const targetIndex = Math.floor(percentage * (chartData.length - 1));
     setActiveIndex(targetIndex);
     
-    // 更新视频时间（如果视频和duration已加载）
-    if (videoRef.current && duration > 0) {
-      const newTime = percentage * duration;
-      videoRef.current.currentTime = newTime;
+    if (actualDuration > 0) {
+      const newTime = percentage * actualDuration;
+      video.currentTime = newTime;
       setCurrentTime(newTime);
     }
   };
 
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    
+    const actualDuration = getActualDuration();
+    if (actualDuration > 0 && duration === 0) {
+      setDuration(actualDuration);
+      setCurrentTime(video.currentTime || 0);
+      setIsPlaying(!video.paused);
+      
+      if (chartData.length > 0) {
+        const progress = video.currentTime / actualDuration;
+        const targetIndex = Math.floor(progress * (chartData.length - 1));
+        setActiveIndex(targetIndex);
+      }
+    }
+    
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  };
+
+  const actualDuration = getActualDuration();
+  const progress = actualDuration > 0 ? (currentTime / actualDuration) * 100 : 0;
+  const tooltipX = getTooltipX();
+  const lineY = getLineY();
+
   return (
-    <TabsContent
-      value={stage.title}
-      className="w-full flex justify-center"
+    <div
+      aria-hidden={!isActive}
+      className={`w-full flex justify-center ${isActive ? "relative z-10" : "absolute inset-0 opacity-0 pointer-events-none z-0"}`}
     >
       <div className="relative flex flex-col items-center px-6 w-full">
-        <div ref={containerRef} className="relative w-full max-w-4xl">
+        <div ref={videoContainerRef} className="relative w-full max-w-4xl">
           <video
             ref={videoRef}
             autoPlay={false}
@@ -249,6 +334,7 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
             loop
             controls={false}
             playsInline
+            preload="metadata"
             className="w-full h-auto object-cover object-center rounded-sm bg-gradient-loading select-none block"
           >
             <source src={stage.video} type="video/mp4" />
@@ -270,114 +356,100 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
             )}
           </button>
 
-          {dimensions.width > 0 && dimensions.height > 0 && (
-            <div 
-              ref={chartContainerRef}
-              className="absolute pointer-events-auto rounded-sm overflow-visible cursor-pointer"
-              style={{ 
-                top: 0,
-                left: 0,
-                width: `${dimensions.width}px`,
-                height: `${dimensions.height}px`
-              }}
-              onClick={handleChartClick}
+          {/* 图表覆盖层 - 使用绝对定位自动匹配视频尺寸 */}
+          <div 
+            className="absolute inset-0 pointer-events-auto rounded-sm overflow-visible cursor-pointer"
+            onClick={handleChartClick}
+          >
+            <ChartContainer 
+              key={`${stage.title}-container`}
+              config={chartConfig} 
+              className="h-full w-full [&_.recharts-surface]:outline-none [&_.recharts-cartesian-axis]:opacity-0"
             >
-              <ChartContainer 
-                config={chartConfig} 
-                className="h-full w-full [&_.recharts-surface]:outline-none [&_.recharts-cartesian-axis]:opacity-0 [&_.recharts-wrapper]:!w-full [&_.recharts-wrapper]:!h-full [&_.recharts-surface]:!w-full [&_.recharts-surface]:!h-full"
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart
-                    data={chartData}
-                    margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
-                  >
-                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-                        <XAxis
-                          dataKey="frame_idx"
-                          tickLine={false}
-                          axisLine={false}
-                          tick={false}
-                          domain={['dataMin', 'dataMax']}
-                          width={0}
-                          height={0}
-                        />
-                        <YAxis
-                          tickLine={false}
-                          axisLine={false}
-                          tick={false}
-                          domain={['dataMin', 'dataMax']}
-                          width={0}
-                          height={0}
-                        />
-                        <ChartTooltip
-                          cursor={{ stroke: '#ef4444', strokeDasharray: '5 5', strokeWidth: 1 }}
-                          content={({ active, payload }) => {
-                            if (active && payload && payload.length) {
-                              const value = payload[0].value;
-                              const displayValue = typeof value === 'number' ? value.toFixed(2) : String(value);
-                              return (
-                                <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs">
-                                  {displayValue}
-                                </div>
-                              );
-                            }
-                            return null;
-                          }}
-                        />
-                        <Line
-                          type="monotone"
-                          dataKey="relative_advantage"
-                          stroke="#4286F3"
-                          strokeWidth={2.5}
-                          dot={false}
-                          activeDot={{ r: 5, fill: '#4286F3', stroke: '#fff', strokeWidth: 2 }}
-                        />
-                      </LineChart>
-                    </ResponsiveContainer>
-                  </ChartContainer>
-                  
-                  {/* 自定义虚线 - 从底部到数据点 */}
-                  {tooltipPosition && activeIndex !== undefined && dimensions.height > 0 && (
-                    <svg
-                      className="absolute pointer-events-none z-10"
-                      style={{
-                        left: 0,
-                        top: 0,
-                        width: '100%',
-                        height: '100%'
-                      }}
-                    >
-                      <line
-                        x1={tooltipPosition.x}
-                        y1={tooltipPosition.y}
-                        x2={tooltipPosition.x}
-                        y2={dimensions.height}
-                        stroke="#ffffff"
-                        strokeWidth="2"
-                        strokeDasharray="5 5"
-                      />
-                    </svg>
-                  )}
-                  
-                  {/* 自定义tooltip - 滑块控制时显示，底部对齐视频底部 */}
-                  {tooltipPosition && activeIndex !== undefined && chartData[activeIndex] && dimensions.height > 0 && (
-                    <div
-                      className="absolute pointer-events-none z-20"
-                      style={{
-                        left: `${tooltipPosition.x}px`,
-                        bottom: '0px',
-                        transform: 'translate(-50%, 0)'
-                      }}
-                    >
-                      <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs whitespace-nowrap">
-                        {chartData[activeIndex].relative_advantage.toFixed(2)}
-                      </div>
-                    </div>
-                  )}
+              <ResponsiveContainer key={`${stage.title}-responsive`} width="100%" height="100%">
+                <LineChart
+                  key={`${stage.title}-linechart`}
+                  data={chartData}
+                  margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                  <XAxis
+                    dataKey="frame_idx"
+                    tickLine={false}
+                    axisLine={false}
+                    tick={false}
+                    domain={['dataMin', 'dataMax']}
+                    width={0}
+                    height={0}
+                  />
+                  <YAxis
+                    tickLine={false}
+                    axisLine={false}
+                    tick={false}
+                    domain={['dataMin', 'dataMax']}
+                    width={0}
+                    height={0}
+                  />
+                  <ChartTooltip
+                    cursor={{ stroke: '#ef4444', strokeDasharray: '5 5', strokeWidth: 1 }}
+                    content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        const value = payload[0].value;
+                        const displayValue = typeof value === 'number' ? value.toFixed(2) : String(value);
+                        return (
+                          <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs">
+                            {displayValue}
+                          </div>
+                        );
+                      }
+                      return null;
+                    }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="relative_advantage"
+                    stroke="#4286F3"
+                    strokeWidth={2.5}
+                    dot={false}
+                    activeDot={{ r: 5, fill: '#4286F3', stroke: '#fff', strokeWidth: 2 }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </ChartContainer>
+            
+            {/* 自定义白色虚线 - 从数据点到底部 */}
+            {chartData[activeIndex] && (
+              <>
+                <div
+                  className="absolute pointer-events-none"
+                  style={{
+                    left: `${tooltipX}%`,
+                    top: `${lineY}%`,
+                    bottom: 0,
+                    width: '2px',
+                    background: 'repeating-linear-gradient(to bottom, white 0, white 5px, transparent 5px, transparent 10px)'
+                  }}
+                />
+                
+                {/* Tooltip - 固定在底部 */}
+                <div
+                  className="absolute pointer-events-none z-20"
+                  style={{
+                    left: `${tooltipX}%`,
+                    bottom: 0,
+                    transform: 'translateX(-50%)'
+                  }}
+                >
+                  <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs whitespace-nowrap">
+                    {chartData[activeIndex].relative_advantage.toFixed(2)}
+                  </div>
                 </div>
-              )}
+              </>
+            )}
+          </div>
         </div>
-        {/* Progress Bar */}
+
+        {/* 进度条 */}
         <div className="w-full max-w-4xl mt-4">
           <div
             ref={progressBarRef}
@@ -395,6 +467,6 @@ function VideoWithChart({ stage, chartData }: { stage: typeof stageData[0], char
           </div>
         </div>
       </div>
-    </TabsContent>
+    </div>
   );
 }

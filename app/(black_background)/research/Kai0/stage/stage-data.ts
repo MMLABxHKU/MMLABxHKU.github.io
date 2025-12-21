@@ -8677,17 +8677,17 @@ const evaluationData1 = [
 export const stageData = [
     {
         title: "Task A",
-        evaluationData1,
+        evaluationData: evaluationData1,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
     {
         title: "Task B",
-        evaluationData1,
+        evaluationData: evaluationData1,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
     {
         title: "Task C",
-        evaluationData1,
+        evaluationData: evaluationData1,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
 ]
