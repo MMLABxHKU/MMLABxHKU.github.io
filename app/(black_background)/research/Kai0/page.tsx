@@ -401,7 +401,7 @@ export default function Home() {
                         </div>
                         <div className="-mt-6 xl:-mt-8 flex flex-row gap-6 justify-center z-50">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-6xl text-muted-foreground">
+                            <i className="w-full leading-relaxed max-w-6xl text-muted-foreground text-center">
                                 Video Description todo
                             </i>
                             <div></div>
