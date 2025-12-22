@@ -125,12 +125,12 @@ export default function TextTip({
                   href={tipListNow[Number(num)].link!}
                   target="_blank"
                 >
-                  <sup>{Number(num) + offset}</sup>
+                  <sup>{Number(num) + offset}</sup>{' '}
                   {tipListNow[Number(num)].content}
                 </Link>
               ) : (
                 <>
-                  <sup>{Number(num) + offset}</sup>
+                  <sup>{Number(num) + offset}</sup>{' '}
                   {tipListNow[Number(num)].content}
                 </>
               )}
