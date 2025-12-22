@@ -735,7 +735,10 @@ export default function Home() {
                                 <p className="w-full leading-relaxed max-w-4xl">
                                     We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                                 </p>
-                            `} tipList={{1:{link:'https://proceedings.mlr.press/v162/wortsman22a.html',content:'Model Soups (Wortsman, et al., 2021)'}}} />
+                            `} 
+                            tipList={{1:{link:'https://proceedings.mlr.press/v162/wortsman22a.html',content:'Model Soups (Wortsman, et al., 2021)'}}} 
+                            offset={0}
+                            />
                         </div>
 
 
@@ -834,7 +837,10 @@ export default function Home() {
                                 <p className="w-full leading-relaxed max-w-4xl">
                                     Long-horizon manipulation inheretly is hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
                                 </p>
-                            `} tipList={{1:{link:'https://www.pi.website/blog/pistar06',content:'π<sub>0.6</sub><sup>*</sup> (2025)'}}} />
+                            `} 
+                            tipList={{1:{link:'https://www.pi.website/blog/pistar06',content:'π<sub>0.6</sub><sup>*</sup> (2025)'}}}
+                            offset={1}
+                            />
                         </div>
 
 

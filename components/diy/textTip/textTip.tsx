@@ -5,7 +5,15 @@ import Link from "next/link"
 
 
 let timeSet: any = null;
-export default function textTip({ html, tipList }: { html: string; tipList: any }) {
+export default function TextTip({
+  html,
+  tipList,
+  offset = 0,
+}: {
+  html: string;
+  tipList: Record<number, any>;
+  offset?: number;
+}) {
   const [htmlNow, setHtmlNow] = useState('');
   const [tipListNow, setTipListNow] = useState<any>({});
 
@@ -13,7 +21,7 @@ export default function textTip({ html, tipList }: { html: string; tipList: any 
     if (!html) return;
 
     Object.keys(tipList).map(num => {
-      html = html.replace(`<sup>${num}</sup>`, `<sup id="id${num}">${num}</sup>`);
+      html = html.replace(`<sup>${num}</sup>`, `<sup id="id${num}">${Number(num) + offset}</sup>`);
     });
     setHtmlNow(html);
     setTipListNow(tipList);
@@ -76,7 +84,7 @@ export default function textTip({ html, tipList }: { html: string; tipList: any 
               key={num}
             >
               {tipListNow[num].link ? (
-                <Link className="animated-underline" href={tipListNow[num].link} target="_blank"><sup className="overflow-hidden">{num}</sup>{tipListNow[num].content}</Link>
+                <Link className="animated-underline" href={tipListNow[num].link} target="_blank"><sup className="overflow-hidden">{Number(num) + offset}</sup>{tipListNow[num].content}</Link>
               ) : (
                 <>
                   <sup className="overflow-hidden">{num}</sup>
