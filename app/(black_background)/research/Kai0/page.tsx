@@ -605,38 +605,56 @@ export default function Home() {
                         {/* Back to basics, we propose two "behind the scenes" strategies that actually work:   */}
 
 
-
-                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
-                                <li>
-                                    <b>
-                                        Data Scope.
-                                    </b>
-                                    <ol className="space-y-3 w-full leading-relaxed max-w-4xl list-[lower-alpha] px-4 md:px-6 mt-3">
-                                        <li>
-                                            <b>
-                                                DAgger (Iterative Correction):&nbsp;
-                                            </b>
-                                            Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment (cite DAgger, HG-DAgger). We inject on-policy recovery trajectories—utilizing both heuristic methods and iterative DAgger—to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
-                                        </li>
-                                        {/* Offline demonstrations often miss some failure modes that only emerge during real-world deployment. We inject on-policy recovery trajectories, both heurisitic and iterative DAgger, to fill these missing modes. By integrating these "corrected" trajectories, we expand $$P_{train}$$ towards underrepresented but critical regions of $$P_{real}$$. The learned policy $$Q_{model}$$ better covers these modes in $$P_{real}$$, ensuring the execution  $$P_{test}$$is resilient to the inevitable drift found in $$P_{real}$$.  */}
-                                        <li>
-                                            <b>
-                                                Spatio-Temporal Augmentation:&nbsp;
-                                            </b>
-                                            To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
-                                        </li>
-                                        {/* To further bridge the $$P_{train}$$ vs. $$P_{test}$$gap, we employ two specific augmentations. At the output level, time-scaling introduces down-sampled trajectories to adapt to varying control frequencies, while at the input level, wrist-mirroring enhances the model's spatial understanding of dual-arm coordination. */}
-                                    </ol>
-                                </li>
-                                <li>
-                                    <b>
-                                        Inference Scope:&nbsp;
-                                    </b>
-                                    To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (cite RTC). This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
-                                </li>
-                                {/* To address the $$Inference()$$ function from $$Q_{model}$$ to $$P_{test}$$, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking (RTC cite). This effectively minimizes execution jitter and ensures the policy's intent translates flawlessly to real-robot execution. */}
-                            </ol>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed max-w-4xl list-decimal px-4 md:px-6">
+                                    <li>
+                                        <b>
+                                            Data Scope.
+                                        </b>
+                                        <ol class="space-y-3 w-full leading-relaxed max-w-4xl list-[lower-alpha] px-4 md:px-6 mt-3">
+                                            <li>
+                                                <b>
+                                                    DAgger (Iterative Correction):&nbsp;
+                                                </b>
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
+                                            </li>
+                                            <li>
+                                                <b>
+                                                    Spatio-Temporal Augmentation:&nbsp;
+                                                </b>
+                                                To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Inference Scope:&nbsp;
+                                        </b>
+                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>2</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{
+                                1:{
+                                    link:'https://arxiv.org/abs/1011.0686',
+                                    content: (
+                                        <>
+                                        DAgger (Ross et al., 2011)
+                                        </>
+                                    ),
+                                },
+                                2:{
+                                    link:'https://arxiv.org/abs/2506.07339',
+                                    content: (
+                                        <>
+                                        Real-Time Action Chunking (Kevin et al., 2025)
+                                        </>
+                                    ),
+                                }
+                            }}
+                            offset={0}
+                            />
                         </div>
 
 
