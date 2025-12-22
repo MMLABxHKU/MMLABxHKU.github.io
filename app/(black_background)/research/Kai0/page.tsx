@@ -57,106 +57,87 @@ import {
 
 
 
-// const paths: { path: string; url: string; }[] = [
-//     {
-//         path: "MMLab",
-//         url: "/"
-//     },
-// ]
+const paths: { path: string; url: string; }[] = [
+    {
+        path: "MMLab",
+        url: "/"
+    },
+]
 
 
 
 export default function Home() {
     return (
         <main>
+            {/* Progress Bar */}
+            <ProgressBar />
 
-                {/* Progress Bar */}
-                <ProgressBar />
+            {/* Spacer for top positioning */}
+            <div className="w-full h-48"></div>
 
-                {/* Landing */}
-                {/* <div className="w-full h-48 flex flex-row justify-center bg-fixed">
-                    <div className="w-full h-full max-w-6xl px-6 flex flex-col justify-end pb-10 gap-6">
-                        <Breadcrumb>
-                            <BreadcrumbList>
-                                {paths.map((path) => (
-                                    <BreadcrumbList key={path.path}>
-                                        <BreadcrumbLink asChild>
-                                            <Link href={path.url} className="text-foreground animated-underline hover:text-mred">
-                                                {path.path}
-                                            </Link>
-                                        </BreadcrumbLink>
-                                        <BreadcrumbSeparator>
-                                            <Slash className="text-foreground" />
-                                        </BreadcrumbSeparator>
-                                    </BreadcrumbList>
-                                ))}
-                            </BreadcrumbList>
-                        </Breadcrumb>
-                    </div>
-                </div> */}
-
-
-
-                <div className="w-full flex justify-center 2xl:justify-evenly">
-
-
-
-                    {/* navigator - hover to reveal */}
-                    <div className="fixed left-0 top-0 h-full w-8 z-50 hidden lg:block group/nav">
-                        {/* Hover trigger zone */}
-                        <div className="absolute left-0 top-0 h-full w-8" />
-                        
-                        {/* Navigator panel */}
-                        <div className="absolute left-0 top-0 h-full w-48 pl-6 pt-20 bg-gradient-to-r from-neutral-900/95 to-neutral-900/80 backdrop-blur-sm border-r border-neutral-700/50 -translate-x-full opacity-0 group-hover/nav:translate-x-0 group-hover/nav:opacity-100 transition-all duration-300 ease-out shadow-2xl shadow-black/50">
-                            <div className="flex flex-col gap-3">
-                                <Link className="select-none flex items-center gap-3 group" href="#methodology">
-                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
-                                        &nbsp;
-                                    </span>
-                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                        Methodology
-                                    </span>
-                                </Link>
-                                <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
-                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </span>
-                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                        Mode Consistency
-                                    </span>
-                                </Link>
-                                <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
-                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </span>
-                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                        Model Arithmetic
-                                    </span>
-                                </Link>
-                                <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
-                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </span>
-                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                        Stage Advantage
-                                    </span>
-                                </Link>
-                                <Link className="select-none flex items-center gap-3 group" href="#citation">
-                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
-                                        &nbsp;
-                                    </span>
-                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                        Citation
-                                    </span>
-                                </Link>
-                            </div>
+            {/* navigator - hover to reveal */}
+            <div className="fixed left-0 top-0 h-full w-8 z-40 hidden lg:block group/nav">
+                    {/* Hover trigger zone */}
+                    <div className="absolute left-0 top-0 h-full w-8" />
+                    
+                    {/* Navigator panel */}
+                    <div className="absolute left-0 top-0 h-full w-48 pl-6 pt-20 bg-gradient-to-r from-neutral-900/95 to-neutral-900/80 backdrop-blur-sm border-r border-neutral-700/50 -translate-x-full opacity-0 group-hover/nav:translate-x-0 group-hover/nav:opacity-100 transition-all duration-300 ease-out shadow-2xl shadow-black/50">
+                        <div className="flex flex-col gap-3">
+                            <Link className="select-none flex items-center gap-3 group" href="#introduction">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Introduction
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#methodology">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Methodology
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Mode Consistency
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Model Arithmetic
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Stage Advantage
+                                </span>
+                            </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#citation">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Citation
+                                </span>
+                            </Link>
                         </div>
                     </div>
-                    
+                </div>
 
 
-                    {/* transferable */}
-                    <div className="w-full max-w-6xl flex flex-col mt-48">
+                {/* Main content - centered */}
+                <div className="max-w-6xl mx-auto flex flex-col">
 
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-3xl">
@@ -281,10 +262,10 @@ export default function Home() {
                     
 
 
-                        <div className="mt-6">
+                        <div id="introduction" className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    “Veni, Vidi, Vici” — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    "Veni, Vidi, Vici" — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
 
@@ -1114,12 +1095,8 @@ export default function Home() {
 
 
 
-                    </div>
+                </div>
 
-
-
-                <div className="w-48 hidden 3xl:block"></div>
-            </div>
         </main>
     );
 }

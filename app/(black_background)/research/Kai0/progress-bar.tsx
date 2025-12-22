@@ -26,55 +26,58 @@ export function ProgressBar() {
       const methodologyEl = document.getElementById("methodology");
       const citationEl = document.getElementById("citation");
 
-      if (!methodologyEl || !citationEl) return;
+      if (methodologyEl && citationEl) {
+        const methodologyRect = methodologyEl.getBoundingClientRect();
+        const citationRect = citationEl.getBoundingClientRect();
 
-      const methodologyRect = methodologyEl.getBoundingClientRect();
-      const citationRect = citationEl.getBoundingClientRect();
+        // Show progress bar when methodology section is near top of viewport
+        const shouldShow = methodologyRect.top < 150 && citationRect.top > 200;
+        setIsVisible(shouldShow);
 
-      // Show progress bar when methodology section is near top of viewport
-      const shouldShow = methodologyRect.top < 150 && citationRect.top > 200;
-      setIsVisible(shouldShow);
+        if (shouldShow) {
+          // Calculate overall progress from methodology to citation
+          const startY = methodologyEl.offsetTop;
+          const endY = citationEl.offsetTop;
+          const currentScroll = window.scrollY + 150;
 
-      if (!shouldShow) return;
+          const totalDistance = endY - startY;
+          const scrolledDistance = currentScroll - startY;
+          const rawProgress = Math.max(0, Math.min(100, (scrolledDistance / totalDistance) * 100));
 
-      // Calculate overall progress from methodology to citation
-      const startY = methodologyEl.offsetTop;
-      const endY = citationEl.offsetTop;
-      const currentScroll = window.scrollY + 150;
+          // Smooth interpolation for ultra-smooth feel
+          const smoothingFactor = 0.15;
+          const smoothedProgress = lastProgressRef.current + (rawProgress - lastProgressRef.current) * smoothingFactor;
+          lastProgressRef.current = smoothedProgress;
 
-      const totalDistance = endY - startY;
-      const scrolledDistance = currentScroll - startY;
-      const rawProgress = Math.max(0, Math.min(100, (scrolledDistance / totalDistance) * 100));
+          // Direct DOM manipulation for maximum smoothness
+          if (progressRef.current) {
+            progressRef.current.style.width = `${smoothedProgress}%`;
+          }
 
-      // Smooth interpolation for ultra-smooth feel
-      const smoothingFactor = 0.15;
-      const smoothedProgress = lastProgressRef.current + (rawProgress - lastProgressRef.current) * smoothingFactor;
-      lastProgressRef.current = smoothedProgress;
+          // Determine current stage
+          const viewportMiddle = window.scrollY + window.innerHeight * 0.3;
 
-      // Direct DOM manipulation for maximum smoothness
-      if (progressRef.current) {
-        progressRef.current.style.width = `${smoothedProgress}%`;
-      }
-
-      // Determine current stage
-      const viewportMiddle = window.scrollY + window.innerHeight * 0.3;
-
-      for (let i = stages.length - 1; i >= 0; i--) {
-        const stageEl = document.getElementById(stages[i].id);
-        if (stageEl && stageEl.offsetTop <= viewportMiddle) {
-          setCurrentStage(stages[i]);
-          break;
+          for (let i = stages.length - 1; i >= 0; i--) {
+            const stageEl = document.getElementById(stages[i].id);
+            if (stageEl && stageEl.offsetTop <= viewportMiddle) {
+              setCurrentStage(stages[i]);
+              break;
+            }
+          }
         }
       }
 
-      // Continue animation loop
+      // Always continue animation loop
       rafRef.current = requestAnimationFrame(updateProgress);
     };
 
-    // Start the animation loop
-    rafRef.current = requestAnimationFrame(updateProgress);
+    // Start the animation loop after a short delay to ensure DOM is ready
+    const timeoutId = setTimeout(() => {
+      rafRef.current = requestAnimationFrame(updateProgress);
+    }, 100);
 
     return () => {
+      clearTimeout(timeoutId);
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
       }

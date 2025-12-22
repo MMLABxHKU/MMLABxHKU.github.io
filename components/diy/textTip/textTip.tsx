@@ -98,26 +98,24 @@ export default function TextTip({
   }, [html, tipList, offset]);
 
   return (
-    <div className="flex overflow-hidden">
-      <div className="flex flex-row gap-6 justify-center">
-        <div className='xl:hidden'></div>
-        <div className="hidden xl:block flex-1/7 pl-6" />
-
+    <div className="relative flex overflow-hidden justify-center">
+      <div className="w-full max-w-3xl px-6">
         <div
           id="htmlDiv"
-          className="xl:flex-5/7 overflow-hidden xl:px-3"
+          className="overflow-hidden"
           dangerouslySetInnerHTML={{ __html: htmlNow }}
         />
-
-        <div className='xl:hidden'></div>
-        <div className="hidden xl:block flex-1/7 pr-6 overflow-hidden text-xs">
+      </div>
+      
+      {/* Tips sidebar - absolute positioned to not affect centering */}
+      {Object.keys(tipListNow).length > 0 && (
+        <div className="hidden xl:block absolute right-0 top-0 w-48 pr-6 overflow-hidden text-xs">
           {Object.keys(tipListNow).map(num => (
             <div
               key={num}
               id={`tip${num}`}
               className="overflow-hidden"
               style={{ marginTop: 10 }}
-              // style={{ marginTop: tipListNow[Number(num)].top ?? 0 }}
             >
               {tipListNow[Number(num)].link ? (
                 <Link
@@ -137,7 +135,7 @@ export default function TextTip({
             </div>
           ))}
         </div>
-      </div>
+      )}
     </div>
   );
 }
