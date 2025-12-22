@@ -1076,21 +1076,29 @@ export default function Home() {
                                 </Link>
                             </h2>
                         </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="w-full max-w-3xl leading-relaxed text-muted-foreground list-decimal list-inside space-y-4">
-                                <li>
-                                    <span className="text-foreground font-medium">Not all robot data is created equal.</span> The quality and characteristics of training data significantly impact policy performance.
-                                </li>
-                                <li>
-                                    <span className="text-foreground font-medium">The capability of the base policy is crucial, but knowing how to rapidly evaluate and select a capable base policy is even more important.</span> A fast research iteration cycle is essential for developing intuition and understanding of base policy behavior.
-                                </li>
-                                <li>
-                                    <span className="text-foreground font-medium">Model arithmetic can surprisingly turn lead into gold.</span> Simple arithmetic operations on model weights can transform mediocre policies into high-performing ones.
-                                </li>
-                                <li>
-                                    <span className="text-foreground font-medium">Stage-conditioned advantage estimation still has room for improvement.</span> Revisiting fundamental concepts from reinforcement learning may unlock further gains.
-                                </li>
-                            </ol>
+
+
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6 text-muted-foreground">
+                                    <li>
+                                        <span class="text-foreground font-medium">Not all robot data is created equal.</span> The quality and characteristics of training data significantly impact policy performance.
+                                    </li>
+                                    <li>
+                                        <span class="text-foreground font-medium">The capability of the base policy is crucial, but knowing how to rapidly evaluate and select a capable base policy is even more important.</span> A fast research iteration cycle is essential for developing intuition and understanding of base policy behavior.
+                                    </li>
+                                    <li>
+                                        <span class="text-foreground font-medium">Model arithmetic can surprisingly turn lead into gold.</span> Simple arithmetic operations on model weights can transform mediocre policies into high-performing ones.
+                                    </li>
+                                    <li>
+                                        <span class="text-foreground font-medium">Stage-conditioned advantage estimation still has room for improvement.</span> Revisiting fundamental concepts from reinforcement learning may unlock further gains.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
 
 
