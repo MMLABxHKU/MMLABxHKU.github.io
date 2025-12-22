@@ -375,7 +375,7 @@ export default function Home() {
                         <div className="-mt-32 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
+                                The Mode Consistency System architecture. Left: The human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: The real-robot inference. Bottom: The DAgger Feedback and Stage Advantage from on-policy experience.
                             </i>
                             <div></div>
                         </div>
