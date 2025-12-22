@@ -16,6 +16,8 @@ const chartConfig = {
 
 export function StageVideo1() {
   const [activeTab, setActiveTab] = useState(stageData[0]?.title || "");
+  // 自定义首尾帧数配置 - 可以在这里修改或通过 props 传入
+  const [frameRange, setFrameRange] = useState<{ start: number; end: number } | null>({start: 100, end: 300});
 
   return (
     <Tabs
@@ -37,11 +39,21 @@ export function StageVideo1() {
 
       <div className="relative w-full">
         {stageData.map((stage) => {
-          const chartData = stage.evaluationData.map((item) => ({
-            frame_idx: item.frame_idx,
-            cumulative_value: item.cumulative_value,
-            advantage: item.advantage as "Positive" | "Negative",
-          }));
+          // 根据帧数范围过滤数据
+          let filteredData = stage.evaluationData;
+          if (frameRange) {
+            filteredData = stage.evaluationData.filter(
+              item => item.frame_idx >= frameRange.start && item.frame_idx <= frameRange.end
+            );
+          }
+
+          const chartData = filteredData
+            .filter(item => item.cumulative_value !== null)
+            .map((item) => ({
+              frame_idx: item.frame_idx,
+              cumulative_value: item.cumulative_value as number,
+              advantage: item.advantage as "Positive" | "Negative",
+            }));
 
           return (
             <VideoWithChart 
@@ -49,6 +61,7 @@ export function StageVideo1() {
               stage={stage} 
               chartData={chartData}
               isActive={activeTab === stage.title}
+              frameRange={frameRange}
             />
           );
         })}
@@ -60,11 +73,13 @@ export function StageVideo1() {
 function VideoWithChart({ 
   stage, 
   chartData, 
-  isActive 
+  isActive,
+  frameRange
 }: { 
   stage: typeof stageData[0]; 
   chartData: Array<{ frame_idx: number; cumulative_value: number; advantage: "Positive" | "Negative" }>; 
   isActive: boolean;
+  frameRange: { start: number; end: number } | null;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
@@ -75,12 +90,40 @@ function VideoWithChart({
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // 处理鼠标悬停时的视频暂停/恢复（统一处理所有播放判断逻辑）
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    // 判断逻辑：
+    // 1. 是否悬停（isHovered）
+    // 2. 滑块是否滑动（isDragging）
+
+    if (isHovered) {
+        console.log('记录鼠标悬停时的视频时间位置:', currentTime,video.currentTime)
+        if (!video.paused) {
+            video.pause()
+        }
+    } else {
+          // 鼠标移开div且不在拖动时，如果之前正在播放，则从记录的位置恢复播放
+          // 当鼠标移开div时，如果之前拖动过滑块，触发优先预加载滑块后的帧数部分
+          video.play().catch(err => {
+                console.warn('恢复播放失败:', err)
+          })
+        }
+    }, [isHovered])
   
   // 使用 ref 来避免闭包问题（同步当前状态）
   const isActiveRef = useRef(isActive);
   const isDraggingRef = useRef(isDragging);
   isActiveRef.current = isActive;
   isDraggingRef.current = isDragging;
+  
+  // 获取原始数据的总帧数（用于视频时间到帧的映射）
+  const totalFramesInOriginalData = stage.evaluationData.length;
+  
   const getActualDuration = () => {
     const video = videoRef.current;
     if (video && !Number.isNaN(video.duration) && video.duration > 0) {
@@ -119,9 +162,33 @@ function VideoWithChart({
         setIsPlaying(videoIsPlaying);
         
         if (chartData.length > 0) {
-          const progress = videoCurrentTime / videoDuration;
-          const targetIndex = Math.floor(progress * (chartData.length - 1));
-          setActiveIndex(targetIndex);
+          if (frameRange) {
+            // 将视频时间映射到原始数据中的帧索引
+            const videoProgress = videoCurrentTime / videoDuration;
+            const targetFrameInOriginal = Math.floor(videoProgress * (totalFramesInOriginalData - 1));
+            
+            // 检查目标帧是否在 frameRange 内
+            if (targetFrameInOriginal < frameRange.start) {
+              setActiveIndex(0);
+            } else if (targetFrameInOriginal > frameRange.end) {
+              setActiveIndex(chartData.length - 1);
+            } else {
+              let targetIndex = 0;
+              let minDiff = Infinity;
+              chartData.forEach((item, index) => {
+                const diff = Math.abs(item.frame_idx - targetFrameInOriginal);
+                if (diff < minDiff) {
+                  minDiff = diff;
+                  targetIndex = index;
+                }
+              });
+              setActiveIndex(targetIndex);
+            }
+          } else {
+            const progress = videoCurrentTime / videoDuration;
+            const targetIndex = Math.floor(progress * (chartData.length - 1));
+            setActiveIndex(targetIndex);
+          }
         }
         return true;
       }
@@ -161,7 +228,7 @@ function VideoWithChart({
       cancelled = true;
       stopPolling();
     };
-  }, [isActive, chartData.length]);
+  }, [isActive, chartData, frameRange]);
 
   // 监听视频播放状态 - 不负责初始化
   useEffect(() => {
@@ -201,14 +268,43 @@ function VideoWithChart({
 
 
   // 根据视频时间更新activeIndex - 使用 ref 避免过度渲染
+  // 视频可以自由播放，但 activeIndex 和进度条只反映 frameRange 内的进度
   useEffect(() => {
     const actualDuration = getActualDuration();
     if (isActiveRef.current && actualDuration > 0 && !isDraggingRef.current && chartData.length > 0) {
-      const progress = currentTime / actualDuration;
-      const targetIndex = Math.floor(progress * (chartData.length - 1));
-      setActiveIndex(targetIndex);
+      if (frameRange) {
+        // 将视频时间映射到原始数据中的帧索引
+        const videoProgress = currentTime / actualDuration;
+        const targetFrameInOriginal = Math.floor(videoProgress * (totalFramesInOriginalData - 1));
+        
+        // 检查目标帧是否在 frameRange 内
+        if (targetFrameInOriginal < frameRange.start) {
+          // 视频在 frameRange 之前，保持 activeIndex 为 0，进度条为 0%
+          setActiveIndex(0);
+        } else if (targetFrameInOriginal > frameRange.end) {
+          // 视频在 frameRange 之后，保持 activeIndex 为最后一个，进度条为 100%
+          setActiveIndex(chartData.length - 1);
+        } else {
+          // 视频在 frameRange 内，找到对应的 chartData 索引
+          let targetIndex = 0;
+          let minDiff = Infinity;
+          chartData.forEach((item, index) => {
+            const diff = Math.abs(item.frame_idx - targetFrameInOriginal);
+            if (diff < minDiff) {
+              minDiff = diff;
+              targetIndex = index;
+            }
+          });
+          setActiveIndex(targetIndex);
+        }
+      } else {
+        // 没有 frameRange 时，直接映射到 chartData
+        const progress = currentTime / actualDuration;
+        const targetIndex = Math.floor(progress * (chartData.length - 1));
+        setActiveIndex(targetIndex);
+      }
     }
-  }, [currentTime, chartData.length]);
+  }, [currentTime, chartData, frameRange, totalFramesInOriginalData]);
 
   // 计算tooltip X位置（只计算X，Y固定在底部）
   const getTooltipX = useCallback(() => {
@@ -235,17 +331,34 @@ function VideoWithChart({
     const percentage = Math.max(0, Math.min(1, x / rect.width));
     const actualDuration = getActualDuration();
     
-    // 更新图表选中
-    const targetIndex = Math.floor(percentage * (chartData.length - 1));
-    setActiveIndex(targetIndex);
-    
-    // 更新视频时间
-    if (videoRef.current && actualDuration > 0) {
-      const newTime = percentage * actualDuration;
-      videoRef.current.currentTime = newTime;
-      setCurrentTime(newTime);
+    if (frameRange) {
+      // 进度条绑定到 index：根据进度条位置计算 targetIndex
+      const targetIndex = Math.floor(percentage * (chartData.length - 1));
+      setActiveIndex(targetIndex);
+      
+      // 将 targetIndex 对应的帧映射到视频时间
+      if (videoRef.current && actualDuration > 0 && chartData.length > 0) {
+        const targetFrame = chartData[targetIndex]?.frame_idx;
+        if (targetFrame !== undefined) {
+          // 将帧索引映射到视频时间：targetFrame / totalFramesInOriginalData * actualDuration
+          const frameProgress = targetFrame / (totalFramesInOriginalData - 1);
+          const newTime = frameProgress * actualDuration;
+          videoRef.current.currentTime = newTime;
+          setCurrentTime(newTime);
+        }
+      }
+    } else {
+      // 没有 frameRange 时，使用原来的逻辑
+      const targetIndex = Math.floor(percentage * (chartData.length - 1));
+      setActiveIndex(targetIndex);
+      
+      if (videoRef.current && actualDuration > 0) {
+        const newTime = percentage * actualDuration;
+        videoRef.current.currentTime = newTime;
+        setCurrentTime(newTime);
+      }
     }
-  }, [chartData.length, duration]);
+  }, [chartData, frameRange, duration, totalFramesInOriginalData]);
 
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -282,13 +395,30 @@ function VideoWithChart({
     const x = e.clientX - rect.left;
     const percentage = Math.max(0, Math.min(1, x / rect.width));
     
-    const targetIndex = Math.floor(percentage * (chartData.length - 1));
-    setActiveIndex(targetIndex);
-    
-    if (actualDuration > 0) {
-      const newTime = percentage * actualDuration;
-      video.currentTime = newTime;
-      setCurrentTime(newTime);
+    if (frameRange) {
+      // 进度条绑定到 index：根据点击位置计算 targetIndex
+      const targetIndex = Math.floor(percentage * (chartData.length - 1));
+      setActiveIndex(targetIndex);
+      
+      // 将 targetIndex 对应的帧映射到视频时间
+      if (actualDuration > 0 && chartData.length > 0) {
+        const targetFrame = chartData[targetIndex]?.frame_idx;
+        if (targetFrame !== undefined) {
+          const frameProgress = targetFrame / (totalFramesInOriginalData - 1);
+          const newTime = frameProgress * actualDuration;
+          video.currentTime = newTime;
+          setCurrentTime(newTime);
+        }
+      }
+    } else {
+      const targetIndex = Math.floor(percentage * (chartData.length - 1));
+      setActiveIndex(targetIndex);
+      
+      if (actualDuration > 0) {
+        const newTime = percentage * actualDuration;
+        video.currentTime = newTime;
+        setCurrentTime(newTime);
+      }
     }
   };
 
@@ -303,9 +433,31 @@ function VideoWithChart({
       setIsPlaying(!video.paused);
       
       if (chartData.length > 0) {
-        const progress = video.currentTime / actualDuration;
-        const targetIndex = Math.floor(progress * (chartData.length - 1));
-        setActiveIndex(targetIndex);
+        if (frameRange) {
+          const videoProgress = video.currentTime / actualDuration;
+          const targetFrameInOriginal = Math.floor(videoProgress * (totalFramesInOriginalData - 1));
+          
+          if (targetFrameInOriginal < frameRange.start) {
+            setActiveIndex(0);
+          } else if (targetFrameInOriginal > frameRange.end) {
+            setActiveIndex(chartData.length - 1);
+          } else {
+            let targetIndex = 0;
+            let minDiff = Infinity;
+            chartData.forEach((item, index) => {
+              const diff = Math.abs(item.frame_idx - targetFrameInOriginal);
+              if (diff < minDiff) {
+                minDiff = diff;
+                targetIndex = index;
+              }
+            });
+            setActiveIndex(targetIndex);
+          }
+        } else {
+          const progress = video.currentTime / actualDuration;
+          const targetIndex = Math.floor(progress * (chartData.length - 1));
+          setActiveIndex(targetIndex);
+        }
       }
     }
     
@@ -317,7 +469,24 @@ function VideoWithChart({
   };
 
   const actualDuration = getActualDuration();
-  const progress = actualDuration > 0 ? (currentTime / actualDuration) * 100 : 0;
+  
+  // 计算基于 index 的进度条进度
+  // 进度条绑定到 activeIndex，而不是视频时间
+  // 如果设置了 frameRange，进度条 = activeIndex / (frameRange 内的总帧数) * 100%
+  // 如果没有设置 frameRange，进度条 = activeIndex / (chartData 总长度) * 100%
+  const getProgress = useCallback(() => {
+    if (frameRange && chartData.length > 0) {
+      // 基于 frameRange 内的帧数计算进度
+      const totalFramesInRange = frameRange.end - frameRange.start + 1;
+      // 进度条 = 当前 index 在 frameRange 内的位置 / frameRange 总帧数
+      return (activeIndex / (chartData.length - 1)) * 100;
+    } else {
+      // 没有 frameRange 时，基于 chartData 长度计算
+      return chartData.length > 1 ? (activeIndex / (chartData.length - 1)) * 100 : 0;
+    }
+  }, [frameRange, chartData.length, activeIndex]);
+  
+  const progress = getProgress();
   const currentValue = chartData[activeIndex]?.cumulative_value ?? 0;
   const currentAdvantage = chartData[activeIndex]?.advantage;
   const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
@@ -334,6 +503,8 @@ function VideoWithChart({
           ref={videoContainerRef}
           className="relative w-full max-w-4xl border-[10px] border-solid rounded-sm"
           style={{ borderColor }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           <video
             ref={videoRef}
@@ -365,6 +536,7 @@ function VideoWithChart({
           </button>
 
           {/* 图表覆盖层 - 使用绝对定位自动匹配视频尺寸 */}
+          {/* SVG 画布位置：在 LineChart 组件内部，由 ResponsiveContainer 渲染为 <svg className="recharts-surface"> */}
           <div 
             className="absolute inset-0 pointer-events-auto rounded-sm overflow-visible cursor-pointer"
             onClick={handleChartClick}
@@ -374,7 +546,9 @@ function VideoWithChart({
               config={chartConfig} 
               className="h-full w-full [&_.recharts-surface]:outline-none [&_.recharts-cartesian-axis]:opacity-0"
             >
+              {/* SVG 画布渲染位置：ResponsiveContainer 会创建一个包含 SVG 的容器 */}
               <ResponsiveContainer key={`${stage.title}-responsive`} width="100%" height="100%">
+                {/* SVG 画布实际位置：LineChart 内部会渲染 <svg className="recharts-surface"> 元素 */}
                 <LineChart
                   key={`${stage.title}-linechart`}
                   data={chartData}
@@ -386,7 +560,8 @@ function VideoWithChart({
                     tickLine={false}
                     axisLine={false}
                     tick={false}
-                    domain={['dataMin', 'dataMax']}
+                    // 自定义首尾帧数的 domain 设置
+                    domain={frameRange ? [frameRange.start, frameRange.end] : ['dataMin', 'dataMax']}
                     width={0}
                     height={0}
                   />
@@ -460,7 +635,7 @@ function VideoWithChart({
         </div>
 
         {/* 进度条 */}
-        <div className="w-full max-w-4xl mt-4">
+        <div className="w-full max-w-4xl mt-4" style={{padding : '10px'}}>
           <div
             ref={progressBarRef}
             className="relative h-2 bg-muted rounded-full cursor-pointer group"
@@ -472,7 +647,7 @@ function VideoWithChart({
             />
             <div
               className="absolute h-4 w-4 bg-[#4286F3] rounded-full -top-1 transition-all group-hover:scale-125"
-              style={{ left: `calc(${progress}% - 8px)` }}
+              style={{ left: `calc(${progress}% - 6px)` }}
             />
           </div>
         </div>
