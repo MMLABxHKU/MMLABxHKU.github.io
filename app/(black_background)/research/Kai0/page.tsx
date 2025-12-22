@@ -375,7 +375,7 @@ export default function Home() {
                         <div className="-mt-32 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
-                                The Mode Consistency System architecture. Left: The human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: The real-robot inference. Bottom: The DAgger Feedback and Stage Advantage from on-policy experience.
+                                This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
                             </i>
                             <div></div>
                         </div>
@@ -842,7 +842,7 @@ export default function Home() {
                                 <p className="w-full leading-relaxed max-w-4xl">
                                     Long-horizon manipulation inheretly is hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
                                 </p>
-                            `} tipList={{1:{link:'https://www.pi.website/blog/pistar06',content:'π (2025)'}}} />
+                            `} tipList={{1:{link:'https://www.pi.website/blog/pistar06',content:'π<sub>0.6</sub><sup>*</sup> (2025)'}}} />
                         </div>
 
 

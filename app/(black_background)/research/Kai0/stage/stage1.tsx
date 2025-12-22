@@ -39,7 +39,7 @@ export function StageVideo1() {
         {stageData.map((stage) => {
           const chartData = stage.evaluationData.map((item) => ({
             frame_idx: item.frame_idx,
-            cumulative_value: item.cumulative_value,
+            cumulative_value: item.cumulative_value ?? 0,
             advantage: item.advantage as "Positive" | "Negative",
           }));
 
@@ -63,7 +63,7 @@ function VideoWithChart({
   isActive 
 }: { 
   stage: typeof stageData[0]; 
-  chartData: Array<{ frame_idx: number; cumulative_value: number | null; advantage: "Positive" | "Negative" }>; 
+  chartData: Array<{ frame_idx: number; cumulative_value: number; advantage: "Positive" | "Negative" }>; 
   isActive: boolean;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
