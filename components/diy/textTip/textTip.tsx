@@ -116,7 +116,8 @@ export default function TextTip({
               key={num}
               id={`tip${num}`}
               className="overflow-hidden"
-              style={{ marginTop: tipListNow[Number(num)].top ?? 0 }}
+              style={{ marginTop: 10 }}
+              // style={{ marginTop: tipListNow[Number(num)].top ?? 0 }}
             >
               {tipListNow[Number(num)].link ? (
                 <Link
