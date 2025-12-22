@@ -397,13 +397,13 @@ export default function Home() {
                                 poster="https://assets.kinetixai.cn/FoldAnything/pipeling.jpg"
                                 className="w-full aspect-video rounded-sm"
                             >
-                                <source src="https://assets.kinetixai.cn/FoldAnything/pipeling.mp4" type="video/mp4" />
+                                <source src="https://assets.kinetixai.cn/FoldAnything/full_Dec22_4k_30_v3.mp4" type="video/mp4" />
                             </video>
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center z-50">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-6xl text-muted-foreground text-center">
-                                Video Description todo
+                                The Mode Consistency System architecture. Left: The human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: The real-robot inference. Bottom: The DAgger Feedback and Stage Advantage from on-policy experience.
                             </i>
                             <div></div>
                         </div>
