@@ -1129,17 +1129,9 @@ export default function Home() {
 
 
 
-                        <div className="flex flex-row justify-center px-6 mt-20">
-                            <div className="max-w-3xl w-full flex flex-row gap-10 justify-center">
-                                <EmailSubscribe />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-muted-foreground italic text-xs">
-                                Stay up to date with our live demos, challenges, and more.
-                            </i>
-                            <div></div>
+                        {/* Newsletter subscription */}
+                        <div className="mt-24 mb-10 px-6">
+                            <EmailSubscribe />
                         </div>
 
 
