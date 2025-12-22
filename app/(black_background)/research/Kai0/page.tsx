@@ -344,12 +344,10 @@ export default function Home() {
                         <div className="mt-10 w-full px-6">
                             <VideoCarousel />
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
-                                Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100× time-lapse format with critical segments highlighted at 2-5× speed.
+                            </p>
                         </div>
 
 
@@ -363,12 +361,12 @@ export default function Home() {
                                 <source src="https://assets.kinetixai.cn/FoldAnything/full_Dec22_4k_30_v3.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center z-50">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-6xl text-muted-foreground text-center">
-                                The Mode Consistency System architecture. Left: The human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: The real-robot inference. Bottom: The DAgger Feedback and Stage Advantage from on-policy experience.
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6 z-50">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-5xl">
+                                <span className="font-medium text-white/80">Mode Consistency System Architecture</span>
+                                <span className="mx-2 text-white/20">—</span>
+                                Left: Human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: Real-robot inference. Bottom: DAgger Feedback and Stage Advantage from on-policy experience.
+                            </p>
                         </div>
 
 
@@ -488,17 +486,10 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words  text-muted-foreground">
-                                Distribution dynamics of <b>P<sub>train</sub></b> <b>Q<sub>model</sub></b> and <b>P<sub>test</sub></b>.
-                                {/* <p>
-                                P<sub>train</sub> = ExpertDemo(Q<sub>human</sub>), 
-                                Q<sub>model</sub> = Train(P<sub>train</sub>), 
-                                P<sub>test</sub> = Inference(Q<sub>model</sub>)
-                                </p> */}
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Distribution dynamics of <span className="font-medium text-white/80">P<sub>train</sub></span>, <span className="font-medium text-white/80">Q<sub>model</sub></span>, and <span className="font-medium text-white/80">P<sub>test</sub></span>.
+                            </p>
                         </div>
                         
 
@@ -514,12 +505,11 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
-                            This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Interactive 3D t-SNE visualization of action distributions for P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>.
+                                <span className="block mt-1 text-white/60 font-medium">Click and drag to rotate the plot.</span>
+                            </p>
                         </div>
 
 
@@ -555,44 +545,49 @@ export default function Home() {
 
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
-                                <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
-                                    alt="Consistency" 
-                                    width={500}
-                                    height={200}
-                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
-                                />
+                        {/* Apple-style horizontal card layout */}
+                        <div className="flex justify-center px-6 mt-8">
+                            <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                {/* Dagger Card */}
+                                <div className="group flex flex-col">
+                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
+                                        <Image
+                                            src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
+                                            alt="Dagger visualization" 
+                                            width={600}
+                                            height={340}
+                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
+                                        />
+                                    </div>
+                                    <div className="mt-4 px-1">
+                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
+                                            <span className="font-semibold text-white/90">Dagger</span>
+                                            <span className="mx-2 text-white/30">—</span>
+                                            Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Inference Optimization Card */}
+                                <div className="group flex flex-col">
+                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
+                                        <Image
+                                            src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve_1220_1258.gif"
+                                            alt="Inference Optimization visualization" 
+                                            width={600}
+                                            height={340}
+                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
+                                        />
+                                    </div>
+                                    <div className="mt-4 px-1">
+                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
+                                            <span className="font-semibold text-white/90">Inference Optimization</span>
+                                            <span className="mx-2 text-white/30">—</span>
+                                            Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words  text-muted-foreground">
-                                <b>Dagger</b>: Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
-                            </i>
-                            <div></div>
-                        </div>
-
-
-
-                        <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
-                                <Image
-                                    src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve_1220_1258.gif"
-                                    alt="Consistency" 
-                                    width={500}
-                                    height={200}
-                                    className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
-                                <b>Inference Optimization</b>: Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
-                            </i>
-                            <div></div>
                         </div>
 
 
@@ -688,12 +683,10 @@ export default function Home() {
                                 <ConsistencyBarChart2 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recovery cost.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -704,12 +697,10 @@ export default function Home() {
                                 <ConsistencyBarChart4 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Time scaling affects success rate to some extent while maintaining throughput without significant degradation, especially for models predicting delta actions.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -721,12 +712,10 @@ export default function Home() {
                                 <ConsistencyBarChart7 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Space mirroring augmentation substantially improves performance across all metrics.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -738,12 +727,10 @@ export default function Home() {
                                 <ConsistencyBarChart10 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -824,12 +811,10 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -886,12 +871,10 @@ export default function Home() {
                                 <SoupingBarChart1 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 The merged model surpasses both the best constituent models and the oracle model trained on the full dataset across multiple tasks, evidencing that Model Arithmetic successfully assimilates the distinct policy manifolds learned from diverse data subsets.
-                            </i>
-                            <div></div>
+                            </p>
                         </div>
 
 
@@ -998,12 +981,10 @@ export default function Home() {
 
 
 
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
-                                Illustration of the estimated progress given a video clip. Direct+Stage (ours) has better stability in progress estimation.
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Illustration of the estimated progress given a video clip. <span className="font-medium text-white/80">Direct+Stage</span> (ours) has better stability in progress estimation.
+                            </p>
                         </div>
                         
 
@@ -1041,12 +1022,10 @@ export default function Home() {
                                 <AdvantageBarChart3 />
                             </div>
                         </div>
-                        <div className="mt-3 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
-                                Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is smoother (lower MSTD), more stable (higher SFR) and more reliable (higher success rate).
-                            </i>
-                            <div></div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-4xl">
+                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training — achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
+                            </p>
                         </div>
 
 
