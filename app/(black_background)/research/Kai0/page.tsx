@@ -892,7 +892,7 @@ export default function Home() {
                         <div className="mt-2">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed text-muted-foreground italic text-xs">
-                                    MA differs fundamentally fro-m existing paradigms: unlike Mixture-of-Experts (MoE), it requires no router mechanism; unlike ensembling, it manipulates model weights directly rather than combining outputs at inference time. This makes MA a uniquely powerful strategy for scalable, iterative model development in embodied AI.
+                                    MA differs fundamentally from existing paradigms: unlike Mixture-of-Experts (MoE), it requires no router mechanism; unlike ensembling, it manipulates model weights directly rather than combining outputs at inference time. This makes MA a uniquely powerful strategy for scalable, iterative model development in embodied AI.
                                 </p>
                             `} 
                             tipList={{}}

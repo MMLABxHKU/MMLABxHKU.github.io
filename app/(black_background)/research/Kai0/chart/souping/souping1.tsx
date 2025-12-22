@@ -35,7 +35,7 @@ const chartData = [
 
 const chartConfig = {
     single: {
-        label: "single",
+        label: "best candidate",
         color: "#4286F3",
     },
     full: {
