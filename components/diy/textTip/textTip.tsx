@@ -45,7 +45,7 @@ export default function TextTip({
     timeSetRef.current = window.setTimeout(() => {
       const tipListNew: any = {};
       Object.keys(tipList).forEach(k => {
-        tipListNew[k] = { ...tipList[k] };
+        tipListNew[k] = { ...tipList[Number(k)] };
       });
 
       const rectDiv = document
@@ -114,21 +114,21 @@ export default function TextTip({
               key={num}
               id={`tip${num}`}
               className="overflow-hidden"
-              style={{ marginTop: tipListNow[num].top ?? 0 }}
+              style={{ marginTop: tipListNow[Number(num)].top ?? 0 }}
             >
-              {tipListNow[num].link ? (
+              {tipListNow[Number(num)].link ? (
                 <Link
                   className="animated-underline"
-                  href={tipListNow[num].link}
+                  href={tipListNow[Number(num)].link!}
                   target="_blank"
                 >
                   <sup>{Number(num) + offset}</sup>
-                  {tipListNow[num].content}
+                  {tipListNow[Number(num)].content}
                 </Link>
               ) : (
                 <>
                   <sup>{Number(num) + offset}</sup>
-                  {tipListNow[num].content}
+                  {tipListNow[Number(num)].content}
                 </>
               )}
             </div>
