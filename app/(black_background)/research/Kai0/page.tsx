@@ -161,7 +161,7 @@ export default function Home() {
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-3xl">
                                 <h1 className="font-bold text-3xl leading-tight">
-                                    Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation.
+                                    Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation
                                 </h1>
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
