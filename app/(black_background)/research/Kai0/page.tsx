@@ -595,15 +595,17 @@ export default function Home() {
                         </div>
 
 
-
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                Back to basics, we propose two fundamental strategies—operating on Data Scope and Inference Scope—to stabilize these distributions: 
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    Back to basics, we propose two fundamental strategies—operating on Data Scope and Inference Scope—to stabilize these distributions: 
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* Back to basics, we propose two "behind the scenes" strategies that actually work:   */}
+
 
 
                         <div className="mt-6">
