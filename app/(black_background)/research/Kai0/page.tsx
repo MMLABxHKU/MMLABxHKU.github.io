@@ -357,23 +357,29 @@ export default function Home() {
 
 
 
-
-                        <div className="flex flex-row justify-center px-6 mt-6 overflow-x-auto">
-                            <div className="flex flex-row justify-center">
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center ">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/demo_teaser.html"
-                                    width="1280"
+                                    width="800"
                                     height="720"
-                                    className="rounded-sm border-0"
+                                    className="rounded-sm w-[800px]"
                                     style={{ 
-                                        width: '1280px',
-                                        height: '720px',
                                         minWidth: '1280px',
                                     }}
                                     scrolling="no"
                                 />
                             </div>
                         </div>
+                        <div className="-mt-32 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <i className="w-full leading-relaxed max-w-4xl text-center break-words">
+                                This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
+                            </i>
+                            <div></div>
+                        </div>
+
+
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-4xl mt-20 text-3xl font-bold"> 
