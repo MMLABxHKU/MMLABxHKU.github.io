@@ -671,7 +671,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6"  start="2">
                                     <li>
                                         <b>
                                             Inference Scope:&nbsp;
