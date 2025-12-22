@@ -732,7 +732,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
-                                Space mirroring augmentation comprehensively improves the model's overall performance across all metrics.
+                                Space mirroring augmentation substantially improves performance across all metrics.
                             </i>
                             <div></div>
                         </div>
