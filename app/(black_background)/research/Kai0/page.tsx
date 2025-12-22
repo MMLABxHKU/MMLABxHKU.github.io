@@ -332,17 +332,6 @@ export default function Home() {
 
 
 
-                        {/* <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
-                            </p>
-                            <div></div>
-                        </div> */}
-                        {/* We will release data, checkpoints and host Challenge in 2026. */}
-
-
-
                         <div className="mt-10 w-full flex flex-row justify-center px-6">
                             <div className="w-full grid grid-rows-3 xl:grid-rows-1 xl:grid-cols-3 gap-6 justify-center items-center">
                                 <video
@@ -548,28 +537,33 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                However, we identify latent inconsistencies within this standard process:
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p className="w-full leading-relaxed max-w-3xl">
+                                    However, we identify latent inconsistencies within this standard process:
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* We found several key issues hiding in this process:  */}
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
-                                <li>
-                                    Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
-                                </li>
-                                {/* Misalignment between $$P_{train}$$and $$P_{test}$$, interpreted as many failure states do not exist in training data. */}
-                                <li>
-                                    Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
-                                </li>
-                                {/* Misalignment between $$Q_{model}$$ and $$P_{test}$$, shown as model inference results could be mis-deployed by the $$Inference()$$ function and causes unexpected failure. */}
-                            </ol>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
+                                    <li>
+                                        Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
+                                    </li>
+                                    <li>
+                                        Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
 
 
@@ -650,12 +644,6 @@ export default function Home() {
                                             </li>
                                         </ol>
                                     </li>
-                                    <li>
-                                        <b>
-                                            Inference Scope:&nbsp;
-                                        </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>3</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
-                                    </li>
                                 </ol>
                             `} 
                             tipList={{
@@ -675,7 +663,25 @@ export default function Home() {
                                         </>
                                     ),
                                 },
-                                3:{
+                            }}
+                            offset={2}
+                            />
+                        </div>
+
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
+                                    <li>
+                                        <b>
+                                            Inference Scope:&nbsp;
+                                        </b>
+                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{
+                                1:{
                                     link:'https://arxiv.org/abs/2506.07339',
                                     content: (
                                         <>
@@ -684,10 +690,9 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={2}
+                            offset={4}
                             />
                         </div>
-
 
 
                         <div className="mt-10 flex flex-row justify-center px-6">
