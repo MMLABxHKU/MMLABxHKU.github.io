@@ -349,7 +349,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
                             </i>
                             <div></div>
@@ -753,7 +753,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
                             </i>
                             <div></div>
@@ -774,7 +774,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 caption
                             </i>
                             <div></div>
@@ -801,7 +801,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 The merged model surpasses both the best constituent models and the oracle model trained on the full dataset across multiple tasks, evidencing that Model Arithmetic successfully assimilates the distinct policy manifolds learned from diverse data subsets.
                             </i>
                             <div></div>
@@ -875,7 +875,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 caption
                             </i>
                             <div></div>
@@ -895,7 +895,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 Illustration of the estimated progress given a video clip. Direct+Stage (ours) has better stability in progress estimation.
                             </i>
                             <div></div>
@@ -933,7 +933,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-4xl flex justify-center">
+                            <i className="w-full leading-relaxed max-w-4xl text-center">
                                 Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is more stable (lower MAD), smoother (high SFR) and more reliable (higher success rate).
                             </i>
                             <div></div>
