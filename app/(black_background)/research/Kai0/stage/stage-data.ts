@@ -17475,15 +17475,18 @@ export const stageData = [
         title: "Task A",
         evaluationData: SINGLE_with_advantage,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
+        frameRange: { start: 100, end: 300 },
     },
     {
         title: "Task B",
         evaluationData: SINGLE_with_advantage,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
+        frameRange: { start: 100, end: 300 },
     },
     {
         title: "Task C",
         evaluationData: SINGLE_with_advantage,
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
+        frameRange: { start: 100, end: 300 },
     },
 ]

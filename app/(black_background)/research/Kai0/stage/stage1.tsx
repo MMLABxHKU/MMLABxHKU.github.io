@@ -17,7 +17,8 @@ const chartConfig = {
 export function StageVideo1() {
   const [activeTab, setActiveTab] = useState(stageData[0]?.title || "");
   // 自定义首尾帧数配置 - 可以在这里修改或通过 props 传入
-  const [frameRange, setFrameRange] = useState<{ start: number; end: number } | null>({start: 100, end: 300});
+  const defaultFrameRange = stageData[0]?.frameRange ?? null;
+  const [frameRange, setFrameRange] = useState<{ start: number; end: number } | null>(defaultFrameRange);
 
   return (
     <Tabs
@@ -39,11 +40,12 @@ export function StageVideo1() {
 
       <div className="relative w-full">
         {stageData.map((stage) => {
+          const stageFrameRange = stage.frameRange ?? frameRange;
           // 根据帧数范围过滤数据
           let filteredData = stage.evaluationData;
-          if (frameRange) {
+          if (stageFrameRange) {
             filteredData = stage.evaluationData.filter(
-              item => item.frame_idx >= frameRange.start && item.frame_idx <= frameRange.end
+              item => item.frame_idx >= stageFrameRange.start && item.frame_idx <= stageFrameRange.end
             );
           }
 
@@ -61,7 +63,7 @@ export function StageVideo1() {
               stage={stage} 
               chartData={chartData}
               isActive={activeTab === stage.title}
-              frameRange={frameRange}
+              frameRange={stageFrameRange}
             />
           );
         })}
@@ -490,6 +492,7 @@ function VideoWithChart({
   const currentValue = chartData[activeIndex]?.cumulative_value ?? 0;
   const currentAdvantage = chartData[activeIndex]?.advantage;
   const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
+  const tooltipBg = currentAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
   const tooltipX = getTooltipX();
   const lineY = getLineY();
 
@@ -538,7 +541,7 @@ function VideoWithChart({
           {/* 图表覆盖层 - 使用绝对定位自动匹配视频尺寸 */}
           {/* SVG 画布位置：在 LineChart 组件内部，由 ResponsiveContainer 渲染为 <svg className="recharts-surface"> */}
           <div 
-            className="absolute inset-0 pointer-events-auto rounded-sm overflow-visible cursor-pointer"
+            className="absolute inset-0 m-8.5 pointer-events-auto rounded-sm overflow-visible cursor-pointer"
             onClick={handleChartClick}
           >
             <ChartContainer 
@@ -574,13 +577,18 @@ function VideoWithChart({
                     height={0}
                   />
                   <ChartTooltip
-                    cursor={{ stroke: '#ef4444', strokeDasharray: '5 5', strokeWidth: 1 }}
+                    cursor={{ stroke: borderColor, strokeDasharray: '5 5', strokeWidth: 1 }}
                     content={({ active, payload }) => {
                       if (active && payload && payload.length) {
                         const value = payload[0].value;
                         const displayValue = typeof value === 'number' ? value.toFixed(2) : String(value);
+                        const hoveredAdvantage = payload[0]?.payload?.advantage;
+                        const hoveredBg = hoveredAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
                         return (
-                          <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs">
+                          <div
+                            className="text-white px-2 py-1 rounded text-xs"
+                            style={{ backgroundColor: hoveredBg }}
+                          >
                             {displayValue}
                           </div>
                         );
@@ -624,7 +632,10 @@ function VideoWithChart({
                       transform: 'translateX(-50%)'
                     }}
                   >
-                    <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs whitespace-nowrap">
+                    <div
+                      className="text-white px-2 py-1 rounded text-xs whitespace-nowrap"
+                      style={{ backgroundColor: tooltipBg }}
+                    >
                       {chartData[activeIndex].cumulative_value.toFixed(2)}
                     </div>
                   </div>
@@ -632,23 +643,28 @@ function VideoWithChart({
               </>
             )}
           </div>
-        </div>
-
-        {/* 进度条 */}
-        <div className="w-full max-w-4xl mt-4" style={{padding : '10px'}}>
+          
+          {/* 进度条：悬停视频时显示，贴合底部边界 */}
           <div
-            ref={progressBarRef}
-            className="relative h-2 bg-muted rounded-full cursor-pointer group"
-            onMouseDown={handleMouseDown}
+            className={`absolute left-0 right-0 flex justify-center items-center px-6 py-3 transition-all duration-200 ${
+              isHovered ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
+            } bg-black/60 backdrop-blur-sm rounded-b-sm`}
+            style={{ bottom: "0px" }}
           >
             <div
-              className="absolute h-full bg-[#4286F3] rounded-full transition-all"
-              style={{ width: `${progress}%` }}
-            />
-            <div
-              className="absolute h-4 w-4 bg-[#4286F3] rounded-full -top-1 transition-all group-hover:scale-125"
-              style={{ left: `calc(${progress}% - 6px)` }}
-            />
+              ref={progressBarRef}
+              className="relative h-2 bg-muted rounded-full cursor-pointer group w-full max-w-4xl"
+              onMouseDown={handleMouseDown}
+            >
+              <div
+                className="absolute h-full bg-[#4286F3] rounded-full transition-all"
+                style={{ width: `${progress}%` }}
+              />
+              <div
+                className="absolute h-4 w-4 bg-[#4286F3] rounded-full -top-1 transition-all group-hover:scale-125"
+                style={{ left: `calc(${progress}% - 6px)` }}
+              />
+            </div>
           </div>
         </div>
       </div>
