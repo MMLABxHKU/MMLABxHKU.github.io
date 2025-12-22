@@ -764,14 +764,16 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive. */}
 
 
 
@@ -839,15 +841,16 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* But how does MA work? Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes and knowledge from these diverse manifolds, ensuring mode consistency in the final model. This approach elegantly soaks up capabilities from each iteration without costly full retraining. */}
-
 
 
 
@@ -908,26 +911,29 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a <b>relational quantity</b> that depends on how an action transforms one state into another.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a <b>relational quantity</b> that depends on how an action transforms one state into another.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another. */}
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal. */}
-
 
 
                         {/* <div className="flex flex-row justify-center px-6 mt-6">
@@ -975,24 +981,29 @@ export default function Home() {
                         
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training. 
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training. 
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training.  */}
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. 
-                            </p>
-                            <div></div>
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. 
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation.  */}
 
 
                         
