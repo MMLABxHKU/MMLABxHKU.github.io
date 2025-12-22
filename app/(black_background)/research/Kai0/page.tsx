@@ -367,6 +367,7 @@ export default function Home() {
                                     style={{ 
                                         minWidth: '1280px',
                                     }}
+                                    scrolling="no"
                                 />
                             </div>
                         </div>
@@ -486,17 +487,17 @@ export default function Home() {
                         
 
 
-<div className="flex justify-center px-6 mt-6">
-  <div className="w-full max-w-4xl">
-    <div className="relative w-full aspect-video">
-      <iframe
-        src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
-        className="absolute inset-0 w-full h-full rounded-sm"
-        allowFullScreen
-      />
-    </div>
-  </div>
-</div>
+                        <div className="flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-4xl w-full flex flex-row gap-10 justify-center ">
+                                <iframe
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
+                                    width="800"
+                                    height="450"
+                                    className="rounded-sm w-[800px]"
+                                    scrolling="no"
+                                />
+                            </div>
+                        </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center break-words">
