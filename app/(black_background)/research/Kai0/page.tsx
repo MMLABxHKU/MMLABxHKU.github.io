@@ -276,7 +276,7 @@ export default function Home() {
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-4 md:px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
                                 <li>
                                     <b>
                                         Mode Consistency:&nbsp;
@@ -433,7 +433,7 @@ export default function Home() {
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-4 md:px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
                                 <li>
                                     P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
                                 </li>
@@ -539,7 +539,7 @@ export default function Home() {
 
 
                         <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-4 md:px-6">
+                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
                                 <li>
                                     Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                 </li>
@@ -607,12 +607,12 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-4 md:px-6">
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
                                     <li>
                                         <b>
-                                            Data Scope.
+                                            Data Scope:
                                         </b>
-                                        <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-4 md:px-6 mt-3">
+                                        <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6 mt-3">
                                             <li>
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
