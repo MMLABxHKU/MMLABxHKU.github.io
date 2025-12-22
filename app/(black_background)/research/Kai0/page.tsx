@@ -160,7 +160,7 @@ export default function Home() {
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
                                 </i> */}
-                                <div className="flex flex-row gap-20 xl:gap-40">
+                                <div className="flex flex-row gap-10 xl:gap-40">
                                     <div className="flex flex-col">
                                         <h2>
                                             Published
