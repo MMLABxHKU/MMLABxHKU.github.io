@@ -367,7 +367,6 @@ export default function Home() {
                                     style={{ 
                                         minWidth: '1280px',
                                     }}
-                                    scrolling="no"
                                 />
                             </div>
                         </div>
@@ -494,7 +493,6 @@ export default function Home() {
                                     width="800"
                                     height="450"
                                     className="rounded-sm w-[800px]"
-                                    scrolling="no"
                                 />
                             </div>
                         </div>
