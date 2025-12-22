@@ -8,8 +8,8 @@ import { ChartContainer, ChartTooltip, type ChartConfig } from "@/components/ui/
 import { stageData } from "./stage-data";
 
 const chartConfig = {
-  relative_advantage: {
-    label: "Relative Advantage",
+  cumulative_value: {
+    label: "Cumulative Value",
     color: "#4286F3",
   },
 } satisfies ChartConfig;
@@ -39,7 +39,8 @@ export function StageVideo1() {
         {stageData.map((stage) => {
           const chartData = stage.evaluationData.map((item) => ({
             frame_idx: item.frame_idx,
-            relative_advantage: item.relative_advantage,
+            cumulative_value: item.cumulative_value,
+            advantage: item.advantage as "Positive" | "Negative",
           }));
 
           return (
@@ -62,7 +63,7 @@ function VideoWithChart({
   isActive 
 }: { 
   stage: typeof stageData[0]; 
-  chartData: Array<{ frame_idx: number; relative_advantage: number }>; 
+  chartData: Array<{ frame_idx: number; cumulative_value: number; advantage: "Positive" | "Negative" }>; 
   isActive: boolean;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -219,11 +220,11 @@ function VideoWithChart({
   // 计算虚线Y位置
   const getLineY = useCallback(() => {
     if (!chartData[activeIndex]) return 0;
-    const minValue = Math.min(...chartData.map(d => d.relative_advantage));
-    const maxValue = Math.max(...chartData.map(d => d.relative_advantage));
-    const currentValue = chartData[activeIndex].relative_advantage;
+    const minValue = Math.min(...chartData.map(d => d.cumulative_value));
+    const maxValue = Math.max(...chartData.map(d => d.cumulative_value));
+    const currentValue = chartData[activeIndex].cumulative_value;
     const yPercent = maxValue > minValue ? (maxValue - currentValue) / (maxValue - minValue) : 0.5;
-    return yPercent * 100; // 返回百分比
+    return (yPercent + 0.01) * 100; // 返回百分比
   }, [activeIndex, chartData]);
 
   const updateProgressPosition = useCallback((clientX: number) => {
@@ -317,6 +318,9 @@ function VideoWithChart({
 
   const actualDuration = getActualDuration();
   const progress = actualDuration > 0 ? (currentTime / actualDuration) * 100 : 0;
+  const currentValue = chartData[activeIndex]?.cumulative_value ?? 0;
+  const currentAdvantage = chartData[activeIndex]?.advantage;
+  const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
   const tooltipX = getTooltipX();
   const lineY = getLineY();
 
@@ -326,7 +330,11 @@ function VideoWithChart({
       className={`w-full flex justify-center ${isActive ? "relative z-10" : "absolute inset-0 opacity-0 pointer-events-none z-0"}`}
     >
       <div className="relative flex flex-col items-center px-6 w-full">
-        <div ref={videoContainerRef} className="relative w-full max-w-4xl">
+        <div
+          ref={videoContainerRef}
+          className="relative w-full max-w-4xl border-[10px] border-solid rounded-sm"
+          style={{ borderColor }}
+        >
           <video
             ref={videoRef}
             autoPlay={false}
@@ -407,7 +415,7 @@ function VideoWithChart({
                   />
                   <Line
                     type="monotone"
-                    dataKey="relative_advantage"
+                    dataKey="cumulative_value"
                     stroke="#4286F3"
                     strokeWidth={2.5}
                     dot={false}
@@ -432,18 +440,20 @@ function VideoWithChart({
                 />
                 
                 {/* Tooltip - 固定在底部 */}
-                <div
-                  className="absolute pointer-events-none z-20"
-                  style={{
-                    left: `${tooltipX}%`,
-                    bottom: 0,
-                    transform: 'translateX(-50%)'
-                  }}
-                >
-                  <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs whitespace-nowrap">
-                    {chartData[activeIndex].relative_advantage.toFixed(2)}
+                {chartData[activeIndex]?.cumulative_value !== undefined && chartData[activeIndex]?.cumulative_value !== null && (
+                  <div
+                    className="absolute pointer-events-none z-20"
+                    style={{
+                      left: `${tooltipX}%`,
+                      bottom: '4px',
+                      transform: 'translateX(-50%)'
+                    }}
+                  >
+                    <div className="bg-red-500/90 text-white px-2 py-1 rounded text-xs whitespace-nowrap">
+                      {chartData[activeIndex].cumulative_value.toFixed(2)}
+                    </div>
                   </div>
-                </div>
+                )}
               </>
             )}
           </div>
