@@ -299,14 +299,16 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                This recipe provide strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >Challenge</Link> in 2026.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    This recipe provide strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <a class="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* This recipe is universally applicable, functioning across different embodiments (AgileX Piper, ARX X5) and model architectures (pi series, x-vla, go-1), proving that efficient, high-performance manipulation is accessible without industrial-scale resources. */}
 
 
 
@@ -318,6 +320,8 @@ export default function Home() {
                             <div></div>
                         </div> */}
                         {/* We will release data, checkpoints and host Challenge in 2026. */}
+
+
 
                         <div className="mt-10 w-full flex flex-row justify-center px-6">
                             <div className="w-full grid grid-rows-3 xl:grid-rows-1 xl:grid-cols-3 gap-6 justify-center items-center">
@@ -413,35 +417,39 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem—akin to a game of "Whac-a-Mole"—among three distinct distributions:
-                            </p>
-                            <div></div>
-                        </div>
-                        {/* We assume that, for certain task, there exists a distribution $$P_{real}$$ consisting of all actions that can accomplish such task. Achieving robust manipulation is akin to solving a chaotic "whac-a-mole" problem between three distributions:  */}
-
-
-
-                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
-                                <li>
-                                    P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
-                                </li>
-                                {/* $$P_{train}$$(human demonstration), collected from $$Q_{human}$$(human expert policy). This is a subset of $$P_{real}$$. */}
-                                <li>
-                                    Q<sub>model</sub> (Learned Policy): The policy distribution parameterized by the model weights.
-                                </li>
-                                {/* $$Q_{model}$$(action projection on model weights). */}
-                                <li>
-                                    P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> failling outside P<sub>real</sub> constitutes the failure modes.
-                                </li>
-                                {/* $$P_{test}$$(executed action in the real-world), inferred from $$Q_{model}$$. The part lies inside $$P_{real}$$means success and outside means failure. */}
-                            </ol>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem—akin to a game of "Whac-a-Mole"—among three distinct distributions:
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
 
 
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6">
+                                    <li>
+                                        P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
+                                    </li>
+                                    <li>
+                                        Q<sub>model</sub> (Learned Policy): The policy distribution parameterized by the model weights.
+                                    </li>
+                                    <li>
+                                        P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> failling outside P<sub>real</sub> constitutes the failure modes.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
+                        </div>
+
+                        
                         
                         <div className="mt-6">
                             <TextTip html={`\
