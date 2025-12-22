@@ -854,6 +854,19 @@ export default function Home() {
 
 
 
+                        <div className="mt-2">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed text-[#737373] italic text-xs">
+                                    MA differs fundamentally fro-m existing paradigms: unlike Mixture-of-Experts (MoE), it requires no router mechanism; unlike ensembling, it manipulates model weights directly rather than combining outputs at inference time. This makes MA a uniquely powerful strategy for scalable, iterative model development in embodied AI.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
+                        </div>
+
+
+
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <SoupingBarChart1 />
