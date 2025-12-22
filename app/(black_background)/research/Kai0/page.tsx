@@ -996,7 +996,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <p class="w-full leading-relaxed">alu
+                                <p class="w-full leading-relaxed">
                                     Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training. 
                                 </p>
                             `} 
