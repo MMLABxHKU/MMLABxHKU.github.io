@@ -31,6 +31,7 @@ import { AdvantageBarChart1 } from "./chart/advantage/advantage1"
 import { AdvantageBarChart2 } from "./chart/advantage/advantage2"
 import { AdvantageBarChart3 } from "./chart/advantage/advantage3"
 import { StageVideo1 } from "./stage/stage1"
+import { ProgressBar } from "./progress-bar"
 
 
 
@@ -66,7 +67,8 @@ export default function Home() {
     return (
         <main>
 
-
+                {/* Progress Bar */}
+                <ProgressBar />
 
                 {/* Landing */}
                 {/* <div className="w-full h-48 flex flex-row justify-center bg-fixed">
