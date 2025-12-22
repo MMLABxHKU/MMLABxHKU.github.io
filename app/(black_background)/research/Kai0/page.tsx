@@ -239,17 +239,22 @@ export default function Home() {
                                 <i>Julius Caesar</i>
                             </div> 
                         </div>
-                        
+                    
 
 
-                        <div className="flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                            “Veni, Vidi, Vici” — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
-                            </p>
-                            <div></div>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p className="w-full leading-relaxed max-w-3xl">
+                                    “Veni, Vidi, Vici” — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    <br></br>
+                                    We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
+
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
-                        {/* Is massive scale the only path to robotic dexterity? While foundational models like Pi05 and GO-1 leverage massive compute and data to achieve task-generalization, we explore a "resource-aware" alternative for state-generalization. We present a comprehensive guideline for mastering long-horizon garment manipulation, taking a system from 0% to 100% reliability with a fraction of the standard cost—specifically, within 20 hours of human demonstration, 8*A100 gpus, rather than tens of thousands of hrs data and hundreds of GPUs which are typically required. */}
 
 
 
@@ -261,17 +266,6 @@ export default function Home() {
                             <div></div>
                         </div> */}
                         {/* Our system enables collaborative, dual-arm robots to perform complex folding tasks over extended horizons (up to 6 minutes), demonstrating exceptional robustness to the compounding errors that plague collaborative handovers. This reliability extends to "in-the-wild" scenarios, handling interruptions and varied lighting with ease. */}
-
-
-
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
-                            </p>
-                            <div></div>
-                        </div>
-                        {/* The core of our efficiency lies in a new philosophical approach to Imitation Learning: */}
 
 
 
@@ -450,33 +444,34 @@ export default function Home() {
                         </div>
 
 
-
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub> (cite Danqi and Stefano). This process yields a finetuned Q<sub>model</sub>; deploying this model via an inference function (denoted as <i>Inference()</i>) results in the realized distribution P<sub>test</sub>. 
-                            </p>
-                            <div></div>
-                        </div>
-                        {/* <div className="mt-6">
+                        
+                        <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    
+                                    Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub><sup>1</sup><sup>2</sup>. This process yields a finetuned Q<sub>model</sub>; deploying this model via an inference function (denoted as <i>Inference()</i>) results in the realized distribution P<sub>test</sub>. 
                                 </p>
                             `} 
                             tipList={{
                                 1:{
-                                    link:'https://www.pi.website/blog/pistar06',
+                                    link:'https://arxiv.org/abs/2510.18874',
                                     content: (
                                         <>
-                                        π<sub>0.6</sub><sup>*</sup> (2025)
+                                        Retaining by Doing (Chen et al., 2025)
+                                        </>
+                                    ),
+                                },
+                                2:{
+                                    link:'https://arxiv.org/abs/2404.14367',
+                                    content: (
+                                        <>
+                                        Preference Fine-Tuning (Tajwar et al., 2024)
                                         </>
                                     ),
                                 }
                             }}
-                            offset={1}
+                            offset={0}
                             />
-                        </div> */}
+                        </div>
 
 
 
@@ -617,7 +612,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
                                             </li>
                                             <li>
                                                 <b>
@@ -631,7 +626,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>2</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
+                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>3</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -645,15 +640,23 @@ export default function Home() {
                                     ),
                                 },
                                 2:{
+                                    link:'https://arxiv.org/abs/1810.02890',
+                                    content: (
+                                        <>
+                                        HG-DAgger (Kelly et al., 2018)
+                                        </>
+                                    ),
+                                },
+                                3:{
                                     link:'https://arxiv.org/abs/2506.07339',
                                     content: (
                                         <>
-                                        Real-Time Action Chunking (Kevin et al., 2025)
+                                        Real-Time Action Chunking (Black et al., 2025)
                                         </>
                                     ),
-                                }
+                                },
                             }}
-                            offset={0}
+                            offset={2}
                             />
                         </div>
 
@@ -777,12 +780,12 @@ export default function Home() {
                                     link:'https://proceedings.mlr.press/v162/wortsman22a.html',
                                     content: (
                                         <>
-                                        Model Soups (Wortsman, et al., 2021)
+                                        Model Soups (Wortsman et al., 2021)
                                         </>
                                     ),
                                 }
                             }}
-                            offset={0}
+                            offset={5}
                             />
                         </div>
 
@@ -888,12 +891,12 @@ export default function Home() {
                                     link:'https://www.pi.website/blog/pistar06',
                                     content: (
                                         <>
-                                        π<sub>0.6</sub><sup>*</sup> (2025)
+                                        π<sub>0.6</sub><sup>*</sup>: a VLA that Learns from Experience (2025)
                                         </>
                                     ),
                                 }
                             }}
-                            offset={1}
+                            offset={6}
                             />
                         </div>
 

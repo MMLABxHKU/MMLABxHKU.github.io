@@ -105,7 +105,7 @@ export default function TextTip({
 
         <div
           id="htmlDiv"
-          className="flex xl:flex-5/7 overflow-hidden xl:px-3"
+          className="xl:flex-5/7 overflow-hidden xl:px-3"
           dangerouslySetInnerHTML={{ __html: htmlNow }}
         />
 
