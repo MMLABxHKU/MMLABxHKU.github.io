@@ -98,7 +98,7 @@ export default function TextTip({
   }, [html, tipList, offset]);
 
   return (
-    <div className="relative flex justify-center">
+    <div className="relative flex justify-center px-6">
       <div className="w-full max-w-3xl">
         <div
           id="htmlDiv"
@@ -109,7 +109,7 @@ export default function TextTip({
       
       {/* Tips sidebar - absolute positioned to not affect centering */}
       {Object.keys(tipListNow).length > 0 && (
-        <div className="hidden xl:block absolute right-0 top-0 w-48 px-6 text-xs">
+        <div className="hidden xl:block absolute right-0 top-0 w-48 pl-6 text-xs">
           {Object.keys(tipListNow).map(num => (
             <div
               key={num}
