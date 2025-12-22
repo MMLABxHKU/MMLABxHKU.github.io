@@ -354,28 +354,22 @@ export default function Home() {
 
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-3xl w-full flex flex-row gap-10 justify-center ">
-                                <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/demo_teaser.html"
-                                    width="800"
-                                    height="720"
-                                    className="rounded-sm w-[800px]"
-                                    style={{ 
-                                        minWidth: '1280px',
-                                    }}
-                                    scrolling="no"
-                                />
-                            </div>
+                        <div className="mt-20 px-6">
+                            <video
+                                autoPlay muted loop playsInline
+                                poster="https://assets.kinetixai.cn/FoldAnything/full.png"
+                                className="w-full aspect-video rounded-sm"
+                            >
+                                <source src="https://assets.kinetixai.cn/FoldAnything/pipeling.mp4" type="video/mp4" />
+                            </video>
                         </div>
-                        <div className="-mt-32 flex flex-row gap-6 justify-center">
+                        <div className="-mt-6 xl:-mt-8 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
-                                This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
+                            <i className="w-full leading-relaxed max-w-6xl">
+                                Video Description todo
                             </i>
                             <div></div>
                         </div>
-
 
 
                         <div className="w-full flex flex-col items-center px-6">
