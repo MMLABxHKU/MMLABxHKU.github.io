@@ -63,7 +63,7 @@ function VideoWithChart({
   isActive 
 }: { 
   stage: typeof stageData[0]; 
-  chartData: Array<{ frame_idx: number; cumulative_value: number; advantage: "Positive" | "Negative" }>; 
+  chartData: Array<{ frame_idx: number; cumulative_value: number | null; advantage: "Positive" | "Negative" }>; 
   isActive: boolean;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
