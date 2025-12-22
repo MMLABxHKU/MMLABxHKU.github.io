@@ -354,7 +354,7 @@ export default function Home() {
 
 
 
-                        <div className="mt-20 px-6">
+                        <div className="px-6">
                             <video
                                 autoPlay muted loop playsInline
                                 poster="https://assets.kinetixai.cn/FoldAnything/full.png"
