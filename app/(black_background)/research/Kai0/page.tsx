@@ -367,7 +367,7 @@ export default function Home() {
                                 <source src="https://assets.kinetixai.cn/FoldAnything/pipeling.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <div className="-mt-6 xl:-mt-8 flex flex-row gap-6 justify-center">
+                        <div className="-mt-6 xl:-mt-8 flex flex-row gap-6 justify-center z-50">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-6xl">
                                 Video Description todo
