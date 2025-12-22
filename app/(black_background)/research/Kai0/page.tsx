@@ -829,14 +829,6 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-
-                            <div></div>
-                        </div>
-                        {/* Long-horizon manipulation inheretly is hindered by a simple question: given multiple plausible actions at the same state, which one actually makes progress? It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed (cite pi06）. */}
-
-
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-4xl">
