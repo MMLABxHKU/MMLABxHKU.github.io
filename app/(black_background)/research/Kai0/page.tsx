@@ -1045,7 +1045,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    The impact of these designs is evaluated through task success rate and the accuracy of progress estimation, as quantified by MAD in the following evaluation. 
+                                    The impact of these designs is evaluated using a combination of task success rate and the quality of the advantage signal, measured in terms of temporal smoothness and stability, as reported in the following evaluation.
                                 </p>
                             `} 
                             tipList={{}}
@@ -1065,7 +1065,7 @@ export default function Home() {
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
-                                Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is more stable (lower MAD), smoother (high SFR) and more reliable (higher success rate).
+                                Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is smoother (lower MSTD), more stable (higher SFR) and more reliable (higher success rate).
                             </i>
                             <div></div>
                         </div>
