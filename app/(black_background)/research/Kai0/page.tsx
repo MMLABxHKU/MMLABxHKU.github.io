@@ -330,7 +330,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    This recipe provide strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <a class="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
+                                    This recipe provides strong evidence that 100% robotic skill mastery is a matter of strategic alignment, not just massive scale. We will release data, checkpoints, and host <a class="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
                                 </p>
                             `} 
                             tipList={{}}
@@ -457,7 +457,7 @@ export default function Home() {
                                         Q<sub>model</sub> (Learned Policy): The policy distribution parameterized by the model weights.
                                     </li>
                                     <li>
-                                        P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> failling outside P<sub>real</sub> constitutes the failure modes.
+                                        P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> falling outside P<sub>real</sub> constitutes the failure modes.
                                     </li>
                                 </ol>
                             `} 
@@ -684,7 +684,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i,e, success rate.
+                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -940,7 +940,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation inheretly is hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
+                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
                                 </p>
                             `} 
                             tipList={{
