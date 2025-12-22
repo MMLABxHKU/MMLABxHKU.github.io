@@ -34,8 +34,10 @@ import { StageVideo1 } from "./stage/stage1"
 
 
 
+import ShareLink from "./share"
 import { EmailSubscribe } from "./mailing"
 import TextTip from "@/components/diy/textTip/textTip"
+
 
 
 import Image from 'next/image'
@@ -172,9 +174,9 @@ export default function Home() {
                                         {/* <h2>
                                             Challenge
                                         </h2> */}
-                                        {/* <h2>
+                                        <h2>
                                             Share
-                                        </h2> */}
+                                        </h2>
                                     </div>
                                     <div className="flex flex-col">
                                         <h2>
@@ -196,9 +198,25 @@ export default function Home() {
                                                 At CVPR 2026
                                             </Link>
                                         </h2> */}
-                                        {/* <h2>
-                                            X
-                                        </h2> */}
+                                        <h2 className="flex flex-row items-center">
+                                            <ShareLink
+                                                platform="X"
+                                                url="https://mmlab.hk/research/Kai0"
+                                                hashtags={['AI', 'Robotics']}
+                                            />
+                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <ShareLink
+                                                platform="LinkedIn"
+                                                url="https://mmlab.hk/research/Kai0"
+                                                hashtags={['AI', 'Robotics']}
+                                            />
+                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <ShareLink
+                                                platform="Reddit"
+                                                url="https://mmlab.hk/research/Kai0"
+                                                hashtags={['AI', 'Robotics']}
+                                            />
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
@@ -1100,7 +1118,7 @@ export default function Home() {
                             </i>
                             <div></div>
                         </div>
-                        
+
 
 
                     </div>
