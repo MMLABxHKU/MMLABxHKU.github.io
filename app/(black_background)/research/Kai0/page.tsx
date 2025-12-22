@@ -123,6 +123,14 @@ export default function Home() {
                                     Stage Advantage
                                 </span>
                             </Link>
+                            <Link className="select-none flex items-center gap-3 group" href="#conclusion">
+                                <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                    &nbsp;
+                                </span>
+                                <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                    Conclusion
+                                </span>
+                            </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#citation">
                                 <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
