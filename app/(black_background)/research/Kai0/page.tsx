@@ -30,6 +30,7 @@ import { SoupingBarChart1 } from "./chart/souping/souping1"
 import { AdvantageBarChart1 } from "./chart/advantage/advantage1"
 import { AdvantageBarChart2 } from "./chart/advantage/advantage2"
 import { AdvantageBarChart3 } from "./chart/advantage/advantage3"
+import { StageVideo1 } from "./stage/stage1"
 
 
 
@@ -881,7 +882,7 @@ export default function Home() {
                         </div> */}
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
+                        {/* <div className="flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-6xl w-full flex flex-row gap-10 justify-center">
                                 <Image
                                     src="https://assets.kinetixai.cn/FoldAnything%2Fstage_advantage_1220_0116.jpg"
@@ -891,7 +892,9 @@ export default function Home() {
                                     className="w-full lg:max-w-1/2 object-cover object-center rounded-sm bg-gradient-loading select-none"
                                 />
                             </div>
-                        </div>
+                        </div> */}
+                        <StageVideo1 />
+
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
                             <i className="w-full leading-relaxed max-w-4xl text-center">
