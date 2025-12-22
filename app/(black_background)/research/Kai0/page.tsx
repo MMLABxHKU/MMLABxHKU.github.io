@@ -350,7 +350,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center">
+                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
                                 Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
                             </i>
                             <div></div>
@@ -369,7 +369,7 @@ export default function Home() {
                         </div>
                         <div className="-mt-6 xl:-mt-8 flex flex-row gap-6 justify-center z-50">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-6xl">
+                            <i className="w-full leading-relaxed max-w-6xl text-muted-foreground">
                                 Video Description todo
                             </i>
                             <div></div>
@@ -494,7 +494,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words  text-muted-foreground">
                                 Distribution dynamics of <b>P<sub>train</sub></b> <b>Q<sub>model</sub></b> and <b>P<sub>test</sub></b>.
                                 {/* <p>
                                 P<sub>train</sub> = ExpertDemo(Q<sub>human</sub>), 
@@ -520,7 +520,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                             This interactive 3D t-SNE visualizes the action distributions of P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>. <b>Try to click the Control Optimize and drag to rotate the plot.</b>
                             </i>
                             <div></div>
@@ -567,7 +567,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words  text-muted-foreground">
                                 <b>Dagger</b>: Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
                             </i>
                             <div></div>
@@ -588,7 +588,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                                 <b>Inference Optimization</b>: Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
                             </i>
                             <div></div>
@@ -676,7 +676,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                                 Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recovery cost.
                             </i>
                             <div></div>
@@ -692,7 +692,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                                 Time scaling affects success rate to some extent while maintaining throughput without significant degradation, especially for models predicting delta actions.
                             </i>
                             <div></div>
@@ -709,7 +709,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                                 Space mirroring augmentation comprehensively improves the model's overall performance across all metrics.
                             </i>
                             <div></div>
@@ -726,7 +726,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center break-words">
+                            <i className="w-full leading-relaxed max-w-3xl text-center break-words text-muted-foreground">
                                 Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution.
                             </i>
                             <div></div>
@@ -812,7 +812,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center">
+                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
                                 We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
                             </i>
                             <div></div>
@@ -856,7 +856,7 @@ export default function Home() {
 
                         <div className="mt-2">
                             <TextTip html={`\
-                                <p class="w-full leading-relaxed text-[#737373] italic text-xs">
+                                <p class="w-full leading-relaxed text-muted-foreground italic text-xs">
                                     MA differs fundamentally fro-m existing paradigms: unlike Mixture-of-Experts (MoE), it requires no router mechanism; unlike ensembling, it manipulates model weights directly rather than combining outputs at inference time. This makes MA a uniquely powerful strategy for scalable, iterative model development in embodied AI.
                                 </p>
                             `} 
@@ -874,7 +874,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center">
+                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
                                 The merged model surpasses both the best constituent models and the oracle model trained on the full dataset across multiple tasks, evidencing that Model Arithmetic successfully assimilates the distinct policy manifolds learned from diverse data subsets.
                             </i>
                             <div></div>
@@ -986,7 +986,7 @@ export default function Home() {
 
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center">
+                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
                                 Illustration of the estimated progress given a video clip. Direct+Stage (ours) has better stability in progress estimation.
                             </i>
                             <div></div>
@@ -996,7 +996,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <p class="w-full leading-relaxed">
+                                <p class="w-full leading-relaxed">alu
                                     Built on this, the Stage Advantage decomposes long-horizon manipulation into a sequence of semantic stages, each corresponding to a meaningful sub-goal in the task. Instead of evaluating actions against the full task horizon, it estimates whether each action is likely to advance the current stage, providing a stage-aware advantage signal for policy training. 
                                 </p>
                             `} 
@@ -1029,7 +1029,7 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl text-center">
+                            <i className="w-full leading-relaxed max-w-3xl text-center text-muted-foreground">
                                 Value-diff (pistar06-style): compute advantage by subtracting two independently predicted state values; Direct: predict advantage as relative improvement from paired observations; Direct+Stage: stage-conditioned direct advantage prediction for long-horizon training. Direct+Stage (ours) is more stable (lower MAD), smoother (high SFR) and more reliable (higher success rate).
                             </i>
                             <div></div>
