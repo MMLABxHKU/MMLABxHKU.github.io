@@ -361,7 +361,7 @@ export default function Home() {
                         <div className="px-6">
                             <video
                                 autoPlay muted loop playsInline
-                                poster="https://assets.kinetixai.cn/FoldAnything/full.png"
+                                poster="https://assets.kinetixai.cn/FoldAnything/pipeling.jpg"
                                 className="w-full aspect-video rounded-sm"
                             >
                                 <source src="https://assets.kinetixai.cn/FoldAnything/pipeling.mp4" type="video/mp4" />
