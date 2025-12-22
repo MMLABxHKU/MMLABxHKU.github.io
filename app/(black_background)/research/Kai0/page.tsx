@@ -731,12 +731,18 @@ export default function Home() {
 
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-4xl">
-                                We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation (cite Model soups) guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
-                            </p>
+
                             <div></div>
                         </div>
                         {/* We propose Model Arithmetic (MA): train only on newly collected data subsets, then merge the resulting model with previous ones at the weight level[1]. Remarkably, this synthesis can even surpass the performance of models trained on the entire dataset at once. */}
+                        
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p className="w-full leading-relaxed max-w-4xl">
+                                    We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                </p>
+                            `} tipList={{1:{link:'https://proceedings.mlr.press/v162/wortsman22a.html',content:'Model Soups (Wortsman, et al., 2021)'}}} />
+                        </div>
 
 
 
@@ -986,15 +992,6 @@ export default function Home() {
                                 &#125;
                             </p>
                             <div></div>
-                        </div>
-
-
-                        <div className="mt-20">
-                        <TextTip html={`\
-                                <p className="leading-relaxed max-w-4xl">
-                                    文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).<sup>1</sup>  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)<sup>2</sup>
-                                </p>
-                            `} tipList={{1:{link:'',content:'abcsa kcawoc cklan casnc j'},2:{link:'',content:'abcsa kcawoc cklan casnc jceawl kaca jcosajo c'}}} />
                         </div>
 
 

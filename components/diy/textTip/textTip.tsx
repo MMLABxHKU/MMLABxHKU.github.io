@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from "next/link"
 
 
 let timeSet: any = null;
@@ -75,10 +76,7 @@ export default function textTip({ html, tipList }: { html: string; tipList: any 
               key={num}
             >
               {tipListNow[num].link ? (
-                <a href={tipListNow[num].link} target="_blank">
-                  <sup className="overflow-hidden">{num}</sup>
-                  {tipListNow[num].content}
-                </a>
+                <Link className="animated-underline" href={tipListNow[num].link} target="_blank"><sup className="overflow-hidden">{num}</sup>{tipListNow[num].content}</Link>
               ) : (
                 <>
                   <sup className="overflow-hidden">{num}</sup>
