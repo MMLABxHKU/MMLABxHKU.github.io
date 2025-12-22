@@ -1095,12 +1095,12 @@ export default function Home() {
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <i className="w-full leading-relaxed max-w-3xl">
+                            <i className="w-full leading-relaxed max-w-3xl text-muted-foreground italic text-xs">
                                 Stay up to date with our live demos, challenges, and more.
                             </i>
                             <div></div>
                         </div>
-
+                        
 
 
                     </div>
