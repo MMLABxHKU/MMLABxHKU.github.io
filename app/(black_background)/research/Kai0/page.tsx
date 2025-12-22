@@ -101,49 +101,55 @@ export default function Home() {
 
 
 
-                    {/* navigator */}
-                    <div className="w-48 ml-6 hidden lg:block">
-                        <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                            <Link className="select-none flex items-center gap-3 group" href="#methodology">
-                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
-                                    Methodology
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
-                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
-                                    Mode Consistency
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
-                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
-                                    Model Arithmetic
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
-                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
-                                    Stage Advantage
-                                </span>
-                            </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#citation">
-                                <span className="border-l-2 border-l-black/700 text-[8pt] group-hover:border-l-mred">
-                                    &nbsp;
-                                </span>
-                                <span className="text-[8pt] text-black/700 group-hover:text-mred">
-                                    Citation
-                                </span>
-                            </Link>
+                    {/* navigator - hover to reveal */}
+                    <div className="fixed left-0 top-0 h-full w-8 z-50 hidden lg:block group/nav">
+                        {/* Hover trigger zone */}
+                        <div className="absolute left-0 top-0 h-full w-8" />
+                        
+                        {/* Navigator panel */}
+                        <div className="absolute left-0 top-0 h-full w-48 pl-6 pt-20 bg-gradient-to-r from-neutral-900/95 to-neutral-900/80 backdrop-blur-sm border-r border-neutral-700/50 -translate-x-full opacity-0 group-hover/nav:translate-x-0 group-hover/nav:opacity-100 transition-all duration-300 ease-out shadow-2xl shadow-black/50">
+                            <div className="flex flex-col gap-3">
+                                <Link className="select-none flex items-center gap-3 group" href="#methodology">
+                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                        &nbsp;
+                                    </span>
+                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                        Methodology
+                                    </span>
+                                </Link>
+                                <Link className="select-none flex items-center gap-3 group" href="#mode_consistency">
+                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </span>
+                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                        Mode Consistency
+                                    </span>
+                                </Link>
+                                <Link className="select-none flex items-center gap-3 group" href="#model_arithmetic">
+                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </span>
+                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                        Model Arithmetic
+                                    </span>
+                                </Link>
+                                <Link className="select-none flex items-center gap-3 group" href="#stage_advantage">
+                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </span>
+                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                        Stage Advantage
+                                    </span>
+                                </Link>
+                                <Link className="select-none flex items-center gap-3 group" href="#citation">
+                                    <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
+                                        &nbsp;
+                                    </span>
+                                    <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
+                                        Citation
+                                    </span>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     
