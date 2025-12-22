@@ -86,93 +86,114 @@ export function ProgressBar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-50 flex justify-center transition-opacity duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 ease-out ${
         isVisible
-          ? "opacity-100"
-          : "opacity-0 pointer-events-none"
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-4 pointer-events-none"
       }`}
-      style={{ willChange: "opacity" }}
     >
-      <div className="w-full max-w-2xl mx-4 mt-4 px-6 py-4 bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl">
-        {/* Stage indicator */}
-        <div className="flex justify-between items-center mb-3">
-          <span className="text-xs text-white/60 font-medium tracking-wider uppercase">
-            Stage {currentStage.number} of 3
-          </span>
-          <span className="text-xs text-white/90 font-semibold">
-            {currentStage.name}
-          </span>
-        </div>
+      {/* Outer container with Apple-style layered shadows */}
+      <div 
+        className="w-full max-w-xl mx-4 mt-3 rounded-[18px] p-[1px]"
+        style={{
+          background: "linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.05) 100%)",
+          boxShadow: `
+            0 0 0 0.5px rgba(255,255,255,0.1),
+            0 2px 4px rgba(0,0,0,0.3),
+            0 8px 16px rgba(0,0,0,0.3),
+            0 16px 32px rgba(0,0,0,0.2)
+          `
+        }}
+      >
+        {/* Inner content with Apple's signature material */}
+        <div 
+          className="rounded-[17px] px-5 py-3.5"
+          style={{
+            background: "linear-gradient(180deg, rgba(44,44,46,0.98) 0%, rgba(28,28,30,0.99) 100%)",
+            backdropFilter: "blur(40px) saturate(180%)",
+            WebkitBackdropFilter: "blur(40px) saturate(180%)"
+          }}
+        >
+          {/* Stage indicator - Apple-style minimal typography */}
+          <div className="flex justify-between items-center mb-2.5">
+            <span 
+              className="text-[11px] font-medium tracking-wide"
+              style={{ color: "rgba(255,255,255,0.5)" }}
+            >
+              STAGE {currentStage.number} OF 3
+            </span>
+            <span 
+              className="text-[11px] font-semibold tracking-tight"
+              style={{ color: "rgba(255,255,255,0.85)" }}
+            >
+              {currentStage.name}
+            </span>
+          </div>
 
-        {/* Progress track */}
-        <div className="relative flex items-center gap-3">
-          {/* 0% label */}
-          <span className="text-sm font-bold text-white/70 w-10 text-left">
-            0%
-          </span>
+          {/* Progress track - Apple-style pill */}
+          <div className="relative flex items-center gap-2.5">
+            {/* 0% label */}
+            <span 
+              className="text-[11px] font-semibold w-8 text-left tabular-nums"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
+              0%
+            </span>
 
-          {/* Track container */}
-          <div className="flex-1 relative h-2 bg-white/10 rounded-full overflow-hidden">
-            {/* Progress fill - no CSS transition, using RAF for smoothness */}
-            <div
-              ref={progressRef}
-              className="absolute top-0 left-0 h-full bg-gradient-to-r from-mred via-red-400 to-orange-400 rounded-full"
-              style={{ 
-                width: "0%",
-                willChange: "width",
-                transform: "translateZ(0)" // Force GPU acceleration
+            {/* Track container with inner shadow */}
+            <div 
+              className="flex-1 relative h-[6px] rounded-full overflow-hidden"
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                boxShadow: "inset 0 1px 2px rgba(0,0,0,0.3)"
               }}
-            />
+            >
+              {/* Progress fill with Apple-style gradient */}
+              <div
+                ref={progressRef}
+                className="absolute top-0 left-0 h-full rounded-full"
+                style={{ 
+                  width: "0%",
+                  background: "linear-gradient(90deg, #FF375F 0%, #FF6B6B 50%, #FF9F43 100%)",
+                  boxShadow: "0 0 8px rgba(255,55,95,0.4)",
+                  willChange: "width",
+                  transform: "translateZ(0)"
+                }}
+              />
 
-            {/* Stage markers */}
-            <div className="absolute top-0 left-0 w-full h-full flex items-center">
-              {stages.map((stage, index) => {
-                const markerPosition = ((index + 1) / stages.length) * 100;
-                const isCurrent = currentStage.number === stage.number;
+              {/* Subtle stage markers */}
+              <div className="absolute top-0 left-0 w-full h-full flex items-center pointer-events-none">
+                {stages.map((stage, index) => {
+                  const markerPosition = ((index + 1) / stages.length) * 100;
+                  const isCurrent = currentStage.number === stage.number;
 
-                return (
-                  <div
-                    key={stage.id}
-                    className={`absolute w-3 h-3 rounded-full border-2 transform -translate-x-1/2 transition-transform duration-200 ${
-                      isCurrent
-                        ? "bg-mred border-mred scale-125"
-                        : "bg-white/20 border-white/30 scale-100"
-                    }`}
-                    style={{ left: `${markerPosition}%` }}
-                  />
-                );
-              })}
+                  return (
+                    <div
+                      key={stage.id}
+                      className="absolute w-1.5 h-1.5 rounded-full transform -translate-x-1/2 transition-all duration-300"
+                      style={{ 
+                        left: `${markerPosition}%`,
+                        background: isCurrent 
+                          ? "rgba(255,255,255,0.9)" 
+                          : "rgba(255,255,255,0.25)",
+                        boxShadow: isCurrent 
+                          ? "0 0 6px rgba(255,255,255,0.5)" 
+                          : "none"
+                      }}
+                    />
+                  );
+                })}
+              </div>
             </div>
+
+            {/* 100% label */}
+            <span 
+              className="text-[11px] font-semibold w-8 text-right tabular-nums"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
+              100%
+            </span>
           </div>
-
-          {/* 100% label */}
-          <span className="text-sm font-bold text-white/70 w-10 text-right">
-            100%
-          </span>
-        </div>
-
-        {/* Stage names below track */}
-        <div className="relative mt-2 flex items-center gap-3">
-          <div className="w-10" />
-          <div className="flex-1 relative">
-            {stages.map((stage, index) => {
-              const markerPosition = ((index + 1) / stages.length) * 100;
-              const isCurrent = currentStage.number === stage.number;
-
-              return (
-                <span
-                  key={stage.id}
-                  className={`absolute text-[10px] transform -translate-x-1/2 whitespace-nowrap transition-colors duration-200 ${
-                    isCurrent ? "text-white/90 font-medium" : "text-white/40"
-                  }`}
-                  style={{ left: `${markerPosition}%` }}
-                >
-                  {stage.number}
-                </span>
-              );
-            })}
-          </div>
-          <div className="w-10" />
         </div>
       </div>
     </div>
