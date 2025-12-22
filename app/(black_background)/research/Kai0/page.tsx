@@ -458,7 +458,25 @@ export default function Home() {
                             </p>
                             <div></div>
                         </div>
-                        {/* Current training strategy, in most cases, imitation learning, can be interpreted as minimizing the $$KL(Q_{model}|Q_{human})$$ via $$P_{train}$$(cite). This process yields a finetuned $$Q_{model}$$, and deploying this model on real robots (denoted as $$Inference()$$ function) give us $$P_{test}$$.   */}
+                        {/* <div className="mt-6">
+                            <TextTip html={`\
+                                <p className="w-full leading-relaxed max-w-4xl">
+                                    
+                                </p>
+                            `} 
+                            tipList={{
+                                1:{
+                                    link:'https://www.pi.website/blog/pistar06',
+                                    content: (
+                                        <>
+                                        π<sub>0.6</sub><sup>*</sup> (2025)
+                                        </>
+                                    ),
+                                }
+                            }}
+                            offset={1}
+                            />
+                        </div> */}
 
 
 
