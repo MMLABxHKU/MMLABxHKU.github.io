@@ -32,6 +32,7 @@ import { AdvantageBarChart2 } from "./chart/advantage/advantage2"
 import { AdvantageBarChart3 } from "./chart/advantage/advantage3"
 import { StageVideo1 } from "./stage/stage1"
 import { ProgressBar } from "./progress-bar"
+import Citation from "./citation"
 
 
 
@@ -1088,35 +1089,7 @@ export default function Home() {
                                 </Link>
                             </h2>
                         </div>
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl p-4 bg-white/10 rounded-sm text-foreground">
-                                @article&#123;kaimanipteam2025kai0,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>author = &#123;KAI Manipulation Team&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>title = &#123;XXX&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>journal = &#123;HKU MMLab Research Blog&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>year = &#123;2025&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>note = &#123;https://mmlab.hk/research/Kai0&#125;,
-                                <br></br>
-                                &#125;
-                            </p>
-                            <div></div>
-                        </div>
+                        <Citation/>
 
 
 
