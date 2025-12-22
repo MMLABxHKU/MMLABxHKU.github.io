@@ -736,7 +736,16 @@ export default function Home() {
                                     We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                                 </p>
                             `} 
-                            tipList={{1:{link:'https://proceedings.mlr.press/v162/wortsman22a.html',content:'Model Soups (Wortsman, et al., 2021)'}}} 
+                            tipList={{
+                                1:{
+                                    link:'https://proceedings.mlr.press/v162/wortsman22a.html',
+                                    content: (
+                                        <>
+                                        Model Soups (Wortsman, et al., 2021)
+                                        </>
+                                    ),
+                                }
+                            }}
                             offset={0}
                             />
                         </div>
