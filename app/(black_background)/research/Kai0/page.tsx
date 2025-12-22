@@ -838,7 +838,16 @@ export default function Home() {
                                     Long-horizon manipulation inheretly is hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
                                 </p>
                             `} 
-                            tipList={{1:{link:'https://www.pi.website/blog/pistar06',content:'π<sub>0.6</sub><sup>*</sup> (2025)'}}}
+                            tipList={{
+                                1:{
+                                    link:'https://www.pi.website/blog/pistar06',
+                                    content: (
+                                        <>
+                                        π<sub>0.6</sub><sup>*</sup> (2025)
+                                        </>
+                                    ),
+                                }
+                            }}
                             offset={1}
                             />
                         </div>
