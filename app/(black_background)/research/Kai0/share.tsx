@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link';
 import { useCallback } from 'react';
 
@@ -6,7 +8,7 @@ type SharePlatform =
   | 'LinkedIn'
   | 'Facebook'
   | 'Reddit'
-  | 'Copy';
+  | 'URL';
 
 type ShareLinkProps = {
   platform: SharePlatform;
@@ -36,14 +38,14 @@ export default function ShareLink({
     }
   }, [url, onCopied]);
 
-  if (platform === 'Copy') {
+  if (platform === 'URL') {
     return (
       <button
         type="button"
         onClick={handleCopy}
         className={
           className ??
-          'text-mred animated-underline hover:text-mred'
+          'text-mred animated-underline hover:text-mred hover:cursor-pointer'
         }
         aria-label="Copy URL"
       >

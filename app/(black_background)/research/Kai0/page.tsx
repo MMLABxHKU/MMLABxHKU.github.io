@@ -224,6 +224,11 @@ export default function Home() {
                                             <ShareLink
                                                 platform="Reddit"
                                                 url="https://mmlab.hk/research/Kai0"
+                                            />                                            
+                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <ShareLink
+                                                platform="URL"
+                                                url="https://mmlab.hk/research/Kai0"
                                             />
                                         </h2>
                                     </div>
