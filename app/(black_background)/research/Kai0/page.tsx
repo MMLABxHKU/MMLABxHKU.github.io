@@ -34,7 +34,7 @@ import { AdvantageBarChart3 } from "./chart/advantage/advantage3"
 
 
 import { EmailSubscribe } from "./mailing"
-
+import TextTip from "@/components/diy/textTip/textTip"
 
 
 import Image from 'next/image'
@@ -238,7 +238,7 @@ export default function Home() {
                                 <i>Julius Caesar</i>
                             </div> 
                         </div>
-
+                        
 
 
                         <div className="flex flex-row gap-6 justify-center">
@@ -986,6 +986,15 @@ export default function Home() {
                                 &#125;
                             </p>
                             <div></div>
+                        </div>
+
+
+                        <div className="mt-20">
+                        <TextTip html={`\
+                                <p className="leading-relaxed max-w-4xl">
+                                    文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).<sup>1</sup>  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)<sup>2</sup>
+                                </p>
+                            `} tipList={{1:{link:'',content:'abcsa kcawoc cklan casnc j'},2:{link:'',content:'abcsa kcawoc cklan casnc jceawl kaca jcosajo c'}}} />
                         </div>
 
 

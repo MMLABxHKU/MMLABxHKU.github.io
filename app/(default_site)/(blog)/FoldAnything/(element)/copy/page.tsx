@@ -20,7 +20,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
-
+import CopyText from "@/app/(default_site)/(blog)/FoldAnything/(element)/copy/copyText"
 
 const paths: { path: string; url: string; }[] = [
     {
@@ -116,7 +116,7 @@ export default function Home() {
                     <div className="mt-6 flex flex-row gap-6 justify-center">
                         <div></div>
                         <p className="leading-relaxed max-w-4xl bg-amber-700 rounded-sm p-4">
-                            文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)
+                            <CopyText html={`文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Stridesand model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)文字部分：Turning Stumbles into Strides: Mode Consistency between Data and model. (P_train (human action), Q_model (action projection, weights), P_test (policy action) 三者).  ( 0 - 20%, 基建)`} />
                         </p>
                         <div></div>
                     </div>
