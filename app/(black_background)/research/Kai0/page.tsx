@@ -39,6 +39,7 @@ import Citation from "./citation"
 import ShareLink from "./share"
 import { EmailSubscribe } from "./mailing"
 import TextTip from "@/components/diy/textTip/textTip"
+import { VideoCarousel } from "./video-carousel"
 
 
 
@@ -340,30 +341,8 @@ export default function Home() {
 
 
 
-                        <div className="mt-10 w-full flex flex-row justify-center px-6">
-                            <div className="w-full grid grid-rows-3 xl:grid-rows-1 xl:grid-cols-3 gap-6 justify-center items-center">
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/FoldAnything/step_1.png"
-                                    className="max-w-xl w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_1.mp4" type="video/mp4" />
-                                </video>
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/FoldAnything/step_2.png"
-                                    className="max-w-xl w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_2.mp4" type="video/mp4" />
-                                </video>
-                                <video
-                                    autoPlay muted loop controls playsInline
-                                    poster="https://assets.kinetixai.cn/FoldAnything/step_3.png"
-                                    className="max-w-xl w-full aspect-video rounded-sm"
-                                >
-                                    <source src="https://assets.kinetixai.cn/FoldAnything/step_3.mp4" type="video/mp4" />
-                                </video>
-                            </div>
+                        <div className="mt-10 w-full px-6">
+                            <VideoCarousel />
                         </div>
                         <div className="mt-3 flex flex-row gap-6 justify-center">
                             <div></div>
