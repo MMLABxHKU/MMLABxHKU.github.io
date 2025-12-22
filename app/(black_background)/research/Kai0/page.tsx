@@ -204,19 +204,26 @@ export default function Home() {
                                             <ShareLink
                                                 platform="X"
                                                 url="https://mmlab.hk/research/Kai0"
-                                                hashtags={['AI', 'Robotics']}
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="LinkedIn"
                                                 url="https://mmlab.hk/research/Kai0"
-                                                hashtags={['AI', 'Robotics']}
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="Reddit"
                                                 url="https://mmlab.hk/research/Kai0"
-                                                hashtags={['AI', 'Robotics']}
+                                            />
+                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <ShareLink
+                                                platform="Facebook"
+                                                url="https://mmlab.hk/research/Kai0"
+                                            />
+                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <ShareLink
+                                                platform="Reddit"
+                                                url="https://mmlab.hk/research/Kai0"
                                             />
                                         </h2>
                                     </div>

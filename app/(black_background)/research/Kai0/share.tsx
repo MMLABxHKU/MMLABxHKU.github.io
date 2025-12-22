@@ -1,6 +1,12 @@
 import Link from 'next/link';
+import { useCallback } from 'react';
 
-type SharePlatform = 'X' | 'LinkedIn' | 'facebook' | 'Reddit';
+type SharePlatform =
+  | 'X'
+  | 'LinkedIn'
+  | 'Facebook'
+  | 'Reddit'
+  | 'Copy';
 
 type ShareLinkProps = {
   platform: SharePlatform;
@@ -9,6 +15,7 @@ type ShareLinkProps = {
   hashtags?: string[];
   via?: string;
   className?: string;
+  onCopied?: () => void; // 可选：复制成功回调
 };
 
 export default function ShareLink({
@@ -18,7 +25,33 @@ export default function ShareLink({
   hashtags = [],
   via,
   className,
+  onCopied,
 }: ShareLinkProps) {
+  const handleCopy = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      onCopied?.();
+    } catch (err) {
+      console.error('Copy failed', err);
+    }
+  }, [url, onCopied]);
+
+  if (platform === 'Copy') {
+    return (
+      <button
+        type="button"
+        onClick={handleCopy}
+        className={
+          className ??
+          'text-mred animated-underline hover:text-mred'
+        }
+        aria-label="Copy URL"
+      >
+        Copy
+      </button>
+    );
+  }
+
   let shareUrl = '';
 
   switch (platform) {
@@ -33,17 +66,17 @@ export default function ShareLink({
       if (via) {
         params.append('via', via);
       }
-      shareUrl = `https://X.com/intent/tweet?${params.toString()}`;
+      shareUrl = `https://x.com/intent/tweet?${params.toString()}`;
       break;
     }
 
     case 'LinkedIn': {
       const params = new URLSearchParams({ url });
-      shareUrl = `https://www.LinkedIn.com/sharing/share-offsite/?${params.toString()}`;
+      shareUrl = `https://www.linkedin.com/sharing/share-offsite/?${params.toString()}`;
       break;
     }
 
-    case 'facebook': {
+    case 'Facebook': {
       const params = new URLSearchParams({ u: url });
       shareUrl = `https://www.facebook.com/sharer/sharer.php?${params.toString()}`;
       break;
@@ -54,7 +87,7 @@ export default function ShareLink({
         url,
         title: text ?? '',
       });
-      shareUrl = `https://www.Reddit.com/submit?${params.toString()}`;
+      shareUrl = `https://www.reddit.com/submit?${params.toString()}`;
       break;
     }
   }
