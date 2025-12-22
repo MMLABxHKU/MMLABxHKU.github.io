@@ -244,7 +244,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <p className="w-full leading-relaxed max-w-3xl">
+                                <p class="w-full leading-relaxed">
                                     “Veni, Vidi, Vici” — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
@@ -269,30 +269,32 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center px-6">
-                            <ol className="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
-                                <li>
-                                    <b>
-                                        Mode Consistency:&nbsp;
-                                    </b>
-                                    We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (Q<sub>model</sub>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
-                                </li>
-                                {/* We argue that not all data is created equal. By strictly aligning the human demonstration distribution ($P_{train}$), the model's knowledge ($Q_{model}$), and the test-time distribution ($P_{test}$), we minimize in-distribution shifts that lead to failure. */}
-                                <li>
-                                    <b>
-                                        Model Arithmetic:&nbsp;
-                                    </b>
-                                    We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy—capturing diverse knowledge without the architectural complexity of MoE.
-                                </li>
-                                {/* Rather than relying on a single checkpoint, we identify that models trained on different data subsets learn distinct manifolds. We introduce a "shortcut" to merge these manifolds—condensing several diverse models into a single, adaptive policy without the complexity of MoE architectures. */}
-                                <li>
-                                    <b>
-                                        Stage Advantage:&nbsp;
-                                    </b>
-                                    To conquer the "last mile", we decompose tasks into semantic stages. By estimating a stage-aware advantage signal, we provide the model with "long-horizon vision," ensuring every action makes measurable progress toward the goal.
-                                </li>
-                                {/* A specialized mechanism to handle the "last mile" of precision (the final 80-100% performance gain). */}
-                            </ol>
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6">
+                                    <li>
+                                        <b>
+                                            Mode Consistency:&nbsp;
+                                        </b>
+                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (Q<sub>model</sub>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Model Arithmetic:&nbsp;
+                                        </b>
+                                        We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy—capturing diverse knowledge without the architectural complexity of MoE.
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Stage Advantage:&nbsp;
+                                        </b>
+                                        To conquer the "last mile", we decompose tasks into semantic stages. By estimating a stage-aware advantage signal, we provide the model with "long-horizon vision," ensuring every action makes measurable progress toward the goal.
+                                    </li>
+                                </ol>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
                         </div>
 
 
