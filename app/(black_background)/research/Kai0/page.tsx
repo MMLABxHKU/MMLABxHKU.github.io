@@ -201,7 +201,7 @@ export default function Home() {
                                                 At CVPR 2026
                                             </Link>
                                         </h2> */}
-                                        <h2 className="flex flex-row items-center">
+                                        <h2 className="flex flex-row items-center flex-wrap">
                                             <ShareLink
                                                 platform="X"
                                                 url="https://mmlab.hk/research/Kai0"
