@@ -55,7 +55,7 @@ export default function textTip({ html, tipList }: { html: string; tipList: any 
 
   return (
     <div className="flex overflow-hidden">
-      <div className="mt-6 flex flex-row gap-6 justify-center">
+      <div className="flex flex-row gap-6 justify-center">
 
 
 

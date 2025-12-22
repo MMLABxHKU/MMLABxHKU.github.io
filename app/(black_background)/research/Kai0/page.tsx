@@ -729,13 +729,6 @@ export default function Home() {
 
 
 
-                        <div className="mt-6 flex flex-row gap-6 justify-center">
-                            <div></div>
-
-                            <div></div>
-                        </div>
-                        {/* We propose Model Arithmetic (MA): train only on newly collected data subsets, then merge the resulting model with previous ones at the weight level[1]. Remarkably, this synthesis can even surpass the performance of models trained on the entire dataset at once. */}
-                        
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-4xl">
