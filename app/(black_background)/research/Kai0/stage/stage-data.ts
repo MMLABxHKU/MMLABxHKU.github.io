@@ -17474,16 +17474,16 @@ export const stageData = [
     {
         title: "Task A",
         evaluationData: SINGLE_with_advantage,
-        video: "/video/episode_0.mp4",
+        video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
     {
         title: "Task B",
         evaluationData: SINGLE_with_advantage,
-        video: "/video/episode_0.mp4",
+        video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
     {
         title: "Task C",
         evaluationData: SINGLE_with_advantage,
-        video: "/video/episode_0.mp4",
+        video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
     },
 ]
