@@ -372,6 +372,7 @@ export default function Home() {
                         </div>
 
 
+
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-20 text-3xl font-bold"> 
                                 <Link href="#metholody" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
@@ -390,6 +391,7 @@ export default function Home() {
                             </h2>
                         </div>
 
+                        
                         
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-10 text-xl font-bold"> 
