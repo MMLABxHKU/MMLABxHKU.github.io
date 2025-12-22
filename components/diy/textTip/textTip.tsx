@@ -100,15 +100,17 @@ export default function TextTip({
   return (
     <div className="flex overflow-hidden">
       <div className="flex flex-row gap-6 justify-center">
-        <div className="hidden xl:block flex-1/12 pl-6" />
+        <div className='xl:hidden'></div>
+        <div className="hidden xl:block flex-1/7 pl-6" />
 
         <div
           id="htmlDiv"
-          className="flex flex-10/12 overflow-hidden px-6 xl:px-2"
+          className="flex xl:flex-5/7 overflow-hidden xl:px-6 xl:px-3"
           dangerouslySetInnerHTML={{ __html: htmlNow }}
         />
 
-        <div className="hidden xl:block flex-1/12 pr-6 overflow-hidden text-xs">
+        <div className='xl:hidden'></div>
+        <div className="hidden xl:block flex-1/7 pr-6 overflow-hidden text-xs">
           {Object.keys(tipListNow).map(num => (
             <div
               key={num}
