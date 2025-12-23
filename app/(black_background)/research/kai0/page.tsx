@@ -274,7 +274,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1<sup>1</sup> rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0<sup>1</sup> and GO-1<sup>2</sup> rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
 
@@ -493,7 +493,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
+                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>,</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
                                 </p>
                             `} 
                             tipList={{
@@ -625,7 +625,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
@@ -972,7 +972,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
+                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup><sup>,</sup><sup>2</sup>.
                                 </p>
                             `} 
                             tipList={{
@@ -983,9 +983,17 @@ export default function Home() {
                                         π<sub>0.6</sub><sup>*</sup>: a VLA that Learns from Experience (2025)
                                         </>
                                     ),
+                                },
+                                2:{
+                                    link:'https://openreview.net/forum?id=Seb7rprW1Y',
+                                    content: (
+                                        <>
+                                        Self-Directed Learning (Li et al.,2025)
+                                        </>
+                                    ),
                                 }
                             }}
-                            offset={7}
+                            offset={9}
                             />
                         </div>
 
