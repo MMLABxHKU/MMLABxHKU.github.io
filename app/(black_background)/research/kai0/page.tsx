@@ -1062,7 +1062,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-4xl">
-                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage (ours)</span> uses stage-conditioned direct advantage prediction for long-horizon training - achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
+                                <span className="font-medium text-white/70">Value-diff</span> computes the advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts the advantage as the relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage (ours)</span> uses stage-conditioned direct advantage prediction for long-horizon training, achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
                             </p>
                         </div>
 
