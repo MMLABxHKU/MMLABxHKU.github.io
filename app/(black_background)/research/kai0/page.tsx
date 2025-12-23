@@ -91,7 +91,7 @@ export default function Home() {
                                 <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
                                     Introduction
                                 </span>
-                            </Link>
+                                            </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#methodology">
                                 <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
@@ -141,9 +141,9 @@ export default function Home() {
                                 </span>
                             </Link>
                         </div>
+                        </div>
                     </div>
-                </div>
-
+                    
 
                 {/* Main content - centered */}
                 <div className="max-w-6xl mx-auto flex flex-col">
@@ -160,8 +160,8 @@ export default function Home() {
   {/* Published */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-      Published
-    </h2>
+                                            Published
+                                        </h2>
     <h2 className="flex-1 break-words">
       December 24, 2025
     </h2>
@@ -170,8 +170,8 @@ export default function Home() {
   {/* Paper */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-      Paper
-    </h2>
+                                            Paper
+                                        </h2>
     <h2 className="flex-1 break-words">
       Available in Late January 2026
     </h2>
@@ -180,8 +180,8 @@ export default function Home() {
   {/* Email */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-      Email
-    </h2>
+                                            Email
+                                        </h2>
     <h2 className="flex-1 break-all">
       <Link
         className="text-mred animated-underline hover:text-mred"
@@ -189,24 +189,24 @@ export default function Home() {
       >
         research@mmlab.hk
       </Link>
-    </h2>
-  </div>
+                                        </h2>
+                                    </div>
 
   {/* By */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
       By
-    </h2>
+                                        </h2>
     <h2 className="flex-1">
       HKU MMLab
-    </h2>
+                                        </h2>
   </div>
 
   {/* Share */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
       Share
-    </h2>
+                                        </h2>
     <h2 className="flex flex-row flex-wrap gap-x-2 flex-1 items-center">
       <ShareLink platform="X" url="https://mmlab.hk/research/kai0" />
       <span className="text-xs select-none">|</span>
@@ -217,9 +217,9 @@ export default function Home() {
       <ShareLink platform="Facebook" url="https://mmlab.hk/research/kai0" />
       <span className="text-xs select-none">|</span>
       <ShareLink platform="Reddit" url="https://mmlab.hk/research/kai0" />
-    </h2>
-  </div>
-</div>
+                                        </h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -309,21 +309,21 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6">
                                     <li>
-                                        <b>
+                                        <i>
                                             Mode Consistency:&nbsp;
-                                        </b>
+                                        </i>
                                         We argue that not all data is created equal. By strictly aligning the human demonstration distribution (<span class="font-mono">P<sub>train</sub></span>), the model's knowledge (<span class="font-mono">Q<sub>model</sub></span>), and the test-time distribution (<span class="font-mono">P<sub>test</sub></span>), we minimize in-distribution shifts that lead to failure.
                                     </li>
                                     <li>
-                                        <b>
+                                        <i>
                                             Model Arithmetic:&nbsp;
-                                        </b>
+                                        </i>
                                         We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy-capturing diverse knowledge without the architectural complexity of MoE.
                                     </li>
                                     <li>
-                                        <b>
+                                        <i>
                                             Stage Advantage:&nbsp;
-                                        </b>
+                                        </i>
                                         To conquer the "last mile", we decompose tasks into semantic stages. By estimating a stage-aware advantage signal, we provide the model with "long-horizon vision," ensuring every action makes measurable progress toward the goal.
                                     </li>
                                 </ol>
@@ -378,7 +378,7 @@ export default function Home() {
 
                         <div className="mt-10 w-full px-6">
                             <VideoCarousel />
-                        </div>
+                            </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
@@ -561,9 +561,9 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <p className="w-full leading-relaxed max-w-3xl">
+                            <p className="w-full leading-relaxed max-w-3xl">
                                     However, we identify underlying inconsistencies within this standard process:
-                                </p>
+                            </p>
                             `} 
                             tipList={{}}
                             offset={0}
@@ -575,13 +575,13 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6">
-                                    <li>
+                                <li>
                                         Distribution Shift between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
-                                    </li>
-                                    <li>
+                                </li>
+                                <li>
                                         Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference</i> function, where the model output is distorted during control, leading to unexpected failures.
-                                    </li>
-                                </ol>
+                                </li>
+                            </ol>
                             `} 
                             tipList={{}}
                             offset={0}
@@ -612,15 +612,15 @@ export default function Home() {
                                         </b>
                                         <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-disc px-6 mt-3">
                                             <li>
-                                                <b>
+                                                <i>
                                                     DAgger (Iterative Correction):&nbsp;
-                                                </b>
+                                                </i>
                                                 Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment.<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup> We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
-                                                <b>
+                                                <i>
                                                     Spatio-Temporal Augmentation:&nbsp;
-                                                </b>
+                                                </i>
                                                 To further bridge the gap between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
                                             </li>
                                         </ol>
@@ -828,7 +828,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks-especially complex ones like garment manipulation-demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                                    <i>How can we efficiently advance through iterative research cycles in embodied AI?</i> Unlike traditional CV or NLP, robotic manipulation tasks-especially complex ones like garment manipulation-demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
                                 </p>
                             `} 
                             tipList={{}}
@@ -841,7 +841,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                    We propose <i>Model Arithmetic (MA)</i>: train only on newly collected data subsets, then merge the resulting model with previous ones through <i>weight interpolation<sup>1</sup> guided by on-policy optimization</i>. Remarkably, this synthesis can even <i>surpass the performance of models trained on the entire dataset at once</i>.
                                 </p>
                             `} 
                             tipList={{
@@ -903,7 +903,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    <b>But how does MA work?</b> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
+                                    <i>But how does MA work?</i> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
                                 </p>
                             `} 
                             tipList={{}}
@@ -962,7 +962,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed.<sup>1</sup>
+                                    Long-horizon manipulation is inherently hindered by a simple question: <i>given multiple plausible actions at the same state, which one actually makes progress?</i> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed.<sup>1</sup>
                                 </p>
                             `} 
                             tipList={{
@@ -1157,7 +1157,7 @@ export default function Home() {
                                                 <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                             </svg>
                                         </span> 
-                                    </div>
+                            </div>
                                 </Link>
                             </h2>
                         </div>
@@ -1168,11 +1168,11 @@ export default function Home() {
                         {/* Newsletter subscription */}
                         <div className="mt-24 mb-10 px-6">
                             <EmailSubscribe />
-                        </div>
+                    </div>
 
 
 
-                </div>
+            </div>
 
         </main>
     );
