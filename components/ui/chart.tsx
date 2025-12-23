@@ -173,7 +173,9 @@ function ChartTooltipContent({
   return (
     <div
       className={cn(
-        "border-border/50 bg-background grid min-w-[10rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl text-muted-foreground",
+        "grid min-w-[10rem] items-start gap-1.5 rounded-lg px-2.5 py-1.5 text-xs text-muted-foreground pointer-events-none",
+        "bg-zinc-900/95 border border-white/20",
+        "shadow-xl",
         className
       )}
     >
@@ -272,8 +274,10 @@ function ChartLegendContent({
   return (
     <div
       className={cn(
-        "flex items-center justify-center gap-4",
-        verticalAlign === "top" ? "pb-3" : "pt-3",
+        "flex items-center justify-center gap-4 px-4 py-2 rounded-full",
+        "bg-white/5 backdrop-blur-md border border-white/10",
+        "shadow-[0_4px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.05)]",
+        verticalAlign === "top" ? "mb-3" : "mt-3",
         className
       )}
     >
@@ -287,20 +291,21 @@ function ChartLegendContent({
             <div
               key={item.value}
               className={cn(
-                "[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3"
+                "[&>svg]:text-muted-foreground flex items-center gap-2 [&>svg]:h-3 [&>svg]:w-3"
               )}
             >
               {itemConfig?.icon && !hideIcon ? (
                 <itemConfig.icon />
               ) : (
                 <div
-                  className="h-2 w-2 shrink-0 rounded-[2px]"
+                  className="h-2.5 w-2.5 shrink-0 rounded-full shadow-[0_0_8px_var(--legend-glow)]"
                   style={{
                     backgroundColor: item.color,
-                  }}
+                    '--legend-glow': `${item.color}80`,
+                  } as React.CSSProperties}
                 />
               )}
-              {itemConfig?.label}
+              <span className="text-white/80">{itemConfig?.label}</span>
             </div>
           )
         })}

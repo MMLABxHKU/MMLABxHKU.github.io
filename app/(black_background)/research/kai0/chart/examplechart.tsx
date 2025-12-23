@@ -44,7 +44,7 @@ const chartConfig = {
 
 export function ExampleChart() {
     return (
-        <Card className="bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
+        <Card className="p-4 m-0 gap-3 flex-1 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]">
 
 
             <CardContent className="px-0">
@@ -57,7 +57,26 @@ export function ExampleChart() {
                         right: 12,
                         }}
                     >
-                        <CartesianGrid vertical={false} />
+                        <defs>
+                            <linearGradient id="liquidGlassBlueLineEx" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stopColor="#2563EB" />
+                                <stop offset="50%" stopColor="#4286F3" />
+                                <stop offset="100%" stopColor="#6BA3FF" />
+                            </linearGradient>
+                            <linearGradient id="liquidGlassGoldLineEx" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stopColor="#B8860B" />
+                                <stop offset="50%" stopColor="#ebb017" />
+                                <stop offset="100%" stopColor="#FFD700" />
+                            </linearGradient>
+                            <filter id="glassGlowLineEx" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="2" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <CartesianGrid vertical={false} strokeOpacity={0.1} />
                         <XAxis
                             dataKey="month"
                             tickLine={false}
@@ -65,13 +84,14 @@ export function ExampleChart() {
                             tickMargin={8}
                             tickFormatter={(value) => value.slice(0, 3)}
                         />
-                        <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+                        <ChartTooltip cursor={false} isAnimationActive={false} content={<ChartTooltipContent />} />
                         <Line
                             dataKey="desktop"
                             type="monotone"
                             stroke="var(--color-desktop)"
                             strokeWidth={2}
                             dot={false}
+                            isAnimationActive={false}
                         />
                         <Line
                             dataKey="mobile"
@@ -79,6 +99,7 @@ export function ExampleChart() {
                             stroke="var(--color-mobile)"
                             strokeWidth={2}
                             dot={false}
+                            isAnimationActive={false}
                         />
                     </LineChart>
                 </ChartContainer>
