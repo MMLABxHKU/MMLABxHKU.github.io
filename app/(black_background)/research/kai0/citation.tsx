@@ -72,7 +72,7 @@ export default function CitationBlock() {
           "
         >
 <code>{`@article{kai0,
-  title = {kai0: A Robotic Teamwork for Cloth Manipulation from Zero to Hero},
+  title = {A Live-Stream Robotic Teamwork for Clothing Manipulation from Zero to Hero},
   author = {HKU MMLab},
   year = {2025},
   note = {https://mmlab.hk/research/kai0},
