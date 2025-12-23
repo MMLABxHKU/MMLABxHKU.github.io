@@ -494,7 +494,7 @@ export default function Home() {
                         
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
+                        <div className="hidden md:flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-3xl w-full flex flex-row gap-10 justify-center ">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
