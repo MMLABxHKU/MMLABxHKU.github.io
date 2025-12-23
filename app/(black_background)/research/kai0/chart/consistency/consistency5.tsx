@@ -26,31 +26,26 @@ import {
 
 
 const chartData = [
-    { trick: "Task A", single: 60, single_std: [9.4, 9.4], full: 73.33, full_std: [4.7, 4.7], model: 90, model_std: [4.7, 4.7], },
-    { trick: "Task B", single: 63.33, single_std: [4.7, 4.7], full: 80, full_std: [4.7, 4.7], model: 86.66, model_std: [9.4, 9.4], },
-    { trick: "Task C", single: 16.66, single_std: [4.7, 4.7], full: 26.66, full_std: [9.4, 9.4], model: 53.33, model_std: [14, 14], },
+    { trick: "baseline", absolute: 50, absolute_std: [4, 4], delta: 56.7, delta_std: [8, 8], },
+    { trick: "w/. space mirroring", absolute: 73.3, absolute_std: [4.7, 4.7], delta: 90, delta_std: [4.7, 4.7], },
 ]
 
 
 
 const chartConfig = {
-    single: {
-        label: "single",
+    absolute: {
+        label: "absolute action",
         color: "#4286F3",
     },
-    full: {
-        label: "full data",
+    delta: {
+        label: "delta action",
         color: "#ebb017",
-    },
-    model: {
-        label: "model arithmetic",
-        color: "#55AF7B",
     },
 } satisfies ChartConfig
 
 
 
-export function SoupingBarChart1() {
+export function ConsistencyBarChart5() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
@@ -71,7 +66,30 @@ export function SoupingBarChart1() {
                             tickLine={false}
                             tickMargin={6}
                             axisLine={false}
-                            tickFormatter={(value) => value}
+                            height={60}
+                            angle={0}
+                            textAnchor="middle"
+                            tick={(props: any) => {
+                                const { x, y, payload } = props;
+                                return (
+                                    <g transform={`translate(${x},${y})`}>
+                                        <text
+                                            x={0}
+                                            y={0}
+                                            dy={16}
+                                            textAnchor="middle"
+                                            fill="#fff"
+                                            fontSize={10}
+                                        >
+                                            {payload.value.split('\n').map((line: string, i: number) => (
+                                                <tspan key={i} x={0} dy={i === 0 ? 0 : 14}>
+                                                    {line}
+                                                </tspan>
+                                            ))}
+                                        </text>
+                                    </g>
+                                );
+                            }}
                         />
                         <YAxis
                             yAxisId="left"
@@ -79,28 +97,22 @@ export function SoupingBarChart1() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={Math.max(...chartData.map((d) => String(d.single).length)) * 8}
+                            width={Math.max(...chartData.map((d) => String(d.absolute).length)) * 8}
                         />
                         <ChartTooltip
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
-                        <Bar dataKey="single" fill="var(--color-single)" yAxisId="left" radius={4}>
+                        <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="single_std" 
+                                dataKey="absolute_std" 
                                 direction="y" 
                             />
                         </Bar>
-                        <Bar dataKey="full" fill="var(--color-full)" yAxisId="left" radius={4}>
+                        <Bar dataKey="delta" fill="var(--color-delta)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="full_std" 
-                                direction="y" 
-                            />
-                        </Bar>
-                        <Bar dataKey="model" fill="var(--color-model)" yAxisId="left" radius={4}>
-                            <ErrorBar stroke="white" 
-                                dataKey="model_std" 
+                                dataKey="delta_std" 
                                 direction="y" 
                             />
                         </Bar>

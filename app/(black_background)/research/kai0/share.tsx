@@ -49,7 +49,7 @@ export default function ShareLink({
         }
         aria-label="Copy URL"
       >
-        Copy
+        Copy Link
       </button>
     );
   }

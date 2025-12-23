@@ -26,15 +26,17 @@ import {
 
 
 const chartData = [
-    { trick: "baseline", absolute: 50, absolute_std: [4, 4], delta: 56.7, delta_std: [8, 8], },
-    { trick: "w/. space mirroring", absolute: 73.3, absolute_std: [4.7, 4.7], delta: 90, delta_std: [4.7, 4.7], },
+    { trick: "sync", absolute: 36.7, absolute_std: [4, 4], delta: 36.7, delta_std: [4.7, 4.7], },
+    { trick: "+ inchunk\nsmooth", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
+    { trick: "+ temp\nsmooth", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "+ RTC", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
 ]
 
 
 
 const chartConfig = {
     absolute: {
-        label: "absolute",
+        label: "absolute action",
         color: "#4286F3",
     },
     delta: {
@@ -45,7 +47,7 @@ const chartConfig = {
 
 
 
-export function ConsistencyBarChart5() {
+export function ConsistencyBarChart8() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 

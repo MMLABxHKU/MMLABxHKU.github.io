@@ -26,15 +26,15 @@ import {
 
 
 const chartData = [
-    { trick: "baseline", absolute: 27.31, absolute_std: [12, 12], delta: 31.52, delta_std: [4.7, 4.7], },
-    { trick: "w/. time scaling", absolute: 15.81, absolute_std: [1.75, 1.75], delta: 31.13, delta_std: [7, 7], },
+    { trick: "baseline", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "w/. time scaling", absolute: 50.0, absolute_std: [4, 4], delta: 56.7, delta_std: [12, 12], },
 ]
 
 
 
 const chartConfig = {
     absolute: {
-        label: "absolute",
+        label: "absolute action",
         color: "#4286F3",
     },
     delta: {
@@ -45,14 +45,14 @@ const chartConfig = {
 
 
 
-export function ConsistencyBarChart4() {
+export function ConsistencyBarChart3() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Throughput (%) &#8593;</CardDescription>
+                <CardDescription>Success Rate (%) &#8593;</CardDescription>
             </CardHeader>
 
 

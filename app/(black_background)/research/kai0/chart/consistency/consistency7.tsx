@@ -26,10 +26,8 @@ import {
 
 
 const chartData = [
-    { trick: "sync", absolute: 4.42, absolute_std: [0.8, 0.8], delta: 6.78, delta_std: [1, 1], },
-    { trick: "+ inchunk\nsmooth", absolute: 4.21, absolute_std: [0.7, 0.7], delta: 2.25, delta_std: [0.5, 0.5], },
-    { trick: "+ temp\nsmooth", absolute: 11.61, absolute_std: [1.5, 1.5], delta: 9.25, delta_std: [1.2, 1.2], },
-    { trick: "+ RTC", absolute: 3.67, absolute_std: [0.6, 0.6], delta: 4.63, delta_std: [0.8, 0.8], },
+    { trick: "baseline", absolute: 13.05, absolute_std: [1.2, 1.2], delta: 6.54, delta_std: [0.9, 0.9], },
+    { trick: "w/. space mirroring", absolute: 4.32, absolute_std: [0.8, 0.8], delta: 3.6, delta_std: [0.6, 0.6], },
 ]
 
 
@@ -47,7 +45,7 @@ const chartConfig = {
 
 
 
-export function ConsistencyBarChart10() {
+export function ConsistencyBarChart7() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 

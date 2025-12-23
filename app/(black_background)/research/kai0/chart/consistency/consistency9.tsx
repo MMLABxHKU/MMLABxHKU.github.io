@@ -26,17 +26,17 @@ import {
 
 
 const chartData = [
-    { trick: "sync", absolute: 36.7, absolute_std: [4, 4], delta: 36.7, delta_std: [4.7, 4.7], },
-    { trick: "+ inchunk\nsmooth", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
-    { trick: "+ temp\nsmooth", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
-    { trick: "+ RTC", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "sync", absolute: 8.78, absolute_std: [3.2, 3.2], delta: 9.26, delta_std: [2.42, 2.42], },
+    { trick: "+ inchunk\nsmooth", absolute: 6.6, absolute_std: [0.88, 0.88], delta: 19.6, delta_std: [3.71, 3.71], },
+    { trick: "+ temp\nsmooth", absolute: 27.31, absolute_std: [10.6, 10.6], delta: 33.5, delta_std: [4.7, 4.7], },
+    { trick: "+ RTC", absolute: 33.8, absolute_std: [1.22, 1.22], delta: 32.84, delta_std: [0.23, 0.23], },
 ]
 
 
 
 const chartConfig = {
     absolute: {
-        label: "absolute",
+        label: "absolute action",
         color: "#4286F3",
     },
     delta: {
@@ -47,14 +47,14 @@ const chartConfig = {
 
 
 
-export function ConsistencyBarChart8() {
+export function ConsistencyBarChart9() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Success Rate (%) &#8593;</CardDescription>
+                <CardDescription>Throughput (%) &#8593;</CardDescription>
             </CardHeader>
 
 

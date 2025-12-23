@@ -26,35 +26,38 @@ import {
 
 
 const chartData = [
-    { trick: "sync", absolute: 8.78, absolute_std: [3.2, 3.2], delta: 9.26, delta_std: [2.42, 2.42], },
-    { trick: "+ inchunk\nsmooth", absolute: 6.6, absolute_std: [0.88, 0.88], delta: 19.6, delta_std: [3.71, 3.71], },
-    { trick: "+ temp\nsmooth", absolute: 27.31, absolute_std: [10.6, 10.6], delta: 33.5, delta_std: [4.7, 4.7], },
-    { trick: "+ RTC", absolute: 33.8, absolute_std: [1.22, 1.22], delta: 32.84, delta_std: [0.23, 0.23], },
+    { trick: "Task A", single: 60, single_std: [9.4, 9.4], full: 73.33, full_std: [4.7, 4.7], model: 90, model_std: [4.7, 4.7], },
+    { trick: "Task B", single: 63.33, single_std: [4.7, 4.7], full: 80, full_std: [4.7, 4.7], model: 86.66, model_std: [9.4, 9.4], },
+    { trick: "Task C", single: 16.66, single_std: [4.7, 4.7], full: 26.66, full_std: [9.4, 9.4], model: 53.33, model_std: [14, 14], },
 ]
 
 
 
 const chartConfig = {
-    absolute: {
-        label: "absolute",
+    single: {
+        label: "best candidate",
         color: "#4286F3",
     },
-    delta: {
-        label: "delta action",
+    full: {
+        label: "full data",
         color: "#ebb017",
+    },
+    model: {
+        label: "model arithmetic",
+        color: "#55AF7B",
     },
 } satisfies ChartConfig
 
 
 
-export function ConsistencyBarChart9() {
+export function SoupingBarChart1() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Throughput (%) &#8593;</CardDescription>
+                <CardDescription>Success Rate (%) &#8593;</CardDescription>
             </CardHeader>
 
 
@@ -68,30 +71,7 @@ export function ConsistencyBarChart9() {
                             tickLine={false}
                             tickMargin={6}
                             axisLine={false}
-                            height={60}
-                            angle={0}
-                            textAnchor="middle"
-                            tick={(props: any) => {
-                                const { x, y, payload } = props;
-                                return (
-                                    <g transform={`translate(${x},${y})`}>
-                                        <text
-                                            x={0}
-                                            y={0}
-                                            dy={16}
-                                            textAnchor="middle"
-                                            fill="#fff"
-                                            fontSize={10}
-                                        >
-                                            {payload.value.split('\n').map((line: string, i: number) => (
-                                                <tspan key={i} x={0} dy={i === 0 ? 0 : 14}>
-                                                    {line}
-                                                </tspan>
-                                            ))}
-                                        </text>
-                                    </g>
-                                );
-                            }}
+                            tickFormatter={(value) => value}
                         />
                         <YAxis
                             yAxisId="left"
@@ -99,22 +79,28 @@ export function ConsistencyBarChart9() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={Math.max(...chartData.map((d) => String(d.absolute).length)) * 8}
+                            width={Math.max(...chartData.map((d) => String(d.single).length)) * 8}
                         />
                         <ChartTooltip
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
-                        <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
+                        <Bar dataKey="single" fill="var(--color-single)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="absolute_std" 
+                                dataKey="single_std" 
                                 direction="y" 
                             />
                         </Bar>
-                        <Bar dataKey="delta" fill="var(--color-delta)" yAxisId="left" radius={4}>
+                        <Bar dataKey="full" fill="var(--color-full)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="delta_std" 
+                                dataKey="full_std" 
+                                direction="y" 
+                            />
+                        </Bar>
+                        <Bar dataKey="model" fill="var(--color-model)" yAxisId="left" radius={4}>
+                            <ErrorBar stroke="white" 
+                                dataKey="model_std" 
                                 direction="y" 
                             />
                         </Bar>

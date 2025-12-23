@@ -26,33 +26,35 @@ import {
 
 
 const chartData = [
-    { trick: "baseline", absolute: 13.05, absolute_std: [1.2, 1.2], delta: 6.54, delta_std: [0.9, 0.9], },
-    { trick: "w/. space mirroring", absolute: 4.32, absolute_std: [0.8, 0.8], delta: 3.6, delta_std: [0.6, 0.6], },
+    { trick: "baseline", pi05: 20.0, pi05_std: [2.5, 2.5], pi0: 0, pi0_std: [0, 0.001], },
+    { trick: "improved\nbaseline", pi05: 60, pi05_std: [3.5, 3.5], pi0: 53.3, pi0_std: [9.4, 9.4], },
+    { trick: "+ heuristic dagger", pi05: 83.3, pi05_std: [2.8, 2.8], pi0: 73.3, pi0_std: [3.2, 3.2], },
+    { trick: "+ dagger", pi05: 93.3, pi05_std: [2.2, 2.2], pi0: 80, pi0_std: [2.8, 2.8], },
 ]
 
 
 
 const chartConfig = {
-    absolute: {
-        label: "absolute",
+    pi05: {
+        label: "pi05",
         color: "#4286F3",
     },
-    delta: {
-        label: "delta action",
+    pi0: {
+        label: "pi0",
         color: "#ebb017",
     },
 } satisfies ChartConfig
 
 
 
-export function ConsistencyBarChart7() {
+export function ConsistencyBarChart1() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Recorver Cost (%) &#8595;</CardDescription>
+                <CardDescription>Success Rate (%) &#8593;</CardDescription>
             </CardHeader>
 
 
@@ -97,22 +99,22 @@ export function ConsistencyBarChart7() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={Math.max(...chartData.map((d) => String(d.absolute).length)) * 8}
+                            width={Math.max(...chartData.map((d) => String(d.pi05).length)) * 8}
                         />
                         <ChartTooltip
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
-                        <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
+                        <Bar dataKey="pi05" fill="var(--color-pi05)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="absolute_std" 
+                                dataKey="pi05_std" 
                                 direction="y" 
                             />
                         </Bar>
-                        <Bar dataKey="delta" fill="var(--color-delta)" yAxisId="left" radius={4}>
+                        <Bar dataKey="pi0" fill="var(--color-pi0)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="delta_std" 
+                                dataKey="pi0_std" 
                                 direction="y" 
                             />
                         </Bar>

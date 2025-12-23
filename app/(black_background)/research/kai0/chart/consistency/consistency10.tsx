@@ -26,35 +26,35 @@ import {
 
 
 const chartData = [
-    { trick: "standard", pi05: 1.8, pi05_std: [0.3, 0.3], pi0: 0, pi0_std: [0, 0.001], },
-    { trick: "improved\nstandard", pi05: 9.6, pi05_std: [1.2, 1.2], pi0: 5.33, pi0_std: [1, 1], },
-    { trick: "+ heuristic dagger", pi05: 7.7, pi05_std: [0.8, 0.8], pi0: 9.25, pi0_std: [1.1, 1.1], },
-    { trick: "+ dagger", pi05: 3.9, pi05_std: [0.5, 0.5], pi0: 8.25, pi0_std: [0.9, 0.9], },
+    { trick: "sync", absolute: 4.42, absolute_std: [0.8, 0.8], delta: 6.78, delta_std: [1, 1], },
+    { trick: "+ inchunk\nsmooth", absolute: 4.21, absolute_std: [0.7, 0.7], delta: 2.25, delta_std: [0.5, 0.5], },
+    { trick: "+ temp\nsmooth", absolute: 11.61, absolute_std: [1.5, 1.5], delta: 9.25, delta_std: [1.2, 1.2], },
+    { trick: "+ RTC", absolute: 3.67, absolute_std: [0.6, 0.6], delta: 4.63, delta_std: [0.8, 0.8], },
 ]
 
 
 
 const chartConfig = {
-    pi05: {
-        label: "pi05",
+    absolute: {
+        label: "absolute action",
         color: "#4286F3",
     },
-    pi0: {
-        label: "pi0",
+    delta: {
+        label: "delta action",
         color: "#ebb017",
     },
 } satisfies ChartConfig
 
 
 
-export function ConsistencyBarChart2() {
+export function ConsistencyBarChart10() {
     return (
         <Card className="w-full lg:max-w-1/2 bg-transparent border-0 shadow-transparent p-0 m-0 gap-3 flex-1">
 
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Recover Cost &#8595;</CardDescription>
+                <CardDescription>Recover Cost (%) &#8595;</CardDescription>
             </CardHeader>
 
 
@@ -99,22 +99,22 @@ export function ConsistencyBarChart2() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={Math.max(...chartData.map((d) => String(d.pi05).length)) * 8}
+                            width={Math.max(...chartData.map((d) => String(d.absolute).length)) * 8}
                         />
                         <ChartTooltip
                             cursor={false}
                             content={<ChartTooltipContent indicator="dashed" />}
                         />
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
-                        <Bar dataKey="pi05" fill="var(--color-pi05)" yAxisId="left" radius={4}>
+                        <Bar dataKey="absolute" fill="var(--color-absolute)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="pi05_std" 
+                                dataKey="absolute_std" 
                                 direction="y" 
                             />
                         </Bar>
-                        <Bar dataKey="pi0" fill="var(--color-pi0)" yAxisId="left" radius={4}>
+                        <Bar dataKey="delta" fill="var(--color-delta)" yAxisId="left" radius={4}>
                             <ErrorBar stroke="white" 
-                                dataKey="pi0_std" 
+                                dataKey="delta_std" 
                                 direction="y" 
                             />
                         </Bar>
