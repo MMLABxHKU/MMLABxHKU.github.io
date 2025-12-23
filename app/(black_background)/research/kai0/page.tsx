@@ -972,12 +972,20 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed.
+                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
                                 </p>
                             `} 
                             tipList={{
+                                1:{
+                                    link:'https://openreview.net/forum?id=Seb7rprW1Y',
+                                    content: (
+                                        <>
+                                        Self-Directed Learning (Li et al.,2025)
+                                        </>
+                                    ),
+                                }
                             }}
-                            offset={0}
+                            offset={9}
                             />
                         </div>
 
@@ -986,7 +994,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Prior approach<sup>1</sup><sup>,</sup><sup>2</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
+                                    Prior approach<sup>1</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
                                 </p>
                             `} 
                             tipList={{
@@ -999,16 +1007,8 @@ export default function Home() {
                                         </>
                                     ),
                                 },
-                                2:{
-                                    link:'https://openreview.net/forum?id=Seb7rprW1Y',
-                                    content: (
-                                        <>
-                                        Self-Directed Learning (Li et al.,2025)
-                                        </>
-                                    ),
-                                }
                             }}
-                            offset={9}
+                            offset={10}
                             />
                         </div>
 
