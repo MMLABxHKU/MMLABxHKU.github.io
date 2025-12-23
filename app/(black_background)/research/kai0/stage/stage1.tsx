@@ -107,6 +107,7 @@ function VideoWithChart({
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const hoverIndexRef = useRef<number | null>(null);
+  const prevAdvantageRef = useRef<"Positive" | "Negative" | null>(null);
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -559,6 +560,23 @@ function VideoWithChart({
   const tooltipBg = currentAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
 
+  // 非对称过渡：红→绿快(100ms)，绿→红慢(500ms)
+  const prevAdvantage = prevAdvantageRef.current;
+  let transitionDuration = "200ms"; // 默认值
+  if (prevAdvantage !== null && currentAdvantage !== prevAdvantage) {
+    if (currentAdvantage === "Positive") {
+      // 红 → 绿：快速切换
+      transitionDuration = "100ms";
+    } else {
+      // 绿 → 红：慢速切换
+      transitionDuration = "500ms";
+    }
+  }
+  // 更新 ref
+  if (currentAdvantage) {
+    prevAdvantageRef.current = currentAdvantage;
+  }
+
   
   const tooltipX = getTooltipX();
   const lineY = getLineY();
@@ -573,13 +591,16 @@ function VideoWithChart({
         <div
           ref={videoContainerRef}
           className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
-          style={{ borderColor }}
+          style={{ borderColor, transition: `border-color ${transitionDuration} ease` }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           <div
             className="absolute top-[-12px] left-[-12px] z-10 px-2 py-1.5 text-xs font-semibold text-white text-center w-[82px] rounded-tl-sm rounded-br-[8px]"
-            style={{ backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)" }}
+            style={{ 
+              backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)",
+              transition: `background-color ${transitionDuration} ease`
+            }}
           >
             {currentAdvantage || ""}
           </div>
