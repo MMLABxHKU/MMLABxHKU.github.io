@@ -457,7 +457,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub><sup>1</sup><sup>2</sup>. This process yields a finetuned Q<sub>model</sub>; deploying this model via an inference function (denoted as <i>Inference()</i>) results in the realized distribution P<sub>test</sub>. 
+                                    Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub><sup>1</sup><sup>2</sup>. This process yields a finetuned Q<sub>model</sub>, deploying this model via an inference function (denoted as <i>Inference</i>) results in the realized distribution P<sub>test</sub>. 
                                 </p>
                             `} 
                             tipList={{
@@ -501,6 +501,16 @@ export default function Home() {
                             </p>
                         </div>
                         
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    To better visualize the dynamics relationship among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating their progressive consistency.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
+                        </div>
 
 
                         <div className="hidden md:flex flex-row justify-center px-6 mt-6">
@@ -526,7 +536,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    However, we identify latent inconsistencies within this standard process:
+                                    However, we identify inconsistencies within this standard process:
                                 </p>
                             `} 
                             tipList={{}}
@@ -554,56 +564,10 @@ export default function Home() {
 
 
 
-                        {/* Apple-style horizontal card layout */}
-                        <div className="flex justify-center px-6 mt-8">
-                            <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                {/* Dagger Card */}
-                                <div className="group flex flex-col">
-                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
-                                        <Image
-                                            src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
-                                            alt="Dagger visualization" 
-                                            width={600}
-                                            height={340}
-                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
-                                        />
-                                    </div>
-                                    <div className="mt-4 px-1">
-                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
-                                            <span className="font-semibold text-white/90">Dagger</span>
-                                            <span className="mx-2 text-white/30">-</span>
-                                            Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Inference Optimization Card */}
-                                <div className="group flex flex-col">
-                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
-                                        <Image
-                                            src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve_1220_1258.gif"
-                                            alt="Inference Optimization visualization" 
-                                            width={600}
-                                            height={340}
-                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
-                                        />
-                                    </div>
-                                    <div className="mt-4 px-1">
-                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
-                                            <span className="font-semibold text-white/90">Inference Optimization</span>
-                                            <span className="mx-2 text-white/30">-</span>
-                                            Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Back to basics, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
+                                    To this end, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
                                 </p>
                             `} 
                             tipList={{}}
@@ -631,7 +595,7 @@ export default function Home() {
                                                 <b>
                                                     Spatio-Temporal Augmentation:&nbsp;
                                                 </b>
-                                                To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination and equivariance. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
+                                                To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
                                             </li>
                                         </ol>
                                     </li>
@@ -685,6 +649,61 @@ export default function Home() {
                             />
                         </div>
 
+                        {/* Apple-style horizontal card layout */}
+                        <div className="flex justify-center px-6 mt-8">
+                            <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                {/* Dagger Card */}
+                                <div className="group flex flex-col">
+                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
+                                        <Image
+                                            src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
+                                            alt="Dagger visualization" 
+                                            width={600}
+                                            height={340}
+                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
+                                        />
+                                    </div>
+                                    <div className="mt-4 px-1">
+                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
+                                            <span className="font-semibold text-white/90">Dagger</span>
+                                            <span className="mx-2 text-white/30">-</span>
+                                            Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Inference Optimization Card */}
+                                <div className="group flex flex-col">
+                                    <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
+                                        <Image
+                                            src="https://assets.kinetixai.cn/FoldAnything%2Fcontrol_curve_1220_1258.gif"
+                                            alt="Inference Optimization visualization" 
+                                            width={600}
+                                            height={340}
+                                            className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
+                                        />
+                                    </div>
+                                    <div className="mt-4 px-1">
+                                        <p className="text-sm leading-relaxed text-muted-foreground text-center">
+                                            <span className="font-semibold text-white/90">Inference Optimization</span>
+                                            <span className="mx-2 text-white/30">-</span>
+                                            Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    The following experiments validate the effectiveness of these strategies across multiple metrics.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
+                        </div>
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
@@ -694,13 +713,13 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recovery cost.
+                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.
                             </p>
                         </div>
 
 
 
-                        <div className="mt-10 flex flex-row justify-center px-6">
+                        {/* <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart3 />
                                 <ConsistencyBarChart4 />
@@ -710,11 +729,11 @@ export default function Home() {
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Time scaling affects success rate to some extent while maintaining throughput without significant degradation, especially for models predicting delta actions.
                             </p>
-                        </div>
+                        </div> */}
 
 
 
-                        <div className="mt-10 flex flex-row justify-center px-6">
+                        {/* <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart5 />
                                 <ConsistencyBarChart6 />
@@ -725,20 +744,18 @@ export default function Home() {
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Space mirroring augmentation substantially improves performance across all metrics.
                             </p>
-                        </div>
-
-
+                        </div> */}
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
                                 <ConsistencyBarChart8 />
                                 <ConsistencyBarChart9 />
-                                <ConsistencyBarChart10 />
+                                {/* <ConsistencyBarChart10 /> */}
                             </div>
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution.
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp smooth, + RTC.
                             </p>
                         </div>
 

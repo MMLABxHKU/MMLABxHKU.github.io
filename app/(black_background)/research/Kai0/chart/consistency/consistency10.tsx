@@ -36,7 +36,7 @@ const chartData = [
 
 const chartConfig = {
     absolute: {
-        label: "absolute",
+        label: "absolute action",
         color: "#4286F3",
     },
     delta: {

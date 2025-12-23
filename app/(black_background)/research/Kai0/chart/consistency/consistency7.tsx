@@ -52,7 +52,7 @@ export function ConsistencyBarChart7() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Recorver Cost (%) &#8595;</CardDescription>
+                <CardDescription>Recover Cost (%) &#8595;</CardDescription>
             </CardHeader>
 
 
