@@ -65,15 +65,11 @@ export default function CitationBlock() {
                                 <br></br>
                                 <span className="select-none">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>author = &#123;KAI Manipulation Team&#125;,
+                                </span>author = &#123;HKU MMLab&#125;,
                                 <br></br>
                                 <span className="select-none">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>title = &#123;Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>journal = &#123;HKU MMLab Research Blog&#125;,
+                                </span>title = &#123;Kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation&#125;,
                                 <br></br>
                                 <span className="select-none">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

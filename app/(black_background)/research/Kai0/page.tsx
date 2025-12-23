@@ -190,7 +190,7 @@ export default function Home() {
                                             </Link>
                                         </h2>
                                         <h2>
-                                            HKU Manipulation Team
+                                            HKU MMLab
                                         </h2>
                                         {/* <h2>
                                             <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
