@@ -314,7 +314,7 @@ export default function Home() {
                                         <b>
                                             Mode Consistency:&nbsp;
                                         </b>
-                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (Q<sub>model</sub>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
+                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (<span class="font-mono">P<sub>train</sub></span>), the model's knowledge (<span class="font-mono">Q<sub>model</sub></span>), and the test-time distribution (<span class="font-mono">P<sub>test</sub></span>), we minimize in-distribution shifts that lead to failure.
                                     </li>
                                     <li>
                                         <b>
@@ -349,22 +349,31 @@ export default function Home() {
                         </div>
 
 
-                        <div className="w-full flex flex-col items-center px-6">
-                            <h2 className="w-full max-w-3xl mt-10 text-xl font-bold"> 
-                                <Link href="#mode_consistency" className="scroll-mt-32 group flex items-center flex-row" id="mode_consistency">
-                                    <h2>
-                                        We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
-                                    </h2>
-                                    <div className="min-w-12 select-none">
-                                        <span className="ml-6 hidden group-hover:inline-block size-4 text-foreground">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                                <path d="M15.197 3.35462C16.8703 1.67483 19.4476 1.53865 20.9536 3.05046C22.4596 4.56228 22.3239 7.14956 20.6506 8.82935L18.2268 11.2626M10.0464 14C8.54044 12.4882 8.67609 9.90087 10.3494 8.22108L12.5 6.06212" strokeWidth="2.5" strokeLinecap="round"/>
-                                                <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
-                                            </svg>
-                                        </span> 
-                                    </div>
-                                </Link>
-                            </h2>
+
+                        <div className="mt-6 flex flex-row gap-6 justify-center">
+                            <div></div>
+                            <div className="max-w-3xl flex flex-row items-start w-full justify-start gap-3 border-l-2 border-white pl-3">
+                                <div className="flex items-start pt-1">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="w-5 h-5 text-white"
+                                    >
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                        <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                                        <path d="M19 5a9 9 0 0 1 0 14" />
+                                    </svg>
+                                </div>
+                                <p className="w-full leading-relaxed">
+                                    We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
+                                </p>
+                            </div>
+                            <div></div>
                         </div>
 
 
@@ -442,7 +451,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
+                                    We define the solution space for a given task as <span class="font-mono">P<sub>real</sub></span>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
                                 </p>
                             `} 
                             tipList={{}}
@@ -456,13 +465,13 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6">
                                     <li>
-                                        P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
+                                        <span class="font-mono">P<sub>train</sub></span> (Human Demonstrations): The empirical distribution collected from the human expert policy, <span class="font-mono">Q<sub>human</sub></span>. This represents a limited subset of the valid solution manifold <span class="font-mono">P<sub>real</sub></span>.
                                     </li>
                                     <li>
-                                        Q<sub>model</sub> (Learned Policy): The policy distribution parameterized by the model weights.
+                                        <span class="font-mono">Q<sub>model</sub></span> (Learned Policy): The policy distribution parameterized by the model weights.
                                     </li>
                                     <li>
-                                        P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from Q<sub>model</sub>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> falling outside P<sub>real</sub> constitutes the failure modes.
+                                        <span class="font-mono">P<sub>test</sub></span> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from <span class="font-mono">Q<sub>model</sub></span>. Success is defined by the intersection of <span class="font-mono">P<sub>test</sub></span> and <span class="font-mono">P<sub>real</sub></span>, while the portion of <span class="font-mono">P<sub>test</sub></span> falling outside <span class="font-mono">P<sub>real</sub></span> constitutes the failure modes.
                                     </li>
                                 </ol>
                             `} 
@@ -476,7 +485,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Standard imitation learning paradigms generally aim to minimize the divergence KL(Q<sub>model</sub>|Q<sub>human</sub>) over the support of P<sub>train</sub><sup>1</sup><sup>2</sup>. This process yields a finetuned Q<sub>model</sub>, deploying this model via an inference function (denoted as <i>Inference</i>) results in the realized distribution P<sub>test</sub>. 
+                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
                                 </p>
                             `} 
                             tipList={{
@@ -516,14 +525,14 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Distribution dynamics of <span className="font-medium text-white/80">P<sub>train</sub></span>, <span className="font-medium text-white/80">Q<sub>model</sub></span>, and <span className="font-medium text-white/80">P<sub>test</sub></span>.
+                                Distribution dynamics of <span className="font-medium font-mono text-white/80">P<sub>train</sub></span>, <span className="font-medium font-mono text-white/80">Q<sub>model</sub></span>, and <span className="font-medium font-mono text-white/80">P<sub>test</sub></span>.
                             </p>
                         </div>
                         
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    To better visualize the distribution dynamics among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating the progressive consistency.
+                                    To better visualize the dynamics relationship among <span class="font-mono">P<sub>train</sub></span>, <span class="font-mono">Q<sub>model</sub></span>, and <span class="font-mono">P<sub>test</sub></span>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating their progressive consistency.
                                 </p>
                             `} 
                             tipList={{}}
@@ -545,7 +554,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Interactive 3D t-SNE visualization of action distributions for P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>.
+                                Interactive 3D t-SNE visualization of action distributions for <span className="font-mono">P<sub>train</sub></span>, <span className="font-mono">Q<sub>model</sub></span>, and <span className="font-mono">P<sub>test</sub></span>.
                                 <span className="block mt-1 text-white/60 font-medium">Click and drag to rotate the plot.</span>
                             </p>
                         </div>
@@ -569,7 +578,7 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6">
                                     <li>
-                                        Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
+                                        Distribution Shift between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                     </li>
                                     <li>
                                         Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference</i> function, where the model output is distorted during control, leading to unexpected failures.
@@ -608,13 +617,13 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy Q<sub>model</sub> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
                                                     Spatio-Temporal Augmentation:&nbsp;
                                                 </b>
-                                                To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
+                                                To further bridge the gap between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
                                             </li>
                                         </ol>
                                     </li>
@@ -650,7 +659,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
+                                        To optimize the translation of <span class="font-mono">Q<sub>model</sub></span> into <span class="font-mono">P<sub>test</sub></span> via the <span class="font-mono">Inference</span> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -686,7 +695,7 @@ export default function Home() {
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Dagger</span>
                                             <span className="mx-2 text-white/30">-</span>
-                                            Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
+                                            Injecting on-policy recovery trajectories to expand <span className="font-mono">P<sub>train</sub></span> towards underrepresented failure modes in <span className="font-mono">P<sub>real</sub></span>.
                                         </p>
                                     </div>
                                 </div>
@@ -706,7 +715,7 @@ export default function Home() {
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Inference Optimization</span>
                                             <span className="mx-2 text-white/30">-</span>
-                                            Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
+                                            Minimizing execution jitter to ensure smooth translation from <span className="font-mono">Q<sub>model</sub></span> to <span className="font-mono">P<sub>test</sub></span>.
                                         </p>
                                     </div>
                                 </div>
@@ -732,7 +741,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, + heuristic DAgger, + DAgger.
+                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.
                             </p>
                         </div>
 
@@ -774,7 +783,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp. smooth, + RTC.
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp smooth, + RTC.
                             </p>
                         </div>
 
@@ -826,7 +835,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Inspired by <i>model soups</i><sup>1</sup> in NLP, we propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                    We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                                 </p>
                             `} 
                             tipList={{
@@ -858,7 +867,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                We merge models trained on different data subsets into a single entity using weight interpolation, optimized against on-policy data.
+                                We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
                             </p>
                         </div>
 
