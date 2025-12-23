@@ -972,7 +972,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup><sup>,</sup><sup>2</sup>.
+                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed.
                                 </p>
                             `} 
                             tipList={{
@@ -1002,7 +1002,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Prior approaches obtain advantage indirectly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a <b>relational quantity</b> that depends on how an action transforms one state into another.
+                                    Prior approach<sup>1</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
                                 </p>
                             `} 
                             tipList={{}}
@@ -1015,7 +1015,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    We take a more direct route by treating advantage as a direct modeling target, predicting relative improvement directly from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a cleaner, more reliable state-to-state supervision signal.
+                                    We take a more straightforward route by treating advantage as a direct modeling target, predicting relative improvement from paired observations rather than deriving it from value predictions. This recasts advantage estimation to a single prediction problem, avoiding error compounding and yielding a smoother, more reliable state-to-state supervision signal.
                                 </p>
                             `} 
                             tipList={{}}
