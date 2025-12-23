@@ -1021,7 +1021,7 @@ export default function Home() {
 
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                            Comparison of cumulative progress induced by different methods along an inference-time manipulation trajectory. <span className="font-medium text-white/80">Direct+Stage (ours)</span> produces smoother and more consistent progress accumulation than Value-diff.
+                            Comparison of cumulative progress induced by different methods along an inference-time manipulation trajectory. Green and red segments indicate higher- and lower-ranked actions based on predicted advantage, reflecting relative preference for task advancement. <span className="font-medium text-white/80">Direct+Stage (ours)</span> produces smoother and more consistent progress accumulation than Value-diff.
                             </p>
                         </div>
                         
