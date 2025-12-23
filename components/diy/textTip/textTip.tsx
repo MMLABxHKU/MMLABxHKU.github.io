@@ -33,7 +33,7 @@ export default function TextTip({
     Object.keys(tipList).forEach(num => {
       htmlTemp = htmlTemp.replace(
         `<sup>${num}</sup>`,
-        `<sup id="id${num}">${Number(num) + offset}</sup>`
+        `<sup id="id${num}"  class="hidden xl:inline-block">${Number(num) + offset}</sup>`
       );
     });
 
