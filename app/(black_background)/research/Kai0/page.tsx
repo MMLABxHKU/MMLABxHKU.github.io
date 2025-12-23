@@ -124,12 +124,12 @@ export default function Home() {
                                     Stage Advantage
                                 </span>
                             </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#conclusion">
+                            <Link className="select-none flex items-center gap-3 group" href="#bottom_line">
                                 <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                    Conclusion
+                                    Bottom Line
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#citation">
@@ -382,7 +382,7 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-20 text-3xl font-bold"> 
-                                <Link href="#metholody" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
+                                <Link href="#methodology" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
                                     <h2>
                                         Methodology
                                     </h2>
@@ -1041,9 +1041,9 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-20 text-3xl font-bold"> 
-                                <Link href="#conclusion" className="scroll-mt-32 group flex items-center flex-row" id="conclusion">
+                                <Link href="#bottom_line" className="scroll-mt-32 group flex items-center flex-row" id="bottom_line">
                                     <h2>
-                                        Conclusion
+                                        Bottom Line
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
