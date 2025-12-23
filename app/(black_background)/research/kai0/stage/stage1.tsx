@@ -107,7 +107,8 @@ function VideoWithChart({
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const hoverIndexRef = useRef<number | null>(null);
-  const prevAdvantageRef = useRef<"Positive" | "Negative" | null>(null);
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const prevDisplayAdvantageRef = useRef<"Positive" | "Negative" | undefined>(chartData[0]?.advantage);
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -115,11 +116,64 @@ function VideoWithChart({
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  // 防抖后的显示用 advantage 状态
+  const [displayAdvantage, setDisplayAdvantage] = useState<"Positive" | "Negative" | undefined>(
+    chartData[0]?.advantage
+  );
+  // 非对称过渡时间：红→绿快(150ms)，绿→红慢(600ms)
+  const [transitionDuration, setTransitionDuration] = useState("300ms");
 
-  // 数据源切换时重置索引，避免沿用旧数据点
+  // 防抖逻辑：只有状态稳定 150ms 后才切换显示颜色
+  const currentAdvantageRaw = chartData[activeIndex]?.advantage;
+  useEffect(() => {
+    // 如果当前值和显示值相同，不需要处理
+    if (currentAdvantageRaw === displayAdvantage) {
+      return;
+    }
+
+    // 清除之前的定时器
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    // 设置新的定时器，150ms 后更新显示颜色
+    debounceTimerRef.current = setTimeout(() => {
+      // 根据变化方向设置非对称过渡时间
+      const prevAdv = prevDisplayAdvantageRef.current;
+      if (prevAdv !== currentAdvantageRaw) {
+        if (currentAdvantageRaw === "Positive") {
+          // 红 → 绿：快速切换
+          setTransitionDuration("50ms");
+        } else {
+          // 绿 → 红：慢速切换
+          setTransitionDuration("1000ms");
+        }
+        // 等待 transitionDuration 渲染到 DOM 后再变颜色
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            prevDisplayAdvantageRef.current = currentAdvantageRaw;
+            setDisplayAdvantage(currentAdvantageRaw);
+          });
+        });
+      } else {
+        prevDisplayAdvantageRef.current = currentAdvantageRaw;
+        setDisplayAdvantage(currentAdvantageRaw);
+      }
+    }, 50);
+
+    return () => {
+      if (debounceTimerRef.current) {
+        clearTimeout(debounceTimerRef.current);
+      }
+    };
+  }, [currentAdvantageRaw, displayAdvantage]);
+
+  // 数据源切换时重置索引和显示状态
   useEffect(() => {
     setActiveIndex(0);
     hoverIndexRef.current = null;
+    setDisplayAdvantage(chartData[0]?.advantage);
+    prevDisplayAdvantageRef.current = chartData[0]?.advantage;
   }, [subTab, chartData.length]);
 
   // 处理鼠标悬停时的视频暂停/恢复（统一处理所有播放判断逻辑）
@@ -365,11 +419,16 @@ function VideoWithChart({
       }
     };
 
-    // 每秒15次 = 每 66.67ms 一次
-    const intervalId = setInterval(updateIndex, 1000 / 15);
+    // 使用 requestAnimationFrame 实现每帧更新（约60fps）
+    let animationId: number;
+    const animate = () => {
+      updateIndex();
+      animationId = requestAnimationFrame(animate);
+    };
+    animationId = requestAnimationFrame(animate);
 
     return () => {
-      clearInterval(intervalId);
+      cancelAnimationFrame(animationId);
     };
   }, [isPlaying, chartData, frameRange, totalFramesInOriginalData]);
 
@@ -556,27 +615,12 @@ function VideoWithChart({
   const progress = getProgress();
   const currentValue = chartData[activeIndex]?.cumulative_value ?? 0;
   const currentAdvantage = chartData[activeIndex]?.advantage;
-  const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
-  const tooltipBg = currentAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
+  // 边框、标签和tooltip都使用防抖后的 displayAdvantage，避免闪烁
+  // 加透明度减少颜色变化时的视觉冲击
+  const borderColor = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  const labelBg = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  const tooltipBg = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
-
-  // 非对称过渡：红→绿快(100ms)，绿→红慢(500ms)
-  const prevAdvantage = prevAdvantageRef.current;
-  let transitionDuration = "200ms"; // 默认值
-  if (prevAdvantage !== null && currentAdvantage !== prevAdvantage) {
-    if (currentAdvantage === "Positive") {
-      // 红 → 绿：快速切换
-      transitionDuration = "100ms";
-    } else {
-      // 绿 → 红：慢速切换
-      transitionDuration = "500ms";
-    }
-  }
-  // 更新 ref
-  if (currentAdvantage) {
-    prevAdvantageRef.current = currentAdvantage;
-  }
-
   
   const tooltipX = getTooltipX();
   const lineY = getLineY();
@@ -598,7 +642,7 @@ function VideoWithChart({
           <div
             className="absolute top-[-12px] left-[-12px] z-10 px-2 py-1.5 text-xs font-semibold text-white text-center w-[82px] rounded-tl-sm rounded-br-[8px]"
             style={{ 
-              backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)",
+              backgroundColor: labelBg,
               transition: `background-color ${transitionDuration} ease`
             }}
           >
@@ -616,6 +660,12 @@ function VideoWithChart({
           >
             <source src={stage.video} type="video/mp4" />
           </video>
+          
+          {/* 视频上的半透明蒙版，让线条更清晰 */}
+          <div 
+            className="absolute inset-0 pointer-events-none"
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
+          />
           
           {/* 播放/暂停按钮 */}
           {/* <button
@@ -713,7 +763,7 @@ function VideoWithChart({
                     top: `${lineY}%`,
                     bottom: 0,
                     width: '2px',
-                    background: 'repeating-linear-gradient(to bottom, white 0, white 5px, transparent 5px, transparent 10px)'
+                    background: 'repeating-linear-gradient(to top, white 0, white 5px, transparent 5px, transparent 10px)'
                   }}
                 />
                 
@@ -729,7 +779,10 @@ function VideoWithChart({
                   >
                     <div
                       className="text-white px-2 py-1 rounded text-xs whitespace-nowrap"
-                      style={{ backgroundColor: tooltipBg }}
+                      style={{ 
+                        backgroundColor: tooltipBg,
+                        transition: `background-color ${transitionDuration} ease`
+                      }}
                     >
                       {chartData[activeIndex].cumulative_value.toFixed(2)}
                     </div>
