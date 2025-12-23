@@ -205,7 +205,7 @@ export default function Home() {
   </div>
 
   {/* Share */}
-  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+  <div className="hidden flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
       Share
                                         </h2>
