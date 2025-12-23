@@ -8,6 +8,7 @@ type SharePlatform =
   | 'LinkedIn'
   | 'Facebook'
   | 'Reddit'
+  | 'Bluesky'
   | 'URL';
 
 type ShareLinkProps = {
@@ -90,6 +91,13 @@ export default function ShareLink({
         title: text ?? '',
       });
       shareUrl = `https://www.reddit.com/submit?${params.toString()}`;
+      break;
+    }
+
+    case 'Bluesky': {
+      const shareText = text ? `${text} ${url}` : url;
+      const params = new URLSearchParams({ text: shareText });
+      shareUrl = `https://bsky.app/intent/compose?${params.toString()}`;
       break;
     }
   }
