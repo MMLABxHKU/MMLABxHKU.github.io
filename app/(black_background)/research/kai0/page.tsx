@@ -314,7 +314,7 @@ export default function Home() {
                                         <i>
                                             Mode Consistency:&nbsp;
                                         </i>
-                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (<span class="font-math">P<sub>train</sub></span>), the model's knowledge (<span class="font-math">Q<sub>model</sub></span>), and the test-time distribution (<span class="font-math">P<sub>test</sub></span>), we minimize in-distribution shifts that lead to failure.
+                                        We argue that not all data is equally valuable. By strictly aligning the human demonstration distribution (<span class="font-math">P<sub>train</sub></span>), the model's knowledge (<span class="font-math">Q<sub>model</sub></span>), and the test-time distribution (<span class="font-math">P<sub>test</sub></span>), we minimize in-distribution shifts that lead to failure.
                                     </li>
                                     <li>
                                         <i>
@@ -1138,7 +1138,7 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6 text-muted-foreground">
                                     <li>
-                                        <span class="text-foreground font-medium">Not all robot data is created equal.</span> The quality and characteristics of training data significantly impact policy performance.
+                                        <span class="text-foreground font-medium">Not all robot data is equally valuable.</span> The quality and characteristics of training data significantly impact policy performance.
                                     </li>
                                     <li>
                                         <span class="text-foreground font-medium">The capability of the base policy is crucial, but knowing how to rapidly evaluate and select a capable base policy is even more important.</span> A fast research iteration cycle is essential for developing intuition and understanding of base policy behavior.
