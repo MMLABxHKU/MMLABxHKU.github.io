@@ -151,7 +151,7 @@ export default function Home() {
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-3xl">
                                 <h1 className="font-bold text-3xl leading-tight">
-                                    &chi;<sub>0</sub>: A Robotic Teamwork for Cloth Manipulation from Zero to Hero
+                                    &chi;<sub>0</sub>: A Live-Stream Robotic Teamwork for Clothing Manipulation from Zero to Hero
                                 </h1>
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
