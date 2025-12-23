@@ -370,7 +370,7 @@ export default function Home() {
                                     </svg>
                                 </div>
                                 <p className="w-full leading-relaxed">
-                                    We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
+                                    We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/" target="_blank">Challenge</a> in 2026.
                                 </p>
                             </div>
                             <div></div>
