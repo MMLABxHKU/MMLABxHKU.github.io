@@ -32421,18 +32421,4 @@ export const stageData = [
         video: "https://assets.kinetixai.cn/FoldAnything/advantage-ff-clip.mp4",
         frameRange: { start: 10, end: 890 },
     },
-    {
-        title: "Task B",
-        valueDiff: SINGLE_with_advantage,
-        directStage: STAGE_PROCESS_with_advantage,
-        video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
-        frameRange: { start: 100, end: 300 },
-    },
-    {
-        title: "Task C",
-        valueDiff: SINGLE_with_advantage,
-        directStage: STAGE_PROCESS_with_advantage,
-        video: "https://assets.kinetixai.cn/FoldAnything/advantage-demob.mp4",
-        frameRange: { start: 100, end: 300 },
-    },
 ]
