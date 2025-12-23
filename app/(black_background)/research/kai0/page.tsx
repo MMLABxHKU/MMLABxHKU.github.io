@@ -234,7 +234,7 @@ export default function Home() {
                                 poster="https://assets.kinetixai.cn/FoldAnything/full.png"
                                 className="w-full aspect-video rounded-sm"
                             >
-                                <source src="https://assets.kinetixai.cn/FoldAnything/opening_Dec23_demo_v4.mp4" type="video/mp4" />
+                                <source src="https://assets.kinetixai.cn/FoldAnything/opening_Dec23_demo_v6.mp4" type="video/mp4" />
                             </video>
                         </div>
                         {/* <div className="mt-3 flex flex-row gap-6 justify-center">
