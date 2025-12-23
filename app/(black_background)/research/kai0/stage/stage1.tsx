@@ -615,10 +615,11 @@ function VideoWithChart({
   const currentAdvantage = chartData[activeIndex]?.advantage;
   // 悬停时用精确值，播放时用防抖值
   const effectiveAdvantage = isHovered ? currentAdvantage : displayAdvantage;
-  const borderColor = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
-  const labelBg = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
-  const tooltipBg = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
-  const progressBarDotColor = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // 圆点颜色跟随红绿色
+  // 使用更柔和的颜色：浅绿色和浅红色
+  const borderColor = effectiveAdvantage === "Positive" ? "rgba(74, 222, 128, 0.7)" : "rgba(248, 113, 113, 0.7)";
+  const labelBg = effectiveAdvantage === "Positive" ? "rgba(74, 222, 128, 0.85)" : "rgba(248, 113, 113, 0.85)";
+  const tooltipBg = effectiveAdvantage === "Positive" ? "rgba(74, 222, 128, 0.85)" : "rgba(248, 113, 113, 0.85)";
+  const progressBarDotColor = effectiveAdvantage === "Positive" ? "#86efac" : "#fca5a5"; // 圆点颜色跟随红绿色（浅色版）
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
   
   // 计算完整数据的 Y 轴范围，固定不变
@@ -637,16 +638,18 @@ function VideoWithChart({
       <div className="relative flex flex-col items-center px-6 w-full mt-6">
         <div
           ref={videoContainerRef}
-          className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
+          className="relative w-full max-w-4xl border-[6px] border-solid rounded-sm position-relative"
           style={{ borderColor, transition: `border-color ${transitionDuration} ease` }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           <div
-            className="absolute top-[-12px] left-[-12px] z-10 px-2 py-1.5 text-xs font-semibold text-white text-center w-[82px] rounded-tl-sm rounded-br-[8px]"
+            className={`absolute top-[-6px] left-[-6px] z-10 px-2 py-1 text-xs font-semibold text-white text-center w-[72px] rounded-tl-sm rounded-br-[6px] transition-opacity duration-200 ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
             style={{ 
               backgroundColor: labelBg,
-              transition: `background-color ${transitionDuration} ease`
+              transition: `background-color ${transitionDuration} ease, opacity 200ms ease`
             }}
           >
             {currentAdvantage || ""}
@@ -735,7 +738,7 @@ function VideoWithChart({
                         const value = payload[0].value;
                         const displayValue = typeof value === 'number' ? value.toFixed(2) : String(value);
                         const hoveredAdvantage = payload[0]?.payload?.advantage;
-                        const hoveredBg = hoveredAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
+                        const hoveredBg = hoveredAdvantage === "Positive" ? "rgba(74, 222, 128, 0.8)" : "rgba(248, 113, 113, 0.8)";
                         return (
                           <div
                             className="text-white px-2 py-1 rounded text-xs"
