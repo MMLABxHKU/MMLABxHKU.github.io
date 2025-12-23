@@ -917,7 +917,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    <i>But how does MA work?</i> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring mode consistency in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
+                                    <i>But how does MA work?</i> Our key insight: models trained on different data subsets actually learn distinct manifolds. MA acts as a shortcut to merge modes from these diverse manifolds, ensuring <i>mode consistency</i> in the final model. This approach soaks up capabilities from each iteration without costly full retraining.
                                 </p>
                             `} 
                             tipList={{}}
