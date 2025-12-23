@@ -393,7 +393,7 @@ export default function Home() {
                                 poster="https://assets.kinetixai.cn/FoldAnything/pipeling.jpg"
                                 className="w-full aspect-video rounded-sm"
                             >
-                                <source src="https://assets.kinetixai.cn/FoldAnything/full_Dec22_4k_30_v3.mp4" type="video/mp4" />
+                                <source src="https://assets.kinetixai.cn/FoldAnything/full_Dec23_4K_30_v5.mp4" type="video/mp4" />
                             </video>
                         </div>
                         <div className="mt-5 flex justify-center px-6 z-50">
