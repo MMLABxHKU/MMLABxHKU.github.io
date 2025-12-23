@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "Kai0 | HKU MMLab",
+    title: "kai0 | HKU MMLab",
     description: "Multimedia Laboratory",
-    keywords: ["Kai0", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+    keywords: ["kai0", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 
@@ -151,7 +151,7 @@ export default function Home() {
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-3xl">
                                 <h1 className="font-bold text-3xl leading-tight">
-                                    Kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation
+                                    &chi;<sub>0</sub>: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation
                                 </h1>
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
@@ -200,32 +200,32 @@ export default function Home() {
                                         <h2 className="flex flex-row items-center flex-wrap">
                                             <ShareLink
                                                 platform="X"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="LinkedIn"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="Reddit"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="Facebook"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="Reddit"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />                                            
                                             <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                                             <ShareLink
                                                 platform="URL"
-                                                url="https://mmlab.hk/research/Kai0"
+                                                url="https://mmlab.hk/research/kai0"
                                             />
                                         </h2>
                                     </div>
