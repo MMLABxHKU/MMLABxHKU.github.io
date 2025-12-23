@@ -32,7 +32,7 @@ export function StageVideo1() {
       className="w-full flex flex-col items-center"
     >
       {/* 隐藏顶部TabList */}
-      <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 mt-6 bg-zinc-900/50 border border-zinc-800">
+      <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 mt-6 bg-zinc-900/50 border border-zinc-800 hidden">
         {stageData.map((stage) => (
           <TabsTrigger 
             key={stage.title} 
@@ -569,7 +569,7 @@ function VideoWithChart({
       className={`w-full flex justify-center ${isActive ? "relative z-10" : "absolute inset-0 opacity-0 pointer-events-none z-0"}`}
     >
       {/* 如果task不隐藏则不需要 mt-6 */}
-      <div className="relative flex flex-col items-center px-6 w-full">
+      <div className="relative flex flex-col items-center px-6 w-full mt-6">
         <div
           ref={videoContainerRef}
           className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
