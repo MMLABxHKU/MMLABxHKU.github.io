@@ -285,7 +285,7 @@ export default function Home() {
                                     link:'https://www.physicalintelligence.company/blog/pi0',
                                     content: (
                                         <>
-                                        π<sub>0</sub>: Our First Generalist Policy (2024)
+                                        π<sub>0</sub> (2024)
                                         </>
                                     ),
                                 },
