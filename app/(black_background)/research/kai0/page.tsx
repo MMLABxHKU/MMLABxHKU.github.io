@@ -483,11 +483,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-<<<<<<< Updated upstream
-                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub>.<sup>1</sup><sup>,</sup><sup>2</sup></span> This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
-=======
                                     Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>,</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference()</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
->>>>>>> Stashed changes
                                 </p>
                             `} 
                             tipList={{
