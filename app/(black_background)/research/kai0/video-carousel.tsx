@@ -102,7 +102,6 @@ export function VideoCarousel() {
                                     autoPlay={isActive}
                                     muted
                                     loop
-                                    controls={isActive}
                                     playsInline
                                     poster={video.poster}
                                     className="w-full aspect-video object-cover rounded-xl"
