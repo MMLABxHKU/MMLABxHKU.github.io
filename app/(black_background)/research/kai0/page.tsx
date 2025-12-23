@@ -222,11 +222,11 @@ export default function Home() {
                                                 platform="Reddit"
                                                 url="https://mmlab.hk/research/kai0"
                                             />                                            
-                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                            <ShareLink
+                                            {/* <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span> */}
+                                            {/* <ShareLink
                                                 platform="URL"
                                                 url="https://mmlab.hk/research/kai0"
-                                            />
+                                            /> */}
                                         </h2>
                                     </div>
                                 </div>
