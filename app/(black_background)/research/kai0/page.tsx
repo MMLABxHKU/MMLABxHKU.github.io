@@ -282,6 +282,14 @@ export default function Home() {
                             `} 
                             tipList={{
                                 1:{
+                                    link:'https://www.physicalintelligence.company/blog/pi0',
+                                    content: (
+                                        <>
+                                        π<sub>0</sub>: Our First Generalist Policy (2024)
+                                        </>
+                                    ),
+                                },
+                                2:{
                                     link:'https://opendrivelab.com/OpenGO1/',
                                     content: (
                                         <>
@@ -506,7 +514,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={1}
+                            offset={2}
                             />
                         </div>
 
@@ -617,7 +625,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
@@ -646,8 +654,16 @@ export default function Home() {
                                         </>
                                     ),
                                 },
+                                3:{
+                                    link:'https://arxiv.org/abs/2509.07953',
+                                    content: (
+                                        <>
+                                        RaC (Hu et al., 2025)
+                                        </>
+                                    ),
+                                },
                             }}
-                            offset={3}
+                            offset={4}
                             />
                         </div>
 
@@ -673,7 +689,7 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={5}
+                            offset={7}
                             />
                         </div>
 
@@ -848,7 +864,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={6}
+                            offset={8}
                             />
                         </div>
 
