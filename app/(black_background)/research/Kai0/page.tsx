@@ -274,7 +274,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    "Veni, Vidi, Vici" — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
 
@@ -311,7 +311,7 @@ export default function Home() {
                                         <b>
                                             Model Arithmetic:&nbsp;
                                         </b>
-                                        We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy—capturing diverse knowledge without the architectural complexity of MoE.
+                                        We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy-capturing diverse knowledge without the architectural complexity of MoE.
                                     </li>
                                     <li>
                                         <b>
@@ -364,7 +364,7 @@ export default function Home() {
                         <div className="mt-5 flex justify-center px-6 z-50">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-5xl">
                                 <span className="font-medium text-white/80">Mode Consistency System Architecture</span>
-                                <span className="mx-2 text-white/20">—</span>
+                                <span className="mx-2 text-white/20">-</span>
                                 Left: Human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: Real-robot inference. Bottom: DAgger Feedback and Stage Advantage from on-policy experience.
                             </p>
                         </div>
@@ -414,7 +414,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem—akin to a game of "Whac-a-Mole"—among three distinct distributions:
+                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
                                 </p>
                             `} 
                             tipList={{}}
@@ -562,7 +562,7 @@ export default function Home() {
                                     <div className="mt-4 px-1">
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Dagger</span>
-                                            <span className="mx-2 text-white/30">—</span>
+                                            <span className="mx-2 text-white/30">-</span>
                                             Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
                                         </p>
                                     </div>
@@ -582,7 +582,7 @@ export default function Home() {
                                     <div className="mt-4 px-1">
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Inference Optimization</span>
-                                            <span className="mx-2 text-white/30">—</span>
+                                            <span className="mx-2 text-white/30">-</span>
                                             Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
                                         </p>
                                     </div>
@@ -594,7 +594,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Back to basics, we propose two fundamental strategies—operating on Data Scope and Inference Scope—to stabilize these distributions: 
+                                    Back to basics, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
                                 </p>
                             `} 
                             tipList={{}}
@@ -768,7 +768,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks-especially complex ones like garment manipulation-demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
                                 </p>
                             `} 
                             tipList={{}}
@@ -1024,7 +1024,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-4xl">
-                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training — achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
+                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training - achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
                             </p>
                         </div>
 
