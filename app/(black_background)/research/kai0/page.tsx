@@ -537,35 +537,6 @@ export default function Home() {
                             </p>
                         </div>
                         
-                        <div className="mt-6">
-                            <TextTip html={`\
-                                <p class="w-full leading-relaxed">
-                                    To better visualize the dynamics relationship among <span class="font-mono">P<sub>train</sub></span>, <span class="font-mono">Q<sub>model</sub></span>, and <span class="font-mono">P<sub>test</sub></span>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating their progressive consistency.
-                                </p>
-                            `} 
-                            tipList={{}}
-                            offset={0}
-                            />
-                        </div>
-
-
-                        <div className="hidden md:flex flex-row justify-center px-6 mt-6">
-                            <div className="max-w-3xl w-full flex flex-row gap-10 justify-center ">
-                                <iframe
-                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
-                                    width="800"
-                                    height="450"
-                                    className="rounded-sm w-[800px]"
-                                    scrolling="no"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-5 flex justify-center px-6">
-                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Interactive 3D t-SNE visualization of action distributions for <span className="font-mono">P<sub>train</sub></span>, <span className="font-mono">Q<sub>model</sub></span>, and <span className="font-mono">P<sub>test</sub></span>.
-                                <span className="block mt-1 text-white/60 font-medium">Click and drag to rotate the plot.</span>
-                            </p>
-                        </div>
 
 
 
@@ -625,7 +596,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
@@ -741,7 +712,36 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    To validate the effectiveness of these strategies, we conduct comprehensive experiments evaluating their impact on model performance across multiple metrics.
+                                    To visualize how our methods achieve progressive consistency among <span class="font-mono">P<sub>train</sub></span>, <span class="font-mono">Q<sub>model</sub></span>, and <span class="font-mono">P<sub>test</sub></span>, we project their action distributions on TaskA into a 3D t-SNE space.
+                                </p>
+                            `} 
+                            tipList={{}}
+                            offset={0}
+                            />
+                        </div>
+
+                        <div className="hidden md:flex flex-row justify-center px-6 mt-6">
+                            <div className="max-w-3xl w-full flex flex-row gap-10 justify-center ">
+                                <iframe
+                                    src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
+                                    width="800"
+                                    height="450"
+                                    className="rounded-sm w-[800px]"
+                                    scrolling="no"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Interactive 3D t-SNE visualization of action distributions for <span className="font-mono">P<sub>train</sub></span>, <span className="font-mono">Q<sub>model</sub></span>, and <span className="font-mono">P<sub>test</sub></span>.
+                                <span className="block mt-1 text-white/60 font-medium">Click and drag to rotate the plot.</span>
+                            </p>
+                        </div>
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    We posit that mode consistency constitutes a fundamental prerequisite for a model's core capabilities. On-policy experience and control optimization emerge as the most critical factors in achieving this alignment at the foundational stage.
                                 </p>
                             `} 
                             tipList={{}}
