@@ -274,13 +274,22 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1<sup>1</sup> rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
 
                                 </p>
                             `} 
-                            tipList={{}}
+                            tipList={{
+                                1:{
+                                    link:'https://opendrivelab.com/OpenGO1/',
+                                    content: (
+                                        <>
+                                        GO-1 (2025)
+                                        </>
+                                    ),
+                                },
+                            }}
                             offset={0}
                             />
                         </div>
@@ -469,7 +478,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={0}
+                            offset={1}
                             />
                         </div>
 
@@ -646,7 +655,7 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={2}
+                            offset={3}
                             />
                         </div>
 
@@ -672,7 +681,7 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={4}
+                            offset={5}
                             />
                         </div>
 
@@ -794,7 +803,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={5}
+                            offset={6}
                             />
                         </div>
 
@@ -915,7 +924,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={6}
+                            offset={7}
                             />
                         </div>
 
