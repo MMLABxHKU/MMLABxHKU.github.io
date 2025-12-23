@@ -75,7 +75,7 @@ export default function CitationBlock() {
   title = {kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation},
   author = {HKU MMLab},
   year = {2025},
-  note = {https://mmlab.hk/research/Kai0},
+  note = {https://mmlab.hk/research/kai0},
 }`}</code>
         </pre>
       </div>
