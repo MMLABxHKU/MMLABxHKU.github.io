@@ -42,6 +42,7 @@ import ShareLink from "./share"
 import { EmailSubscribe } from "./mailing"
 import TextTip from "@/components/diy/textTip/textTip"
 import { VideoCarousel } from "./video-carousel"
+import { ChartCarousel } from "./chart-carousel"
 
 
 
@@ -741,17 +742,7 @@ export default function Home() {
                             />
                         </div>
 
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
-                                <ConsistencyBarChart1 />
-                                <ConsistencyBarChart2 />
-                            </div>
-                        </div>
-                        <div className="mt-5 flex justify-center px-6">
-                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.
-                            </p>
-                        </div>
+                        <ChartCarousel />
 
 
 
@@ -769,43 +760,6 @@ export default function Home() {
 
 
 
-                        {/* <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
-                                <ConsistencyBarChart5 />
-                                <ConsistencyBarChart6 />
-                                <ConsistencyBarChart7 />
-                            </div>
-                        </div>
-                        <div className="mt-5 flex justify-center px-6">
-                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Space mirroring augmentation substantially improves performance across all metrics.
-                            </p>
-                        </div> */}
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
-                                <ConsistencyBarChart11 />
-                                <ConsistencyBarChart12 />
-                            </div>
-                        </div>
-                        <div className="mt-5 flex justify-center px-6">
-                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Spatio-temporal augmentation substantially enhances model performance, increasing success rate and throughput (more task completions per unit time). X-axis: baseline, +spatio-temp. augment.
-                            </p>
-                        </div>
-
-                        <div className="mt-10 flex flex-row justify-center px-6">
-                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
-                                <ConsistencyBarChart8 />
-                                <ConsistencyBarChart9 />
-                                {/* <ConsistencyBarChart10 /> */}
-                            </div>
-                        </div>
-                        <div className="mt-5 flex justify-center px-6">
-                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp smooth, + RTC.
-                            </p>
-                        </div>
 
 
                         <div className="w-full flex flex-col items-center px-6">
