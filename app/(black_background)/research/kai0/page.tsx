@@ -167,10 +167,10 @@ export default function Home() {
     </h2>
   </div>
 
-  {/* Paper */}
+  {/* Report */}
   <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-                                            Paper
+                                            Report
                                         </h2>
     <h2 className="flex-1 break-words">
       Available in Late January 2026
