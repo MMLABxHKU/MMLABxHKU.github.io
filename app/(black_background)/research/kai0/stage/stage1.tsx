@@ -621,6 +621,10 @@ function VideoWithChart({
   const progressBarDotColor = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // 圆点颜色跟随红绿色
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
   
+  // 计算完整数据的 Y 轴范围，固定不变
+  const yMin = Math.min(...chartData.map(d => d.cumulative_value));
+  const yMax = Math.max(...chartData.map(d => d.cumulative_value));
+  
   const tooltipX = getTooltipX();
   const lineY = getLineY();
 
@@ -696,9 +700,13 @@ function VideoWithChart({
               {/* SVG 画布渲染位置：ResponsiveContainer 会创建一个包含 SVG 的容器 */}
               <ResponsiveContainer key={`${chartKey}-responsive`} width="100%" height="100%">
                 {/* SVG 画布实际位置：LineChart 内部会渲染 <svg className="recharts-surface"> 元素 */}
+                {/* 只显示到当前进度位置的线 */}
                 <LineChart
                   key={`${chartKey}-linechart`}
-                  data={chartData}
+                  data={chartData.map((item, idx) => ({
+                    ...item,
+                    cumulative_value: idx <= activeIndex ? item.cumulative_value : null
+                  }))}
                   margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                 >
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -716,7 +724,7 @@ function VideoWithChart({
                     tickLine={false}
                     axisLine={false}
                     tick={false}
-                    domain={['dataMin', 'dataMax']}
+                    domain={[yMin, yMax]}
                     width={0}
                     height={0}
                   />
