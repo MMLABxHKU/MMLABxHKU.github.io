@@ -13,11 +13,11 @@ export default function Redirect() {
 
     
     // project
-    if (
-        pathname.toLowerCase().startsWith('/research/kai0')
-    ) {
-        redirect('/research/kai0')
-    }
+    // if (
+    //     pathname.toLowerCase().startsWith('/research/kai0')
+    // ) {
+    //     redirect('/research/kai0')
+    // }
 
 
 
