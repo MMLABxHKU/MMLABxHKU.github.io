@@ -15,8 +15,7 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 // 进度条颜色配置 - 可自定义
-const progressBarFilledColor = "#000000"; // 进度条左边（已填充部分）的颜色
-const progressBarDotColor = "#000000"; // 圆点的颜色
+const progressBarFilledColor = "#ffffff"; // 进度条左边（已填充部分）的颜色
 
 export function StageVideo1() {
   const [activeTab, setActiveTab] = useState(stageData[0]?.title || "");
@@ -613,13 +612,13 @@ function VideoWithChart({
   }, [frameRange, chartData.length, activeIndex]);
   
   const progress = getProgress();
-  const currentValue = chartData[activeIndex]?.cumulative_value ?? 0;
   const currentAdvantage = chartData[activeIndex]?.advantage;
-  // 边框、标签和tooltip都使用防抖后的 displayAdvantage，避免闪烁
-  // 加透明度减少颜色变化时的视觉冲击
-  const borderColor = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
-  const labelBg = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
-  const tooltipBg = displayAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  // 悬停时用精确值，播放时用防抖值
+  const effectiveAdvantage = isHovered ? currentAdvantage : displayAdvantage;
+  const borderColor = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  const labelBg = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  const tooltipBg = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444";
+  const progressBarDotColor = effectiveAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // 圆点颜色跟随红绿色
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
   
   const tooltipX = getTooltipX();
