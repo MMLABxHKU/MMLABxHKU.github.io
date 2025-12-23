@@ -3,24 +3,24 @@
 import { useRef, useState } from 'react';
 
 export default function CitationBlock() {
-  const blockRef = useRef<HTMLParagraphElement>(null);
+  const blockRef = useRef<HTMLPreElement>(null);
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    if (blockRef.current) {
-      try {
-        await navigator.clipboard.writeText(blockRef.current.innerText);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      } catch (err) {
-        console.error('复制失败:', err);
-      }
+    if (!blockRef.current) return;
+
+    try {
+      await navigator.clipboard.writeText(blockRef.current.innerText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('复制失败:', err);
     }
   };
 
   return (
     <div className="mt-6 flex flex-row gap-6 justify-center">
-      <div></div>
+      <div />
       <div className="relative w-full max-w-3xl">
         {/* 右上角复制按钮 */}
         <button
@@ -57,32 +57,29 @@ export default function CitationBlock() {
           )}
         </button>
 
-        <p
+        {/* Citation Code Block (wrap, no scroll) */}
+        <pre
           ref={blockRef}
-          className="w-full leading-relaxed p-4 bg-white/10 rounded-sm text-foreground"
+          className="
+            w-full p-4 rounded-sm
+            bg-white/10
+            font-mono text-sm
+            text-muted-foreground
+            leading-relaxed
+
+            whitespace-pre-wrap
+            break-words
+          "
         >
-                                @article&#123;kaimanipteam2025kai0,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>author = &#123;HKU MMLab&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>title = &#123;kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>year = &#123;2025&#125;,
-                                <br></br>
-                                <span className="select-none">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>note = &#123;https://mmlab.hk/research/Kai0&#125;,
-                                <br></br>
-                                &#125;
-        </p>
+<code>{`@article{kai0,
+  title = {kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation},
+  author = {HKU MMLab},
+  year = {2025},
+  note = {https://mmlab.hk/research/Kai0},
+}`}</code>
+        </pre>
       </div>
-      <div></div>
+      <div />
     </div>
   );
 }
