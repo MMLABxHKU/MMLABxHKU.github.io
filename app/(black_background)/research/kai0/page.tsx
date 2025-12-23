@@ -389,7 +389,7 @@ export default function Home() {
 
                         <div className="px-6">
                             <video
-                                autoPlay muted loop controls playsInline
+                                autoPlay muted loop playsInline
                                 poster="https://assets.kinetixai.cn/FoldAnything/pipeling.jpg"
                                 className="w-full aspect-video rounded-sm"
                             >
