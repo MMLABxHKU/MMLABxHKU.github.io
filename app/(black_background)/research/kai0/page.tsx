@@ -314,7 +314,7 @@ export default function Home() {
                                         <b>
                                             Mode Consistency:&nbsp;
                                         </b>
-                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (P<sub>train</sub>), the model's knowledge (<span class="font-mono">Q<sub>model</sub></span>), and the test-time distribution (P<sub>test</sub>), we minimize in-distribution shifts that lead to failure.
+                                        We argue that not all data is created equal. By strictly aligning the human demonstration distribution (<span class="font-mono">P<sub>train</sub></span>), the model's knowledge (<span class="font-mono">Q<sub>model</sub></span>), and the test-time distribution (<span class="font-mono">P<sub>test</sub></span>), we minimize in-distribution shifts that lead to failure.
                                     </li>
                                     <li>
                                         <b>
@@ -451,7 +451,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
+                                    We define the solution space for a given task as <span class="font-mono">P<sub>real</sub></span>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
                                 </p>
                             `} 
                             tipList={{}}
@@ -465,13 +465,13 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6">
                                     <li>
-                                        P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, <span class="font-mono">Q<sub>human</sub></span>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
+                                        <span class="font-mono">P<sub>train</sub></span> (Human Demonstrations): The empirical distribution collected from the human expert policy, <span class="font-mono">Q<sub>human</sub></span>. This represents a limited subset of the valid solution manifold <span class="font-mono">P<sub>real</sub></span>.
                                     </li>
                                     <li>
                                         <span class="font-mono">Q<sub>model</sub></span> (Learned Policy): The policy distribution parameterized by the model weights.
                                     </li>
                                     <li>
-                                        P<sub>test</sub> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from <span class="font-mono">Q<sub>model</sub></span>. Success is defined by the intersection of P<sub>test</sub> and P<sub>real</sub>, while the portion of P<sub>test</sub> falling outside P<sub>real</sub> constitutes the failure modes.
+                                        <span class="font-mono">P<sub>test</sub></span> (Real-World Execution): The actual distribution of actions executed during physical deployment, inferred from <span class="font-mono">Q<sub>model</sub></span>. Success is defined by the intersection of <span class="font-mono">P<sub>test</sub></span> and <span class="font-mono">P<sub>real</sub></span>, while the portion of <span class="font-mono">P<sub>test</sub></span> falling outside <span class="font-mono">P<sub>real</sub></span> constitutes the failure modes.
                                     </li>
                                 </ol>
                             `} 
@@ -485,7 +485,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of P<sub>train</sub><sup>1</sup><sup>2</sup>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
+                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
                                 </p>
                             `} 
                             tipList={{
@@ -617,7 +617,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
