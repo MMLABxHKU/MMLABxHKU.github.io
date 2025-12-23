@@ -550,7 +550,7 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-                        <div className="mt-5 flex justify-center px-6">
+                        <div className="mt-5 hidden md:flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
                                 Interactive 3D t-SNE visualization of action distributions for <span className="font-mono">P<sub>train</sub></span>, <span className="font-mono">Q<sub>model</sub></span>, and <span className="font-mono">P<sub>test</sub></span>.
                                 <span className="block mt-1 text-white/60 font-medium">Click and drag to rotate the plot.</span>
