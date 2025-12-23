@@ -564,7 +564,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    To this end, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
+                                    Back to basics, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
                                 </p>
                             `} 
                             tipList={{}}
