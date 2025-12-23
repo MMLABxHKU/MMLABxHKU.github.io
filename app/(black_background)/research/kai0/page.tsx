@@ -483,7 +483,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub><sup>1</sup><sup>,</sup><sup>2</sup></span>. This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
+                                    Standard imitation learning paradigms generally aim to minimize the divergence <span class="font-mono">KL(Q<sub>model</sub>|Q<sub>human</sub>)</span> over the support of <span class="font-mono">P<sub>train</sub>.<sup>1</sup><sup>,</sup><sup>2</sup></span> This process yields a finetuned <span class="font-mono">Q<sub>model</sub></span>, deploying this model via an inference function (denoted as <span class="font-mono">Inference</span>) results in the realized distribution <span class="font-mono">P<sub>test</sub></span>. 
                                 </p>
                             `} 
                             tipList={{
@@ -615,7 +615,7 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment.<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup> We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics <span class="font-mono">P<sub>real</sub></span>. 
                                             </li>
                                             <li>
                                                 <b>
@@ -665,7 +665,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of <span class="font-mono">Q<sub>model</sub></span> into <span class="font-mono">P<sub>test</sub></span> via the <span class="font-mono">Inference</span> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
+                                        To optimize the translation of <span class="font-mono">Q<sub>model</sub></span> into <span class="font-mono">P<sub>test</sub></span> via the <span class="font-mono">Inference</span> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking.<sup>1</sup> This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -962,7 +962,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed<sup>1</sup>.
+                                    Long-horizon manipulation is inherently hindered by a simple question: <b>given multiple plausible actions at the same state, which one actually makes progress?</b> It is illustrated in cases where visual differences are subtle but  result differences are huge given different actions. This is indeed why an advantage signal is needed.<sup>1</sup>
                                 </p>
                             `} 
                             tipList={{
