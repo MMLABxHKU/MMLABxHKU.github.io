@@ -154,6 +154,17 @@
 
 
 /* font */
+.font-math {
+    font-family: "Cambria Math", "STIX Two Math", "Times New Roman", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.font-math sub {
+    font-style: normal;
+    font-size: 0.75em;
+    letter-spacing: 0;
+}
 .text-t0 {
     @apply text-6xl sm:text-7xl md:text-8xl lg:text-9xl;
 }
