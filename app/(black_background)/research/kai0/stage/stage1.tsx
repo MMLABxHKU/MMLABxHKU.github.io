@@ -27,7 +27,8 @@ export function StageVideo1() {
       onValueChange={setActiveTab}
       className="w-full flex flex-col items-center"
     >
-      <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 mt-6 bg-zinc-900/50 border border-zinc-800">
+      {/* 隐藏顶部TabList */}
+      <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 mt-6 bg-zinc-900/50 border border-zinc-800 hidden">
         {stageData.map((stage) => (
           <TabsTrigger 
             key={stage.title} 
@@ -524,7 +525,8 @@ function VideoWithChart({
       aria-hidden={!isActive}
       className={`w-full flex justify-center ${isActive ? "relative z-10" : "absolute inset-0 opacity-0 pointer-events-none z-0"}`}
     >
-      <div className="relative flex flex-col items-center px-6 w-full">
+      {/* 如果task不隐藏则不需要 mt-6 */}
+      <div className="relative flex flex-col items-center px-6 w-full mt-6">
         <div
           ref={videoContainerRef}
           className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
@@ -533,7 +535,7 @@ function VideoWithChart({
           onMouseLeave={() => setIsHovered(false)}
         >
           <div
-            className="absolute top-[-8px] left-[-8px] z-10 px-2 py-1 text-xs font-semibold text-white text-center w-[70px] rounded-br-[4px]"
+            className="absolute top-[-12px] left-[-12px] z-10 px-2 py-1.5 text-xs font-semibold text-white text-center w-[82px] rounded-tl-sm rounded-br-[8px]"
             style={{ backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)" }}
           >
             {currentAdvantage || ""}
@@ -546,7 +548,7 @@ function VideoWithChart({
             controls={false}
             playsInline
             preload="metadata"
-            className="w-full h-auto object-cover object-center rounded-sm bg-gradient-loading select-none block"
+            className="w-full h-auto object-cover object-center bg-gradient-loading select-none block"
           >
             <source src={stage.video} type="video/mp4" />
           </video>
