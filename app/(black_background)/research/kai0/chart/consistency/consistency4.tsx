@@ -52,7 +52,7 @@ export function ConsistencyBarChart4() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Throughput (%) &#8593;</CardDescription>
+                <CardDescription>Throughput &#8593;</CardDescription>
             </CardHeader>
 
 
