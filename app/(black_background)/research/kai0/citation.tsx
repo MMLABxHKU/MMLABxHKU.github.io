@@ -71,9 +71,10 @@ export default function CitationBlock() {
             break-words
           "
         >
-<code>{`@article{kai0,
+<code>{`@article{hkummlab2025kai0,
   title = {A Live-Stream Robotic Teamwork for Clothing Manipulation from Zero to Hero},
   author = {HKU MMLab},
+  journal = {HKU MMLab Research Blog},
   year = {2025},
   note = {https://mmlab.hk/research/kai0},
 }`}</code>

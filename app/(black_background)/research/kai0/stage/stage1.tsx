@@ -14,6 +14,10 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
+// 进度条颜色配置 - 可自定义
+const progressBarFilledColor = "#000000"; // 进度条左边（已填充部分）的颜色
+const progressBarDotColor = "#000000"; // 圆点的颜色
+
 export function StageVideo1() {
   const [activeTab, setActiveTab] = useState(stageData[0]?.title || "");
   // 自定义首尾帧数配置 - 可以在这里修改或通过 props 传入
@@ -103,6 +107,7 @@ function VideoWithChart({
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const hoverIndexRef = useRef<number | null>(null);
+  const prevAdvantageRef = useRef<"Positive" | "Negative" | null>(null);
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -232,6 +237,12 @@ function VideoWithChart({
       const handleLoadedMetadata = () => {
         if (syncVideoState()) {
           stopPolling();
+          // Task 切换后，如果视频已加载且组件激活，自动播放
+          if (isActive && video.paused) {
+            video.play().catch(err => {
+              console.warn('自动播放失败:', err);
+            });
+          }
         }
       };
       video.addEventListener('loadedmetadata', handleLoadedMetadata, { once: true });
@@ -239,6 +250,12 @@ function VideoWithChart({
       intervalId = window.setInterval(() => {
         if (syncVideoState()) {
           stopPolling();
+          // Task 切换后，如果视频已加载且组件激活，自动播放
+          if (isActive && video.paused) {
+            video.play().catch(err => {
+              console.warn('自动播放失败:', err);
+            });
+          }
         }
       }, 200);
 
@@ -247,13 +264,20 @@ function VideoWithChart({
         stopPolling();
         video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       };
+    } else {
+      // 如果视频已经加载，且组件激活，确保视频继续播放
+      if (isActive && video.paused && duration > 0) {
+        video.play().catch(err => {
+          console.warn('恢复播放失败:', err);
+        });
+      }
     }
 
     return () => {
       cancelled = true;
       stopPolling();
     };
-  }, [isActive, chartData, frameRange]);
+  }, [isActive, chartData, frameRange, duration]);
 
   // 监听视频播放状态 - 不负责初始化
   useEffect(() => {
@@ -292,22 +316,33 @@ function VideoWithChart({
   }, [duration]);
 
 
-  // 根据视频时间更新activeIndex - 使用 ref 避免过度渲染
-  // 视频可以自由播放，但 activeIndex 和进度条只反映 frameRange 内的进度
+  // 高频刷新 activeIndex - 每秒15次（每 66.67ms 一次）
+  // 只在视频播放时运行，使 index 移动更流畅
   useEffect(() => {
-    const actualDuration = getActualDuration();
-    if (isActiveRef.current && actualDuration > 0 && !isDraggingRef.current && chartData.length > 0) {
+    if (!isPlaying || !isActiveRef.current || isDraggingRef.current || chartData.length === 0) {
+      return;
+    }
+
+    const video = videoRef.current;
+    if (!video) return;
+
+    const updateIndex = () => {
+      if (!isActiveRef.current || isDraggingRef.current) return;
+      
+      const actualDuration = getActualDuration();
+      if (actualDuration <= 0) return;
+
+      const videoCurrentTime = video.currentTime;
+      
       if (frameRange) {
         // 将视频时间映射到原始数据中的帧索引
-        const videoProgress = currentTime / actualDuration;
+        const videoProgress = videoCurrentTime / actualDuration;
         const targetFrameInOriginal = Math.floor(videoProgress * (totalFramesInOriginalData - 1));
         
         // 检查目标帧是否在 frameRange 内
         if (targetFrameInOriginal < frameRange.start) {
-          // 视频在 frameRange 之前，保持 activeIndex 为 0，进度条为 0%
           setActiveIndex(0);
         } else if (targetFrameInOriginal > frameRange.end) {
-          // 视频在 frameRange 之后，保持 activeIndex 为最后一个，进度条为 100%
           setActiveIndex(chartData.length - 1);
         } else {
           // 视频在 frameRange 内，找到对应的 chartData 索引
@@ -324,12 +359,19 @@ function VideoWithChart({
         }
       } else {
         // 没有 frameRange 时，直接映射到 chartData
-        const progress = currentTime / actualDuration;
+        const progress = videoCurrentTime / actualDuration;
         const targetIndex = Math.floor(progress * (chartData.length - 1));
         setActiveIndex(targetIndex);
       }
-    }
-  }, [currentTime, chartData, frameRange, totalFramesInOriginalData]);
+    };
+
+    // 每秒15次 = 每 66.67ms 一次
+    const intervalId = setInterval(updateIndex, 1000 / 15);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [isPlaying, chartData, frameRange, totalFramesInOriginalData]);
 
   // 计算tooltip X位置（只计算X，Y固定在底部）
   const getTooltipX = useCallback(() => {
@@ -517,6 +559,25 @@ function VideoWithChart({
   const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
   const tooltipBg = currentAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
   const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
+
+  // 非对称过渡：红→绿快(100ms)，绿→红慢(500ms)
+  const prevAdvantage = prevAdvantageRef.current;
+  let transitionDuration = "200ms"; // 默认值
+  if (prevAdvantage !== null && currentAdvantage !== prevAdvantage) {
+    if (currentAdvantage === "Positive") {
+      // 红 → 绿：快速切换
+      transitionDuration = "100ms";
+    } else {
+      // 绿 → 红：慢速切换
+      transitionDuration = "500ms";
+    }
+  }
+  // 更新 ref
+  if (currentAdvantage) {
+    prevAdvantageRef.current = currentAdvantage;
+  }
+
+  
   const tooltipX = getTooltipX();
   const lineY = getLineY();
 
@@ -530,13 +591,16 @@ function VideoWithChart({
         <div
           ref={videoContainerRef}
           className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
-          style={{ borderColor }}
+          style={{ borderColor, transition: `border-color ${transitionDuration} ease` }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           <div
             className="absolute top-[-12px] left-[-12px] z-10 px-2 py-1.5 text-xs font-semibold text-white text-center w-[82px] rounded-tl-sm rounded-br-[8px]"
-            style={{ backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)" }}
+            style={{ 
+              backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)",
+              transition: `background-color ${transitionDuration} ease`
+            }}
           >
             {currentAdvantage || ""}
           </div>
@@ -677,7 +741,7 @@ function VideoWithChart({
           
           {/* 进度条：悬停视频时显示，贴合底部边界 */}
           <div
-            className={`absolute left-0 right-0 flex justify-center items-center px-6 py-3 transition-all duration-200 ${
+            className={`absolute left-0 right-0 flex justify-center items-center px-8.5 py-3 transition-all duration-200 ${
               isHovered ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
             } backdrop-blur-sm rounded-b-sm`}
             style={{ bottom: "0px", "background": "inherits" }}
@@ -688,12 +752,12 @@ function VideoWithChart({
               onMouseDown={handleMouseDown}
             >
               <div
-                className="absolute h-full bg-[#000000] rounded-full transition-all"
-                style={{ width: `${progress}%` }}
+                className="absolute h-full rounded-full transition-all"
+                style={{ width: `${progress}%`, backgroundColor: progressBarFilledColor }}
               />
               <div
-                className="absolute h-4 w-4 bg-[#000000] rounded-full -top-1 transition-all group-hover:scale-125"
-                style={{ left: `calc(${progress}% - 6px)` }}
+                className="absolute h-4 w-4 rounded-full -top-1 transition-all group-hover:scale-125"
+                style={{ left: `calc(${progress}% - 6px)`, backgroundColor: progressBarDotColor }}
               />
             </div>
           </div>
