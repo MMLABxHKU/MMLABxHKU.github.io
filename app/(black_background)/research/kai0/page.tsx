@@ -352,9 +352,27 @@ export default function Home() {
 
                         <div className="mt-6 flex flex-row gap-6 justify-center">
                             <div></div>
-                            <p className="w-full leading-relaxed max-w-3xl">
-                                We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
-                            </p>
+                            <div className="max-w-3xl flex flex-row items-start w-full justify-start gap-3 border-l-2 border-white pl-3">
+                                <div className="flex items-start pt-1">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="w-5 h-5 text-white"
+                                    >
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                        <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                                        <path d="M19 5a9 9 0 0 1 0 14" />
+                                    </svg>
+                                </div>
+                                <p className="w-full leading-relaxed">
+                                    We will release data, checkpoints, and host <a className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" target="_blank">Challenge</a> in 2026.
+                                </p>
+                            </div>
                             <div></div>
                         </div>
 
@@ -514,7 +532,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    To better visualize the distribution dynamics among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating the progressive consistency.
+                                    To better visualize the dynamics relationship among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating their progressive consistency.
                                 </p>
                             `} 
                             tipList={{}}
@@ -707,7 +725,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    These strategies lead to comprehensive performance improvements across multiple dimensions..
+                                    The following experiments validate the effectiveness of these strategies across multiple metrics.
                                 </p>
                             `} 
                             tipList={{}}
@@ -723,7 +741,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, + heuristic DAgger, + DAgger.
+                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.
                             </p>
                         </div>
 
@@ -765,7 +783,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp. smooth, + RTC.
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp smooth, + RTC.
                             </p>
                         </div>
 
@@ -817,7 +835,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    Inspired by <i>model soups</i><sup>1</sup> in NLP, we propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                    We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                                 </p>
                             `} 
                             tipList={{
@@ -849,7 +867,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                We merge models trained on different data subsets into a single entity using weight interpolation, optimized against on-policy data.
+                                We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
                             </p>
                         </div>
 
