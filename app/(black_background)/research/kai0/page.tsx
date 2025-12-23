@@ -572,7 +572,7 @@ export default function Home() {
                                         Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                     </li>
                                     <li>
-                                        Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
+                                        Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference</i> function, where the model output is distorted during control, leading to unexpected failures.
                                     </li>
                                 </ol>
                             `} 
@@ -650,7 +650,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
+                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -716,7 +716,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    These strategies lead to comprehensive performance improvements across multiple dimensions..
+                                    To validate the effectiveness of these strategies, we conduct comprehensive experiments evaluating their impact on model performance across multiple metrics.
                                 </p>
                             `} 
                             tipList={{}}
