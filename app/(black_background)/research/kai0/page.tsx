@@ -525,7 +525,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Distribution dynamics of <span className="font-medium text-white/80">P<sub>train</sub></span>, <span className="font-medium text-white/80">Q<sub>model</sub></span>, and <span className="font-medium text-white/80">P<sub>test</sub></span>.
+                                Distribution dynamics of <span className="font-medium font-mono text-white/80">P<sub>train</sub></span>, <span className="font-medium font-mono text-white/80">Q<sub>model</sub></span>, and <span className="font-medium font-mono text-white/80">P<sub>test</sub></span>.
                             </p>
                         </div>
                         
@@ -578,10 +578,10 @@ export default function Home() {
                             <TextTip html={`\
                                 <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6">
                                     <li>
-                                        Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
+                                        Distribution Shift between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                     </li>
                                     <li>
-                                        Deployment Discrepancy between Q<sub>model</sub> and P<sub>test</sub>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
+                                        Deployment Discrepancy between <span class="font-mono">Q<sub>model</sub></span> and <span class="font-mono">P<sub>test</sub></span>: Arising from the <i>Inference()</i> function, where the model output is distorted during control, leading to unexpected failures.
                                     </li>
                                 </ol>
                             `} 
@@ -617,13 +617,13 @@ export default function Home() {
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
                                                 </b>
-                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand P<sub>train</sub> towards underrepresented but critical regions of P<sub>real</sub>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold P<sub>real</sub>, ensuring that P<sub>test</sub> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
+                                                Static offline demonstrations often lack exposure to failure modes that inevitably emerge during real-world deployment<sup>1</sup><sup>2</sup>. We inject on-policy recovery trajectories - utilizing both heuristic methods and iterative DAgger - to populate these sparse regions. By integrating these "corrected" trajectories, we expand <span class="font-mono">P<sub>train</sub></span> towards underrepresented but critical regions of <span class="font-mono">P<sub>real</sub></span>. Consequently, the learned policy <span class="font-mono">Q<sub>model</sub></span> achieves better coverage of the solution manifold <span class="font-mono">P<sub>real</sub></span>, ensuring that <span class="font-mono">P<sub>test</sub></span> remains resilient to the drift inherent in real-world physics P<sub>real</sub>. 
                                             </li>
                                             <li>
                                                 <b>
                                                     Spatio-Temporal Augmentation:&nbsp;
                                                 </b>
-                                                To further bridge the gap between P<sub>train</sub> and P<sub>test</sub>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
+                                                To further bridge the gap between <span class="font-mono">P<sub>train</sub></span> and <span class="font-mono">P<sub>test</sub></span>, we employ structured augmentations across space and time. Spatially, we utilize mirroring and symmetry to enhance the model's understanding of dual-arm coordination. Temporally, time-scaling introduces variability in trajectory speed, allowing the model to adapt to fluctuating control frequencies.
                                             </li>
                                         </ol>
                                     </li>
@@ -659,7 +659,7 @@ export default function Home() {
                                         <b>
                                             Inference Scope:&nbsp;
                                         </b>
-                                        To optimize the translation of Q<sub>model</sub> into P<sub>test</sub> via the <i>Inference()</i> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
+                                        To optimize the translation of <span class="font-mono">Q<sub>model</sub></span> into <span class="font-mono">P<sub>test</sub></span> via the <span class="font-mono">Inference()</span> function, we utilize Chunk-wise Temporal Smoothing coupled with Real-time Chunking<sup>1</sup>. This effectively minimizes execution jitter and ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution. And we found that such smoothness contributes much to the final performance, i.e., success rate.
                                     </li>
                                 </ol>
                             `} 
@@ -695,7 +695,7 @@ export default function Home() {
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Dagger</span>
                                             <span className="mx-2 text-white/30">-</span>
-                                            Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
+                                            Injecting on-policy recovery trajectories to expand <span className="font-mono">P<sub>train</sub></span> towards underrepresented failure modes in <span className="font-mono">P<sub>real</sub></span>.
                                         </p>
                                     </div>
                                 </div>
@@ -715,7 +715,7 @@ export default function Home() {
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Inference Optimization</span>
                                             <span className="mx-2 text-white/30">-</span>
-                                            Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
+                                            Minimizing execution jitter to ensure smooth translation from <span className="font-mono">Q<sub>model</sub></span> to <span className="font-mono">P<sub>test</sub></span>.
                                         </p>
                                     </div>
                                 </div>
