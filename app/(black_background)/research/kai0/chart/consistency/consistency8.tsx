@@ -28,7 +28,7 @@ import {
 const chartData = [
     { trick: "sync", absolute: 36.7, absolute_std: [4, 4], delta: 36.7, delta_std: [4.7, 4.7], },
     { trick: "+ inchunk\nsmooth", absolute: 30, absolute_std: [3, 3], delta: 66.7, delta_std: [9.4, 9.4], },
-    { trick: "+ temp\nsmooth", absolute: 76.7, absolute_std: [13, 13], delta: 83.3, delta_std: [4.7, 4.7], },
+    { trick: "+ temp.\nsmooth", absolute: 76.7, absolute_std: [6, 6], delta: 83.3, delta_std: [4.7, 4.7], },
     { trick: "+ RTC", absolute: 90, absolute_std: [4.7, 4.7], delta: 83.3, delta_std: [4.7, 4.7], },
 ]
 
