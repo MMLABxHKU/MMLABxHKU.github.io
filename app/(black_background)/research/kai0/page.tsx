@@ -976,6 +976,21 @@ export default function Home() {
                                 </p>
                             `} 
                             tipList={{
+                            }}
+                            offset={0}
+                            />
+                        </div>
+
+
+
+                        <div className="mt-6">
+                            <TextTip html={`\
+                                <p class="w-full leading-relaxed">
+                                    Prior approach<sup>1</sup><sup>,</sup><sup>2</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
+                                </p>
+                            `} 
+                            tipList={{
+
                                 1:{
                                     link:'https://www.pi.website/blog/pistar06',
                                     content: (
@@ -994,19 +1009,6 @@ export default function Home() {
                                 }
                             }}
                             offset={9}
-                            />
-                        </div>
-
-
-
-                        <div className="mt-6">
-                            <TextTip html={`\
-                                <p class="w-full leading-relaxed">
-                                    Prior approach<sup>1</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
-                                </p>
-                            `} 
-                            tipList={{}}
-                            offset={0}
                             />
                         </div>
 
