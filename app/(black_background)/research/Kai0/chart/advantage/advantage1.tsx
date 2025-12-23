@@ -27,9 +27,9 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", MAD: 0.0160, MADLabel: "0.0160", fill: "var(--color-chrome)" },
-    { trick: "safari", MAD: 0.0151, MADLabel: "0.0151", fill: "var(--color-safari)" },
-    { trick: "firefox", MAD: 0.0115, MADLabel: "0.0115", fill: "var(--color-firefox)" },
+    { trick: "chrome", MSTD: 0.0160, MSTDLabel: "0.0160", fill: "var(--color-chrome)" },
+    { trick: "safari", MSTD: 0.0151, MSTDLabel: "0.0151", fill: "var(--color-safari)" },
+    { trick: "firefox", MSTD: 0.0115, MSTDLabel: "0.0115", fill: "var(--color-firefox)" },
 ]
 
 
@@ -58,7 +58,7 @@ export function AdvantageBarChart1() {
 
 
             <CardHeader className="m-0 p-0 leading-relaxed font-normal text-sm">
-                <CardDescription>Mean Absolute Difference (MAD) &#8595;</CardDescription>
+                <CardDescription>Mean Squared Temporal Difference (MSTD) &#8595;</CardDescription>
             </CardHeader>
 
 
@@ -91,14 +91,14 @@ export function AdvantageBarChart1() {
                         <ChartLegend content={<ChartLegendContent />} className="text-white"/>
                         <Bar
                             yAxisId="left"
-                            dataKey="MAD"
+                            dataKey="MSTD"
                             strokeWidth={2}
                             radius={4}
                             activeIndex={2}
                             activeBar={({ ...props }) => <Rectangle {...props} fillOpacity={0.8} />}
                         >
                             <LabelList
-                                dataKey="MAD"
+                                dataKey="MSTD"
                                 position="top"
                             />
                         </Bar>
