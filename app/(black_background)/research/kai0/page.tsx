@@ -26,6 +26,8 @@ import { ConsistencyBarChart7 } from "./chart/consistency/consistency7"
 import { ConsistencyBarChart8 } from "./chart/consistency/consistency8"
 import { ConsistencyBarChart9 } from "./chart/consistency/consistency9"
 import { ConsistencyBarChart10 } from "./chart/consistency/consistency10"
+import { ConsistencyBarChart11 } from "./chart/consistency/consistency11"
+import { ConsistencyBarChart12 } from "./chart/consistency/consistency12"
 import { SoupingBarChart1 } from "./chart/souping/souping1"
 import { AdvantageBarChart1 } from "./chart/advantage/advantage1"
 import { AdvantageBarChart2 } from "./chart/advantage/advantage2"
@@ -779,6 +781,18 @@ export default function Home() {
                                 Space mirroring augmentation substantially improves performance across all metrics.
                             </p>
                         </div> */}
+
+                        <div className="mt-10 flex flex-row justify-center px-6">
+                            <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
+                                <ConsistencyBarChart11 />
+                                <ConsistencyBarChart12 />
+                            </div>
+                        </div>
+                        <div className="mt-5 flex justify-center px-6">
+                            <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
+                                Spatio-temporal augmentation through time scaling and space mirroring substantially enhances model performance, increasing success rate and throughput (more task completions per unit time). X-axis: baseline, +spatio-temp. augment.
+                            </p>
+                        </div>
 
                         <div className="mt-10 flex flex-row justify-center px-6">
                             <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 justify-center">
