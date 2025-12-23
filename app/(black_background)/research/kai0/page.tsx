@@ -156,80 +156,70 @@ export default function Home() {
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
                                 </i> */}
-                                <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
-                                    <div className="flex flex-col font-mono">
-                                        <h2>
-                                            Published
-                                        </h2>
-                                        <h2>
-                                            Paper
-                                        </h2>
-                                        <h2>
-                                            Email
-                                        </h2>
-                                        <h2>
-                                            By
-                                        </h2>
-                                        {/* <h2>
-                                            Challenge
-                                        </h2> */}
-                                        <h2>
-                                            Share
-                                        </h2>
-                                    </div>
-                                    <div className="flex flex-col font-mono">
-                                        <h2>
-                                            December 24, 2025
-                                        </h2>
-                                        <h2>
-                                            Available in Late January 2026
-                                        </h2>
-                                        <h2>
-                                            <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" >
-                                                research@mmlab.hk
-                                            </Link>
-                                        </h2>
-                                        <h2>
-                                            HKU MMLab
-                                        </h2>
-                                        {/* <h2>
-                                            <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
-                                                At CVPR 2026
-                                            </Link>
-                                        </h2> */}
-                                        <h2 className="flex flex-row items-center flex-wrap">
-                                            <ShareLink
-                                                platform="X"
-                                                url="https://mmlab.hk/research/kai0"
-                                            />
-                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                            <ShareLink
-                                                platform="LinkedIn"
-                                                url="https://mmlab.hk/research/kai0"
-                                            />
-                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                            <ShareLink
-                                                platform="Bluesky"
-                                                url="https://mmlab.hk/research/kai0"
-                                            />
-                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                            <ShareLink
-                                                platform="Facebook"
-                                                url="https://mmlab.hk/research/kai0"
-                                            />
-                                            <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                                            <ShareLink
-                                                platform="Reddit"
-                                                url="https://mmlab.hk/research/kai0"
-                                            />                                            
-                                            {/* <span className="inline-block text-xs select-none">&nbsp;&nbsp;|&nbsp;&nbsp;</span> */}
-                                            {/* <ShareLink
-                                                platform="URL"
-                                                url="https://mmlab.hk/research/kai0"
-                                            /> */}
-                                        </h2>
-                                    </div>
-                                </div>
+<div className="flex flex-col gap-2 font-mono">
+  {/* Published */}
+  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+    <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
+      Published
+    </h2>
+    <h2 className="flex-1 break-words">
+      December 24, 2025
+    </h2>
+  </div>
+
+  {/* Paper */}
+  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+    <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
+      Paper
+    </h2>
+    <h2 className="flex-1 break-words">
+      Available in Late January 2026
+    </h2>
+  </div>
+
+  {/* Email */}
+  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+    <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
+      Email
+    </h2>
+    <h2 className="flex-1 break-all">
+      <Link
+        className="text-mred animated-underline hover:text-mred"
+        href="mailto:research@mmlab.hk"
+      >
+        research@mmlab.hk
+      </Link>
+    </h2>
+  </div>
+
+  {/* By */}
+  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+    <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
+      By
+    </h2>
+    <h2 className="flex-1">
+      HKU MMLab
+    </h2>
+  </div>
+
+  {/* Share */}
+  <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+    <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
+      Share
+    </h2>
+    <h2 className="flex flex-row flex-wrap gap-x-2 flex-1 items-center">
+      <ShareLink platform="X" url="https://mmlab.hk/research/kai0" />
+      <span className="text-xs select-none">|</span>
+      <ShareLink platform="LinkedIn" url="https://mmlab.hk/research/kai0" />
+      <span className="text-xs select-none">|</span>
+      <ShareLink platform="Bluesky" url="https://mmlab.hk/research/kai0" />
+      <span className="text-xs select-none">|</span>
+      <ShareLink platform="Facebook" url="https://mmlab.hk/research/kai0" />
+      <span className="text-xs select-none">|</span>
+      <ShareLink platform="Reddit" url="https://mmlab.hk/research/kai0" />
+    </h2>
+  </div>
+</div>
                             </div>
                         </div>
 
