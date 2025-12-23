@@ -504,7 +504,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    To better visualize the dynamics relationship among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating their progressive consistency.
+                                    To better visualize the distribution dynamics among P<sub>train</sub>, Q<sub>model</sub>, and P<sub>test</sub>, we project their action distributions on TaskA into a 3D t-SNE space, demonstrating the progressive consistency.
                                 </p>
                             `} 
                             tipList={{}}
@@ -697,7 +697,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    The following experiments validate the effectiveness of these strategies across multiple metrics.
+                                    These strategies lead to comprehensive performance improvements across multiple dimensions..
                                 </p>
                             `} 
                             tipList={{}}
@@ -713,7 +713,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.
+                                Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, + heuristic DAgger, + DAgger.
                             </p>
                         </div>
 
@@ -755,7 +755,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp smooth, + RTC.
+                                Inference optimization through chunk-wise temporal smoothing and real-time chunking ensures the policy's intended actions are translated flawlessly into smooth, coherent real-robot execution, improving throughput (more task completions per unit time). X-axis: sync, + inchunk smooth, + temp. smooth, + RTC.
                             </p>
                         </div>
 
@@ -807,7 +807,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p className="w-full leading-relaxed max-w-3xl">
-                                    We propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation<sup>1</sup> guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
+                                    Inspired by <i>model soups</i><sup>1</sup> in NLP, we propose <b>Model Arithmetic (MA)</b>: train only on newly collected data subsets, then merge the resulting model with previous ones through <b>weight interpolation guided by on-policy optimization</b>. Remarkably, this synthesis can even <b>surpass the performance of models trained on the entire dataset at once</b>.
                                 </p>
                             `} 
                             tipList={{
@@ -839,7 +839,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                We merge models trained on different data subsets into a single entity using weight interpolation, with the mixing weights optimized against on-policy data.
+                                We merge models trained on different data subsets into a single entity using weight interpolation, optimized against on-policy data.
                             </p>
                         </div>
 
