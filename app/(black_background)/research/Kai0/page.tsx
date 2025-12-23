@@ -124,12 +124,12 @@ export default function Home() {
                                     Stage Advantage
                                 </span>
                             </Link>
-                            <Link className="select-none flex items-center gap-3 group" href="#conclusion">
+                            <Link className="select-none flex items-center gap-3 group" href="#bottom_line">
                                 <span className="border-l-2 border-l-neutral-500 text-[8pt] group-hover:border-l-mred">
                                     &nbsp;
                                 </span>
                                 <span className="text-[8pt] text-neutral-400 group-hover:text-mred">
-                                    Conclusion
+                                    Bottom Line
                                 </span>
                             </Link>
                             <Link className="select-none flex items-center gap-3 group" href="#citation">
@@ -151,7 +151,7 @@ export default function Home() {
                         <div className="w-full flex flex-row justify-center">
                             <div className="flex flex-col w-full gap-6 px-6 max-w-3xl">
                                 <h1 className="font-bold text-3xl leading-tight">
-                                    Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation
+                                    Kai0: Is massive scale the only path to robotic dexterity? A $100,000 from-zero-to-hero recipe for garment manipulation
                                 </h1>
                                 {/* <i>
                                     TL;DR: In this blogpost, we investigate an effective pathway to achieve robost manipulation for live-streaming broadcast without heavy resources (compute, data, infra, etc.), just in one day.
@@ -190,7 +190,7 @@ export default function Home() {
                                             </Link>
                                         </h2>
                                         <h2>
-                                            HKU Manipulation Team
+                                            HKU MMLab
                                         </h2>
                                         {/* <h2>
                                             <Link className="text-mred animated-underline hover:text-mred" href="https://opendrivelab.com/cvpr2026/workshop" >
@@ -274,13 +274,22 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    "Veni, Vidi, Vici" — I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1 rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8×A100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. Just as Julius Caesar's swift victory at Zela defined strategic efficiency, we aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. In this mission, Veni (data collection), Vidi (model training), and Vici (real-robot inference) form a progressive, interlocking chain where every link is critical. While foundational models like Pi0 and GO-1<sup>1</sup> rely on "brute-force" scale to reach these heights, we present a resource-aware alternative. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost-specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
                                     <br></br>
                                     We achieve this through a three-stage technical philosophy that optimizes the transition from seeing to conquering:
 
                                 </p>
                             `} 
-                            tipList={{}}
+                            tipList={{
+                                1:{
+                                    link:'https://opendrivelab.com/OpenGO1/',
+                                    content: (
+                                        <>
+                                        GO-1 (2025)
+                                        </>
+                                    ),
+                                },
+                            }}
                             offset={0}
                             />
                         </div>
@@ -300,7 +309,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6">
+                                <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6">
                                     <li>
                                         <b>
                                             Mode Consistency:&nbsp;
@@ -311,7 +320,7 @@ export default function Home() {
                                         <b>
                                             Model Arithmetic:&nbsp;
                                         </b>
-                                        We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy—capturing diverse knowledge without the architectural complexity of MoE.
+                                        We move beyond the search for a single perfect checkpoint. We introduce a weight-space shortcut to merge models trained on different data manifolds into a single, adaptive policy-capturing diverse knowledge without the architectural complexity of MoE.
                                     </li>
                                     <li>
                                         <b>
@@ -346,7 +355,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100× time-lapse format with critical segments highlighted at 2-5× speed.
+                                Three tasks varying from folding to hanging, each covering a 4-hour duration, presented in 100x time-lapse format with critical segments highlighted at 2-5x speed.
                             </p>
                         </div>
 
@@ -364,7 +373,7 @@ export default function Home() {
                         <div className="mt-5 flex justify-center px-6 z-50">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-5xl">
                                 <span className="font-medium text-white/80">Mode Consistency System Architecture</span>
-                                <span className="mx-2 text-white/20">—</span>
+                                <span className="mx-2 text-white/20">-</span>
                                 Left: Human expert demonstration collection. Middle: Mixing models from different data sources via Model Arithmetic. Right: Real-robot inference. Bottom: DAgger Feedback and Stage Advantage from on-policy experience.
                             </p>
                         </div>
@@ -373,7 +382,7 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-20 text-3xl font-bold"> 
-                                <Link href="#metholody" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
+                                <Link href="#methodology" className="scroll-mt-32 group flex items-center flex-row" id="methodology">
                                     <h2>
                                         Methodology
                                     </h2>
@@ -414,7 +423,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem—akin to a game of "Whac-a-Mole"—among three distinct distributions:
+                                    We define the solution space for a given task as P<sub>real</sub>, a distribution encompassing all valid actions that successfully accomplish the task. Achieving robust manipulation can be conceptualized as solving a dynamic alignment problem-akin to a game of "Whac-a-Mole" - among three distinct distributions:
                                 </p>
                             `} 
                             tipList={{}}
@@ -426,7 +435,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6">
+                                <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6">
                                     <li>
                                         P<sub>train</sub> (Human Demonstrations): The empirical distribution collected from the human expert policy, Q<sub>human</sub>. This represents a limited subset of the valid solution manifold P<sub>real</sub>.
                                     </li>
@@ -469,7 +478,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={0}
+                            offset={1}
                             />
                         </div>
 
@@ -494,7 +503,7 @@ export default function Home() {
                         
 
 
-                        <div className="flex flex-row justify-center px-6 mt-6">
+                        <div className="hidden md:flex flex-row justify-center px-6 mt-6">
                             <div className="max-w-3xl w-full flex flex-row gap-10 justify-center ">
                                 <iframe
                                     src="https://assets.kinetixai.cn/FoldAnything/combined_tsne_black_bias_5000sample_5000iter.html"
@@ -529,7 +538,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6">
                                     <li>
                                         Distribution Shift between P<sub>train</sub> and P<sub>test</sub>: Interpreted as covariate shift, where the model encounters states during deployment that were absent in the training data.
                                     </li>
@@ -562,7 +571,7 @@ export default function Home() {
                                     <div className="mt-4 px-1">
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Dagger</span>
-                                            <span className="mx-2 text-white/30">—</span>
+                                            <span className="mx-2 text-white/30">-</span>
                                             Injecting on-policy recovery trajectories to expand P<sub>train</sub> towards underrepresented failure modes in P<sub>real</sub>.
                                         </p>
                                     </div>
@@ -582,7 +591,7 @@ export default function Home() {
                                     <div className="mt-4 px-1">
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
                                             <span className="font-semibold text-white/90">Inference Optimization</span>
-                                            <span className="mx-2 text-white/30">—</span>
+                                            <span className="mx-2 text-white/30">-</span>
                                             Minimizing execution jitter to ensure smooth translation from Q<sub>model</sub> to P<sub>test</sub>.
                                         </p>
                                     </div>
@@ -594,7 +603,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Back to basics, we propose two fundamental strategies—operating on Data Scope and Inference Scope—to stabilize these distributions: 
+                                    Back to basics, we propose two fundamental strategies-operating on Data Scope and Inference Scope - to stabilize these distributions: 
                                 </p>
                             `} 
                             tipList={{}}
@@ -606,12 +615,12 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6">
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6">
                                     <li>
                                         <b>
                                             Data Scope:
                                         </b>
-                                        <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6 mt-3">
+                                        <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-disc px-6 mt-3">
                                             <li>
                                                 <b>
                                                     DAgger (Iterative Correction):&nbsp;
@@ -646,14 +655,14 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={2}
+                            offset={3}
                             />
                         </div>
 
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-decimal px-6"  start="2">
+                                <ol class="space-y-3 w-full leading-relaxed max-w-3xl list-[lower-alpha] px-6"  start="2">
                                     <li>
                                         <b>
                                             Inference Scope:&nbsp;
@@ -672,7 +681,7 @@ export default function Home() {
                                     ),
                                 },
                             }}
-                            offset={4}
+                            offset={5}
                             />
                         </div>
 
@@ -768,7 +777,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks—especially complex ones like garment manipulation—demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
+                                    <b>How can we efficiently advance through iterative research cycles in embodied AI?</b> Unlike traditional CV or NLP, robotic manipulation tasks-especially complex ones like garment manipulation-demand extensive real-world data collection. This creates a persistent dilemma: as we iteratively gather new data, how do we know it meaningfully improves the model, and when is it enough?  Retraining from scratch with the full dataset after each collection cycle is prohibitively expensive.
                                 </p>
                             `} 
                             tipList={{}}
@@ -794,7 +803,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={5}
+                            offset={6}
                             />
                         </div>
 
@@ -853,7 +862,7 @@ export default function Home() {
 
 
 
-                        <div className="mt-2">
+                        {/* <div className="mt-2">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed text-muted-foreground italic text-xs">
                                     MA differs fundamentally from existing paradigms: unlike Mixture-of-Experts (MoE), it requires no router mechanism; unlike ensembling, it manipulates model weights directly rather than combining outputs at inference time. This makes MA a uniquely powerful strategy for scalable, iterative model development in embodied AI.
@@ -862,7 +871,7 @@ export default function Home() {
                             tipList={{}}
                             offset={0}
                             />
-                        </div>
+                        </div> */}
 
 
 
@@ -915,7 +924,7 @@ export default function Home() {
                                     ),
                                 }
                             }}
-                            offset={6}
+                            offset={7}
                             />
                         </div>
 
@@ -1024,7 +1033,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-4xl">
-                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training — achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
+                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training - achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
                             </p>
                         </div>
 
@@ -1032,9 +1041,9 @@ export default function Home() {
 
                         <div className="w-full flex flex-col items-center px-6">
                             <h2 className="w-full max-w-3xl mt-20 text-3xl font-bold"> 
-                                <Link href="#conclusion" className="scroll-mt-32 group flex items-center flex-row" id="conclusion">
+                                <Link href="#bottom_line" className="scroll-mt-32 group flex items-center flex-row" id="bottom_line">
                                     <h2>
-                                        Conclusion
+                                        Bottom Line
                                     </h2>
                                     <div className="min-w-12 select-none">
                                         <span className="ml-6 hidden group-hover:inline-block size-6 text-foreground">
@@ -1052,7 +1061,7 @@ export default function Home() {
 
                         <div className="mt-6">
                             <TextTip html={`\
-                                <ol class="space-y-3 w-full leading-relaxed list-decimal px-6 text-muted-foreground">
+                                <ol class="space-y-3 w-full leading-relaxed list-[lower-alpha] px-6 text-muted-foreground">
                                     <li>
                                         <span class="text-foreground font-medium">Not all robot data is created equal.</span> The quality and characteristics of training data significantly impact policy performance.
                                     </li>

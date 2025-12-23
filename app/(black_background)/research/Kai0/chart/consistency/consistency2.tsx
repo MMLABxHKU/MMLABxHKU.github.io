@@ -26,8 +26,8 @@ import {
 
 
 const chartData = [
-    { trick: "standard", pi05: 1.8, pi05_std: [0.3, 0.3], pi0: 0, pi0_std: [0, 0.001], },
-    { trick: "improved\nstandard", pi05: 9.6, pi05_std: [1.2, 1.2], pi0: 5.33, pi0_std: [1, 1], },
+    { trick: "baseline", pi05: 1.8, pi05_std: [0.3, 0.3], pi0: 0, pi0_std: [0, 0.001], },
+    { trick: "improved\nbaseline", pi05: 9.6, pi05_std: [1.2, 1.2], pi0: 5.33, pi0_std: [1, 1], },
     { trick: "+ heuristic dagger", pi05: 7.7, pi05_std: [0.8, 0.8], pi0: 9.25, pi0_std: [1.1, 1.1], },
     { trick: "+ dagger", pi05: 3.9, pi05_std: [0.5, 0.5], pi0: 8.25, pi0_std: [0.9, 0.9], },
 ]
