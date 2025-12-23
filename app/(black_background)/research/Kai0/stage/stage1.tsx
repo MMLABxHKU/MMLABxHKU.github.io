@@ -19,6 +19,7 @@ export function StageVideo1() {
   // 自定义首尾帧数配置 - 可以在这里修改或通过 props 传入
   const defaultFrameRange = stageData[0]?.frameRange ?? null;
   const [frameRange, setFrameRange] = useState<{ start: number; end: number } | null>(defaultFrameRange);
+  const [subTab, setSubTab] = useState<"Value-diff" | "Direct+Stage">("Value-diff");
 
   return (
     <Tabs
@@ -39,12 +40,14 @@ export function StageVideo1() {
       </TabsList>
 
       <div className="relative w-full">
-        {stageData.map((stage) => {
+        {(() => {
+          const stage = stageData.find((s) => s.title === activeTab) ?? stageData[0];
+          const sourceData = subTab === "Value-diff" ? stage.valueDiff : stage.directStage;
           const stageFrameRange = stage.frameRange ?? frameRange;
-          // 根据帧数范围过滤数据
-          let filteredData = stage.evaluationData;
+          const chartKey = `${stage.title}-${subTab}`;
+          let filteredData = sourceData;
           if (stageFrameRange) {
-            filteredData = stage.evaluationData.filter(
+            filteredData = sourceData.filter(
               item => item.frame_idx >= stageFrameRange.start && item.frame_idx <= stageFrameRange.end
             );
           }
@@ -62,11 +65,15 @@ export function StageVideo1() {
               key={stage.title} 
               stage={stage} 
               chartData={chartData}
-              isActive={activeTab === stage.title}
+              isActive={true}
               frameRange={stageFrameRange}
+              subTab={subTab}
+              onSubTabChange={setSubTab}
+              originalLength={sourceData.length}
+              chartKey={chartKey}
             />
           );
-        })}
+        })()}
       </div>
     </Tabs>
   );
@@ -76,23 +83,38 @@ function VideoWithChart({
   stage, 
   chartData, 
   isActive,
-  frameRange
+  frameRange,
+  subTab,
+  onSubTabChange,
+  originalLength,
+  chartKey
 }: { 
   stage: typeof stageData[0]; 
   chartData: Array<{ frame_idx: number; cumulative_value: number; advantage: "Positive" | "Negative" }>; 
   isActive: boolean;
   frameRange: { start: number; end: number } | null;
+  subTab: "Value-diff" | "Direct+Stage";
+  onSubTabChange: (value: "Value-diff" | "Direct+Stage") => void;
+  originalLength: number;
+  chartKey: string;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
-  
+  const hoverIndexRef = useRef<number | null>(null);
+
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isDragging, setIsDragging] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  // 数据源切换时重置索引，避免沿用旧数据点
+  useEffect(() => {
+    setActiveIndex(0);
+    hoverIndexRef.current = null;
+  }, [subTab, chartData.length]);
 
   // 处理鼠标悬停时的视频暂停/恢复（统一处理所有播放判断逻辑）
   useEffect(() => {
@@ -124,7 +146,7 @@ function VideoWithChart({
   isDraggingRef.current = isDragging;
   
   // 获取原始数据的总帧数（用于视频时间到帧的映射）
-  const totalFramesInOriginalData = stage.evaluationData.length;
+  const totalFramesInOriginalData = originalLength;
   
   const getActualDuration = () => {
     const video = videoRef.current;
@@ -493,6 +515,7 @@ function VideoWithChart({
   const currentAdvantage = chartData[activeIndex]?.advantage;
   const borderColor = currentAdvantage === "Positive" ? "#22c55e" : "#ef4444"; // green-500 / red-500 from theme palette
   const tooltipBg = currentAdvantage === "Positive" ? "rgba(34,197,94,0.9)" : "rgba(239,68,68,0.9)";
+  const lineColor = subTab === "Direct+Stage" ? "#22c55e" : "#4286F3";
   const tooltipX = getTooltipX();
   const lineY = getLineY();
 
@@ -504,11 +527,17 @@ function VideoWithChart({
       <div className="relative flex flex-col items-center px-6 w-full">
         <div
           ref={videoContainerRef}
-          className="relative w-full max-w-4xl border-[10px] border-solid rounded-sm"
+          className="relative w-full max-w-4xl border-[12px] border-solid rounded-sm position-relative"
           style={{ borderColor }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
+          <div
+            className="absolute top-[-8px] left-[-8px] z-10 px-2 py-1 text-xs font-semibold text-white text-center w-[70px] rounded-br-[4px]"
+            style={{ backgroundColor: currentAdvantage === "Positive" ? "rgba(34,197,94)" : "rgba(239,68,68)" }}
+          >
+            {currentAdvantage || ""}
+          </div>
           <video
             ref={videoRef}
             autoPlay={false}
@@ -523,7 +552,7 @@ function VideoWithChart({
           </video>
           
           {/* 播放/暂停按钮 */}
-          <button
+          {/* <button
             onClick={togglePlayPause}
             className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
           >
@@ -536,7 +565,7 @@ function VideoWithChart({
                 <path d="M8 5v14l11-7z" />
               </svg>
             )}
-          </button>
+          </button> */}
 
           {/* 图表覆盖层 - 使用绝对定位自动匹配视频尺寸 */}
           {/* SVG 画布位置：在 LineChart 组件内部，由 ResponsiveContainer 渲染为 <svg className="recharts-surface"> */}
@@ -545,15 +574,15 @@ function VideoWithChart({
             onClick={handleChartClick}
           >
             <ChartContainer 
-              key={`${stage.title}-container`}
+              key={`${chartKey}-container`}
               config={chartConfig} 
               className="h-full w-full [&_.recharts-surface]:outline-none [&_.recharts-cartesian-axis]:opacity-0"
             >
               {/* SVG 画布渲染位置：ResponsiveContainer 会创建一个包含 SVG 的容器 */}
-              <ResponsiveContainer key={`${stage.title}-responsive`} width="100%" height="100%">
+              <ResponsiveContainer key={`${chartKey}-responsive`} width="100%" height="100%">
                 {/* SVG 画布实际位置：LineChart 内部会渲染 <svg className="recharts-surface"> 元素 */}
                 <LineChart
-                  key={`${stage.title}-linechart`}
+                  key={`${chartKey}-linechart`}
                   data={chartData}
                   margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                 >
@@ -599,10 +628,10 @@ function VideoWithChart({
                   <Line
                     type="monotone"
                     dataKey="cumulative_value"
-                    stroke="#4286F3"
+                    stroke={lineColor}
                     strokeWidth={2.5}
                     dot={false}
-                    activeDot={{ r: 5, fill: '#4286F3', stroke: '#fff', strokeWidth: 2 }}
+                    activeDot={{ r: 5, fill: lineColor, stroke: '#fff', strokeWidth: 2 }}
                   />
                 </LineChart>
               </ResponsiveContainer>
@@ -648,8 +677,8 @@ function VideoWithChart({
           <div
             className={`absolute left-0 right-0 flex justify-center items-center px-6 py-3 transition-all duration-200 ${
               isHovered ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
-            } bg-black/60 backdrop-blur-sm rounded-b-sm`}
-            style={{ bottom: "0px" }}
+            } backdrop-blur-sm rounded-b-sm`}
+            style={{ bottom: "0px", "background": "inherits" }}
           >
             <div
               ref={progressBarRef}
@@ -657,15 +686,35 @@ function VideoWithChart({
               onMouseDown={handleMouseDown}
             >
               <div
-                className="absolute h-full bg-[#4286F3] rounded-full transition-all"
+                className="absolute h-full bg-[#000000] rounded-full transition-all"
                 style={{ width: `${progress}%` }}
               />
               <div
-                className="absolute h-4 w-4 bg-[#4286F3] rounded-full -top-1 transition-all group-hover:scale-125"
+                className="absolute h-4 w-4 bg-[#000000] rounded-full -top-1 transition-all group-hover:scale-125"
                 style={{ left: `calc(${progress}% - 6px)` }}
               />
             </div>
           </div>
+        </div>
+        
+        {/* 下方子 Tab：Value-diff / Direct+Stage，与顶部宽度保持一致 */}
+        <div className="w-full max-w-4xl mt-1">
+          <Tabs value={subTab} onValueChange={(v) => onSubTabChange(v as typeof subTab)} className="w-full">
+            <TabsList className="w-full max-w-4xl justify-center flex-wrap gap-2 bg-zinc-900/50 border border-zinc-800">
+              <TabsTrigger
+                value="Value-diff"
+                className="data-[state=active]:text-blue-400 data-[state=active]:bg-zinc-800"
+              >
+                Value-diff
+              </TabsTrigger>
+              <TabsTrigger
+                value="Direct+Stage"
+                className="data-[state=active]:text-green-400 data-[state=active]:bg-zinc-800"
+              >
+                Direct+Stage
+              </TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
       </div>
     </div>
