@@ -837,7 +837,7 @@ function VideoWithChart({
                 value="Direct+Stage"
                 className="data-[state=active]:text-green-400 data-[state=active]:bg-zinc-800"
               >
-                Direct+Stage
+                Direct+Stage (ours)
               </TabsTrigger>
             </TabsList>
           </Tabs>

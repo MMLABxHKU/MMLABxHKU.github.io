@@ -952,7 +952,7 @@ export default function Home() {
                         <div className="mt-6">
                             <TextTip html={`\
                                 <p class="w-full leading-relaxed">
-                                    Prior approach<sup>1</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated state values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
+                                    Prior approach<sup>1</sup> obtains advantage implicitly by scoring the current state and the post-action state, then taking their difference. This formulation treats advantage as the subtraction of two independently estimated progress values, although advantage is inherently a relational quantity that depends on how an action transforms one state into another.
                                 </p>
                             `} 
                             tipList={{
@@ -1021,7 +1021,7 @@ export default function Home() {
 
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-3xl">
-                                Illustration of the estimated progress given a video clip. <span className="font-medium text-white/80">Direct+Stage</span> (ours) has better stability in progress estimation.
+                            Comparison of cumulative progress induced by different methods along an inference-time manipulation trajectory. <span className="font-medium text-white/80">Direct+Stage (ours)</span> produces smoother and more consistent progress accumulation than Value-diff.
                             </p>
                         </div>
                         
@@ -1062,7 +1062,7 @@ export default function Home() {
                         </div>
                         <div className="mt-5 flex justify-center px-6">
                             <p className="text-sm leading-relaxed text-muted-foreground/80 text-center max-w-4xl">
-                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage</span> (ours) uses stage-conditioned direct advantage prediction for long-horizon training - achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
+                                <span className="font-medium text-white/70">Value-diff</span> computes advantage by subtracting two independently predicted state values. <span className="font-medium text-white/70">Direct</span> predicts advantage as relative improvement from paired observations. <span className="font-medium text-white/80">Direct+Stage (ours)</span> uses stage-conditioned direct advantage prediction for long-horizon training - achieving smoother results (lower MSTD), greater stability (higher SFR), and higher success rates.
                             </p>
                         </div>
 
