@@ -27,9 +27,9 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", SuccessRate: 67, SuccessRateLabel: "67", SuccessRate_std: [0, 0], fill: "var(--color-chrome)" },
-    { trick: "safari", SuccessRate: 76, SuccessRateLabel: "76", SuccessRate_std: [4.7, 4.7], fill: "var(--color-safari)" },
-    { trick: "firefox", SuccessRate: 80, SuccessRateLabel: "80", SuccessRate_std: [18, 18], fill: "var(--color-firefox)" },
+    { trick: "chrome", SuccessRate: 66.7, SuccessRateLabel: "66.7", SuccessRate_std: [0, 0], fill: "var(--color-chrome)" },
+    { trick: "safari", SuccessRate: 76.7, SuccessRateLabel: "76.7", SuccessRate_std: [4.7, 4.7], fill: "var(--color-safari)" },
+    { trick: "firefox", SuccessRate: 80.0, SuccessRateLabel: "80.0", SuccessRate_std: [18, 18], fill: "var(--color-firefox)" },
 ]
 
 

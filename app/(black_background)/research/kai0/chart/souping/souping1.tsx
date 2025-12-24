@@ -26,9 +26,9 @@ import {
 
 
 const chartData = [
-    { trick: "Task A", single: 60, single_std: [9.4, 9.4], full: 73.33, full_std: [4.7, 4.7], model: 90, model_std: [4.7, 4.7], },
-    { trick: "Task B", single: 63.33, single_std: [4.7, 4.7], full: 80, full_std: [4.7, 4.7], model: 86.66, model_std: [9.4, 9.4], },
-    { trick: "Task C", single: 16.66, single_std: [4.7, 4.7], full: 26.66, full_std: [9.4, 9.4], model: 53.33, model_std: [14, 14], },
+    { trick: "Task A", single: 60, single_std: [9.4, 9.4], full: 73.3, full_std: [4.7, 4.7], model: 90, model_std: [4.7, 4.7], },
+    { trick: "Task B", single: 63.3, single_std: [4.7, 4.7], full: 80, full_std: [4.7, 4.7], model: 86.7, model_std: [9.4, 9.4], },
+    { trick: "Task C", single: 16.7, single_std: [4.7, 4.7], full: 26.7, full_std: [9.4, 9.4], model: 53.3, model_std: [14, 14], },
 ]
 
 
