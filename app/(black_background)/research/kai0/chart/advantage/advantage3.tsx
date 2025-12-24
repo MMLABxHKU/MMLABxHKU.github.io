@@ -82,7 +82,7 @@ export function AdvantageBarChart3() {
                             tickLine={false}
                             axisLine={false}
                             tickMargin={6}
-                            width={28}
+                            width={36}
                         />
                         <ChartTooltip
                             cursor={false}
