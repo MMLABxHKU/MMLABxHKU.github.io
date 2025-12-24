@@ -660,12 +660,12 @@ export default function Home() {
                         {/* Apple-style horizontal card layout */}
                         <div className="flex justify-center px-6 mt-8">
                             <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                {/* Dagger Card */}
+                                {/* DAgger Card */}
                                 <div className="group flex flex-col">
                                     <div className="overflow-hidden rounded-2xl bg-neutral-900/50 backdrop-blur-sm ring-1 ring-white/5 transition-all duration-500 hover:ring-white/10 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]">
                                         <Image
                                             src="https://assets.kinetixai.cn/FoldAnything%2Fdagger_1220_1258.gif"
-                                            alt="Dagger visualization" 
+                                            alt="DAgger visualization" 
                                             width={600}
                                             height={340}
                                             className="w-full aspect-video object-cover object-center bg-gradient-loading select-none transition-transform duration-700 group-hover:scale-[1.02]"
@@ -673,7 +673,7 @@ export default function Home() {
                                     </div>
                                     <div className="mt-4 px-1">
                                         <p className="text-sm leading-relaxed text-muted-foreground text-center">
-                                            <span className="font-semibold text-white/90">Dagger</span>
+                                            <span className="font-semibold text-white/90">DAgger</span>
                                             <span className="mx-2 text-white/30">-</span>
                                             Injecting on-policy recovery trajectories to expand <span className="font-math">P<sub>train</sub></span> towards underrepresented failure modes in <span className="font-math">P<sub>real</sub></span>.
                                         </p>

@@ -19,7 +19,7 @@ const chartSections = [
   {
     title: "DAgger",
     charts: [<ConsistencyBarChart1 key="1" />, <ConsistencyBarChart2 key="2" />],
-    caption: "Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic dagger, + dagger.",
+    caption: "Improved data collection methods and on-policy recovery trajectories effectively enhance the model's error recovery capability, significantly increasing success rate and reducing recover cost (fewer retry attempts per failure). X-axis: baseline, improved baseline, + heuristic DAgger, + DAgger.",
   },
   {
     title: "Spatio-temporal Augmentation",
