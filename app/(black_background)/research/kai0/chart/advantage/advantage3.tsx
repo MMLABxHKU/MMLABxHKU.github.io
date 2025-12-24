@@ -3,7 +3,7 @@
 
 
 import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, Rectangle, XAxis, LabelList, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, Rectangle, XAxis, LabelList, YAxis, ErrorBar } from "recharts"
 
 
 
@@ -27,9 +27,9 @@ import {
 
 
 const chartData = [
-    { trick: "chrome", SuccessRate: 67, SuccessRateLabel: "67", fill: "var(--color-chrome)" },
-    { trick: "safari", SuccessRate: 76, SuccessRateLabel: "76", fill: "var(--color-safari)" },
-    { trick: "firefox", SuccessRate: 80, SuccessRateLabel: "80", fill: "var(--color-firefox)" },
+    { trick: "chrome", SuccessRate: 67, SuccessRateLabel: "67", SuccessRate_std: [0, 0], fill: "var(--color-chrome)" },
+    { trick: "safari", SuccessRate: 76, SuccessRateLabel: "76", SuccessRate_std: [4.7, 4.7], fill: "var(--color-safari)" },
+    { trick: "firefox", SuccessRate: 80, SuccessRateLabel: "80", SuccessRate_std: [18, 18], fill: "var(--color-firefox)" },
 ]
 
 
@@ -97,9 +97,10 @@ export function AdvantageBarChart3() {
                             activeIndex={2}
                             activeBar={({ ...props }) => <Rectangle {...props} fillOpacity={0.8} />}
                         >
-                            <LabelList
-                                dataKey="SuccessRate"
-                                position="top"
+                            <ErrorBar 
+                                stroke="white" 
+                                dataKey="SuccessRate_std" 
+                                direction="y" 
                             />
                         </Bar>
                     </BarChart>

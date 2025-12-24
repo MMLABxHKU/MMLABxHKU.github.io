@@ -96,12 +96,7 @@ export function AdvantageBarChart2() {
                             radius={4}
                             activeIndex={2}
                             activeBar={({ ...props }) => <Rectangle {...props} fillOpacity={0.8} />}
-                        >
-                            <LabelList
-                                dataKey="SFR"
-                                position="top"
-                            />
-                        </Bar>
+                        />
                     </BarChart>
                 </ChartContainer>
             </CardContent>
