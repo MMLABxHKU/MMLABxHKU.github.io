@@ -40,7 +40,7 @@ import Citation from "./citation"
 
 import ShareLink from "./share"
 import { EmailSubscribe } from "./mailing"
-import TextTip from "@/components/diy/textTip/textTip"
+import TextTip from "./textTip"
 import { VideoCarousel } from "./video-carousel"
 import { ChartCarousel } from "./chart-carousel"
 

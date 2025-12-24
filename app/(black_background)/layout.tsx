@@ -45,60 +45,58 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={inter.className}>
-            <body id="#">
+        <div>
 
 
 
-                {children}
+            {children}
 
 
 
-                <FadeIn>
-                    <footer className="w-full mb-20 flex flex-col gab-10">
-                        <div className="w-full pl-6 pr-6 flex flex-row justify-center mt-20">
-                            <div className="max-w-3xl w-full flex flex-row justify-between">
-                                <div className="flex-1 flex flex-col justify-start">
-                                    <span className="select-none">
-                                        MMLab © 2001 - 2025
-                                    </span>
-                                    <span className="select-none">
-                                        All Rights Reserved
-                                    </span>
-                                    <div>
-                                        <Dialog>
-                                            <DialogTrigger asChild>
-                                                <span className="hover:text-mred cursor-pointer select-none">Site Credits</span>
-                                            </DialogTrigger>
-                                            <DialogContent className="sm:max-w-3xl p-6 border-0">
-                                                <DialogHeader className="p-3 text-left">
-                                                    <DialogTitle>
-                                                        Site Credits
-                                                    </DialogTitle>
-                                                    <div className="w-full flex flex-col">
-                                                        <Separator className="mt-3"/>
-                                                    </div>
-                                                    <DialogDescription className="mt-3">
-                                                        <span>
-                                                            Thanks to the following site developers and all lab members for contributions.
-                                                        </span>
-                                                            <li className="mt-3 space-y-3 list-outside list-disc">
-                                                                <Link href="https://faikit.github.io/" target="_blank" className="animated-underline">Huijie Wang</Link>
-                                                            </li>
-                                                    </DialogDescription>
-                                                </DialogHeader>
-                                            </DialogContent>
-                                        </Dialog>
-                                    </div>
+            <FadeIn>
+                <footer className="w-full mb-20 flex flex-col gab-10">
+                    <div className="w-full pl-6 pr-6 flex flex-row justify-center mt-20">
+                        <div className="max-w-3xl w-full flex flex-row justify-between">
+                            <div className="flex-1 flex flex-col justify-start">
+                                <span className="select-none">
+                                    MMLab © 2001 - 2025
+                                </span>
+                                <span className="select-none">
+                                    All Rights Reserved
+                                </span>
+                                <div>
+                                    <Dialog>
+                                        <DialogTrigger asChild>
+                                            <span className="hover:text-mred cursor-pointer select-none">Site Credits</span>
+                                        </DialogTrigger>
+                                        <DialogContent className="sm:max-w-3xl p-6 border-0">
+                                            <DialogHeader className="p-3 text-left">
+                                                <DialogTitle>
+                                                    Site Credits
+                                                </DialogTitle>
+                                                <div className="w-full flex flex-col">
+                                                    <Separator className="mt-3"/>
+                                                </div>
+                                                <DialogDescription className="mt-3">
+                                                    <span>
+                                                        Thanks to the following site developers and all lab members for contributions.
+                                                    </span>
+                                                        <li className="mt-3 space-y-3 list-outside list-disc">
+                                                            <Link href="https://faikit.github.io/" target="_blank" className="animated-underline">Huijie Wang</Link>
+                                                        </li>
+                                                </DialogDescription>
+                                            </DialogHeader>
+                                        </DialogContent>
+                                    </Dialog>
                                 </div>
                             </div>
                         </div>
-                    </footer>
-                </FadeIn>
-                
+                    </div>
+                </footer>
+            </FadeIn>
+            
 
 
-            </body>
-        </html>
+        </div>
     );
 }
