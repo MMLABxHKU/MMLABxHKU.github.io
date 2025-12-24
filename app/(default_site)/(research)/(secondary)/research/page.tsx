@@ -84,8 +84,58 @@ export default function Home() {
 
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
 
+
+
                 <FadeIn>
                     <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
+                        <Link className="h-auto xl:h-48 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="/research/kai0" target="_blank">
+                            <div>
+                                <video
+                                    autoPlay muted loop playsInline
+                                    poster="https://assets.kinetixai.cn/FoldAnything/pipeling.jpg"
+                                    className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                >
+                                    <source src="https://assets.kinetixai.cn/FoldAnything/full_Dec23_4K_30_v5.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </Link>
+                        <div className="flex-2/3 flex flex-col gap-6">
+                            <Link className="text-3xl font-bold hover:text-mred" href="/research/kai0" target="_blank">
+                                &chi;<sub>0</sub>: A Live-Stream Robotic Teamwork for Clothing Manipulation from Zero to Hero
+                            </Link>
+                            <div className="flex flex-col gap-3">
+                                <p>
+                                    "Veni, Vidi, Vici" - I came, I saw, I conquered. We aim to conquer the "Mount Everest" of robotics: 100% reliability in real-world garment manipulation. We demonstrate how to take a system from 0% to 100% reliability using a fraction of the standard cost—specifically, within 20 hours of human demonstration and 8xA100 GPUs, rather than the tens of thousands of hours and hundreds of GPUs typically required.
+                                </p>
+                                <ul className="ml-6 space-y-3 list-outside list-disc">
+                                    <li>
+                                        <b>Mode Consistency</b>: We argue that not all data is equally valuable. 
+                                    </li>
+                                    <li>
+                                        <b>Model Arithmetic</b>: We move beyond the search for a single perfect checkpoint.
+                                    </li>
+                                    <li>
+                                        <b>Stage Advantage</b>: To conquer the "last mile", we decompose tasks into semantic stages.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="flex justify-end">
+                                <CardFooter className="flex flex-row gap-1 flex-wrap text-mgray text-sm select-none">
+                                    <span>[</span>
+                                        <Link target="_self" href="/about-us/#hongyang_li" className="animated-underline">Hongyang Li</Link>
+                                        <span className="select-none"> | </span>
+                                        <Link target="_self" href="/about-us/#ping_luo" className="animated-underline">Ping Luo</Link>
+                                    <span>]</span>
+                                </CardFooter>
+                            </div>
+                        </div>
+                    </div>
+                </FadeIn>
+
+
+
+                <FadeIn>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
                         <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">
                             <div>
                                 <Image
@@ -133,7 +183,7 @@ export default function Home() {
 
 
                 <FadeIn>
-                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
                         <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://github.com/Karine-Huang/T2I-CompBench" target="_blank">
                             <div>
                                 <Image
@@ -181,7 +231,7 @@ export default function Home() {
 
 
                 <FadeIn>
-                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
                         <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://github.com/opendrivelab/uniad" target="_blank">
                             <div>
                                 <Image
@@ -218,7 +268,7 @@ export default function Home() {
 
 
                 <FadeIn>
-                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row-reverse xl:gap-20 justify-between">
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
                         <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="https://animatediff.github.io/" target="_blank">
                             <div>
                                 <Image
