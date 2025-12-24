@@ -203,24 +203,24 @@ export default function Home() {
                                         </h2>
                                     </div>
                                     {/* Post */}
-                                    {/* <div className="flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
+                                    <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
                                         <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-                                            Post
+                                            Share
                                         </h2>
                                         <h2 className="flex flex-row flex-wrap gap-x-2 flex-1 items-center">
-                                            <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" target="_blank">
+                                            <Link className="text-mred animated-underline hover:text-mred" href="https://x.com/OpenDriveLab/status/2003745616955142150?s=20" target="_blank">
                                                 X
                                             </Link>
                                             <span className="text-xs select-none">|</span>
-                                            <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" target="_blank">
+                                            <Link className="text-mred animated-underline hover:text-mred" href="https://www.linkedin.com/feed/update/urn:li:activity:7409531902761795584/" target="_blank">
                                                 LinkedIn
                                             </Link>
                                             <span className="text-xs select-none">|</span>
-                                            <Link className="text-mred animated-underline hover:text-mred" href="mailto:research@mmlab.hk" target="_blank">
+                                            <Link className="text-mred animated-underline hover:text-mred" href="https://bsky.app/profile/opendrivelab.bsky.social/post/3mapyr5u4nc24" target="_blank">
                                                 Bluesky
                                             </Link>
                                         </h2>
-                                    </div> */}
+                                    </div>
                                 {/* Share */}
                                 {/* <div className="flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
                                     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
