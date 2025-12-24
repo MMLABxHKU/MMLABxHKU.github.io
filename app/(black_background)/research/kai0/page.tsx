@@ -77,7 +77,7 @@ export default function Home() {
             <ProgressBar />
 
             {/* Spacer for top positioning */}
-            <div className="w-full h-24 xl:h-48"></div>
+            <div className="w-full h-48"></div>
 
             {/* navigator - hover to reveal */}
             <div className="fixed left-0 top-0 h-full w-8 z-40 hidden lg:block group/nav">
