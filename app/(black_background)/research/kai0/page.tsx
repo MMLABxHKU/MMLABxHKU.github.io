@@ -222,20 +222,6 @@ export default function Home() {
                                         </h2>
                                     </div>
                                     {/* Live-Stream */}
-                                    <div className="flex flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
-                                        <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
-                                            Live-Stream
-                                        </h2>
-                                        <h2 className="flex flex-row flex-wrap gap-x-2 flex-1 items-center">
-                                            <span className="relative flex h-2 w-2 mr-1">
-                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                                                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                                            </span>
-                                            <Link className="text-mred animated-underline hover:text-mred" href="https://youtube.com/live/MWKQqKCpHrs?feature=share" target="_blank">
-                                                YouTube
-                                            </Link>
-                                        </h2>
-                                    </div>
                                 {/* Share */}
                                 {/* <div className="flex-row gap-6 md:gap-10 xl:gap-20 2xl:gap-40">
                                     <h2 className="whitespace-nowrap shrink-0 w-[6rem]">
