@@ -59,7 +59,7 @@ export default function RootLayout({
                         <div className="max-w-3xl w-full flex flex-row justify-between">
                             <div className="flex-1 flex flex-col justify-start">
                                 <span className="select-none">
-                                    MMLab © 2001 - 2025
+                                    MMLab © 2001 - 2026
                                 </span>
                                 <span className="select-none">
                                     All Rights Reserved
