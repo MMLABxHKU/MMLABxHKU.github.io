@@ -18,10 +18,20 @@ export default function Redirect() {
     ) {
         redirect('/research/kai0')
     }
+    if (
+        pathname.toLowerCase().startsWith('/sparsevnav')
+        || pathname.toLowerCase().startsWith('/mm-vn')
+    ) {
+        redirect('/research/MM-VN')
+    }
+    if (
+        pathname.toLowerCase().startsWith('/mm-hand')
+    ) {
+        redirect('/research/MM-Hand')
+    }
 
 
-
-    // redirect('/')
+    redirect('/')
     return (
         <main className='w-full'></main>
     )
