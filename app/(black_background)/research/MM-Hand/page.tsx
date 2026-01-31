@@ -49,7 +49,7 @@ export default function Home() {
 
 
 
-                    <div className="w-full h-full px-6 py-64 md:px-20 md:py-20 flex relative flex-col items-end justify-end">
+                    <div className="w-full h-full px-6 py-20 md:px-20 md:py-20 flex relative flex-col items-end justify-end">
                         <p className="text-t1 font-bold leading-relaxed">
                             Order Available in Early April 2026
                         </p>
