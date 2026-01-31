@@ -22,6 +22,8 @@ export default function Redirect() {
             || pathname.toLowerCase().startsWith('/research/kai0-rl')
             || pathname.toLowerCase().startsWith('/kai0rl')
             || pathname.toLowerCase().startsWith('/kai0-rl')
+            || pathname.toLowerCase().startsWith('/research/rise')
+            || pathname.toLowerCase().startsWith('/rise')
         ) {
             redirect('https://opendrivelab.com/kai0-rl')
         } else {
@@ -34,7 +36,8 @@ export default function Redirect() {
         redirect('/research/kai0/')
     }
     if (
-        pathname.toLowerCase().startsWith('/sparsevnav')
+        pathname.toLowerCase().startsWith('/sparsevideonav')
+        || pathname.toLowerCase().startsWith('/research/sparsevideonav')
         || pathname.toLowerCase().startsWith('/mm-videonav')
         || pathname.toLowerCase().startsWith('/research/mm-videonav')
     ) {
