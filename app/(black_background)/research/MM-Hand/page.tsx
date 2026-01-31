@@ -39,10 +39,24 @@ export default function Home() {
 
 
 
-                <div className="w-full h-svh overflow-hidden">
-                    <video autoPlay muted loop playsInline poster="https://assets.kinetixai.cn/kinetixai/index/banner-20251212.jpg" className="w-full h-full object-cover">
+                <div className="relative w-full h-svh overflow-hidden">
+
+
+
+                    <video autoPlay muted loop playsInline poster="https://assets.kinetixai.cn/kinetixai/index/banner-20251212.jpg" className="absolute w-full h-1/2 md:h-full object-cover">
                         <source src="https://assets.kinetixai.cn/AMS/251212_raw.mp4" type="video/mp4" />
                     </video>
+
+
+
+                    <div className="w-full h-full px-6 py-64 md:px-20 md:py-20 flex relative flex-col items-end justify-end">
+                        <p className="text-t1 font-bold leading-relaxed">
+                            Order Available in Early April 2026
+                        </p>
+                    </div>
+
+
+
                 </div>
 
 
@@ -62,16 +76,6 @@ export default function Home() {
                         </h2>
                     </div>
                 </div> */}
-
-
-
-                <div className="w-full px-6 flex justify-center mt-36">
-                    <div className="w-full max-w-3xl flex flex-col gap-6 leading-relaxed">
-                        <p className="text-t1">
-                            To be released.
-                        </p>
-                    </div>
-                </div>
 
 
 

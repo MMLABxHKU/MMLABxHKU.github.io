@@ -36,17 +36,21 @@ export default function Redirect() {
     if (
         pathname.toLowerCase().startsWith('/sparsevnav')
         || pathname.toLowerCase().startsWith('/mm-vn')
+        || pathname.toLowerCase().startsWith('/research/mm-vn')
     ) {
         redirect('/research/MM-VN')
     }
     if (
         pathname.toLowerCase().startsWith('/mm-hand')
+        || pathname.toLowerCase().startsWith('/research/mm-hand')
     ) {
         redirect('/research/MM-Hand')
     }
     if (
         pathname.toLowerCase().startsWith('/egohumanoid')
         || pathname.toLowerCase().startsWith('/kaidata')
+        || pathname.toLowerCase().startsWith('/research/egohumanoid')
+        || pathname.toLowerCase().startsWith('/research/kaidata')
     ) {
         redirect('https://opendrivelab.com/EgoHumanoid')
     }
