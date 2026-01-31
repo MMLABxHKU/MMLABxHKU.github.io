@@ -14,9 +14,24 @@ export default function Redirect() {
     
     // project
     if (
-        pathname.toLowerCase().startsWith('/research/kai0')
+        pathname.toLowerCase().startsWith('/kai0')
+        || pathname.toLowerCase().startsWith('/research/kai0')
     ) {
-        redirect('/research/kai0')
+        if (
+            pathname.toLowerCase().startsWith('/research/kai0rl')
+            || pathname.toLowerCase().startsWith('/research/kai0-rl')
+            || pathname.toLowerCase().startsWith('/kai0rl')
+            || pathname.toLowerCase().startsWith('/kai0-rl')
+        ) {
+            redirect('https://opendrivelab.com/kai0-RL')
+        } else {
+            redirect('/research/kai0/')
+        }
+    }
+    if (
+        pathname.toLowerCase().startsWith('/foldanything')
+    ) {
+        redirect('/research/kai0/')
     }
     if (
         pathname.toLowerCase().startsWith('/sparsevnav')
@@ -28,12 +43,6 @@ export default function Redirect() {
         pathname.toLowerCase().startsWith('/mm-hand')
     ) {
         redirect('/research/MM-Hand')
-    }
-    if (
-        pathname.toLowerCase().startsWith('/kai0rl')
-        || pathname.toLowerCase().startsWith('/kai0-rl')
-    ) {
-        redirect('https://opendrivelab.com/kai0-RL/')
     }
     if (
         pathname.toLowerCase().startsWith('/egohumanoid')
