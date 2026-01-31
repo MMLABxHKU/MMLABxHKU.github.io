@@ -23,7 +23,7 @@ export default function Redirect() {
             || pathname.toLowerCase().startsWith('/kai0rl')
             || pathname.toLowerCase().startsWith('/kai0-rl')
         ) {
-            redirect('https://opendrivelab.com/kai0-RL')
+            redirect('https://opendrivelab.com/kai0-rl')
         } else {
             redirect('/research/kai0/')
         }
@@ -35,10 +35,10 @@ export default function Redirect() {
     }
     if (
         pathname.toLowerCase().startsWith('/sparsevnav')
-        || pathname.toLowerCase().startsWith('/mm-vn')
-        || pathname.toLowerCase().startsWith('/research/mm-vn')
+        || pathname.toLowerCase().startsWith('/mm-videonav')
+        || pathname.toLowerCase().startsWith('/research/mm-videonav')
     ) {
-        redirect('/research/MM-VN')
+        redirect('/research/MM-VideoNav')
     }
     if (
         pathname.toLowerCase().startsWith('/mm-hand')
@@ -52,7 +52,7 @@ export default function Redirect() {
         || pathname.toLowerCase().startsWith('/research/egohumanoid')
         || pathname.toLowerCase().startsWith('/research/kaidata')
     ) {
-        redirect('https://opendrivelab.com/EgoHumanoid')
+        redirect('https://opendrivelab.com/kaidata')
     }
 
 
