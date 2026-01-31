@@ -29,6 +29,18 @@ export default function Redirect() {
     ) {
         redirect('/research/MM-Hand')
     }
+    if (
+        pathname.toLowerCase().startsWith('/kai0rl')
+        || pathname.toLowerCase().startsWith('/kai0-rl')
+    ) {
+        redirect('https://opendrivelab.com/kai0-RL/')
+    }
+    if (
+        pathname.toLowerCase().startsWith('/egohumanoid')
+        || pathname.toLowerCase().startsWith('/kaidata')
+    ) {
+        redirect('https://opendrivelab.com/EgoHumanoid')
+    }
 
 
     redirect('/')
