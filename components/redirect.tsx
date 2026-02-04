@@ -55,7 +55,7 @@ export default function Redirect() {
         || pathname.toLowerCase().startsWith('/research/egohumanoid')
         || pathname.toLowerCase().startsWith('/research/kaidata')
     ) {
-        redirect('https://opendrivelab.com/kaidata')
+        redirect('https://opendrivelab.com/EgoHumanoid')
     }
 
 
