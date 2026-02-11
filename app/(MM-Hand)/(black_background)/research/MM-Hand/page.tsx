@@ -1,246 +1,122 @@
-import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+
 export const metadata = {
-    title: "MM Hand | HKU MMLab",
-    description: "Multimedia Laboratory",
-    keywords: ["MM Hand", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+  title: "MM-Hand | Dark Liquid Glass Style",
+  description: "MM-Hand 1.0 — Deep black background with subtle dark glass borders",
 };
 
-import Image from 'next/image'
-import Link from "next/link"
-import { Slash } from "lucide-react"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Separator } from "@/components/ui/separator"
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-
-const paths: { path: string; url: string; }[] = [
-    {
-        path: "MMLab",
-        url: "/"
-    },
-]
-
-
-import HeaderButtons from "./header"
-
-const milestones = [
-    {
-        date: "Early March 2026",
-        title: "Paper Release"
-    },
-    {
-        date: "April 2026",
-        title: "CAD, Assembly Guide & Code Release"
-    },
-    {
-        date: "June 2026",
-        title: "Beta Test Version Order"
-    },
-    {
-        date: "December 2026",
-        title: "MM-Hand 2.0"
-    }
-]
-
 export default function Home() {
-    return (
-        <main>
-            {/* 右上角浮动导航按钮 */}
-            <HeaderButtons />
+  return (
+    <main className="min-h-screen bg-black text-white overflow-x-hidden relative">
 
-            {/* 视频区域 - 全屏宽度，按比例自适应高度 */}
-            <div className="relative w-full aspect-video overflow-hidden">
-            <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="https://assets.kinetixai.cn/kinetixai/index/banner-20251212.jpg"
-                className="w-full h-full object-cover"
-            >
-                <source src="https://assets.kinetixai.cn/rise/orz.mp4" type="video/mp4" />
-            </video>
+      {/* Tailwind 自定义样式 */}
+      <style>{`
+        @keyframes hover-scale {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+        }
+        @keyframes gradient-move {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-hover-scale {
+          animation: hover-scale 0.3s ease-in-out forwards;
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient-move 6s ease infinite;
+        }
+      `}</style>
+
+      {/* 背景光晕 */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute top-[-200px] left-1/3 w-[600px] h-[600px] bg-purple-950/30 blur-[350px] rounded-full" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-950/30 blur-[300px] rounded-full" />
+      </div>
+
+      {/* 顶部浮动按钮 */}
+      <header>
+
+
+        {/* 右上角按钮 */}
+        <div className="fixed top-6 right-6 z-50 flex gap-3">
+          {/* Community */}
+          <div className="rounded-xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
+            <div className="bg-black/20 backdrop-blur-xl rounded-xl px-6 py-2 hover:bg-white/10 transition animate-hover-scale">
+              <Link href="https://discord.gg/zQrepqFyEy" target="_blank" className="select-none">Community</Link>
             </div>
+          </div>
 
-            {/* 介绍图文区域 */}
-            <section className="w-full py-20 bg-black/5">
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="flex flex-col md:flex-row items-center gap-12">
-                        {/* 左侧文字内容 */}
-                        <div className="md:w-1/2">
-                            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center md:text-left">
-                                <span className="text-cyan-400">Introducing</span> <br />
-                                <span className="text-5xl md:text-7xl">MM-Hand 1.0</span>
-                            </h1>
-                            <p className="text-xl text-neutral-300 mb-8 max-w-2xl text-center md:text-left">
-                                MM-Hand 1.0 is a fully open-source, 21 Degree-of-Freedom, lightweight dexterous hand with multimodal sensing and modular design allows for easy disassembly and modification.
-                            </p>
-                        </div>
-                        
-                        {/* 右侧机器人图片 */}
-                        <div className="md:w-1/2 flex justify-center">
-                            <AspectRatio ratio={16/9} className="w-full max-w-3xl">
-                                <Image
-                                    src="https://assets.kinetixai.cn/kinetixai/index/robot-20251212.jpg"
-                                    alt="MM-Hand Robot"
-                                    fill
-                                    className="object-contain"
-                                />
-                            </AspectRatio>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 亮点数据部分 */}
-            <section className="w-full py-16 bg-black/5">
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* 数据卡片 1 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">21</div>
-                            <div className="text-xl font-bold">Degree-of-Freedom</div>
-                            <div className="text-neutral-400">Dexterous Hand</div>
-                        </div>
-                        
-                        {/* 数据卡片 2 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">15</div>
-                            <div className="text-xl font-bold">Tactile Sensors</div>
-                            <div className="text-neutral-400">1mm Spatial, 0.1N Force Resolution</div>
-                        </div>
-                        
-                        {/* 数据卡片 3 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">2</div>
-                            <div className="text-xl font-bold">Palm Cameras</div>
-                            <div className="text-neutral-400">140° Field-of-View, Stereo Sensing</div>
-                        </div>
-                        
-                        {/* 数据卡片 4 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">~350</div>
-                            <div className="text-xl font-bold">gram</div>
-                            <div className="text-neutral-400">Weight of Hand</div>
-                        </div>
-                        
-                        {/* 数据卡片 5 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">x</div>
-                            <div className="text-xl font-bold">kg</div>
-                            <div className="text-neutral-400">Payload</div>
-                        </div>
-                        
-                        {/* 数据卡片 6 */}
-                        <div className="text-center">
-                            <div className="text-5xl md:text-7xl font-bold text-cyan-400 mb-2">$2,200待确定</div>
-                            <div className="text-xl font-bold">Bill of Materials Cost</div>
-                            <div className="text-neutral-400">Complete System</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 功能特点部分 */}
-            <section className="w-full py-16 bg-black/5">
-                <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Key Features</h2>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* 功能 1 */}
-                        <div className="flex flex-col items-center">
-                            <div className="w-full h-64 rounded-xl overflow-hidden mb-4">
-                                <AspectRatio ratio={16/9}>
-                                    <Image
-                                        src="https://assets.kinetixai.cn/kinetixai/index/feature1.jpg"
-                                        alt="Fully Open-source"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </AspectRatio>
-                            </div>
-                            <h3 className="text-xl font-bold text-white">Fully Open-source</h3>
-                        </div>
-                        
-                        {/* 功能 2 */}
-                        <div className="flex flex-col items-center">
-                            <div className="w-full h-64 rounded-xl overflow-hidden mb-4">
-                                <AspectRatio ratio={16/9}>
-                                    <Image
-                                        src="https://assets.kinetixai.cn/kinetixai/index/feature2.jpg"
-                                        alt="Teleoperation"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </AspectRatio>
-                            </div>
-                            <h3 className="text-xl font-bold text-white">Teleoperation</h3>
-                        </div>
-                        
-                        {/* 功能 3 */}
-                        <div className="flex flex-col items-center">
-                            <div className="w-full h-64 rounded-xl overflow-hidden mb-4">
-                                <AspectRatio ratio={16/9}>
-                                    <Image
-                                        src="https://assets.kinetixai.cn/kinetixai/index/feature3.jpg"
-                                        alt="Simulation"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </AspectRatio>
-                            </div>
-                            <h3 className="text-xl font-bold text-white">Simulation</h3>
-                        </div>
-                        
-                        {/* 功能 4 */}
-                        <div className="flex flex-col items-center">
-                            <div className="w-full h-64 rounded-xl overflow-hidden mb-4">
-                                <AspectRatio ratio={16/9}>
-                                    <Image
-                                        src="https://assets.kinetixai.cn/kinetixai/index/feature4.jpg"
-                                        alt="Bilateral Force Feedback"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </AspectRatio>
-                            </div>
-                            <h3 className="text-xl font-bold text-white">Bilateral Force Feedback</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 倒计时任务栏 - 视频下方 */}
-            <div className="w-full px-6 py-16 md:px-20 md:py-24 bg-black/5">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                        Project Timeline
-                    </h2>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {milestones.map((milestone, index) => (
-                            <Card key={index} className="bg-black/30 border-white/20 backdrop-blur-sm hover:border-mred transition-colors">
-                                <CardContent className="p-6">
-                                    <h3 className="text-lg font-bold text-white mb-3">
-                                        {milestone.title}
-                                    </h3>
-                                    
-                                    <p className="text-sm font-mono text-mred text-red-500">
-                                        {milestone.date}
-                                    </p>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-                </div>
+          {/* Preorder */}
+          <div className="rounded-xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
+            <div className="bg-black/20 backdrop-blur-xl rounded-xl px-6 py-2 hover:bg-white/10 transition animate-hover-scale">
+              <Link href="#preorder" className="select-none">Preorder</Link>
             </div>
-        </main>
-    );
+          </div>
+        </div>
+      </header>
+
+      {/* 视频模块 */}
+      <section className="w-full py-24 px-6">
+        <div className="w-[90vw] max-w-[1800px] mx-auto">
+          <div className="relative rounded-3xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-gradient">
+            <div className="rounded-3xl overflow-hidden backdrop-blur-2xl bg-black/20 border border-white/10">
+              <div className="w-full aspect-video">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source
+                    src="https://assets.kinetixai.cn/rise/orz.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Email Subscription */}
+      <section className="w-full py-32 px-6" id="preorder">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+            Stay Updated
+          </h2>
+          <p className="mt-6 text-neutral-400 text-lg">
+            Get release updates, preorder information, and project news.
+          </p>
+
+          <div className="mt-14 relative rounded-2xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
+            <div className="rounded-2xl backdrop-blur-2xl bg-black/20 border border-white/10 p-8">
+              <form className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                  className="flex-1 px-5 py-3 rounded-xl bg-black/20 border border-white/20 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/20 text-white"
+                />
+
+                {/* Submit 按钮 */}
+                <div className="rounded-xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
+                  <div className="bg-black/20 backdrop-blur-xl rounded-xl px-6 py-3 hover:bg-white/10 transition animate-hover-scale">
+                    <button type="submit" className="select-none w-full">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  );
 }
