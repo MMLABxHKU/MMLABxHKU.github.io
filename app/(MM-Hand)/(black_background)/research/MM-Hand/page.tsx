@@ -4,6 +4,7 @@ import Image from "next/image";
 
 
 import {EmailSubscribe} from "./mailing"
+import HeroVideo from "./video"
 
 export const metadata = {
   title: "MM-Hand 1.0 | HKU MMLab",
@@ -71,35 +72,29 @@ export default function Home() {
 
 
 {/* 视频模块 */}
-<section className="w-full py-24 px-6 relative">
-  <div className="w-[90vw] max-w-[1800px] mx-auto">
+<section className="relative w-full min-h-[100svh] flex flex-col justify-center px-6 md:py-24">
+
+  {/* 给手机端顶部留出 fixed header 空间 */}
+  <div className="pt-20 md:pt-0" />
+
+  <div className="w-full max-w-[1800px] mx-auto">
     <div className="relative rounded-3xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-gradient">
+      
       <div className="rounded-3xl overflow-hidden backdrop-blur-2xl bg-black/20 border border-white/10">
-        <div className="w-full aspect-video">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source
-              src="https://assets.kinetixai.cn/rise/orz.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
+            <HeroVideo />
       </div>
     </div>
   </div>
 
-  {/* 视频下方描述，放在容器外面 */}
+  {/* 描述文字 */}
   <div className="mt-6 text-center relative z-10">
-    <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-tr text-white animate-gradient drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+    <p className="text-xl md:text-3xl font-semibold text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
       Available in June 2026
     </p>
   </div>
+
 </section>
+
 
 
 
