@@ -58,7 +58,7 @@ export function EmailSubscribe() {
             Preorder & Stay Updated
             </h2>
             <p className="mt-6 text-neutral-400 text-lg">
-            Subscribe to be among the first to experience MM-Hand and get official updates.
+            Subscribe to be among the first to experience MM-Hand 1.0 and get official updates.
             </p>
   
             <div className="mt-14 relative rounded-2xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
