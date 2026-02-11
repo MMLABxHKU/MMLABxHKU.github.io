@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
+
+import {EmailSubscribe} from "./mailing"
+
 export const metadata = {
   title: "MM-Hand 1.0 | HKU MMLab",
   description: "Preorder MM-Hand 1.0",
@@ -100,40 +104,8 @@ export default function Home() {
 
 
 
-      {/* Email Subscription */}
-      <section className="w-full py-32 px-6" id="preorder">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
-          Preorder & Stay Updated
-          </h2>
-          <p className="mt-6 text-neutral-400 text-lg">
-          Subscribe to be among the first to experience MM-Hand and get official updates.
-          </p>
 
-          <div className="mt-14 relative rounded-2xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
-            <div className="rounded-2xl backdrop-blur-2xl bg-black/20 border border-white/10 p-8">
-              <form className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  required
-                  placeholder="Enter your email"
-                  className="flex-1 px-5 py-3 rounded-xl bg-black/20 border border-white/20 placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/20 text-white"
-                />
-
-                {/* Submit 按钮 */}
-                <div className="rounded-xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient">
-                  <div className="bg-black/20 backdrop-blur-xl rounded-xl px-6 py-3 hover:bg-white/10 transition animate-hover-scale">
-                    <button type="submit" className="select-none w-full">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
+<EmailSubscribe />
 
     </main>
   );
