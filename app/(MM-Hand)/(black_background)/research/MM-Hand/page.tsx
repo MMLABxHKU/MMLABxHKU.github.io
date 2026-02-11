@@ -95,7 +95,7 @@ export default function Home() {
 
   {/* 视频下方描述，放在容器外面 */}
   <div className="mt-6 text-center relative z-10">
-    <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 animate-gradient drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+    <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-tr text-white animate-gradient drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
       Available in June 2026
     </p>
   </div>
