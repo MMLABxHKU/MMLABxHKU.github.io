@@ -35,6 +35,7 @@ const inter = Inter({
     display: "swap",
 });
 
+import "../../globals.css";
 
 
 
