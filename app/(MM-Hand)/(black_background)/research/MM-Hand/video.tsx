@@ -77,10 +77,10 @@ export default function HeroVideo() {
         autoPlay
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
-        poster="https://ik.imagekit.io/opendrivelab/title_video1_frame0.jpg"
+        poster="https://assets.kinetixai.cn/rise/104934.jpg"
       >
         <source
-          src="https://assets.kinetixai.cn/rise/orz.mp4"
+          src="https://assets.kinetixai.cn/rise/mm-hand.mp4"
           type="video/mp4"
         />
       </video>

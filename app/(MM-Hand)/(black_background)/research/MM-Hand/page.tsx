@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
+import { Separator } from "@/components/ui/separator"
 
 import {EmailSubscribe} from "./mailing"
 import HeroVideo from "./video"
@@ -96,6 +97,60 @@ export default function Home() {
 </section>
 
 
+{/* Features Section */}
+<div className="w-full px-6 md:px-20 py-32 flex justify-center">
+  <div className="w-full max-w-5xl flex flex-col gap-20">
+
+    {/* Section Title */}
+    <div>
+      <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+        Features
+      </h2>
+      <Separator className="mt-6 w-24" />
+    </div>
+
+    {/* Feature List */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
+
+      <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">21</p>
+        <p className="text-muted-foreground">
+          Fully actuated degree-of-freedom
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">~350 Gram</p>
+        <p className="text-muted-foreground">
+          Weight without remote motors
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">15</p>
+        <p className="text-muted-foreground">
+          Tactile sensors (1mm spatial, 0.1N force resolution)
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">2</p>
+        <p className="text-muted-foreground">
+          Palm cameras (140° FoV, with controllable LED)
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">1,400 USD</p>
+        <p className="text-muted-foreground">
+          Material cost
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 
 
