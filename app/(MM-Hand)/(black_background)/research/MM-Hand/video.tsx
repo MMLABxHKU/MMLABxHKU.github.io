@@ -139,10 +139,7 @@ export default function HeroVideo() {
       {/* Overlay gradient for depth */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
       
-      {/* Scan line effect over video */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent animate-scan-vertical" />
-      </div>
+
 
       {/* 控制栏 - 桌面端悬停显示，移动端始终显示 */}
       <div className={`absolute bottom-0 left-0 right-0 transition-all duration-300 ${
