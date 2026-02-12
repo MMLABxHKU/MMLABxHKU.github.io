@@ -176,7 +176,7 @@ export function EmailSubscribe() {
               <div className="mt-6 p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-lg flex items-center gap-3">
                 <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse" />
                 <p className="text-emerald-400 text-sm font-mono">
-                  Transmission successful. You're on the priority list.
+                  Succeed.
                 </p>
               </div>
             )}

@@ -97,6 +97,16 @@ export default function HeroVideo() {
     videoRef.current.currentTime = percentage * videoRef.current.duration;
   };
 
+  // 触摸事件处理（手机端）
+  const handleProgressTouch = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!videoRef.current) return;
+    const touch = e.touches[0];
+    const rect = e.currentTarget.getBoundingClientRect();
+    const touchX = touch.clientX - rect.left;
+    const percentage = Math.max(0, Math.min(1, touchX / rect.width));
+    videoRef.current.currentTime = percentage * videoRef.current.duration;
+  };
+
   return (
     <div 
       className="relative w-full aspect-video overflow-hidden"
@@ -124,15 +134,17 @@ export default function HeroVideo() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
       
 
-      {/* 控制栏 - 悬停时显示 */}
+      {/* 控制栏 - 桌面端悬停显示，移动端始终显示 */}
       <div className={`absolute bottom-0 left-0 right-0 transition-all duration-300 ${
-        isHovering ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+        isHovering ? 'opacity-100 translate-y-0' : 'md:opacity-0 md:translate-y-2 opacity-100 translate-y-0'
       }`}>
         <div className="bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 pt-8">
           {/* 进度条 */}
           <div 
             className="relative w-full h-1 bg-white/20 rounded-full cursor-pointer mb-3 group/progress"
             onClick={handleProgressClick}
+            onTouchStart={handleProgressTouch}
+            onTouchMove={handleProgressTouch}
           >
             {/* 进度条背景轨道 */}
             <div className="absolute inset-0 bg-white/10 rounded-full" />
@@ -155,7 +167,6 @@ export default function HeroVideo() {
             {/* 状态指示 */}
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-              <span className="text-emerald-400 text-xs font-mono uppercase tracking-wider">Live Feed</span>
             </div>
 
             {/* 音量控制按钮 */}
