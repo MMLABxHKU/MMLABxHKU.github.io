@@ -8,6 +8,7 @@ export default function HeroVideo() {
   const [isMuted, setIsMuted] = useState(true);
   const [progress, setProgress] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
+  const [isTouching, setIsTouching] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -100,11 +101,16 @@ export default function HeroVideo() {
   // 触摸事件处理（手机端）
   const handleProgressTouch = (e: React.TouchEvent<HTMLDivElement>) => {
     if (!videoRef.current) return;
+    setIsTouching(true);
     const touch = e.touches[0];
     const rect = e.currentTarget.getBoundingClientRect();
     const touchX = touch.clientX - rect.left;
     const percentage = Math.max(0, Math.min(1, touchX / rect.width));
     videoRef.current.currentTime = percentage * videoRef.current.duration;
+  };
+
+  const handleTouchEnd = () => {
+    setIsTouching(false);
   };
 
   return (
@@ -133,6 +139,10 @@ export default function HeroVideo() {
       {/* Overlay gradient for depth */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
       
+      {/* Scan line effect over video */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent animate-scan-vertical" />
+      </div>
 
       {/* 控制栏 - 桌面端悬停显示，移动端始终显示 */}
       <div className={`absolute bottom-0 left-0 right-0 transition-all duration-300 ${
@@ -141,23 +151,26 @@ export default function HeroVideo() {
         <div className="bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 pt-8">
           {/* 进度条 */}
           <div 
-            className="relative w-full h-1 bg-white/20 rounded-full cursor-pointer mb-3 group/progress"
+            className="relative w-full h-1 md:h-1 py-3 -my-3 cursor-pointer mb-3 group/progress"
             onClick={handleProgressClick}
             onTouchStart={handleProgressTouch}
             onTouchMove={handleProgressTouch}
+            onTouchEnd={handleTouchEnd}
           >
             {/* 进度条背景轨道 */}
-            <div className="absolute inset-0 bg-white/10 rounded-full" />
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-1 md:h-1 bg-white/10 rounded-full" />
             
             {/* 已播放进度 */}
             <div 
-              className="absolute left-0 top-0 h-full bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full transition-all"
+              className="absolute left-0 top-1/2 -translate-y-1/2 h-1 md:h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full transition-all"
               style={{ width: `${progress}%` }}
             />
             
-            {/* 进度指示器 */}
+            {/* 进度指示器 - 手机端更大，触摸时显示 */}
             <div 
-              className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full shadow-lg opacity-0 group-hover/progress:opacity-100 transition-opacity"
+              className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 md:w-3 md:h-3 bg-white rounded-full shadow-lg transition-opacity ${
+                isTouching ? 'opacity-100' : 'opacity-0 group-hover/progress:opacity-100'
+              }`}
               style={{ left: `${progress}%`, transform: 'translate(-50%, -50%)' }}
             />
           </div>
@@ -167,6 +180,7 @@ export default function HeroVideo() {
             {/* 状态指示 */}
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+              <span className="text-emerald-400 text-xs font-mono uppercase tracking-wider">Live Feed</span>
             </div>
 
             {/* 音量控制按钮 */}
