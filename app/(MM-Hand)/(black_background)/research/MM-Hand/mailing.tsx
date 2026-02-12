@@ -71,11 +71,11 @@ export function EmailSubscribe() {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-teal-400 mb-4">
-            SECURE YOUR UNIT
+            PREORDER & STAY UPDATED
           </h2>
           
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-            Join the waitlist to receive priority access to MM-Hand 1.0 and exclusive updates on development progress.
+            Subscribe to be among the first to experience MM-Hand 1.0 and get official updates.
           </p>
         </div>
 
@@ -181,15 +181,6 @@ export function EmailSubscribe() {
               </div>
             )}
 
-            {/* Info text */}
-            <div className="mt-6 flex items-start gap-3 text-xs text-gray-500">
-              <svg className="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-              <p className="leading-relaxed">
-                Your data is encrypted and never shared. Unsubscribe anytime with one click.
-              </p>
-            </div>
           </div>
         </div>
 

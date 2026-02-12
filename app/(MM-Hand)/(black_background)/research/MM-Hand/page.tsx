@@ -219,11 +219,10 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-emerald-500" />
               <h2 className="text-3xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
-                TECHNICAL SPECS
+                TECHNICAL FEATURES
               </h2>
               <div className="h-px flex-1 bg-gradient-to-r from-emerald-500 to-transparent" />
             </div>
-            <p className="mt-4 text-emerald-400/60 uppercase tracking-widest text-xs md:text-sm">System Specifications & Capabilities</p>
           </div>
 
           {/* Feature Grid */}
@@ -237,15 +236,15 @@ export default function Home() {
             />
 
             <FeatureCard
-              value="~350g"
+              value="~350 Gram"
               label="Hand weight without remote motors"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
 
             <FeatureCard
-              value="∞"
-              label="Never overheating with remote actuation"
+              value="Never"
+              label="Overheating with remote actuation"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
@@ -258,8 +257,8 @@ export default function Home() {
             />
 
             <FeatureCard
-              value="2×140°"
-              label="Palm cameras with FoV and controllable LED"
+              value="2"
+              label="Palm cameras with 140° FoV and controllable LED"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
@@ -279,8 +278,8 @@ export default function Home() {
             />
 
             <FeatureCard
-              value="MODULAR"
-              label="Tendon connectors for rapid finger/motor replacement"
+              value="Tendon Connectors"
+              label="For rapid finger / motor replacement"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
@@ -300,28 +299,28 @@ export default function Home() {
             />
 
             <FeatureCard
-              value="3D-PRINT"
-              label="3D-printed structure for easy mechanical modifications"
+              value="3D-printed Structure"
+              label="For easy mechanical modifications"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
 
             <FeatureCard
-              value="ARDUINO"
-              label="Arduino-based for easy software modifications"
+              value="Arduino"
+              label="For easy software modifications"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
 
             <FeatureCard
-              value="100%"
-              label="Fully open-source: CAD, assembly, electronics, software"
+              value="Fully Open-source"
+              label="CAD, assembly guide, electronics, and software"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
             />
 
             <FeatureCard
-              value="$1,400"
+              value="~$1,400"
               label="Material cost"
               gradient="from-emerald-500/10 to-cyan-500/10"
               borderColor="emerald-500/30"
@@ -366,11 +365,7 @@ function FeatureCard({ value, label, gradient, borderColor }: FeatureCardProps) 
           {label}
         </p>
         
-        {/* Status indicator */}
-        <div className="flex items-center gap-2 mt-auto">
-          <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-          <span className="text-emerald-500/60 text-xs uppercase tracking-wider">Active</span>
-        </div>
+
       </div>
     </div>
   );
