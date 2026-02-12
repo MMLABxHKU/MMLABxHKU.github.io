@@ -68,7 +68,8 @@ export default function HeroVideo() {
   }, [canPlay]);
 
   return (
-    <div className="relative w-full aspect-video">
+    <div className="relative w-full aspect-video overflow-hidden">
+      {/* Video element */}
       <video
         ref={videoRef}
         muted
@@ -84,6 +85,40 @@ export default function HeroVideo() {
           type="video/mp4"
         />
       </video>
+
+      {/* Overlay gradient for depth */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
+
+
+      {/* HUD-style corner markers */}
+      <div className="absolute top-4 left-4 flex gap-1">
+        <div className="w-1 h-4 bg-emerald-400 animate-pulse" />
+        <div className="w-4 h-1 bg-emerald-400 animate-pulse" style={{animationDelay: '0.5s'}} />
+      </div>
+      
+
+      
+
+      
+      <div className="absolute bottom-4 right-4 flex gap-1">
+        <div className="w-4 h-1 bg-emerald-400 animate-pulse" style={{animationDelay: '0.3s'}} />
+        <div className="w-1 h-4 bg-emerald-400 animate-pulse" style={{animationDelay: '0.8s'}} />
+      </div>
+
+
+
+      <style jsx>{`
+        @keyframes scan-vertical {
+          0% { top: 0%; opacity: 0; }
+          25% { opacity: 1; }
+          50% { opacity: 1; }
+          75% { opacity: 1; }
+          100% { top: 100%; opacity: 0; }
+        }
+        .animate-scan-vertical {
+          animation: scan-vertical 6s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }
