@@ -79,7 +79,7 @@ export default function Home() {
   <div className="pt-20 md:pt-0" />
 
   <div className="w-full max-w-[1800px] mx-auto">
-    <div className="relative rounded-3xl p-[2px] bg-gradient-to-tr from-purple-900 via-blue-900 to-green-900 shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-gradient">
+    <div className="relative rounded-3xl p-[2px] bg-white shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-gradient">
       
       <div className="rounded-3xl overflow-hidden backdrop-blur-2xl bg-black/20 border border-white/10">
             <HeroVideo />
