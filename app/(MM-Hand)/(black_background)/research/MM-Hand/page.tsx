@@ -115,29 +115,73 @@ export default function Home() {
       <div className="flex flex-col gap-3">
         <p className="text-4xl font-bold">21</p>
         <p className="text-muted-foreground">
-          Fully actuated degree-of-freedom
-        </p>
+Fully actuated degree-of-freedom        </p>
       </div>
 
       <div className="flex flex-col gap-3">
         <p className="text-4xl font-bold">~350 Gram</p>
         <p className="text-muted-foreground">
-          Weight without remote motors
+Hand weight without remote motors        </p>
+      </div>
+
+            <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">Never overheating</p>
+        <p className="text-muted-foreground">
+          With remote actuation
         </p>
       </div>
 
       <div className="flex flex-col gap-3">
         <p className="text-4xl font-bold">15</p>
         <p className="text-muted-foreground">
-          Tactile sensors (1mm spatial, 0.1N force resolution)
-        </p>
+ Tactile sensors with 1mm spatial and 0.1N force resolution        </p>
       </div>
 
       <div className="flex flex-col gap-3">
         <p className="text-4xl font-bold">2</p>
         <p className="text-muted-foreground">
-          Palm cameras (140° FoV, with controllable LED)
-        </p>
+Palm cameras with 140° FoV and controllable LED        </p>
+      </div>
+
+            <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">21</p>
+        <p className="text-muted-foreground">
+Finger joint angle sensors        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">21</p>
+        <p className="text-muted-foreground">
+Tension sensing & self-tighting devices        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">Tendon Connectors</p>
+        <p className="text-muted-foreground">
+For rapid finger / motor replacement        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">SPI/I2C</p>
+        <p className="text-muted-foreground">
+Interfaces for in-hand sensors        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">TTL/CAN</p>
+        <p className="text-muted-foreground">
+Interfaces for standard motors        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">3D-printed Structure</p>
+        <p className="text-muted-foreground">
+For easy mechanical modifications        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">Arduino</p>
+        <p className="text-muted-foreground">
+For easy software modifications        </p>
+      </div>
+                  <div className="flex flex-col gap-3">
+        <p className="text-4xl font-bold">Fully Open-source</p>
+        <p className="text-muted-foreground">
+CAD, assembly guide, electronics, and software        </p>
       </div>
 
       <div className="flex flex-col gap-3">
