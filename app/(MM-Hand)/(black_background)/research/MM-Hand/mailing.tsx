@@ -109,7 +109,7 @@ export function EmailSubscribe() {
                   onFocus={() => setFocused(true)}
                   onBlur={() => setFocused(false)}
                   required
-                  placeholder="neural.interface@future.io"
+                  placeholder="mm-hand@mmlab.hk"
                   className={cn(
                     "w-full px-6 py-4 rounded-xl bg-black/40 border transition-all duration-300",
                     "placeholder:text-gray-600 text-emerald-300 font-mono",
