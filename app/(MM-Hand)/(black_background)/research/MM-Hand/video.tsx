@@ -180,7 +180,6 @@ export default function HeroVideo() {
             {/* 状态指示 */}
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-              <span className="text-emerald-400 text-xs font-mono uppercase tracking-wider">Live Feed</span>
             </div>
 
             {/* 音量控制按钮 */}
