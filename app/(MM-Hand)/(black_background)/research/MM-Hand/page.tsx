@@ -158,7 +158,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg blur opacity-50 group-hover:opacity-100 transition" />
             <div className="relative bg-black/80 backdrop-blur-xl rounded-lg px-6 py-2.5 border border-emerald-500/30 hover:border-emerald-500/60 transition">
               <Link href="https://discord.gg/zQrepqFyEy" target="_blank" className="select-none text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-                Community
+                DISCORD
               </Link>
             </div>
           </div>
@@ -188,11 +188,7 @@ export default function Home() {
             <div className="relative tech-border corner-accent rounded-3xl overflow-hidden bg-black/40 backdrop-blur-xl border border-emerald-500/20">
               <HeroVideo />
               
-              {/* Corner indicators */}
-              <div className="absolute top-4 left-4 w-3 h-3 bg-emerald-400 rounded-full animate-flicker" />
-              <div className="absolute top-4 right-4 w-3 h-3 bg-cyan-400 rounded-full animate-flicker" style={{animationDelay: '0.5s'}} />
-              <div className="absolute bottom-4 left-4 w-3 h-3 bg-teal-400 rounded-full animate-flicker" style={{animationDelay: '1s'}} />
-              <div className="absolute bottom-4 right-4 w-3 h-3 bg-emerald-400 rounded-full animate-flicker" style={{animationDelay: '1.5s'}} />
+              
             </div>
           </div>
         </div>
@@ -200,7 +196,7 @@ export default function Home() {
         {/* Description text */}
         <div className="mt-8 text-center relative z-10">
           <p className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-teal-400 tracking-wider animate-gradient">
-            AVAILABLE JUNE 2026
+            BETA TEST EARLY 2026
           </p>
           <div className="mt-2 flex justify-center gap-2">
             <div className="h-1 w-12 bg-gradient-to-r from-transparent via-emerald-500 to-transparent rounded-full" />
