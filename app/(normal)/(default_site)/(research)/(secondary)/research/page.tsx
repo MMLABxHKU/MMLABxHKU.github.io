@@ -63,8 +63,46 @@ export default function Home() {
 
 
 
+            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 xl:flex-row xl:gap-20 justify-between">
+                    <Link className="h-96 xl:h-64 xl:flex-1/3 w-full relative rounded-xl shadow-sm overflow-hidden group" href="/research/MM-Hand">
+                        <div>
+                            <Image
+                                src="https://ik.imagekit.io/opendrivelab/mmhand1.0.jpg"
+                                alt="MM-Hand 1.0"
+                                fill
+                                className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                            />
+                        </div>
+                    </Link>
+                    <div className="flex-2/3 flex flex-col gap-6">
+                        <FadeIn>
+                            <Link className="text-3xl font-bold hover:text-mred" target="_blank" href="/research/kai0">
+                                MM-Hand 1.0
+                            </Link>
+                        </FadeIn>
+                        <div className="flex flex-col gap-3">
+                            <FadeIn>
+                                <ul className="ml-6 space-y-3 list-outside list-disc">
+                                    <li>
+                                        <b>Fully Open-source</b>with CAD, Assembly Guide, Electronics, and Software. 
+                                    </li>
+                                    <li>
+                                        <b>~$1,400</b> Material Cost.
+                                    </li>
+                                    <li>
+                                        <b>21</b> Fully Actuated DoF.
+                                    </li>
+                                </ul>
+                            </FadeIn>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             {/* Publication */}
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                 <h2 className="w-full max-w-7xl mt-20 text-t1 font-bold"> 
                     <FadeIn>
                         <Link href="#publication" className="scroll-mt-32 group flex items-center" id="publication">
