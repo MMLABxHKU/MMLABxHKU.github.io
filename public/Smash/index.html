@@ -56,12 +56,9 @@ video{
 }
 
 .site-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:40;
-  pointer-events:none;
+  position:relative;
+  z-index:10;
+  pointer-events:auto;
 }
 
 .nav-cluster{
@@ -69,7 +66,9 @@ video{
   align-items:center;
   flex-wrap:wrap;
   gap:.7rem;
-  padding:1.5rem;
+  width:min(1180px,calc(100% - 3rem));
+  margin:0 auto;
+  padding:1.5rem 0 1rem;
   pointer-events:auto;
 }
 
@@ -125,32 +124,40 @@ video{
   left:0;
   top:0;
   z-index:20;
-  width:2rem;
+  width:4.5rem;
   height:100vh;
   display:flex;
   align-items:center;
 }
 
 .edge-nav-track{
-  margin-left:.55rem;
-  padding-left:1rem;
-  border-left:1px solid rgba(31,24,18,.12);
+  margin-left:.7rem;
+  padding:.95rem 1rem .95rem 1.05rem;
+  border:1px solid rgba(15,23,42,.08);
+  border-left:3px solid var(--accent);
+  border-radius:0 1rem 1rem 0;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 14px 30px rgba(15,23,42,.08);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
   display:flex;
   flex-direction:column;
   gap:.9rem;
 }
 
 .edge-nav-track a{
-  color:var(--muted-soft);
-  font-size:.76rem;
+  color:var(--muted);
+  font-size:.8rem;
+  font-weight:500;
   letter-spacing:.02em;
-  transition:color .2s ease;
+  transition:color .2s ease, transform .2s ease;
   white-space:nowrap;
 }
 
 .edge-nav-track a:hover,
 .edge-nav-track a.is-active{
   color:var(--accent);
+  transform:translateX(2px);
 }
 
 .back-top{
@@ -180,7 +187,7 @@ video{
 .page{
   width:min(1180px,calc(100% - 3rem));
   margin:0 auto;
-  padding-top:8.5rem;
+  padding-top:2.2rem;
   padding-bottom:5rem;
 }
 
@@ -267,7 +274,7 @@ video{
 }
 
 .hero-byline a{
-  color:var(--accent);
+  color:#4b5d73;
 }
 
 .hero-byline a:hover{
@@ -316,6 +323,233 @@ video{
 
 .hero-video-wrap{
   width:min(100%,68rem);
+}
+
+.hero-audio-control{
+  position:absolute;
+  right:1rem;
+  bottom:.34rem;
+  z-index:3;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.35rem;
+}
+
+.hero-sound-toggle{
+  width:1.8rem;
+  height:1.8rem;
+  padding:0;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(15,23,42,.22);
+  color:rgba(255,255,255,.92);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  cursor:pointer;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease,opacity .18s ease,color .18s ease;
+}
+
+.hero-sound-toggle:hover,
+.hero-sound-toggle:focus-visible{
+  background:rgba(15,23,42,.34);
+  border-color:rgba(255,255,255,.24);
+  color:#fff;
+  transform:translateY(-1px);
+  outline:none;
+}
+
+.hero-sound-toggle svg{
+  width:.95rem;
+  height:.95rem;
+  display:block;
+}
+
+.hero-sound-toggle .sound-wave,
+.hero-sound-toggle .sound-mute{
+  fill:none;
+  stroke:currentColor;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:1.9;
+}
+
+.hero-sound-toggle .speaker-body{
+  fill:currentColor;
+}
+
+.hero-sound-toggle[data-level="muted"] .sound-wave{
+  display:none;
+}
+
+.hero-sound-toggle[data-level="muted"] .sound-mute{
+  display:block;
+}
+
+.hero-sound-toggle[data-level="low"] .sound-wave-2{
+  display:none;
+}
+
+.hero-sound-toggle[data-level="high"] .sound-wave,
+.hero-sound-toggle[data-level="low"] .sound-wave{
+  display:block;
+}
+
+.hero-sound-toggle[data-level="high"] .sound-mute,
+.hero-sound-toggle[data-level="low"] .sound-mute{
+  display:none;
+}
+
+.hero-volume-pop{
+  width:1.9rem;
+  height:7rem;
+  padding:.55rem 0;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(15,23,42,.22);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(.4rem);
+  transition:opacity .18s ease, transform .18s ease;
+}
+
+.hero-audio-control:hover .hero-volume-pop,
+.hero-audio-control:focus-within .hero-volume-pop{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+.hero-volume-slider{
+  width:5.2rem;
+  height:.9rem;
+  appearance:none;
+  -webkit-appearance:none;
+  background:transparent;
+  cursor:pointer;
+  transform:rotate(-90deg);
+}
+
+.hero-volume-slider::-webkit-slider-runnable-track{
+  height:.16rem;
+  border-radius:999px;
+  background:rgba(255,255,255,.28);
+}
+
+.hero-volume-slider::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:.65rem;
+  height:.65rem;
+  margin-top:-.25rem;
+  border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.84);
+  background:rgba(255,255,255,.96);
+  box-shadow:0 2px 8px rgba(15,23,42,.2);
+}
+
+.hero-volume-slider::-moz-range-track{
+  height:.16rem;
+  border:none;
+  border-radius:999px;
+  background:rgba(255,255,255,.28);
+}
+
+.hero-volume-slider::-moz-range-progress{
+  height:.16rem;
+  border:none;
+  border-radius:999px;
+  background:rgba(255,255,255,.88);
+}
+
+.hero-volume-slider::-moz-range-thumb{
+  width:.65rem;
+  height:.65rem;
+  border:none;
+  border-radius:50%;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 2px 8px rgba(15,23,42,.2);
+}
+
+.hero-video-wrap .video-progress{
+  right:3.9rem;
+  width:calc(100% - 4.9rem);
+}
+
+.video-play-toggle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:3;
+  width:3.5rem;
+  height:3.5rem;
+  padding:0;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(15,23,42,.24);
+  color:transparent;
+  font-size:0;
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  cursor:pointer;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(.9);
+  transition:background .18s ease,border-color .18s ease,transform .18s ease,opacity .18s ease;
+}
+
+.video-play-toggle::before{
+  content:'';
+  width:0;
+  height:0;
+  border-top:.52rem solid transparent;
+  border-bottom:.52rem solid transparent;
+  border-left:.84rem solid rgba(255,255,255,.92);
+  margin-left:.16rem;
+}
+
+.video-play-toggle[data-state="pause"]::before,
+.video-play-toggle[data-state="pause"]::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  width:.22rem;
+  height:1rem;
+  border-radius:999px;
+  background:rgba(255,255,255,.92);
+  transform:translateY(-50%);
+}
+
+.video-play-toggle[data-state="pause"]::before{
+  left:1.38rem;
+  margin-left:0;
+  border:none;
+  height:1rem;
+}
+
+.video-play-toggle[data-state="pause"]::after{
+  right:1.38rem;
+}
+
+.video-with-progress:hover .video-play-toggle,
+.video-with-progress:focus-within .video-play-toggle,
+.video-play-toggle[data-state="play"]{
+  opacity:.92;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.video-play-toggle:hover,
+.video-play-toggle:focus-visible{
+  background:rgba(15,23,42,.34);
+  border-color:rgba(255,255,255,.28);
+  opacity:1;
+  outline:none;
 }
 
 .hero-media::before{
@@ -472,7 +706,7 @@ video{
   font-weight:700;
   letter-spacing:.08em;
   text-transform:uppercase;
-  color:var(--accent);
+  color:#334155;
   text-align:center;
 }
 
@@ -546,7 +780,7 @@ video{
 
 .method-item{
   padding-left:1rem;
-  border-left:2px solid rgba(205,77,68,.28);
+  border-left:2px solid rgba(51,65,85,.18);
 }
 
 .method-item h3{
@@ -554,7 +788,7 @@ video{
   font-size:.82rem;
   letter-spacing:.04em;
   text-transform:uppercase;
-  color:var(--accent);
+  color:#4b5d73;
 }
 
 .method-item p{
@@ -870,12 +1104,13 @@ video{
 
   .page{
     width:min(100%,calc(100% - 1.6rem));
-    padding-top:7.5rem;
+    padding-top:1.6rem;
   }
 
   .nav-cluster{
     gap:.5rem;
-    padding:1rem .8rem;
+    width:min(100%,calc(100% - 1.6rem));
+    padding:1rem 0 .8rem;
   }
 
   .nav-pill{
@@ -959,6 +1194,7 @@ video{
 
 <aside class="edge-nav" aria-label="Section navigation">
   <nav class="edge-nav-track">
+    <a href="#top">SMASH</a>
     <a href="#egocentric-vision">Egocentric Vision</a>
     <a href="#dynamic-motion">Dynamic Motion</a>
     <a href="#methodology">Methodology</a>
@@ -982,12 +1218,26 @@ video{
           <span class="hero-title-rest">Mastering Scalable Whole-Body Skills for Humanoid Ping-Pong with Egocentric Vision</span>
         </h1>
         <div class="hero-meta-row">
-          <p class="hero-byline"><a href="mailto:research@mmlab.hk">HKU MMLab Research</a> · <a href="#contributors">Contributors</a></p>
+          <p class="hero-byline"><a href="https://mmlab.hk/" target="_blank" rel="noreferrer">HKU MMLab Research</a> · <a href="#contributors">Contributors</a></p>
           <div class="hero-status-tab">Paper &amp; Code Coming in April, 2026</div>
         </div>
       </div>
       <div class="video-with-progress hero-video-wrap">
-        <video class="hero-media lazy-video" data-progress-video="hero-video" data-audible-video="hero-video" src="https://assets.kinetixai.cn/202603262/%E8%8B%B1%E6%96%87%E7%89%88_%28%E5%B0%8F%E6%A0%B7%EF%BC%89.mp4" loop playsinline preload="metadata" aria-label="Hero video"></video>
+        <video class="hero-media lazy-video" data-video-id="hero-video" data-progress-video="hero-video" data-prefer-sound-autoplay="true" src="https://assets.kinetixai.cn/202603262/%E8%8B%B1%E6%96%87%E7%89%88_%28%E5%B0%8F%E6%A0%B7%EF%BC%89.mp4" autoplay loop muted playsinline preload="auto" aria-label="Hero video"></video>
+        <div class="hero-audio-control">
+          <div class="hero-volume-pop">
+            <input class="hero-volume-slider" type="range" min="0" max="100" step="1" value="100" data-volume-for="hero-video" aria-label="Adjust hero video volume">
+          </div>
+          <button class="hero-sound-toggle" type="button" data-sound-toggle-for="hero-video" data-level="muted" aria-pressed="false" aria-label="Turn sound on for hero video">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path class="speaker-body" d="M4 10h4l5-4v12l-5-4H4z"></path>
+              <path class="sound-wave sound-wave-1" d="M16 9.5a4 4 0 0 1 0 5"></path>
+              <path class="sound-wave sound-wave-2" d="M18.8 7a8 8 0 0 1 0 10"></path>
+              <path class="sound-mute" d="M16 9l5 5M21 9l-5 5"></path>
+            </svg>
+          </button>
+        </div>
+        <button class="video-play-toggle" type="button" data-play-toggle-for="hero-video" aria-pressed="true" aria-label="Pause hero video">Pause</button>
         <input class="video-progress" type="range" min="0" max="100" step="0.1" value="0" data-progress-for="hero-video" aria-label="Seek through hero video" disabled>
       </div>
     </div>
@@ -1000,27 +1250,30 @@ video{
     <div class="section section-wide" style="margin-top:2.6rem">
       <h2 class="section-title"><a href="#egocentric-vision">Egocentric Vision</a></h2>
       <div class="blank-video-grid single" aria-label="Egocentric vision video placeholder">
-        <video class="feature-video lazy-video" src="https://assets.kinetixai.cn/202603262/fpv-6hits.mp4" loop muted playsinline preload="metadata"></video>
+        <div class="video-with-progress">
+          <video class="feature-video lazy-video" data-video-id="egocentric-main-video" src="https://assets.kinetixai.cn/202603262/fpv-6hits.mp4" poster="https://assets.kinetixai.cn/202603262/fpv.png" loop muted playsinline preload="metadata"></video>
+          <button class="video-play-toggle" type="button" data-play-toggle-for="egocentric-main-video" aria-pressed="false" aria-label="Play egocentric main video">Play</button>
+        </div>
       </div>
       <div class="vision-subsection">
         <h3 class="vision-subtitle">Various Outdoor Conditions</h3>
         <div class="vision-grid outdoor" aria-label="Various outdoor conditions video placeholders">
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/3rd%20floor%20%E2%80%93%208%20hits.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/6th%20floor%20-%205%20hits.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/202603262/Banana%20Road%20-%208%20Strikes.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Bao%27an%20Stadium%206.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Big%20Tree%20-%205%20consecutive%20hits.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorShots.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorSix%20Strokes.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Talent%20Park%20-%207%20Strikes.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/3rd%20floor%20%E2%80%93%208%20hits.mp4" poster="https://assets.kinetixai.cn/202603262/3rdfloor.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/6th%20floor%20-%205%20hits.mp4" poster="https://assets.kinetixai.cn/202603262/6rd.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/202603262/Banana%20Road%20-%208%20Strikes.mp4" poster="https://assets.kinetixai.cn/202603262/banana.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Bao%27an%20Stadium%206.mp4" poster="https://assets.kinetixai.cn/202603262/baoan.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Big%20Tree%20-%205%20consecutive%20hits.mp4" poster="https://assets.kinetixai.cn/202603262/bigtree.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorShots.mp4" poster="https://assets.kinetixai.cn/202603262/indoor.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorSix%20Strokes.mp4" poster="https://assets.kinetixai.cn/202603262/gym.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Talent%20Park%20-%207%20Strikes.mp4" poster="https://assets.kinetixai.cn/202603262/talent.png" autoplay loop muted playsinline preload="auto"></video>
         </div>
       </div>
       <div class="vision-subsection">
         <h3 class="vision-subtitle">Different Opponents</h3>
         <div class="vision-grid opponents" aria-label="Different opponents video placeholders">
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/yixuan.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/haoran.mp4" loop muted playsinline preload="metadata"></video>
-          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/junli.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/yixuan.mp4" poster="https://assets.kinetixai.cn/202603262/yixuan.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/haoran.mp4" poster="https://assets.kinetixai.cn/202603262/haoran.png" autoplay loop muted playsinline preload="auto"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/junli.mp4" poster="https://assets.kinetixai.cn/202603262/junli.png" autoplay loop muted playsinline preload="auto"></video>
         </div>
       </div>
     </div>
@@ -1029,18 +1282,22 @@ video{
   <section class="section section-wide" id="dynamic-motion">
     <h2 class="section-title"><a href="#dynamic-motion">Dynamic Motion</a></h2>
     <div class="blank-video-grid single" aria-label="Dynamic motion main video">
-      <video class="feature-video lazy-video" src="https://assets.kinetixai.cn/20260326/Smash%20-%20Side%20View.mp4" loop muted playsinline preload="metadata"></video>
+      <div class="video-with-progress">
+        <video class="feature-video lazy-video" data-video-id="dynamic-main-video" src="https://assets.kinetixai.cn/20260326/Smash%20-%20Side%20View.mp4" poster="https://assets.kinetixai.cn/202603262/smash_4.png" loop muted playsinline preload="metadata"></video>
+        <button class="video-play-toggle" type="button" data-play-toggle-for="dynamic-main-video" aria-pressed="false" aria-label="Play dynamic motion main video">Play</button>
+      </div>
     </div>
     <div class="motion-video-grid" aria-label="Dynamic motion supporting videos">
-      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/8%20Consecutive%20Smashes.mp4" loop muted playsinline preload="metadata"></video>
-      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/laoqiu.mp4" loop muted playsinline preload="metadata"></video>
-      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Wide%20pan%20left%20and%20right.mp4" loop muted playsinline preload="metadata"></video>
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/8%20Consecutive%20Smashes.mp4" poster="https://assets.kinetixai.cn/202603262/kousha.png" autoplay loop muted playsinline preload="auto"></video>
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/laoqiu.mp4" poster="https://assets.kinetixai.cn/202603262/laoqiu.png" autoplay loop muted playsinline preload="auto"></video>
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Wide%20pan%20left%20and%20right.mp4" poster="https://assets.kinetixai.cn/202603262/leftandright.png" autoplay loop muted playsinline preload="auto"></video>
     </div>
     <div class="vision-subsection">
       <h3 class="vision-subtitle">100+ consecutive stable rallies</h3>
       <div class="blank-video-grid single" aria-label="100 plus consecutive stable rallies video">
         <div class="video-with-progress">
-          <video class="feature-video lazy-video" data-progress-video="stable-rallies-video" src="https://assets.kinetixai.cn/202603262/51%20consecutive%20shots.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="feature-video lazy-video" data-video-id="stable-rallies-video" data-progress-video="stable-rallies-video" src="https://assets.kinetixai.cn/202603262/51%20consecutive%20shots.mp4" poster="https://assets.kinetixai.cn/202603262/51shots.png" loop muted playsinline preload="metadata"></video>
+          <button class="video-play-toggle" type="button" data-play-toggle-for="stable-rallies-video" aria-pressed="false" aria-label="Play 100 plus consecutive stable rallies video">Play</button>
           <input class="video-progress" type="range" min="0" max="100" step="0.1" value="0" data-progress-for="stable-rallies-video" aria-label="Seek through 100 plus consecutive stable rallies video" disabled>
         </div>
       </div>
@@ -1094,7 +1351,7 @@ video{
       <a href="https://lzpyx.github.io/" target="_blank" rel="noreferrer">Yixuan Pan</a>,
       <a href="https://github.com/GuangjunZeng" target="_blank" rel="noreferrer">Guangjun Zeng</a>,
       <a href="https://taohuang13.github.io/" target="_blank" rel="noreferrer">Tao Huang</a>,
-      <a href="https://me.sjtu.edu.cn/en/FullTimeTeacher/guoweizhong.html" target="_blank" rel="noreferrer">WeiZhong Guo</a>,
+      <a href="https://me.sjtu.edu.cn/en/FullTimeTeacher/guoweizhong.html" target="_blank" rel="noreferrer">Weizhong Guo</a>,
       <a href="https://wangjingbo1219.github.io/" target="_blank" rel="noreferrer">Jingbo Wang</a>,
       <a href="https://ilnehc.github.io/" target="_blank" rel="noreferrer">Li Chen</a>,
       <a href="https://lihongyang.info/" target="_blank" rel="noreferrer">Hongyang Li</a><sup>‡</sup>,
@@ -1105,7 +1362,7 @@ video{
 
   <section class="section section-wide" id="acknowledgement">
     <h2 class="section-title"><a href="#acknowledgement">Acknowledgement</a></h2>
-    <p class="acknowledgement-copy">The work was conducted during the authors'intership at Kinetix AI, special thanks to Huige Tong, Yuxing Zhang, Zhihong Liao, Yue Jiang, Huang Yifeng, Lirui Zhao, Jialong Zeng, Shijia Peng, Jiazhi Yang, Chonghao Sima, Checheng Yu, and Modi Shi for their excellent support and insightful discussions.</p>
+    <p class="acknowledgement-copy">The work was conducted during the authors'intership at Kinetix AI, special thanks to Huige Tong, Yuxing Zhang, Zhihong Liao, Yue Jiang, Yifeng Huang, Lirui Zhao, Jialong Zeng, Shijia Peng, Jiazhi Yang, Chonghao Sima, Checheng Yu, and Modi Shi for their excellent support and insightful discussions.</p>
   </section>
 
   <footer class="footer">
@@ -1139,12 +1396,98 @@ clickToPlayVideos.forEach(video=>{
   });
 });
 
-const audibleVideos=[...document.querySelectorAll('video[data-audible-video]')];
+const autoPlayVideos=[...document.querySelectorAll('video[autoplay]')];
 
-audibleVideos.forEach(video=>{
-  video.defaultMuted=false;
-  video.muted=false;
+autoPlayVideos.forEach(video=>{
+  const tryAutoPlay=()=>video.play().catch(()=>{});
+  if(video.readyState>=2){
+    tryAutoPlay();
+  }else{
+    video.addEventListener('canplay',tryAutoPlay,{once:true});
+  }
+});
+
+const playToggles=[...document.querySelectorAll('[data-play-toggle-for]')];
+
+playToggles.forEach(button=>{
+  const video=document.querySelector(`video[data-video-id="${button.dataset.playToggleFor}"]`);
+  if(!video)return;
+
+  const renderPlayState=()=>{
+    const isPaused=video.paused;
+    button.dataset.state=isPaused?'play':'pause';
+    button.textContent=isPaused?'Play':'Pause';
+    button.setAttribute('aria-pressed',String(!isPaused));
+    button.setAttribute('aria-label',isPaused?`Play ${button.dataset.playToggleFor} video`:`Pause ${button.dataset.playToggleFor} video`);
+  };
+
+  button.addEventListener('click',()=>{
+    if(video.paused){
+      video.play().catch(()=>{});
+    }else{
+      video.pause();
+    }
+    renderPlayState();
+  });
+
+  video.addEventListener('play',renderPlayState);
+  video.addEventListener('pause',renderPlayState);
+  renderPlayState();
+});
+
+const soundToggles=[...document.querySelectorAll('[data-sound-toggle-for]')];
+
+soundToggles.forEach(button=>{
+  const video=document.querySelector(`video[data-video-id="${button.dataset.soundToggleFor}"]`);
+  const volumeSlider=document.querySelector(`[data-volume-for="${button.dataset.soundToggleFor}"]`);
+  if(!video)return;
+
+  const renderSoundState=()=>{
+    const volume=Number(volumeSlider?.value ?? Math.round(video.volume*100));
+    const isMuted=video.muted||volume===0;
+    button.dataset.level=isMuted?'muted':volume<50?'low':'high';
+    button.setAttribute('aria-pressed',String(!isMuted));
+    button.setAttribute('aria-label',isMuted?'Turn sound on for hero video':'Mute hero video');
+  };
+
+  video.defaultMuted=true;
+  video.muted=true;
   video.volume=1;
+  if(volumeSlider)volumeSlider.value='100';
+
+  button.addEventListener('click',()=>{
+    const currentVolume=Number(volumeSlider?.value ?? Math.round(video.volume*100));
+    if(video.muted||currentVolume===0){
+      video.muted=false;
+      if(video.volume===0){
+        video.volume=.6;
+      }
+      if(volumeSlider&&Number(volumeSlider.value)===0){
+        volumeSlider.value='60';
+        video.volume=.6;
+      }
+    }else{
+      video.muted=true;
+    }
+
+    if(video.paused){
+      video.play().catch(()=>{});
+    }
+    renderSoundState();
+  });
+
+  volumeSlider?.addEventListener('input',()=>{
+    const volume=Number(volumeSlider.value)/100;
+    video.volume=volume;
+    video.muted=volume===0;
+    if(video.paused){
+      video.play().catch(()=>{});
+    }
+    renderSoundState();
+  });
+
+  video.addEventListener('volumechange',renderSoundState);
+  renderSoundState();
 });
 
 const progressVideos=[...document.querySelectorAll('video[data-progress-video]')];
