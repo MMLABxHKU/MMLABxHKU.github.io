@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMASH: Mastering Scalable Whole-Body Skills for Humanoid Ping-Pong with Egocentric Vision</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏓</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,
+*::before,
+*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#f3f6fa;
+  --surface:#ffffff;
+  --surface-soft:#eef3f8;
+  --border:rgba(15,23,42,.1);
+  --border-strong:rgba(15,23,42,.18);
+  --text:#0f1726;
+  --muted:#5c6878;
+  --muted-soft:#8d98a7;
+  --accent:#3a6df0;
+  --accent-soft:rgba(58,109,240,.12);
+  --shadow:0 20px 48px rgba(31,41,55,.08);
+}
+
+html{
+  scroll-behavior:smooth;
+  font-size:16px;
+  background:var(--bg);
+}
+
+body{
+  min-height:100vh;
+  font-family:'Roboto',system-ui,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,.88), transparent 24%),
+    radial-gradient(circle at top right, rgba(58,109,240,.08), transparent 26%),
+    linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
+  line-height:1.65;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img,
+video{
+  display:block;
+  max-width:100%;
+}
+
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:40;
+  pointer-events:none;
+}
+
+.nav-cluster{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.7rem;
+  padding:1.5rem;
+  pointer-events:auto;
+}
+
+.nav-logo-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:0;
+  padding:0;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+}
+
+.nav-logo-image{
+  height:1.42rem;
+  width:auto;
+  object-fit:contain;
+}
+
+.nav-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:2.4rem;
+  padding:0 .95rem;
+  border-radius:999px;
+  border:1px solid rgba(31,24,18,.1);
+  background:rgba(255,255,255,.92);
+  color:#121212;
+  font-size:.92rem;
+  font-weight:500;
+  transition:background .2s ease,color .2s ease,transform .2s ease,border-color .2s ease;
+  box-shadow:0 10px 24px rgba(76,53,31,.08);
+}
+
+.nav-pill:hover,
+.nav-pill.is-active{
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent);
+  transform:translateY(-1px);
+}
+
+.nav-pill.brand{
+  padding:0 .8rem;
+  font-weight:800;
+  letter-spacing:-.03em;
+}
+
+.edge-nav{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:20;
+  width:2rem;
+  height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.edge-nav-track{
+  margin-left:.55rem;
+  padding-left:1rem;
+  border-left:1px solid rgba(31,24,18,.12);
+  display:flex;
+  flex-direction:column;
+  gap:.9rem;
+}
+
+.edge-nav-track a{
+  color:var(--muted-soft);
+  font-size:.76rem;
+  letter-spacing:.02em;
+  transition:color .2s ease;
+  white-space:nowrap;
+}
+
+.edge-nav-track a:hover,
+.edge-nav-track a.is-active{
+  color:var(--accent);
+}
+
+.back-top{
+  position:fixed;
+  right:1.5rem;
+  bottom:1.5rem;
+  z-index:30;
+  width:2.8rem;
+  height:2.8rem;
+  border-radius:999px;
+  border:1px solid rgba(31,24,18,.1);
+  background:rgba(255,255,255,.94);
+  color:#121212;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 12px 30px rgba(76,53,31,.12);
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+
+.back-top:hover{
+  background:var(--accent);
+  color:#fff;
+  transform:translateY(-1px);
+}
+
+.page{
+  width:min(1180px,calc(100% - 3rem));
+  margin:0 auto;
+  padding-top:8.5rem;
+  padding-bottom:5rem;
+}
+
+.hero{
+  display:flex;
+  flex-direction:column;
+  gap:2.8rem;
+}
+
+.hero-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:1.8rem;
+}
+
+.hero-copy{
+  max-width:980px;
+  width:100%;
+  text-align:left;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.32rem .7rem;
+  border-radius:999px;
+  border:1px solid rgba(31,24,18,.1);
+  background:rgba(255,255,255,.68);
+  color:var(--muted);
+  font-family:'Roboto Mono',monospace;
+  font-size:.72rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+
+.eyebrow::before{
+  content:'';
+  width:.38rem;
+  height:.38rem;
+  border-radius:50%;
+  background:var(--accent);
+}
+
+.hero-title{
+  margin-top:1.2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:.35rem;
+  font-size:inherit;
+  max-width:none;
+}
+
+.hero-title-main{
+  font-size:clamp(3.4rem,7vw,5.4rem);
+  line-height:.95;
+  letter-spacing:-.06em;
+  font-weight:900;
+}
+
+.hero-title-rest{
+  max-width:none;
+  font-size:clamp(1.2rem,1.75vw,1.6rem);
+  line-height:1.14;
+  letter-spacing:-.035em;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.hero-meta-row{
+  margin-top:1rem;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.7rem;
+}
+
+.hero-byline{
+  color:var(--muted);
+  font-size:1rem;
+  line-height:1.5;
+}
+
+.hero-byline a{
+  color:var(--accent);
+}
+
+.hero-byline a:hover{
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+}
+
+.hero-status-tab{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.38rem .82rem;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.12);
+  background:rgba(255,255,255,.84);
+  color:var(--text);
+  font-size:1rem;
+  font-weight:500;
+  letter-spacing:-.01em;
+  line-height:1.5;
+}
+
+.hero-status-tab::before{
+  content:'';
+  width:.38rem;
+  height:.38rem;
+  border-radius:50%;
+  background:currentColor;
+  opacity:.82;
+}
+
+.hero-media{
+  width:100%;
+  border-radius:1rem;
+  border:1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.46)),
+    linear-gradient(180deg, rgba(205,77,68,.03), transparent 50%),
+    var(--surface);
+  aspect-ratio:16/9;
+  object-fit:cover;
+  box-shadow:var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-video-wrap{
+  width:min(100%,68rem);
+}
+
+.hero-media::before{
+  content:'';
+  position:absolute;
+  inset:1px;
+  border-radius:calc(1rem - 1px);
+  border:1px solid rgba(31,24,18,.05);
+  pointer-events:none;
+}
+
+.blank-media{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted-soft);
+  font-size:.84rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.blank-media::after{
+  content:'Video Placeholder';
+}
+
+.quote-section{
+  margin-top:5rem;
+}
+
+.quote-frame{
+  width:min(100%,52rem);
+  margin:0;
+  padding:2.4rem 2.6rem;
+  position:relative;
+}
+
+.quote-frame::before,
+.quote-frame::after{
+  content:'';
+  position:absolute;
+  width:2rem;
+  height:2rem;
+  border-color:rgba(31,24,18,.82);
+}
+
+.quote-frame::before{
+  top:0;
+  left:0;
+  border-top:4px solid;
+  border-left:4px solid;
+}
+
+.quote-frame::after{
+  right:0;
+  bottom:0;
+  border-right:4px solid;
+  border-bottom:4px solid;
+}
+
+.quote-frame h2{
+  text-align:left;
+  font-size:clamp(1.65rem,3vw,2.4rem);
+  line-height:1.28;
+  letter-spacing:-.03em;
+  font-weight:700;
+}
+
+.quote-author{
+  width:min(100%,52rem);
+  margin:.9rem auto 0;
+  text-align:right;
+  color:var(--muted);
+  font-style:italic;
+}
+
+.section{
+  margin-top:5rem;
+}
+
+.section-inner{
+  width:min(100%,52rem);
+  margin:0 auto;
+}
+
+.section-wide{
+  width:min(100%,68rem);
+}
+
+.section-title{
+  font-family:'Roboto Mono',monospace;
+  font-size:30px;
+  font-weight:400;
+  letter-spacing:0;
+  text-align:left;
+}
+
+.section-title a{
+  transition:color .2s ease;
+}
+
+.section-title a:hover{
+  color:var(--accent);
+}
+
+.section-copy{
+  margin-top:1.5rem;
+  color:var(--muted);
+  font-size:1rem;
+}
+
+.blank-panel{
+  margin-top:1.5rem;
+  min-height:10rem;
+  border-radius:1rem;
+  border:1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.42)),
+    var(--surface-soft);
+  position:relative;
+}
+
+.blank-panel::before{
+  content:'Reserved for upcoming content';
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted-soft);
+  font-size:.84rem;
+  letter-spacing:.04em;
+}
+
+.method-figure{
+  margin-top:1.5rem;
+  margin-left:-3rem;
+  margin-right:-3rem;
+  background:transparent;
+  overflow:hidden;
+}
+
+.method-carousel{
+  display:block;
+}
+
+.method-stage{
+  min-width:0;
+}
+
+.method-stage-label{
+  display:block;
+  margin-bottom:1.1rem;
+  font-size:clamp(1.15rem,2vw,1.6rem);
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+  text-align:center;
+}
+
+.method-deck{
+  position:relative;
+  height:clamp(18rem,47vw,33.5rem);
+  overflow:visible;
+}
+
+.method-card{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:transform .45s ease,opacity .35s ease,filter .35s ease;
+  transform-origin:center center;
+  pointer-events:none;
+}
+
+.method-card img{
+  height:100%;
+  width:auto;
+  max-width:none;
+  display:block;
+  background:transparent;
+  transition:background .3s ease;
+}
+
+.method-card.is-current{
+  opacity:1;
+  transform:translateX(0) scale(1);
+  filter:none;
+  z-index:3;
+}
+
+.method-card.is-current img{
+  background:var(--bg);
+}
+
+.method-card.is-prev{
+  opacity:.34;
+  transform:translateX(-28%) scale(.82);
+  filter:saturate(.82);
+  z-index:2;
+  pointer-events:auto;
+  cursor:pointer;
+}
+
+.method-card.is-next{
+  opacity:.34;
+  transform:translateX(28%) scale(.82);
+  filter:saturate(.82);
+  z-index:2;
+  pointer-events:auto;
+  cursor:pointer;
+}
+
+.method-card.is-hidden{
+  opacity:0;
+  transform:translateX(0) scale(.76);
+  z-index:1;
+}
+
+.method-summary{
+  margin-top:1.6rem;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.2rem;
+}
+
+.method-item{
+  padding-left:1rem;
+  border-left:2px solid rgba(205,77,68,.28);
+}
+
+.method-item h3{
+  font-family:'Roboto Mono',monospace;
+  font-size:.82rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+.method-item p{
+  margin-top:.55rem;
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.7;
+}
+
+.blank-video-grid{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1.4rem;
+}
+
+.blank-video-grid.single{
+  grid-template-columns:1fr;
+}
+
+.motion-video-grid{
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.4rem;
+}
+
+.blank-video{
+  aspect-ratio:16/9;
+  border-radius:1rem;
+  border:1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.44)),
+    var(--surface);
+  position:relative;
+}
+
+.blank-video::before{
+  content:'';
+  position:absolute;
+  inset:50% auto auto 50%;
+  width:3.4rem;
+  height:3.4rem;
+  border-radius:999px;
+  border:1px solid rgba(31,24,18,.12);
+  background:rgba(255,255,255,.52);
+  transform:translate(-50%,-50%);
+}
+
+.blank-video::after{
+  content:'';
+  position:absolute;
+  inset:50% auto auto 50%;
+  transform:translate(-38%,-50%);
+  width:0;
+  height:0;
+  border-top:.6rem solid transparent;
+  border-bottom:.6rem solid transparent;
+  border-left:1rem solid rgba(31,24,18,.72);
+}
+
+.feature-video{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:1rem;
+  border:1px solid var(--border);
+  background:var(--surface);
+  object-fit:cover;
+  display:block;
+}
+
+.video-with-progress{
+  position:relative;
+  width:100%;
+}
+
+.video-progress{
+  --progress:0%;
+  position:absolute;
+  left:1rem;
+  right:1rem;
+  bottom:.9rem;
+  width:calc(100% - 2rem);
+  height:.9rem;
+  appearance:none;
+  -webkit-appearance:none;
+  background:transparent;
+  outline:none;
+  accent-color:var(--accent);
+  cursor:pointer;
+  opacity:.46;
+  z-index:2;
+  transition:opacity .18s ease;
+}
+
+.video-progress::-webkit-slider-runnable-track{
+  height:.18rem;
+  border-radius:999px;
+  background:
+    linear-gradient(90deg,
+      rgba(255,255,255,.9) 0%,
+      rgba(255,255,255,.78) var(--progress),
+      rgba(255,255,255,.26) var(--progress),
+      rgba(255,255,255,.18) 100%);
+}
+
+.video-progress::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:.62rem;
+  height:.62rem;
+  margin-top:-.22rem;
+  border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.88);
+  background:rgba(255,255,255,.96);
+  box-shadow:
+    0 2px 8px rgba(15,23,42,.2),
+    0 0 0 1px rgba(15,23,42,.05);
+  transition:transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.video-progress::-moz-range-track{
+  height:.18rem;
+  border:none;
+  border-radius:999px;
+  background:rgba(255,255,255,.18);
+}
+
+.video-progress::-moz-range-progress{
+  height:.18rem;
+  border:none;
+  border-radius:999px;
+  background:rgba(255,255,255,.82);
+}
+
+.video-progress::-moz-range-thumb{
+  width:.62rem;
+  height:.62rem;
+  border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.88);
+  background:rgba(255,255,255,.96);
+  box-shadow:
+    0 2px 8px rgba(15,23,42,.2),
+    0 0 0 1px rgba(15,23,42,.05);
+  transition:transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.video-with-progress:hover .video-progress,
+.video-with-progress:focus-within .video-progress,
+.video-progress:active{
+  opacity:.82;
+}
+
+.video-progress:hover::-webkit-slider-thumb,
+.video-progress:focus-visible::-webkit-slider-thumb,
+.video-progress:active::-webkit-slider-thumb,
+.video-progress:hover::-moz-range-thumb,
+.video-progress:focus-visible::-moz-range-thumb,
+.video-progress:active::-moz-range-thumb{
+  transform:scale(1.04);
+  box-shadow:
+    0 4px 10px rgba(15,23,42,.24),
+    0 0 0 1px rgba(15,23,42,.07);
+}
+
+.video-progress:disabled{
+  cursor:not-allowed;
+  opacity:.32;
+}
+
+.video-progress:disabled::-webkit-slider-thumb,
+.video-progress:disabled::-moz-range-thumb{
+  box-shadow:none;
+}
+
+.lazy-video{
+  cursor:pointer;
+  transition:filter .18s ease;
+}
+
+.lazy-video:hover{
+  filter:saturate(.98) contrast(1);
+}
+
+.vision-subsection{
+  margin-top:2rem;
+}
+
+.vision-subtitle{
+  font-family:'Roboto Mono',monospace;
+  font-size:20px;
+  font-weight:400;
+  color:var(--text);
+  margin-bottom:1rem;
+  text-align:left;
+}
+
+.vision-grid{
+  display:grid;
+  gap:1.2rem;
+}
+
+.vision-grid.outdoor{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+
+.vision-grid.opponents{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.vision-video{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:1rem;
+  border:1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.44)),
+    var(--surface);
+  position:relative;
+}
+
+.vision-video::before{
+  content:'';
+  position:absolute;
+  inset:50% auto auto 50%;
+  width:3rem;
+  height:3rem;
+  border-radius:999px;
+  border:1px solid rgba(31,24,18,.12);
+  background:rgba(255,255,255,.52);
+  transform:translate(-50%,-50%);
+}
+
+.vision-video::after{
+  content:'';
+  position:absolute;
+  inset:50% auto auto 50%;
+  transform:translate(-38%,-50%);
+  width:0;
+  height:0;
+  border-top:.55rem solid transparent;
+  border-bottom:.55rem solid transparent;
+  border-left:.95rem solid rgba(31,24,18,.72);
+}
+
+.vision-video.real{
+  object-fit:cover;
+  display:block;
+  background:var(--surface);
+}
+
+.vision-video.real::before,
+.vision-video.real::after{
+  display:none;
+}
+
+.contributors-line{
+  margin-top:1.2rem;
+  color:var(--text);
+  font-size:clamp(1.2rem,1.8vw,1.55rem);
+  line-height:1.3;
+  letter-spacing:-.02em;
+}
+
+.contributors-line a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.contributors-line a:hover{
+  color:var(--accent);
+}
+
+.contributors-line sup{
+  font-size:.58em;
+  vertical-align:super;
+  margin-left:.08em;
+}
+
+.contributors-notes{
+  margin-top:.8rem;
+  font-family:'Roboto Mono',monospace;
+  font-size:.82rem;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.acknowledgement-copy{
+  width:min(100%,52rem);
+  margin-top:1.2rem;
+  color:var(--muted);
+  font-size:1rem;
+  line-height:1.75;
+}
+
+.footer{
+  width:min(100%,52rem);
+  margin:5rem auto 0;
+  padding-top:1.8rem;
+  border-top:1px solid rgba(31,24,18,.1);
+  color:var(--muted-soft);
+  font-size:.9rem;
+}
+
+@media(max-width:980px){
+  .hero-copy,
+  .hero-title{max-width:none;}
+}
+
+@media(max-width:760px){
+  .edge-nav{
+    display:none;
+  }
+
+  .page{
+    width:min(100%,calc(100% - 1.6rem));
+    padding-top:7.5rem;
+  }
+
+  .nav-cluster{
+    gap:.5rem;
+    padding:1rem .8rem;
+  }
+
+  .nav-pill{
+    min-height:2.2rem;
+    padding:0 .75rem;
+    font-size:.84rem;
+  }
+
+  .hero{
+    gap:2.1rem;
+  }
+
+  .hero-title-rest{
+    white-space:normal;
+  }
+
+  .quote-frame{
+    padding:2rem 1.4rem;
+  }
+
+  .method-figure{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .method-carousel{
+    display:block;
+  }
+
+  .method-deck{
+    height:clamp(14rem,62vw,21rem);
+  }
+
+  .method-card.is-prev{
+    transform:translateX(-18%) scale(.86);
+    opacity:.22;
+  }
+
+  .method-card.is-next{
+    transform:translateX(18%) scale(.86);
+    opacity:.22;
+  }
+
+  .method-summary{
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+
+  .blank-video-grid{
+    grid-template-columns:1fr;
+  }
+
+  .motion-video-grid{
+    grid-template-columns:1fr;
+  }
+
+  .vision-grid.outdoor,
+  .vision-grid.opponents{
+    grid-template-columns:1fr;
+  }
+
+  .copy-button{
+    position:static;
+    margin-bottom:1rem;
+  }
+}
+</style>
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="nav-cluster">
+    <div class="nav-logo-badge">
+      <img class="nav-logo-image" src="../logo/HKU_MMLAB_text.png" alt="HKU MMLab logo">
+    </div>
+    <a class="nav-pill brand" href="#top">SMASH</a>
+    <a class="nav-pill" href="#egocentric-vision">Egocentric Vision</a>
+    <a class="nav-pill" href="#dynamic-motion">Dynamic Motion</a>
+    <a class="nav-pill" href="#methodology">Methodology</a>
+  </div>
+</header>
+
+<aside class="edge-nav" aria-label="Section navigation">
+  <nav class="edge-nav-track">
+    <a href="#egocentric-vision">Egocentric Vision</a>
+    <a href="#dynamic-motion">Dynamic Motion</a>
+    <a href="#methodology">Methodology</a>
+  </nav>
+</aside>
+
+<a class="back-top" href="#top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 15 6-6 6 6"></path>
+    <path d="m6 21 6-6 6 6"></path>
+  </svg>
+</a>
+
+<main class="page">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">HKU MMLab Research</div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">SMASH</span>
+          <span class="hero-title-rest">Mastering Scalable Whole-Body Skills for Humanoid Ping-Pong with Egocentric Vision</span>
+        </h1>
+        <div class="hero-meta-row">
+          <p class="hero-byline"><a href="mailto:research@mmlab.hk">HKU MMLab Research</a> · <a href="#contributors">Contributors</a></p>
+          <div class="hero-status-tab">Paper &amp; Code Coming in April, 2026</div>
+        </div>
+      </div>
+      <div class="video-with-progress hero-video-wrap">
+        <video class="hero-media lazy-video" data-progress-video="hero-video" data-audible-video="hero-video" src="https://assets.kinetixai.cn/202603262/%E8%8B%B1%E6%96%87%E7%89%88_%28%E5%B0%8F%E6%A0%B7%EF%BC%89.mp4" loop playsinline preload="metadata" aria-label="Hero video"></video>
+        <input class="video-progress" type="range" min="0" max="100" step="0.1" value="0" data-progress-for="hero-video" aria-label="Seek through hero video" disabled>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section" id="egocentric-vision">
+    <div class="quote-frame">
+      <h2>The future of robotics begins where the lab ends: in open-world interaction.</h2>
+    </div>
+    <div class="section section-wide" style="margin-top:2.6rem">
+      <h2 class="section-title"><a href="#egocentric-vision">Egocentric Vision</a></h2>
+      <div class="blank-video-grid single" aria-label="Egocentric vision video placeholder">
+        <video class="feature-video lazy-video" src="https://assets.kinetixai.cn/202603262/fpv-6hits.mp4" loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="vision-subsection">
+        <h3 class="vision-subtitle">Various Outdoor Conditions</h3>
+        <div class="vision-grid outdoor" aria-label="Various outdoor conditions video placeholders">
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/3rd%20floor%20%E2%80%93%208%20hits.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/6th%20floor%20-%205%20hits.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/202603262/Banana%20Road%20-%208%20Strikes.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Bao%27an%20Stadium%206.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Big%20Tree%20-%205%20consecutive%20hits.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorShots.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/IndoorSix%20Strokes.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Talent%20Park%20-%207%20Strikes.mp4" loop muted playsinline preload="metadata"></video>
+        </div>
+      </div>
+      <div class="vision-subsection">
+        <h3 class="vision-subtitle">Different Opponents</h3>
+        <div class="vision-grid opponents" aria-label="Different opponents video placeholders">
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/yixuan.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/haoran.mp4" loop muted playsinline preload="metadata"></video>
+          <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/junli.mp4" loop muted playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-wide" id="dynamic-motion">
+    <h2 class="section-title"><a href="#dynamic-motion">Dynamic Motion</a></h2>
+    <div class="blank-video-grid single" aria-label="Dynamic motion main video">
+      <video class="feature-video lazy-video" src="https://assets.kinetixai.cn/20260326/Smash%20-%20Side%20View.mp4" loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="motion-video-grid" aria-label="Dynamic motion supporting videos">
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/8%20Consecutive%20Smashes.mp4" loop muted playsinline preload="metadata"></video>
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/laoqiu.mp4" loop muted playsinline preload="metadata"></video>
+      <video class="vision-video real lazy-video" src="https://assets.kinetixai.cn/20260326/Wide%20pan%20left%20and%20right.mp4" loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="vision-subsection">
+      <h3 class="vision-subtitle">100+ consecutive stable rallies</h3>
+      <div class="blank-video-grid single" aria-label="100 plus consecutive stable rallies video">
+        <div class="video-with-progress">
+          <video class="feature-video lazy-video" data-progress-video="stable-rallies-video" src="https://assets.kinetixai.cn/202603262/51%20consecutive%20shots.mp4" loop muted playsinline preload="metadata"></video>
+          <input class="video-progress" type="range" min="0" max="100" step="0.1" value="0" data-progress-for="stable-rallies-video" aria-label="Seek through 100 plus consecutive stable rallies video" disabled>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-wide" id="methodology">
+    <h2 class="section-title"><a href="#methodology">Methodology</a></h2>
+    <figure class="method-figure">
+      <div class="method-carousel">
+        <div class="method-stage">
+          <span class="method-stage-label" id="method-stage-label">Data</span>
+          <div class="method-deck" aria-live="polite">
+            <div class="method-card is-current" data-method-card="0">
+              <img src="https://assets.kinetixai.cn/202603262/20260326-163650.png" alt="SMASH methodology card: Data">
+            </div>
+            <div class="method-card is-next" data-method-card="1">
+              <img src="https://assets.kinetixai.cn/202603262/20260326-163704.png" alt="SMASH methodology card: Policy">
+            </div>
+            <div class="method-card is-prev" data-method-card="2">
+              <img src="https://assets.kinetixai.cn/202603262/20260326-163659.png" alt="SMASH methodology card: Deploy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </figure>
+    <div class="method-summary">
+      <div class="method-item">
+        <h3>Data</h3>
+        <p>We expand sparse motion-capture demonstrations with Motion-VAE generation to build a workspace-covering strike library, improving training efficiency by helping the policy learn task-aligned motions more effectively while reducing motion loss.</p>
+      </div>
+      <div class="method-item">
+        <h3>Policy</h3>
+        <p>We train a task-aligned whole-body policy that matches motion priors to each desired strike target, achieving precise ball interaction while preserving natural coordination and enabling agile behaviors such as smashes and low crouching shots.</p>
+      </div>
+      <div class="method-item">
+        <h3>Deploy</h3>
+        <p>We deploy the system with egocentric onboard perception that estimates both ball and robot state in real time, enabling the first outdoor humanoid table-tennis interaction without external cameras or motion-capture infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-wide" id="contributors">
+    <h2 class="section-title"><a href="#contributors">Contributors</a></h2>
+    <p class="contributors-line">
+      <a href="https://renjunli99.github.io/" target="_blank" rel="noreferrer">Junli Ren</a><sup>†, *</sup>,
+      <a href="https://scholar.google.com/citations?user=L9tZBvgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Yinghui Li</a><sup>†, *</sup>,
+      <a href="https://github.com/junkerman2004" target="_blank" rel="noreferrer">Kai Zhang</a><sup>*</sup>,
+      <a href="https://github.com/jimmyyaaa" target="_blank" rel="noreferrer">Penglin Fu</a><sup>*</sup>,
+      <a href="https://hrriver7.github.io/" target="_blank" rel="noreferrer">Haoran Jiang</a>,
+      <a href="https://lzpyx.github.io/" target="_blank" rel="noreferrer">Yixuan Pan</a>,
+      <a href="https://github.com/GuangjunZeng" target="_blank" rel="noreferrer">Guangjun Zeng</a>,
+      <a href="https://taohuang13.github.io/" target="_blank" rel="noreferrer">Tao Huang</a>,
+      <a href="https://me.sjtu.edu.cn/en/FullTimeTeacher/guoweizhong.html" target="_blank" rel="noreferrer">WeiZhong Guo</a>,
+      <a href="https://wangjingbo1219.github.io/" target="_blank" rel="noreferrer">Jingbo Wang</a>,
+      <a href="https://ilnehc.github.io/" target="_blank" rel="noreferrer">Li Chen</a>,
+      <a href="https://lihongyang.info/" target="_blank" rel="noreferrer">Hongyang Li</a><sup>‡</sup>,
+      <a href="https://luoping.me/" target="_blank" rel="noreferrer">Ping Luo</a><sup>‡</sup>
+    </p>
+    <p class="contributors-notes">  † project lead &nbsp;&nbsp; * equal contribution &nbsp;&nbsp; ‡ supervision</p>
+  </section>
+
+  <section class="section section-wide" id="acknowledgement">
+    <h2 class="section-title"><a href="#acknowledgement">Acknowledgement</a></h2>
+    <p class="acknowledgement-copy">The work was conducted during the authors'intership at Kinetix AI, special thanks to Huige Tong, Yuxing Zhang, Zhihong Liao, Yue Jiang, Huang Yifeng, Lirui Zhao, Jialong Zeng, Shijia Peng, Jiazhi Yang, Chonghao Sima, Checheng Yu, and Modi Shi for their excellent support and insightful discussions.</p>
+  </section>
+
+  <footer class="footer">
+    <p>SMASH project page, inspired by the <a href="https://mmlab.hk/research/kai0" target="_blank" rel="noreferrer">kai0 project page</a>.</p>
+  </footer>
+</main>
+
+<script>
+const clickToPlayVideos=[...document.querySelectorAll('video.lazy-video')];
+
+clickToPlayVideos.forEach(video=>{
+  video.setAttribute('tabindex','0');
+  video.setAttribute('title','Click to play');
+
+  video.addEventListener('click',()=>{
+    if(video.paused){
+      video.play().catch(()=>{});
+      return;
+    }
+    video.pause();
+  });
+
+  video.addEventListener('keydown',event=>{
+    if(event.key!=='Enter'&&event.key!==' ')return;
+    event.preventDefault();
+    if(video.paused){
+      video.play().catch(()=>{});
+      return;
+    }
+    video.pause();
+  });
+});
+
+const audibleVideos=[...document.querySelectorAll('video[data-audible-video]')];
+
+audibleVideos.forEach(video=>{
+  video.defaultMuted=false;
+  video.muted=false;
+  video.volume=1;
+});
+
+const progressVideos=[...document.querySelectorAll('video[data-progress-video]')];
+
+progressVideos.forEach(video=>{
+  const progress=document.querySelector(`[data-progress-for="${video.dataset.progressVideo}"]`);
+  if(!progress)return;
+
+  const renderProgress=percent=>{
+    progress.style.setProperty('--progress',`${percent}%`);
+  };
+
+  const syncProgress=()=>{
+    if(!Number.isFinite(video.duration)||video.duration<=0){
+      progress.value='0';
+      progress.disabled=true;
+      renderProgress(0);
+      return;
+    }
+
+    const percent=(video.currentTime/video.duration)*100;
+    progress.disabled=false;
+    progress.value=String(percent);
+    renderProgress(percent);
+  };
+
+  progress.addEventListener('input',()=>{
+    if(!Number.isFinite(video.duration)||video.duration<=0)return;
+    const percent=Number(progress.value);
+    renderProgress(percent);
+    video.currentTime=video.duration*(percent/100);
+  });
+
+  video.addEventListener('loadedmetadata',syncProgress);
+  video.addEventListener('durationchange',syncProgress);
+  video.addEventListener('timeupdate',syncProgress);
+  video.addEventListener('ended',syncProgress);
+
+  syncProgress();
+});
+
+const sectionIds=['egocentric-vision','dynamic-motion','methodology'];
+const navLinks=[...document.querySelectorAll('.nav-pill[href^="#"], .edge-nav-track a[href^="#"]')];
+const map=new Map(navLinks.map(link=>[link.getAttribute('href').slice(1),[]]));
+
+navLinks.forEach(link=>{
+  const id=link.getAttribute('href').slice(1);
+  if(map.has(id))map.get(id).push(link);
+});
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    sectionIds.forEach(id=>{
+      (map.get(id)||[]).forEach(link=>link.classList.toggle('is-active',id===entry.target.id));
+    });
+  });
+},{rootMargin:'-30% 0px -55% 0px',threshold:.01});
+
+sectionIds.forEach(id=>{
+  const el=document.getElementById(id);
+  if(el)observer.observe(el);
+});
+
+const methodCards=[
+  {label:'Data',src:'https://assets.kinetixai.cn/202603262/20260326-163650.png',alt:'SMASH methodology card: Data'},
+  {label:'Policy',src:'https://assets.kinetixai.cn/202603262/20260326-163704.png',alt:'SMASH methodology card: Policy'},
+  {label:'Deploy',src:'https://assets.kinetixai.cn/202603262/20260326-163659.png',alt:'SMASH methodology card: Deploy'}
+];
+
+const methodLabel=document.getElementById('method-stage-label');
+const methodSlides=[...document.querySelectorAll('[data-method-card]')];
+let methodIndex=0;
+
+function renderMethodCard(){
+  if(!methodLabel)return;
+  methodLabel.textContent=methodCards[methodIndex].label;
+  methodSlides.forEach((slide,index)=>{
+    slide.classList.remove('is-current','is-prev','is-next','is-hidden');
+    if(index===methodIndex){
+      slide.classList.add('is-current');
+    }else if(index===(methodIndex-1+methodCards.length)%methodCards.length){
+      slide.classList.add('is-prev');
+    }else if(index===(methodIndex+1)%methodCards.length){
+      slide.classList.add('is-next');
+    }else{
+      slide.classList.add('is-hidden');
+    }
+  });
+}
+
+methodSlides.forEach((slide,index)=>{
+  slide.addEventListener('click',()=>{
+    if(index===methodIndex)return;
+    methodIndex=index;
+    renderMethodCard();
+  });
+});
+
+renderMethodCard();
+</script>
+</body>
+</html>
