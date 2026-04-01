@@ -282,28 +282,77 @@ video{
   text-decoration-thickness:1px;
 }
 
+.hero-status-actions{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.72rem .95rem;
+}
+
 .hero-status-tab{
   display:inline-flex;
   align-items:center;
-  gap:.45rem;
-  padding:.38rem .82rem;
+  gap:.58rem;
+  min-height:2.46rem;
+  padding:.4rem .88rem .4rem .72rem;
+  border:1px solid rgba(72,92,119,.16);
   border-radius:999px;
-  border:1px solid rgba(15,23,42,.12);
-  background:rgba(255,255,255,.84);
-  color:var(--text);
+  background:rgba(66,85,111,.94);
+  box-shadow:0 8px 18px rgba(15,23,42,.1);
+  color:#f4f7fb;
   font-size:1rem;
   font-weight:500;
-  letter-spacing:-.01em;
-  line-height:1.5;
+  letter-spacing:-.015em;
+  line-height:1;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 
-.hero-status-tab::before{
-  content:'';
-  width:.38rem;
-  height:.38rem;
-  border-radius:50%;
-  background:currentColor;
-  opacity:.82;
+.hero-status-tab:hover{
+  transform:translateY(-1px);
+  border-color:rgba(88,114,148,.26);
+  box-shadow:0 10px 22px rgba(15,23,42,.12);
+  background:#485f7f;
+}
+
+.hero-status-tab:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+
+.hero-status-icon{
+  position:relative;
+  width:1.72rem;
+  height:1.72rem;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.hero-status-icon svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.hero-status-badge{
+  position:absolute;
+  left:-.06rem;
+  bottom:.02rem;
+  padding:.1rem .2rem;
+  border-radius:.2rem;
+  background:#ef4e43;
+  color:#fff;
+  font-family:'Roboto Mono',monospace;
+  font-size:.4rem;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-.02em;
+}
+
+.hero-status-label{
+  font-size:.98rem;
+  font-weight:500;
 }
 
 .hero-media{
@@ -1127,6 +1176,18 @@ video{
     white-space:normal;
   }
 
+  .hero-meta-row{
+    align-items:stretch;
+  }
+
+  .hero-status-actions{
+    width:100%;
+  }
+
+  .hero-status-tab{
+    flex:0 0 auto;
+  }
+
   .quote-frame{
     padding:2rem 1.4rem;
   }
@@ -1219,7 +1280,28 @@ video{
         </h1>
         <div class="hero-meta-row">
           <p class="hero-byline"><a href="https://mmlab.hk/" target="_blank" rel="noreferrer">HKU MMLab Research</a> · <a href="#contributors">Contributors</a></p>
-          <div class="hero-status-tab">Paper &amp; Code Coming in April, 2026</div>
+          <div class="hero-status-actions">
+            <a class="hero-status-tab" href="https://assets.kinetixai.cn/202603262/tabletennis.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the paper PDF in a new tab">
+              <span class="hero-status-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#edf2fb" d="M6.5 2.5h8l4 4v13a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 5.5 19.5v-15A2 2 0 0 1 7.5 2.5Z"></path>
+                  <path fill="#c7d3e5" d="M14.5 2.5V7h4Z"></path>
+                </svg>
+                <span class="hero-status-badge">PDF</span>
+              </span>
+              <span class="hero-status-label">Paper</span>
+            </a>
+            <a class="hero-status-tab" href="https://assets.kinetixai.cn/202603262/tabletennis.pdf" target="_blank" rel="noopener noreferrer" title="Temporary link: currently opens the paper PDF" aria-label="Open the temporary arXiv link, which currently points to the paper PDF, in a new tab">
+              <span class="hero-status-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 4.4 11.55 12 6 19.6" fill="none" stroke="#de4a33" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M18 4.4 12.45 12 18 19.6" fill="none" stroke="#d5dde8" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <circle cx="12" cy="12" r="1.4" fill="#8192b7"></circle>
+                </svg>
+              </span>
+              <span class="hero-status-label">arXiv</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="video-with-progress hero-video-wrap">
@@ -1347,21 +1429,22 @@ video{
       <a href="https://scholar.google.com/citations?user=L9tZBvgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Yinghui Li</a><sup>†, *</sup>,
       <a href="https://github.com/junkerman2004" target="_blank" rel="noreferrer">Kai Zhang</a><sup>*</sup>,
       <a href="https://github.com/jimmyyaaa" target="_blank" rel="noreferrer">Penglin Fu</a><sup>*</sup>,
-      and more to come...
-      <!-- <a href="https://hrriver7.github.io/" target="_blank" rel="noreferrer">Haoran Jiang</a>,
+      <a href="https://hrriver7.github.io/" target="_blank" rel="noreferrer">Haoran Jiang</a>,
       <a href="https://lzpyx.github.io/" target="_blank" rel="noreferrer">Yixuan Pan</a>,
       <a href="https://github.com/GuangjunZeng" target="_blank" rel="noreferrer">Guangjun Zeng</a>,
       <a href="https://taohuang13.github.io/" target="_blank" rel="noreferrer">Tao Huang</a>,
       <a href="https://me.sjtu.edu.cn/en/FullTimeTeacher/guoweizhong.html" target="_blank" rel="noreferrer">Weizhong Guo</a>,
+      <a href="https://arclab.hku.hk/PengLu.html" target="_blank" rel="noreferrer">Peng Lu</a>,
+      <a href="https://sephyli.github.io/" target="_blank" rel="noreferrer">Tianyu Li</a>,
       <a href="https://wangjingbo1219.github.io/" target="_blank" rel="noreferrer">Jingbo Wang</a>,
       <a href="https://ilnehc.github.io/" target="_blank" rel="noreferrer">Li Chen</a>,
-      <a href="https://lihongyang.info/" target="_blank" rel="noreferrer">Hongyang Li</a><sup>‡</sup>,
-      <a href="https://luoping.me/" target="_blank" rel="noreferrer">Ping Luo</a><sup>‡</sup> -->
+      <a href="https://lihongyang.info/" target="_blank" rel="noreferrer">Hongyang Li</a>,
+      <a href="https://luoping.me/" target="_blank" rel="noreferrer">Ping Luo</a><sup>‡</sup>
     </p>
     <p class="contributors-notes">  
-      † project lead &nbsp;&nbsp; 
-      * equal contribution 
-      <!-- &nbsp;&nbsp; ‡ supervision -->
+      † project lead &nbsp;
+      * Co-first author &nbsp; 
+      ‡ Corresponding author
     </p>
   </section>
 
