@@ -167,7 +167,7 @@ export default function Home() {
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg blur opacity-50 group-hover:opacity-100 transition" />
             <div className="relative bg-black/80 backdrop-blur-xl rounded-lg px-6 py-2.5 border border-emerald-500/30 hover:border-emerald-500/60 transition">
-              <Link href="https://arxiv.org/pdf/2604.17245" target="_blank" className="select-none text-emerald-400 font-semibold tracking-wide uppercase text-sm">
+              <Link href="https://arxiv.org/abs/2604.17245" target="_blank" className="select-none text-emerald-400 font-semibold tracking-wide uppercase text-sm">
                 Paper
               </Link>
             </div>
